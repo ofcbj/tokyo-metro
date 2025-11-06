@@ -88,6 +88,109 @@ const lineData = {
       ]
     }
   ],
+  "JR 동일본": [
+    {
+      id: "yamanote",
+      nameKo: "야마노테선",
+      nameJp: "山手線",
+      color: "#9ACD32",
+      stations: [
+        { name: "도쿄/東京", lat: 35.6812, lng: 139.7671, transfer: true },
+        { name: "칸다/神田", lat: 35.6916, lng: 139.7708 },
+        { name: "아키하바라/秋葉原", lat: 35.6984, lng: 139.7731, transfer: true },
+        { name: "우에노/上野", lat: 35.7118, lng: 139.7770, transfer: true },
+        { name: "닛포리/日暮里", lat: 35.7276, lng: 139.7707, transfer: true },
+        { name: "타바타/田端", lat: 35.7376, lng: 139.7609 },
+        { name: "이케부쿠로/池袋", lat: 35.7295, lng: 139.7109, transfer: true },
+        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true },
+        { name: "시부야/渋谷", lat: 35.6580, lng: 139.7016, transfer: true },
+        { name: "에비스/恵比寿", lat: 35.6468, lng: 139.7100, transfer: true },
+        { name: "메구로/目黒", lat: 35.6338, lng: 139.7157, transfer: true },
+        { name: "고탄다/五反田", lat: 35.6257, lng: 139.7238, transfer: true },
+        { name: "시나가와/品川", lat: 35.6284, lng: 139.7387, transfer: true },
+        { name: "하마마츠초/浜松町", lat: 35.6555, lng: 139.7576, transfer: true },
+        { name: "신바시/新橋", lat: 35.6664, lng: 139.7583, transfer: true },
+        { name: "유라쿠초/有楽町", lat: 35.6751, lng: 139.7634, transfer: true }
+      ]
+    },
+    {
+      id: "chuo-rapid",
+      nameKo: "주오선(쾌속)",
+      nameJp: "中央線(快速)",
+      color: "#F15A22",
+      stations: [
+        { name: "도쿄/東京", lat: 35.6812, lng: 139.7671, transfer: true },
+        { name: "칸다/神田", lat: 35.6916, lng: 139.7708 },
+        { name: "오차노미즈/御茶ノ水", lat: 35.6995, lng: 139.7656, transfer: true },
+        { name: "요쓰야/四ツ谷", lat: 35.6868, lng: 139.7299, transfer: true },
+        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true },
+        { name: "나카노/中野", lat: 35.7056, lng: 139.6657, transfer: true }
+      ]
+    },
+    {
+      id: "sobu",
+      nameKo: "소부선",
+      nameJp: "総武線",
+      color: "#FFD400",
+      stations: [
+        { name: "지바/千葉", lat: 35.6115, lng: 140.1121 },
+        { name: "긴시초/錦糸町", lat: 35.6967, lng: 139.8143, transfer: true },
+        { name: "아키하바라/秋葉原", lat: 35.6984, lng: 139.7731, transfer: true },
+        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true }
+      ]
+    }
+  ],
+  "사철": [
+    {
+      id: "keio",
+      nameKo: "게이오선",
+      nameJp: "京王線",
+      color: "#E85298",
+      stations: [
+        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true },
+        { name: "시부야/渋谷", lat: 35.6580, lng: 139.7016, transfer: true },
+        { name: "시모키타자와/下北沢", lat: 35.6613, lng: 139.6681, transfer: true },
+        { name: "초후/調布", lat: 35.6516, lng: 139.5407 }
+      ]
+    },
+    {
+      id: "odakyu",
+      nameKo: "오다큐선",
+      nameJp: "小田急線",
+      color: "#2E3B96",
+      stations: [
+        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true },
+        { name: "시모키타자와/下北沢", lat: 35.6613, lng: 139.6681, transfer: true },
+        { name: "세이조가쿠엔마에/成城学園前", lat: 35.6401, lng: 139.6014 },
+        { name: "신유리가오카/新百合ヶ丘", lat: 35.5999, lng: 139.5092 }
+      ]
+    },
+    {
+      id: "tobu-tojo",
+      nameKo: "도부 도조선",
+      nameJp: "東武東上線",
+      color: "#004098",
+      stations: [
+        { name: "이케부쿠로/池袋", lat: 35.7295, lng: 139.7109, transfer: true },
+        { name: "기타이케부쿠로/北池袋", lat: 35.7394, lng: 139.7051 },
+        { name: "이타바시/下板橋", lat: 35.7505, lng: 139.6958 },
+        { name: "와코시/和光市", lat: 35.7808, lng: 139.6058, transfer: true }
+      ]
+    },
+    {
+      id: "seibu-ikebukuro",
+      nameKo: "세이부 이케부쿠로선",
+      nameJp: "西武池袋線",
+      color: "#1C8AC8",
+      stations: [
+        { name: "이케부쿠로/池袋", lat: 35.7295, lng: 139.7109, transfer: true },
+        { name: "네리마/練馬", lat: 35.7395, lng: 139.6532, transfer: true },
+        { name: "샤쿠지코엔/石神井公園", lat: 35.7407, lng: 139.6014 },
+        { name: "히바리가오카/ひばりヶ丘", lat: 35.7606, lng: 139.5390 }
+      ]
+    }
+  ]
+,
   "도쿄메트로": [
     {
       id: "ginza",
@@ -266,56 +369,6 @@ const lineData = {
     },
   ],
   "JR 동일본": [
-    {
-      id: "yamanote",
-      nameKo: "야마노테선",
-      nameJp: "山手線",
-      color: "#9ACD32",
-      stations: [
-        { name: "도쿄/東京", lat: 35.6812, lng: 139.7671, transfer: true },
-        { name: "칸다/神田", lat: 35.6916, lng: 139.7708 },
-        { name: "아키하바라/秋葉原", lat: 35.6984, lng: 139.7731, transfer: true },
-        { name: "우에노/上野", lat: 35.7118, lng: 139.7770, transfer: true },
-        { name: "닛포리/日暮里", lat: 35.7276, lng: 139.7707, transfer: true },
-        { name: "타바타/田端", lat: 35.7376, lng: 139.7609 },
-        { name: "이케부쿠로/池袋", lat: 35.7295, lng: 139.7109, transfer: true },
-        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true },
-        { name: "시부야/渋谷", lat: 35.6580, lng: 139.7016, transfer: true },
-        { name: "에비스/恵比寿", lat: 35.6468, lng: 139.7100, transfer: true },
-        { name: "메구로/目黒", lat: 35.6338, lng: 139.7157, transfer: true },
-        { name: "고탄다/五反田", lat: 35.6257, lng: 139.7238, transfer: true },
-        { name: "시나가와/品川", lat: 35.6284, lng: 139.7387, transfer: true },
-        { name: "하마마츠초/浜松町", lat: 35.6555, lng: 139.7576, transfer: true },
-        { name: "신바시/新橋", lat: 35.6664, lng: 139.7583, transfer: true },
-        { name: "유라쿠초/有楽町", lat: 35.6751, lng: 139.7634, transfer: true }
-      ]
-    },
-    {
-      id: "chuo-rapid",
-      nameKo: "주오선(쾌속)",
-      nameJp: "中央線(快速)",
-      color: "#F15A22",
-      stations: [
-        { name: "도쿄/東京", lat: 35.6812, lng: 139.7671, transfer: true },
-        { name: "칸다/神田", lat: 35.6916, lng: 139.7708 },
-        { name: "오차노미즈/御茶ノ水", lat: 35.6995, lng: 139.7656, transfer: true },
-        { name: "요쓰야/四ツ谷", lat: 35.6868, lng: 139.7299, transfer: true },
-        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true },
-        { name: "나카노/中野", lat: 35.7056, lng: 139.6657, transfer: true }
-      ]
-    },
-    {
-      id: "sobu",
-      nameKo: "소부선",
-      nameJp: "総武線",
-      color: "#FFD400",
-      stations: [
-        { name: "지바/千葉", lat: 35.6115, lng: 140.1121 },
-        { name: "긴시초/錦糸町", lat: 35.6967, lng: 139.8143, transfer: true },
-        { name: "아키하바라/秋葉原", lat: 35.6984, lng: 139.7731, transfer: true },
-        { name: "신주쿠/新宿", lat: 35.6896, lng: 139.7006, transfer: true }
-      ]
-    },
     {
       id: "yamanote-line-loop",
       nameKo: "야마노테선",
@@ -592,92 +645,7 @@ const lineData = {
       ]
     },
   ],
-  "세이부철도": [
-    {
-      id: "seibu-ikebukuro",
-      nameKo: "세이부 이케부쿠로선",
-      nameJp: "西武池袋線",
-      color: "#1C8AC8",
-      stations: [
-        { name: "이케부쿠로/池袋", lat: 35.7295, lng: 139.7109, transfer: true },
-        { name: "네리마/練馬", lat: 35.7395, lng: 139.6532, transfer: true },
-        { name: "샤쿠지코엔/石神井公園", lat: 35.7407, lng: 139.6014 },
-        { name: "히바리가오카/ひばりヶ丘", lat: 35.7606, lng: 139.5390 }
-      ]
-    },
-    {
-      id: "ikebukuro-line",
-      nameKo: "이케부쿠로선",
-      nameJp: "Ikebukuro Line",
-      color: "#666666",
-      stations: [
-        { name: "이케부쿠로/池袋", lat: 35.7295, lng: 139.7109, transfer: true },
-        { name: "네리마/練馬", lat: 35.7395, lng: 139.6532, transfer: true },
-        { name: "한노/飯能", lat: 35.8519, lng: 139.3181, transfer: true },
-      ]
-    },
-    {
-      id: "seibu-chichibu-line",
-      nameKo: "세이부치치부선",
-      nameJp: "Seibu-Chichibu Line",
-      color: "#666666",
-      stations: [
-        { name: "아가노/吾野", lat: 35.8961, lng: 139.3181, transfer: true },
-        { name: "세이부치치부/西武秩父", lat: 35.9903, lng: 139.0847, transfer: true },
-      ]
-    },
-    {
-      id: "haijima-line",
-      nameKo: "하이지마선",
-      nameJp: "Haijima Line",
-      color: "#666666",
-      stations: [
-        { name: "고다이라/小平", lat: 35.7281, lng: 139.4772, transfer: true },
-        { name: "하이지마/拝島", lat: 35.7211, lng: 139.3431, transfer: true },
-      ]
-    },
-    {
-      id: "tamagawa-line",
-      nameKo: "다마가와선",
-      nameJp: "Tamagawa Line",
-      color: "#666666",
-      stations: [
-        { name: "무사시사카이/武蔵境", lat: 35.7031, lng: 139.5431, transfer: true },
-        { name: "고레마사/是政", lat: 35.6681, lng: 139.4772, transfer: true },
-      ]
-    },
-    {
-      id: "tamako-line",
-      nameKo: "다마코선",
-      nameJp: "Tamako Line",
-      color: "#666666",
-      stations: [
-        { name: "고쿠분지/国分寺", lat: 35.7031, lng: 139.4797, transfer: true },
-        { name: "세이부유엔치/西武遊園地", lat: 35.7681, lng: 139.4103, transfer: true },
-      ]
-    },
-    {
-      id: "seikouen-line",
-      nameKo: "세이부엔선",
-      nameJp: "Seikouen Line",
-      color: "#666666",
-      stations: [
-        { name: "히가시무라야마/東村山", lat: 35.7558, lng: 139.4653, transfer: true },
-        { name: "세이부유엔치/西武遊園地", lat: 35.7681, lng: 139.4103, transfer: true },
-      ]
-    },
-    {
-      id: "toshimaen-line",
-      nameKo: "도시마엔선",
-      nameJp: "Toshimaen Line",
-      color: "#666666",
-      stations: [
-        { name: "네리마/練馬", lat: 35.7395, lng: 139.6532, transfer: true },
-        { name: "도시마엔/豊島園", lat: 35.7281, lng: 139.6472, transfer: true },
-      ]
-    },
-  ],
-  "도큐전철": [
+  "사철": [
     {
       id: "toyoko-line",
       nameKo: "도요코선",
@@ -741,7 +709,7 @@ const lineData = {
       ]
     },
     {
-      id: "tamagawa-line-tokyu",
+      id: "tamagawa-line",
       nameKo: "다마가와선",
       nameJp: "Tamagawa Line",
       color: "#666666",
@@ -764,8 +732,6 @@ const lineData = {
       
       ]
     },
-  ],
-  "케이오전철": [
     {
       id: "keio-new-line",
       nameKo: "케이오신선",
@@ -850,8 +816,6 @@ const lineData = {
       
       ]
     },
-  ],
-  "오다큐전철": [
     {
       id: "odawara-line",
       nameKo: "오다와라선",
@@ -866,7 +830,7 @@ const lineData = {
       ]
     },
     {
-      id: "enoshima-line-odakyu",
+      id: "enoshima-line",
       nameKo: "에노시마선",
       nameJp: "Enoshima Line",
       color: "#666666",
@@ -889,8 +853,88 @@ const lineData = {
       
       ]
     },
-  ],
-  "도부철도": [
+    {
+      id: "ikebukuro-line",
+      nameKo: "이케부쿠로선",
+      nameJp: "Ikebukuro Line",
+      color: "#666666",
+      stations: [
+        { name: "이케부쿠로/池袋", lat: 35.7295, lng: 139.7109, transfer: true },
+        { name: "네리마/練馬", lat: 35.7395, lng: 139.6532, transfer: true },
+        { name: "한노/飯能", lat: 35.8519, lng: 139.3181, transfer: true },
+      
+      ]
+    },
+    {
+      id: "seibu-chichibu-line",
+      nameKo: "세이부치치부선",
+      nameJp: "Seibu-Chichibu Line",
+      color: "#666666",
+      stations: [
+        { name: "아가노/吾野", lat: 35.8961, lng: 139.3181, transfer: true },
+        { name: "세이부치치부/西武秩父", lat: 35.9903, lng: 139.0847, transfer: true },
+      
+      
+      ]
+    },
+    {
+      id: "haijima-line",
+      nameKo: "하이지마선",
+      nameJp: "Haijima Line",
+      color: "#666666",
+      stations: [
+        { name: "고다이라/小平", lat: 35.7281, lng: 139.4772, transfer: true },
+        { name: "하이지마/拝島", lat: 35.7211, lng: 139.3431, transfer: true },
+      
+      
+      ]
+    },
+    {
+      id: "tamagawa-line",
+      nameKo: "다마가와선",
+      nameJp: "Tamagawa Line",
+      color: "#666666",
+      stations: [
+        { name: "무사시사카이/武蔵境", lat: 35.7031, lng: 139.5431, transfer: true },
+        { name: "고레마사/是政", lat: 35.6681, lng: 139.4772, transfer: true },
+      ]
+    },
+    {
+      id: "tamako-line",
+      nameKo: "다마코선",
+      nameJp: "Tamako Line",
+      color: "#666666",
+      stations: [
+        { name: "고쿠분지/国分寺", lat: 35.7031, lng: 139.4797, transfer: true },
+        { name: "세이부유엔치/西武遊園地", lat: 35.7681, lng: 139.4103, transfer: true },
+      
+      
+      ]
+    },
+    {
+      id: "seikouen-line",
+      nameKo: "세이부엔선",
+      nameJp: "Seikouen Line",
+      color: "#666666",
+      stations: [
+        { name: "히가시무라야마/東村山", lat: 35.7558, lng: 139.4653, transfer: true },
+        { name: "세이부유엔치/西武遊園地", lat: 35.7681, lng: 139.4103, transfer: true },
+      
+      
+      ]
+    },
+    {
+      id: "toshimaen-line",
+      nameKo: "도시마엔선",
+      nameJp: "Toshimaen Line",
+      color: "#666666",
+      stations: [
+        { name: "네리마/練馬", lat: 35.7395, lng: 139.6532, transfer: true },
+        { name: "도시마엔/豊島園", lat: 35.7281, lng: 139.6472, transfer: true },
+      
+      
+      ]
+    },
     {
       id: "isesaki-lineskytree-line",
       nameKo: "이세사키선/스카이트리라인",
@@ -939,85 +983,25 @@ const lineData = {
       ]
     },
     {
-      id: "tobu-daishi-line",
-      nameKo: "다이시선",
-      nameJp: "Daishi Line",
-      color: "#666666",
-      stations: [
-        { name: "니시아라이/西新井", lat: 35.7778, lng: 139.7903, transfer: true },
-        { name: "다이시마에/大師前", lat: 35.7778, lng: 139.7903, transfer: true },
-      
-      
-      ]
-    },
-  ],
-  "케이큐전철": [
-    {
-      id: "keikyu-main-line",
-      nameKo: "본선",
-      nameJp: "Main Line",
-      color: "#666666",
-      stations: [
-        { name: "시나가와/品川", lat: 35.6284, lng: 139.7387, transfer: true },
-        { name: "우라가/浦賀", lat: 35.25, lng: 139.7167, transfer: true },
-      ]
-    },
-    {
-      id: "airport-line",
-      nameKo: "공항선",
-      nameJp: "Airport Line",
-      color: "#666666",
-      stations: [
-        { name: "케이큐가마타/京急蒲田", lat: 35.5625, lng: 139.7161, transfer: true },
-        { name: "하네다공항 T1-T2/羽田空港", lat: 35.5494, lng: 139.7792, transfer: true },
-      
-      
-      ]
-    },
-    {
-      id: "keikyu-daishi-line",
+      id: "daishi-line",
       nameKo: "다이시선",
       nameJp: "Daishi Line",
       color: "#666666",
       stations: [
         { name: "케이큐가와사키/京急川崎", lat: 35.5306, lng: 139.7, transfer: true },
         { name: "고지마신덴/小島新田", lat: 35.5306, lng: 139.7, transfer: true },
-      ]
-    },
-    {
-      id: "zushi-line",
-      nameKo: "즈시선",
-      nameJp: "Zushi Line",
-      color: "#666666",
-      stations: [
-        { name: "가나자와핫케이/金沢八景", lat: 35.3331, lng: 139.6222, transfer: true },
-        { name: "즈시/逗子", lat: 35.2969, lng: 139.5781, transfer: true },
-        { name: "하야마/葉山", lat: 35.2708, lng: 139.5831, transfer: true },
-      
-      ]
-    },
-    {
-      id: "kurihama-line",
-      nameKo: "구리하마선",
-      nameJp: "Kurihama Line",
-      color: "#666666",
-      stations: [
-        { name: "호리노우치/堀ノ内", lat: 35.25, lng: 139.7167, transfer: true },
-        { name: "미사키구치/三崎口", lat: 35.1831, lng: 139.6331, transfer: true },
       
       
       ]
     },
-  ],
-  "케이세이전철": [
     {
-      id: "keisei-main-line",
+      id: "main-line",
       nameKo: "본선",
       nameJp: "Main Line",
       color: "#666666",
       stations: [
-        { name: "케이세이우에노/京成上野", lat: 35.7118, lng: 139.7770, transfer: true },
-        { name: "나리타공항 T1/成田空港", lat: 35.7722, lng: 140.3861, transfer: true },
+        { name: "요코하마/横浜", lat: 35.4658, lng: 139.6222, transfer: true },
+        { name: "에비나/海老名", lat: 35.4481, lng: 139.3917, transfer: true },
       
       
       ]
@@ -1058,17 +1042,70 @@ const lineData = {
       
       ]
     },
-  ],
-  "사철": [
     {
-      id: "sotetsu-main-line",
+      id: "main-line",
+      nameKo: "본선",
+      nameJp: "Main Line",
+      color: "#666666",
+      stations: [
+        { name: "시나가와/品川", lat: 35.6284, lng: 139.7387, transfer: true },
+        { name: "우라가/浦賀", lat: 35.25, lng: 139.7167, transfer: true },
+      ]
+    },
+    {
+      id: "airport-line",
+      nameKo: "공항선",
+      nameJp: "Airport Line",
+      color: "#666666",
+      stations: [
+        { name: "케이큐가마타/京急蒲田", lat: 35.5625, lng: 139.7161, transfer: true },
+        { name: "하네다공항 T1-T2/羽田空港", lat: 35.5494, lng: 139.7792, transfer: true },
+      
+      
+      ]
+    },
+    {
+      id: "daishi-line",
+      nameKo: "다이시선",
+      nameJp: "Daishi Line",
+      color: "#666666",
+      stations: [
+        { name: "케이큐가와사키/京急川崎", lat: 35.5306, lng: 139.7, transfer: true },
+        { name: "고지마신덴/小島新田", lat: 35.5306, lng: 139.7, transfer: true },
+      ]
+    },
+    {
+      id: "zushi-line",
+      nameKo: "즈시선",
+      nameJp: "Zushi Line",
+      color: "#666666",
+      stations: [
+        { name: "가나자와핫케이/金沢八景", lat: 35.3331, lng: 139.6222, transfer: true },
+        { name: "즈시/逗子", lat: 35.2969, lng: 139.5781, transfer: true },
+        { name: "하야마/葉山", lat: 35.2708, lng: 139.5831, transfer: true },
+      
+      ]
+    },
+    {
+      id: "kurihama-line",
+      nameKo: "구리하마선",
+      nameJp: "Kurihama Line",
+      color: "#666666",
+      stations: [
+        { name: "호리노우치/堀ノ内", lat: 35.25, lng: 139.7167, transfer: true },
+        { name: "미사키구치/三崎口", lat: 35.1831, lng: 139.6331, transfer: true },
+      
+      
+      ]
+    },
+    {
+      id: "main-line",
       nameKo: "본선",
       nameJp: "Main Line",
       color: "#666666",
       stations: [
         { name: "요코하마/横浜", lat: 35.4658, lng: 139.6222, transfer: true },
         { name: "에비나/海老名", lat: 35.4481, lng: 139.3917, transfer: true },
-      
       ]
     },
     {
@@ -1168,6 +1205,16 @@ const lineData = {
       ]
     },
     {
+      id: "enoshima-line",
+      nameKo: "에노시마선",
+      nameJp: "Enoshima Line",
+      color: "#666666",
+      stations: [
+        { name: "오후나/大船", lat: 35.3533, lng: 139.5311, transfer: true },
+        { name: "쇼난에노시마/湘南江の島", lat: 35.3097, lng: 139.4831, transfer: true },
+      ]
+    },
+    {
       id: "yurikamome-line",
       nameKo: "유리카모메선",
       nameJp: "Yurikamome Line",
@@ -1228,7 +1275,6 @@ const lineData = {
       ]
     },
   ],
-
 };
 
 const TokyoMetroMap = () => {

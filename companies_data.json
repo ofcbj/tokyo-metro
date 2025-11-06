@@ -1,0 +1,493 @@
+{
+  "도쿄 메트로": [
+    {
+      "lineName": "긴자선 (Ginza Line)",
+      "startStation": "시부야 (渋谷)",
+      "endStation": "아사쿠사 (浅草)"
+    },
+    {
+      "lineName": "마루노우치선 본선 (Marunouchi Line Main)",
+      "startStation": "오기쿠보 (荻窪)",
+      "endStation": "이케부쿠로 (池袋)"
+    },
+    {
+      "lineName": "마루노우치선 지선 (Marunouchi Line Branch)",
+      "startStation": "나카노사카우에 (中野坂上)",
+      "endStation": "호난초 (方南町)"
+    },
+    {
+      "lineName": "히비야선 (Hibiya Line)",
+      "startStation": "기타센주 (北千住)",
+      "endStation": "나카메구로 (中目黒)"
+    },
+    {
+      "lineName": "도자이선 (Tozai Line)",
+      "startStation": "나카노 (中野)",
+      "endStation": "니시후나바시 (西船橋)"
+    },
+    {
+      "lineName": "치요다선 (Chiyoda Line)",
+      "startStation": "요요기우에하라 (代々木上原)",
+      "endStation": "기타아야세 (北綾瀬)"
+    },
+    {
+      "lineName": "유라쿠초선 (Yurakucho Line)",
+      "startStation": "와코시 (和光市)",
+      "endStation": "신키바 (新木場)"
+    },
+    {
+      "lineName": "한조몬선 (Hanzomon Line)",
+      "startStation": "시부야 (渋谷)",
+      "endStation": "오시아게 (押上)"
+    },
+    {
+      "lineName": "난보쿠선 (Namboku Line)",
+      "startStation": "메구로 (目黒)",
+      "endStation": "아카바네이와부치 (赤羽岩淵)"
+    },
+    {
+      "lineName": "후쿠토신선 (Fukutoshin Line)",
+      "startStation": "와코시 (和光市)",
+      "endStation": "시부야 (渋谷)"
+    }
+  ],
+  "도쿄도 교통국": [
+    {
+      "lineName": "아사쿠사선 (Asakusa Line)",
+      "startStation": "니시마고메 (西馬込)",
+      "endStation": "오시아게 (押上)"
+    },
+    {
+      "lineName": "미타선 (Mita Line)",
+      "startStation": "메구로 (目黒)",
+      "endStation": "니시타카시마다이라 (西高島平)"
+    },
+    {
+      "lineName": "신주쿠선 (Shinjuku Line)",
+      "startStation": "신주쿠 (新宿)",
+      "endStation": "모토야와타 (本八幡)"
+    },
+    {
+      "lineName": "오에도선 (Oedo Line Loop)",
+      "startStation": "도초마에 (都庁前)",
+      "endStation": "히카리가오카 (光が丘)"
+    },
+    {
+      "lineName": "닛포리-토네리 라이너 (Nippori-Toneri Liner)",
+      "startStation": "닛포리 (日暮里)",
+      "endStation": "미누마다이신스이코엔 (見沼代親水公園)"
+    }
+  ],
+  "JR 동일본": [
+    {
+      "lineName": "야마노테선 (Yamanote Line Loop)",
+      "startStation": "순환선",
+      "endStation": "순환선"
+    },
+    {
+      "lineName": "주오선 쾌속 (Chuo Rapid Line)",
+      "startStation": "도쿄 (東京)",
+      "endStation": "다카오 (高尾)"
+    },
+    {
+      "lineName": "주오-소부선 각역정차 (Chuo-Sobu Local Line)",
+      "startStation": "치바 (千葉)",
+      "endStation": "미타카 (三鷹)"
+    },
+    {
+      "lineName": "소부선 쾌속 (Sobu Rapid Line)",
+      "startStation": "도쿄 (東京)",
+      "endStation": "치바 (千葉)"
+    },
+    {
+      "lineName": "조반선 각역정차 (Joban Line Local)",
+      "startStation": "우에노 (上野)",
+      "endStation": "도리데 (取手)"
+    },
+    {
+      "lineName": "조반선 쾌속 (Joban Line Rapid)",
+      "startStation": "우에노 (上野)",
+      "endStation": "아비코 (我孫子)"
+    },
+    {
+      "lineName": "게이힌토호쿠선 (Keihin-Tohoku Line)",
+      "startStation": "오미야 (大宮)",
+      "endStation": "오후나 (大船)"
+    },
+    {
+      "lineName": "요코스카선 (Yokosuka Line)",
+      "startStation": "도쿄 (東京)",
+      "endStation": "구리하마 (久里浜)"
+    },
+    {
+      "lineName": "사이쿄선 (Saikyo Line)",
+      "startStation": "오사키 (大崎)",
+      "endStation": "오미야 (大宮)"
+    },
+    {
+      "lineName": "쇼난신주쿠라인 (Shonan-Shinjuku Line)",
+      "startStation": "오사키 (大崎)",
+      "endStation": "우쓰노미야/오다와라 (宇都宮/小田原)"
+    },
+    {
+      "lineName": "무사시노선 (Musashino Line)",
+      "startStation": "후추혼마치 (府中本町)",
+      "endStation": "니시후나바시 (西船橋)"
+    },
+    {
+      "lineName": "난부선 (Nambu Line)",
+      "startStation": "다치카와 (立川)",
+      "endStation": "가와사키 (川崎)"
+    },
+    {
+      "lineName": "요코하마선 (Yokohama Line)",
+      "startStation": "히가시카나가와 (東神奈川)",
+      "endStation": "하치오지 (八王子)"
+    },
+    {
+      "lineName": "게이요선 (Keiyo Line)",
+      "startStation": "도쿄 (東京)",
+      "endStation": "소가 (蘇我)"
+    },
+    {
+      "lineName": "하치코선 남부 (Hachiko Line South)",
+      "startStation": "하치오지 (八王子)",
+      "endStation": "고마가와 (高麗川)"
+    },
+    {
+      "lineName": "오메선 (Ome Line)",
+      "startStation": "다치카와 (立川)",
+      "endStation": "오쿠타마 (奥多摩)"
+    },
+    {
+      "lineName": "이쓰카이치선 (Itsukaichi Line)",
+      "startStation": "하이지마 (拝島)",
+      "endStation": "무사시이쓰카이치 (武蔵五日市)"
+    },
+    {
+      "lineName": "가와고에선 (Kawagoe Line)",
+      "startStation": "오미야 (大宮)",
+      "endStation": "가와고에 (川越)"
+    },
+    {
+      "lineName": "도카이도선 간토 (Tokaido Main Line Kanto)",
+      "startStation": "도쿄 (東京)",
+      "endStation": "아타미 (熱海)"
+    },
+    {
+      "lineName": "네기시선 (Negishi Line)",
+      "startStation": "요코하마 (横浜)",
+      "endStation": "오후나 (大船)"
+    }
+  ],
+  "도큐전철": [
+    {
+      "lineName": "도요코선 (Toyoko Line)",
+      "startStation": "시부야 (渋谷)",
+      "endStation": "요코하마 (横浜)"
+    },
+    {
+      "lineName": "덴엔토시선 (Den-en-toshi Line)",
+      "startStation": "시부야 (渋谷)",
+      "endStation": "주오린칸 (中央林間)"
+    },
+    {
+      "lineName": "메구로선 (Meguro Line)",
+      "startStation": "메구로 (目黒)",
+      "endStation": "히요시 (日吉)"
+    },
+    {
+      "lineName": "오이마치선 (Oimachi Line)",
+      "startStation": "오이마치 (大井町)",
+      "endStation": "미조노구치 (溝の口)"
+    },
+    {
+      "lineName": "이케가미선 (Ikegami Line)",
+      "startStation": "고탄다 (五反田)",
+      "endStation": "가마타 (蒲田)"
+    },
+    {
+      "lineName": "다마가와선 (Tamagawa Line)",
+      "startStation": "가마타 (蒲田)",
+      "endStation": "다마가와 (多摩川)"
+    },
+    {
+      "lineName": "세타가야선 (Setagaya Line)",
+      "startStation": "산겐자야 (三軒茶屋)",
+      "endStation": "시모타카이도 (下高井戸)"
+    }
+  ],
+  "케이오전철": [
+    {
+      "lineName": "케이오선 (Keio Line)",
+      "startStation": "신주쿠 (新宿)",
+      "endStation": "게이오하치오지 (京王八王子)"
+    },
+    {
+      "lineName": "케이오신선 (Keio New Line)",
+      "startStation": "신주쿠 (新宿)",
+      "endStation": "사사즈카 (笹塚)"
+    },
+    {
+      "lineName": "사가미하라선 (Sagamihara Line)",
+      "startStation": "조후 (調布)",
+      "endStation": "하시모토 (橋本)"
+    },
+    {
+      "lineName": "다카오선 (Takao Line)",
+      "startStation": "키타노 (北野)",
+      "endStation": "다카오산구치 (高尾山口)"
+    },
+    {
+      "lineName": "도부쓰엔선 (Dobutsuen Line)",
+      "startStation": "다카하타후도 (高幡不動)",
+      "endStation": "다마도부쓰코엔 (多摩動物公園)"
+    },
+    {
+      "lineName": "게이바조선 (Keibajyo Line)",
+      "startStation": "히가시후추 (東府中)",
+      "endStation": "후추케이바조마에 (府中競馬正門前)"
+    },
+    {
+      "lineName": "이노카시라선 (Inokashira Line)",
+      "startStation": "시부야 (渋谷)",
+      "endStation": "기치조지 (吉祥寺)"
+    }
+  ],
+  "오다큐전철": [
+    {
+      "lineName": "오다와라선 (Odawara Line)",
+      "startStation": "신주쿠 (新宿)",
+      "endStation": "오다와라 (小田原)"
+    },
+    {
+      "lineName": "에노시마선 (Enoshima Line)",
+      "startStation": "사가미오노 (相模大野)",
+      "endStation": "가타세에노시마 (片瀬江ノ島)"
+    },
+    {
+      "lineName": "다마선 (Tama Line)",
+      "startStation": "신유리가오카 (新百合ヶ丘)",
+      "endStation": "가라키다 (唐木田)"
+    }
+  ],
+  "세이부철도": [
+    {
+      "lineName": "이케부쿠로선 (Ikebukuro Line)",
+      "startStation": "이케부쿠로 (池袋)",
+      "endStation": "한노 (飯能)"
+    },
+    {
+      "lineName": "세이부치치부선 (Seibu-Chichibu Line)",
+      "startStation": "아가노 (吾野)",
+      "endStation": "세이부치치부 (西武秩父)"
+    },
+    {
+      "lineName": "신주쿠선 (Shinjuku Line)",
+      "startStation": "세이부신주쿠 (西武新宿)",
+      "endStation": "혼카와고에 (本川越)"
+    },
+    {
+      "lineName": "하이지마선 (Haijima Line)",
+      "startStation": "고다이라 (小平)",
+      "endStation": "하이지마 (拝島)"
+    },
+    {
+      "lineName": "다마가와선 (Tamagawa Line)",
+      "startStation": "무사시사카이 (武蔵境)",
+      "endStation": "고레마사 (是政)"
+    },
+    {
+      "lineName": "다마코선 (Tamako Line)",
+      "startStation": "고쿠분지 (国分寺)",
+      "endStation": "세이부유엔치 (西武遊園地)"
+    },
+    {
+      "lineName": "세이부엔선 (Seikouen Line)",
+      "startStation": "히가시무라야마 (東村山)",
+      "endStation": "세이부유엔치 (西武遊園地)"
+    },
+    {
+      "lineName": "도시마엔선 (Toshimaen Line)",
+      "startStation": "네리마 (練馬)",
+      "endStation": "도시마엔 (豊島園)"
+    }
+  ],
+  "도부철도": [
+    {
+      "lineName": "도부도조선 (Tobu Tojo Line)",
+      "startStation": "이케부쿠로 (池袋)",
+      "endStation": "요리이 (寄居)"
+    },
+    {
+      "lineName": "이세사키선/스카이트리라인 (Isesaki Line/Skytree Line)",
+      "startStation": "아사쿠사 (浅草)",
+      "endStation": "도치기 (栃木)"
+    },
+    {
+      "lineName": "도부어반파크라인/노다선 (Tobu Urban Park Line/Noda)",
+      "startStation": "오미야 (大宮)",
+      "endStation": "후나바시 (船橋)"
+    },
+    {
+      "lineName": "가메이도선 (Kameido Line)",
+      "startStation": "가메이도 (亀戸)",
+      "endStation": "가메이도스이진 (亀戸水神)"
+    },
+    {
+      "lineName": "다이시선 (Daishi Line)",
+      "startStation": "니시아라이 (西新井)",
+      "endStation": "다이시마에 (大師前)"
+    }
+  ],
+  "케이세이전철": [
+    {
+      "lineName": "본선 (Main Line)",
+      "startStation": "케이세이우에노 (京成上野)",
+      "endStation": "나리타공항 T1"
+    },
+    {
+      "lineName": "오시아게선 (Oshiage Line)",
+      "startStation": "오시아게 (押上)",
+      "endStation": "아오토 (青砥)"
+    },
+    {
+      "lineName": "히가시나리타선 (Higashi-Narita Line)",
+      "startStation": "케이세이나리타 (京成成田)",
+      "endStation": "히가시나리타 (東成田)"
+    },
+    {
+      "lineName": "나리타스카이액세스선 (Narita Sky Access Line)",
+      "startStation": "아오토 (青砥)",
+      "endStation": "나리타공항 T2-T3"
+    }
+  ],
+  "케이큐전철": [
+    {
+      "lineName": "본선 (Main Line)",
+      "startStation": "시나가와 (品川)",
+      "endStation": "우라가 (浦賀)"
+    },
+    {
+      "lineName": "공항선 (Airport Line)",
+      "startStation": "케이큐가마타 (京急蒲田)",
+      "endStation": "하네다공항 T1-T2"
+    },
+    {
+      "lineName": "다이시선 (Daishi Line)",
+      "startStation": "케이큐가와사키 (京急川崎)",
+      "endStation": "고지마신덴 (小島新田)"
+    },
+    {
+      "lineName": "즈시선 (Zushi Line)",
+      "startStation": "가나자와핫케이 (金沢八景)",
+      "endStation": "즈시/하야마 (逗子/葉山)"
+    },
+    {
+      "lineName": "구리하마선 (Kurihama Line)",
+      "startStation": "호리노우치 (堀ノ内)",
+      "endStation": "미사키구치 (三崎口)"
+    }
+  ],
+  "소테쓰": [
+    {
+      "lineName": "본선 (Main Line)",
+      "startStation": "요코하마 (横浜)",
+      "endStation": "에비나 (海老名)"
+    },
+    {
+      "lineName": "이즈미노선 (Izumino Line)",
+      "startStation": "후타마타가와 (二俣川)",
+      "endStation": "쇼난다이 (湘南台)"
+    }
+  ],
+  "요코하마 미나토미라이": [
+    {
+      "lineName": "미나토미라이선 (Minatomirai Line)",
+      "startStation": "요코하마 (横浜)",
+      "endStation": "모토마치추카가이 (元町・中華街)"
+    }
+  ],
+  "요코하마 시 교통국": [
+    {
+      "lineName": "블루라인 (Blue Line)",
+      "startStation": "쇼난다이 (湘南台)",
+      "endStation": "아자미노 (あざみ野)"
+    },
+    {
+      "lineName": "그린라인 (Green Line)",
+      "startStation": "나카야마 (中山)",
+      "endStation": "히요시 (日吉)"
+    }
+  ],
+  "도쿄 임해고속철도": [
+    {
+      "lineName": "린카이선 (Rinkai Line)",
+      "startStation": "오사키 (大崎)",
+      "endStation": "신키바 (新木場)"
+    }
+  ],
+  "수도권신도시철도": [
+    {
+      "lineName": "츠쿠바 익스프레스 (Tsukuba Express)",
+      "startStation": "아키하바라 (秋葉原)",
+      "endStation": "츠쿠바 (つくば)"
+    }
+  ],
+  "도쿄 모노레일": [
+    {
+      "lineName": "하네다공항선 (Haneda Airport Line)",
+      "startStation": "하마마쓰초 (浜松町)",
+      "endStation": "하네다공항 T2"
+    }
+  ],
+  "도쿄 도시 모노레일": [
+    {
+      "lineName": "다마 모노레일 (Tama Monorail Line)",
+      "startStation": "가미키타다이 (上北台)",
+      "endStation": "다마센터 (多摩センター)"
+    }
+  ],
+  "쇼난 모노레일": [
+    {
+      "lineName": "에노시마선 (Enoshima Line)",
+      "startStation": "오후나 (大船)",
+      "endStation": "쇼난에노시마 (湘南江の島)"
+    }
+  ],
+  "유리카모메": [
+    {
+      "lineName": "유리카모메선 (Yurikamome Line)",
+      "startStation": "신바시 (新橋)",
+      "endStation": "도요스 (豊洲)"
+    }
+  ],
+  "사이타마 고속철도": [
+    {
+      "lineName": "사이타마 고속철도선 (Saitama Rapid Railway Line)",
+      "startStation": "아카바네이와부치 (赤羽岩淵)",
+      "endStation": "미소노 (美園)"
+    }
+  ],
+  "뉴 셔틀": [
+    {
+      "lineName": "이나선/뉴 셔틀 (Ina Line/New Shuttle)",
+      "startStation": "오미야 (大宮)",
+      "endStation": "우치주쿠 (内宿)"
+    }
+  ],
+  "호쿠소 철도": [
+    {
+      "lineName": "호쿠소선 (Hokuso Line)",
+      "startStation": "게이세이다카사고 (京成高砂)",
+      "endStation": "인바니혼이다이 (印旛日本医大)"
+    }
+  ],
+  "도요 고속철도": [
+    {
+      "lineName": "도요 고속선 (Toyo Rapid Line)",
+      "startStation": "니시후나바시 (西船橋)",
+      "endStation": "도요카쓰다이 (東葉勝田台)"
+    }
+  ]
+}
