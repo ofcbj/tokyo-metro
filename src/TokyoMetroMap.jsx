@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Search, X, Train } from 'lucide-react';
-import { loadExcelData } from './utils/excelLoader';
 
-// 기본 노선 데이터 (Excel 로드 실패 시 사용)
-const defaultLineData = {
+// 노선 데이터
+const lineData = {
   "도쿄메트로": [
     {
       id: "ginza",
@@ -297,37 +296,10 @@ const TokyoMetroMap = () => {
   const [apiKey, setApiKey] = useState('');
   const [showApiInput, setShowApiInput] = useState(true);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
-  const [lineData, setLineData] = useState(defaultLineData);
-  const [isLoadingData, setIsLoadingData] = useState(true);
   const mapRef = useRef(null);
   const googleMapRef = useRef(null);
   const markersRef = useRef([]);
   const polylinesRef = useRef([]);
-
-  // Excel 파일 로드
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        setIsLoadingData(true);
-        const data = await loadExcelData('/tokyo_metro.xlsx');
-        if (data && Object.keys(data).length > 0) {
-          setLineData(data);
-          console.log('Excel 데이터 로드 성공:', data);
-        } else {
-          console.warn('Excel 데이터가 비어있습니다. 기본 데이터를 사용합니다.');
-          setLineData(defaultLineData);
-        }
-      } catch (error) {
-        console.error('Excel 파일 로드 실패:', error);
-        console.log('기본 데이터를 사용합니다.');
-        setLineData(defaultLineData);
-      } finally {
-        setIsLoadingData(false);
-      }
-    };
-
-    loadData();
-  }, []);
 
   // 검색 및 필터링된 노선 데이터
   const filteredLineData = Object.entries(lineData).reduce((acc, [operator, lines]) => {
@@ -344,39 +316,8 @@ const TokyoMetroMap = () => {
     return acc;
   }, {});
 
-  // Google Maps 스크립트 로드
-  useEffect(() => {
-    if (!apiKey) return;
-
-    // 이미 로드되어 있는지 확인
-    if (window.google && window.google.maps) {
-      setTimeout(() => initMap(), 100);
-      return;
-    }
-
-    // 전역 콜백 함수 설정
-    window.initGoogleMap = () => {
-      console.log('Google Maps API loaded');
-      setTimeout(() => initMap(), 100);
-    };
-
-    // 스크립트 로드
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initGoogleMap&language=ja&v=weekly`;
-    script.async = true;
-    script.defer = true;
-    
-    script.onerror = (error) => {
-      console.error('Google Maps loading failed:', error);
-      alert('Google Maps를 불러오는데 실패했습니다. API 키를 확인하거나 콘솔을 확인해주세요.');
-      setShowApiInput(true);
-      setIsMapLoaded(false);
-    };
-
-    document.head.appendChild(script);
-  }, [apiKey]);
-
-  const initMap = () => {
+  // Google Maps 초기화 함수
+  const initMap = useCallback(() => {
     if (!mapRef.current) {
       console.error('Map container not found');
       return;
@@ -411,8 +352,90 @@ const TokyoMetroMap = () => {
     } catch (error) {
       console.error('Map initialization failed:', error);
       alert('지도 초기화에 실패했습니다: ' + error.message);
+      setIsMapLoaded(false);
     }
-  };
+  }, []);
+
+  // Google Maps 스크립트 로드
+  useEffect(() => {
+    if (!apiKey || showApiInput) {
+      console.log('API key or showApiInput check:', { apiKey, showApiInput });
+      return;
+    }
+
+    console.log('Starting Google Maps load...');
+
+    // 전역 콜백 함수 설정
+    window.initGoogleMap = () => {
+      console.log('Google Maps API loaded, initializing map...');
+      // 지도 컨테이너가 준비될 때까지 대기
+      const checkAndInit = () => {
+        if (mapRef.current) {
+          initMap();
+        } else {
+          console.log('Map container not ready, retrying...');
+          setTimeout(checkAndInit, 100);
+        }
+      };
+      setTimeout(checkAndInit, 100);
+    };
+
+    // 이미 로드되어 있는지 확인
+    if (window.google && window.google.maps) {
+      console.log('Google Maps already loaded');
+      const checkAndInit = () => {
+        if (mapRef.current) {
+          initMap();
+        } else {
+          setTimeout(checkAndInit, 100);
+        }
+      };
+      setTimeout(checkAndInit, 100);
+      return;
+    }
+
+    // 기존 스크립트가 있는지 확인
+    const existingScript = document.querySelector('script[src*="maps.googleapis.com"]');
+    if (existingScript) {
+      console.log('Script already exists, waiting for API...');
+      // 스크립트가 있지만 아직 로드되지 않았을 수 있음
+      const checkLoaded = setInterval(() => {
+        if (window.google && window.google.maps) {
+          clearInterval(checkLoaded);
+          const checkAndInit = () => {
+            if (mapRef.current) {
+              initMap();
+            } else {
+              setTimeout(checkAndInit, 100);
+            }
+          };
+          setTimeout(checkAndInit, 100);
+        }
+      }, 100);
+      
+      // 10초 후 타임아웃
+      setTimeout(() => {
+        clearInterval(checkLoaded);
+      }, 10000);
+      return;
+    }
+
+    // 스크립트 로드
+    console.log('Loading Google Maps script...');
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initGoogleMap&language=ja&v=weekly`;
+    script.async = true;
+    script.defer = true;
+    
+    script.onerror = (error) => {
+      console.error('Google Maps loading failed:', error);
+      alert('Google Maps를 불러오는데 실패했습니다. API 키를 확인하거나 콘솔을 확인해주세요.');
+      setShowApiInput(true);
+      setIsMapLoaded(false);
+    };
+
+    document.head.appendChild(script);
+  }, [apiKey, showApiInput, initMap]);
 
   // 노선 토글
   const toggleLine = (lineId) => {
@@ -425,7 +448,7 @@ const TokyoMetroMap = () => {
 
   // 지도에 노선 표시
   useEffect(() => {
-    if (!googleMapRef.current || !lineData) return;
+    if (!googleMapRef.current) return;
 
     // 기존 마커와 폴리라인 제거
     markersRef.current.forEach(marker => marker.setMap(null));
@@ -498,17 +521,6 @@ const TokyoMetroMap = () => {
       googleMapRef.current.fitBounds(bounds);
     }
   }, [selectedLines]);
-
-  if (isLoadingData) {
-    return (
-      <div className="flex items-center justify-center h-screen bg-gray-50">
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">데이터를 불러오는 중...</p>
-        </div>
-      </div>
-    );
-  }
 
   if (showApiInput) {
     return (
