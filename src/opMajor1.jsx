@@ -1038,6 +1038,20 @@ export const opMajor1 = {
           lng: 139.620116,
           transfer: true,
         },
+      ]
+    },
+    {
+      id: "280021",
+      nameKo: "마루노우치선 (호난초지선)",
+      nameJp: "東京メトロ丸ノ内線（方南町支線）",
+      color: "#F62E36",
+      stations: [
+        {
+          name: "中野坂上",
+          lat: 35.69792,
+          lng: 139.68291,
+          transfer: true,
+        },
         {
           name: "中野新橋",
           lat: 35.692123,
