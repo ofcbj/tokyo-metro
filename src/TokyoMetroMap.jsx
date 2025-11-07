@@ -160,11 +160,33 @@ const TokyoMetroMap = () => {
 
   // 노선 토글
   const toggleLine = (lineId) => {
-    setSelectedLines(prev => 
-      prev.includes(lineId) 
+    setSelectedLines(prev =>
+      prev.includes(lineId)
         ? prev.filter(id => id !== lineId)
         : [...prev, lineId]
     );
+  };
+
+  // 특정 역을 지나가는 모든 노선 찾기
+  const findLinesForStation = (stationName) => {
+    const lines = [];
+    Object.values(lineData).flat().forEach(line => {
+      const hasStation = line.stations.some(station => station.name === stationName);
+      if (hasStation) {
+        lines.push(line.id);
+      }
+    });
+    return lines;
+  };
+
+  // 역을 클릭했을 때 해당 역의 모든 노선 선택
+  const selectLinesForStation = (stationName) => {
+    const lineIds = findLinesForStation(stationName);
+    setSelectedLines(prev => {
+      // 새로운 노선들을 추가 (중복 제거)
+      const newLines = [...new Set([...prev, ...lineIds])];
+      return newLines;
+    });
   };
 
   // 지도에 노선 표시
@@ -202,7 +224,7 @@ const TokyoMetroMap = () => {
         const marker = new window.google.maps.Marker({
           position: { lat: station.lat, lng: station.lng },
           map: googleMapRef.current,
-          title: station.name,
+          title: `${station.name} (${line.nameKo})`,
           icon: {
             path: window.google.maps.SymbolPath.CIRCLE,
             scale: station.transfer ? 8 : 5,
@@ -223,6 +245,10 @@ const TokyoMetroMap = () => {
 
         marker.addListener('click', () => {
           infoWindow.open(googleMapRef.current, marker);
+          // 환승역이면 해당 역의 모든 노선 선택
+          if (station.transfer) {
+            selectLinesForStation(station.name);
+          }
         });
 
         markersRef.current.push(marker);
