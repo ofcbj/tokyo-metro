@@ -74,7 +74,7 @@ const TokyoMetroMap = () => {
       
     } catch (error) {
       console.error('Map initialization failed:', error);
-      alert('지도 초기화에 실패했습니다: ' + error.message);
+      alert('地図の初期化に失敗しました: ' + error.message);
       setIsMapLoaded(false);
     }
   }, []);
@@ -152,7 +152,7 @@ const TokyoMetroMap = () => {
     
     script.onerror = (error) => {
       console.error('Google Maps loading failed:', error);
-      alert('Google Maps를 불러오는데 실패했습니다. API 키를 확인하거나 콘솔을 확인해주세요.');
+      alert('Google Mapsの読み込みに失敗しました。APIキーを確認するか、コンソールを確認してください。');
       setShowApiInput(true);
       setIsMapLoaded(false);
     };
@@ -287,7 +287,7 @@ const TokyoMetroMap = () => {
         const marker = new window.google.maps.Marker({
           position: { lat: station.lat, lng: station.lng },
           map: null, // 처음엔 지도에 표시하지 않음
-          title: `${station.name} (${line.nameKo})`,
+          title: `${station.name} (${line.nameJp})`,
           icon: {
             path: window.google.maps.SymbolPath.CIRCLE,
             scale: station.transfer ? 8 : 5,
@@ -301,8 +301,8 @@ const TokyoMetroMap = () => {
         const infoWindow = new window.google.maps.InfoWindow({
           content: `<div style="padding: 8px;">
             <strong>${station.name}</strong><br/>
-            <span style="color: ${line.color}">● ${line.nameKo} / ${line.nameJp}</span>
-            ${station.transfer ? '<br/><span style="color: #666;">환승역</span>' : ''}
+            <span style="color: ${line.color}">● ${line.nameJp} / ${line.nameKo}</span>
+            ${station.transfer ? '<br/><span style="color: #666;">乗換駅</span>' : ''}
           </div>`
         });
 
@@ -353,10 +353,10 @@ const TokyoMetroMap = () => {
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
           <div className="flex items-center gap-2 mb-4">
             <Train className="w-8 h-8 text-blue-600" />
-            <h1 className="text-2xl font-bold">일본 수도권 전철 지도</h1>
+            <h1 className="text-2xl font-bold">日本首都圏電鉄地図</h1>
           </div>
           <p className="text-gray-600 mb-4">
-            Google Maps API 키를 입력해주세요.
+            Google Maps APIキーを入力してください。
           </p>
           <input
             type="text"
@@ -366,7 +366,7 @@ const TokyoMetroMap = () => {
             className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <p className="text-sm text-gray-500 mb-4">
-            API 키는{' '}
+            APIキーは{' '}
             <a 
               href="https://developers.google.com/maps/documentation/javascript/get-api-key"
               target="_blank"
@@ -375,19 +375,19 @@ const TokyoMetroMap = () => {
             >
               Google Cloud Console
             </a>
-            에서 발급받을 수 있습니다.
+            で発行できます。
           </p>
           <button
             onClick={() => {
               if (apiKey.trim()) {
                 setShowApiInput(false);
               } else {
-                alert('API 키를 입력해주세요.');
+                alert('APIキーを入力してください。');
               }
             }}
             className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
-            시작하기
+            開始
           </button>
         </div>
       </div>
@@ -401,7 +401,7 @@ const TokyoMetroMap = () => {
         <div className="p-4 border-b sticky top-0 bg-white z-10">
           <div className="flex items-center gap-2 mb-4">
             <Train className="w-6 h-6 text-blue-600" />
-            <h1 className="text-xl font-bold">일본 수도권 전철</h1>
+            <h1 className="text-xl font-bold">日本首都圏電鉄</h1>
           </div>
           
           {/* 검색 */}
@@ -409,7 +409,7 @@ const TokyoMetroMap = () => {
             <Search className="absolute left-3 top-2.5 w-5 h-5 text-gray-400" />
             <input
               type="text"
-              placeholder="노선 검색..."
+              placeholder="路線検索..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -434,7 +434,7 @@ const TokyoMetroMap = () => {
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
-              전체
+              全て
             </button>
             {Object.keys(lineData).map(operator => (
               <button
@@ -460,19 +460,19 @@ const TokyoMetroMap = () => {
                 onChange={(e) => setAutoZoom(e.target.checked)}
                 className="w-4 h-4 text-blue-600 rounded focus:ring-2 focus:ring-blue-500"
               />
-              <span className="text-sm text-gray-700">라인 선택 시 자동 줌</span>
+              <span className="text-sm text-gray-700">路線選択時自動ズーム</span>
             </label>
           </div>
 
           {/* 선택된 노선 수 */}
           {selectedLines.length > 0 && (
             <div className="mt-4 text-sm text-gray-600">
-              {selectedLines.length}개 노선 선택됨
+              {selectedLines.length}路線選択中
               <button
                 onClick={() => setSelectedLines([])}
                 className="ml-2 text-blue-600 hover:underline"
               >
-                모두 해제
+                全て解除
               </button>
             </div>
           )}
@@ -500,11 +500,11 @@ const TokyoMetroMap = () => {
                         style={{ backgroundColor: line.color }}
                       />
                       <div className="flex-1 min-w-0">
-                        <div className="font-medium text-gray-900">{line.nameKo}</div>
-                        <div className="text-sm text-gray-600">{line.nameJp}</div>
+                        <div className="font-medium text-gray-900">{line.nameJp}</div>
+                        <div className="text-sm text-gray-600">{line.nameKo}</div>
                       </div>
                       <div className="text-xs text-gray-500 flex-shrink-0">
-                        {line.stations.length}개역
+                        {line.stations.length}駅
                       </div>
                     </div>
                   </button>
@@ -515,7 +515,7 @@ const TokyoMetroMap = () => {
 
           {Object.keys(filteredLineData).length === 0 && (
             <div className="text-center py-8 text-gray-500">
-              검색 결과가 없습니다.
+              検索結果がありません。
             </div>
           )}
         </div>
@@ -529,8 +529,8 @@ const TokyoMetroMap = () => {
           <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-              <p className="text-gray-600">지도를 불러오는 중...</p>
-              <p className="text-sm text-gray-500 mt-2">잠시만 기다려주세요</p>
+              <p className="text-gray-600">地図を読み込み中...</p>
+              <p className="text-sm text-gray-500 mt-2">少々お待ちください</p>
             </div>
           </div>
         )}
@@ -538,7 +538,7 @@ const TokyoMetroMap = () => {
         {isMapLoaded && selectedLines.length === 0 && (
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-5 pointer-events-none">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <p className="text-gray-600">왼쪽에서 노선을 선택하면 지도에 표시됩니다</p>
+              <p className="text-gray-600">左側から路線を選択すると地図に表示されます</p>
             </div>
           </div>
         )}
