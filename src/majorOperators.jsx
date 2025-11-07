@@ -2648,7 +2648,6 @@ export const majorOperators = {
           name: "鶯谷",
           lat: 35.721484,
           lng: 139.778015,
-          transfer: true
         },
         {
           name: "上野",

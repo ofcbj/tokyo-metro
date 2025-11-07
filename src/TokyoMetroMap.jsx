@@ -17,6 +17,7 @@ const TokyoMetroMap = () => {
   const [showApiInput, setShowApiInput] = useState(true);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
   const [autoZoom, setAutoZoom] = useState(true); // 자동 줌 토글 상태
+  const [shouldPanOnNextUpdate, setShouldPanOnNextUpdate] = useState(false); // 팬 이동 여부 제어
   const mapRef = useRef(null);
   const googleMapRef = useRef(null);
   const markersRef = useRef([]);
@@ -159,8 +160,9 @@ const TokyoMetroMap = () => {
     document.head.appendChild(script);
   }, [apiKey, showApiInput, initMap]);
 
-  // 노선 토글
+  // 노선 토글 (사이드바에서 클릭 시)
   const toggleLine = (lineId) => {
+    setShouldPanOnNextUpdate(true); // 사이드바 클릭이므로 팬 이동 허용
     setSelectedLines(prev =>
       prev.includes(lineId)
         ? prev.filter(id => id !== lineId)
@@ -180,14 +182,25 @@ const TokyoMetroMap = () => {
     return lines;
   };
 
-  // 역을 클릭했을 때 해당 역의 모든 노선 선택
+  // 역을 클릭했을 때 해당 역의 모든 노선 선택 및 애니메이션 재생
   const selectLinesForStation = (stationName) => {
     const lineIds = findLinesForStation(stationName);
+    setShouldPanOnNextUpdate(false); // 역 클릭이므로 팬 이동 금지
     setSelectedLines(prev => {
-      // 새로운 노선들을 추가 (중복 제거)
-      const newLines = [...new Set([...prev, ...lineIds])];
-      return newLines;
+      // 해당 역의 노선들을 먼저 제거
+      const withoutStationLines = prev.filter(id => !lineIds.includes(id));
+      return withoutStationLines;
     });
+
+    // 짧은 지연 후 다시 추가하여 애니메이션 재생
+    setTimeout(() => {
+      setShouldPanOnNextUpdate(false); // 역 클릭이므로 팬 이동 금지
+      setSelectedLines(prev => {
+        // 노선들을 다시 추가 (중복 제거)
+        const newLines = [...new Set([...prev, ...lineIds])];
+        return newLines;
+      });
+    }, 50);
   };
 
   // 지도에 노선 표시
@@ -294,10 +307,8 @@ const TokyoMetroMap = () => {
         });
 
         marker.addListener('click', () => {
-          // 환승역이면 해당 역의 모든 노선 선택
-          if (station.transfer) {
-            selectLinesForStation(station.name);
-          }
+          // 해당 역의 모든 노선을 선택하고 애니메이션 재생
+          selectLinesForStation(station.name);
         });
 
         // 라인 애니메이션과 동기화하여 마커 표시
@@ -310,8 +321,8 @@ const TokyoMetroMap = () => {
       });
     });
 
-    // 자동 줌이 활성화되어 있고 새로 선택된 노선이 있으면 지도 이동 (줌 변경 없이)
-    if (autoZoom && newLines.length > 0) {
+    // 자동 줌이 활성화되어 있고, 팬 이동이 허용되고, 새로 선택된 노선이 있으면 지도 이동 (줌 변경 없이)
+    if (autoZoom && shouldPanOnNextUpdate && newLines.length > 0) {
       // 가장 최근에 추가된 노선 가져오기
       const mostRecentLineId = newLines[newLines.length - 1];
       const recentLine = Object.values(lineData).flat().find(line => line.id === mostRecentLineId);
@@ -329,9 +340,12 @@ const TokyoMetroMap = () => {
       }
     }
 
+    // 팬 이동 플래그 리셋
+    setShouldPanOnNextUpdate(false);
+
     // 현재 선택을 이전 선택으로 저장
     previousSelectedLinesRef.current = [...selectedLines];
-  }, [selectedLines, autoZoom]);
+  }, [selectedLines, autoZoom, shouldPanOnNextUpdate]);
 
   if (showApiInput) {
     return (
