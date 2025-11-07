@@ -21,6 +21,7 @@ const TokyoMetroMap = () => {
   const googleMapRef = useRef(null);
   const markersRef = useRef([]);
   const polylinesRef = useRef([]);
+  const previousSelectedLinesRef = useRef([]); // 이전에 선택된 라인 추적
 
   // 검색 및 필터링된 노선 데이터
   const filteredLineData = Object.entries(lineData).reduce((acc, [operator, lines]) => {
@@ -193,37 +194,86 @@ const TokyoMetroMap = () => {
   useEffect(() => {
     if (!googleMapRef.current) return;
 
-    // 기존 마커와 폴리라인 제거
-    markersRef.current.forEach(marker => marker.setMap(null));
-    polylinesRef.current.forEach(polyline => polyline.setMap(null));
-    markersRef.current = [];
-    polylinesRef.current = [];
+    // 이전 선택과 현재 선택 비교
+    const previousLines = previousSelectedLinesRef.current;
+    const removedLines = previousLines.filter(id => !selectedLines.includes(id));
+    const newLines = selectedLines.filter(id => !previousLines.includes(id));
 
-    // 선택된 노선만 표시
+    // 제거된 라인의 마커와 폴리라인만 제거
+    markersRef.current = markersRef.current.filter(marker => {
+      const shouldKeep = selectedLines.some(lineId =>
+        Object.values(lineData).flat().some(line =>
+          line.id === lineId &&
+          line.stations.some(s =>
+            s.lat === marker.getPosition().lat() &&
+            s.lng === marker.getPosition().lng()
+          )
+        )
+      );
+      if (!shouldKeep) {
+        marker.setMap(null);
+      }
+      return shouldKeep;
+    });
+
+    polylinesRef.current = polylinesRef.current.filter(polyline => {
+      // polyline에 lineId를 저장해둔 경우
+      const shouldKeep = selectedLines.includes(polyline.lineId);
+      if (!shouldKeep) {
+        polyline.setMap(null);
+      }
+      return shouldKeep;
+    });
+
+    // 새로 선택된 노선만 표시
+    let newLineIndex = 0;
     Object.values(lineData).flat().forEach(line => {
-      if (!selectedLines.includes(line.id)) return;
+      if (!newLines.includes(line.id)) return;
 
-      // 노선 그리기
+      // 노선 그리기 (애니메이션 효과)
       const path = line.stations.map(station => ({
         lat: station.lat,
         lng: station.lng
       }));
 
+      // 처음에는 빈 경로로 polyline 생성
       const polyline = new window.google.maps.Polyline({
-        path: path,
+        path: [],
         geodesic: true,
         strokeColor: line.color,
         strokeOpacity: 0.8,
         strokeWeight: 4,
         map: googleMapRef.current
       });
+      polyline.lineId = line.id; // lineId 저장
       polylinesRef.current.push(polyline);
 
-      // 역 마커 추가
-      line.stations.forEach(station => {
+      // 애니메이션으로 경로 그리기
+      const animationDuration = 800; // 800ms
+      const steps = path.length;
+      const stepDelay = animationDuration / steps;
+      const startDelay = newLineIndex * 100; // 새로운 라인마다 100ms 지연
+
+      setTimeout(() => {
+        let currentStep = 0;
+        const drawInterval = setInterval(() => {
+          if (currentStep < steps) {
+            const currentPath = path.slice(0, currentStep + 1);
+            polyline.setPath(currentPath);
+            currentStep++;
+          } else {
+            clearInterval(drawInterval);
+          }
+        }, stepDelay);
+      }, startDelay);
+
+      newLineIndex++;
+
+      // 역 마커 추가 (애니메이션과 함께)
+      line.stations.forEach((station, stationIndex) => {
         const marker = new window.google.maps.Marker({
           position: { lat: station.lat, lng: station.lng },
-          map: googleMapRef.current,
+          map: null, // 처음엔 지도에 표시하지 않음
           title: `${station.name} (${line.nameKo})`,
           icon: {
             path: window.google.maps.SymbolPath.CIRCLE,
@@ -251,6 +301,12 @@ const TokyoMetroMap = () => {
           }
         });
 
+        // 라인 애니메이션과 동기화하여 마커 표시
+        const markerDelay = startDelay + (stationIndex * stepDelay);
+        setTimeout(() => {
+          marker.setMap(googleMapRef.current);
+        }, markerDelay);
+
         markersRef.current.push(marker);
       });
     });
@@ -267,6 +323,9 @@ const TokyoMetroMap = () => {
       });
       googleMapRef.current.fitBounds(bounds);
     }
+
+    // 현재 선택을 이전 선택으로 저장
+    previousSelectedLinesRef.current = [...selectedLines];
   }, [selectedLines, autoZoom]);
 
   if (showApiInput) {
