@@ -1178,7 +1178,6 @@ export const majorOperators = {
           name: "東陽町",
           lat: 35.669629,
           lng: 139.817596,
-          transfer: true
         },
         {
           name: "南砂町",
@@ -1316,7 +1315,6 @@ export const majorOperators = {
           name: "赤坂",
           lat: 35.67323,
           lng: 139.738348,
-          transfer: true
         },
         {
           name: "乃木坂",
@@ -5770,7 +5768,6 @@ export const majorOperators = {
           name: "東北沢",
           lat: 35.665379,
           lng: 139.673014,
-          transfer: true
         },
         {
           name: "下北沢",
@@ -6212,7 +6209,6 @@ export const majorOperators = {
           name: "竹ノ塚",
           lat: 35.794368,
           lng: 139.790788,
-          transfer: true
         },
         {
           name: "谷塚",
@@ -6294,7 +6290,6 @@ export const majorOperators = {
           name: "東武動物公園",
           lat: 36.024604,
           lng: 139.726901,
-          transfer: true
         },
         {
           name: "和戸",
@@ -6657,7 +6652,6 @@ export const majorOperators = {
           name: "東武練馬",
           lat: 35.768698,
           lng: 139.661964,
-          transfer: true
         },
         {
           name: "下赤塚",
@@ -6693,8 +6687,7 @@ export const majorOperators = {
         {
           name: "柳瀬川",
           lat: 35.830723,
-          lng: 139.562071,
-          transfer: true
+          lng: 139.562071
         },
         {
           name: "みずほ台",
@@ -6785,8 +6778,7 @@ export const majorOperators = {
         {
           name: "小川町",
           lat: 36.05903,
-          lng: 139.260412,
-          transfer: true
+          lng: 139.260412
         },
         {
           name: "東武竹沢",
@@ -7219,8 +7211,7 @@ export const majorOperators = {
         {
           name: "東門前",
           lat: 35.536566,
-          lng: 139.734298,
-          transfer: true
+          lng: 139.734298
         },
         {
           name: "大師橋",
@@ -7350,8 +7341,7 @@ export const majorOperators = {
         {
           name: "千住大橋",
           lat: 35.74243,
-          lng: 139.796934,
-          transfer: true
+          lng: 139.796934
         },
         {
           name: "京成関屋",

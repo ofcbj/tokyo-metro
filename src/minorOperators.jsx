@@ -122,8 +122,7 @@ export const minorOperators = {
         {
           name: "緑園都市",
           lat: 35.439502,
-          lng: 139.521841,
-          transfer: true
+          lng: 139.521841
         },
         {
           name: "弥生台",
@@ -463,8 +462,7 @@ export const minorOperators = {
         {
           name: "東京テレポート",
           lat: 35.62753,
-          lng: 139.778896,
-          transfer: true
+          lng: 139.778896
         },
         {
           name: "天王洲アイル",
@@ -694,8 +692,7 @@ export const minorOperators = {
         {
           name: "大塚・帝京大学",
           lat: 35.636878,
-          lng: 139.416461,
-          transfer: true
+          lng: 139.416461
         },
         {
           name: "中央大学・明星大学",
@@ -1116,8 +1113,7 @@ export const minorOperators = {
         {
           name: "北習志野",
           lat: 35.721674,
-          lng: 140.04236,
-          transfer: true
+          lng: 140.04236
         },
         {
           name: "船橋日大前",

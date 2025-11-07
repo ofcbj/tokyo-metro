@@ -23,6 +23,7 @@ const TokyoMetroMap = () => {
   const markersRef = useRef([]);
   const polylinesRef = useRef([]);
   const previousSelectedLinesRef = useRef([]); // 이전에 선택된 라인 추적
+  const selectedLinesRef = useRef(selectedLines);
 
   // 검색 및 필터링된 노선 데이터
   const filteredLineData = Object.entries(lineData).reduce((acc, [operator, lines]) => {
@@ -214,6 +215,10 @@ const TokyoMetroMap = () => {
     });
   };
 
+  useEffect(() => {
+    selectedLinesRef.current = selectedLines;
+  }, [selectedLines]);
+
   // 지도에 노선 표시
   useEffect(() => {
     if (!googleMapRef.current) return;
@@ -225,15 +230,18 @@ const TokyoMetroMap = () => {
 
     // 제거된 라인의 마커와 폴리라인만 제거
     markersRef.current = markersRef.current.filter(marker => {
-      const shouldKeep = selectedLines.some(lineId =>
-        Object.values(lineData).flat().some(line =>
-          line.id === lineId &&
-          line.stations.some(s =>
-            s.lat === marker.getPosition().lat() &&
-            s.lng === marker.getPosition().lng()
-          )
-        )
-      );
+      const hasLineBinding = typeof marker.lineId !== 'undefined';
+      const shouldKeep = hasLineBinding
+        ? selectedLines.includes(marker.lineId)
+        : selectedLines.some(lineId =>
+            Object.values(lineData).flat().some(line =>
+              line.id === lineId &&
+              line.stations.some(s =>
+                s.lat === marker.getPosition().lat() &&
+                s.lng === marker.getPosition().lng()
+              )
+            )
+          );
       if (!shouldKeep) {
         marker.setMap(null);
       }
@@ -279,8 +287,17 @@ const TokyoMetroMap = () => {
       const startDelay = newLineIndex * 100; // 새로운 라인마다 100ms 지연
 
       setTimeout(() => {
+        if (!selectedLinesRef.current.includes(line.id)) {
+          polyline.setMap(null);
+          return;
+        }
         let currentStep = 0;
         const drawInterval = setInterval(() => {
+          if (!selectedLinesRef.current.includes(line.id)) {
+            clearInterval(drawInterval);
+            polyline.setMap(null);
+            return;
+          }
           if (currentStep < steps) {
             const currentPath = path.slice(0, currentStep + 1);
             polyline.setPath(currentPath);
@@ -309,6 +326,9 @@ const TokyoMetroMap = () => {
           }
         });
 
+        marker.lineId = line.id;
+        marker.stationName = station.name;
+
         const infoWindow = new window.google.maps.InfoWindow({
           content: `<div style="padding: 8px;">
             <strong>${station.name}</strong><br/>
@@ -331,6 +351,10 @@ const TokyoMetroMap = () => {
         // 라인 애니메이션과 동기화하여 마커 표시
         const markerDelay = startDelay + (stationIndex * stepDelay);
         setTimeout(() => {
+          if (!selectedLinesRef.current.includes(line.id)) {
+            marker.setMap(null);
+            return;
+          }
           marker.setMap(googleMapRef.current);
         }, markerDelay);
 
