@@ -550,7 +550,8 @@ export const opMinor = {
         {
           name: "南流山",
           lat: 35.83869,
-          lng: 139.903271
+          lng: 139.903271,
+          transfer: true
         },
         {
           name: "流山セントラルパーク",
@@ -913,7 +914,8 @@ export const opMinor = {
         {
           name: "東川口",
           lat: 35.876211,
-          lng: 139.74398
+          lng: 139.74398,
+          transfer: true
         },
         {
           name: "浦和美園",

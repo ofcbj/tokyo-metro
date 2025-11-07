@@ -1018,8 +1018,7 @@ export const opJR = {
                 {
                     name: "大森",
                     lat: 35.588903,
-                    lng: 139.728079,
-                    transfer: true,
+                    lng: 139.728079
                 },
                 {
                     name: "蒲田",
@@ -1457,6 +1456,7 @@ export const opJR = {
                     name: "東川口",
                     lat: 35.875246,
                     lng: 139.744087,
+                    transfer: true,
                 },
                 {
                     name: "南越谷",
@@ -1492,6 +1492,7 @@ export const opJR = {
                     name: "南流山",
                     lat: 35.838035,
                     lng: 139.903865,
+                    transfer: true,
                 },
                 {
                     name: "新松戸",

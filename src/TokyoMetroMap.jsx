@@ -32,13 +32,25 @@ const TokyoMetroMap = () => {
 
   // 검색 및 필터링된 노선 데이터
   const filteredLineData = Object.entries(lineData).reduce((acc, [operator, lines]) => {
-    if (filterOperator !== 'all' && operator !== filterOperator) return acc;
-    
-    const filteredLines = lines.filter(line => 
+    // 필터링 조건 체크
+    let shouldInclude = false;
+    if (filterOperator === 'all') {
+      shouldInclude = true;
+    } else if (filterOperator === 'minor') {
+      // "私鉄" 필터: Minor 운영사만 포함
+      shouldInclude = Object.keys(opMinor).includes(operator);
+    } else {
+      // 특정 운영사 필터
+      shouldInclude = operator === filterOperator;
+    }
+
+    if (!shouldInclude) return acc;
+
+    const filteredLines = lines.filter(line =>
       line.nameKo.toLowerCase().includes(searchTerm.toLowerCase()) ||
       line.nameJp.includes(searchTerm)
     );
-    
+
     if (filteredLines.length > 0) {
       acc[operator] = filteredLines;
     }
@@ -480,26 +492,62 @@ const TokyoMetroMap = () => {
             <button
               onClick={() => setFilterOperator('all')}
               className={`px-3 py-1 rounded-full text-sm ${
-                filterOperator === 'all' 
-                  ? 'bg-blue-600 text-white' 
+                filterOperator === 'all'
+                  ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
               全て
             </button>
-            {Object.keys(lineData).map(operator => (
-              <button
-                key={operator}
-                onClick={() => setFilterOperator(operator)}
-                className={`px-3 py-1 rounded-full text-sm ${
-                  filterOperator === operator 
-                    ? 'bg-blue-600 text-white' 
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
-              >
-                {operator}
-              </button>
-            ))}
+            {(() => {
+              const operators = Object.keys(lineData);
+              const majorOperators = operators.filter(op =>
+                op === 'JR東日本' ||
+                Object.keys(opMajor1).includes(op) ||
+                Object.keys(opMajor2).includes(op)
+              );
+              const minorOperators = operators.filter(op =>
+                Object.keys(opMinor).includes(op)
+              );
+
+              const buttons = [];
+
+              // Major 운영사들은 개별 표시
+              majorOperators.forEach(operator => {
+                buttons.push(
+                  <button
+                    key={operator}
+                    onClick={() => setFilterOperator(operator)}
+                    className={`px-3 py-1 rounded-full text-sm ${
+                      filterOperator === operator
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    }`}
+                  >
+                    {operator}
+                  </button>
+                );
+              });
+
+              // Minor 운영사들은 "私鉄"로 통합
+              if (minorOperators.length > 0) {
+                buttons.push(
+                  <button
+                    key="minor-operators"
+                    onClick={() => setFilterOperator('minor')}
+                    className={`px-3 py-1 rounded-full text-sm ${
+                      filterOperator === 'minor'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    }`}
+                  >
+                    私鉄
+                  </button>
+                );
+              }
+
+              return buttons;
+            })()}
           </div>
 
           {/* 자동 줌 토글 */}
