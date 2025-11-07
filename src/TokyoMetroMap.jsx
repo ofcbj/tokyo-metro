@@ -294,7 +294,6 @@ const TokyoMetroMap = () => {
         });
 
         marker.addListener('click', () => {
-          infoWindow.open(googleMapRef.current, marker);
           // 환승역이면 해당 역의 모든 노선 선택
           if (station.transfer) {
             selectLinesForStation(station.name);

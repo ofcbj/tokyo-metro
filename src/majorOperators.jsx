@@ -2112,133 +2112,111 @@ export const majorOperators = {
           name: "千葉",
           lat: 35.613425,
           lng: 140.112837,
-          transfer: true
         },
         {
           name: "東千葉",
           lat: 35.617014,
           lng: 140.122261,
-          transfer: true
         },
         {
           name: "都賀",
           lat: 35.636088,
           lng: 140.149222,
-          transfer: true
         },
         {
           name: "四街道",
           lat: 35.662756,
           lng: 140.165023,
-          transfer: true
         },
         {
           name: "物井",
           lat: 35.68566,
           lng: 140.200263,
-          transfer: true
         },
         {
           name: "佐倉",
           lat: 35.709743,
           lng: 140.226722,
-          transfer: true
         },
         {
           name: "南酒々井",
           lat: 35.704217,
           lng: 140.267828,
-          transfer: true
         },
         {
           name: "榎戸",
           lat: 35.683967,
           lng: 140.288136,
-          transfer: true
         },
         {
           name: "八街",
           lat: 35.663228,
           lng: 140.317304,
-          transfer: true
         },
         {
           name: "日向",
           lat: 35.628402,
           lng: 140.362447,
-          transfer: true
         },
         {
           name: "成東",
           lat: 35.608513,
           lng: 140.410109,
-          transfer: true
         },
         {
           name: "松尾",
           lat: 35.63604,
           lng: 140.457587,
-          transfer: true
         },
         {
           name: "横芝",
           lat: 35.661739,
           lng: 140.490736,
-          transfer: true
         },
         {
           name: "飯倉",
           lat: 35.685638,
           lng: 140.522328,
-          transfer: true
         },
         {
           name: "八日市場",
           lat: 35.699317,
           lng: 140.552419,
-          transfer: true
         },
         {
           name: "干潟",
           lat: 35.718308,
           lng: 140.603304,
-          transfer: true
         },
         {
           name: "旭",
           lat: 35.721831,
           lng: 140.655041,
-          transfer: true
         },
         {
           name: "飯岡",
           lat: 35.729339,
           lng: 140.683896,
-          transfer: true
         },
         {
           name: "倉橋",
           lat: 35.737836,
           lng: 140.714018,
-          transfer: true
         },
         {
           name: "猿田",
           lat: 35.747383,
           lng: 140.7374,
-          transfer: true
         },
         {
           name: "松岸",
           lat: 35.739386,
           lng: 140.795143,
-          transfer: true
         },
         {
           name: "銚子",
           lat: 35.729449,
           lng: 140.827557,
-          transfer: true
         }
       ]
     },
