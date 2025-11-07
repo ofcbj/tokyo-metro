@@ -310,17 +310,23 @@ const TokyoMetroMap = () => {
       });
     });
 
-    // 자동 줌이 활성화되어 있고 선택된 노선이 있으면 맵 범위 조정
-    if (autoZoom && selectedLines.length > 0) {
-      const bounds = new window.google.maps.LatLngBounds();
-      Object.values(lineData).flat().forEach(line => {
-        if (selectedLines.includes(line.id)) {
-          line.stations.forEach(station => {
-            bounds.extend({ lat: station.lat, lng: station.lng });
-          });
-        }
-      });
-      googleMapRef.current.fitBounds(bounds);
+    // 자동 줌이 활성화되어 있고 새로 선택된 노선이 있으면 지도 이동 (줌 변경 없이)
+    if (autoZoom && newLines.length > 0) {
+      // 가장 최근에 추가된 노선 가져오기
+      const mostRecentLineId = newLines[newLines.length - 1];
+      const recentLine = Object.values(lineData).flat().find(line => line.id === mostRecentLineId);
+
+      if (recentLine && recentLine.stations.length > 0) {
+        // 노선의 중앙 역 계산
+        const centerIndex = Math.floor(recentLine.stations.length / 2);
+        const centerStation = recentLine.stations[centerIndex];
+
+        // 줌 없이 중앙으로 이동
+        googleMapRef.current.panTo({
+          lat: centerStation.lat,
+          lng: centerStation.lng
+        });
+      }
     }
 
     // 현재 선택을 이전 선택으로 저장
