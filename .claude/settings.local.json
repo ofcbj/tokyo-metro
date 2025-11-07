@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(find:*)",
-      "Bash(node src/updateColors.js:*)"
+      "Bash(node src/updateColors.js:*)",
+      "Bash(node src/removeTransferFlags.js:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []

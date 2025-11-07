@@ -778,7 +778,7 @@ export const majorOperators = {
     },
     {
       id: "28002",
-      nameKo: "마루노우치선 본선",
+      nameKo: "마루노우치선",
       nameJp: "東京メトロ丸ノ内線",
       color: "#F62E36",
       stations: [
@@ -786,345 +786,141 @@ export const majorOperators = {
           name: "池袋",
           lat: 35.730256,
           lng: 139.711086,
-          transfer: true
         },
         {
           name: "新大塚",
           lat: 35.72569,
           lng: 139.729971,
-          transfer: true
         },
         {
           name: "茗荷谷",
           lat: 35.716989,
           lng: 139.737184,
-          transfer: true
         },
         {
           name: "後楽園",
           lat: 35.707898,
           lng: 139.751864,
-          transfer: true
         },
         {
           name: "本郷三丁目",
           lat: 35.706671,
           lng: 139.759914,
-          transfer: true
         },
         {
           name: "御茶ノ水",
           lat: 35.700614,
           lng: 139.763952,
-          transfer: true
         },
         {
           name: "淡路町",
           lat: 35.6953595,
           lng: 139.7675149,
-          transfer: true
         },
         {
           name: "大手町",
           lat: 35.686564,
           lng: 139.7662,
-          transfer: true
         },
         {
           name: "東京",
           lat: 35.681753,
           lng: 139.764708,
-          transfer: true
         },
         {
           name: "銀座",
           lat: 35.671989,
           lng: 139.763965,
-          transfer: true
         },
         {
           name: "霞ケ関",
           lat: 35.673838,
           lng: 139.750899,
-          transfer: true
         },
         {
           name: "国会議事堂前",
           lat: 35.67393,
           lng: 139.745219,
-          transfer: true
         },
         {
           name: "赤坂見附",
           lat: 35.677021,
           lng: 139.737047,
-          transfer: true
         },
         {
           name: "四ツ谷",
           lat: 35.684586,
           lng: 139.729947,
-          transfer: true
         },
         {
           name: "四谷三丁目",
           lat: 35.687958,
           lng: 139.720103,
-          transfer: true
         },
         {
           name: "新宿御苑前",
           lat: 35.688588,
           lng: 139.71069,
-          transfer: true
         },
         {
           name: "新宿三丁目",
           lat: 35.690847,
           lng: 139.704895,
-          transfer: true
         },
         {
           name: "新宿",
           lat: 35.69235,
           lng: 139.700711,
-          transfer: true
         },
         {
           name: "西新宿",
           lat: 35.694298,
           lng: 139.692778,
-          transfer: true
         },
         {
           name: "中野坂上",
           lat: 35.69792,
           lng: 139.68291,
-          transfer: true
         },
         {
           name: "新中野",
           lat: 35.697491,
           lng: 139.66903,
-          transfer: true
         },
         {
           name: "東高円寺",
           lat: 35.697802,
           lng: 139.657822,
-          transfer: true
         },
         {
           name: "新高円寺",
           lat: 35.697985,
           lng: 139.648068,
-          transfer: true
         },
         {
           name: "南阿佐ケ谷",
           lat: 35.699624,
           lng: 139.63576,
-          transfer: true
         },
         {
           name: "荻窪",
           lat: 35.704304,
           lng: 139.620116,
-          transfer: true
         },
         {
           name: "中野新橋",
           lat: 35.692123,
           lng: 139.673997,
-          transfer: true
         },
         {
           name: "中野富士見町",
           lat: 35.690514,
           lng: 139.666933,
-          transfer: true
         },
         {
           name: "方南町",
           lat: 35.683496,
           lng: 139.656498,
-          transfer: true
-        }
-      ]
-    },
-    {
-      id: "28002",
-      nameKo: "마루노우치선 지선",
-      nameJp: "東京メトロ丸ノ内線",
-      color: "#F62E36",
-      stations: [
-        {
-          name: "池袋",
-          lat: 35.730256,
-          lng: 139.711086,
-          transfer: true
-        },
-        {
-          name: "新大塚",
-          lat: 35.72569,
-          lng: 139.729971,
-          transfer: true
-        },
-        {
-          name: "茗荷谷",
-          lat: 35.716989,
-          lng: 139.737184,
-          transfer: true
-        },
-        {
-          name: "後楽園",
-          lat: 35.707898,
-          lng: 139.751864,
-          transfer: true
-        },
-        {
-          name: "本郷三丁目",
-          lat: 35.706671,
-          lng: 139.759914,
-          transfer: true
-        },
-        {
-          name: "御茶ノ水",
-          lat: 35.700614,
-          lng: 139.763952,
-          transfer: true
-        },
-        {
-          name: "淡路町",
-          lat: 35.6953595,
-          lng: 139.7675149,
-          transfer: true
-        },
-        {
-          name: "大手町",
-          lat: 35.686564,
-          lng: 139.7662,
-          transfer: true
-        },
-        {
-          name: "東京",
-          lat: 35.681753,
-          lng: 139.764708,
-          transfer: true
-        },
-        {
-          name: "銀座",
-          lat: 35.671989,
-          lng: 139.763965,
-          transfer: true
-        },
-        {
-          name: "霞ケ関",
-          lat: 35.673838,
-          lng: 139.750899,
-          transfer: true
-        },
-        {
-          name: "国会議事堂前",
-          lat: 35.67393,
-          lng: 139.745219,
-          transfer: true
-        },
-        {
-          name: "赤坂見附",
-          lat: 35.677021,
-          lng: 139.737047,
-          transfer: true
-        },
-        {
-          name: "四ツ谷",
-          lat: 35.684586,
-          lng: 139.729947,
-          transfer: true
-        },
-        {
-          name: "四谷三丁目",
-          lat: 35.687958,
-          lng: 139.720103,
-          transfer: true
-        },
-        {
-          name: "新宿御苑前",
-          lat: 35.688588,
-          lng: 139.71069,
-          transfer: true
-        },
-        {
-          name: "新宿三丁目",
-          lat: 35.690847,
-          lng: 139.704895,
-          transfer: true
-        },
-        {
-          name: "新宿",
-          lat: 35.69235,
-          lng: 139.700711,
-          transfer: true
-        },
-        {
-          name: "西新宿",
-          lat: 35.694298,
-          lng: 139.692778,
-          transfer: true
-        },
-        {
-          name: "中野坂上",
-          lat: 35.69792,
-          lng: 139.68291,
-          transfer: true
-        },
-        {
-          name: "新中野",
-          lat: 35.697491,
-          lng: 139.66903,
-          transfer: true
-        },
-        {
-          name: "東高円寺",
-          lat: 35.697802,
-          lng: 139.657822,
-          transfer: true
-        },
-        {
-          name: "新高円寺",
-          lat: 35.697985,
-          lng: 139.648068,
-          transfer: true
-        },
-        {
-          name: "南阿佐ケ谷",
-          lat: 35.699624,
-          lng: 139.63576,
-          transfer: true
-        },
-        {
-          name: "荻窪",
-          lat: 35.704304,
-          lng: 139.620116,
-          transfer: true
-        },
-        {
-          name: "中野新橋",
-          lat: 35.692123,
-          lng: 139.673997,
-          transfer: true
-        },
-        {
-          name: "中野富士見町",
-          lat: 35.690514,
-          lng: 139.666933,
-          transfer: true
-        },
-        {
-          name: "方南町",
-          lat: 35.683496,
-          lng: 139.656498,
-          transfer: true
         }
       ]
     },
@@ -2120,7 +1916,6 @@ export const majorOperators = {
           name: "東京",
           lat: 35.681391,
           lng: 139.766103,
-          transfer: true
         },
         {
           name: "神田",
@@ -2264,7 +2059,6 @@ export const majorOperators = {
           name: "東京",
           lat: 35.681391,
           lng: 139.766103,
-          transfer: true
         },
         {
           name: "新日本橋",
@@ -2458,7 +2252,6 @@ export const majorOperators = {
           name: "三鷹",
           lat: 35.702683,
           lng: 139.560325,
-          transfer: true
         },
         {
           name: "吉祥寺",
@@ -2672,202 +2465,8 @@ export const majorOperators = {
       ]
     },
     {
-      id: "11314",
-      nameKo: "소부선 쾌속",
-      nameJp: "JR総武本線",
-      color: "#FFD400",
-      stations: [
-        {
-          name: "東京",
-          lat: 35.681391,
-          lng: 139.766103,
-          transfer: true
-        },
-        {
-          name: "新日本橋",
-          lat: 35.688687,
-          lng: 139.77323,
-          transfer: true
-        },
-        {
-          name: "馬喰町",
-          lat: 35.693365,
-          lng: 139.78238,
-          transfer: true
-        },
-        {
-          name: "錦糸町",
-          lat: 35.696802,
-          lng: 139.814136,
-          transfer: true
-        },
-        {
-          name: "新小岩",
-          lat: 35.716903,
-          lng: 139.857777,
-          transfer: true
-        },
-        {
-          name: "市川",
-          lat: 35.728903,
-          lng: 139.908142,
-          transfer: true
-        },
-        {
-          name: "船橋",
-          lat: 35.701865,
-          lng: 139.984707,
-          transfer: true
-        },
-        {
-          name: "津田沼",
-          lat: 35.691367,
-          lng: 140.020179,
-          transfer: true
-        },
-        {
-          name: "稲毛",
-          lat: 35.637264,
-          lng: 140.09256,
-          transfer: true
-        },
-        {
-          name: "千葉",
-          lat: 35.613425,
-          lng: 140.112837,
-          transfer: true
-        },
-        {
-          name: "東千葉",
-          lat: 35.617014,
-          lng: 140.122261,
-          transfer: true
-        },
-        {
-          name: "都賀",
-          lat: 35.636088,
-          lng: 140.149222,
-          transfer: true
-        },
-        {
-          name: "四街道",
-          lat: 35.662756,
-          lng: 140.165023,
-          transfer: true
-        },
-        {
-          name: "物井",
-          lat: 35.68566,
-          lng: 140.200263,
-          transfer: true
-        },
-        {
-          name: "佐倉",
-          lat: 35.709743,
-          lng: 140.226722,
-          transfer: true
-        },
-        {
-          name: "南酒々井",
-          lat: 35.704217,
-          lng: 140.267828,
-          transfer: true
-        },
-        {
-          name: "榎戸",
-          lat: 35.683967,
-          lng: 140.288136,
-          transfer: true
-        },
-        {
-          name: "八街",
-          lat: 35.663228,
-          lng: 140.317304,
-          transfer: true
-        },
-        {
-          name: "日向",
-          lat: 35.628402,
-          lng: 140.362447,
-          transfer: true
-        },
-        {
-          name: "成東",
-          lat: 35.608513,
-          lng: 140.410109,
-          transfer: true
-        },
-        {
-          name: "松尾",
-          lat: 35.63604,
-          lng: 140.457587,
-          transfer: true
-        },
-        {
-          name: "横芝",
-          lat: 35.661739,
-          lng: 140.490736,
-          transfer: true
-        },
-        {
-          name: "飯倉",
-          lat: 35.685638,
-          lng: 140.522328,
-          transfer: true
-        },
-        {
-          name: "八日市場",
-          lat: 35.699317,
-          lng: 140.552419,
-          transfer: true
-        },
-        {
-          name: "干潟",
-          lat: 35.718308,
-          lng: 140.603304,
-          transfer: true
-        },
-        {
-          name: "旭",
-          lat: 35.721831,
-          lng: 140.655041,
-          transfer: true
-        },
-        {
-          name: "飯岡",
-          lat: 35.729339,
-          lng: 140.683896,
-          transfer: true
-        },
-        {
-          name: "倉橋",
-          lat: 35.737836,
-          lng: 140.714018,
-          transfer: true
-        },
-        {
-          name: "猿田",
-          lat: 35.747383,
-          lng: 140.7374,
-          transfer: true
-        },
-        {
-          name: "松岸",
-          lat: 35.739386,
-          lng: 140.795143,
-          transfer: true
-        },
-        {
-          name: "銚子",
-          lat: 35.729449,
-          lng: 140.827557,
-          transfer: true
-        }
-      ]
-    },
-    {
       id: "11320",
-      nameKo: "조반선 각역정차",
+      nameKo: "조반선",
       nameJp: "JR常磐線(上野～取手)",
       color: "#9B59B6",
       stations: [
@@ -2875,7 +2474,6 @@ export const majorOperators = {
           name: "上野",
           lat: 35.71379,
           lng: 139.777043,
-          transfer: true
         },
         {
           name: "日暮里",
@@ -2887,7 +2485,6 @@ export const majorOperators = {
           name: "三河島",
           lat: 35.733383,
           lng: 139.777131,
-          transfer: true
         },
         {
           name: "南千住",
@@ -2911,31 +2508,26 @@ export const majorOperators = {
           name: "亀有",
           lat: 35.766527,
           lng: 139.847573,
-          transfer: true
         },
         {
           name: "金町",
           lat: 35.769582,
           lng: 139.870482,
-          transfer: true
         },
         {
           name: "松戸",
           lat: 35.784472,
           lng: 139.900779,
-          transfer: true
         },
         {
           name: "北松戸",
           lat: 35.800459,
           lng: 139.911528,
-          transfer: true
         },
         {
           name: "馬橋",
           lat: 35.811682,
           lng: 139.917305,
-          transfer: true
         },
         {
           name: "新松戸",
@@ -2947,13 +2539,11 @@ export const majorOperators = {
           name: "北小金",
           lat: 35.833436,
           lng: 139.931303,
-          transfer: true
         },
         {
           name: "南柏",
           lat: 35.844655,
           lng: 139.954111,
-          transfer: true
         },
         {
           name: "柏",
@@ -2965,147 +2555,21 @@ export const majorOperators = {
           name: "北柏",
           lat: 35.875623,
           lng: 139.988035,
-          transfer: true
         },
         {
           name: "我孫子",
           lat: 35.87279,
           lng: 140.010466,
-          transfer: true
         },
         {
           name: "天王台",
           lat: 35.872558,
           lng: 140.04121,
-          transfer: true
         },
         {
           name: "取手",
           lat: 35.89553,
           lng: 140.063004,
-          transfer: true
-        }
-      ]
-    },
-    {
-      id: "11320",
-      nameKo: "조반선 쾌속",
-      nameJp: "JR常磐線(上野～取手)",
-      color: "#16A085",
-      stations: [
-        {
-          name: "上野",
-          lat: 35.71379,
-          lng: 139.777043,
-          transfer: true
-        },
-        {
-          name: "日暮里",
-          lat: 35.727908,
-          lng: 139.771287,
-          transfer: true
-        },
-        {
-          name: "三河島",
-          lat: 35.733383,
-          lng: 139.777131,
-          transfer: true
-        },
-        {
-          name: "南千住",
-          lat: 35.734033,
-          lng: 139.7994,
-          transfer: true
-        },
-        {
-          name: "北千住",
-          lat: 35.749677,
-          lng: 139.804872,
-          transfer: true
-        },
-        {
-          name: "綾瀬",
-          lat: 35.762222,
-          lng: 139.825019,
-          transfer: true
-        },
-        {
-          name: "亀有",
-          lat: 35.766527,
-          lng: 139.847573,
-          transfer: true
-        },
-        {
-          name: "金町",
-          lat: 35.769582,
-          lng: 139.870482,
-          transfer: true
-        },
-        {
-          name: "松戸",
-          lat: 35.784472,
-          lng: 139.900779,
-          transfer: true
-        },
-        {
-          name: "北松戸",
-          lat: 35.800459,
-          lng: 139.911528,
-          transfer: true
-        },
-        {
-          name: "馬橋",
-          lat: 35.811682,
-          lng: 139.917305,
-          transfer: true
-        },
-        {
-          name: "新松戸",
-          lat: 35.825467,
-          lng: 139.921076,
-          transfer: true
-        },
-        {
-          name: "北小金",
-          lat: 35.833436,
-          lng: 139.931303,
-          transfer: true
-        },
-        {
-          name: "南柏",
-          lat: 35.844655,
-          lng: 139.954111,
-          transfer: true
-        },
-        {
-          name: "柏",
-          lat: 35.862316,
-          lng: 139.971148,
-          transfer: true
-        },
-        {
-          name: "北柏",
-          lat: 35.875623,
-          lng: 139.988035,
-          transfer: true
-        },
-        {
-          name: "我孫子",
-          lat: 35.87279,
-          lng: 140.010466,
-          transfer: true
-        },
-        {
-          name: "天王台",
-          lat: 35.872558,
-          lng: 140.04121,
-          transfer: true
-        },
-        {
-          name: "取手",
-          lat: 35.89553,
-          lng: 140.063004,
-          transfer: true
         }
       ]
     },
@@ -4671,31 +4135,26 @@ export const majorOperators = {
           name: "池袋",
           lat: 35.72913,
           lng: 139.711461,
-          transfer: true
         },
         {
           name: "椎名町",
           lat: 35.726572,
           lng: 139.694363,
-          transfer: true
         },
         {
           name: "東長崎",
           lat: 35.73003,
           lng: 139.683294,
-          transfer: true
         },
         {
           name: "江古田",
           lat: 35.737557,
           lng: 139.672814,
-          transfer: true
         },
         {
           name: "桜台",
           lat: 35.738797,
           lng: 139.662602,
-          transfer: true
         },
         {
           name: "練馬",
@@ -4707,309 +4166,96 @@ export const majorOperators = {
           name: "中村橋",
           lat: 35.736767,
           lng: 139.637456,
-          transfer: true
         },
         {
           name: "富士見台",
           lat: 35.735867,
           lng: 139.62969,
-          transfer: true
         },
         {
           name: "練馬高野台",
           lat: 35.740622,
           lng: 139.616749,
-          transfer: true
         },
         {
           name: "石神井公園",
           lat: 35.743563,
           lng: 139.606981,
-          transfer: true
         },
         {
           name: "大泉学園",
           lat: 35.749406,
           lng: 139.586732,
-          transfer: true
         },
         {
           name: "保谷",
           lat: 35.748222,
           lng: 139.567753,
-          transfer: true
         },
         {
           name: "ひばりヶ丘",
           lat: 35.751485,
           lng: 139.545852,
-          transfer: true
         },
         {
           name: "東久留米",
           lat: 35.760445,
           lng: 139.533739,
-          transfer: true
         },
         {
           name: "清瀬",
           lat: 35.772221,
           lng: 139.519917,
-          transfer: true
         },
         {
           name: "秋津",
           lat: 35.778614,
           lng: 139.496539,
-          transfer: true
         },
         {
           name: "所沢",
           lat: 35.786627,
           lng: 139.473324,
-          transfer: true
         },
         {
           name: "西所沢",
           lat: 35.789303,
           lng: 139.455959,
-          transfer: true
         },
         {
           name: "小手指",
           lat: 35.800535,
           lng: 139.438016,
-          transfer: true
         },
         {
           name: "狭山ヶ丘",
           lat: 35.810445,
           lng: 139.416975,
-          transfer: true
         },
         {
           name: "武蔵藤沢",
           lat: 35.820963,
           lng: 139.412736,
-          transfer: true
         },
         {
           name: "稲荷山公園",
           lat: 35.845112,
           lng: 139.39842,
-          transfer: true
         },
         {
           name: "入間市",
           lat: 35.842904,
           lng: 139.390294,
-          transfer: true
         },
         {
           name: "仏子",
           lat: 35.83769,
           lng: 139.360115,
-          transfer: true
         },
         {
           name: "元加治",
           lat: 35.84058,
           lng: 139.345316,
-          transfer: true
-        },
-        {
-          name: "飯能",
-          lat: 35.851189,
-          lng: 139.318824,
-          transfer: true
-        },
-        {
-          name: "東飯能",
-          lat: 35.852928,
-          lng: 139.325965,
-          transfer: true
-        },
-        {
-          name: "高麗",
-          lat: 35.881982,
-          lng: 139.304414,
-          transfer: true
-        },
-        {
-          name: "武蔵横手",
-          lat: 35.885256,
-          lng: 139.280667,
-          transfer: true
-        },
-        {
-          name: "東吾野",
-          lat: 35.892439,
-          lng: 139.260281,
-          transfer: true
-        },
-        {
-          name: "吾野",
-          lat: 35.908502,
-          lng: 139.226787,
-          transfer: true
-        }
-      ]
-    },
-    {
-      id: "22001",
-      nameKo: "이케부쿠로선",
-      nameJp: "西武池袋線",
-      color: "#ECF0F1",
-      stations: [
-        {
-          name: "池袋",
-          lat: 35.72913,
-          lng: 139.711461,
-          transfer: true
-        },
-        {
-          name: "椎名町",
-          lat: 35.726572,
-          lng: 139.694363,
-          transfer: true
-        },
-        {
-          name: "東長崎",
-          lat: 35.73003,
-          lng: 139.683294,
-          transfer: true
-        },
-        {
-          name: "江古田",
-          lat: 35.737557,
-          lng: 139.672814,
-          transfer: true
-        },
-        {
-          name: "桜台",
-          lat: 35.738797,
-          lng: 139.662602,
-          transfer: true
-        },
-        {
-          name: "練馬",
-          lat: 35.737893,
-          lng: 139.654368,
-          transfer: true
-        },
-        {
-          name: "中村橋",
-          lat: 35.736767,
-          lng: 139.637456,
-          transfer: true
-        },
-        {
-          name: "富士見台",
-          lat: 35.735867,
-          lng: 139.62969,
-          transfer: true
-        },
-        {
-          name: "練馬高野台",
-          lat: 35.740622,
-          lng: 139.616749,
-          transfer: true
-        },
-        {
-          name: "石神井公園",
-          lat: 35.743563,
-          lng: 139.606981,
-          transfer: true
-        },
-        {
-          name: "大泉学園",
-          lat: 35.749406,
-          lng: 139.586732,
-          transfer: true
-        },
-        {
-          name: "保谷",
-          lat: 35.748222,
-          lng: 139.567753,
-          transfer: true
-        },
-        {
-          name: "ひばりヶ丘",
-          lat: 35.751485,
-          lng: 139.545852,
-          transfer: true
-        },
-        {
-          name: "東久留米",
-          lat: 35.760445,
-          lng: 139.533739,
-          transfer: true
-        },
-        {
-          name: "清瀬",
-          lat: 35.772221,
-          lng: 139.519917,
-          transfer: true
-        },
-        {
-          name: "秋津",
-          lat: 35.778614,
-          lng: 139.496539,
-          transfer: true
-        },
-        {
-          name: "所沢",
-          lat: 35.786627,
-          lng: 139.473324,
-          transfer: true
-        },
-        {
-          name: "西所沢",
-          lat: 35.789303,
-          lng: 139.455959,
-          transfer: true
-        },
-        {
-          name: "小手指",
-          lat: 35.800535,
-          lng: 139.438016,
-          transfer: true
-        },
-        {
-          name: "狭山ヶ丘",
-          lat: 35.810445,
-          lng: 139.416975,
-          transfer: true
-        },
-        {
-          name: "武蔵藤沢",
-          lat: 35.820963,
-          lng: 139.412736,
-          transfer: true
-        },
-        {
-          name: "稲荷山公園",
-          lat: 35.845112,
-          lng: 139.39842,
-          transfer: true
-        },
-        {
-          name: "入間市",
-          lat: 35.842904,
-          lng: 139.390294,
-          transfer: true
-        },
-        {
-          name: "仏子",
-          lat: 35.83769,
-          lng: 139.360115,
-          transfer: true
-        },
-        {
-          name: "元加治",
-          lat: 35.84058,
-          lng: 139.345316,
-          transfer: true
         },
         {
           name: "飯能",
