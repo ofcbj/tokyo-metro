@@ -428,7 +428,8 @@ export const minorOperators = {
         {
           name: "新木場",
           lat: 35.646172,
-          lng: 139.827402
+          lng: 139.827402,
+          transfer: true
         },
         {
           name: "東雲",
@@ -463,7 +464,8 @@ export const minorOperators = {
         {
           name: "大崎",
           lat: 35.619772,
-          lng: 139.728439
+          lng: 139.728439,
+          transfer: true
         }
       ]
     }
