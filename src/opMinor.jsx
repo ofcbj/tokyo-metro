@@ -384,7 +384,8 @@ export const opMinor = {
         {
           name: "中山",
           lat: 35.515029,
-          lng: 139.54032
+          lng: 139.54032,
+          transfer: true
         },
         {
           name: "川和町",
@@ -519,7 +520,8 @@ export const opMinor = {
         {
           name: "南千住",
           lat: 35.732413,
-          lng: 139.798783
+          lng: 139.798783,
+          transfer: true
         },
         {
           name: "北千住",
@@ -617,7 +619,8 @@ export const opMinor = {
         {
           name: "モノレール浜松町",
           lat: 35.655666,
-          lng: 139.756747
+          lng: 139.756747,
+          transfer: true
         },
         {
           name: "天王洲アイル",
@@ -665,7 +668,8 @@ export const opMinor = {
         {
           name: "羽田空港第1ターミナル",
           lat: 35.549163,
-          lng: 139.784653
+          lng: 139.784653,
+          transfer: true
         },
         {
           name: "羽田空港第2ターミナル",
@@ -705,7 +709,8 @@ export const opMinor = {
         {
           name: "多摩動物公園",
           lat: 35.648666,
-          lng: 139.403672
+          lng: 139.403672,
+          transfer: true
         },
         {
           name: "程久保",
@@ -869,7 +874,8 @@ export const opMinor = {
         {
           name: "豊洲",
           lat: 35.653792,
-          lng: 139.795414
+          lng: 139.795414,
+          transfer: true
         }
       ]
     }
@@ -1030,7 +1036,8 @@ export const opMinor = {
         {
           name: "栄町",
           lat: 35.612822,
-          lng: 140.118592
+          lng: 140.118592,
+          transfer: true
         },
         {
           name: "葭川公園",
@@ -1467,7 +1474,8 @@ export const opMinor = {
         {
           name: "千葉ニュータウン中央",
           lat: 35.800175,
-          lng: 140.116159
+          lng: 140.116159,
+          transfer: true
         },
         {
           name: "印西牧の原",
@@ -1571,6 +1579,7 @@ export const opMinor = {
           name: "永田",
           lat: 36.135314,
           lng: 139.259516,
+          transfer: true,
         },
         {
           name: "ふかや花園",
@@ -1707,7 +1716,8 @@ export const opMinor = {
         {
           name: "北習志野",
           lat: 35.721674,
-          lng: 140.04236
+          lng: 140.04236,
+          transfer: true
         },
         {
           name: "船橋日大前",
@@ -1732,7 +1742,8 @@ export const opMinor = {
         {
           name: "東葉勝田台",
           lat: 35.715458,
-          lng: 140.126075
+          lng: 140.126075,
+          transfer: true
         }
       ]
     }

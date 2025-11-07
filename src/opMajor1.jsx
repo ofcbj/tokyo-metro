@@ -20,7 +20,8 @@ export const opMajor1 = {
         {
           name: "中延",
           lat: 35.605769,
-          lng: 139.713736
+          lng: 139.713736,
+          transfer: true
         },
         {
           name: "戸越",
@@ -93,7 +94,8 @@ export const opMajor1 = {
         {
           name: "浅草橋",
           lat: 35.697451,
-          lng: 139.786305
+          lng: 139.786305,
+          transfer: true
         },
         {
           name: "蔵前",
@@ -208,7 +210,8 @@ export const opMajor1 = {
         {
           name: "巣鴨",
           lat: 35.733502,
-          lng: 139.738519
+          lng: 139.738519,
+          transfer: true
         },
         {
           name: "西巣鴨",
@@ -299,7 +302,8 @@ export const opMajor1 = {
         {
           name: "市ヶ谷",
           lat: 35.691556,
-          lng: 139.737639
+          lng: 139.737639,
+          transfer: true
         },
         {
           name: "九段下",
@@ -317,6 +321,7 @@ export const opMajor1 = {
           name: "小川町",
           lat: 35.695056,
           lng: 139.766667,
+          transfer: true,
         },
         {
           name: "岩本町",
@@ -326,7 +331,8 @@ export const opMajor1 = {
         {
           name: "馬喰横山",
           lat: 35.69212,
-          lng: 139.782768
+          lng: 139.782768,
+          transfer: true
         },
         {
           name: "浜町",
@@ -451,7 +457,8 @@ export const opMajor1 = {
         {
           name: "上野御徒町",
           lat: 35.707893,
-          lng: 139.774332
+          lng: 139.774332,
+          transfer: true
         },
         {
           name: "新御徒町",
@@ -468,7 +475,8 @@ export const opMajor1 = {
         {
           name: "両国",
           lat: 35.696881,
-          lng: 139.797421
+          lng: 139.797421,
+          transfer: true
         },
         {
           name: "森下",
@@ -524,7 +532,8 @@ export const opMajor1 = {
         {
           name: "麻布十番",
           lat: 35.656503,
-          lng: 139.736116
+          lng: 139.736116,
+          transfer: true
         },
         {
           name: "六本木",
@@ -575,7 +584,8 @@ export const opMajor1 = {
         {
           name: "中井",
           lat: 35.714035,
-          lng: 139.686356
+          lng: 139.686356,
+          transfer: true
         },
         {
           name: "落合南長崎",
@@ -692,7 +702,8 @@ export const opMajor1 = {
         {
           name: "栄町",
           lat: 35.750909,
-          lng: 139.742124
+          lng: 139.742124,
+          transfer: true
         },
         {
           name: "王子駅前",
@@ -771,7 +782,8 @@ export const opMajor1 = {
         {
           name: "早稲田",
           lat: 35.711848,
-          lng: 139.718928
+          lng: 139.718928,
+          transfer: true
         }
       ]
     }
@@ -808,7 +820,8 @@ export const opMajor1 = {
         {
           name: "上野広小路",
           lat: 35.70768,
-          lng: 139.772877
+          lng: 139.772877,
+          transfer: true
         },
         {
           name: "末広町",
@@ -936,6 +949,7 @@ export const opMajor1 = {
           name: "淡路町",
           lat: 35.6953595,
           lng: 139.7675149,
+          transfer: true,
         },
         {
           name: "大手町",
@@ -1084,7 +1098,8 @@ export const opMajor1 = {
         {
           name: "南千住",
           lat: 35.733398,
-          lng: 139.799273
+          lng: 139.799273,
+          transfer: true
         },
         {
           name: "三ノ輪",
@@ -1094,7 +1109,8 @@ export const opMajor1 = {
         {
           name: "入谷",
           lat: 35.719862,
-          lng: 139.783924
+          lng: 139.783924,
+          transfer: true
         },
         {
           name: "上野",
@@ -1105,7 +1121,8 @@ export const opMajor1 = {
         {
           name: "仲御徒町",
           lat: 35.706649,
-          lng: 139.776138
+          lng: 139.776138,
+          transfer: true
         },
         {
           name: "秋葉原",
@@ -1133,7 +1150,8 @@ export const opMajor1 = {
         {
           name: "八丁堀",
           lat: 35.674851,
-          lng: 139.776982
+          lng: 139.776982,
+          transfer: true
         },
         {
           name: "築地",
@@ -1225,7 +1243,8 @@ export const opMajor1 = {
         {
           name: "早稲田",
           lat: 35.705723,
-          lng: 139.721319
+          lng: 139.721319,
+          transfer: true
         },
         {
           name: "神楽坂",
@@ -1357,7 +1376,8 @@ export const opMajor1 = {
         {
           name: "町屋",
           lat: 35.742733,
-          lng: 139.780501
+          lng: 139.780501,
+          transfer: true
         },
         {
           name: "西日暮里",
@@ -1434,12 +1454,14 @@ export const opMajor1 = {
         {
           name: "明治神宮前〈原宿〉",
           lat: 35.669071,
-          lng: 139.703995
+          lng: 139.703995,
+          transfer: true
         },
         {
           name: "代々木公園",
           lat: 35.669187,
-          lng: 139.689099
+          lng: 139.689099,
+          transfer: true
         },
         {
           name: "代々木上原",
@@ -1512,7 +1534,8 @@ export const opMajor1 = {
         {
           name: "東池袋",
           lat: 35.725732,
-          lng: 139.719546
+          lng: 139.719546,
+          transfer: true
         },
         {
           name: "護国寺",
@@ -1577,7 +1600,8 @@ export const opMajor1 = {
         {
           name: "豊洲",
           lat: 35.654908,
-          lng: 139.79621
+          lng: 139.79621,
+          transfer: true
         },
         {
           name: "辰巳",
@@ -1775,7 +1799,8 @@ export const opMajor1 = {
         {
           name: "麻布十番",
           lat: 35.654682,
-          lng: 139.737051
+          lng: 139.737051,
+          transfer: true
         },
         {
           name: "白金高輪",
@@ -1860,7 +1885,8 @@ export const opMajor1 = {
         {
           name: "雑司が谷",
           lat: 35.720233,
-          lng: 139.714795
+          lng: 139.714795,
+          transfer: true
         },
         {
           name: "西早稲田",
@@ -1887,7 +1913,8 @@ export const opMajor1 = {
         {
           name: "明治神宮前〈原宿〉",
           lat: 35.668497,
-          lng: 139.705367
+          lng: 139.705367,
+          transfer: true
         },
         {
           name: "渋谷",
@@ -2144,7 +2171,8 @@ export const opMajor1 = {
         {
           name: "長津田",
           lat: 35.53196,
-          lng: 139.493548
+          lng: 139.493548,
+          transfer: true
         },
         {
           name: "つくし野",
@@ -2169,7 +2197,8 @@ export const opMajor1 = {
         {
           name: "中央林間",
           lat: 35.507671,
-          lng: 139.444935
+          lng: 139.444935,
+          transfer: true
         }
       ]
     },
@@ -2279,7 +2308,8 @@ export const opMajor1 = {
         {
           name: "中延",
           lat: 35.60571,
-          lng: 139.712526
+          lng: 139.712526,
+          transfer: true
         },
         {
           name: "荏原町",
@@ -2536,7 +2566,8 @@ export const opMajor1 = {
         {
           name: "山下",
           lat: 35.653844,
-          lng: 139.646509
+          lng: 139.646509,
+          transfer: true
         },
         {
           name: "松原",
@@ -2800,12 +2831,14 @@ export const opMajor1 = {
         {
           name: "京王永山",
           lat: 35.630102,
-          lng: 139.448204
+          lng: 139.448204,
+          transfer: true
         },
         {
           name: "京王多摩センター",
           lat: 35.62518,
-          lng: 139.42402
+          lng: 139.42402,
+          transfer: true
         },
         {
           name: "京王堀之内",
@@ -2890,7 +2923,8 @@ export const opMajor1 = {
         {
           name: "多摩動物公園",
           lat: 35.649215,
-          lng: 139.404627
+          lng: 139.404627,
+          transfer: true
         }
       ]
     },
@@ -3037,7 +3071,8 @@ export const opMajor1 = {
         {
           name: "代々木八幡",
           lat: 35.669715,
-          lng: 139.688913
+          lng: 139.688913,
+          transfer: true
         },
         {
           name: "代々木上原",
@@ -3069,7 +3104,8 @@ export const opMajor1 = {
         {
           name: "豪徳寺",
           lat: 35.653807,
-          lng: 139.647381
+          lng: 139.647381,
+          transfer: true
         },
         {
           name: "経堂",
@@ -3189,7 +3225,8 @@ export const opMajor1 = {
         {
           name: "厚木",
           lat: 35.443081,
-          lng: 139.377896
+          lng: 139.377896,
+          transfer: true
         },
         {
           name: "本厚木",
@@ -3254,7 +3291,8 @@ export const opMajor1 = {
         {
           name: "足柄",
           lat: 35.271763,
-          lng: 139.15447
+          lng: 139.15447,
+          transfer: true
         },
         {
           name: "小田原",
@@ -3284,7 +3322,8 @@ export const opMajor1 = {
         {
           name: "中央林間",
           lat: 35.508066,
-          lng: 139.444105
+          lng: 139.444105,
+          transfer: true
         },
         {
           name: "南林間",
@@ -3341,7 +3380,8 @@ export const opMajor1 = {
         {
           name: "藤沢",
           lat: 35.338558,
-          lng: 139.486971
+          lng: 139.486971,
+          transfer: true
         },
         {
           name: "本鵠沼",
@@ -3395,12 +3435,14 @@ export const opMajor1 = {
         {
           name: "小田急永山",
           lat: 35.629972,
-          lng: 139.447943
+          lng: 139.447943,
+          transfer: true
         },
         {
           name: "小田急多摩センター",
           lat: 35.624902,
-          lng: 139.424298
+          lng: 139.424298,
+          transfer: true
         },
         {
           name: "唐木田",

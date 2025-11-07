@@ -193,21 +193,49 @@ const TokyoMetroMap = () => {
     setSelectedLines(allLineIds);
   }, [allLineIds]);
 
-  // 특정 역을 지나가는 모든 노선 찾기
-  const findLinesForStation = (stationName) => {
+  // 두 지점 간 거리 계산 (미터)
+  const getDistance = (lat1, lng1, lat2, lng2) => {
+    const R = 6371; // 지구 반지름 (km)
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a =
+      Math.sin(dLat/2) * Math.sin(dLat/2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLng/2) * Math.sin(dLng/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c * 1000; // 미터 단위
+  };
+
+  // 특정 역을 지나가는 모든 노선 찾기 (이름 또는 거리 기반)
+  const findLinesForStation = (stationName, stationLat, stationLng) => {
+    const TRANSFER_DISTANCE_THRESHOLD = 150; // 150m 이내
     const lines = [];
+
     Object.values(lineData).flat().forEach(line => {
-      const hasStation = line.stations.some(station => station.name === stationName);
+      const hasStation = line.stations.some(station => {
+        // 이름이 같거나
+        if (station.name === stationName) return true;
+
+        // 거리가 임계값 이내
+        if (stationLat && stationLng && station.lat && station.lng) {
+          const distance = getDistance(stationLat, stationLng, station.lat, station.lng);
+          return distance <= TRANSFER_DISTANCE_THRESHOLD;
+        }
+
+        return false;
+      });
+
       if (hasStation) {
         lines.push(line.id);
       }
     });
+
     return lines;
   };
 
   // 역을 클릭했을 때 해당 역의 모든 노선 선택 및 애니메이션 재생
-  const selectLinesForStation = (stationName) => {
-    const lineIds = findLinesForStation(stationName);
+  const selectLinesForStation = (stationName, stationLat, stationLng) => {
+    const lineIds = findLinesForStation(stationName, stationLat, stationLng);
     setShouldPanOnNextUpdate(false); // 역 클릭이므로 팬 이동 금지
     setSelectedLines(prev => {
       // 해당 역의 노선들을 먼저 제거
@@ -227,8 +255,8 @@ const TokyoMetroMap = () => {
   };
 
   // 역을 우클릭했을 때 해당 역의 모든 노선을 숨김
-  const hideLinesForStation = (stationName) => {
-    const lineIds = findLinesForStation(stationName);
+  const hideLinesForStation = (stationName, stationLat, stationLng) => {
+    const lineIds = findLinesForStation(stationName, stationLat, stationLng);
     setShouldPanOnNextUpdate(false); // 우클릭이므로 팬 이동 금지
     setSelectedLines(prev => {
       // 해당 역의 노선들을 제거
@@ -361,13 +389,13 @@ const TokyoMetroMap = () => {
 
         marker.addListener('click', () => {
           // 해당 역의 모든 노선을 선택하고 애니메이션 재생
-          selectLinesForStation(station.name);
+          selectLinesForStation(station.name, station.lat, station.lng);
         });
 
         marker.addListener('rightclick', (event) => {
           // 우클릭 시 해당 역의 모든 노선을 숨김
           event.stop(); // 기본 컨텍스트 메뉴 방지
-          hideLinesForStation(station.name);
+          hideLinesForStation(station.name, station.lat, station.lng);
         });
 
         // 라인 애니메이션과 동기화하여 마커 표시

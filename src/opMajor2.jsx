@@ -311,6 +311,7 @@ export const opMajor2 = {
           name: "牛田",
           lat: 35.744555,
           lng: 139.811816,
+          transfer: true,
         },
         {
           name: "北千住",
@@ -373,6 +374,7 @@ export const opMajor2 = {
           name: "新越谷",
           lat: 35.875186,
           lng: 139.789905,
+          transfer: true,
         },
         {
           name: "越谷",
@@ -434,6 +436,7 @@ export const opMajor2 = {
           name: "久喜",
           lat: 36.065684,
           lng: 139.67727,
+          transfer: true,
         },
         {
           name: "鷲宮",
@@ -459,6 +462,7 @@ export const opMajor2 = {
           name: "羽生",
           lat: 36.170345,
           lng: 139.533949,
+          transfer: true,
         },
         {
           name: "川俣",
@@ -1625,6 +1629,7 @@ export const opMajor2 = {
           name: "八丁畷",
           lat: 35.523054,
           lng: 139.691346,
+          transfer: true,
         },
         {
           name: "鶴見市場",
@@ -1650,6 +1655,7 @@ export const opMajor2 = {
           name: "京急新子安",
           lat: 35.487242,
           lng: 139.655848,
+          transfer: true,
         },
         {
           name: "子安",
@@ -1665,6 +1671,7 @@ export const opMajor2 = {
           name: "京急東神奈川",
           lat: 35.477412,
           lng: 139.634669,
+          transfer: true,
         },
         {
           name: "神奈川",
@@ -1846,6 +1853,7 @@ export const opMajor2 = {
           name: "羽田空港第1・第2ターミナル",
           lat: 35.549809,
           lng: 139.785962,
+          transfer: true,
         },
       ],
     },
@@ -2005,6 +2013,7 @@ export const opMajor2 = {
           name: "町屋",
           lat: 35.742354,
           lng: 139.781499,
+          transfer: true,
         },
         {
           name: "千住大橋",
@@ -2015,6 +2024,7 @@ export const opMajor2 = {
           name: "京成関屋",
           lat: 35.744008,
           lng: 139.81183,
+          transfer: true,
         },
         {
           name: "堀切菖蒲園",
@@ -2142,6 +2152,7 @@ export const opMajor2 = {
           name: "勝田台",
           lat: 35.715445,
           lng: 140.126053,
+          transfer: true,
         },
         {
           name: "志津",
@@ -2268,7 +2279,8 @@ export const opMajor2 = {
         {
           name: "京成幕張本郷",
           lat: 35.672551,
-          lng: 140.042091
+          lng: 140.042091,
+          transfer: true
         },
         {
           name: "京成幕張",
@@ -2303,7 +2315,8 @@ export const opMajor2 = {
         {
           name: "京成千葉",
           lat: 35.6116,
-          lng: 140.114273
+          lng: 140.114273,
+          transfer: true
         },
         {
           name: "千葉中央",
@@ -2531,6 +2544,7 @@ export const opMajor2 = {
           name: "千葉ニュータウン中央",
           lat: 35.800175,
           lng: 140.116159,
+          transfer: true,
         },
         {
           name: "印旛日本医大",

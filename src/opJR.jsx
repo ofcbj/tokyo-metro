@@ -79,6 +79,7 @@ export const opJR = {
                     name: "大塚",
                     lat: 35.731412,
                     lng: 139.728584,
+          transfer: true,
                 },
                 {
                     name: "巣鴨",
@@ -405,6 +406,7 @@ export const opJR = {
                     name: "都賀",
                     lat: 35.636088,
                     lng: 140.149222,
+          transfer: true,
                 },
                 {
                     name: "四街道",
@@ -625,11 +627,13 @@ export const opJR = {
                     name: "浅草橋",
                     lat: 35.697403,
                     lng: 139.784427,
+          transfer: true,
                 },
                 {
                     name: "両国",
                     lat: 35.69579,
                     lng: 139.793334,
+          transfer: true,
                 },
                 {
                     name: "錦糸町",
@@ -703,6 +707,7 @@ export const opJR = {
                     name: "幕張本郷",
                     lat: 35.672664,
                     lng: 140.042241,
+          transfer: true,
                 },
                 {
                     name: "幕張",
@@ -788,6 +793,7 @@ export const opJR = {
                     name: "松戸",
                     lat: 35.784472,
                     lng: 139.900779,
+          transfer: true,
                 },
                 {
                     name: "北松戸",
@@ -1041,6 +1047,7 @@ export const opJR = {
                     name: "新子安",
                     lat: 35.487064,
                     lng: 139.654776,
+          transfer: true,
                 },
                 {
                     name: "東神奈川",
@@ -1250,6 +1257,7 @@ export const opJR = {
                     name: "武蔵浦和",
                     lat: 35.845422,
                     lng: 139.646809,
+          transfer: true,
                 },
                 {
                     name: "中浦和",
@@ -1430,6 +1438,7 @@ export const opJR = {
                     name: "北朝霞",
                     lat: 35.815475,
                     lng: 139.587322,
+          transfer: true,
                 },
                 {
                     name: "西浦和",
@@ -1440,6 +1449,7 @@ export const opJR = {
                     name: "武蔵浦和",
                     lat: 35.846047,
                     lng: 139.647974,
+          transfer: true,
                 },
                 {
                     name: "南浦和",
@@ -1462,6 +1472,7 @@ export const opJR = {
                     name: "南越谷",
                     lat: 35.876106,
                     lng: 139.790499,
+          transfer: true,
                 },
                 {
                     name: "越谷レイクタウン",
@@ -1504,6 +1515,7 @@ export const opJR = {
                     name: "新八柱",
                     lat: 35.792013,
                     lng: 139.938393,
+          transfer: true,
                 },
                 {
                     name: "東松戸",
@@ -1555,6 +1567,7 @@ export const opJR = {
                     name: "八丁畷",
                     lat: 35.523071,
                     lng: 139.691446,
+          transfer: true,
                 },
                 {
                     name: "川崎",
@@ -1607,6 +1620,7 @@ export const opJR = {
                     name: "武蔵溝ノ口",
                     lat: 35.598923,
                     lng: 139.61139,
+          transfer: true,
                 },
                 {
                     name: "津田山",
@@ -1737,6 +1751,7 @@ export const opJR = {
                     name: "中山",
                     lat: 35.514745,
                     lng: 139.539692,
+          transfer: true,
                 },
                 {
                     name: "十日市場",
@@ -1747,6 +1762,7 @@ export const opJR = {
                     name: "長津田",
                     lat: 35.531698,
                     lng: 139.49468,
+          transfer: true,
                 },
                 {
                     name: "成瀬",
@@ -1824,6 +1840,7 @@ export const opJR = {
                     name: "八丁堀",
                     lat: 35.674617,
                     lng: 139.777705,
+          transfer: true,
                 },
                 {
                     name: "越中島",
@@ -1906,6 +1923,7 @@ export const opJR = {
                     name: "千葉みなと",
                     lat: 35.606172,
                     lng: 140.10341,
+          transfer: true,
                 },
                 {
                     name: "蘇我",
@@ -2621,6 +2639,7 @@ export const opJR = {
                     name: "永田",
                     lat: 35.503129,
                     lng: 140.311162,
+          transfer: true,
                 },
                 {
                     name: "本納",
@@ -3430,6 +3449,7 @@ export const opJR = {
                     name: "藤沢",
                     lat: 35.338882,
                     lng: 139.487293,
+          transfer: true,
                 },
                 {
                     name: "辻堂",
@@ -3622,6 +3642,7 @@ export const opJR = {
                     name: "厚木",
                     lat: 35.44375,
                     lng: 139.378631,
+          transfer: true,
                 },
                 {
                     name: "海老名",
@@ -3633,6 +3654,7 @@ export const opJR = {
                     name: "入谷",
                     lat: 35.478478,
                     lng: 139.391913,
+          transfer: true,
                 },
                 {
                     name: "相武台下",
@@ -3730,6 +3752,7 @@ export const opJR = {
                     name: "足柄",
                     lat: 35.332233,
                     lng: 138.981687,
+          transfer: true,
                 },
                 {
                     name: "御殿場",
