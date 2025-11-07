@@ -203,6 +203,17 @@ const TokyoMetroMap = () => {
     }, 50);
   };
 
+  // 역을 우클릭했을 때 해당 역의 모든 노선을 숨김
+  const hideLinesForStation = (stationName) => {
+    const lineIds = findLinesForStation(stationName);
+    setShouldPanOnNextUpdate(false); // 우클릭이므로 팬 이동 금지
+    setSelectedLines(prev => {
+      // 해당 역의 노선들을 제거
+      const withoutStationLines = prev.filter(id => !lineIds.includes(id));
+      return withoutStationLines;
+    });
+  };
+
   // 지도에 노선 표시
   useEffect(() => {
     if (!googleMapRef.current) return;
@@ -309,6 +320,12 @@ const TokyoMetroMap = () => {
         marker.addListener('click', () => {
           // 해당 역의 모든 노선을 선택하고 애니메이션 재생
           selectLinesForStation(station.name);
+        });
+
+        marker.addListener('rightclick', (event) => {
+          // 우클릭 시 해당 역의 모든 노선을 숨김
+          event.stop(); // 기본 컨텍스트 메뉴 방지
+          hideLinesForStation(station.name);
         });
 
         // 라인 애니메이션과 동기화하여 마커 표시

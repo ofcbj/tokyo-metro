@@ -30,7 +30,8 @@ export const majorOperators = {
         {
           name: "五反田",
           lat: 35.627102,
-          lng: 139.724175
+          lng: 139.724175,
+          transfer: true
         },
         {
           name: "高輪台",
@@ -58,7 +59,8 @@ export const majorOperators = {
         {
           name: "新橋",
           lat: 35.665577,
-          lng: 139.759451
+          lng: 139.759451,
+          transfer: true
         },
         {
           name: "東銀座",
@@ -74,7 +76,8 @@ export const majorOperators = {
         {
           name: "日本橋",
           lat: 35.681688,
-          lng: 139.775721
+          lng: 139.775721,
+          transfer: true
         },
         {
           name: "人形町",
@@ -101,7 +104,8 @@ export const majorOperators = {
         {
           name: "浅草",
           lat: 35.709461,
-          lng: 139.79697
+          lng: 139.79697,
+          transfer: true
         },
         {
           name: "本所吾妻橋",
@@ -164,22 +168,26 @@ export const majorOperators = {
         {
           name: "日比谷",
           lat: 35.676036,
-          lng: 139.759998
+          lng: 139.759998,
+          transfer: true
         },
         {
           name: "大手町",
           lat: 35.684856,
-          lng: 139.762959
+          lng: 139.762959,
+          transfer: true
         },
         {
           name: "神保町",
           lat: 35.695492,
-          lng: 139.75812
+          lng: 139.75812,
+          transfer: true
         },
         {
           name: "水道橋",
           lat: 35.703398,
-          lng: 139.75516
+          lng: 139.75516,
+          transfer: true
         },
         {
           name: "春日",
@@ -240,7 +248,8 @@ export const majorOperators = {
         {
           name: "蓮根",
           lat: 35.784335,
-          lng: 139.678993
+          lng: 139.678993,
+          transfer: true
         },
         {
           name: "西台",
@@ -279,7 +288,8 @@ export const majorOperators = {
         {
           name: "新宿三丁目",
           lat: 35.690616,
-          lng: 139.706271
+          lng: 139.706271,
+          transfer: true
         },
         {
           name: "曙橋",
@@ -306,7 +316,7 @@ export const majorOperators = {
         {
           name: "小川町",
           lat: 35.695056,
-          lng: 139.766667
+          lng: 139.766667,
         },
         {
           name: "岩本町",
@@ -353,12 +363,12 @@ export const majorOperators = {
         {
           name: "東大島",
           lat: 35.690355,
-          lng: 139.845963
+          lng: 139.845963,
         },
         {
           name: "船堀",
           lat: 35.683795,
-          lng: 139.864258
+          lng: 139.864258,
         },
         {
           name: "一之江",
@@ -378,7 +388,8 @@ export const majorOperators = {
         {
           name: "本八幡",
           lat: 35.722929,
-          lng: 139.926628
+          lng: 139.926628,
+          transfer: true
         }
       ]
     },
@@ -401,7 +412,8 @@ export const majorOperators = {
         {
           name: "東新宿",
           lat: 35.69792,
-          lng: 139.707549
+          lng: 139.707549,
+          transfer: true
         },
         {
           name: "若松河田",
@@ -421,7 +433,8 @@ export const majorOperators = {
         {
           name: "飯田橋",
           lat: 35.702927,
-          lng: 139.744999
+          lng: 139.744999,
+          transfer: true
         },
         {
           name: "春日",
@@ -432,7 +445,8 @@ export const majorOperators = {
         {
           name: "本郷三丁目",
           lat: 35.707462,
-          lng: 139.760095
+          lng: 139.760095,
+          transfer: true
         },
         {
           name: "上野御徒町",
@@ -442,7 +456,8 @@ export const majorOperators = {
         {
           name: "新御徒町",
           lat: 35.707045,
-          lng: 139.781958
+          lng: 139.781958,
+          transfer: true
         },
         {
           name: "蔵前",
@@ -492,7 +507,8 @@ export const majorOperators = {
         {
           name: "汐留",
           lat: 35.663703,
-          lng: 139.760642
+          lng: 139.760642,
+          transfer: true
         },
         {
           name: "大門",
@@ -513,12 +529,14 @@ export const majorOperators = {
         {
           name: "六本木",
           lat: 35.663921,
-          lng: 139.731567
+          lng: 139.731567,
+          transfer: true
         },
         {
           name: "青山一丁目",
           lat: 35.672929,
-          lng: 139.72396
+          lng: 139.72396,
+          transfer: true
         },
         {
           name: "国立競技場",
@@ -528,7 +546,8 @@ export const majorOperators = {
         {
           name: "代々木",
           lat: 35.683218,
-          lng: 139.701666
+          lng: 139.701666,
+          transfer: true
         },
         {
           name: "新宿",
@@ -544,12 +563,14 @@ export const majorOperators = {
         {
           name: "中野坂上",
           lat: 35.69709,
-          lng: 139.682279
+          lng: 139.682279,
+          transfer: true
         },
         {
           name: "東中野",
           lat: 35.706891,
-          lng: 139.682987
+          lng: 139.682987,
+          transfer: true
         },
         {
           name: "中井",
@@ -569,7 +590,8 @@ export const majorOperators = {
         {
           name: "練馬",
           lat: 35.737404,
-          lng: 139.65477
+          lng: 139.65477,
+          transfer: true
         },
         {
           name: "豊島園",
@@ -674,7 +696,8 @@ export const majorOperators = {
         {
           name: "浅草",
           lat: 35.710733,
-          lng: 139.797592
+          lng: 139.797592,
+          transfer: true
         },
         {
           name: "田原町",
@@ -705,12 +728,14 @@ export const majorOperators = {
         {
           name: "神田",
           lat: 35.693587,
-          lng: 139.770899
+          lng: 139.770899,
+          transfer: true
         },
         {
           name: "三越前",
           lat: 35.687101,
-          lng: 139.773594
+          lng: 139.773594,
+          transfer: true
         },
         {
           name: "日本橋",
@@ -732,7 +757,8 @@ export const majorOperators = {
         {
           name: "新橋",
           lat: 35.667434,
-          lng: 139.758432
+          lng: 139.758432,
+          transfer: true
         },
         {
           name: "虎ノ門",
@@ -786,6 +812,7 @@ export const majorOperators = {
           name: "池袋",
           lat: 35.730256,
           lng: 139.711086,
+          transfer: true,
         },
         {
           name: "新大塚",
@@ -801,16 +828,19 @@ export const majorOperators = {
           name: "後楽園",
           lat: 35.707898,
           lng: 139.751864,
+          transfer: true,
         },
         {
           name: "本郷三丁目",
           lat: 35.706671,
           lng: 139.759914,
+          transfer: true,
         },
         {
           name: "御茶ノ水",
           lat: 35.700614,
           lng: 139.763952,
+          transfer: true,
         },
         {
           name: "淡路町",
@@ -821,36 +851,43 @@ export const majorOperators = {
           name: "大手町",
           lat: 35.686564,
           lng: 139.7662,
+          transfer: true,
         },
         {
           name: "東京",
           lat: 35.681753,
           lng: 139.764708,
+          transfer: true,
         },
         {
           name: "銀座",
           lat: 35.671989,
           lng: 139.763965,
+          transfer: true,
         },
         {
           name: "霞ケ関",
           lat: 35.673838,
           lng: 139.750899,
+          transfer: true,
         },
         {
           name: "国会議事堂前",
           lat: 35.67393,
           lng: 139.745219,
+          transfer: true,
         },
         {
           name: "赤坂見附",
           lat: 35.677021,
           lng: 139.737047,
+          transfer: true,
         },
         {
           name: "四ツ谷",
           lat: 35.684586,
           lng: 139.729947,
+          transfer: true,
         },
         {
           name: "四谷三丁目",
@@ -866,11 +903,13 @@ export const majorOperators = {
           name: "新宿三丁目",
           lat: 35.690847,
           lng: 139.704895,
+          transfer: true,
         },
         {
           name: "新宿",
           lat: 35.69235,
           lng: 139.700711,
+          transfer: true,
         },
         {
           name: "西新宿",
@@ -881,6 +920,7 @@ export const majorOperators = {
           name: "中野坂上",
           lat: 35.69792,
           lng: 139.68291,
+          transfer: true,
         },
         {
           name: "新中野",
@@ -906,6 +946,7 @@ export const majorOperators = {
           name: "荻窪",
           lat: 35.704304,
           lng: 139.620116,
+          transfer: true,
         },
         {
           name: "中野新橋",
@@ -965,7 +1006,8 @@ export const majorOperators = {
         {
           name: "秋葉原",
           lat: 35.698162,
-          lng: 139.775459
+          lng: 139.775459,
+          transfer: true
         },
         {
           name: "小伝馬町",
@@ -1009,7 +1051,8 @@ export const majorOperators = {
         {
           name: "日比谷",
           lat: 35.67459,
-          lng: 139.76017
+          lng: 139.76017,
+          transfer: true
         },
         {
           name: "霞ケ関",
@@ -1030,7 +1073,8 @@ export const majorOperators = {
         {
           name: "六本木",
           lat: 35.662836,
-          lng: 139.731443
+          lng: 139.731443,
+          transfer: true
         },
         {
           name: "広尾",
@@ -1040,7 +1084,8 @@ export const majorOperators = {
         {
           name: "恵比寿",
           lat: 35.647332,
-          lng: 139.708988
+          lng: 139.708988,
+          transfer: true
         },
         {
           name: "中目黒",
@@ -1070,7 +1115,8 @@ export const majorOperators = {
         {
           name: "高田馬場",
           lat: 35.713338,
-          lng: 139.704745
+          lng: 139.704745,
+          transfer: true
         },
         {
           name: "早稲田",
@@ -1085,7 +1131,8 @@ export const majorOperators = {
         {
           name: "飯田橋",
           lat: 35.701725,
-          lng: 139.745986
+          lng: 139.745986,
+          transfer: true
         },
         {
           name: "九段下",
@@ -1101,7 +1148,8 @@ export const majorOperators = {
         {
           name: "大手町",
           lat: 35.684801,
-          lng: 139.766086
+          lng: 139.766086,
+          transfer: true
         },
         {
           name: "日本橋",
@@ -1129,7 +1177,8 @@ export const majorOperators = {
         {
           name: "東陽町",
           lat: 35.669629,
-          lng: 139.817596
+          lng: 139.817596,
+          transfer: true
         },
         {
           name: "南砂町",
@@ -1210,7 +1259,8 @@ export const majorOperators = {
         {
           name: "西日暮里",
           lat: 35.732257,
-          lng: 139.766511
+          lng: 139.766511,
+          transfer: true
         },
         {
           name: "千駄木",
@@ -1235,17 +1285,20 @@ export const majorOperators = {
         {
           name: "大手町",
           lat: 35.686154,
-          lng: 139.763399
+          lng: 139.763399,
+          transfer: true
         },
         {
           name: "二重橋前",
           lat: 35.681071,
-          lng: 139.761948
+          lng: 139.761948,
+          transfer: true
         },
         {
           name: "日比谷",
           lat: 35.674241,
-          lng: 139.758732
+          lng: 139.758732,
+          transfer: true
         },
         {
           name: "霞ケ関",
@@ -1262,7 +1315,8 @@ export const majorOperators = {
         {
           name: "赤坂",
           lat: 35.67323,
-          lng: 139.738348
+          lng: 139.738348,
+          transfer: true
         },
         {
           name: "乃木坂",
@@ -1350,7 +1404,8 @@ export const majorOperators = {
         {
           name: "池袋",
           lat: 35.729565,
-          lng: 139.710088
+          lng: 139.710088,
+          transfer: true
         },
         {
           name: "東池袋",
@@ -1376,7 +1431,8 @@ export const majorOperators = {
         {
           name: "市ケ谷",
           lat: 35.691389,
-          lng: 139.73625
+          lng: 139.73625,
+          transfer: true
         },
         {
           name: "麹町",
@@ -1397,7 +1453,8 @@ export const majorOperators = {
         {
           name: "有楽町",
           lat: 35.675714,
-          lng: 139.763265
+          lng: 139.763265,
+          transfer: true
         },
         {
           name: "銀座一丁目",
@@ -1428,7 +1485,8 @@ export const majorOperators = {
         {
           name: "新木場",
           lat: 35.645832,
-          lng: 139.826254
+          lng: 139.826254,
+          transfer: true
         }
       ]
     },
@@ -1482,12 +1540,14 @@ export const majorOperators = {
         {
           name: "大手町",
           lat: 35.68686,
-          lng: 139.764107
+          lng: 139.764107,
+          transfer: true
         },
         {
           name: "三越前",
           lat: 35.684908,
-          lng: 139.773147
+          lng: 139.773147,
+          transfer: true
         },
         {
           name: "水天宮前",
@@ -1509,7 +1569,8 @@ export const majorOperators = {
         {
           name: "錦糸町",
           lat: 35.697578,
-          lng: 139.814941
+          lng: 139.814941,
+          transfer: true
         },
         {
           name: "押上〈スカイツリー前〉",
@@ -1528,7 +1589,8 @@ export const majorOperators = {
         {
           name: "赤羽岩淵",
           lat: 35.783417,
-          lng: 139.722103
+          lng: 139.722103,
+          transfer: true
         },
         {
           name: "志茂",
@@ -1543,7 +1605,8 @@ export const majorOperators = {
         {
           name: "王子",
           lat: 35.753966,
-          lng: 139.737618
+          lng: 139.737618,
+          transfer: true
         },
         {
           name: "西ケ原",
@@ -1581,12 +1644,14 @@ export const majorOperators = {
         {
           name: "市ケ谷",
           lat: 35.692972,
-          lng: 139.736389
+          lng: 139.736389,
+          transfer: true
         },
         {
           name: "四ツ谷",
           lat: 35.686032,
-          lng: 139.72955
+          lng: 139.72955,
+          transfer: true
         },
         {
           name: "永田町",
@@ -1687,7 +1752,8 @@ export const majorOperators = {
         {
           name: "池袋",
           lat: 35.731464,
-          lng: 139.708291
+          lng: 139.708291,
+          transfer: true
         },
         {
           name: "雑司が谷",
@@ -1702,12 +1768,14 @@ export const majorOperators = {
         {
           name: "東新宿",
           lat: 35.698915,
-          lng: 139.707593
+          lng: 139.707593,
+          transfer: true
         },
         {
           name: "新宿三丁目",
           lat: 35.690853,
-          lng: 139.704828
+          lng: 139.704828,
+          transfer: true
         },
         {
           name: "北参道",
@@ -1923,6 +1991,7 @@ export const majorOperators = {
           name: "東京",
           lat: 35.681391,
           lng: 139.766103,
+          transfer: true,
         },
         {
           name: "神田",
@@ -2009,7 +2078,8 @@ export const majorOperators = {
         {
           name: "国分寺",
           lat: 35.700123,
-          lng: 139.480841
+          lng: 139.480841,
+          transfer: true
         },
         {
           name: "西国分寺",
@@ -2052,7 +2122,8 @@ export const majorOperators = {
         {
           name: "高尾",
           lat: 35.642026,
-          lng: 139.282288
+          lng: 139.282288,
+          transfer: true
         }
       ]
     },
@@ -2066,6 +2137,7 @@ export const majorOperators = {
           name: "東京",
           lat: 35.681391,
           lng: 139.766103,
+          transfer: true,
         },
         {
           name: "新日本橋",
@@ -2119,6 +2191,7 @@ export const majorOperators = {
           name: "千葉",
           lat: 35.613425,
           lng: 140.112837,
+          transfer: true,
         },
         {
           name: "東千葉",
@@ -2237,6 +2310,7 @@ export const majorOperators = {
           name: "三鷹",
           lat: 35.702683,
           lng: 139.560325,
+          transfer: true,
         },
         {
           name: "吉祥寺",
@@ -2277,7 +2351,8 @@ export const majorOperators = {
         {
           name: "東中野",
           lat: 35.706529,
-          lng: 139.684436
+          lng: 139.684436,
+          transfer: true
         },
         {
           name: "大久保",
@@ -2315,17 +2390,20 @@ export const majorOperators = {
         {
           name: "市ケ谷",
           lat: 35.691,
-          lng: 139.735583
+          lng: 139.735583,
+          transfer: true
         },
         {
           name: "飯田橋",
           lat: 35.701835,
-          lng: 139.745143
+          lng: 139.745143,
+          transfer: true
         },
         {
           name: "水道橋",
           lat: 35.702039,
-          lng: 139.754312
+          lng: 139.754312,
+          transfer: true
         },
         {
           name: "御茶ノ水",
@@ -2358,7 +2436,8 @@ export const majorOperators = {
         {
           name: "亀戸",
           lat: 35.697345,
-          lng: 139.826262
+          lng: 139.826262,
+          transfer: true
         },
         {
           name: "平井",
@@ -2385,7 +2464,8 @@ export const majorOperators = {
         {
           name: "本八幡",
           lat: 35.720898,
-          lng: 139.92741
+          lng: 139.92741,
+          transfer: true
         },
         {
           name: "下総中山",
@@ -2459,6 +2539,7 @@ export const majorOperators = {
           name: "上野",
           lat: 35.71379,
           lng: 139.777043,
+          transfer: true,
         },
         {
           name: "日暮里",
@@ -2600,7 +2681,7 @@ export const majorOperators = {
         {
           name: "蕨",
           lat: 35.827959,
-          lng: 139.690357
+          lng: 139.690357,
         },
         {
           name: "西川口",
@@ -2626,7 +2707,8 @@ export const majorOperators = {
         {
           name: "王子",
           lat: 35.752538,
-          lng: 139.73809
+          lng: 139.73809,
+          transfer: true
         },
         {
           name: "上中里",
@@ -2655,6 +2737,7 @@ export const majorOperators = {
           name: "鶯谷",
           lat: 35.721484,
           lng: 139.778015,
+          transfer: true,
         },
         {
           name: "上野",
@@ -2725,17 +2808,20 @@ export const majorOperators = {
         {
           name: "大井町",
           lat: 35.606257,
-          lng: 139.73485
+          lng: 139.73485,
+          transfer: true
         },
         {
           name: "大森",
           lat: 35.588903,
-          lng: 139.728079
+          lng: 139.728079,
+          transfer: true
         },
         {
           name: "蒲田",
           lat: 35.562517,
-          lng: 139.716032
+          lng: 139.716032,
+          transfer: true
         },
         {
           name: "川崎",
@@ -2746,7 +2832,7 @@ export const majorOperators = {
         {
           name: "鶴見",
           lat: 35.508387,
-          lng: 139.67614
+          lng: 139.67614,
         },
         {
           name: "新子安",
@@ -3217,7 +3303,8 @@ export const majorOperators = {
         {
           name: "東松戸",
           lat: 35.770611,
-          lng: 139.943848
+          lng: 139.943848,
+          transfer: true
         },
         {
           name: "市川大野",
@@ -3333,7 +3420,8 @@ export const majorOperators = {
         {
           name: "登戸",
           lat: 35.620889,
-          lng: 139.570028
+          lng: 139.570028,
+          transfer: true
         },
         {
           name: "中野島",
@@ -3420,12 +3508,14 @@ export const majorOperators = {
         {
           name: "菊名",
           lat: 35.509749,
-          lng: 139.630147
+          lng: 139.630147,
+          transfer: true
         },
         {
           name: "新横浜",
           lat: 35.506824,
-          lng: 139.617348
+          lng: 139.617348,
+          transfer: true
         },
         {
           name: "小机",
@@ -3460,7 +3550,8 @@ export const majorOperators = {
         {
           name: "町田",
           lat: 35.542004,
-          lng: 139.445579
+          lng: 139.445579,
+          transfer: true
         },
         {
           name: "古淵",
@@ -3485,7 +3576,8 @@ export const majorOperators = {
         {
           name: "橋本",
           lat: 35.594975,
-          lng: 139.344586
+          lng: 139.344586,
+          transfer: true
         },
         {
           name: "相原",
@@ -3540,7 +3632,8 @@ export const majorOperators = {
         {
           name: "新木場",
           lat: 35.646172,
-          lng: 139.827402
+          lng: 139.827402,
+          transfer: true
         },
         {
           name: "葛西臨海公園",
@@ -4008,7 +4101,8 @@ export const majorOperators = {
         {
           name: "小田原",
           lat: 35.256225,
-          lng: 139.155772
+          lng: 139.155772,
+          transfer: true
         },
         {
           name: "早川",
@@ -4052,12 +4146,14 @@ export const majorOperators = {
         {
           name: "桜木町",
           lat: 35.451112,
-          lng: 139.630881
+          lng: 139.630881,
+          transfer: true
         },
         {
           name: "関内",
           lat: 35.443336,
-          lng: 139.636984
+          lng: 139.636984,
+          transfer: true
         },
         {
           name: "石川町",
@@ -4119,6 +4215,7 @@ export const majorOperators = {
           name: "池袋",
           lat: 35.72913,
           lng: 139.711461,
+          transfer: true,
         },
         {
           name: "椎名町",
@@ -4378,7 +4475,8 @@ export const majorOperators = {
         {
           name: "玉川上水",
           lat: 35.731751,
-          lng: 139.418435
+          lng: 139.418435,
+          transfer: true
         },
         {
           name: "武蔵砂川",
@@ -4446,7 +4544,8 @@ export const majorOperators = {
         {
           name: "国分寺",
           lat: 35.700836,
-          lng: 139.479547
+          lng: 139.479547,
+          transfer: true
         },
         {
           name: "一橋学園",
@@ -4490,7 +4589,8 @@ export const majorOperators = {
         {
           name: "東村山",
           lat: 35.76006,
-          lng: 139.465839
+          lng: 139.465839,
+          transfer: true
         },
         {
           name: "西武園",
@@ -4613,7 +4713,8 @@ export const majorOperators = {
         {
           name: "菊名",
           lat: 35.509854,
-          lng: 139.63137
+          lng: 139.63137,
+          transfer: true
         },
         {
           name: "妙蓮寺",
@@ -4638,7 +4739,8 @@ export const majorOperators = {
         {
           name: "横浜",
           lat: 35.466372,
-          lng: 139.622299
+          lng: 139.622299,
+          transfer: true
         }
       ]
     },
@@ -4651,7 +4753,8 @@ export const majorOperators = {
         {
           name: "渋谷",
           lat: 35.65802,
-          lng: 139.702148
+          lng: 139.702148,
+          transfer: true
         },
         {
           name: "池尻大橋",
@@ -4731,7 +4834,8 @@ export const majorOperators = {
         {
           name: "あざみ野",
           lat: 35.568645,
-          lng: 139.553462
+          lng: 139.553462,
+          transfer: true
         },
         {
           name: "江田",
@@ -4880,7 +4984,8 @@ export const majorOperators = {
         {
           name: "大井町",
           lat: 35.607535,
-          lng: 139.735025
+          lng: 139.735025,
+          transfer: true
         },
         {
           name: "下神明",
@@ -4985,7 +5090,8 @@ export const majorOperators = {
         {
           name: "五反田",
           lat: 35.625262,
-          lng: 139.724175
+          lng: 139.724175,
+          transfer: true
         },
         {
           name: "大崎広小路",
@@ -5207,7 +5313,8 @@ export const majorOperators = {
         {
           name: "新宿",
           lat: 35.690163,
-          lng: 139.699187
+          lng: 139.699187,
+          transfer: true
         },
         {
           name: "笹塚",
@@ -5439,7 +5546,8 @@ export const majorOperators = {
         {
           name: "橋本",
           lat: 35.595518,
-          lng: 139.343226
+          lng: 139.343226,
+          transfer: true
         }
       ]
     },
@@ -5478,7 +5586,8 @@ export const majorOperators = {
         {
           name: "高尾",
           lat: 35.641645,
-          lng: 139.281551
+          lng: 139.281551,
+          transfer: true
         },
         {
           name: "高尾山口",
@@ -5534,7 +5643,8 @@ export const majorOperators = {
         {
           name: "渋谷",
           lat: 35.6587,
-          lng: 139.700872
+          lng: 139.700872,
+          transfer: true
         },
         {
           name: "神泉",
@@ -5554,7 +5664,8 @@ export const majorOperators = {
         {
           name: "下北沢",
           lat: 35.661539,
-          lng: 139.66691
+          lng: 139.66691,
+          transfer: true
         },
         {
           name: "新代田",
@@ -5624,7 +5735,7 @@ export const majorOperators = {
   "小田急電鉄": [
     {
       id: "25001",
-      nameKo: "오다와라선",
+      nameKo: "오다큐선",
       nameJp: "小田急線",
       color: "#52B788",
       stations: [
@@ -5658,12 +5769,14 @@ export const majorOperators = {
         {
           name: "東北沢",
           lat: 35.665379,
-          lng: 139.673014
+          lng: 139.673014,
+          transfer: true
         },
         {
           name: "下北沢",
           lat: 35.661655,
-          lng: 139.667516
+          lng: 139.667516,
+          transfer: true
         },
         {
           name: "世田谷代田",
@@ -5718,7 +5831,8 @@ export const majorOperators = {
         {
           name: "登戸",
           lat: 35.62115,
-          lng: 139.569449
+          lng: 139.569449,
+          transfer: true
         },
         {
           name: "向ヶ丘遊園",
@@ -5764,7 +5878,8 @@ export const majorOperators = {
         {
           name: "町田",
           lat: 35.544222,
-          lng: 139.445236
+          lng: 139.445236,
+          transfer: true
         },
         {
           name: "相模大野",
@@ -5790,7 +5905,8 @@ export const majorOperators = {
         {
           name: "海老名",
           lat: 35.452709,
-          lng: 139.390905
+          lng: 139.390905,
+          transfer: true
         },
         {
           name: "厚木",
@@ -5865,7 +5981,8 @@ export const majorOperators = {
         {
           name: "小田原",
           lat: 35.256229,
-          lng: 139.155396
+          lng: 139.155396,
+          transfer: true
         }
       ]
     },
@@ -5924,7 +6041,8 @@ export const majorOperators = {
         {
           name: "湘南台",
           lat: 35.396488,
-          lng: 139.466451
+          lng: 139.466451,
+          transfer: true
         },
         {
           name: "六会日大前",
@@ -6023,7 +6141,8 @@ export const majorOperators = {
         {
           name: "浅草",
           lat: 35.711883,
-          lng: 139.798214
+          lng: 139.798214,
+          transfer: true
         },
         {
           name: "とうきょうスカイツリー",
@@ -6065,7 +6184,8 @@ export const majorOperators = {
         {
           name: "北千住",
           lat: 35.749891,
-          lng: 139.805564
+          lng: 139.805564,
+          transfer: true
         },
         {
           name: "小菅",
@@ -6091,7 +6211,8 @@ export const majorOperators = {
         {
           name: "竹ノ塚",
           lat: 35.794368,
-          lng: 139.790788
+          lng: 139.790788,
+          transfer: true
         },
         {
           name: "谷塚",
@@ -6172,7 +6293,8 @@ export const majorOperators = {
         {
           name: "東武動物公園",
           lat: 36.024604,
-          lng: 139.726901
+          lng: 139.726901,
+          transfer: true
         },
         {
           name: "和戸",
@@ -6310,7 +6432,8 @@ export const majorOperators = {
         {
           name: "大宮",
           lat: 35.907599,
-          lng: 139.624458
+          lng: 139.624458,
+          transfer: true
         },
         {
           name: "北大宮",
@@ -6457,7 +6580,8 @@ export const majorOperators = {
         {
           name: "新鎌ヶ谷",
           lat: 35.780221,
-          lng: 139.999455
+          lng: 139.999455,
+          transfer: true
         },
         {
           name: "鎌ヶ谷",
@@ -6482,7 +6606,8 @@ export const majorOperators = {
         {
           name: "船橋",
           lat: 35.7021,
-          lng: 139.98436
+          lng: 139.98436,
+          transfer: true
         }
       ]
     },
@@ -6495,7 +6620,8 @@ export const majorOperators = {
         {
           name: "池袋",
           lat: 35.730924,
-          lng: 139.710678
+          lng: 139.710678,
+          transfer: true
         },
         {
           name: "北池袋",
@@ -6530,7 +6656,8 @@ export const majorOperators = {
         {
           name: "東武練馬",
           lat: 35.768698,
-          lng: 139.661964
+          lng: 139.661964,
+          transfer: true
         },
         {
           name: "下赤塚",
@@ -6566,7 +6693,8 @@ export const majorOperators = {
         {
           name: "柳瀬川",
           lat: 35.830723,
-          lng: 139.562071
+          lng: 139.562071,
+          transfer: true
         },
         {
           name: "みずほ台",
@@ -6657,7 +6785,8 @@ export const majorOperators = {
         {
           name: "小川町",
           lat: 36.05903,
-          lng: 139.260412
+          lng: 139.260412,
+          transfer: true
         },
         {
           name: "東武竹沢",
@@ -6721,7 +6850,8 @@ export const majorOperators = {
         {
           name: "亀戸",
           lat: 35.697708,
-          lng: 139.826791
+          lng: 139.826791,
+          transfer: true
         }
       ]
     },
@@ -6761,7 +6891,8 @@ export const majorOperators = {
         {
           name: "品川",
           lat: 35.628284,
-          lng: 139.73809
+          lng: 139.73809,
+          transfer: true
         },
         {
           name: "北品川",
@@ -6883,7 +7014,8 @@ export const majorOperators = {
         {
           name: "横浜",
           lat: 35.466066,
-          lng: 139.623055
+          lng: 139.623055,
+          transfer: true
         },
         {
           name: "戸部",
@@ -6913,12 +7045,14 @@ export const majorOperators = {
         {
           name: "弘明寺",
           lat: 35.42437,
-          lng: 139.596791
+          lng: 139.596791,
+          transfer: true
         },
         {
           name: "上大岡",
           lat: 35.409418,
-          lng: 139.596552
+          lng: 139.596552,
+          transfer: true
         },
         {
           name: "屏風浦",
@@ -7039,12 +7173,14 @@ export const majorOperators = {
         {
           name: "天空橋",
           lat: 35.548908,
-          lng: 139.75423
+          lng: 139.75423,
+          transfer: true
         },
         {
           name: "羽田空港第3ターミナル",
           lat: 35.544676,
-          lng: 139.768968
+          lng: 139.768968,
+          transfer: true
         },
         {
           name: "羽田空港第1・第2ターミナル",
@@ -7083,7 +7219,8 @@ export const majorOperators = {
         {
           name: "東門前",
           lat: 35.536566,
-          lng: 139.734298
+          lng: 139.734298,
+          transfer: true
         },
         {
           name: "大師橋",
@@ -7213,7 +7350,8 @@ export const majorOperators = {
         {
           name: "千住大橋",
           lat: 35.74243,
-          lng: 139.796934
+          lng: 139.796934,
+          transfer: true
         },
         {
           name: "京成関屋",
@@ -7528,12 +7666,14 @@ export const majorOperators = {
         {
           name: "東松戸",
           lat: 35.769954,
-          lng: 139.942957
+          lng: 139.942957,
+          transfer: true
         },
         {
           name: "新鎌ヶ谷",
           lat: 35.779481,
-          lng: 139.998361
+          lng: 139.998361,
+          transfer: true
         },
         {
           name: "千葉ニュータウン中央",
@@ -7543,7 +7683,8 @@ export const majorOperators = {
         {
           name: "印旛日本医大",
           lat: 35.787512,
-          lng: 140.203112
+          lng: 140.203112,
+          transfer: true
         },
         {
           name: "成田湯川",

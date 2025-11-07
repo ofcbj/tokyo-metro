@@ -4,7 +4,17 @@
       "Bash(find:*)",
       "Bash(node src/updateColors.js:*)",
       "Bash(node src/removeTransferFlags.js:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(transfer-analysis.txt)",
+      "Bash(cat:*)",
+      "Bash(python add-transfers.py:*)",
+      "Bash(python fix-transfers.py:*)",
+      "Bash(python verify-transfers.py:*)",
+      "Bash({ grep \"transfer: true\" majorOperators.jsx minorOperators.jsx)",
+      "Bash(})",
+      "Bash(for station in \"東京\" \"新宿\" \"渋谷\" \"池袋\" \"横浜\" \"品川\")",
+      "Bash(do echo \"=== $station ===\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
