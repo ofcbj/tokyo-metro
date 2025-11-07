@@ -39,3 +39,38 @@ npm run build
 - Google Maps JavaScript API
 - Lucide React (아이콘)
 
+## 데이터 소스 옵션
+
+현재 프로젝트는 하드코딩된 노선 및 역 정보를 사용하고 있습니다. 오픈 API를 통해 데이터를 가져오는 방법도 제공됩니다.
+
+### 사용 가능한 API 옵션
+
+1. **Transitland API**: 전 세계 대중교통 데이터를 통합한 오픈 데이터 플랫폼
+2. **OpenStreetMap Overpass API**: 커뮤니티 기반 지도 데이터
+3. **GTFS 파일**: 표준 대중교통 데이터 형식
+
+자세한 내용은 [docs/API_OPTIONS.md](docs/API_OPTIONS.md)를 참고하세요.
+
+### API 테스트 스크립트
+
+다양한 API 소스를 테스트하고 비교할 수 있습니다:
+
+```bash
+# 모든 API 테스트
+node scripts/testAPIs.js
+
+# Transitland API만 테스트
+node scripts/fetchFromTransitland.js
+
+# OpenStreetMap API만 테스트
+node scripts/fetchFromOSM.js
+```
+
+### 데이터 마이그레이션
+
+기존 하드코딩된 데이터에서 API 기반 데이터로 전환하려면:
+
+1. `scripts/testAPIs.js`를 실행하여 사용 가능한 API 확인
+2. 선택한 API의 데이터를 현재 형식으로 변환
+3. `src/majorOperators.jsx` 및 `src/minorOperators.jsx`를 API 데이터로 대체
+
