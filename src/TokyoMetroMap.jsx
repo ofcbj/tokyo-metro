@@ -16,6 +16,7 @@ const TokyoMetroMap = () => {
   const [apiKey, setApiKey] = useState('');
   const [showApiInput, setShowApiInput] = useState(true);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
+  const [autoZoom, setAutoZoom] = useState(true); // 자동 줌 토글 상태
   const mapRef = useRef(null);
   const googleMapRef = useRef(null);
   const markersRef = useRef([]);
@@ -228,8 +229,8 @@ const TokyoMetroMap = () => {
       });
     });
 
-    // 선택된 노선이 있으면 맵 범위 조정
-    if (selectedLines.length > 0) {
+    // 자동 줌이 활성화되어 있고 선택된 노선이 있으면 맵 범위 조정
+    if (autoZoom && selectedLines.length > 0) {
       const bounds = new window.google.maps.LatLngBounds();
       Object.values(lineData).flat().forEach(line => {
         if (selectedLines.includes(line.id)) {
@@ -240,7 +241,7 @@ const TokyoMetroMap = () => {
       });
       googleMapRef.current.fitBounds(bounds);
     }
-  }, [selectedLines]);
+  }, [selectedLines, autoZoom]);
 
   if (showApiInput) {
     return (
@@ -344,6 +345,19 @@ const TokyoMetroMap = () => {
                 {operator}
               </button>
             ))}
+          </div>
+
+          {/* 자동 줌 토글 */}
+          <div className="mt-4">
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={autoZoom}
+                onChange={(e) => setAutoZoom(e.target.checked)}
+                className="w-4 h-4 text-blue-600 rounded focus:ring-2 focus:ring-blue-500"
+              />
+              <span className="text-sm text-gray-700">라인 선택 시 자동 줌</span>
+            </label>
           </div>
 
           {/* 선택된 노선 수 */}

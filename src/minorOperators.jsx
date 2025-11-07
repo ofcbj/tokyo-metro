@@ -5,7 +5,7 @@ export const minorOperators = {
       id: "29001",
       nameKo: "본선",
       nameJp: "相鉄本線",
-      color: "#666666",
+      color: "#FF6B6B",
       stations: [
         {
           name: "横浜",
@@ -104,7 +104,7 @@ export const minorOperators = {
       id: "29002",
       nameKo: "이즈미노선",
       nameJp: "相鉄いずみ野線",
-      color: "#666666",
+      color: "#4ECDC4",
       stations: [
         {
           name: "二俣川",
@@ -155,7 +155,7 @@ export const minorOperators = {
       id: "99310",
       nameKo: "미나토미라이선",
       nameJp: "みなとみらい線",
-      color: "#666666",
+      color: "#95E1D3",
       stations: [
         {
           name: "横浜",
@@ -195,7 +195,7 @@ export const minorOperators = {
       id: "99316",
       nameKo: "블루라인",
       nameJp: "ブルーライン",
-      color: "#666666",
+      color: "#3498DB",
       stations: [
         {
           name: "あざみ野",
@@ -363,7 +363,7 @@ export const minorOperators = {
       id: "99343",
       nameKo: "그린라인",
       nameJp: "グリーンライン",
-      color: "#666666",
+      color: "#2ECC71",
       stations: [
         {
           name: "中山",
@@ -423,7 +423,7 @@ export const minorOperators = {
       id: "99337",
       nameKo: "린카이선",
       nameJp: "りんかい線",
-      color: "#666666",
+      color: "#00D4AA",
       stations: [
         {
           name: "新木場",
@@ -473,7 +473,7 @@ export const minorOperators = {
       id: "99309",
       nameKo: "츠쿠바 익스프레스",
       nameJp: "つくばエクスプレス",
-      color: "#666666",
+      color: "#A29BFE",
       stations: [
         {
           name: "秋葉原",
@@ -583,7 +583,7 @@ export const minorOperators = {
       id: "99336",
       nameKo: "하네다공항선",
       nameJp: "東京モノレール",
-      color: "#666666",
+      color: "#74B9FF",
       stations: [
         {
           name: "モノレール浜松町",
@@ -648,7 +648,7 @@ export const minorOperators = {
       id: "99334",
       nameKo: "다마 모노레일",
       nameJp: "多摩モノレール",
-      color: "#666666",
+      color: "#FD79A8",
       stations: [
         {
           name: "多摩センター",
@@ -753,7 +753,7 @@ export const minorOperators = {
       id: "99311",
       nameKo: "유리카모메선",
       nameJp: "ゆりかもめ",
-      color: "#666666",
+      color: "#FDCB6E",
       stations: [
         {
           name: "新橋",
@@ -843,7 +843,7 @@ export const minorOperators = {
       id: "99307",
       nameKo: "사이타마 고속철도선",
       nameJp: "埼玉高速鉄道線",
-      color: "#666666",
+      color: "#E17055",
       stations: [
         {
           name: "赤羽岩淵",
@@ -893,7 +893,7 @@ export const minorOperators = {
       id: "99321",
       nameKo: "이나선/뉴 셔틀",
       nameJp: "ニューシャトル",
-      color: "#666666",
+      color: "#00B894",
       stations: [
         {
           name: "大宮",
@@ -968,7 +968,7 @@ export const minorOperators = {
       id: "99340",
       nameKo: "호쿠소선",
       nameJp: "北総鉄道北総線",
-      color: "#666666",
+      color: "#6C5CE7",
       stations: [
         {
           name: "京成高砂",
@@ -1053,7 +1053,7 @@ export const minorOperators = {
       id: "99338",
       nameKo: "도요 고속선",
       nameJp: "東葉高速線",
-      color: "#666666",
+      color: "#FF7675",
       stations: [
         {
           name: "西船橋",

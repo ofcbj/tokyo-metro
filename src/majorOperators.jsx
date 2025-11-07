@@ -592,7 +592,7 @@ export const majorOperators = {
       id: "99342",
       nameKo: "닛포리-토네리 라이너",
       nameJp: "日暮里・舎人ライナー",
-      color: "#666666",
+      color: "#E74C3C",
       stations: [
         {
           name: "日暮里",
@@ -2869,7 +2869,7 @@ export const majorOperators = {
       id: "11320",
       nameKo: "조반선 각역정차",
       nameJp: "JR常磐線(上野～取手)",
-      color: "#666666",
+      color: "#9B59B6",
       stations: [
         {
           name: "上野",
@@ -2991,7 +2991,7 @@ export const majorOperators = {
       id: "11320",
       nameKo: "조반선 쾌속",
       nameJp: "JR常磐線(上野～取手)",
-      color: "#666666",
+      color: "#16A085",
       stations: [
         {
           name: "上野",
@@ -3113,7 +3113,7 @@ export const majorOperators = {
       id: "11332",
       nameKo: "게이힌토호쿠선",
       nameJp: "JR京浜東北線",
-      color: "#666666",
+      color: "#27AE60",
       stations: [
         {
           name: "大宮",
@@ -3323,7 +3323,7 @@ export const majorOperators = {
       id: "11308",
       nameKo: "요코스카선",
       nameJp: "JR横須賀線",
-      color: "#666666",
+      color: "#F39C12",
       stations: [
         {
           name: "東京",
@@ -3436,7 +3436,7 @@ export const majorOperators = {
       id: "11321",
       nameKo: "사이쿄선",
       nameJp: "JR埼京線",
-      color: "#666666",
+      color: "#D35400",
       stations: [
         {
           name: "大崎",
@@ -3546,7 +3546,7 @@ export const majorOperators = {
       id: "11333",
       nameKo: "쇼난신주쿠라인",
       nameJp: "JR湘南新宿ライン",
-      color: "#666666",
+      color: "#C0392B",
       stations: [
         {
           name: "大宮",
@@ -3650,7 +3650,7 @@ export const majorOperators = {
       id: "11305",
       nameKo: "무사시노선",
       nameJp: "JR武蔵野線",
-      color: "#666666",
+      color: "#8E44AD",
       stations: [
         {
           name: "府中本町",
@@ -3793,7 +3793,7 @@ export const majorOperators = {
       id: "11303",
       nameKo: "난부선",
       nameJp: "JR南武線",
-      color: "#666666",
+      color: "#2C3E50",
       stations: [
         {
           name: "浜川崎",
@@ -3956,7 +3956,7 @@ export const majorOperators = {
       id: "11306",
       nameKo: "요코하마선",
       nameJp: "JR横浜線",
-      color: "#666666",
+      color: "#1ABC9C",
       stations: [
         {
           name: "東神奈川",
@@ -4066,7 +4066,7 @@ export const majorOperators = {
       id: "11326",
       nameKo: "게이요선",
       nameJp: "JR京葉線",
-      color: "#666666",
+      color: "#3498DB",
       stations: [
         {
           name: "東京",
@@ -4171,7 +4171,7 @@ export const majorOperators = {
       id: "11317",
       nameKo: "하치코선 남부",
       nameJp: "JR八高線(八王子～高麗川)",
-      color: "#666666",
+      color: "#F1C40F",
       stations: [
         {
           name: "八王子",
@@ -4228,7 +4228,7 @@ export const majorOperators = {
       id: "11315",
       nameKo: "오메선",
       nameJp: "JR青梅線",
-      color: "#666666",
+      color: "#E67E22",
       stations: [
         {
           name: "立川",
@@ -4363,7 +4363,7 @@ export const majorOperators = {
       id: "11316",
       nameKo: "이쓰카이치선",
       nameJp: "JR五日市線",
-      color: "#666666",
+      color: "#95A5A6",
       stations: [
         {
           name: "拝島",
@@ -4407,7 +4407,7 @@ export const majorOperators = {
       id: "11322",
       nameKo: "가와고에선",
       nameJp: "JR川越線",
-      color: "#666666",
+      color: "#34495E",
       stations: [
         {
           name: "大宮",
@@ -4473,7 +4473,7 @@ export const majorOperators = {
       id: "11301",
       nameKo: "도카이도선 간토",
       nameJp: "JR東海道本線(東京～熱海)",
-      color: "#666666",
+      color: "#7F8C8D",
       stations: [
         {
           name: "東京",
@@ -4593,7 +4593,7 @@ export const majorOperators = {
       id: "11307",
       nameKo: "네기시선",
       nameJp: "JR根岸線",
-      color: "#666666",
+      color: "#BDC3C7",
       stations: [
         {
           name: "横浜",
@@ -4859,7 +4859,7 @@ export const majorOperators = {
       id: "22001",
       nameKo: "이케부쿠로선",
       nameJp: "西武池袋線",
-      color: "#666666",
+      color: "#ECF0F1",
       stations: [
         {
           name: "池袋",
@@ -5053,7 +5053,7 @@ export const majorOperators = {
       id: "22002",
       nameKo: "세이부치치부선",
       nameJp: "西武秩父線",
-      color: "#666666",
+      color: "#FF6348",
       stations: [
         {
           name: "飯能",
@@ -5122,7 +5122,7 @@ export const majorOperators = {
       id: "22008",
       nameKo: "하이지마선",
       nameJp: "西武拝島線",
-      color: "#666666",
+      color: "#FF4757",
       stations: [
         {
           name: "小平",
@@ -5172,7 +5172,7 @@ export const majorOperators = {
       id: "22012",
       nameKo: "다마가와선",
       nameJp: "西武多摩川線",
-      color: "#666666",
+      color: "#5352ED",
       stations: [
         {
           name: "武蔵境",
@@ -5211,7 +5211,7 @@ export const majorOperators = {
       id: "22011",
       nameKo: "다마코선",
       nameJp: "西武多摩湖線",
-      color: "#666666",
+      color: "#3742FA",
       stations: [
         {
           name: "国分寺",
@@ -5255,7 +5255,7 @@ export const majorOperators = {
       id: "22009",
       nameKo: "세이부엔선",
       nameJp: "西武西武園線",
-      color: "#666666",
+      color: "#2ED573",
       stations: [
         {
           name: "東村山",
@@ -5273,7 +5273,7 @@ export const majorOperators = {
       id: "22004",
       nameKo: "도시마엔선",
       nameJp: "西武豊島線",
-      color: "#666666",
+      color: "#1E90FF",
       stations: [
         {
           name: "練馬",
@@ -5294,7 +5294,7 @@ export const majorOperators = {
       id: "26001",
       nameKo: "도요코선",
       nameJp: "東急東横線",
-      color: "#666666",
+      color: "#FFA502",
       stations: [
         {
           name: "渋谷",
@@ -5416,7 +5416,7 @@ export const majorOperators = {
       id: "26003",
       nameKo: "덴엔토시선",
       nameJp: "東急田園都市線",
-      color: "#666666",
+      color: "#FF6348",
       stations: [
         {
           name: "渋谷",
@@ -5564,7 +5564,7 @@ export const majorOperators = {
       id: "26002",
       nameKo: "메구로선",
       nameJp: "東急目黒線",
-      color: "#666666",
+      color: "#FF7F50",
       stations: [
         {
           name: "目黒",
@@ -5645,7 +5645,7 @@ export const majorOperators = {
       id: "26004",
       nameKo: "오이마치선",
       nameJp: "東急大井町線",
-      color: "#666666",
+      color: "#FF8C00",
       stations: [
         {
           name: "大井町",
@@ -5750,7 +5750,7 @@ export const majorOperators = {
       id: "26005",
       nameKo: "이케가미선",
       nameJp: "東急池上線",
-      color: "#666666",
+      color: "#FFB6C1",
       stations: [
         {
           name: "五反田",
@@ -5835,7 +5835,7 @@ export const majorOperators = {
       id: "26006",
       nameKo: "다마가와선",
       nameJp: "東急多摩川線",
-      color: "#666666",
+      color: "#FFDAB9",
       stations: [
         {
           name: "多摩川",
@@ -5880,7 +5880,7 @@ export const majorOperators = {
       id: "26007",
       nameKo: "세타가야선",
       nameJp: "東急世田谷線",
-      color: "#666666",
+      color: "#98D8C8",
       stations: [
         {
           name: "三軒茶屋",
@@ -5942,7 +5942,7 @@ export const majorOperators = {
       id: "24007",
       nameKo: "케이오신선",
       nameJp: "京王新線",
-      color: "#666666",
+      color: "#6BCF7F",
       stations: [
         {
           name: "新線新宿",
@@ -6148,7 +6148,7 @@ export const majorOperators = {
       id: "24002",
       nameKo: "사가미하라선",
       nameJp: "京王相模原線",
-      color: "#666666",
+      color: "#4D9DE0",
       stations: [
         {
           name: "調布",
@@ -6217,7 +6217,7 @@ export const majorOperators = {
       id: "24003",
       nameKo: "다카오선",
       nameJp: "京王高尾線",
-      color: "#666666",
+      color: "#E15F41",
       stations: [
         {
           name: "北野",
@@ -6261,7 +6261,7 @@ export const majorOperators = {
       id: "24005",
       nameKo: "도부쓰엔선",
       nameJp: "京王動物園線",
-      color: "#666666",
+      color: "#F19066",
       stations: [
         {
           name: "高幡不動",
@@ -6280,7 +6280,7 @@ export const majorOperators = {
       id: "24004",
       nameKo: "게이바조선",
       nameJp: "京王競馬場線",
-      color: "#666666",
+      color: "#BB8FCE",
       stations: [
         {
           name: "東府中",
@@ -6299,7 +6299,7 @@ export const majorOperators = {
       id: "24006",
       nameKo: "이노카시라선",
       nameJp: "京王井の頭線",
-      color: "#666666",
+      color: "#85C1E2",
       stations: [
         {
           name: "渋谷",
@@ -6395,7 +6395,7 @@ export const majorOperators = {
       id: "25001",
       nameKo: "오다와라선",
       nameJp: "小田急線",
-      color: "#666666",
+      color: "#52B788",
       stations: [
         {
           name: "新宿",
@@ -6641,7 +6641,7 @@ export const majorOperators = {
       id: "25002",
       nameKo: "에노시마선",
       nameJp: "小田急江ノ島線",
-      color: "#666666",
+      color: "#D4A373",
       stations: [
         {
           name: "相模大野",
@@ -6735,7 +6735,7 @@ export const majorOperators = {
       id: "25003",
       nameKo: "다마선",
       nameJp: "小田急多摩線",
-      color: "#666666",
+      color: "#EB984E",
       stations: [
         {
           name: "新百合ヶ丘",
@@ -6786,7 +6786,7 @@ export const majorOperators = {
       id: "21002",
       nameKo: "이세사키선/스카이트리라인",
       nameJp: "東武伊勢崎線",
-      color: "#666666",
+      color: "#DC7633",
       stations: [
         {
           name: "浅草",
@@ -7073,7 +7073,7 @@ export const majorOperators = {
       id: "21004",
       nameKo: "도부어반파크라인/노다선",
       nameJp: "東武アーバンパークライン（東武野田線）",
-      color: "#666666",
+      color: "#AF7AC5",
       stations: [
         {
           name: "大宮",
@@ -7463,7 +7463,7 @@ export const majorOperators = {
       id: "21005",
       nameKo: "가메이도선",
       nameJp: "東武亀戸線",
-      color: "#666666",
+      color: "#5DADE2",
       stations: [
         {
           name: "曳舟",
@@ -7497,7 +7497,7 @@ export const majorOperators = {
       id: "21006",
       nameKo: "다이시선",
       nameJp: "東武大師線",
-      color: "#666666",
+      color: "#48C9B0",
       stations: [
         {
           name: "西新井",
@@ -7518,7 +7518,7 @@ export const majorOperators = {
       id: "27001",
       nameKo: "본선",
       nameJp: "京急本線",
-      color: "#666666",
+      color: "#F8B739",
       stations: [
         {
           name: "泉岳寺",
@@ -7781,7 +7781,7 @@ export const majorOperators = {
       id: "27002",
       nameKo: "공항선",
       nameJp: "京急空港線",
-      color: "#666666",
+      color: "#EC7063",
       stations: [
         {
           name: "京急蒲田",
@@ -7825,7 +7825,7 @@ export const majorOperators = {
       id: "27003",
       nameKo: "다이시선",
       nameJp: "京急大師線",
-      color: "#666666",
+      color: "#A569BD",
       stations: [
         {
           name: "京急川崎",
@@ -7869,7 +7869,7 @@ export const majorOperators = {
       id: "27004",
       nameKo: "즈시선",
       nameJp: "京急逗子線",
-      color: "#666666",
+      color: "#5499C7",
       stations: [
         {
           name: "金沢八景",
@@ -7898,7 +7898,7 @@ export const majorOperators = {
       id: "27005",
       nameKo: "구리하마선",
       nameJp: "京急久里浜線",
-      color: "#666666",
+      color: "#45B39D",
       stations: [
         {
           name: "堀ノ内",
@@ -7954,7 +7954,7 @@ export const majorOperators = {
       id: "23001",
       nameKo: "본선",
       nameJp: "京成本線",
-      color: "#666666",
+      color: "#F5B041",
       stations: [
         {
           name: "京成上野",
@@ -8183,7 +8183,7 @@ export const majorOperators = {
       id: "23002",
       nameKo: "오시아게선",
       nameJp: "京成押上線",
-      color: "#666666",
+      color: "#EB984E",
       stations: [
         {
           name: "押上（スカイツリー前）",
@@ -8229,7 +8229,7 @@ export const majorOperators = {
       id: "23005",
       nameKo: "히가시나리타선",
       nameJp: "京成千原線",
-      color: "#666666",
+      color: "#CD6155",
       stations: [
         {
           name: "千葉中央",
@@ -8267,7 +8267,7 @@ export const majorOperators = {
       id: "23006",
       nameKo: "나리타스카이액세스선",
       nameJp: "成田スカイアクセス",
-      color: "#666666",
+      color: "#8E44AD",
       stations: [
         {
           name: "京成上野",
