@@ -561,7 +561,8 @@ export const opMinor = {
         {
           name: "流山おおたかの森",
           lat: 35.871799,
-          lng: 139.925044
+          lng: 139.925044,
+          transfer: true
         },
         {
           name: "柏の葉キャンパス",

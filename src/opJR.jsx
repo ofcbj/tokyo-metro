@@ -2897,8 +2897,8 @@ export const opJR = {
         },
         {
             id: "11327",
-            nameKo: "JR 나리타선",
-            nameJp: "JR成田線",
+            nameKo: "JR 나리타선 (본선)",
+            nameJp: "JR成田線（本線）",
             color: "#16A085",
             stations: [
                 {
@@ -2916,18 +2916,6 @@ export const opJR = {
                     name: "成田",
                     lat: 35.777796,
                     lng: 140.313853,
-                    transfer: true,
-                },
-                {
-                    name: "空港第２ビル（第２旅客ターミナル）",
-                    lat: 35.773327,
-                    lng: 140.387871,
-                    transfer: true,
-                },
-                {
-                    name: "成田空港（第１旅客ターミナル）",
-                    lat: 35.763983,
-                    lng: 140.384644,
                     transfer: true,
                 },
                 {
@@ -3004,6 +2992,40 @@ export const opJR = {
                     lng: 140.827557,
                     transfer: true,
                 },
+            ],
+        },
+        {
+            id: "113271",
+            nameKo: "JR 나리타선 (공항지선)",
+            nameJp: "JR成田線（空港支線）",
+            color: "#16A085",
+            stations: [
+                {
+                    name: "成田",
+                    lat: 35.777796,
+                    lng: 140.313853,
+                    transfer: true,
+                },
+                {
+                    name: "空港第２ビル（第２旅客ターミナル）",
+                    lat: 35.773327,
+                    lng: 140.387871,
+                    transfer: true,
+                },
+                {
+                    name: "成田空港（第１旅客ターミナル）",
+                    lat: 35.763983,
+                    lng: 140.384644,
+                    transfer: true,
+                },
+            ],
+        },
+        {
+            id: "113272",
+            nameKo: "JR 나리타선 (아비코지선)",
+            nameJp: "JR成田線（我孫子支線）",
+            color: "#16A085",
+            stations: [
                 {
                     name: "我孫子",
                     lat: 35.87279,
@@ -3049,6 +3071,12 @@ export const opJR = {
                     name: "下総松崎",
                     lat: 35.807806,
                     lng: 140.27749,
+                },
+                {
+                    name: "成田",
+                    lat: 35.777796,
+                    lng: 140.313853,
+                    transfer: true,
                 },
             ],
         },
