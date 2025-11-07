@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Search, X, Train } from 'lucide-react';
 import { majorOperators } from './majorOperators';
 import { minorOperators } from './minorOperators';
@@ -24,6 +24,7 @@ const TokyoMetroMap = () => {
   const polylinesRef = useRef([]);
   const previousSelectedLinesRef = useRef([]); // 이전에 선택된 라인 추적
   const selectedLinesRef = useRef(selectedLines);
+  const allLineIds = useMemo(() => Object.values(lineData).flat().map(line => line.id), []);
 
   // 검색 및 필터링된 노선 데이터
   const filteredLineData = Object.entries(lineData).reduce((acc, [operator, lines]) => {
@@ -170,6 +171,11 @@ const TokyoMetroMap = () => {
         : [...prev, lineId]
     );
   };
+
+  const showAllLines = useCallback(() => {
+    setShouldPanOnNextUpdate(false);
+    setSelectedLines(allLineIds);
+  }, [allLineIds]);
 
   // 특정 역을 지나가는 모든 노선 찾기
   const findLinesForStation = (stationName) => {
@@ -506,14 +512,22 @@ const TokyoMetroMap = () => {
           </div>
 
           {/* 선택된 노선 수 */}
-          {selectedLines.length > 0 && (
-            <div className="mt-4 text-sm text-gray-600">
-              {selectedLines.length}路線選択中
+          {(selectedLines.length > 0 || allLineIds.length > 0) && (
+            <div className="mt-4 text-sm text-gray-600 flex items-center gap-2 flex-wrap">
+              {selectedLines.length > 0 && (
+                <span>{selectedLines.length}路線選択中</span>
+              )}
               <button
                 onClick={() => setSelectedLines([])}
-                className="ml-2 text-blue-600 hover:underline"
+                className="text-blue-600 hover:underline"
               >
                 全て解除
+              </button>
+              <button
+                onClick={showAllLines}
+                className="text-blue-600 hover:underline"
+              >
+                全て表示
               </button>
             </div>
           )}
