@@ -596,7 +596,8 @@ export const opMajor1 = {
         {
           name: "豊島園",
           lat: 35.742567043044,
-          lng: 139.64894845621
+          lng: 139.64894845621,
+          transfer: true
         },
         {
           name: "練馬春日町",
@@ -3284,7 +3285,8 @@ export const opMajor1 = {
         {
           name: "大和",
           lat: 35.46965,
-          lng: 139.461553
+          lng: 139.461553,
+          transfer: true
         },
         {
           name: "桜ヶ丘",

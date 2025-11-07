@@ -1034,6 +1034,7 @@ export const opMajor2 = {
           name: "西所沢",
           lat: 35.789303,
           lng: 139.455959,
+          transfer: true,
         },
         {
           name: "小手指",
@@ -1529,6 +1530,7 @@ export const opMajor2 = {
           name: "豊島園",
           lat: 35.742054,
           lng: 139.647979,
+          transfer: true
         },
       ],
     },
@@ -2266,14 +2268,12 @@ export const opMajor2 = {
         {
           name: "京成幕張本郷",
           lat: 35.672551,
-          lng: 140.042091,
-          transfer: true,
+          lng: 140.042091
         },
         {
           name: "京成幕張",
           lat: 35.66078,
-          lng: 140.05591,
-          transfer: true,
+          lng: 140.05591
         },
         {
           name: "検見川",
@@ -2303,8 +2303,7 @@ export const opMajor2 = {
         {
           name: "京成千葉",
           lat: 35.6116,
-          lng: 140.114273,
-          transfer: true,
+          lng: 140.114273
         },
         {
           name: "千葉中央",
@@ -2457,6 +2456,7 @@ export const opMajor2 = {
           name: "千葉中央",
           lat: 35.607354,
           lng: 140.117809,
+          transfer: true,
         },
         {
           name: "千葉寺",
