@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Search, X, Train } from 'lucide-react';
-import { majorOperators } from './majorOperators';
-import { minorOperators } from './minorOperators';
+import { opJR } from './opJR';
+import { opMajor } from './opMajor';
+import { opMinor } from './opMinor';
 
 // 노선 데이터 통합
 const lineData = {
-  ...majorOperators,
-  ...minorOperators,
+  ...opJR,
+  ...opMajor,
+  ...opMinor,
 };
 
 const TokyoMetroMap = () => {
