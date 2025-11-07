@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Search, X, Train } from 'lucide-react';
 import { opJR } from './opJR';
-import { opMajor } from './opMajor';
+import { opMajor1 } from './opMajor1';
+import { opMajor2 } from './opMajor2';
 import { opMinor } from './opMinor';
 
 // 노선 데이터 통합
 const lineData = {
   ...opJR,
-  ...opMajor,
+  ...opMajor1,
+  ...opMajor2,
   ...opMinor,
 };
 
