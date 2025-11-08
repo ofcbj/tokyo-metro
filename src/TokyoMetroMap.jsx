@@ -30,6 +30,7 @@ const TokyoMetroMap = () => {
   const [remainingClicks, setRemainingClicks] = useState(50);
   const [animationSpeed, setAnimationSpeed] = useState(1.0); // 1.0 = 기본 속도
   const [showGameIntro, setShowGameIntro] = useState(false);
+  const [showGameResult, setShowGameResult] = useState(null); // { type: 'win' | 'lose', discoveredCount, totalCount, remainingClicks }
   const [toastMessage, setToastMessage] = useState(null);
   const [clickEffect, setClickEffect] = useState(null); // 클릭 이펙트 {x, y, success}
 
@@ -240,6 +241,7 @@ const TokyoMetroMap = () => {
     setDiscoveredLines(new Set());
     setGameLog([]);
     setRemainingClicks(50);
+    setShowGameResult(null);
   }, []);
 
   // 두 지점 간 거리 계산 (미터)
@@ -326,8 +328,12 @@ const TokyoMetroMap = () => {
           // 게임 오버 체크
           if (newRemainingClicks === 0) {
             setTimeout(() => {
-              alert(`😢 ゲームオーバー!\n\n発見した路線: ${discoveredLines.size} / ${allLineIds.length}\nもう一度チャレンジしてみてください!`);
-              endGame();
+              setShowGameResult({
+                type: 'lose',
+                discoveredCount: discoveredLines.size,
+                totalCount: allLineIds.length,
+                remainingClicks: 0
+              });
             }, 2100);
           }
 
@@ -379,11 +385,19 @@ const TokyoMetroMap = () => {
         setTimeout(() => {
           setDiscoveredLines(currentDiscovered => {
             if (currentDiscovered.size === allLineIds.length) {
-              alert(`🎉 축하합니다! 승리!\n\n모든 ${allLineIds.length}개 노선을 발견했습니다!\n남은 클릭 횟수: ${newRemainingClicks}`);
-              endGame();
+              setShowGameResult({
+                type: 'win',
+                discoveredCount: allLineIds.length,
+                totalCount: allLineIds.length,
+                remainingClicks: newRemainingClicks
+              });
             } else if (newRemainingClicks === 0) {
-              alert(`😢 ゲームオーバー!\n\n発見した路線: ${currentDiscovered.size} / ${allLineIds.length}\nもう一度チャレンジしてみてください!`);
-              endGame();
+              setShowGameResult({
+                type: 'lose',
+                discoveredCount: currentDiscovered.size,
+                totalCount: allLineIds.length,
+                remainingClicks: 0
+              });
             }
             return currentDiscovered;
           });
@@ -776,6 +790,121 @@ const TokyoMetroMap = () => {
                   className="flex-1 px-4 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all font-bold shadow-lg"
                 >
                   スタート! 🚀
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 게임 결과 모달 */}
+      {showGameResult && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 overflow-hidden animate-fade-in">
+            {/* 헤더 */}
+            <div className={`p-6 text-white ${
+              showGameResult.type === 'win'
+                ? 'bg-gradient-to-r from-green-500 to-emerald-600'
+                : 'bg-gradient-to-r from-red-500 to-pink-600'
+            }`}>
+              <div className="text-center">
+                <div className="text-5xl mb-3">
+                  {showGameResult.type === 'win' ? '🎉' : '😢'}
+                </div>
+                <h2 className="text-3xl font-bold mb-2">
+                  {showGameResult.type === 'win' ? '完全勝利！' : 'ゲームオーバー'}
+                </h2>
+                <p className={`text-sm ${
+                  showGameResult.type === 'win' ? 'text-green-100' : 'text-red-100'
+                }`}>
+                  {showGameResult.type === 'win'
+                    ? 'All Routes Discovered!'
+                    : 'Try Again!'}
+                </p>
+              </div>
+            </div>
+
+            {/* 결과 내용 */}
+            <div className="p-6">
+              <div className="space-y-4">
+                {/* 발견한 노선 */}
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-5 border-2 border-blue-200">
+                  <div className="text-center">
+                    <div className="text-sm text-blue-600 font-semibold mb-2">発見した路線</div>
+                    <div className="text-5xl font-bold text-blue-900 mb-1">
+                      {showGameResult.discoveredCount}
+                    </div>
+                    <div className="text-sm text-blue-600">
+                      / {showGameResult.totalCount} 路線
+                    </div>
+                    <div className="mt-3 bg-white rounded-full h-3 overflow-hidden">
+                      <div
+                        className="h-full bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-500"
+                        style={{
+                          width: `${(showGameResult.discoveredCount / showGameResult.totalCount * 100)}%`
+                        }}
+                      />
+                    </div>
+                    <div className="text-xs text-blue-500 mt-1">
+                      達成率: {Math.round(showGameResult.discoveredCount / showGameResult.totalCount * 100)}%
+                    </div>
+                  </div>
+                </div>
+
+                {/* 승리 시 남은 클릭 표시 */}
+                {showGameResult.type === 'win' && (
+                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-4 border-2 border-green-200">
+                    <div className="text-center">
+                      <div className="text-sm text-green-600 font-semibold mb-1">残りクリック数</div>
+                      <div className="text-3xl font-bold text-green-700">
+                        {showGameResult.remainingClicks} 回
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* 패배 시 격려 메시지 */}
+                {showGameResult.type === 'lose' && (
+                  <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-lg p-4 border-2 border-orange-200">
+                    <div className="text-center">
+                      <div className="text-sm text-orange-700 font-semibold mb-2">
+                        もう一度チャレンジ！
+                      </div>
+                      <div className="text-xs text-orange-600">
+                        あと {showGameResult.totalCount - showGameResult.discoveredCount} 路線で完全勝利です
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* 메시지 */}
+                <div className="text-center text-gray-600 text-sm leading-relaxed">
+                  {showGameResult.type === 'win'
+                    ? '素晴らしい！首都圏のすべての路線を発見しました！'
+                    : 'クリック回数が足りませんでした。戦略を変えてもう一度挑戦してみましょう！'}
+                </div>
+              </div>
+
+              {/* 버튼 */}
+              <div className="mt-6 flex gap-3">
+                <button
+                  onClick={endGame}
+                  className="flex-1 px-4 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors font-semibold"
+                >
+                  閉じる
+                </button>
+                <button
+                  onClick={() => {
+                    endGame();
+                    setTimeout(() => startGame(), 100);
+                  }}
+                  className={`flex-1 px-4 py-3 text-white rounded-lg transition-all font-bold shadow-lg ${
+                    showGameResult.type === 'win'
+                      ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700'
+                      : 'bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700'
+                  }`}
+                >
+                  もう一度 🚀
                 </button>
               </div>
             </div>
