@@ -251,8 +251,7 @@ export const opMajor1 = {
         {
           name: "蓮根",
           lat: 35.784335,
-          lng: 139.678993,
-          transfer: true
+          lng: 139.678993
         },
         {
           name: "西台",
@@ -3291,8 +3290,7 @@ export const opMajor1 = {
         {
           name: "足柄",
           lat: 35.271763,
-          lng: 139.15447,
-          transfer: true
+          lng: 139.15447
         },
         {
           name: "小田原",

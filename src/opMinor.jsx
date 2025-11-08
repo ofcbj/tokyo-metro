@@ -1579,7 +1579,6 @@ export const opMinor = {
           name: "永田",
           lat: 36.135314,
           lng: 139.259516,
-          transfer: true,
         },
         {
           name: "ふかや花園",

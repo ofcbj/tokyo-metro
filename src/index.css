@@ -11,3 +11,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Google Maps InfoWindow 스타일 커스터마이징 */
+/* 닫기 버튼 완전히 숨기기 */
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+/* InfoWindow 컨테이너 패딩 최소화 */
+.gm-style .gm-style-iw-c {
+  padding: 2px 2px 4px 2px !important;
+  max-width: 320px !important;
+}
+
+/* InfoWindow 내용 영역 */
+.gm-style .gm-style-iw-d {
+  overflow: auto !important;
+  max-height: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* InfoWindow 꼬리 부분 */
+.gm-style .gm-style-iw-tc {
+  display: block !important;
+}
+
+.gm-style .gm-style-iw-tc::after {
+  background: white !important;
+}
+

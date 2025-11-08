@@ -2198,6 +2198,7 @@ export const opMajor2 = {
           name: "京成成田",
           lat: 35.776308,
           lng: 140.315473,
+          transfer: true,
         },
         {
           name: "東成田",

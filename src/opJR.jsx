@@ -707,7 +707,7 @@ export const opJR = {
                     name: "幕張本郷",
                     lat: 35.672664,
                     lng: 140.042241,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "幕張",
@@ -2638,8 +2638,7 @@ export const opJR = {
                 {
                     name: "永田",
                     lat: 35.503129,
-                    lng: 140.311162,
-          transfer: true,
+                    lng: 140.311162
                 },
                 {
                     name: "本納",
@@ -3135,14 +3134,12 @@ export const opJR = {
                 {
                     name: "鹿島神宮",
                     lat: 35.970614,
-                    lng: 140.625676,
-                    transfer: true,
+                    lng: 140.625676
                 },
                 {
                     name: "鹿島サッカースタジアム（臨）",
                     lat: 35.992707,
-                    lng: 140.63606,
-                    transfer: true,
+                    lng: 140.63606
                 },
             ],
         },
@@ -3642,7 +3639,7 @@ export const opJR = {
                     name: "厚木",
                     lat: 35.44375,
                     lng: 139.378631,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "海老名",
@@ -3653,8 +3650,7 @@ export const opJR = {
                 {
                     name: "入谷",
                     lat: 35.478478,
-                    lng: 139.391913,
-          transfer: true,
+                    lng: 139.391913
                 },
                 {
                     name: "相武台下",
@@ -3751,8 +3747,7 @@ export const opJR = {
                 {
                     name: "足柄",
                     lat: 35.332233,
-                    lng: 138.981687,
-          transfer: true,
+                    lng: 138.981687
                 },
                 {
                     name: "御殿場",

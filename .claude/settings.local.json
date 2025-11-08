@@ -15,7 +15,8 @@
       "Bash(for station in \"東京\" \"新宿\" \"渋谷\" \"池袋\" \"横浜\" \"品川\")",
       "Bash(do echo \"=== $station ===\")",
       "Bash(done)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
