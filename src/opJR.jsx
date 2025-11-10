@@ -3446,7 +3446,7 @@ export const opJR = {
                     name: "藤沢",
                     lat: 35.338882,
                     lng: 139.487293,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "辻堂",
@@ -3477,6 +3477,7 @@ export const opJR = {
                     name: "国府津",
                     lat: 35.280832,
                     lng: 139.212932,
+                    transfer: true,
                 },
                 {
                     name: "鴨宮",

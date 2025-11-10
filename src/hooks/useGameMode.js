@@ -1,16 +1,16 @@
-import { useState, useCallback, useRef, useMemo } from 'react';
+import { useState, useCallback, useRef } from 'react';
 
 export const useGameMode = (lineData, allLineIds) => {
-  const [isGameMode, setIsGameMode] = useState(false);
+  const [isGameMode, setIsGameMode]           = useState(false);
   const [discoveredLines, setDiscoveredLines] = useState(new Set());
-  const [gameLog, setGameLog] = useState([]);
+  const [gameLog, setGameLog]                 = useState([]);
   const [remainingClicks, setRemainingClicks] = useState(50);
-  const [animationSpeed, setAnimationSpeed] = useState(1.0);
-  const [showGameIntro, setShowGameIntro] = useState(false);
-  const [showGameResult, setShowGameResult] = useState(null);
-  const [toastMessage, setToastMessage] = useState(null);
-  const [clickEffect, setClickEffect] = useState(null);
-  const processingClickRef = useRef(false);
+  const [animationSpeed, setAnimationSpeed]   = useState(1.0);
+  const [showGameIntro, setShowGameIntro]     = useState(false);
+  const [showGameResult, setShowGameResult]   = useState(null);
+  const [toastMessage, setToastMessage]       = useState(null);
+  const [clickEffect, setClickEffect]         = useState(null);
+  const processingClickRef                    = useRef(false);
 
   // 게임 시작 함수
   const startGame = useCallback(() => {
@@ -50,6 +50,113 @@ export const useGameMode = (lineData, allLineIds) => {
     setShowGameResult(null);
   }, []);
 
+  // 노선 발견 실패 처리
+  const handleNoNewLines = useCallback((newRemainingClicks) => {
+    setToastMessage({
+      text: '新しい路線が発見されませんでした',
+      color: '#666666',
+      isError: true
+    });
+
+    setTimeout(() => {
+      setToastMessage(null);
+      processingClickRef.current = false;
+    }, 2000);
+
+    // 게임 오버 체크
+    if (newRemainingClicks === 0) {
+      setTimeout(() => {
+        setShowGameResult({
+          type: 'lose',
+          discoveredCount: discoveredLines.size,
+          totalCount: allLineIds.length,
+          remainingClicks: 0
+        });
+      }, 2100);
+    }
+  }, [discoveredLines, allLineIds]);
+
+  // 새 노선 정보 가져오기
+  const getNewLinesInfo = useCallback((newDiscoveredLineIds) => {
+    const allLines = Object.values(lineData).flat();
+    return newDiscoveredLineIds
+      .map(id => allLines.find(line => line.id === id))
+      .filter(Boolean);
+  }, [lineData]);
+
+  // 단일 노선 발견 처리
+  const discoverSingleLine = useCallback((line, setSelectedLines) => {
+    // 발견된 노선에 추가
+    setDiscoveredLines(prev => {
+      const newSet = new Set(prev);
+      newSet.add(line.id);
+      return newSet;
+    });
+
+    // 선택된 노선에 추가 (지도에 표시)
+    if (setSelectedLines) {
+      setSelectedLines(prev => [...new Set([...prev, line.id])]);
+    }
+
+    // 토스트 메시지 표시
+    setToastMessage({
+      text: `${line.nameJp} (${line.nameKo})`,
+      color: line.color
+    });
+
+    // 로그에 추가
+    setGameLog(prev => [{
+      timestamp: new Date(),
+      message: `新路線発見：${line.nameJp} (${line.nameKo})`,
+      lineColor: line.color
+    }, ...prev]);
+  }, []);
+
+  // 여러 노선을 시차를 두고 발견
+  const discoverLinesWithDelay = useCallback((newLinesInfo, setSelectedLines) => {
+    const baseInterval = 2000 / animationSpeed;
+
+    newLinesInfo.forEach((line, index) => {
+      setTimeout(() => {
+        discoverSingleLine(line, setSelectedLines);
+      }, index * baseInterval);
+    });
+
+    return baseInterval;
+  }, [animationSpeed, discoverSingleLine]);
+
+  // 게임 종료 조건 확인
+  const checkGameEndCondition = useCallback((newRemainingClicks, baseInterval, newLinesCount) => {
+    setTimeout(() => {
+      setDiscoveredLines(currentDiscovered => {
+        if (currentDiscovered.size === allLineIds.length) {
+          setShowGameResult({
+            type: 'win',
+            discoveredCount: allLineIds.length,
+            totalCount: allLineIds.length,
+            remainingClicks: newRemainingClicks
+          });
+        } else if (newRemainingClicks === 0) {
+          setShowGameResult({
+            type: 'lose',
+            discoveredCount: currentDiscovered.size,
+            totalCount: allLineIds.length,
+            remainingClicks: 0
+          });
+        }
+        return currentDiscovered;
+      });
+    }, newLinesCount * baseInterval + 200);
+  }, [allLineIds]);
+
+  // 애니메이션 완료 후 정리
+  const cleanupAfterAnimation = useCallback((baseInterval, newLinesCount) => {
+    setTimeout(() => {
+      setToastMessage(null);
+      processingClickRef.current = false;
+    }, newLinesCount * baseInterval);
+  }, []);
+
   // 게임 모드에서 노선 발견 처리
   const handleGameDiscovery = useCallback((newLineIds, setSelectedLines) => {
     if (processingClickRef.current) {
@@ -67,104 +174,36 @@ export const useGameMode = (lineData, allLineIds) => {
       const newDiscoveredLineIds = newLineIds.filter(id => !discoveredLines.has(id));
       const newRemainingClicks = prevClicks - 1;
 
+      // 새로운 노선이 발견되지 않은 경우
       if (newDiscoveredLineIds.length === 0) {
-        // 새로운 노선이 발견되지 않은 경우
-        setToastMessage({
-          text: '新しい路線が発見されませんでした',
-          color: '#666666',
-          isError: true
-        });
-
-        setTimeout(() => {
-          setToastMessage(null);
-          processingClickRef.current = false;
-        }, 2000);
-
-        // 게임 오버 체크
-        if (newRemainingClicks === 0) {
-          setTimeout(() => {
-            setShowGameResult({
-              type: 'lose',
-              discoveredCount: discoveredLines.size,
-              totalCount: allLineIds.length,
-              remainingClicks: 0
-            });
-          }, 2100);
-        }
-
+        handleNoNewLines(newRemainingClicks);
         return newRemainingClicks;
       }
 
       // 새로운 노선 정보 가져오기
-      const allLines = Object.values(lineData).flat();
-      const newLinesInfo = newDiscoveredLineIds.map(id =>
-        allLines.find(line => line.id === id)
-      ).filter(Boolean);
+      const newLinesInfo = getNewLinesInfo(newDiscoveredLineIds);
 
       // 각 노선을 시차를 두고 추가
-      const baseInterval = 2000 / animationSpeed;
-      newLinesInfo.forEach((line, index) => {
-        setTimeout(() => {
-          // 발견된 노선에 추가
-          setDiscoveredLines(prev => {
-            const newSet = new Set(prev);
-            newSet.add(line.id);
-            return newSet;
-          });
-
-          // 선택된 노선에 추가 (지도에 표시)
-          if (setSelectedLines) {
-            setSelectedLines(prev => [...new Set([...prev, line.id])]);
-          }
-
-          // 토스트 메시지 표시
-          setToastMessage({
-            text: `${line.nameJp} (${line.nameKo})`,
-            color: line.color
-          });
-
-          // 로그에 추가
-          setGameLog(prev => [{
-            timestamp: new Date(),
-            message: `新路線発見：${line.nameJp} (${line.nameKo})`,
-            lineColor: line.color
-          }, ...prev]);
-        }, index * baseInterval);
-      });
+      const baseInterval = discoverLinesWithDelay(newLinesInfo, setSelectedLines);
 
       // 모든 애니메이션이 끝난 후 토스트 제거 및 플래그 리셋
-      setTimeout(() => {
-        setToastMessage(null);
-        processingClickRef.current = false;
-      }, newLinesInfo.length * baseInterval);
+      cleanupAfterAnimation(baseInterval, newLinesInfo.length);
 
       // 승리 조건 확인
-      setTimeout(() => {
-        setDiscoveredLines(currentDiscovered => {
-          if (currentDiscovered.size === allLineIds.length) {
-            setShowGameResult({
-              type: 'win',
-              discoveredCount: allLineIds.length,
-              totalCount: allLineIds.length,
-              remainingClicks: newRemainingClicks
-            });
-          } else if (newRemainingClicks === 0) {
-            setShowGameResult({
-              type: 'lose',
-              discoveredCount: currentDiscovered.size,
-              totalCount: allLineIds.length,
-              remainingClicks: 0
-            });
-          }
-          return currentDiscovered;
-        });
-      }, newLinesInfo.length * baseInterval + 200);
+      checkGameEndCondition(newRemainingClicks, baseInterval, newLinesInfo.length);
 
       return newRemainingClicks;
     });
 
     return newLineIds;
-  }, [discoveredLines, allLineIds, lineData, animationSpeed]);
+  }, [
+    discoveredLines,
+    handleNoNewLines,
+    getNewLinesInfo,
+    discoverLinesWithDelay,
+    cleanupAfterAnimation,
+    checkGameEndCondition
+  ]);
 
   return {
     isGameMode,

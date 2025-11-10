@@ -211,9 +211,7 @@ const TokyoMetroMap = () => {
           setFilterOperator={setFilterOperator}
           autoZoom={autoZoom}
           setAutoZoom={setAutoZoom}
-          discoveredLines={discoveredLines}
           allLineIds={allLineIds}
-          remainingClicks={remainingClicks}
           selectedLines={selectedLines}
           showAllLines={showAllLines}
           setSelectedLines={setSelectedLines}
