@@ -605,8 +605,7 @@ export const opMajor1 = {
         {
           name: "豊島園",
           lat: 35.742567043044,
-          lng: 139.64894845621,
-          transfer: true
+          lng: 139.64894845621
         },
         {
           name: "練馬春日町",
@@ -1051,35 +1050,6 @@ export const opMajor1 = {
           lng: 139.620116,
           transfer: true,
         },
-      ]
-    },
-    {
-      id: "280021",
-      nameKo: "마루노우치선 (호난초지선)",
-      nameJp: "東京メトロ丸ノ内線（方南町支線）",
-      color: "#F62E36",
-      stations: [
-        {
-          name: "中野坂上",
-          lat: 35.69792,
-          lng: 139.68291,
-          transfer: true,
-        },
-        {
-          name: "中野新橋",
-          lat: 35.692123,
-          lng: 139.673997,
-        },
-        {
-          name: "中野富士見町",
-          lat: 35.690514,
-          lng: 139.666933,
-        },
-        {
-          name: "方南町",
-          lat: 35.683496,
-          lng: 139.656498,
-        }
       ]
     },
     {
@@ -2584,36 +2554,6 @@ export const opMajor1 = {
   ],
   "京王電鉄": [
     {
-      id: "24007",
-      nameKo: "케이오신선",
-      nameJp: "京王新線",
-      color: "#6BCF7F",
-      stations: [
-        {
-          name: "新線新宿",
-          lat: 35.68869,
-          lng: 139.698812,
-          transfer: true
-        },
-        {
-          name: "初台",
-          lat: 35.68123,
-          lng: 139.686354
-        },
-        {
-          name: "幡ヶ谷",
-          lat: 35.677061,
-          lng: 139.676183
-        },
-        {
-          name: "笹塚",
-          lat: 35.673758,
-          lng: 139.667251,
-          transfer: true
-        }
-      ]
-    },
-    {
       id: "24001",
       nameKo: "케이오선",
       nameJp: "京王線",
@@ -2628,8 +2568,7 @@ export const opMajor1 = {
         {
           name: "笹塚",
           lat: 35.673758,
-          lng: 139.667251,
-          transfer: true
+          lng: 139.667251
         },
         {
           name: "代田橋",
@@ -2727,8 +2666,7 @@ export const opMajor1 = {
         {
           name: "東府中",
           lat: 35.668766,
-          lng: 139.495257,
-          transfer: true
+          lng: 139.495257
         },
         {
           name: "府中",
@@ -2904,45 +2842,6 @@ export const opMajor1 = {
           name: "高尾山口",
           lat: 35.632377,
           lng: 139.269856
-        }
-      ]
-    },
-    {
-      id: "24005",
-      nameKo: "도부쓰엔선",
-      nameJp: "京王動物園線",
-      color: "#F19066",
-      stations: [
-        {
-          name: "高幡不動",
-          lat: 35.662361,
-          lng: 139.412953,
-          transfer: true
-        },
-        {
-          name: "多摩動物公園",
-          lat: 35.649215,
-          lng: 139.404627,
-          transfer: true
-        }
-      ]
-    },
-    {
-      id: "24004",
-      nameKo: "게이바조선",
-      nameJp: "京王競馬場線",
-      color: "#BB8FCE",
-      stations: [
-        {
-          name: "東府中",
-          lat: 35.668766,
-          lng: 139.495257,
-          transfer: true
-        },
-        {
-          name: "府中競馬正門前",
-          lat: 35.668288,
-          lng: 139.485019
         }
       ]
     },

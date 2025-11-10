@@ -406,7 +406,7 @@ export const opJR = {
                     name: "都賀",
                     lat: 35.636088,
                     lng: 140.149222,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "四街道",
@@ -627,13 +627,13 @@ export const opJR = {
                     name: "浅草橋",
                     lat: 35.697403,
                     lng: 139.784427,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "両国",
                     lat: 35.69579,
                     lng: 139.793334,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "錦糸町",
@@ -1438,7 +1438,7 @@ export const opJR = {
                     name: "北朝霞",
                     lat: 35.815475,
                     lng: 139.587322,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "西浦和",
@@ -1449,7 +1449,7 @@ export const opJR = {
                     name: "武蔵浦和",
                     lat: 35.846047,
                     lng: 139.647974,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "南浦和",
@@ -1567,7 +1567,7 @@ export const opJR = {
                     name: "八丁畷",
                     lat: 35.523071,
                     lng: 139.691446,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "川崎",
@@ -1620,7 +1620,7 @@ export const opJR = {
                     name: "武蔵溝ノ口",
                     lat: 35.598923,
                     lng: 139.61139,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "津田山",
@@ -1751,7 +1751,7 @@ export const opJR = {
                     name: "中山",
                     lat: 35.514745,
                     lng: 139.539692,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "十日市場",
@@ -1762,7 +1762,7 @@ export const opJR = {
                     name: "長津田",
                     lat: 35.531698,
                     lng: 139.49468,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "成瀬",
@@ -1840,7 +1840,7 @@ export const opJR = {
                     name: "八丁堀",
                     lat: 35.674617,
                     lng: 139.777705,
-          transfer: true,
+                    transfer: true,
                 },
                 {
                     name: "越中島",
@@ -2959,14 +2959,12 @@ export const opJR = {
                 {
                     name: "佐原",
                     lat: 35.894522,
-                    lng: 140.494074,
-                    transfer: true,
+                    lng: 140.494074
                 },
                 {
                     name: "香取",
                     lat: 35.897856,
-                    lng: 140.532367,
-                    transfer: true,
+                    lng: 140.532367
                 },
                 {
                     name: "水郷",
@@ -3008,32 +3006,6 @@ export const opJR = {
                     name: "銚子",
                     lat: 35.729449,
                     lng: 140.827557,
-                    transfer: true,
-                },
-            ],
-        },
-        {
-            id: "113271",
-            nameKo: "JR 나리타선 (공항지선)",
-            nameJp: "JR成田線（空港支線）",
-            color: "#16A085",
-            stations: [
-                {
-                    name: "成田",
-                    lat: 35.777796,
-                    lng: 140.313853,
-                    transfer: true,
-                },
-                {
-                    name: "空港第２ビル（第２旅客ターミナル）",
-                    lat: 35.773327,
-                    lng: 140.387871,
-                    transfer: true,
-                },
-                {
-                    name: "成田空港（第１旅客ターミナル）",
-                    lat: 35.763983,
-                    lng: 140.384644,
                     transfer: true,
                 },
             ],
@@ -3095,51 +3067,6 @@ export const opJR = {
                     lat: 35.777796,
                     lng: 140.313853,
                     transfer: true,
-                },
-            ],
-        },
-        {
-            id: "11329",
-            nameKo: "JR 가시마선",
-            nameJp: "JR鹿島線",
-            color: "#0E6655",
-            stations: [
-                {
-                    name: "佐原",
-                    lat: 35.894522,
-                    lng: 140.494074,
-                    transfer: true,
-                },
-                {
-                    name: "香取",
-                    lat: 35.897856,
-                    lng: 140.532367,
-                    transfer: true,
-                },
-                {
-                    name: "十二橋",
-                    lat: 35.916984,
-                    lng: 140.545707,
-                },
-                {
-                    name: "潮来",
-                    lat: 35.936904,
-                    lng: 140.549473,
-                },
-                {
-                    name: "延方",
-                    lat: 35.958072,
-                    lng: 140.58875,
-                },
-                {
-                    name: "鹿島神宮",
-                    lat: 35.970614,
-                    lng: 140.625676
-                },
-                {
-                    name: "鹿島サッカースタジアム（臨）",
-                    lat: 35.992707,
-                    lng: 140.63606
                 },
             ],
         },
@@ -3476,8 +3403,7 @@ export const opJR = {
                 {
                     name: "国府津",
                     lat: 35.280832,
-                    lng: 139.212932,
-                    transfer: true,
+                    lng: 139.212932
                 },
                 {
                     name: "鴨宮",
@@ -3688,112 +3614,6 @@ export const opJR = {
                     lat: 35.594975,
                     lng: 139.344586,
                     transfer: true,
-                },
-            ],
-        },
-    ],
-    JR東海: [
-        {
-            id: "11505",
-            nameKo: "고텐바선",
-            nameJp: "JR御殿場線",
-            color: "#6BBF59",
-            stations: [
-                {
-                    name: "国府津",
-                    lat: 35.280832,
-                    lng: 139.212932,
-                    transfer: true,
-                },
-                {
-                    name: "下曽我",
-                    lat: 35.303554,
-                    lng: 139.183395,
-                },
-                {
-                    name: "上大井",
-                    lat: 35.321883,
-                    lng: 139.163508,
-                },
-                {
-                    name: "相模金子",
-                    lat: 35.33364,
-                    lng: 139.150753,
-                },
-                {
-                    name: "松田",
-                    lat: 35.346843,
-                    lng: 139.137417
-                },
-                {
-                    name: "東山北",
-                    lat: 35.357637,
-                    lng: 139.10765,
-                },
-                {
-                    name: "山北",
-                    lat: 35.360808,
-                    lng: 139.080212,
-                },
-                {
-                    name: "谷峨",
-                    lat: 35.366561,
-                    lng: 139.038234,
-                },
-                {
-                    name: "駿河小山",
-                    lat: 35.359113,
-                    lng: 138.997689,
-                },
-                {
-                    name: "足柄",
-                    lat: 35.332233,
-                    lng: 138.981687
-                },
-                {
-                    name: "御殿場",
-                    lat: 35.299933,
-                    lng: 138.93424
-                },
-                {
-                    name: "南御殿場",
-                    lat: 35.277269,
-                    lng: 138.925789,
-                },
-                {
-                    name: "富士岡",
-                    lat: 35.257299,
-                    lng: 138.920504,
-                },
-                {
-                    name: "岩波",
-                    lat: 35.21498,
-                    lng: 138.919296,
-                },
-                {
-                    name: "裾野",
-                    lat: 35.171372,
-                    lng: 138.909293,
-                },
-                {
-                    name: "長泉なめり",
-                    lat: 35.147633,
-                    lng: 138.899364,
-                },
-                {
-                    name: "下土狩",
-                    lat: 35.128379,
-                    lng: 138.895126,
-                },
-                {
-                    name: "大岡",
-                    lat: 35.116158,
-                    lng: 138.881988,
-                },
-                {
-                    name: "沼津",
-                    lat: 35.103011,
-                    lng: 138.860104
                 },
             ],
         },

@@ -337,8 +337,7 @@ export const opMajor2 = {
         {
           name: "西新井",
           lat: 35.777323,
-          lng: 139.790372,
-          transfer: true,
+          lng: 139.790372
         },
         {
           name: "竹ノ塚",
@@ -920,25 +919,6 @@ export const opMajor2 = {
         },
       ],
     },
-    {
-      id: "21006",
-      nameKo: "다이시선",
-      nameJp: "東武大師線",
-      color: "#48C9B0",
-      stations: [
-        {
-          name: "西新井",
-          lat: 35.777323,
-          lng: 139.790372,
-          transfer: true,
-        },
-        {
-          name: "大師前",
-          lat: 35.778989,
-          lng: 139.781647,
-        },
-      ],
-    },
   ],
   西武鉄道: [
     {
@@ -1037,8 +1017,7 @@ export const opMajor2 = {
         {
           name: "西所沢",
           lat: 35.789303,
-          lng: 139.455959,
-          transfer: true,
+          lng: 139.455959
         },
         {
           name: "小手指",
@@ -1183,30 +1162,6 @@ export const opMajor2 = {
       ],
     },
     {
-      id: "22005",
-      nameKo: "세이부 사야마선",
-      nameJp: "西武狭山線",
-      color: "#2ECC71",
-      stations: [
-        {
-          name: "西所沢",
-          lat: 35.789303,
-          lng: 139.455959,
-          transfer: true,
-        },
-        {
-          name: "下山口",
-          lat: 35.77941,
-          lng: 139.441097,
-        },
-        {
-          name: "西武球場前",
-          lat: 35.77093,
-          lng: 139.41966,
-        },
-      ],
-    },
-    {
       id: "22007",
       nameKo: "세이부 신주쿠선",
       nameJp: "西武新宿線",
@@ -1318,8 +1273,7 @@ export const opMajor2 = {
         {
           name: "東村山",
           lat: 35.76006,
-          lng: 139.465839,
-          transfer: true,
+          lng: 139.465839
         },
         {
           name: "所沢",
@@ -1496,45 +1450,6 @@ export const opMajor2 = {
           name: "多摩湖",
           lat: 35.765881,
           lng: 139.442747,
-        },
-      ],
-    },
-    {
-      id: "22009",
-      nameKo: "세이부엔선",
-      nameJp: "西武西武園線",
-      color: "#2ED573",
-      stations: [
-        {
-          name: "東村山",
-          lat: 35.76006,
-          lng: 139.465839,
-          transfer: true,
-        },
-        {
-          name: "西武園",
-          lat: 35.767684,
-          lng: 139.448904,
-        },
-      ],
-    },
-    {
-      id: "22004",
-      nameKo: "도시마엔선",
-      nameJp: "西武豊島線",
-      color: "#1E90FF",
-      stations: [
-        {
-          name: "練馬",
-          lat: 35.737893,
-          lng: 139.654368,
-          transfer: true,
-        },
-        {
-          name: "豊島園",
-          lat: 35.742054,
-          lng: 139.647979,
-          transfer: true
         },
       ],
     },
@@ -1749,8 +1664,7 @@ export const opMajor2 = {
         {
           name: "金沢八景",
           lat: 35.331223,
-          lng: 139.62018,
-          transfer: true,
+          lng: 139.62018
         },
         {
           name: "追浜",
@@ -1898,35 +1812,6 @@ export const opMajor2 = {
           name: "小島新田",
           lat: 35.534798,
           lng: 139.747575,
-        },
-      ],
-    },
-    {
-      id: "27004",
-      nameKo: "즈시선",
-      nameJp: "京急逗子線",
-      color: "#5499C7",
-      stations: [
-        {
-          name: "金沢八景",
-          lat: 35.331223,
-          lng: 139.62018,
-          transfer: true,
-        },
-        {
-          name: "六浦",
-          lat: 35.32269,
-          lng: 139.611532,
-        },
-        {
-          name: "神武寺",
-          lat: 35.306233,
-          lng: 139.592947,
-        },
-        {
-          name: "逗子・葉山",
-          lat: 35.294189,
-          lng: 139.580359,
         },
       ],
     },

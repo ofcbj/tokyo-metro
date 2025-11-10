@@ -709,8 +709,7 @@ export const opMinor = {
         {
           name: "多摩動物公園",
           lat: 35.648666,
-          lng: 139.403672,
-          transfer: true
+          lng: 139.403672
         },
         {
           name: "程久保",
