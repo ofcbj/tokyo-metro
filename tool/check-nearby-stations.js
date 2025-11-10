@@ -1,7 +1,7 @@
-import { opJR } from './src/opJR.jsx';
-import { opMajor1 } from './src/opMajor1.jsx';
-import { opMajor2 } from './src/opMajor2.jsx';
-import { opMinor } from './src/opMinor.jsx';
+const { opJR } = require('../src/opJR');
+const { opMajor1 } = require('../src/opMajor1');
+const { opMajor2 } = require('../src/opMajor2');
+const { opMinor } = require('../src/opMinor');
 
 const lineData = {
   ...opJR,
