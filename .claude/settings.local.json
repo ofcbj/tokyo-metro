@@ -16,7 +16,8 @@
       "Bash(do echo \"=== $station ===\")",
       "Bash(done)",
       "Bash(npx prettier:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []

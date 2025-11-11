@@ -1,4 +1,37 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import {
+  Box,
+  Paper,
+  Typography,
+  LinearProgress,
+  Chip,
+} from '@mui/material';
+import { keyframes } from '@emotion/react';
+
+const bounceAnimation = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+`;
+
+const pingAnimation = keyframes`
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+`;
+
+const pulseAnimation = keyframes`
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+`;
 
 export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks, toastMessage }) => {
   const [prevDiscovered, setPrevDiscovered] = useState(discoveredLines);
@@ -27,109 +60,155 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
   return (
     <>
       {/* 고정 UI: 발견한 라인 수 & 남은 클릭 수 */}
-      <div className="fixed top-0 left-0 right-0 z-30 pointer-events-none" style={{ zoom: 1 }}>
-        <div className="flex justify-center items-start gap-4 pt-6 px-4">
+      <Box
+        sx={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 30,
+          pointerEvents: 'none',
+        }}
+      >
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'start', gap: 2, pt: 3, px: 2 }}>
           {/* 왼쪽: 발견한 라인 수 */}
-          <div className="pointer-events-auto flex-shrink-0">
-            <div className={`
-              bg-gradient-to-br from-purple-500/60 to-indigo-600/60
-              backdrop-blur-md
-              rounded-2xl shadow-2xl p-4 w-[200px]
-              transform transition-all duration-300
-              ${showDiscoveredAnim ? 'scale-110 shadow-purple-500/50' : 'scale-100'}
-            `}>
-              <div className="text-white/80 text-xs font-semibold mb-2 flex items-center gap-1">
-                <span className="text-base">🎯</span>
+          <Box sx={{ pointerEvents: 'auto', flexShrink: 0 }}>
+            <Paper
+              elevation={8}
+              sx={{
+                background: 'linear-gradient(135deg, rgba(147, 51, 234, 0.6), rgba(79, 70, 229, 0.6))',
+                backdropFilter: 'blur(12px)',
+                borderRadius: 4,
+                p: 2,
+                width: 200,
+                transform: showDiscoveredAnim ? 'scale(1.1)' : 'scale(1)',
+                transition: 'all 0.3s',
+                boxShadow: showDiscoveredAnim ? '0 0 30px rgba(147, 51, 234, 0.5)' : undefined,
+                position: 'relative',
+              }}
+            >
+              <Typography variant="caption" sx={{ color: 'rgba(255, 255, 255, 0.8)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: 0.5, mb: 1 }}>
+                <span style={{ fontSize: '16px' }}>🎯</span>
                 発見した路線
-              </div>
-              <div className="flex items-baseline gap-1">
-                <div className={`
-                  text-4xl font-bold text-white
-                  transition-all duration-300
-                  ${showDiscoveredAnim ? 'animate-bounce' : ''}
-                `}>
+              </Typography>
+              <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 1 }}>
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: 'white',
+                    fontWeight: 'bold',
+                    animation: showDiscoveredAnim ? `${bounceAnimation} 0.6s ease-in-out` : undefined,
+                  }}
+                >
                   {discoveredLines}
-                </div>
-                <div className="text-xl text-white/60">/ {totalLines}</div>
-              </div>
+                </Typography>
+                <Typography variant="h6" sx={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+                  / {totalLines}
+                </Typography>
+              </Box>
 
               {/* 프로그레스 바 */}
-              <div className="mt-3 bg-white/20 rounded-full h-2 overflow-hidden backdrop-blur-sm">
-                <div
-                  className="h-full bg-gradient-to-r from-yellow-300 to-yellow-500 transition-all duration-500 ease-out shadow-lg"
-                  style={{ width: `${progressPercentage}%` }}
-                >
-                  {showDiscoveredAnim && (
-                    <div className="h-full w-full animate-pulse bg-white/30"></div>
-                  )}
-                </div>
-              </div>
+              <Box sx={{ mt: 1.5, position: 'relative' }}>
+                <LinearProgress
+                  variant="determinate"
+                  value={progressPercentage}
+                  sx={{
+                    height: 8,
+                    borderRadius: 4,
+                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                    '& .MuiLinearProgress-bar': {
+                      background: 'linear-gradient(90deg, #fcd34d, #fbbf24)',
+                      borderRadius: 4,
+                    },
+                  }}
+                />
+              </Box>
 
-              <div className="text-white/70 text-xs mt-2 font-medium">
+              <Typography variant="caption" sx={{ color: 'rgba(255, 255, 255, 0.7)', display: 'block', mt: 1, fontWeight: 500 }}>
                 達成率: {Math.round(progressPercentage)}%
-              </div>
+              </Typography>
 
               {/* 파티클 효과 */}
               {showDiscoveredAnim && (
                 <>
-                  <div className="absolute -top-2 -right-2 text-2xl animate-ping">✨</div>
-                  <div className="absolute -bottom-2 -left-2 text-xl animate-bounce">🎉</div>
-                  <div className="absolute top-1/2 -right-3 text-lg animate-spin">⭐</div>
+                  <Box sx={{ position: 'absolute', top: -8, right: -8, fontSize: 24, animation: `${pingAnimation} 0.6s ease-out` }}>✨</Box>
+                  <Box sx={{ position: 'absolute', bottom: -8, left: -8, fontSize: 20, animation: `${bounceAnimation} 0.6s ease-in-out` }}>🎉</Box>
+                  <Box sx={{ position: 'absolute', top: '50%', right: -12, fontSize: 18, animation: `${pingAnimation} 0.8s ease-out` }}>⭐</Box>
                 </>
               )}
-            </div>
-          </div>
+            </Paper>
+          </Box>
 
           {/* 중앙: 빈 공간 (토스트 메시지 자리) */}
-          <div className="flex-shrink-0 w-[450px]"></div>
+          <Box sx={{ flexShrink: 0, width: 450 }}></Box>
 
           {/* 오른쪽: 남은 클릭 수 */}
-          <div className="pointer-events-auto flex-shrink-0">
-            <div className={`
-              ${remainingClicks <= 10
-                ? 'bg-gradient-to-br from-red-500/60 to-pink-600/60'
-                : 'bg-gradient-to-br from-blue-500/60 to-cyan-600/60'
-              }
-              backdrop-blur-md
-              rounded-2xl shadow-2xl p-4 w-[200px]
-              transform transition-all duration-300
-              ${showClicksAnim ? 'scale-110 shadow-blue-500/50' : 'scale-100'}
-            `}>
-              <div className="text-white/80 text-xs font-semibold mb-2 flex items-center gap-1">
-                <span className="text-base">⏱️</span>
+          <Box sx={{ pointerEvents: 'auto', flexShrink: 0 }}>
+            <Paper
+              elevation={8}
+              sx={{
+                background: remainingClicks <= 10
+                  ? 'linear-gradient(135deg, rgba(239, 68, 68, 0.6), rgba(236, 72, 153, 0.6))'
+                  : 'linear-gradient(135deg, rgba(59, 130, 246, 0.6), rgba(6, 182, 212, 0.6))',
+                backdropFilter: 'blur(12px)',
+                borderRadius: 4,
+                p: 2,
+                width: 200,
+                transform: showClicksAnim ? 'scale(1.1)' : 'scale(1)',
+                transition: 'all 0.3s',
+                boxShadow: showClicksAnim ? '0 0 30px rgba(59, 130, 246, 0.5)' : undefined,
+                position: 'relative',
+              }}
+            >
+              <Typography variant="caption" sx={{ color: 'rgba(255, 255, 255, 0.8)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: 0.5, mb: 1 }}>
+                <span style={{ fontSize: '16px' }}>⏱️</span>
                 残りクリック
-              </div>
-              <div className={`
-                text-4xl font-bold text-white
-                transition-all duration-300
-                ${showClicksAnim ? 'animate-pulse' : ''}
-                ${remainingClicks <= 10 ? 'animate-bounce' : ''}
-              `}>
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  color: 'white',
+                  fontWeight: 'bold',
+                  animation: showClicksAnim || remainingClicks <= 10 ? `${pulseAnimation} 1s ease-in-out infinite` : undefined,
+                }}
+              >
                 {remainingClicks}
-              </div>
-              <div className="text-white/60 text-sm mt-1">回</div>
+              </Typography>
+              <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.6)', mt: 0.5 }}>
+                回
+              </Typography>
 
               {/* 경고 표시 */}
               {remainingClicks <= 10 && (
-                <div className="mt-2 bg-white/20 rounded-lg px-2 py-1 backdrop-blur-sm">
-                  <div className="text-white text-xs font-bold flex items-center gap-1 animate-pulse">
-                    <span>⚠️</span>
-                    急いで！
-                  </div>
-                </div>
+                <Chip
+                  label={
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                      <span>⚠️</span>
+                      急いで！
+                    </Box>
+                  }
+                  size="small"
+                  sx={{
+                    mt: 1,
+                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                    color: 'white',
+                    fontWeight: 'bold',
+                    animation: `${pulseAnimation} 1s ease-in-out infinite`,
+                  }}
+                />
               )}
 
               {/* 파티클 효과 */}
               {showClicksAnim && remainingClicks > 0 && (
                 <>
-                  <div className="absolute -top-2 -left-2 text-xl animate-ping">💨</div>
-                  <div className="absolute -bottom-2 -right-2 text-lg animate-bounce">⚡</div>
+                  <Box sx={{ position: 'absolute', top: -8, left: -8, fontSize: 20, animation: `${pingAnimation} 0.6s ease-out` }}>💨</Box>
+                  <Box sx={{ position: 'absolute', bottom: -8, right: -8, fontSize: 18, animation: `${bounceAnimation} 0.6s ease-in-out` }}>⚡</Box>
                 </>
               )}
-            </div>
-          </div>
-        </div>
-      </div>
+            </Paper>
+          </Box>
+        </Box>
+      </Box>
 
       {/* 토스트 메시지 (별도 레이어) */}
       {toastMessage && (() => {
@@ -139,37 +218,77 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
         const korName = match ? match[2] : null;
 
         return (
-          <div className="fixed top-6 left-1/2 -translate-x-1/2 z-40 pointer-events-none" style={{ zoom: 1 }}>
-            <div className="pointer-events-auto">
-              <div
-                className="rounded-2xl shadow-2xl px-6 py-4 border-4 flex items-center gap-4 w-[450px] backdrop-blur-sm animate-bounce-in"
-                style={{
-                  borderColor: toastMessage.color,
-                  background: `linear-gradient(135deg, ${toastMessage.color}15, ${toastMessage.color}25)`
-                }}
-              >
-                <div className="flex items-center gap-3 flex-1">
-                  <div
-                    className="w-12 h-12 rounded-full animate-pulse shadow-lg flex items-center justify-center flex-shrink-0"
-                    style={{
-                      backgroundColor: toastMessage.color,
-                      boxShadow: `0 0 30px ${toastMessage.color}80`
+          <Box
+            sx={{
+              position: 'fixed',
+              top: 24,
+              left: '50%',
+              transform: 'translateX(-50%)',
+              zIndex: 40,
+              pointerEvents: 'none',
+            }}
+          >
+            <Paper
+              elevation={8}
+              sx={{
+                pointerEvents: 'auto',
+                borderRadius: 4,
+                p: 2,
+                border: 4,
+                borderColor: toastMessage.color,
+                background: `linear-gradient(135deg, ${toastMessage.color}15, ${toastMessage.color}25)`,
+                backdropFilter: 'blur(8px)',
+                width: 450,
+                display: 'flex',
+                alignItems: 'center',
+                gap: 2,
+              }}
+            >
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, flex: 1 }}>
+                <Box
+                  sx={{
+                    width: 48,
+                    height: 48,
+                    borderRadius: '50%',
+                    backgroundColor: toastMessage.color,
+                    boxShadow: `0 0 30px ${toastMessage.color}80`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                    animation: `${pulseAnimation} 1.5s ease-in-out infinite`,
+                    fontSize: 24,
+                  }}
+                >
+                  {toastMessage.isError ? '😔' : '✨'}
+                </Box>
+                <Box sx={{ flex: 1, minWidth: 0, textAlign: 'center' }}>
+                  <Typography
+                    variant="caption"
+                    sx={{
+                      fontWeight: 'bold',
+                      color: toastMessage.color,
+                      display: 'block',
+                      mb: 0.5,
                     }}
                   >
-                    <span className="text-2xl">{toastMessage.isError ? '😔' : '✨'}</span>
-                  </div>
-                  <div className="flex-1 min-w-0 text-center">
-                    <div className="text-xs font-bold mb-1" style={{ color: toastMessage.color }}>
-                      {toastMessage.isError ? '残念...' : '🎊 新路線発見!'}
-                    </div>
-                    <div className="text-lg font-bold text-gray-900">{japName}</div>
-                    {korName && <div className="text-sm font-semibold text-gray-700">{korName}</div>}
-                  </div>
-                </div>
-                <div className="text-3xl animate-bounce flex-shrink-0">{toastMessage.isError ? '😔' : '🎉'}</div>
-              </div>
-            </div>
-          </div>
+                    {toastMessage.isError ? '残念...' : '🎊 新路線発見!'}
+                  </Typography>
+                  <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'rgb(17, 24, 39)' }}>
+                    {japName}
+                  </Typography>
+                  {korName && (
+                    <Typography variant="body2" sx={{ fontWeight: 600, color: 'rgb(55, 65, 81)' }}>
+                      {korName}
+                    </Typography>
+                  )}
+                </Box>
+              </Box>
+              <Typography sx={{ fontSize: 32, flexShrink: 0, animation: `${bounceAnimation} 1s ease-in-out infinite` }}>
+                {toastMessage.isError ? '😔' : '🎉'}
+              </Typography>
+            </Paper>
+          </Box>
         );
       })()}
     </>

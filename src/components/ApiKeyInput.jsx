@@ -1,37 +1,64 @@
-import React from 'react';
-import { Train } from 'lucide-react';
+import {
+  Box,
+  Paper,
+  TextField,
+  Button,
+  Typography,
+  Link,
+} from '@mui/material';
+import { Train as TrainIcon } from '@mui/icons-material';
 
 export const ApiKeyInput = ({ apiKey, setApiKey, setShowApiInput }) => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-50">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-        <div className="flex items-center gap-2 mb-4">
-          <Train className="w-8 h-8 text-blue-600" />
-          <h1 className="text-2xl font-bold">日本首都圏電鉄地図</h1>
-        </div>
-        <p className="text-gray-600 mb-4">
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+        backgroundColor: 'grey.50',
+      }}
+    >
+      <Paper
+        elevation={3}
+        sx={{
+          p: 4,
+          borderRadius: 2,
+          maxWidth: 500,
+          width: '100%',
+          mx: 2,
+        }}
+      >
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
+          <TrainIcon sx={{ fontSize: 32, color: 'primary.main' }} />
+          <Typography variant="h5" fontWeight="bold">
+            日本首都圏電鉄地図
+          </Typography>
+        </Box>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
           Google Maps APIキーを入力してください。
-        </p>
-        <input
-          type="text"
+        </Typography>
+        <TextField
+          fullWidth
           value={apiKey}
           onChange={(e) => setApiKey(e.target.value)}
           placeholder="Google Maps API Key"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          sx={{ mb: 2 }}
         />
-        <p className="text-sm text-gray-500 mb-4">
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
           APIキーは{' '}
-          <a
+          <Link
             href="https://developers.google.com/maps/documentation/javascript/get-api-key"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
           >
             Google Cloud Console
-          </a>
+          </Link>
           で発行できます。
-        </p>
-        <button
+        </Typography>
+        <Button
+          fullWidth
+          variant="contained"
           onClick={() => {
             if (apiKey.trim()) {
               setShowApiInput(false);
@@ -39,11 +66,10 @@ export const ApiKeyInput = ({ apiKey, setApiKey, setShowApiInput }) => {
               alert('APIキーを入力してください。');
             }
           }}
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
         >
           開始
-        </button>
-      </div>
-    </div>
+        </Button>
+      </Paper>
+    </Box>
   );
 };
