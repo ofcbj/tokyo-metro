@@ -18,7 +18,9 @@
       "Bash(npx prettier:*)",
       "Bash(npm run build:*)",
       "Bash(npm run dev:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n모든 컴포넌트에 완전한 TypeScript 타입 정의 추가\n\n- 컴포넌트 Props 인터페이스 추가:\n  - ApiKeyInput: apiKey, setApiKey, setShowApiInput\n  - SidebarHeader: isGameMode, animationSpeed, setAnimationSpeed, startGame, endGame\n  - GameModeSidebar: gameLog (GameLogEntry[])\n  - GameResultModal: result (GameResult | null), onClose, onRestart\n  - GameIntroModal: onCancel, onStart\n  - GameStatusDisplay: discoveredLines, totalLines, remainingClicks, toastMessage\n  - MapOverlays: clickEffect, toastMessage, isMapLoaded, selectedLines\n  - Sidebar: 28개 props 모두 타입 정의\n  - NormalModeSidebar: 16개 props 모두 타입 정의\n\n- 함수 반환 타입 추가:\n  - getSpeedLabel: (value: number) => string\n\n- import 정리 및 타입 참조 추가\n\n이제 모든 컴포넌트가 완전한 타입 안전성을 갖추었습니다.\n- Props 누락/오타 즉시 발견\n- IDE 자동완성 완벽 지원\n- 리팩토링 안정성 확보\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

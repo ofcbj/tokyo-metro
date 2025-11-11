@@ -8,7 +8,12 @@ import {
   Paper,
 } from '@mui/material';
 
-export const GameIntroModal = ({ onCancel, onStart }) => {
+interface GameIntroModalProps {
+  onCancel: () => void;
+  onStart: () => void;
+}
+
+export const GameIntroModal = ({ onCancel, onStart }: GameIntroModalProps) => {
   return (
     <Dialog
       open={true}

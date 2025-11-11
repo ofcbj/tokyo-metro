@@ -1,6 +1,11 @@
 import { Box, Typography, Paper, Stack } from '@mui/material';
+import { GameLogEntry } from '../types';
 
-export const GameModeSidebar = ({ gameLog }) => {
+interface GameModeSidebarProps {
+  gameLog: GameLogEntry[];
+}
+
+export const GameModeSidebar = ({ gameLog }: GameModeSidebarProps) => {
   return (
     <Box sx={{ p: 2, flex: 1, overflowY: 'auto' }}>
       <Typography variant="h6" fontWeight="bold" sx={{ mb: 2, color: 'text.primary' }}>

@@ -8,8 +8,15 @@ import {
   Paper,
   LinearProgress,
 } from '@mui/material';
+import { GameResult } from '../types';
 
-export const GameResultModal = ({ result, onClose, onRestart }) => {
+interface GameResultModalProps {
+  result: GameResult | null;
+  onClose: () => void;
+  onRestart: () => void;
+}
+
+export const GameResultModal = ({ result, onClose, onRestart }: GameResultModalProps) => {
   if (!result) return null;
 
   const isWin = result.type === 'win';

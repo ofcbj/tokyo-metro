@@ -7,6 +7,7 @@ import {
   Chip,
 } from '@mui/material';
 import { keyframes } from '@emotion/react';
+import { ToastMessage } from '../types';
 
 const bounceAnimation = keyframes`
   0%, 100% {
@@ -33,7 +34,14 @@ const pulseAnimation = keyframes`
   }
 `;
 
-export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks, toastMessage }) => {
+interface GameStatusDisplayProps {
+  discoveredLines: number;
+  totalLines: number;
+  remainingClicks: number;
+  toastMessage: ToastMessage | null;
+}
+
+export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks, toastMessage }: GameStatusDisplayProps) => {
   const [prevDiscovered, setPrevDiscovered] = useState(discoveredLines);
   const [prevClicks, setPrevClicks] = useState(remainingClicks);
   const [showDiscoveredAnim, setShowDiscoveredAnim] = useState(false);

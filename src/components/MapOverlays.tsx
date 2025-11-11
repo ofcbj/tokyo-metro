@@ -11,6 +11,7 @@ import {
   Avatar,
 } from '@mui/material';
 import { keyframes } from '@emotion/react';
+import { ClickEffect, ToastMessage } from '../types';
 
 // 클릭 이펙트 애니메이션
 const rippleAnimation = keyframes`
@@ -33,7 +34,14 @@ const pulseAnimation = keyframes`
   }
 `;
 
-export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLines }) => {
+interface MapOverlaysProps {
+  clickEffect: ClickEffect | null;
+  toastMessage: ToastMessage | null;
+  isMapLoaded: boolean;
+  selectedLines: string[];
+}
+
+export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLines }: MapOverlaysProps) => {
   return (
     <>
       {/* 클릭 이펙트 */}

@@ -15,6 +15,26 @@ import {
   Search as SearchIcon,
   Clear as ClearIcon,
 } from '@mui/icons-material';
+import { LineData, OperatorData, FilterOperator } from '../types';
+
+interface NormalModeSidebarProps {
+  searchTerm: string;
+  setSearchTerm: (term: string) => void;
+  filterOperator: FilterOperator;
+  setFilterOperator: (operator: FilterOperator) => void;
+  autoZoom: boolean;
+  setAutoZoom: (zoom: boolean) => void;
+  allLineIds: string[];
+  selectedLines: string[];
+  showAllLines: () => void;
+  setSelectedLines: (lines: string[]) => void;
+  filteredLineData: LineData;
+  toggleLine: (lineId: string) => void;
+  lineData: LineData;
+  opMajor1: OperatorData;
+  opMajor2: OperatorData;
+  opMinor: OperatorData;
+}
 
 export const NormalModeSidebar = ({
   searchTerm,
@@ -33,7 +53,7 @@ export const NormalModeSidebar = ({
   opMajor1,
   opMajor2,
   opMinor,
-}) => {
+}: NormalModeSidebarProps) => {
   return (
     <>
       {/* 상단 컨트롤 영역 */}

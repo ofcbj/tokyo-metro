@@ -8,7 +8,13 @@ import {
 } from '@mui/material';
 import { Train as TrainIcon } from '@mui/icons-material';
 
-export const ApiKeyInput = ({ apiKey, setApiKey, setShowApiInput }) => {
+interface ApiKeyInputProps {
+  apiKey: string;
+  setApiKey: (key: string) => void;
+  setShowApiInput: (show: boolean) => void;
+}
+
+export const ApiKeyInput = ({ apiKey, setApiKey, setShowApiInput }: ApiKeyInputProps) => {
   return (
     <Box
       sx={{

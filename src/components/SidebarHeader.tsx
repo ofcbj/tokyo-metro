@@ -1,13 +1,21 @@
 import { Box, Button, Typography, Paper, Slider } from '@mui/material';
 import { Train as TrainIcon } from '@mui/icons-material';
 
+interface SidebarHeaderProps {
+  isGameMode: boolean;
+  animationSpeed: number;
+  setAnimationSpeed: (speed: number) => void;
+  startGame: () => void;
+  endGame: () => void;
+}
+
 export const SidebarHeader = ({
   isGameMode,
   animationSpeed,
   setAnimationSpeed,
   startGame,
   endGame,
-}) => {
+}: SidebarHeaderProps) => {
   const speedMarks = [
     { value: 0.5, label: '0.5x' },
     { value: 1.0, label: '1.0x' },
@@ -15,7 +23,7 @@ export const SidebarHeader = ({
     { value: 2.0, label: '2.0x' },
   ];
 
-  const getSpeedLabel = (value) => {
+  const getSpeedLabel = (value: number): string => {
     if (value === 0.5) return '遅い';
     if (value === 1.0) return '普通';
     if (value === 1.5) return '速い';
