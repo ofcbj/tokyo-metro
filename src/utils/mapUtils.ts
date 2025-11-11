@@ -1,7 +1,14 @@
+import { LineData } from '../types';
+
 /**
  * 두 지점 간 거리 계산 (미터)
  */
-export const getDistance = (lat1, lng1, lat2, lng2) => {
+export const getDistance = (
+  lat1: number,
+  lng1: number,
+  lat2: number,
+  lng2: number
+): number => {
   const R = 6371; // 지구 반지름 (km)
   const dLat = (lat2 - lat1) * Math.PI / 180;
   const dLng = (lng2 - lng1) * Math.PI / 180;
@@ -16,9 +23,14 @@ export const getDistance = (lat1, lng1, lat2, lng2) => {
 /**
  * 특정 역을 지나가는 모든 노선 찾기 (이름 또는 거리 기반)
  */
-export const findLinesForStation = (stationName, stationLat, stationLng, lineData) => {
+export const findLinesForStation = (
+  stationName: string,
+  stationLat: number | undefined,
+  stationLng: number | undefined,
+  lineData: LineData
+): string[] => {
   const TRANSFER_DISTANCE_THRESHOLD = 300; // 300m 이내
-  const lines = [];
+  const lines: string[] = [];
 
   Object.values(lineData).flat().forEach(line => {
     const hasStation = line.stations.some(station => {
@@ -26,7 +38,7 @@ export const findLinesForStation = (stationName, stationLat, stationLng, lineDat
       if (station.name === stationName) return true;
 
       // 거리가 임계값 이내
-      if (stationLat && stationLng && station.lat && station.lng) {
+      if (stationLat !== undefined && stationLng !== undefined && station.lat && station.lng) {
         const distance = getDistance(stationLat, stationLng, station.lat, station.lng);
         return distance <= TRANSFER_DISTANCE_THRESHOLD;
       }

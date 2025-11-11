@@ -1,5 +1,7 @@
+import { OperatorData } from './types';
+
 // 3개 이상의 노선을 가진 주요 운영회사 데이터
-export const opMajor1 = {
+export const opMajor1: OperatorData = {
   "東京都交通局": [
     {
       id: "99302",

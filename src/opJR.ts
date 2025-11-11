@@ -1,4 +1,6 @@
-export const opJR = {
+import { OperatorData } from './types';
+
+export const opJR: OperatorData = {
     JR東日本: [
         {
             id: "11302",

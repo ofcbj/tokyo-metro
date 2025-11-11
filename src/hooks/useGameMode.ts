@@ -1,16 +1,17 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, Dispatch, SetStateAction } from 'react';
+import { LineData, GameLogEntry, GameResult, ToastMessage, ClickEffect, Line } from '../types';
 
-export const useGameMode = (lineData, allLineIds) => {
-  const [isGameMode, setIsGameMode]           = useState(false);
-  const [discoveredLines, setDiscoveredLines] = useState(new Set());
-  const [gameLog, setGameLog]                 = useState([]);
-  const [remainingClicks, setRemainingClicks] = useState(50);
-  const [animationSpeed, setAnimationSpeed]   = useState(1.0);
-  const [showGameIntro, setShowGameIntro]     = useState(false);
-  const [showGameResult, setShowGameResult]   = useState(null);
-  const [toastMessage, setToastMessage]       = useState(null);
-  const [clickEffect, setClickEffect]         = useState(null);
-  const processingClickRef                    = useRef(false);
+export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
+  const [isGameMode, setIsGameMode] = useState<boolean>(false);
+  const [discoveredLines, setDiscoveredLines] = useState<Set<string>>(new Set());
+  const [gameLog, setGameLog] = useState<GameLogEntry[]>([]);
+  const [remainingClicks, setRemainingClicks] = useState<number>(50);
+  const [animationSpeed, setAnimationSpeed] = useState<number>(1.0);
+  const [showGameIntro, setShowGameIntro] = useState<boolean>(false);
+  const [showGameResult, setShowGameResult] = useState<GameResult | null>(null);
+  const [toastMessage, setToastMessage] = useState<ToastMessage | null>(null);
+  const [clickEffect, setClickEffect] = useState<ClickEffect | null>(null);
+  const processingClickRef = useRef<boolean>(false);
 
   // 게임 시작 함수
   const startGame = useCallback(() => {
@@ -18,7 +19,7 @@ export const useGameMode = (lineData, allLineIds) => {
   }, []);
 
   // 실제 게임 시작 (인트로 확인 후)
-  const startGameAfterIntro = useCallback(() => {
+  const startGameAfterIntro = useCallback((): string => {
     setShowGameIntro(false);
 
     // 모든 노선 ID 가져오기
@@ -51,7 +52,9 @@ export const useGameMode = (lineData, allLineIds) => {
   }, []);
 
   // 노선 발견 실패 처리
-  const handleNoNewLines = useCallback((newRemainingClicks) => {
+  const handleNoNewLines = useCallback((
+    newRemainingClicks: number
+  ) => {
     setToastMessage({
       text: '新しい路線が発見されませんでした',
       color: '#666666',
@@ -77,15 +80,18 @@ export const useGameMode = (lineData, allLineIds) => {
   }, [discoveredLines, allLineIds]);
 
   // 새 노선 정보 가져오기
-  const getNewLinesInfo = useCallback((newDiscoveredLineIds) => {
+  const getNewLinesInfo = useCallback((newDiscoveredLineIds: string[]): Line[] => {
     const allLines = Object.values(lineData).flat();
     return newDiscoveredLineIds
       .map(id => allLines.find(line => line.id === id))
-      .filter(Boolean);
+      .filter((line): line is Line => line !== undefined);
   }, [lineData]);
 
   // 단일 노선 발견 처리
-  const discoverSingleLine = useCallback((line, setSelectedLines) => {
+  const discoverSingleLine = useCallback((
+    line: Line,
+    setSelectedLines?: Dispatch<SetStateAction<string[]>>
+  ) => {
     // 발견된 노선에 추가
     setDiscoveredLines(prev => {
       const newSet = new Set(prev);
@@ -113,7 +119,10 @@ export const useGameMode = (lineData, allLineIds) => {
   }, []);
 
   // 여러 노선을 시차를 두고 발견
-  const discoverLinesWithDelay = useCallback((newLinesInfo, setSelectedLines) => {
+  const discoverLinesWithDelay = useCallback((
+    newLinesInfo: Line[],
+    setSelectedLines?: Dispatch<SetStateAction<string[]>>
+  ): number => {
     const baseInterval = 2000 / animationSpeed;
 
     newLinesInfo.forEach((line, index) => {
@@ -126,7 +135,11 @@ export const useGameMode = (lineData, allLineIds) => {
   }, [animationSpeed, discoverSingleLine]);
 
   // 게임 종료 조건 확인
-  const checkGameEndCondition = useCallback((newRemainingClicks, baseInterval, newLinesCount) => {
+  const checkGameEndCondition = useCallback((
+    newRemainingClicks: number,
+    baseInterval: number,
+    newLinesCount: number
+  ) => {
     setTimeout(() => {
       setDiscoveredLines(currentDiscovered => {
         if (currentDiscovered.size === allLineIds.length) {
@@ -150,7 +163,7 @@ export const useGameMode = (lineData, allLineIds) => {
   }, [allLineIds]);
 
   // 애니메이션 완료 후 정리
-  const cleanupAfterAnimation = useCallback((baseInterval, newLinesCount) => {
+  const cleanupAfterAnimation = useCallback((baseInterval: number, newLinesCount: number) => {
     setTimeout(() => {
       setToastMessage(null);
       processingClickRef.current = false;
@@ -158,9 +171,12 @@ export const useGameMode = (lineData, allLineIds) => {
   }, []);
 
   // 게임 모드에서 노선 발견 처리
-  const handleGameDiscovery = useCallback((newLineIds, setSelectedLines) => {
+  const handleGameDiscovery = useCallback((
+    newLineIds: string[],
+    setSelectedLines?: Dispatch<SetStateAction<string[]>>
+  ): string[] => {
     if (processingClickRef.current) {
-      return;
+      return newLineIds;
     }
     processingClickRef.current = true;
 

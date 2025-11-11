@@ -1,5 +1,7 @@
+import { OperatorData } from './types';
+
 // 3개 미만의 노선을 가진 소규모 운영회사 데이터
-export const opMinor = {
+export const opMinor: OperatorData = {
   "相模鉄道": [
     {
       id: "29001",
