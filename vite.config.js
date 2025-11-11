@@ -14,7 +14,7 @@ export default defineConfig({
     }),
   ],
   // GitHub Pages용은 '/tokyo-metro/', 로컬 serve는 '/' 사용
-  base: '/',
+  base: '/tokyo-metro/',
   build: {
     rollupOptions: {
       output: {
