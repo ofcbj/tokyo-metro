@@ -1,9 +1,17 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
-export const useGoogleMap = (apiKey, showApiInput) => {
-  const [isMapLoaded, setIsMapLoaded] = useState(false);
-  const mapRef = useRef(null);
-  const googleMapRef = useRef(null);
+// Google Maps 타입 정의
+declare global {
+  interface Window {
+    google: any;
+    initGoogleMap: () => void;
+  }
+}
+
+export const useGoogleMap = (apiKey: string, showApiInput: boolean) => {
+  const [isMapLoaded, setIsMapLoaded] = useState<boolean>(false);
+  const mapRef = useRef<HTMLDivElement | null>(null);
+  const googleMapRef = useRef<any>(null);
 
   // Google Maps 초기화 함수
   const initMap = useCallback(() => {
@@ -40,7 +48,8 @@ export const useGoogleMap = (apiKey, showApiInput) => {
 
     } catch (error) {
       console.error('Map initialization failed:', error);
-      alert('地図の初期化に失敗しました: ' + error.message);
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      alert('地図の初期化に失敗しました: ' + errorMessage);
       setIsMapLoaded(false);
     }
   }, []);

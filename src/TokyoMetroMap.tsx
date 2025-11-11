@@ -20,8 +20,11 @@ import { GameStatusDisplay } from './components/GameStatusDisplay';
 // Utils
 import { findLinesForStation } from './utils/mapUtils';
 
+// Types
+import { LineData, FilterOperator } from './types';
+
 // 노선 데이터 통합
-const lineData = {
+const lineData: LineData = {
   ...opJR,
   ...opMajor1,
   ...opMajor2,
@@ -29,13 +32,13 @@ const lineData = {
 };
 
 const TokyoMetroMap = () => {
-  const [selectedLines, setSelectedLines] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filterOperator, setFilterOperator] = useState('all');
-  const [apiKey, setApiKey] = useState('AIzaSyB3b1UxEAL0JVpMrfolYJipYeMdtHeSOcY');
-  const [showApiInput, setShowApiInput] = useState(false);
-  const [autoZoom, setAutoZoom] = useState(true);
-  const [shouldPanOnNextUpdate, setShouldPanOnNextUpdate] = useState(false);
+  const [selectedLines, setSelectedLines] = useState<string[]>([]);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [filterOperator, setFilterOperator] = useState<FilterOperator>('all');
+  const [apiKey, setApiKey] = useState<string>('AIzaSyB3b1UxEAL0JVpMrfolYJipYeMdtHeSOcY');
+  const [showApiInput, setShowApiInput] = useState<boolean>(false);
+  const [autoZoom, setAutoZoom] = useState<boolean>(true);
+  const [shouldPanOnNextUpdate, setShouldPanOnNextUpdate] = useState<boolean>(false);
 
   const allLineIds = useMemo(() => Object.values(lineData).flat().map(line => line.id), []);
 
@@ -63,7 +66,7 @@ const TokyoMetroMap = () => {
   } = useGameMode(lineData, allLineIds);
 
   // 검색 및 필터링된 노선 데이터
-  const filteredLineData = Object.entries(lineData).reduce((acc, [operator, lines]) => {
+  const filteredLineData = Object.entries(lineData).reduce<LineData>((acc, [operator, lines]) => {
     let shouldInclude = false;
     if (filterOperator === 'all') {
       shouldInclude = true;
@@ -87,7 +90,7 @@ const TokyoMetroMap = () => {
   }, {});
 
   // 노선 토글
-  const toggleLine = (lineId) => {
+  const toggleLine = (lineId: string) => {
     setShouldPanOnNextUpdate(true);
     setSelectedLines(prev =>
       prev.includes(lineId)
@@ -102,7 +105,7 @@ const TokyoMetroMap = () => {
   }, [allLineIds]);
 
   // 역을 클릭했을 때 해당 역의 모든 노선 선택
-  const selectLinesForStation = useCallback((stationName, stationLat, stationLng, isTransfer) => {
+  const selectLinesForStation = useCallback((stationName: string, stationLat: number, stationLng: number, isTransfer?: boolean) => {
     const lineIds = findLinesForStation(stationName, stationLat, stationLng, lineData);
 
     // 게임 모드인 경우
@@ -131,7 +134,7 @@ const TokyoMetroMap = () => {
   }, [isGameMode, handleGameDiscovery]);
 
   // 역을 우클릭했을 때 해당 역의 모든 노선을 숨김
-  const hideLinesForStation = useCallback((stationName, stationLat, stationLng) => {
+  const hideLinesForStation = useCallback((stationName: string, stationLat: number, stationLng: number) => {
     const lineIds = findLinesForStation(stationName, stationLat, stationLng, lineData);
     setShouldPanOnNextUpdate(false);
     setSelectedLines(prev => {

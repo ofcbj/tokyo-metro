@@ -1,22 +1,23 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, MutableRefObject } from 'react';
 import { findLinesForStation } from '../utils/mapUtils';
+import { LineData } from '../types';
 
 export const useMapDisplay = (
-  googleMapRef,
-  selectedLines,
-  lineData,
-  autoZoom,
-  shouldPanOnNextUpdate,
-  setShouldPanOnNextUpdate,
-  isGameMode,
-  animationSpeed,
-  selectLinesForStation,
-  hideLinesForStation
+  googleMapRef: MutableRefObject<any>,
+  selectedLines: string[],
+  lineData: LineData,
+  autoZoom: boolean,
+  shouldPanOnNextUpdate: boolean,
+  setShouldPanOnNextUpdate: (value: boolean) => void,
+  isGameMode: boolean,
+  animationSpeed: number,
+  selectLinesForStation: (name: string, lat: number, lng: number, isTransfer?: boolean) => void,
+  hideLinesForStation: (name: string, lat: number, lng: number) => void
 ) => {
-  const markersRef = useRef([]);
-  const polylinesRef = useRef([]);
-  const previousSelectedLinesRef = useRef([]);
-  const selectedLinesRef = useRef(selectedLines);
+  const markersRef = useRef<any[]>([]);
+  const polylinesRef = useRef<any[]>([]);
+  const previousSelectedLinesRef = useRef<string[]>([]);
+  const selectedLinesRef = useRef<string[]>(selectedLines);
 
   useEffect(() => {
     selectedLinesRef.current = selectedLines;
