@@ -10,11 +10,12 @@ declare global {
 
 export const useGoogleMap = (apiKey: string, showApiInput: boolean) => {
   const [isMapLoaded, setIsMapLoaded] = useState<boolean>(false);
-  const mapRef = useRef<HTMLDivElement | null>(null);
-  const googleMapRef = useRef<any>(null);
+  const mapRef                        = useRef<HTMLDivElement | null>(null);
+  const googleMapRef                  = useRef<any>(null);
 
   // Google Maps 초기화 함수
-  const initMap = useCallback(() => {
+  const initMap = useCallback((
+  ) => {
     if (!mapRef.current) {
       console.error('Map container not found');
       return;
@@ -55,7 +56,8 @@ export const useGoogleMap = (apiKey: string, showApiInput: boolean) => {
   }, []);
 
   // Google Maps 스크립트 로드
-  useEffect(() => {
+  useEffect((
+  ) => {
     if (!apiKey || showApiInput) {
       console.log('API key or showApiInput check:', { apiKey, showApiInput });
       return;

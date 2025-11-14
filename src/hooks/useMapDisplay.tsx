@@ -1,23 +1,23 @@
 import { useEffect, useRef, MutableRefObject } from 'react';
 import { findLinesForStation } from '../utils/mapUtils';
-import { LineData } from '../types';
+import { LineData, Line } from '../types';
 
 export const useMapDisplay = (
-  googleMapRef: MutableRefObject<any>,
-  selectedLines: string[],
-  lineData: LineData,
-  autoZoom: boolean,
-  shouldPanOnNextUpdate: boolean,
+  googleMapRef            : MutableRefObject<any>,
+  selectedLines           : string[],
+  lineData                : LineData,
+  autoZoom                : boolean,
+  shouldPanOnNextUpdate   : boolean,
+  isGameMode              : boolean,
+  animationSpeed          : number,  
   setShouldPanOnNextUpdate: (value: boolean) => void,
-  isGameMode: boolean,
-  animationSpeed: number,
-  selectLinesForStation: (name: string, lat: number, lng: number, isTransfer?: boolean) => void,
-  hideLinesForStation: (name: string, lat: number, lng: number) => void
+  selectLinesForStation   : (name: string, lat: number, lng: number, isTransfer?: boolean) => void,
+  hideLinesForStation     : (name: string, lat: number, lng: number) => void
 ) => {
-  const markersRef = useRef<any[]>([]);
-  const polylinesRef = useRef<any[]>([]);
-  const previousSelectedLinesRef = useRef<string[]>([]);
-  const selectedLinesRef = useRef<string[]>(selectedLines);
+  const markersRef              = useRef<any[]>([]);
+  const polylinesRef            = useRef<any[]>([]);
+  const previousSelectedLinesRef= useRef<string[]>([]);
+  const selectedLinesRef        = useRef<string[]>(selectedLines);
 
   useEffect(() => {
     selectedLinesRef.current = selectedLines;
@@ -134,26 +134,26 @@ export const useMapDisplay = (
         marker.stationLng = station.lng;
         marker.isTransfer = station.transfer;
 
-        let infoWindow = null;
+        let infoWindow: any = null;
 
-        marker.addListener('click', (event) => {
+        marker.addListener('click', (event: any) => {
           selectLinesForStation(station.name, station.lat, station.lng, station.transfer);
         });
 
-        marker.addListener('rightclick', (event) => {
+        marker.addListener('rightclick', (event: any) => {
           event.stop();
           hideLinesForStation(station.name, station.lat, station.lng);
         });
 
         marker.addListener('mouseover', () => {
-          let infoContent;
+          let infoContent: string;
           if (marker.isTransfer) {
             const stationLineIds = findLinesForStation(marker.stationName, marker.stationLat, marker.stationLng, lineData);
             const allLinesArray = Object.values(lineData).flat();
             const visibleStationLines = stationLineIds
-              .filter(id => selectedLinesRef.current.includes(id))
-              .map(id => allLinesArray.find(l => l.id === id))
-              .filter(l => l);
+              .filter((id: string) => selectedLinesRef.current.includes(id))
+              .map((id: string) => allLinesArray.find(l => l.id === id))
+              .filter((l): l is Line => l !== undefined);
 
             const linesHtml = visibleStationLines
               .map(l => `<span style="color: ${l.color}; font-size: 18px; line-height: 1.8; font-weight: 500;">● ${l.nameJp} / ${l.nameKo}</span>`)

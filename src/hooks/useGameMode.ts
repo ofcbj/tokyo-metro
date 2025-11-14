@@ -2,24 +2,26 @@ import { useState, useCallback, useRef, Dispatch, SetStateAction } from 'react';
 import { LineData, GameLogEntry, GameResult, ToastMessage, ClickEffect, Line } from '../types';
 
 export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
-  const [isGameMode, setIsGameMode] = useState<boolean>(false);
+  const [isGameMode, setIsGameMode]           = useState<boolean>(false);
   const [discoveredLines, setDiscoveredLines] = useState<Set<string>>(new Set());
-  const [gameLog, setGameLog] = useState<GameLogEntry[]>([]);
+  const [gameLog, setGameLog]                 = useState<GameLogEntry[]>([]);
   const [remainingClicks, setRemainingClicks] = useState<number>(50);
-  const [animationSpeed, setAnimationSpeed] = useState<number>(1.0);
-  const [showGameIntro, setShowGameIntro] = useState<boolean>(false);
-  const [showGameResult, setShowGameResult] = useState<GameResult | null>(null);
-  const [toastMessage, setToastMessage] = useState<ToastMessage | null>(null);
-  const [clickEffect, setClickEffect] = useState<ClickEffect | null>(null);
-  const processingClickRef = useRef<boolean>(false);
+  const [animationSpeed, setAnimationSpeed]   = useState<number>(1.0);
+  const [showGameIntro, setShowGameIntro]     = useState<boolean>(false);
+  const [showGameResult, setShowGameResult]   = useState<GameResult | null>(null);
+  const [toastMessage, setToastMessage]       = useState<ToastMessage | null>(null);
+  const [clickEffect, setClickEffect]         = useState<ClickEffect | null>(null);
+  const processingClickRef                    = useRef<boolean>(false);
 
   // 게임 시작 함수
-  const startGame = useCallback(() => {
+  const startGame = useCallback((
+  ) => {
     setShowGameIntro(true);
   }, []);
 
   // 실제 게임 시작 (인트로 확인 후)
-  const startGameAfterIntro = useCallback((): string => {
+  const startGameAfterIntro = useCallback((
+  ): string => {
     setShowGameIntro(false);
 
     // 모든 노선 ID 가져오기
@@ -43,7 +45,8 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
   }, [lineData]);
 
   // 게임 종료 함수
-  const endGame = useCallback(() => {
+  const endGame = useCallback((
+  ) => {
     setIsGameMode(false);
     setDiscoveredLines(new Set());
     setGameLog([]);
@@ -80,7 +83,9 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
   }, [discoveredLines, allLineIds]);
 
   // 새 노선 정보 가져오기
-  const getNewLinesInfo = useCallback((newDiscoveredLineIds: string[]): Line[] => {
+  const getNewLinesInfo = useCallback((
+    newDiscoveredLineIds: string[]
+  ): Line[] => {
     const allLines = Object.values(lineData).flat();
     return newDiscoveredLineIds
       .map(id => allLines.find(line => line.id === id))
