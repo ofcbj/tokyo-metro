@@ -157,9 +157,9 @@ const TokyoMetroMap = () => {
     lineData,
     autoZoom,
     shouldPanOnNextUpdate,
-    setShouldPanOnNextUpdate,
     isGameMode,
     animationSpeed,
+    setShouldPanOnNextUpdate,
     selectLinesForStation,
     hideLinesForStation
   );

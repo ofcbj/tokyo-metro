@@ -31,6 +31,10 @@ export const useMapDisplay = (
     const previousLines = previousSelectedLinesRef.current;
     const newLines = selectedLines.filter(id => !previousLines.includes(id));
 
+    // 성능 최적화: 지도 리렌더링 일시 중지
+    const map = googleMapRef.current;
+    map.setOptions({ gestureHandling: 'none' });
+
     // 제거된 라인의 마커와 폴리라인만 제거
     markersRef.current = markersRef.current.filter(marker => {
       const hasLineBinding = typeof marker.lineId !== 'undefined';
@@ -216,6 +220,13 @@ export const useMapDisplay = (
 
     // 팬 이동 플래그 리셋
     setShouldPanOnNextUpdate(false);
+
+    // 성능 최적화: 지도 제스처 복원
+    setTimeout(() => {
+      if (googleMapRef.current) {
+        googleMapRef.current.setOptions({ gestureHandling: 'auto' });
+      }
+    }, 100);
 
     // 현재 선택을 이전 선택으로 저장
     previousSelectedLinesRef.current = [...selectedLines];
