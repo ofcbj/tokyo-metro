@@ -1940,7 +1940,7 @@ export const opMinor: OperatorData = {
       id: "99427",
       nameKo: "키타시나노선",
       nameJp: "北しなの線",
-      color: "#FF0000",
+      color: "#ff00aeff",
       stations: [
         {
           name: "長野",
@@ -1992,7 +1992,7 @@ export const opMinor: OperatorData = {
       id: "99405",
       nameKo: "나가노선",
       nameJp: "長野電鉄長野線",
-      color: "#E60012",
+      color: "#bce600ff",
       stations: [
         {
           name: "長野",
