@@ -35,7 +35,7 @@ const TokyoMetroMap = () => {
   const [selectedLines, setSelectedLines] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [filterOperator, setFilterOperator] = useState<FilterOperator>('all');
-  const [apiKey, setApiKey] = useState<string>('AIzaSyB3b1UxEAL0JVpMrfolYJipYeMdtHeSOcY');
+  const [apiKey, setApiKey] = useState<string>('AIzaSyB2blRrpkyyxJ-Jvxgvv0nSHCDeVWABMhI');
   const [showApiInput, setShowApiInput] = useState<boolean>(false);
   const [autoZoom, setAutoZoom] = useState<boolean>(true);
   const [shouldPanOnNextUpdate, setShouldPanOnNextUpdate] = useState<boolean>(false);
