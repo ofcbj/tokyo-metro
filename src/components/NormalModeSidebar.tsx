@@ -96,6 +96,7 @@ export const NormalModeSidebar = ({
             const operators = Object.keys(lineData);
             const majorOperators = operators.filter(op =>
               op === 'JR東日本' ||
+              op === 'JR東海' ||
               Object.keys(opMajor1).includes(op) ||
               Object.keys(opMajor2).includes(op)
             );
