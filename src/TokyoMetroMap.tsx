@@ -211,7 +211,7 @@ const TokyoMetroMap = () => {
         }}
       />
 
-      <div className="flex h-screen bg-gray-100">
+      <div className="flex h-full bg-gray-100">
         {/* 게임 모드 상태 표시 */}
         {isGameMode && (
           <GameStatusDisplay

@@ -189,7 +189,7 @@ export const NormalModeSidebar = ({
       </Box>
 
       {/* 회사(노선수) 드롭다운 → 노선 리스트 */}
-      <Box sx={{ p: 2, flex: 1, minHeight: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
+      <Box sx={{ p: 2, flex: 1, minHeight: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch', overscrollBehavior: 'contain' }}>
         <Stack spacing={1}>
           {companies.map(({ name, lines }) => {
             const expanded = isExpanded(name);

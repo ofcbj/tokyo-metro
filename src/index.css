@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 높이 체인: 실제 보이는 뷰포트 기준 (iOS의 100vh > 가시영역 문제 회피) */
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  overflow: hidden;            /* body 스크롤 방지 → 내부 스크롤 영역이 터치를 가져감 */
+  overscroll-behavior: none;   /* iOS 고무줄/스크롤 체이닝 방지 */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
