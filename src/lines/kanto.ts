@@ -14,48 +14,56 @@ export const kanto: OperatorData = {
                 lat: 35.619772,
                 lng: 139.728439,
                 transfer: true,
+                groupId: 1130201,
             },
             {
                 name: "五反田",
                 lat: 35.625974,
                 lng: 139.723822,
                 transfer: true,
+                groupId: 1130202,
             },
             {
                 name: "目黒",
                 lat: 35.633923,
                 lng: 139.715775,
                 transfer: true,
+                groupId: 1130203,
             },
             {
                 name: "恵比寿",
                 lat: 35.646685,
                 lng: 139.71007,
                 transfer: true,
+                groupId: 1130204,
             },
             {
                 name: "渋谷",
                 lat: 35.658871,
                 lng: 139.701238,
                 transfer: true,
+                groupId: 1130205,
             },
             {
                 name: "原宿",
                 lat: 35.670646,
                 lng: 139.702592,
                 transfer: true,
+                groupId: 1130206,
             },
             {
                 name: "代々木",
                 lat: 35.683061,
                 lng: 139.702042,
                 transfer: true,
+                groupId: 1130207,
             },
             {
                 name: "新宿",
                 lat: 35.689729,
                 lng: 139.700464,
                 transfer: true,
+                groupId: 1130208,
             },
             {
                 name: "新大久保",
@@ -67,6 +75,7 @@ export const kanto: OperatorData = {
                 lat: 35.712677,
                 lng: 139.703715,
                 transfer: true,
+                groupId: 1130210,
             },
             {
                 name: "目白",
@@ -78,114 +87,133 @@ export const kanto: OperatorData = {
                 lat: 35.730256,
                 lng: 139.711086,
                 transfer: true,
+                groupId: 1130212,
             },
             {
                 name: "大塚",
                 lat: 35.731412,
                 lng: 139.728584,
-      transfer: true,
+                transfer: true,
+                groupId: 1130213,
             },
             {
                 name: "巣鴨",
                 lat: 35.733445,
                 lng: 139.739303,
                 transfer: true,
+                groupId: 1130214,
             },
             {
                 name: "駒込",
                 lat: 35.736825,
                 lng: 139.748053,
                 transfer: true,
+                groupId: 1130215,
             },
             {
                 name: "田端",
                 lat: 35.737781,
                 lng: 139.761229,
                 transfer: true,
+                groupId: 1130216,
             },
             {
                 name: "西日暮里",
                 lat: 35.731954,
                 lng: 139.766857,
                 transfer: true,
+                groupId: 1130217,
             },
             {
                 name: "日暮里",
                 lat: 35.727908,
                 lng: 139.771287,
                 transfer: true,
+                groupId: 1130218,
             },
             {
                 name: "鶯谷",
                 lat: 35.721484,
                 lng: 139.778015,
                 transfer: true,
+                groupId: 1130219,
             },
             {
                 name: "上野",
                 lat: 35.71379,
                 lng: 139.777043,
                 transfer: true,
+                groupId: 1130220,
             },
             {
                 name: "御徒町",
                 lat: 35.707282,
                 lng: 139.774727,
                 transfer: true,
+                groupId: 1130221,
             },
             {
                 name: "秋葉原",
                 lat: 35.698619,
                 lng: 139.773288,
                 transfer: true,
+                groupId: 1130222,
             },
             {
                 name: "神田",
                 lat: 35.691173,
                 lng: 139.770641,
                 transfer: true,
+                groupId: 1130223,
             },
             {
                 name: "東京",
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "有楽町",
                 lat: 35.675441,
                 lng: 139.763806,
                 transfer: true,
+                groupId: 1130225,
             },
             {
                 name: "新橋",
                 lat: 35.666195,
                 lng: 139.758587,
                 transfer: true,
+                groupId: 1130102,
             },
             {
                 name: "浜松町",
                 lat: 35.655391,
                 lng: 139.757135,
                 transfer: true,
+                groupId: 1130227,
             },
             {
                 name: "田町",
                 lat: 35.645736,
                 lng: 139.747575,
                 transfer: true,
+                groupId: 1130228,
             },
             {
                 name: "高輪ゲートウェイ",
                 lat: 35.6355,
                 lng: 139.7407,
                 transfer: true,
+                groupId: 1130230,
             },
             {
                 name: "品川",
                 lat: 35.62876,
                 lng: 139.738999,
                 transfer: true,
+                groupId: 1130103,
             },
         ],
     },
@@ -200,78 +228,91 @@ export const kanto: OperatorData = {
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "神田",
                 lat: 35.691173,
                 lng: 139.770641,
                 transfer: true,
+                groupId: 1130223,
             },
             {
                 name: "御茶ノ水",
                 lat: 35.699605,
                 lng: 139.764955,
                 transfer: true,
+                groupId: 1131203,
             },
             {
                 name: "四ツ谷",
                 lat: 35.686041,
                 lng: 139.730644,
                 transfer: true,
+                groupId: 1131102,
             },
             {
                 name: "新宿",
                 lat: 35.689729,
                 lng: 139.700464,
                 transfer: true,
+                groupId: 1130208,
             },
             {
                 name: "中野",
                 lat: 35.705765,
                 lng: 139.665835,
                 transfer: true,
+                groupId: 1131214,
             },
             {
                 name: "高円寺",
                 lat: 35.705326,
                 lng: 139.649664,
                 transfer: true,
+                groupId: 1131215,
             },
             {
                 name: "阿佐ケ谷",
                 lat: 35.704818,
                 lng: 139.635868,
                 transfer: true,
+                groupId: 1131216,
             },
             {
                 name: "荻窪",
                 lat: 35.704523,
                 lng: 139.620109,
                 transfer: true,
+                groupId: 1131217,
             },
             {
                 name: "西荻窪",
                 lat: 35.703842,
                 lng: 139.599361,
                 transfer: true,
+                groupId: 1131218,
             },
             {
                 name: "吉祥寺",
                 lat: 35.703119,
                 lng: 139.579765,
                 transfer: true,
+                groupId: 1131104,
             },
             {
                 name: "三鷹",
                 lat: 35.702683,
                 lng: 139.560325,
                 transfer: true,
+                groupId: 1131105,
             },
             {
                 name: "武蔵境",
                 lat: 35.702083,
                 lng: 139.543402,
                 transfer: true,
+                groupId: 1131221,
             },
             {
                 name: "東小金井",
@@ -288,12 +329,14 @@ export const kanto: OperatorData = {
                 lat: 35.700123,
                 lng: 139.480841,
                 transfer: true,
+                groupId: 1131106,
             },
             {
                 name: "西国分寺",
                 lat: 35.699744,
                 lng: 139.465994,
                 transfer: true,
+                groupId: 1130503,
             },
             {
                 name: "国立",
@@ -305,6 +348,7 @@ export const kanto: OperatorData = {
                 lat: 35.698202,
                 lng: 139.413704,
                 transfer: true,
+                groupId: 1130325,
             },
             {
                 name: "日野",
@@ -321,6 +365,7 @@ export const kanto: OperatorData = {
                 lat: 35.655555,
                 lng: 139.338998,
                 transfer: true,
+                groupId: 1130620,
             },
             {
                 name: "西八王子",
@@ -332,6 +377,7 @@ export const kanto: OperatorData = {
                 lat: 35.642026,
                 lng: 139.282288,
                 transfer: true,
+                groupId: 1131112,
             },
         ],
     },
@@ -346,60 +392,70 @@ export const kanto: OperatorData = {
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "新日本橋",
                 lat: 35.688687,
                 lng: 139.77323,
                 transfer: true,
+                groupId: 1131402,
             },
             {
                 name: "馬喰町",
                 lat: 35.693365,
                 lng: 139.78238,
                 transfer: true,
+                groupId: 1131403,
             },
             {
                 name: "錦糸町",
                 lat: 35.696802,
                 lng: 139.814136,
                 transfer: true,
+                groupId: 1131322,
             },
             {
                 name: "新小岩",
                 lat: 35.716903,
                 lng: 139.857777,
                 transfer: true,
+                groupId: 1131325,
             },
             {
                 name: "市川",
                 lat: 35.728903,
                 lng: 139.908142,
                 transfer: true,
+                groupId: 1131327,
             },
             {
                 name: "船橋",
                 lat: 35.701865,
                 lng: 139.984707,
                 transfer: true,
+                groupId: 1131331,
             },
             {
                 name: "津田沼",
                 lat: 35.691367,
                 lng: 140.020179,
                 transfer: true,
+                groupId: 1131333,
             },
             {
                 name: "稲毛",
                 lat: 35.637264,
                 lng: 140.09256,
                 transfer: true,
+                groupId: 1131337,
             },
             {
                 name: "千葉",
                 lat: 35.613425,
                 lng: 140.112837,
                 transfer: true,
+                groupId: 1131339,
             },
             {
                 name: "東千葉",
@@ -411,12 +467,14 @@ export const kanto: OperatorData = {
                 lat: 35.636088,
                 lng: 140.149222,
                 transfer: true,
+                groupId: 1131412,
             },
             {
                 name: "四街道",
                 lat: 35.662756,
                 lng: 140.165023,
                 transfer: true,
+                groupId: 1131413,
             },
             {
                 name: "物井",
@@ -428,6 +486,7 @@ export const kanto: OperatorData = {
                 lat: 35.709743,
                 lng: 140.226722,
                 transfer: true,
+                groupId: 1131415,
             },
             {
                 name: "南酒々井",
@@ -454,6 +513,7 @@ export const kanto: OperatorData = {
                 lat: 35.608513,
                 lng: 140.410109,
                 transfer: true,
+                groupId: 1131420,
             },
             {
                 name: "松尾",
@@ -505,12 +565,14 @@ export const kanto: OperatorData = {
                 lat: 35.739386,
                 lng: 140.795143,
                 transfer: true,
+                groupId: 1131430,
             },
             {
                 name: "銚子",
                 lat: 35.729449,
                 lng: 140.827557,
                 transfer: true,
+                groupId: 1131431,
             },
         ],
     },
@@ -525,48 +587,56 @@ export const kanto: OperatorData = {
                 lat: 35.702683,
                 lng: 139.560325,
                 transfer: true,
+                groupId: 1131105,
             },
             {
                 name: "吉祥寺",
                 lat: 35.703119,
                 lng: 139.579765,
                 transfer: true,
+                groupId: 1131104,
             },
             {
                 name: "西荻窪",
                 lat: 35.703842,
                 lng: 139.599361,
                 transfer: true,
+                groupId: 1131218,
             },
             {
                 name: "荻窪",
                 lat: 35.704523,
                 lng: 139.620109,
                 transfer: true,
+                groupId: 1131217,
             },
             {
                 name: "阿佐ケ谷",
                 lat: 35.704818,
                 lng: 139.635868,
                 transfer: true,
+                groupId: 1131216,
             },
             {
                 name: "高円寺",
                 lat: 35.705326,
                 lng: 139.649664,
                 transfer: true,
+                groupId: 1131215,
             },
             {
                 name: "中野",
                 lat: 35.705765,
                 lng: 139.665835,
                 transfer: true,
+                groupId: 1131214,
             },
             {
                 name: "東中野",
                 lat: 35.706529,
                 lng: 139.684436,
                 transfer: true,
+                groupId: 1131308,
             },
             {
                 name: "大久保",
@@ -578,12 +648,14 @@ export const kanto: OperatorData = {
                 lat: 35.689729,
                 lng: 139.700464,
                 transfer: true,
+                groupId: 1130208,
             },
             {
                 name: "代々木",
                 lat: 35.683061,
                 lng: 139.702042,
                 transfer: true,
+                groupId: 1130207,
             },
             {
                 name: "千駄ケ谷",
@@ -600,60 +672,70 @@ export const kanto: OperatorData = {
                 lat: 35.686041,
                 lng: 139.730644,
                 transfer: true,
+                groupId: 1131102,
             },
             {
                 name: "市ケ谷",
                 lat: 35.691,
                 lng: 139.735583,
                 transfer: true,
+                groupId: 1131315,
             },
             {
                 name: "飯田橋",
                 lat: 35.701835,
                 lng: 139.745143,
                 transfer: true,
+                groupId: 1131316,
             },
             {
                 name: "水道橋",
                 lat: 35.702039,
                 lng: 139.754312,
                 transfer: true,
+                groupId: 1131317,
             },
             {
                 name: "御茶ノ水",
                 lat: 35.699605,
                 lng: 139.764955,
                 transfer: true,
+                groupId: 1131203,
             },
             {
                 name: "秋葉原",
                 lat: 35.698619,
                 lng: 139.773288,
                 transfer: true,
+                groupId: 1130222,
             },
             {
                 name: "浅草橋",
                 lat: 35.697403,
                 lng: 139.784427,
                 transfer: true,
+                groupId: 1131320,
             },
             {
                 name: "両国",
                 lat: 35.69579,
                 lng: 139.793334,
                 transfer: true,
+                groupId: 1131321,
             },
             {
                 name: "錦糸町",
                 lat: 35.696802,
                 lng: 139.814136,
                 transfer: true,
+                groupId: 1131322,
             },
             {
                 name: "亀戸",
                 lat: 35.697345,
                 lng: 139.826262,
                 transfer: true,
+                groupId: 1131323,
             },
             {
                 name: "平井",
@@ -665,6 +747,7 @@ export const kanto: OperatorData = {
                 lat: 35.716903,
                 lng: 139.857777,
                 transfer: true,
+                groupId: 1131325,
             },
             {
                 name: "小岩",
@@ -676,12 +759,14 @@ export const kanto: OperatorData = {
                 lat: 35.728903,
                 lng: 139.908142,
                 transfer: true,
+                groupId: 1131327,
             },
             {
                 name: "本八幡",
                 lat: 35.720898,
                 lng: 139.92741,
                 transfer: true,
+                groupId: 1131328,
             },
             {
                 name: "下総中山",
@@ -693,12 +778,14 @@ export const kanto: OperatorData = {
                 lat: 35.707283,
                 lng: 139.959536,
                 transfer: true,
+                groupId: 1130524,
             },
             {
                 name: "船橋",
                 lat: 35.701865,
                 lng: 139.984707,
                 transfer: true,
+                groupId: 1131331,
             },
             {
                 name: "東船橋",
@@ -710,18 +797,21 @@ export const kanto: OperatorData = {
                 lat: 35.691367,
                 lng: 140.020179,
                 transfer: true,
+                groupId: 1131333,
             },
             {
                 name: "幕張本郷",
                 lat: 35.672664,
                 lng: 140.042241,
                 transfer: true,
+                groupId: 1131334,
             },
             {
                 name: "幕張",
                 lat: 35.6594,
                 lng: 140.057899,
                 transfer: true,
+                groupId: 1131335,
             },
             {
                 name: "新検見川",
@@ -733,6 +823,7 @@ export const kanto: OperatorData = {
                 lat: 35.637264,
                 lng: 140.09256,
                 transfer: true,
+                groupId: 1131337,
             },
             {
                 name: "西千葉",
@@ -744,6 +835,7 @@ export const kanto: OperatorData = {
                 lat: 35.613425,
                 lng: 140.112837,
                 transfer: true,
+                groupId: 1131339,
             },
         ],
     },
@@ -758,12 +850,14 @@ export const kanto: OperatorData = {
                 lat: 35.71379,
                 lng: 139.777043,
                 transfer: true,
+                groupId: 1130220,
             },
             {
                 name: "日暮里",
                 lat: 35.727908,
                 lng: 139.771287,
                 transfer: true,
+                groupId: 1130218,
             },
             {
                 name: "三河島",
@@ -775,18 +869,21 @@ export const kanto: OperatorData = {
                 lat: 35.734033,
                 lng: 139.7994,
                 transfer: true,
+                groupId: 1132004,
             },
             {
                 name: "北千住",
                 lat: 35.749677,
                 lng: 139.804872,
                 transfer: true,
+                groupId: 1132005,
             },
             {
                 name: "綾瀬",
                 lat: 35.762222,
                 lng: 139.825019,
                 transfer: true,
+                groupId: 1132006,
             },
             {
                 name: "亀有",
@@ -798,12 +895,14 @@ export const kanto: OperatorData = {
                 lat: 35.769582,
                 lng: 139.870482,
                 transfer: true,
+                groupId: 1132008,
             },
             {
                 name: "松戸",
                 lat: 35.784472,
                 lng: 139.900779,
-      transfer: true,
+                transfer: true,
+                groupId: 1132009,
             },
             {
                 name: "北松戸",
@@ -815,12 +914,14 @@ export const kanto: OperatorData = {
                 lat: 35.811682,
                 lng: 139.917305,
                 transfer: true,
+                groupId: 1132011,
             },
             {
                 name: "新松戸",
                 lat: 35.825467,
                 lng: 139.921076,
                 transfer: true,
+                groupId: 1130519,
             },
             {
                 name: "北小金",
@@ -837,6 +938,7 @@ export const kanto: OperatorData = {
                 lat: 35.862316,
                 lng: 139.971148,
                 transfer: true,
+                groupId: 1132015,
             },
             {
                 name: "北柏",
@@ -858,6 +960,7 @@ export const kanto: OperatorData = {
                 lat: 35.89553,
                 lng: 140.063004,
                 transfer: true,
+                groupId: 1122901,
             },
         ],
     },
@@ -872,12 +975,14 @@ export const kanto: OperatorData = {
                 lat: 35.906439,
                 lng: 139.62405,
                 transfer: true,
+                groupId: 1131906,
             },
             {
                 name: "さいたま新都心",
                 lat: 35.893867,
                 lng: 139.633587,
                 transfer: true,
+                groupId: 1131905,
             },
             {
                 name: "与野",
@@ -894,12 +999,14 @@ export const kanto: OperatorData = {
                 lat: 35.858496,
                 lng: 139.657109,
                 transfer: true,
+                groupId: 1131904,
             },
             {
                 name: "南浦和",
                 lat: 35.847648,
                 lng: 139.669125,
                 transfer: true,
+                groupId: 1130511,
             },
             {
                 name: "蕨",
@@ -921,6 +1028,7 @@ export const kanto: OperatorData = {
                 lat: 35.778026,
                 lng: 139.720928,
                 transfer: true,
+                groupId: 1131903,
             },
             {
                 name: "東十条",
@@ -932,6 +1040,7 @@ export const kanto: OperatorData = {
                 lat: 35.752538,
                 lng: 139.73809,
                 transfer: true,
+                groupId: 1133212,
             },
             {
                 name: "上中里",
@@ -943,96 +1052,112 @@ export const kanto: OperatorData = {
                 lat: 35.737781,
                 lng: 139.761229,
                 transfer: true,
+                groupId: 1130216,
             },
             {
                 name: "西日暮里",
                 lat: 35.731954,
                 lng: 139.766857,
                 transfer: true,
+                groupId: 1130217,
             },
             {
                 name: "日暮里",
                 lat: 35.727908,
                 lng: 139.771287,
                 transfer: true,
+                groupId: 1130218,
             },
             {
                 name: "鶯谷",
                 lat: 35.721484,
                 lng: 139.778015,
                 transfer: true,
+                groupId: 1130219,
             },
             {
                 name: "上野",
                 lat: 35.71379,
                 lng: 139.777043,
                 transfer: true,
+                groupId: 1130220,
             },
             {
                 name: "御徒町",
                 lat: 35.707282,
                 lng: 139.774727,
                 transfer: true,
+                groupId: 1130221,
             },
             {
                 name: "秋葉原",
                 lat: 35.698619,
                 lng: 139.773288,
                 transfer: true,
+                groupId: 1130222,
             },
             {
                 name: "神田",
                 lat: 35.691173,
                 lng: 139.770641,
                 transfer: true,
+                groupId: 1130223,
             },
             {
                 name: "東京",
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "有楽町",
                 lat: 35.675441,
                 lng: 139.763806,
                 transfer: true,
+                groupId: 1130225,
             },
             {
                 name: "新橋",
                 lat: 35.666195,
                 lng: 139.758587,
                 transfer: true,
+                groupId: 1130102,
             },
             {
                 name: "浜松町",
                 lat: 35.655391,
                 lng: 139.757135,
                 transfer: true,
+                groupId: 1130227,
             },
             {
                 name: "田町",
                 lat: 35.645736,
                 lng: 139.747575,
                 transfer: true,
+                groupId: 1130228,
             },
             {
                 name: "高輪ゲートウェイ",
                 lat: 35.6355,
                 lng: 139.7407,
                 transfer: true,
+                groupId: 1130230,
             },
             {
                 name: "品川",
                 lat: 35.62876,
                 lng: 139.738999,
                 transfer: true,
+                groupId: 1130103,
             },
             {
                 name: "大井町",
                 lat: 35.606257,
                 lng: 139.73485,
                 transfer: true,
+                groupId: 1133228,
             },
             {
                 name: "大森",
@@ -1044,36 +1169,42 @@ export const kanto: OperatorData = {
                 lat: 35.562517,
                 lng: 139.716032,
                 transfer: true,
+                groupId: 1133230,
             },
             {
                 name: "川崎",
                 lat: 35.531311,
                 lng: 139.697485,
                 transfer: true,
+                groupId: 1130104,
             },
             {
                 name: "鶴見",
                 lat: 35.508387,
                 lng: 139.67614,
                 transfer: true,
+                groupId: 1130401,
             },
             {
                 name: "新子安",
                 lat: 35.487064,
                 lng: 139.654776,
-      transfer: true,
+                transfer: true,
+                groupId: 1133233,
             },
             {
                 name: "東神奈川",
                 lat: 35.47804,
                 lng: 139.633466,
                 transfer: true,
+                groupId: 1130601,
             },
             {
                 name: "横浜",
                 lat: 35.466195,
                 lng: 139.622704,
                 transfer: true,
+                groupId: 1130105,
             },
         ],
     },
@@ -1088,66 +1219,77 @@ export const kanto: OperatorData = {
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "新橋",
                 lat: 35.666195,
                 lng: 139.758587,
                 transfer: true,
+                groupId: 1130102,
             },
             {
                 name: "品川",
                 lat: 35.62876,
                 lng: 139.738999,
                 transfer: true,
+                groupId: 1130103,
             },
             {
                 name: "西大井",
                 lat: 35.601616,
                 lng: 139.721729,
                 transfer: true,
+                groupId: 1130804,
             },
             {
                 name: "武蔵小杉",
                 lat: 35.575965,
                 lng: 139.663278,
                 transfer: true,
+                groupId: 1130307,
             },
             {
                 name: "新川崎",
                 lat: 35.551784,
                 lng: 139.671481,
                 transfer: true,
+                groupId: 1130805,
             },
             {
                 name: "横浜",
                 lat: 35.466195,
                 lng: 139.622704,
                 transfer: true,
+                groupId: 1130105,
             },
             {
                 name: "保土ケ谷",
                 lat: 35.446746,
                 lng: 139.599671,
                 transfer: true,
+                groupId: 1130807,
             },
             {
                 name: "東戸塚",
                 lat: 35.430353,
                 lng: 139.556794,
                 transfer: true,
+                groupId: 1130808,
             },
             {
                 name: "戸塚",
                 lat: 35.400432,
                 lng: 139.534282,
                 transfer: true,
+                groupId: 1130106,
             },
             {
                 name: "大船",
                 lat: 35.353466,
                 lng: 139.531127,
                 transfer: true,
+                groupId: 1130107,
             },
             {
                 name: "北鎌倉",
@@ -1159,6 +1301,7 @@ export const kanto: OperatorData = {
                 lat: 35.318793,
                 lng: 139.550428,
                 transfer: true,
+                groupId: 1130812,
             },
             {
                 name: "逗子",
@@ -1190,6 +1333,7 @@ export const kanto: OperatorData = {
                 lat: 35.233107,
                 lng: 139.700862,
                 transfer: true,
+                groupId: 1130818,
             },
         ],
     },
@@ -1204,30 +1348,35 @@ export const kanto: OperatorData = {
                 lat: 35.619772,
                 lng: 139.728439,
                 transfer: true,
+                groupId: 1130201,
             },
             {
                 name: "恵比寿",
                 lat: 35.646685,
                 lng: 139.71007,
                 transfer: true,
+                groupId: 1130204,
             },
             {
                 name: "渋谷",
                 lat: 35.658871,
                 lng: 139.701238,
                 transfer: true,
+                groupId: 1130205,
             },
             {
                 name: "新宿",
                 lat: 35.689729,
                 lng: 139.700464,
                 transfer: true,
+                groupId: 1130208,
             },
             {
                 name: "池袋",
                 lat: 35.730256,
                 lng: 139.711086,
                 transfer: true,
+                groupId: 1130212,
             },
             {
                 name: "板橋",
@@ -1244,6 +1393,7 @@ export const kanto: OperatorData = {
                 lat: 35.778026,
                 lng: 139.720928,
                 transfer: true,
+                groupId: 1131903,
             },
             {
                 name: "北赤羽",
@@ -1274,7 +1424,8 @@ export const kanto: OperatorData = {
                 name: "武蔵浦和",
                 lat: 35.845422,
                 lng: 139.646809,
-      transfer: true,
+                transfer: true,
+                groupId: 1130510,
             },
             {
                 name: "中浦和",
@@ -1301,6 +1452,7 @@ export const kanto: OperatorData = {
                 lat: 35.906439,
                 lng: 139.62405,
                 transfer: true,
+                groupId: 1131906,
             },
         ],
     },
@@ -1315,96 +1467,112 @@ export const kanto: OperatorData = {
                 lat: 35.906439,
                 lng: 139.62405,
                 transfer: true,
+                groupId: 1131906,
             },
             {
                 name: "浦和",
                 lat: 35.858496,
                 lng: 139.657109,
                 transfer: true,
+                groupId: 1131904,
             },
             {
                 name: "赤羽",
                 lat: 35.778026,
                 lng: 139.720928,
                 transfer: true,
+                groupId: 1131903,
             },
             {
                 name: "池袋",
                 lat: 35.730256,
                 lng: 139.711086,
                 transfer: true,
+                groupId: 1130212,
             },
             {
                 name: "新宿",
                 lat: 35.689729,
                 lng: 139.700464,
                 transfer: true,
+                groupId: 1130208,
             },
             {
                 name: "渋谷",
                 lat: 35.658871,
                 lng: 139.701238,
                 transfer: true,
+                groupId: 1130205,
             },
             {
                 name: "恵比寿",
                 lat: 35.646685,
                 lng: 139.71007,
                 transfer: true,
+                groupId: 1130204,
             },
             {
                 name: "大崎",
                 lat: 35.619772,
                 lng: 139.728439,
                 transfer: true,
+                groupId: 1130201,
             },
             {
                 name: "西大井",
                 lat: 35.601616,
                 lng: 139.721729,
                 transfer: true,
+                groupId: 1130804,
             },
             {
                 name: "武蔵小杉",
                 lat: 35.57669,
                 lng: 139.65963,
                 transfer: true,
+                groupId: 1130307,
             },
             {
                 name: "新川崎",
                 lat: 35.551784,
                 lng: 139.671481,
                 transfer: true,
+                groupId: 1130805,
             },
             {
                 name: "横浜",
                 lat: 35.466195,
                 lng: 139.622704,
                 transfer: true,
+                groupId: 1130105,
             },
             {
                 name: "保土ケ谷",
                 lat: 35.446746,
                 lng: 139.599671,
                 transfer: true,
+                groupId: 1130807,
             },
             {
                 name: "東戸塚",
                 lat: 35.430353,
                 lng: 139.556794,
                 transfer: true,
+                groupId: 1130808,
             },
             {
                 name: "戸塚",
                 lat: 35.400432,
                 lng: 139.534282,
                 transfer: true,
+                groupId: 1130106,
             },
             {
                 name: "大船",
                 lat: 35.353466,
                 lng: 139.531127,
                 transfer: true,
+                groupId: 1130107,
             },
         ],
     },
@@ -1419,6 +1587,7 @@ export const kanto: OperatorData = {
                 lat: 35.665766,
                 lng: 139.477142,
                 transfer: true,
+                groupId: 1130320,
             },
             {
                 name: "北府中",
@@ -1430,6 +1599,7 @@ export const kanto: OperatorData = {
                 lat: 35.699744,
                 lng: 139.465994,
                 transfer: true,
+                groupId: 1130503,
             },
             {
                 name: "新小平",
@@ -1456,6 +1626,7 @@ export const kanto: OperatorData = {
                 lat: 35.815475,
                 lng: 139.587322,
                 transfer: true,
+                groupId: 1130508,
             },
             {
                 name: "西浦和",
@@ -1467,12 +1638,14 @@ export const kanto: OperatorData = {
                 lat: 35.846047,
                 lng: 139.647974,
                 transfer: true,
+                groupId: 1130510,
             },
             {
                 name: "南浦和",
                 lat: 35.847648,
                 lng: 139.669125,
                 transfer: true,
+                groupId: 1130511,
             },
             {
                 name: "東浦和",
@@ -1484,12 +1657,14 @@ export const kanto: OperatorData = {
                 lat: 35.875246,
                 lng: 139.744087,
                 transfer: true,
+                groupId: 1130513,
             },
             {
                 name: "南越谷",
                 lat: 35.876106,
                 lng: 139.790499,
-      transfer: true,
+                transfer: true,
+                groupId: 1130514,
             },
             {
                 name: "越谷レイクタウン",
@@ -1521,24 +1696,28 @@ export const kanto: OperatorData = {
                 lat: 35.838035,
                 lng: 139.903865,
                 transfer: true,
+                groupId: 1130518,
             },
             {
                 name: "新松戸",
                 lat: 35.825467,
                 lng: 139.921076,
                 transfer: true,
+                groupId: 1130519,
             },
             {
                 name: "新八柱",
                 lat: 35.792013,
                 lng: 139.938393,
-      transfer: true,
+                transfer: true,
+                groupId: 1130520,
             },
             {
                 name: "東松戸",
                 lat: 35.770611,
                 lng: 139.943848,
                 transfer: true,
+                groupId: 1130521,
             },
             {
                 name: "市川大野",
@@ -1555,6 +1734,7 @@ export const kanto: OperatorData = {
                 lat: 35.707283,
                 lng: 139.959536,
                 transfer: true,
+                groupId: 1130524,
             },
         ],
     },
@@ -1569,6 +1749,7 @@ export const kanto: OperatorData = {
                 lat: 35.510428,
                 lng: 139.713483,
                 transfer: true,
+                groupId: 1130328,
             },
             {
                 name: "小田栄",
@@ -1585,12 +1766,14 @@ export const kanto: OperatorData = {
                 lat: 35.523071,
                 lng: 139.691446,
                 transfer: true,
+                groupId: 1130326,
             },
             {
                 name: "川崎",
                 lat: 35.531311,
                 lng: 139.697485,
                 transfer: true,
+                groupId: 1130104,
             },
             {
                 name: "尻手",
@@ -1622,6 +1805,7 @@ export const kanto: OperatorData = {
                 lat: 35.57669,
                 lng: 139.65963,
                 transfer: true,
+                groupId: 1130307,
             },
             {
                 name: "武蔵中原",
@@ -1638,6 +1822,7 @@ export const kanto: OperatorData = {
                 lat: 35.598923,
                 lng: 139.61139,
                 transfer: true,
+                groupId: 1130310,
             },
             {
                 name: "津田山",
@@ -1659,6 +1844,7 @@ export const kanto: OperatorData = {
                 lat: 35.620889,
                 lng: 139.570028,
                 transfer: true,
+                groupId: 1130314,
             },
             {
                 name: "中野島",
@@ -1690,12 +1876,14 @@ export const kanto: OperatorData = {
                 lat: 35.665766,
                 lng: 139.477142,
                 transfer: true,
+                groupId: 1130320,
             },
             {
                 name: "分倍河原",
                 lat: 35.668493,
                 lng: 139.468798,
                 transfer: true,
+                groupId: 1130321,
             },
             {
                 name: "西府",
@@ -1722,6 +1910,7 @@ export const kanto: OperatorData = {
                 lat: 35.698202,
                 lng: 139.413704,
                 transfer: true,
+                groupId: 1130325,
             },
         ],
     },
@@ -1736,6 +1925,7 @@ export const kanto: OperatorData = {
                 lat: 35.47804,
                 lng: 139.633466,
                 transfer: true,
+                groupId: 1130601,
             },
             {
                 name: "大口",
@@ -1747,12 +1937,14 @@ export const kanto: OperatorData = {
                 lat: 35.509749,
                 lng: 139.630147,
                 transfer: true,
+                groupId: 1130603,
             },
             {
                 name: "新横浜",
                 lat: 35.506824,
                 lng: 139.617348,
                 transfer: true,
+                groupId: 1130604,
             },
             {
                 name: "小机",
@@ -1769,6 +1961,7 @@ export const kanto: OperatorData = {
                 lat: 35.514745,
                 lng: 139.539692,
                 transfer: true,
+                groupId: 1130607,
             },
             {
                 name: "十日市場",
@@ -1780,6 +1973,7 @@ export const kanto: OperatorData = {
                 lat: 35.531698,
                 lng: 139.49468,
                 transfer: true,
+                groupId: 1130609,
             },
             {
                 name: "成瀬",
@@ -1791,6 +1985,7 @@ export const kanto: OperatorData = {
                 lat: 35.542004,
                 lng: 139.445579,
                 transfer: true,
+                groupId: 1130611,
             },
             {
                 name: "古淵",
@@ -1817,6 +2012,7 @@ export const kanto: OperatorData = {
                 lat: 35.594975,
                 lng: 139.344586,
                 transfer: true,
+                groupId: 1130616,
             },
             {
                 name: "相原",
@@ -1838,6 +2034,7 @@ export const kanto: OperatorData = {
                 lat: 35.655555,
                 lng: 139.338998,
                 transfer: true,
+                groupId: 1130620,
             },
         ],
     },
@@ -1852,12 +2049,14 @@ export const kanto: OperatorData = {
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "八丁堀",
                 lat: 35.674617,
                 lng: 139.777705,
                 transfer: true,
+                groupId: 1132602,
             },
             {
                 name: "越中島",
@@ -1874,6 +2073,7 @@ export const kanto: OperatorData = {
                 lat: 35.646172,
                 lng: 139.827402,
                 transfer: true,
+                groupId: 1132605,
             },
             {
                 name: "葛西臨海公園",
@@ -1900,6 +2100,7 @@ export const kanto: OperatorData = {
                 lat: 35.707283,
                 lng: 139.959536,
                 transfer: true,
+                groupId: 1130524,
             },
             {
                 name: "二俣新町",
@@ -1940,13 +2141,15 @@ export const kanto: OperatorData = {
                 name: "千葉みなと",
                 lat: 35.606172,
                 lng: 140.10341,
-      transfer: true,
+                transfer: true,
+                groupId: 1132617,
             },
             {
                 name: "蘇我",
                 lat: 35.582065,
                 lng: 140.130767,
                 transfer: true,
+                groupId: 1132403,
             },
         ],
     },
@@ -1961,6 +2164,7 @@ export const kanto: OperatorData = {
                 lat: 35.655555,
                 lng: 139.338998,
                 transfer: true,
+                groupId: 1130620,
             },
             {
                 name: "北八王子",
@@ -1977,6 +2181,7 @@ export const kanto: OperatorData = {
                 lat: 35.721278,
                 lng: 139.343468,
                 transfer: true,
+                groupId: 1131506,
             },
             {
                 name: "東福生",
@@ -1998,12 +2203,14 @@ export const kanto: OperatorData = {
                 lat: 35.852928,
                 lng: 139.325965,
                 transfer: true,
+                groupId: 1131708,
             },
             {
                 name: "高麗川",
                 lat: 35.896328,
                 lng: 139.33809,
                 transfer: true,
+                groupId: 1131709,
             },
         ],
     },
@@ -2018,6 +2225,7 @@ export const kanto: OperatorData = {
                 lat: 35.698202,
                 lng: 139.413704,
                 transfer: true,
+                groupId: 1130325,
             },
             {
                 name: "西立川",
@@ -2044,6 +2252,7 @@ export const kanto: OperatorData = {
                 lat: 35.721278,
                 lng: 139.343468,
                 transfer: true,
+                groupId: 1131506,
             },
             {
                 name: "牛浜",
@@ -2153,6 +2362,7 @@ export const kanto: OperatorData = {
                 lat: 35.721278,
                 lng: 139.343468,
                 transfer: true,
+                groupId: 1131506,
             },
             {
                 name: "熊川",
@@ -2197,6 +2407,7 @@ export const kanto: OperatorData = {
                 lat: 35.906439,
                 lng: 139.62405,
                 transfer: true,
+                groupId: 1131906,
             },
             {
                 name: "日進",
@@ -2223,6 +2434,7 @@ export const kanto: OperatorData = {
                 lat: 35.906742,
                 lng: 139.483078,
                 transfer: true,
+                groupId: 1132123,
             },
             {
                 name: "西川越",
@@ -2249,6 +2461,7 @@ export const kanto: OperatorData = {
                 lat: 35.896328,
                 lng: 139.33809,
                 transfer: true,
+                groupId: 1131709,
             },
         ],
     },
@@ -2263,6 +2476,7 @@ export const kanto: OperatorData = {
                 lat: 35.896328,
                 lng: 139.33809,
                 transfer: true,
+                groupId: 1131709,
             },
             {
                 name: "毛呂",
@@ -2274,6 +2488,7 @@ export const kanto: OperatorData = {
                 lat: 35.962559,
                 lng: 139.299437,
                 transfer: true,
+                groupId: 1131803,
             },
             {
                 name: "明覚",
@@ -2285,6 +2500,7 @@ export const kanto: OperatorData = {
                 lat: 36.05903,
                 lng: 139.260412,
                 transfer: true,
+                groupId: 1131805,
             },
             {
                 name: "竹沢",
@@ -2301,6 +2517,7 @@ export const kanto: OperatorData = {
                 lat: 36.118013,
                 lng: 139.194224,
                 transfer: true,
+                groupId: 1131808,
             },
             {
                 name: "用土",
@@ -2337,12 +2554,14 @@ export const kanto: OperatorData = {
                 lat: 36.300216,
                 lng: 139.049474,
                 transfer: true,
+                groupId: 1131815,
             },
             {
                 name: "高崎",
                 lat: 36.322239,
                 lng: 139.012354,
                 transfer: true,
+                groupId: 1131816,
             },
         ],
     },
@@ -2357,6 +2576,7 @@ export const kanto: OperatorData = {
                 lat: 35.508387,
                 lng: 139.67614,
                 transfer: true,
+                groupId: 1130401,
             },
             {
                 name: "国道",
@@ -2408,6 +2628,7 @@ export const kanto: OperatorData = {
                 lat: 35.509863,
                 lng: 139.713575,
                 transfer: true,
+                groupId: 1130328,
             },
             {
                 name: "昭和",
@@ -2432,42 +2653,49 @@ export const kanto: OperatorData = {
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "上野",
                 lat: 35.71379,
                 lng: 139.777043,
                 transfer: true,
+                groupId: 1130220,
             },
             {
                 name: "尾久",
                 lat: 35.74683,
                 lng: 139.753846,
                 transfer: true,
+                groupId: 1131902,
             },
             {
                 name: "赤羽",
                 lat: 35.778026,
                 lng: 139.720928,
                 transfer: true,
+                groupId: 1131903,
             },
             {
                 name: "浦和",
                 lat: 35.858496,
                 lng: 139.657109,
                 transfer: true,
+                groupId: 1131904,
             },
             {
                 name: "さいたま新都心",
                 lat: 35.893867,
                 lng: 139.633587,
                 transfer: true,
+                groupId: 1131905,
             },
             {
                 name: "大宮",
                 lat: 35.906439,
                 lng: 139.62405,
                 transfer: true,
+                groupId: 1131906,
             },
             {
                 name: "土呂",
@@ -2499,6 +2727,7 @@ export const kanto: OperatorData = {
                 lat: 36.065684,
                 lng: 139.67727,
                 transfer: true,
+                groupId: 1131912,
             },
             {
                 name: "東鷲宮",
@@ -2510,6 +2739,7 @@ export const kanto: OperatorData = {
                 lat: 36.136852,
                 lng: 139.694177,
                 transfer: true,
+                groupId: 1131914,
             },
             {
                 name: "古河",
@@ -2531,6 +2761,7 @@ export const kanto: OperatorData = {
                 lat: 36.312747,
                 lng: 139.806241,
                 transfer: true,
+                groupId: 1131918,
             },
             {
                 name: "小金井",
@@ -2557,6 +2788,7 @@ export const kanto: OperatorData = {
                 lat: 36.559246,
                 lng: 139.898389,
                 transfer: true,
+                groupId: 1131923,
             },
             {
                 name: "岡本",
@@ -2568,6 +2800,7 @@ export const kanto: OperatorData = {
                 lat: 36.631703,
                 lng: 139.979487,
                 transfer: true,
+                groupId: 1131925,
             },
             {
                 name: "氏家",
@@ -2622,18 +2855,21 @@ export const kanto: OperatorData = {
                 lat: 35.613425,
                 lng: 140.112837,
                 transfer: true,
+                groupId: 1131339,
             },
             {
                 name: "本千葉",
                 lat: 35.601202,
                 lng: 140.120987,
                 transfer: true,
+                groupId: 1132402,
             },
             {
                 name: "蘇我",
                 lat: 35.582065,
                 lng: 140.130767,
                 transfer: true,
+                groupId: 1132403,
             },
             {
                 name: "鎌取",
@@ -2655,6 +2891,7 @@ export const kanto: OperatorData = {
                 lat: 35.522427,
                 lng: 140.311111,
                 transfer: true,
+                groupId: 1132407,
             },
             {
                 name: "永田",
@@ -2711,6 +2948,7 @@ export const kanto: OperatorData = {
                 lat: 35.251097,
                 lng: 140.390864,
                 transfer: true,
+                groupId: 1132418,
             },
             {
                 name: "浪花",
@@ -2757,6 +2995,7 @@ export const kanto: OperatorData = {
                 lat: 35.107465,
                 lng: 140.103566,
                 transfer: true,
+                groupId: 1132427,
             },
         ],
     },
@@ -2771,18 +3010,21 @@ export const kanto: OperatorData = {
                 lat: 35.613425,
                 lng: 140.112837,
                 transfer: true,
+                groupId: 1131339,
             },
             {
                 name: "本千葉",
                 lat: 35.601202,
                 lng: 140.120987,
                 transfer: true,
+                groupId: 1132402,
             },
             {
                 name: "蘇我",
                 lat: 35.582065,
                 lng: 140.130767,
                 transfer: true,
+                groupId: 1132403,
             },
             {
                 name: "浜野",
@@ -2799,6 +3041,7 @@ export const kanto: OperatorData = {
                 lat: 35.512985,
                 lng: 140.089522,
                 transfer: true,
+                groupId: 1132506,
             },
             {
                 name: "姉ケ崎",
@@ -2825,6 +3068,7 @@ export const kanto: OperatorData = {
                 lat: 35.381668,
                 lng: 139.92611,
                 transfer: true,
+                groupId: 1132511,
             },
             {
                 name: "君津",
@@ -2931,6 +3175,7 @@ export const kanto: OperatorData = {
                 lat: 35.107465,
                 lng: 140.103566,
                 transfer: true,
+                groupId: 1132427,
             },
         ],
     },
@@ -2945,6 +3190,7 @@ export const kanto: OperatorData = {
                 lat: 35.709743,
                 lng: 140.226722,
                 transfer: true,
+                groupId: 1131415,
             },
             {
                 name: "酒々井",
@@ -2956,6 +3202,7 @@ export const kanto: OperatorData = {
                 lat: 35.777796,
                 lng: 140.313853,
                 transfer: true,
+                groupId: 1132703,
             },
             {
                 name: "久住",
@@ -2982,12 +3229,14 @@ export const kanto: OperatorData = {
                 lat: 35.894522,
                 lng: 140.494074,
                 transfer: true,
+                groupId: 1132710,
             },
             {
                 name: "香取",
                 lat: 35.897856,
                 lng: 140.532367,
                 transfer: true,
+                groupId: 1132711,
             },
             {
                 name: "水郷",
@@ -3024,12 +3273,14 @@ export const kanto: OperatorData = {
                 lat: 35.739386,
                 lng: 140.795143,
                 transfer: true,
+                groupId: 1131430,
             },
             {
                 name: "銚子",
                 lat: 35.729449,
                 lng: 140.827557,
                 transfer: true,
+                groupId: 1131431,
             },
         ],
     },
@@ -3104,6 +3355,7 @@ export const kanto: OperatorData = {
                 lat: 35.381668,
                 lng: 139.92611,
                 transfer: true,
+                groupId: 1132511,
             },
             {
                 name: "祇園",
@@ -3183,6 +3435,7 @@ export const kanto: OperatorData = {
                 lat: 35.522427,
                 lng: 140.311111,
                 transfer: true,
+                groupId: 1132407,
             },
             {
                 name: "福俵",
@@ -3204,6 +3457,7 @@ export const kanto: OperatorData = {
                 lat: 35.608513,
                 lng: 140.410109,
                 transfer: true,
+                groupId: 1131420,
             },
         ],
     },
@@ -3218,36 +3472,42 @@ export const kanto: OperatorData = {
                 lat: 35.71379,
                 lng: 139.777043,
                 transfer: true,
+                groupId: 1130220,
             },
             {
                 name: "尾久",
                 lat: 35.74683,
                 lng: 139.753846,
                 transfer: true,
+                groupId: 1131902,
             },
             {
                 name: "赤羽",
                 lat: 35.778026,
                 lng: 139.720928,
                 transfer: true,
+                groupId: 1131903,
             },
             {
                 name: "浦和",
                 lat: 35.858496,
                 lng: 139.657109,
                 transfer: true,
+                groupId: 1131904,
             },
             {
                 name: "さいたま新都心",
                 lat: 35.893867,
                 lng: 139.633587,
                 transfer: true,
+                groupId: 1131905,
             },
             {
                 name: "大宮",
                 lat: 35.906439,
                 lng: 139.62405,
                 transfer: true,
+                groupId: 1131906,
             },
             {
                 name: "宮原",
@@ -3299,6 +3559,7 @@ export const kanto: OperatorData = {
                 lat: 36.139627,
                 lng: 139.389528,
                 transfer: true,
+                groupId: 1132316,
             },
             {
                 name: "籠原",
@@ -3335,12 +3596,14 @@ export const kanto: OperatorData = {
                 lat: 36.300216,
                 lng: 139.049474,
                 transfer: true,
+                groupId: 1131815,
             },
             {
                 name: "高崎",
                 lat: 36.322239,
                 lng: 139.012354,
                 transfer: true,
+                groupId: 1131816,
             },
         ],
     },
@@ -3355,48 +3618,56 @@ export const kanto: OperatorData = {
                 lat: 35.681391,
                 lng: 139.766103,
                 transfer: true,
+                groupId: 1130101,
             },
             {
                 name: "新橋",
                 lat: 35.666195,
                 lng: 139.758587,
                 transfer: true,
+                groupId: 1130102,
             },
             {
                 name: "品川",
                 lat: 35.62876,
                 lng: 139.738999,
                 transfer: true,
+                groupId: 1130103,
             },
             {
                 name: "川崎",
                 lat: 35.531311,
                 lng: 139.697485,
                 transfer: true,
+                groupId: 1130104,
             },
             {
                 name: "横浜",
                 lat: 35.466195,
                 lng: 139.622704,
                 transfer: true,
+                groupId: 1130105,
             },
             {
                 name: "戸塚",
                 lat: 35.400432,
                 lng: 139.534282,
                 transfer: true,
+                groupId: 1130106,
             },
             {
                 name: "大船",
                 lat: 35.353466,
                 lng: 139.531127,
                 transfer: true,
+                groupId: 1130107,
             },
             {
                 name: "藤沢",
                 lat: 35.338882,
                 lng: 139.487293,
                 transfer: true,
+                groupId: 1130108,
             },
             {
                 name: "辻堂",
@@ -3408,6 +3679,7 @@ export const kanto: OperatorData = {
                 lat: 35.330741,
                 lng: 139.407197,
                 transfer: true,
+                groupId: 1130110,
             },
             {
                 name: "平塚",
@@ -3439,6 +3711,7 @@ export const kanto: OperatorData = {
                 lat: 35.256225,
                 lng: 139.155772,
                 transfer: true,
+                groupId: 1130116,
             },
             {
                 name: "早川",
@@ -3478,18 +3751,21 @@ export const kanto: OperatorData = {
                 lat: 35.466195,
                 lng: 139.622704,
                 transfer: true,
+                groupId: 1130105,
             },
             {
                 name: "桜木町",
                 lat: 35.451112,
                 lng: 139.630881,
                 transfer: true,
+                groupId: 1130702,
             },
             {
                 name: "関内",
                 lat: 35.443336,
                 lng: 139.636984,
                 transfer: true,
+                groupId: 1130703,
             },
             {
                 name: "石川町",
@@ -3516,6 +3792,7 @@ export const kanto: OperatorData = {
                 lat: 35.386863,
                 lng: 139.619483,
                 transfer: true,
+                groupId: 1130708,
             },
             {
                 name: "洋光台",
@@ -3537,6 +3814,7 @@ export const kanto: OperatorData = {
                 lat: 35.353466,
                 lng: 139.531127,
                 transfer: true,
+                groupId: 1130107,
             },
         ],
     },
@@ -3551,6 +3829,7 @@ export const kanto: OperatorData = {
                 lat: 35.330741,
                 lng: 139.407197,
                 transfer: true,
+                groupId: 1130110,
             },
             {
                 name: "北茅ケ崎",
@@ -3592,12 +3871,14 @@ export const kanto: OperatorData = {
                 lat: 35.44375,
                 lng: 139.378631,
                 transfer: true,
+                groupId: 1130909,
             },
             {
                 name: "海老名",
                 lat: 35.454282,
                 lng: 139.389328,
                 transfer: true,
+                groupId: 1130910,
             },
             {
                 name: "入谷",
@@ -3639,6 +3920,7 @@ export const kanto: OperatorData = {
                 lat: 35.594975,
                 lng: 139.344586,
                 transfer: true,
+                groupId: 1130616,
             },
         ],
     },
@@ -3653,6 +3935,7 @@ export const kanto: OperatorData = {
                 lat: 36.322239,
                 lng: 139.012354,
                 transfer: true,
+                groupId: 1131816,
             },
             {
                 name: "北高崎",
@@ -3702,6 +3985,7 @@ export const kanto: OperatorData = {
           lat: 35.89553,
           lng: 140.063004,
           transfer: true,
+          groupId: 1122901,
         },
         {
           name: "藤代",
@@ -3713,6 +3997,7 @@ export const kanto: OperatorData = {
           lat: 35.930066,
           lng: 140.138217,
           transfer: true,
+          groupId: 1122903,
         },
         {
           name: "牛久",
@@ -3764,6 +4049,7 @@ export const kanto: OperatorData = {
           lat: 36.350597,
           lng: 140.306306,
           transfer: true,
+          groupId: 1122913,
         },
         {
           name: "内原",
@@ -3785,12 +4071,14 @@ export const kanto: OperatorData = {
           lat: 36.370911,
           lng: 140.47676,
           transfer: true,
+          groupId: 1122917,
         },
         {
           name: "勝田",
           lat: 36.394033,
           lng: 140.524482,
           transfer: true,
+          groupId: 1122918,
         },
         {
           name: "佐和",
@@ -3890,84 +4178,98 @@ export const kanto: OperatorData = {
           lat: 35.353466,
           lng: 139.531127,
           transfer: true,
+          groupId: 1130107,
         },
         {
           name: "戸塚",
           lat: 35.400432,
           lng: 139.534282,
           transfer: true,
+          groupId: 1130106,
         },
         {
           name: "横浜",
           lat: 35.466195,
           lng: 139.622704,
           transfer: true,
+          groupId: 1130105,
         },
         {
           name: "武蔵小杉",
           lat: 35.575965,
           lng: 139.663278,
           transfer: true,
+          groupId: 1130307,
         },
         {
           name: "品川",
           lat: 35.62876,
           lng: 139.738999,
           transfer: true,
+          groupId: 1130103,
         },
         {
           name: "渋谷",
           lat: 35.658871,
           lng: 139.701238,
           transfer: true,
+          groupId: 1130205,
         },
         {
           name: "新宿",
           lat: 35.689729,
           lng: 139.700464,
           transfer: true,
+          groupId: 1130208,
         },
         {
           name: "東京",
           lat: 35.681391,
           lng: 139.766103,
           transfer: true,
+          groupId: 1130101,
         },
         {
           name: "千葉",
           lat: 35.613425,
           lng: 140.112837,
           transfer: true,
+          groupId: 1131339,
         },
         {
           name: "四街道",
           lat: 35.662756,
           lng: 140.165023,
           transfer: true,
+          groupId: 1131413,
         },
         {
           name: "佐倉",
           lat: 35.709743,
           lng: 140.226722,
           transfer: true,
+          groupId: 1131415,
         },
         {
           name: "成田",
           lat: 35.777796,
           lng: 140.313853,
           transfer: true,
+          groupId: 1132703,
         },
         {
           name: "空港第２ビル（第２旅客ターミナル）",
           lat: 35.773693,
           lng: 140.387163,
           transfer: true,
+          groupId: 1132813,
         },
         {
           name: "成田空港（第１旅客ターミナル）",
           lat: 35.763983,
           lng: 140.384644,
           transfer: true,
+          groupId: 1132705,
         },
       ],
     },
@@ -3982,12 +4284,14 @@ export const kanto: OperatorData = {
           lat: 35.894522,
           lng: 140.494074,
           transfer: true,
+          groupId: 1132710,
         },
         {
           name: "香取",
           lat: 35.897856,
           lng: 140.532367,
           transfer: true,
+          groupId: 1132711,
         },
         {
           name: "十二橋",
@@ -4009,12 +4313,14 @@ export const kanto: OperatorData = {
           lat: 35.970614,
           lng: 140.625676,
           transfer: true,
+          groupId: 1132906,
         },
         {
           name: "鹿島サッカースタジアム（臨）",
           lat: 35.992707,
           lng: 140.63606,
           transfer: true,
+          groupId: 1132907,
         },
       ],
     },
@@ -4029,6 +4335,7 @@ export const kanto: OperatorData = {
           lat: 36.631703,
           lng: 139.979487,
           transfer: true,
+          groupId: 1131925,
         },
         {
           name: "下野花岡",
@@ -4176,6 +4483,7 @@ export const kanto: OperatorData = {
           lat: 36.370911,
           lng: 140.47676,
           transfer: true,
+          groupId: 1122917,
         },
         {
           name: "常陸青柳",
@@ -4415,6 +4723,7 @@ export const kanto: OperatorData = {
           lat: 36.312747,
           lng: 139.806241,
           transfer: true,
+          groupId: 1131918,
         },
         {
           name: "小田林",
@@ -4446,6 +4755,7 @@ export const kanto: OperatorData = {
           lat: 36.304197,
           lng: 139.97866,
           transfer: true,
+          groupId: 1133907,
         },
         {
           name: "新治",
@@ -4492,6 +4802,7 @@ export const kanto: OperatorData = {
           lat: 36.350597,
           lng: 140.306306,
           transfer: true,
+          groupId: 1122913,
         },
       ],
     },
@@ -4506,6 +4817,7 @@ export const kanto: OperatorData = {
           lat: 36.559246,
           lng: 139.898389,
           transfer: true,
+          groupId: 1131923,
         },
         {
           name: "鶴田",
@@ -4537,6 +4849,7 @@ export const kanto: OperatorData = {
           lat: 36.7474,
           lng: 139.62215,
           transfer: true,
+          groupId: 1134007,
         },
       ],
     },
@@ -4551,6 +4864,7 @@ export const kanto: OperatorData = {
           lat: 36.322239,
           lng: 139.012354,
           transfer: true,
+          groupId: 1131816,
         },
         {
           name: "高崎問屋町",
@@ -4587,6 +4901,7 @@ export const kanto: OperatorData = {
           lat: 36.326849,
           lng: 139.193704,
           transfer: true,
+          groupId: 1134108,
         },
         {
           name: "国定",
@@ -4603,6 +4918,7 @@ export const kanto: OperatorData = {
           lat: 36.41109,
           lng: 139.33319,
           transfer: true,
+          groupId: 1134111,
         },
         {
           name: "小俣",
@@ -4634,6 +4950,7 @@ export const kanto: OperatorData = {
           lat: 36.316668,
           lng: 139.578858,
           transfer: true,
+          groupId: 1134116,
         },
         {
           name: "岩舟",
@@ -4650,6 +4967,7 @@ export const kanto: OperatorData = {
           lat: 36.371912,
           lng: 139.731037,
           transfer: true,
+          groupId: 1134119,
         },
         {
           name: "思川",
@@ -4661,6 +4979,7 @@ export const kanto: OperatorData = {
           lat: 36.312747,
           lng: 139.806241,
           transfer: true,
+          groupId: 1131918,
         },
       ],
     },
@@ -4675,12 +4994,14 @@ export const kanto: OperatorData = {
           lat: 35.681391,
           lng: 139.766103,
           transfer: true,
+          groupId: 1130101,
         },
         {
           name: "上野",
           lat: 35.71379,
           lng: 139.777043,
           transfer: true,
+          groupId: 1130220,
         },
       ],
     },
@@ -4697,12 +5018,14 @@ export const kanto: OperatorData = {
           lat: 36.371912,
           lng: 139.731037,
           transfer: true,
+          groupId: 1134119,
         },
         {
           name: "新栃木",
           lat: 36.390149,
           lng: 139.742308,
           transfer: true,
+          groupId: 2100313,
         },
         {
           name: "野州平川",
@@ -4767,6 +5090,7 @@ export const kanto: OperatorData = {
           lat: 36.72563,
           lng: 139.692666,
           transfer: true,
+          groupId: 2100324,
         },
         {
           name: "大谷向",
@@ -4808,6 +5132,7 @@ export const kanto: OperatorData = {
           lat: 36.852505,
           lng: 139.732963,
           transfer: true,
+          groupId: 2100908,
         },
       ],
     },
@@ -4822,6 +5147,7 @@ export const kanto: OperatorData = {
           lat: 36.246606,
           lng: 139.527811,
           transfer: true,
+          groupId: 2100240,
         },
         {
           name: "渡瀬",
@@ -4843,6 +5169,7 @@ export const kanto: OperatorData = {
           lat: 36.316884,
           lng: 139.578826,
           transfer: true,
+          groupId: 1134116,
         },
         {
           name: "堀米",
@@ -4882,6 +5209,7 @@ export const kanto: OperatorData = {
           lat: 36.294228,
           lng: 139.378779,
           transfer: true,
+          groupId: 2100248,
         },
         {
           name: "三枚橋",
@@ -4913,12 +5241,14 @@ export const kanto: OperatorData = {
           lat: 36.410261,
           lng: 139.304178,
           transfer: true,
+          groupId: 2101107,
         },
         {
           name: "赤城",
           lat: 36.425615,
           lng: 139.276784,
           transfer: true,
+          groupId: 2101108,
         },
       ],
     },
@@ -4933,6 +5263,7 @@ export const kanto: OperatorData = {
           lat: 36.246606,
           lng: 139.527811,
           transfer: true,
+          groupId: 2100240,
         },
         {
           name: "成島",
@@ -4969,6 +5300,7 @@ export const kanto: OperatorData = {
           lat: 36.294228,
           lng: 139.378779,
           transfer: true,
+          groupId: 2100248,
         },
         {
           name: "竜舞",
@@ -4988,6 +5320,7 @@ export const kanto: OperatorData = {
           lat: 35.730924,
           lng: 139.710678,
           transfer: true,
+          groupId: 1130212,
         },
         {
           name: "北池袋",
@@ -5029,18 +5362,21 @@ export const kanto: OperatorData = {
           lat: 35.770558,
           lng: 139.644482,
           transfer: true,
+          groupId: 2100109,
         },
         {
           name: "成増",
           lat: 35.777723,
           lng: 139.632708,
           transfer: true,
+          groupId: 2100110,
         },
         {
           name: "和光市",
           lat: 35.788507,
           lng: 139.612434,
           transfer: true,
+          groupId: 2100111,
         },
         {
           name: "朝霞",
@@ -5052,6 +5388,7 @@ export const kanto: OperatorData = {
           lat: 35.814328,
           lng: 139.587189,
           transfer: true,
+          groupId: 1130508,
         },
         {
           name: "志木",
@@ -5093,6 +5430,7 @@ export const kanto: OperatorData = {
           lat: 35.906742,
           lng: 139.483078,
           transfer: true,
+          groupId: 1132123,
         },
         {
           name: "川越市",
@@ -5119,6 +5457,7 @@ export const kanto: OperatorData = {
           lat: 35.957181,
           lng: 139.394032,
           transfer: true,
+          groupId: 2100126,
         },
         {
           name: "北坂戸",
@@ -5155,6 +5494,7 @@ export const kanto: OperatorData = {
           lat: 36.05903,
           lng: 139.260412,
           transfer: true,
+          groupId: 1131805,
         },
         {
           name: "東武竹沢",
@@ -5186,6 +5526,7 @@ export const kanto: OperatorData = {
           lat: 36.117597,
           lng: 139.194508,
           transfer: true,
+          groupId: 1131808,
         },
       ],
     },
@@ -5200,6 +5541,7 @@ export const kanto: OperatorData = {
           lat: 35.957181,
           lng: 139.394032,
           transfer: true,
+          groupId: 2100126,
         },
         {
           name: "一本松",
@@ -5236,6 +5578,7 @@ export const kanto: OperatorData = {
           lat: 35.962559,
           lng: 139.299437,
           transfer: true,
+          groupId: 1131803,
         },
       ],
     },
@@ -5250,6 +5593,7 @@ export const kanto: OperatorData = {
           lat: 35.711883,
           lng: 139.798214,
           transfer: true,
+          groupId: 2100201,
         },
         {
           name: "とうきょうスカイツリー",
@@ -5261,12 +5605,14 @@ export const kanto: OperatorData = {
           lat: 35.710702,
           lng: 139.812935,
           transfer: true,
+          groupId: 2100203,
         },
         {
           name: "曳舟",
           lat: 35.718418,
           lng: 139.816634,
           transfer: true,
+          groupId: 2100204,
         },
         {
           name: "東向島",
@@ -5288,12 +5634,14 @@ export const kanto: OperatorData = {
           lat: 35.744555,
           lng: 139.811816,
           transfer: true,
+          groupId: 2100208,
         },
         {
           name: "北千住",
           lat: 35.749891,
           lng: 139.805564,
           transfer: true,
+          groupId: 1132005,
         },
         {
           name: "小菅",
@@ -5315,6 +5663,7 @@ export const kanto: OperatorData = {
           lat: 35.777323,
           lng: 139.790372,
           transfer: true,
+          groupId: 2100213,
         },
         {
           name: "竹ノ塚",
@@ -5351,6 +5700,7 @@ export const kanto: OperatorData = {
           lat: 35.875186,
           lng: 139.789905,
           transfer: true,
+          groupId: 1130514,
         },
         {
           name: "越谷",
@@ -5387,6 +5737,7 @@ export const kanto: OperatorData = {
           lat: 35.980095,
           lng: 139.752345,
           transfer: true,
+          groupId: 2100227,
         },
         {
           name: "北春日部",
@@ -5403,6 +5754,7 @@ export const kanto: OperatorData = {
           lat: 36.024604,
           lng: 139.726901,
           transfer: true,
+          groupId: 2100230,
         },
         {
           name: "和戸",
@@ -5414,6 +5766,7 @@ export const kanto: OperatorData = {
           lat: 36.065684,
           lng: 139.67727,
           transfer: true,
+          groupId: 1131912,
         },
         {
           name: "鷲宮",
@@ -5440,6 +5793,7 @@ export const kanto: OperatorData = {
           lat: 36.170345,
           lng: 139.533949,
           transfer: true,
+          groupId: 2100237,
         },
         {
           name: "川俣",
@@ -5456,6 +5810,7 @@ export const kanto: OperatorData = {
           lat: 36.246606,
           lng: 139.527811,
           transfer: true,
+          groupId: 2100240,
         },
         {
           name: "多々良",
@@ -5497,6 +5852,7 @@ export const kanto: OperatorData = {
           lat: 36.294228,
           lng: 139.378779,
           transfer: true,
+          groupId: 2100248,
         },
         {
           name: "細谷",
@@ -5533,6 +5889,7 @@ export const kanto: OperatorData = {
           lat: 36.326622,
           lng: 139.194559,
           transfer: true,
+          groupId: 1134108,
         },
       ],
     },
@@ -5547,6 +5904,7 @@ export const kanto: OperatorData = {
           lat: 36.024604,
           lng: 139.726901,
           transfer: true,
+          groupId: 2100230,
         },
         {
           name: "杉戸高野台",
@@ -5568,6 +5926,7 @@ export const kanto: OperatorData = {
           lat: 36.137034,
           lng: 139.693855,
           transfer: true,
+          groupId: 1131914,
         },
         {
           name: "新古河",
@@ -5604,12 +5963,14 @@ export const kanto: OperatorData = {
           lat: 36.371912,
           lng: 139.731037,
           transfer: true,
+          groupId: 1134119,
         },
         {
           name: "新栃木",
           lat: 36.390149,
           lng: 139.742308,
           transfer: true,
+          groupId: 2100313,
         },
         {
           name: "合戦場",
@@ -5666,6 +6027,7 @@ export const kanto: OperatorData = {
           lat: 36.72563,
           lng: 139.692666,
           transfer: true,
+          groupId: 2100324,
         },
         {
           name: "上今市",
@@ -5677,6 +6039,7 @@ export const kanto: OperatorData = {
           lat: 36.748233,
           lng: 139.61975,
           transfer: true,
+          groupId: 1134007,
         },
       ],
     },
@@ -5691,6 +6054,7 @@ export const kanto: OperatorData = {
           lat: 35.907599,
           lng: 139.624458,
           transfer: true,
+          groupId: 1131906,
         },
         {
           name: "北大宮",
@@ -5737,6 +6101,7 @@ export const kanto: OperatorData = {
           lat: 35.980095,
           lng: 139.752345,
           transfer: true,
+          groupId: 2100227,
         },
         {
           name: "藤の牛島",
@@ -5798,6 +6163,7 @@ export const kanto: OperatorData = {
           lat: 35.872051,
           lng: 139.925898,
           transfer: true,
+          groupId: 2100422,
         },
         {
           name: "豊四季",
@@ -5809,6 +6175,7 @@ export const kanto: OperatorData = {
           lat: 35.862316,
           lng: 139.971148,
           transfer: true,
+          groupId: 1132015,
         },
         {
           name: "新柏",
@@ -5840,6 +6207,7 @@ export const kanto: OperatorData = {
           lat: 35.780221,
           lng: 139.999455,
           transfer: true,
+          groupId: 2100430,
         },
         {
           name: "鎌ヶ谷",
@@ -5866,6 +6234,7 @@ export const kanto: OperatorData = {
           lat: 35.7021,
           lng: 139.98436,
           transfer: true,
+          groupId: 1131331,
         },
       ],
     },
@@ -5880,6 +6249,7 @@ export const kanto: OperatorData = {
           lat: 35.718418,
           lng: 139.816634,
           transfer: true,
+          groupId: 2100204,
         },
         {
           name: "小村井",
@@ -5901,6 +6271,7 @@ export const kanto: OperatorData = {
           lat: 35.697708,
           lng: 139.826791,
           transfer: true,
+          groupId: 1131323,
         },
       ],
     },
@@ -5915,6 +6286,7 @@ export const kanto: OperatorData = {
           lat: 35.777323,
           lng: 139.790372,
           transfer: true,
+          groupId: 2100213,
         },
         {
           name: "大師前",
@@ -5936,6 +6308,7 @@ export const kanto: OperatorData = {
           lat: 35.700123,
           lng: 139.480841,
           transfer: true,
+          groupId: 1131106,
         },
         {
           name: "恋ヶ窪",
@@ -5952,12 +6325,14 @@ export const kanto: OperatorData = {
           lat: 35.737573,
           lng: 139.463493,
           transfer: true,
+          groupId: 2200803,
         },
         {
           name: "東村山",
           lat: 35.76006,
           lng: 139.465839,
           transfer: true,
+          groupId: 2200721,
         },
       ],
     },
@@ -5972,6 +6347,7 @@ export const kanto: OperatorData = {
           lat: 35.72913,
           lng: 139.711461,
           transfer: true,
+          groupId: 1130212,
         },
         {
           name: "椎名町",
@@ -5998,6 +6374,7 @@ export const kanto: OperatorData = {
           lat: 35.737893,
           lng: 139.654368,
           transfer: true,
+          groupId: 2200106,
         },
         {
           name: "中村橋",
@@ -6054,12 +6431,14 @@ export const kanto: OperatorData = {
           lat: 35.786627,
           lng: 139.473324,
           transfer: true,
+          groupId: 2200131,
         },
         {
           name: "西所沢",
           lat: 35.789303,
           lng: 139.455959,
           transfer: true,
+          groupId: 2200117,
         },
         {
           name: "小手指",
@@ -6101,36 +6480,42 @@ export const kanto: OperatorData = {
           lat: 35.851189,
           lng: 139.318824,
           transfer: true,
+          groupId: 2200125,
         },
         {
           name: "東飯能",
           lat: 35.852928,
           lng: 139.325965,
           transfer: true,
+          groupId: 1131708,
         },
         {
           name: "高麗",
           lat: 35.881982,
           lng: 139.304414,
           transfer: true,
+          groupId: 2200127,
         },
         {
           name: "武蔵横手",
           lat: 35.885256,
           lng: 139.280667,
           transfer: true,
+          groupId: 2200128,
         },
         {
           name: "東吾野",
           lat: 35.892439,
           lng: 139.260281,
           transfer: true,
+          groupId: 2200129,
         },
         {
           name: "吾野",
           lat: 35.908502,
           lng: 139.226787,
           transfer: true,
+          groupId: 2200130,
         },
       ],
     },
@@ -6145,36 +6530,42 @@ export const kanto: OperatorData = {
           lat: 35.851189,
           lng: 139.318824,
           transfer: true,
+          groupId: 2200125,
         },
         {
           name: "東飯能",
           lat: 35.852928,
           lng: 139.325965,
           transfer: true,
+          groupId: 1131708,
         },
         {
           name: "高麗",
           lat: 35.881982,
           lng: 139.304414,
           transfer: true,
+          groupId: 2200127,
         },
         {
           name: "武蔵横手",
           lat: 35.885256,
           lng: 139.280667,
           transfer: true,
+          groupId: 2200128,
         },
         {
           name: "東吾野",
           lat: 35.892439,
           lng: 139.260281,
           transfer: true,
+          groupId: 2200129,
         },
         {
           name: "吾野",
           lat: 35.908502,
           lng: 139.226787,
           transfer: true,
+          groupId: 2200130,
         },
         {
           name: "西吾野",
@@ -6219,6 +6610,7 @@ export const kanto: OperatorData = {
           lat: 35.712677,
           lng: 139.703715,
           transfer: true,
+          groupId: 1130210,
         },
         {
           name: "下落合",
@@ -6230,6 +6622,7 @@ export const kanto: OperatorData = {
           lat: 35.715106,
           lng: 139.686967,
           transfer: true,
+          groupId: 2200704,
         },
         {
           name: "新井薬師前",
@@ -6306,6 +6699,7 @@ export const kanto: OperatorData = {
           lat: 35.736963,
           lng: 139.488491,
           transfer: true,
+          groupId: 2200719,
         },
         {
           name: "久米川",
@@ -6317,12 +6711,14 @@ export const kanto: OperatorData = {
           lat: 35.76006,
           lng: 139.465839,
           transfer: true,
+          groupId: 2200721,
         },
         {
           name: "所沢",
           lat: 35.786627,
           lng: 139.473324,
           transfer: true,
+          groupId: 2200131,
         },
         {
           name: "航空公園",
@@ -6372,18 +6768,21 @@ export const kanto: OperatorData = {
           lat: 35.736963,
           lng: 139.488491,
           transfer: true,
+          groupId: 2200719,
         },
         {
           name: "萩山",
           lat: 35.740759,
           lng: 139.476903,
           transfer: true,
+          groupId: 2200802,
         },
         {
           name: "小川",
           lat: 35.737573,
           lng: 139.463493,
           transfer: true,
+          groupId: 2200803,
         },
         {
           name: "東大和市",
@@ -6395,6 +6794,7 @@ export const kanto: OperatorData = {
           lat: 35.731751,
           lng: 139.418435,
           transfer: true,
+          groupId: 2200805,
         },
         {
           name: "武蔵砂川",
@@ -6411,6 +6811,7 @@ export const kanto: OperatorData = {
           lat: 35.721278,
           lng: 139.343468,
           transfer: true,
+          groupId: 1131506,
         },
       ],
     },
@@ -6425,6 +6826,7 @@ export const kanto: OperatorData = {
           lat: 35.702083,
           lng: 139.543402,
           transfer: true,
+          groupId: 1131221,
         },
         {
           name: "新小金井",
@@ -6464,6 +6866,7 @@ export const kanto: OperatorData = {
           lat: 35.700836,
           lng: 139.479547,
           transfer: true,
+          groupId: 1131106,
         },
         {
           name: "一橋学園",
@@ -6480,6 +6883,7 @@ export const kanto: OperatorData = {
           lat: 35.740759,
           lng: 139.476903,
           transfer: true,
+          groupId: 2200802,
         },
         {
           name: "八坂",
@@ -6496,6 +6900,7 @@ export const kanto: OperatorData = {
           lat: 35.765881,
           lng: 139.442747,
           transfer: true,
+          groupId: 2200601,
         },
       ],
     },
@@ -6510,6 +6915,7 @@ export const kanto: OperatorData = {
           lat: 35.743803,
           lng: 139.678572,
           transfer: true,
+          groupId: 2200301,
         },
         {
           name: "新桜台",
@@ -6521,6 +6927,7 @@ export const kanto: OperatorData = {
           lat: 35.737893,
           lng: 139.654368,
           transfer: true,
+          groupId: 2200106,
         },
       ],
     },
@@ -6535,12 +6942,14 @@ export const kanto: OperatorData = {
           lat: 35.737893,
           lng: 139.654368,
           transfer: true,
+          groupId: 2200106,
         },
         {
           name: "豊島園",
           lat: 35.742054,
           lng: 139.647979,
           transfer: true,
+          groupId: 2200402,
         },
       ],
     },
@@ -6555,6 +6964,7 @@ export const kanto: OperatorData = {
           lat: 35.789303,
           lng: 139.455959,
           transfer: true,
+          groupId: 2200117,
         },
         {
           name: "下山口",
@@ -6566,6 +6976,7 @@ export const kanto: OperatorData = {
           lat: 35.77093,
           lng: 139.41966,
           transfer: true,
+          groupId: 2200503,
         },
       ],
     },
@@ -6580,6 +6991,7 @@ export const kanto: OperatorData = {
           lat: 35.765881,
           lng: 139.442747,
           transfer: true,
+          groupId: 2200601,
         },
         {
           name: "西武園ゆうえんち",
@@ -6591,6 +7003,7 @@ export const kanto: OperatorData = {
           lat: 35.77093,
           lng: 139.41966,
           transfer: true,
+          groupId: 2200503,
         },
       ],
     },
@@ -6605,6 +7018,7 @@ export const kanto: OperatorData = {
           lat: 35.76006,
           lng: 139.465839,
           transfer: true,
+          groupId: 2200721,
         },
         {
           name: "西武園",
@@ -6626,108 +7040,126 @@ export const kanto: OperatorData = {
           lat: 35.689729,
           lng: 139.700464,
           transfer: true,
+          groupId: 1130208,
         },
         {
           name: "渋谷",
           lat: 35.658871,
           lng: 139.701238,
           transfer: true,
+          groupId: 1130205,
         },
         {
           name: "恵比寿",
           lat: 35.646685,
           lng: 139.71007,
           transfer: true,
+          groupId: 1130204,
         },
         {
           name: "大崎",
           lat: 35.619772,
           lng: 139.728439,
           transfer: true,
+          groupId: 1130201,
         },
         {
           name: "西大井",
           lat: 35.601616,
           lng: 139.721729,
           transfer: true,
+          groupId: 1130804,
         },
         {
           name: "武蔵小杉",
           lat: 35.57669,
           lng: 139.65963,
           transfer: true,
+          groupId: 1130307,
         },
         {
           name: "羽沢横浜国大",
           lat: 35.481389,
           lng: 139.586389,
           transfer: true,
+          groupId: 2900301,
         },
         {
           name: "西谷",
           lat: 35.478092,
           lng: 139.565721,
           transfer: true,
+          groupId: 2900108,
         },
         {
           name: "鶴ヶ峰",
           lat: 35.475031,
           lng: 139.549586,
           transfer: true,
+          groupId: 2900109,
         },
         {
           name: "二俣川",
           lat: 35.463335,
           lng: 139.532207,
           transfer: true,
+          groupId: 2900110,
         },
         {
           name: "希望ヶ丘",
           lat: 35.460399,
           lng: 139.5143,
           transfer: true,
+          groupId: 2900111,
         },
         {
           name: "三ツ境",
           lat: 35.467779,
           lng: 139.502662,
           transfer: true,
+          groupId: 2900112,
         },
         {
           name: "瀬谷",
           lat: 35.470412,
           lng: 139.482574,
           transfer: true,
+          groupId: 2900113,
         },
         {
           name: "大和",
           lat: 35.469924,
           lng: 139.461383,
           transfer: true,
+          groupId: 2500206,
         },
         {
           name: "相模大塚",
           lat: 35.470666,
           lng: 139.441232,
           transfer: true,
+          groupId: 2900115,
         },
         {
           name: "さがみ野",
           lat: 35.471485,
           lng: 139.429055,
           transfer: true,
+          groupId: 2900116,
         },
         {
           name: "かしわ台",
           lat: 35.466744,
           lng: 139.415851,
           transfer: true,
+          groupId: 2900117,
         },
         {
           name: "海老名",
           lat: 35.453381,
           lng: 139.392074,
           transfer: true,
+          groupId: 1130910,
         },
       ],
     },
@@ -6741,7 +7173,8 @@ export const kanto: OperatorData = {
           name: "横浜",
           lat: 35.465852,
           lng: 139.621768,
-          transfer: true
+          transfer: true,
+          groupId: 1130105,
         },
         {
           name: "平沼橋",
@@ -6778,66 +7211,77 @@ export const kanto: OperatorData = {
           lat: 35.478092,
           lng: 139.565721,
           transfer: true,
+          groupId: 2900108,
         },
         {
           name: "鶴ヶ峰",
           lat: 35.475031,
           lng: 139.549586,
           transfer: true,
+          groupId: 2900109,
         },
         {
           name: "二俣川",
           lat: 35.463335,
           lng: 139.532207,
-          transfer: true
+          transfer: true,
+          groupId: 2900110,
         },
         {
           name: "希望ヶ丘",
           lat: 35.460399,
           lng: 139.5143,
           transfer: true,
+          groupId: 2900111,
         },
         {
           name: "三ツ境",
           lat: 35.467779,
           lng: 139.502662,
           transfer: true,
+          groupId: 2900112,
         },
         {
           name: "瀬谷",
           lat: 35.470412,
           lng: 139.482574,
           transfer: true,
+          groupId: 2900113,
         },
         {
           name: "大和",
           lat: 35.469924,
           lng: 139.461383,
-          transfer: true
+          transfer: true,
+          groupId: 2500206,
         },
         {
           name: "相模大塚",
           lat: 35.470666,
           lng: 139.441232,
           transfer: true,
+          groupId: 2900115,
         },
         {
           name: "さがみ野",
           lat: 35.471485,
           lng: 139.429055,
           transfer: true,
+          groupId: 2900116,
         },
         {
           name: "かしわ台",
           lat: 35.466744,
           lng: 139.415851,
           transfer: true,
+          groupId: 2900117,
         },
         {
           name: "海老名",
           lat: 35.453381,
           lng: 139.392074,
-          transfer: true
+          transfer: true,
+          groupId: 1130910,
         }
       ]
     },
@@ -6851,7 +7295,8 @@ export const kanto: OperatorData = {
           name: "二俣川",
           lat: 35.463335,
           lng: 139.532207,
-          transfer: true
+          transfer: true,
+          groupId: 2900110,
         },
         {
           name: "南万騎が原",
@@ -6887,7 +7332,8 @@ export const kanto: OperatorData = {
           name: "湘南台",
           lat: 35.396642,
           lng: 139.467031,
-          transfer: true
+          transfer: true,
+          groupId: 2500210,
         }
       ]
     },
@@ -6902,18 +7348,21 @@ export const kanto: OperatorData = {
           lat: 35.509056,
           lng: 139.617472,
           transfer: true,
+          groupId: 1130604,
         },
         {
           name: "羽沢横浜国大",
           lat: 35.481389,
           lng: 139.586389,
           transfer: true,
+          groupId: 2900301,
         },
         {
           name: "西谷",
           lat: 35.478092,
           lng: 139.565721,
           transfer: true,
+          groupId: 2900108,
         },
       ],
     },
@@ -6930,6 +7379,7 @@ export const kanto: OperatorData = {
           lat: 36.41109,
           lng: 139.33319,
           transfer: true,
+          groupId: 1134111,
         },
         {
           name: "下新田",
@@ -6941,6 +7391,7 @@ export const kanto: OperatorData = {
           lat: 36.410216,
           lng: 139.304449,
           transfer: true,
+          groupId: 2101107,
         },
         {
           name: "運動公園",
@@ -7027,6 +7478,7 @@ export const kanto: OperatorData = {
           lat: 35.722247,
           lng: 140.157019,
           transfer: true,
+          groupId: 2300133,
         },
         {
           name: "地区センター",
@@ -7068,6 +7520,7 @@ export const kanto: OperatorData = {
           lat: 35.25658,
           lng: 139.156474,
           transfer: true,
+          groupId: 1130116,
         },
         {
           name: "緑町",
@@ -7189,6 +7642,7 @@ export const kanto: OperatorData = {
           lat: 36.394033,
           lng: 140.524482,
           transfer: true,
+          groupId: 1122918,
         },
       ],
     },
@@ -7205,6 +7659,7 @@ export const kanto: OperatorData = {
           lat: 35.385919,
           lng: 139.620502,
           transfer: true,
+          groupId: 1130708,
         },
         {
           name: "南部市場",
@@ -7271,6 +7726,7 @@ export const kanto: OperatorData = {
           lat: 35.331285,
           lng: 139.622133,
           transfer: true,
+          groupId: 2700139,
         },
       ],
     },
@@ -7287,6 +7743,7 @@ export const kanto: OperatorData = {
           lat: 35.89553,
           lng: 140.063004,
           transfer: true,
+          groupId: 1122901,
         },
         {
           name: "西取手",
@@ -7328,6 +7785,7 @@ export const kanto: OperatorData = {
           lat: 35.950626,
           lng: 139.992209,
           transfer: true,
+          groupId: 9930915,
         },
         {
           name: "新守谷",
@@ -7409,6 +7867,7 @@ export const kanto: OperatorData = {
           lat: 36.303959,
           lng: 139.978268,
           transfer: true,
+          groupId: 1133907,
         },
       ],
     },
@@ -7423,6 +7882,7 @@ export const kanto: OperatorData = {
           lat: 35.929636,
           lng: 140.138292,
           transfer: true,
+          groupId: 1122903,
         },
         {
           name: "入地",
@@ -7449,6 +7909,7 @@ export const kanto: OperatorData = {
           lat: 35.337227,
           lng: 139.487293,
           transfer: true,
+          groupId: 1130108,
         },
         {
           name: "石上",
@@ -7475,6 +7936,7 @@ export const kanto: OperatorData = {
           lat: 35.311003,
           lng: 139.487581,
           transfer: true,
+          groupId: 9932006,
         },
         {
           name: "腰越",
@@ -7521,6 +7983,7 @@ export const kanto: OperatorData = {
           lat: 35.318491,
           lng: 139.550121,
           transfer: true,
+          groupId: 1130812,
         },
       ],
     },
@@ -7537,6 +8000,7 @@ export const kanto: OperatorData = {
           lat: 36.370911,
           lng: 140.47676,
           transfer: true,
+          groupId: 1122917,
         },
         {
           name: "東水戸",
@@ -7608,12 +8072,14 @@ export const kanto: OperatorData = {
           lat: 35.992707,
           lng: 140.63606,
           transfer: true,
+          groupId: 1132907,
         },
         {
           name: "鹿島神宮",
           lat: 35.970614,
           lng: 140.625676,
           transfer: true,
+          groupId: 1132906,
         },
       ],
     },
@@ -7630,6 +8096,7 @@ export const kanto: OperatorData = {
           lat: 35.352359,
           lng: 139.531367,
           transfer: true,
+          groupId: 1130107,
         },
         {
           name: "富士見町",
@@ -7666,6 +8133,7 @@ export const kanto: OperatorData = {
           lat: 35.311867,
           lng: 139.487794,
           transfer: true,
+          groupId: 9932006,
         },
       ],
     },
@@ -7682,6 +8150,7 @@ export const kanto: OperatorData = {
           lat: 36.320826,
           lng: 139.012225,
           transfer: true,
+          groupId: 1131816,
         },
         {
           name: "南高崎",
@@ -7883,6 +8352,7 @@ export const kanto: OperatorData = {
           lat: 36.425615,
           lng: 139.276784,
           transfer: true,
+          groupId: 2101108,
         },
         {
           name: "桐生球場前",
@@ -7924,6 +8394,7 @@ export const kanto: OperatorData = {
           lat: 36.304275,
           lng: 139.978582,
           transfer: true,
+          groupId: 1133907,
         },
         {
           name: "下館二高前",
@@ -8020,12 +8491,14 @@ export const kanto: OperatorData = {
           lat: 35.811949,
           lng: 139.917042,
           transfer: true,
+          groupId: 1132011,
         },
         {
           name: "幸谷",
           lat: 35.826642,
           lng: 139.919912,
           transfer: true,
+          groupId: 1130519,
         },
         {
           name: "小金城趾",
@@ -8062,6 +8535,7 @@ export const kanto: OperatorData = {
           lat: 35.729449,
           lng: 140.827557,
           transfer: true,
+          groupId: 1131431,
         },
         {
           name: "仲ノ町",
@@ -8123,6 +8597,7 @@ export const kanto: OperatorData = {
           lat: 35.256229,
           lng: 139.155396,
           transfer: true,
+          groupId: 1130116,
         },
         {
           name: "箱根板橋",
@@ -8174,6 +8649,7 @@ export const kanto: OperatorData = {
           lat: 35.25085,
           lng: 139.048162,
           transfer: true,
+          groupId: 9933911,
         },
       ],
     },
@@ -8188,6 +8664,7 @@ export const kanto: OperatorData = {
           lat: 35.25085,
           lng: 139.048162,
           transfer: true,
+          groupId: 9933911,
         },
         {
           name: "公園下",
@@ -8229,6 +8706,7 @@ export const kanto: OperatorData = {
           lat: 36.852505,
           lng: 139.732963,
           transfer: true,
+          groupId: 2100908,
         },
         {
           name: "龍王峡",
@@ -8285,6 +8763,7 @@ export const kanto: OperatorData = {
           lat: 36.5591,
           lng: 139.89954,
           transfer: true,
+          groupId: 1131923,
         },
         {
           name: "東宿郷",
@@ -8400,19 +8879,22 @@ export const kanto: OperatorData = {
           name: "中延",
           lat: 35.605769,
           lng: 139.713736,
-          transfer: true
+          transfer: true,
+          groupId: 2600404,
         },
         {
           name: "戸越",
           lat: 35.614633,
           lng: 139.716495,
           transfer: true,
+          groupId: 2600503,
         },
         {
           name: "五反田",
           lat: 35.627102,
           lng: 139.724175,
-          transfer: true
+          transfer: true,
+          groupId: 1130202,
         },
         {
           name: "高輪台",
@@ -8423,73 +8905,85 @@ export const kanto: OperatorData = {
           name: "泉岳寺",
           lat: 35.638692,
           lng: 139.74002,
-          transfer: true
+          transfer: true,
+          groupId: 2700101,
         },
         {
           name: "三田",
           lat: 35.64818,
           lng: 139.748775,
-          transfer: true
+          transfer: true,
+          groupId: 9930208,
         },
         {
           name: "大門",
           lat: 35.656785,
           lng: 139.75466,
-          transfer: true
+          transfer: true,
+          groupId: 9930121,
         },
         {
           name: "新橋",
           lat: 35.665577,
           lng: 139.759451,
-          transfer: true
+          transfer: true,
+          groupId: 1130102,
         },
         {
           name: "東銀座",
           lat: 35.669464,
           lng: 139.767253,
-          transfer: true
+          transfer: true,
+          groupId: 2800313,
         },
         {
           name: "宝町",
           lat: 35.675461,
           lng: 139.771767,
           transfer: true,
+          groupId: 2800110,
         },
         {
           name: "日本橋",
           lat: 35.681688,
           lng: 139.775721,
-          transfer: true
+          transfer: true,
+          groupId: 2800109,
         },
         {
           name: "人形町",
           lat: 35.686307,
           lng: 139.782285,
-          transfer: true
+          transfer: true,
+          groupId: 2800309,
         },
         {
           name: "東日本橋",
           lat: 35.692126,
           lng: 139.784821,
           transfer: true,
+          groupId: 1131403,
         },
         {
           name: "浅草橋",
           lat: 35.697451,
           lng: 139.786305,
-          transfer: true
+          transfer: true,
+          groupId: 1131320,
         },
         {
           name: "蔵前",
           lat: 35.703236,
           lng: 139.790931,
-          transfer: true
+          transfer: true,
+          groupId: 9930112,
         },
         {
           name: "浅草",
           lat: 35.709461,
           lng: 139.79697,
-          transfer: true
+          transfer: true,
+          groupId: 2100201,
         },
         {
           name: "本所吾妻橋",
@@ -8500,7 +8994,8 @@ export const kanto: OperatorData = {
           name: "押上（スカイツリー前）",
           lat: 35.710702,
           lng: 139.812935,
-          transfer: true
+          transfer: true,
+          groupId: 2100203,
         }
       ]
     },
@@ -8514,25 +9009,29 @@ export const kanto: OperatorData = {
           name: "目黒",
           lat: 35.633272,
           lng: 139.7155,
-          transfer: true
+          transfer: true,
+          groupId: 1130203,
         },
         {
           name: "白金台",
           lat: 35.637917,
           lng: 139.726133,
-          transfer: true
+          transfer: true,
+          groupId: 2800918,
         },
         {
           name: "白金高輪",
           lat: 35.642903,
           lng: 139.734104,
-          transfer: true
+          transfer: true,
+          groupId: 2800917,
         },
         {
           name: "三田",
           lat: 35.64818,
           lng: 139.748775,
-          transfer: true
+          transfer: true,
+          groupId: 9930208,
         },
         {
           name: "芝公園",
@@ -8553,31 +9052,36 @@ export const kanto: OperatorData = {
           name: "日比谷",
           lat: 35.676036,
           lng: 139.759998,
-          transfer: true
+          transfer: true,
+          groupId: 1130225,
         },
         {
           name: "大手町",
           lat: 35.684856,
           lng: 139.762959,
-          transfer: true
+          transfer: true,
+          groupId: 2800208,
         },
         {
           name: "神保町",
           lat: 35.695492,
           lng: 139.75812,
-          transfer: true
+          transfer: true,
+          groupId: 2800807,
         },
         {
           name: "水道橋",
           lat: 35.703398,
           lng: 139.75516,
-          transfer: true
+          transfer: true,
+          groupId: 1131317,
         },
         {
           name: "春日",
           lat: 35.709598,
           lng: 139.75325,
-          transfer: true
+          transfer: true,
+          groupId: 2800229,
         },
         {
           name: "白山",
@@ -8593,7 +9097,8 @@ export const kanto: OperatorData = {
           name: "巣鴨",
           lat: 35.733502,
           lng: 139.738519,
-          transfer: true
+          transfer: true,
+          groupId: 1130214,
         },
         {
           name: "西巣鴨",
@@ -8667,13 +9172,15 @@ export const kanto: OperatorData = {
           name: "新宿",
           lat: 35.68869,
           lng: 139.698812,
-          transfer: true
+          transfer: true,
+          groupId: 1130208,
         },
         {
           name: "新宿三丁目",
           lat: 35.690616,
           lng: 139.706271,
-          transfer: true
+          transfer: true,
+          groupId: 2800217,
         },
         {
           name: "曙橋",
@@ -8684,25 +9191,29 @@ export const kanto: OperatorData = {
           name: "市ヶ谷",
           lat: 35.691556,
           lng: 139.737639,
-          transfer: true
+          transfer: true,
+          groupId: 1131315,
         },
         {
           name: "九段下",
           lat: 35.695589,
           lng: 139.751948,
-          transfer: true
+          transfer: true,
+          groupId: 2800407,
         },
         {
           name: "神保町",
           lat: 35.695966,
           lng: 139.757606,
-          transfer: true
+          transfer: true,
+          groupId: 2800807,
         },
         {
           name: "小川町",
           lat: 35.695056,
           lng: 139.766667,
           transfer: true,
+          groupId: 1131203,
         },
         {
           name: "岩本町",
@@ -8713,7 +9224,8 @@ export const kanto: OperatorData = {
           name: "馬喰横山",
           lat: 35.69212,
           lng: 139.782768,
-          transfer: true
+          transfer: true,
+          groupId: 1131403,
         },
         {
           name: "浜町",
@@ -8724,7 +9236,8 @@ export const kanto: OperatorData = {
           name: "森下",
           lat: 35.68796,
           lng: 139.797042,
-          transfer: true
+          transfer: true,
+          groupId: 9930114,
         },
         {
           name: "菊川",
@@ -8735,7 +9248,8 @@ export const kanto: OperatorData = {
           name: "住吉",
           lat: 35.689073,
           lng: 139.815681,
-          transfer: true
+          transfer: true,
+          groupId: 2800814,
         },
         {
           name: "西大島",
@@ -8776,7 +9290,8 @@ export const kanto: OperatorData = {
           name: "本八幡",
           lat: 35.722929,
           lng: 139.926628,
-          transfer: true
+          transfer: true,
+          groupId: 1131328,
         }
       ]
     },
@@ -8800,7 +9315,8 @@ export const kanto: OperatorData = {
           name: "東新宿",
           lat: 35.69792,
           lng: 139.707549,
-          transfer: true
+          transfer: true,
+          groupId: 2801012,
         },
         {
           name: "若松河田",
@@ -8821,67 +9337,78 @@ export const kanto: OperatorData = {
           name: "飯田橋",
           lat: 35.702927,
           lng: 139.744999,
-          transfer: true
+          transfer: true,
+          groupId: 1131316,
         },
         {
           name: "春日",
           lat: 35.709598,
           lng: 139.75325,
-          transfer: true
+          transfer: true,
+          groupId: 2800229,
         },
         {
           name: "本郷三丁目",
           lat: 35.707462,
           lng: 139.760095,
-          transfer: true
+          transfer: true,
+          groupId: 2800205,
         },
         {
           name: "上野御徒町",
           lat: 35.707893,
           lng: 139.774332,
-          transfer: true
+          transfer: true,
+          groupId: 1130221,
         },
         {
           name: "新御徒町",
           lat: 35.707045,
           lng: 139.781958,
-          transfer: true
+          transfer: true,
+          groupId: 9930111,
         },
         {
           name: "蔵前",
           lat: 35.703236,
           lng: 139.790931,
-          transfer: true
+          transfer: true,
+          groupId: 9930112,
         },
         {
           name: "両国",
           lat: 35.696881,
           lng: 139.797421,
-          transfer: true
+          transfer: true,
+          groupId: 1131321,
         },
         {
           name: "森下",
           lat: 35.68796,
           lng: 139.797042,
-          transfer: true
+          transfer: true,
+          groupId: 9930114,
         },
         {
           name: "清澄白河",
           lat: 35.682105,
           lng: 139.798851,
-          transfer: true
+          transfer: true,
+          groupId: 2800811,
         },
         {
           name: "門前仲町",
           lat: 35.671851,
           lng: 139.796209,
-          transfer: true
+          transfer: true,
+          groupId: 2800412,
         },
         {
           name: "月島",
           lat: 35.664871,
           lng: 139.784233,
-          transfer: true
+          transfer: true,
+          groupId: 2800621,
         },
         {
           name: "勝どき",
@@ -8897,13 +9424,15 @@ export const kanto: OperatorData = {
           name: "汐留",
           lat: 35.663703,
           lng: 139.760642,
-          transfer: true
+          transfer: true,
+          groupId: 9930120,
         },
         {
           name: "大門",
           lat: 35.656785,
           lng: 139.75466,
-          transfer: true
+          transfer: true,
+          groupId: 9930121,
         },
         {
           name: "赤羽橋",
@@ -8914,19 +9443,22 @@ export const kanto: OperatorData = {
           name: "麻布十番",
           lat: 35.656503,
           lng: 139.736116,
-          transfer: true
+          transfer: true,
+          groupId: 2800916,
         },
         {
           name: "六本木",
           lat: 35.663921,
           lng: 139.731567,
-          transfer: true
+          transfer: true,
+          groupId: 2800318,
         },
         {
           name: "青山一丁目",
           lat: 35.672929,
           lng: 139.72396,
-          transfer: true
+          transfer: true,
+          groupId: 2800116,
         },
         {
           name: "国立競技場",
@@ -8937,13 +9469,15 @@ export const kanto: OperatorData = {
           name: "代々木",
           lat: 35.683218,
           lng: 139.701666,
-          transfer: true
+          transfer: true,
+          groupId: 1130207,
         },
         {
           name: "新宿",
           lat: 35.68869,
           lng: 139.698812,
-          transfer: true
+          transfer: true,
+          groupId: 1130208,
         },
         {
           name: "西新宿五丁目",
@@ -8954,19 +9488,22 @@ export const kanto: OperatorData = {
           name: "中野坂上",
           lat: 35.69709,
           lng: 139.682279,
-          transfer: true
+          transfer: true,
+          groupId: 2800220,
         },
         {
           name: "東中野",
           lat: 35.706891,
           lng: 139.682987,
-          transfer: true
+          transfer: true,
+          groupId: 1131308,
         },
         {
           name: "中井",
           lat: 35.714035,
           lng: 139.686356,
-          transfer: true
+          transfer: true,
+          groupId: 2200704,
         },
         {
           name: "落合南長崎",
@@ -8982,13 +9519,15 @@ export const kanto: OperatorData = {
           name: "練馬",
           lat: 35.737404,
           lng: 139.65477,
-          transfer: true
+          transfer: true,
+          groupId: 2200106,
         },
         {
           name: "豊島園",
           lat: 35.742567043044,
           lng: 139.64894845621,
           transfer: true,
+          groupId: 2200402,
         },
         {
           name: "練馬春日町",
@@ -9037,7 +9576,8 @@ export const kanto: OperatorData = {
           name: "町屋駅前",
           lat: 35.74275,
           lng: 139.781145,
-          transfer: true
+          transfer: true,
+          groupId: 2300104,
         },
         {
           name: "町屋二丁目",
@@ -9053,7 +9593,8 @@ export const kanto: OperatorData = {
           name: "熊野前",
           lat: 35.749212,
           lng: 139.769204,
-          transfer: true
+          transfer: true,
+          groupId: 9930509,
         },
         {
           name: "宮ノ前",
@@ -9089,7 +9630,8 @@ export const kanto: OperatorData = {
           name: "王子駅前",
           lat: 35.752722,
           lng: 139.738278,
-          transfer: true
+          transfer: true,
+          groupId: 1133212,
         },
         {
           name: "飛鳥山",
@@ -9125,7 +9667,8 @@ export const kanto: OperatorData = {
           name: "大塚駅前",
           lat: 35.731583,
           lng: 139.729333,
-          transfer: true
+          transfer: true,
+          groupId: 1130213,
         },
         {
           name: "向原",
@@ -9136,7 +9679,8 @@ export const kanto: OperatorData = {
           name: "東池袋四丁目",
           lat: 35.72528,
           lng: 139.720012,
-          transfer: true
+          transfer: true,
+          groupId: 2800610,
         },
         {
           name: "都電雑司ヶ谷",
@@ -9147,7 +9691,8 @@ export const kanto: OperatorData = {
           name: "鬼子母神前",
           lat: 35.720333,
           lng: 139.715,
-          transfer: true
+          transfer: true,
+          groupId: 2801010,
         },
         {
           name: "学習院下",
@@ -9178,7 +9723,8 @@ export const kanto: OperatorData = {
           name: "浅草",
           lat: 35.710733,
           lng: 139.797592,
-          transfer: true
+          transfer: true,
+          groupId: 2100201,
         },
         {
           name: "田原町",
@@ -9194,13 +9740,15 @@ export const kanto: OperatorData = {
           name: "上野",
           lat: 35.711482,
           lng: 139.777122,
-          transfer: true
+          transfer: true,
+          groupId: 1130220,
         },
         {
           name: "上野広小路",
           lat: 35.70768,
           lng: 139.772877,
-          transfer: true
+          transfer: true,
+          groupId: 1130221,
         },
         {
           name: "末広町",
@@ -9211,61 +9759,71 @@ export const kanto: OperatorData = {
           name: "神田",
           lat: 35.693587,
           lng: 139.770899,
-          transfer: true
+          transfer: true,
+          groupId: 1130223,
         },
         {
           name: "三越前",
           lat: 35.687101,
           lng: 139.773594,
-          transfer: true
+          transfer: true,
+          groupId: 1131402,
         },
         {
           name: "日本橋",
           lat: 35.682078,
           lng: 139.773516,
-          transfer: true
+          transfer: true,
+          groupId: 2800109,
         },
         {
           name: "京橋",
           lat: 35.676856,
           lng: 139.770126,
           transfer: true,
+          groupId: 2800110,
         },
         {
           name: "銀座",
           lat: 35.671989,
           lng: 139.763965,
-          transfer: true
+          transfer: true,
+          groupId: 2800111,
         },
         {
           name: "新橋",
           lat: 35.667434,
           lng: 139.758432,
-          transfer: true
+          transfer: true,
+          groupId: 1130102,
         },
         {
           name: "虎ノ門",
           lat: 35.670236,
           lng: 139.749832,
           transfer: true,
+          groupId: 2800113,
         },
         {
           name: "溜池山王",
           lat: 35.673621,
           lng: 139.741419,
-          transfer: true
+          transfer: true,
+          groupId: 2800114,
         },
         {
           name: "赤坂見附",
           lat: 35.677021,
           lng: 139.737047,
-          transfer: true
+          transfer: true,
+          groupId: 2800115,
         },
         {
           name: "青山一丁目",
           lat: 35.672765,
           lng: 139.724159,
-          transfer: true
+          transfer: true,
+          groupId: 2800116,
         },
         {
           name: "外苑前",
@@ -9276,13 +9834,15 @@ export const kanto: OperatorData = {
           name: "表参道",
           lat: 35.665247,
           lng: 139.712314,
-          transfer: true
+          transfer: true,
+          groupId: 2800118,
         },
         {
           name: "渋谷",
           lat: 35.659066,
           lng: 139.701,
-          transfer: true
+          transfer: true,
+          groupId: 1130205,
         }
       ]
     },
@@ -9297,6 +9857,7 @@ export const kanto: OperatorData = {
           lat: 35.730256,
           lng: 139.711086,
           transfer: true,
+          groupId: 1130212,
         },
         {
           name: "新大塚",
@@ -9313,66 +9874,77 @@ export const kanto: OperatorData = {
           lat: 35.707898,
           lng: 139.751864,
           transfer: true,
+          groupId: 2800204,
         },
         {
           name: "本郷三丁目",
           lat: 35.706671,
           lng: 139.759914,
           transfer: true,
+          groupId: 2800205,
         },
         {
           name: "御茶ノ水",
           lat: 35.700614,
           lng: 139.763952,
           transfer: true,
+          groupId: 1131203,
         },
         {
           name: "淡路町",
           lat: 35.6953595,
           lng: 139.7675149,
           transfer: true,
+          groupId: 1131203,
         },
         {
           name: "大手町",
           lat: 35.686564,
           lng: 139.7662,
           transfer: true,
+          groupId: 2800208,
         },
         {
           name: "東京",
           lat: 35.681753,
           lng: 139.764708,
           transfer: true,
+          groupId: 1130101,
         },
         {
           name: "銀座",
           lat: 35.671989,
           lng: 139.763965,
           transfer: true,
+          groupId: 2800111,
         },
         {
           name: "霞ケ関",
           lat: 35.673838,
           lng: 139.750899,
           transfer: true,
+          groupId: 2800211,
         },
         {
           name: "国会議事堂前",
           lat: 35.67393,
           lng: 139.745219,
           transfer: true,
+          groupId: 2800212,
         },
         {
           name: "赤坂見附",
           lat: 35.677021,
           lng: 139.737047,
           transfer: true,
+          groupId: 2800115,
         },
         {
           name: "四ツ谷",
           lat: 35.684586,
           lng: 139.729947,
           transfer: true,
+          groupId: 1131102,
         },
         {
           name: "四谷三丁目",
@@ -9389,12 +9961,14 @@ export const kanto: OperatorData = {
           lat: 35.690847,
           lng: 139.704895,
           transfer: true,
+          groupId: 2800217,
         },
         {
           name: "新宿",
           lat: 35.69235,
           lng: 139.700711,
           transfer: true,
+          groupId: 1130208,
         },
         {
           name: "西新宿",
@@ -9406,6 +9980,7 @@ export const kanto: OperatorData = {
           lat: 35.69792,
           lng: 139.68291,
           transfer: true,
+          groupId: 2800220,
         },
         {
           name: "新中野",
@@ -9432,6 +10007,7 @@ export const kanto: OperatorData = {
           lat: 35.704304,
           lng: 139.620116,
           transfer: true,
+          groupId: 1131217,
         },
       ]
     },
@@ -9445,13 +10021,15 @@ export const kanto: OperatorData = {
           name: "北千住",
           lat: 35.748916,
           lng: 139.804276,
-          transfer: true
+          transfer: true,
+          groupId: 1132005,
         },
         {
           name: "南千住",
           lat: 35.733398,
           lng: 139.799273,
-          transfer: true
+          transfer: true,
+          groupId: 1132004,
         },
         {
           name: "三ノ輪",
@@ -9467,19 +10045,22 @@ export const kanto: OperatorData = {
           name: "上野",
           lat: 35.711482,
           lng: 139.777122,
-          transfer: true
+          transfer: true,
+          groupId: 1130220,
         },
         {
           name: "仲御徒町",
           lat: 35.706649,
           lng: 139.776138,
-          transfer: true
+          transfer: true,
+          groupId: 1130221,
         },
         {
           name: "秋葉原",
           lat: 35.698162,
           lng: 139.775459,
-          transfer: true
+          transfer: true,
+          groupId: 1130222,
         },
         {
           name: "小伝馬町",
@@ -9490,55 +10071,64 @@ export const kanto: OperatorData = {
           name: "人形町",
           lat: 35.686307,
           lng: 139.782285,
-          transfer: true
+          transfer: true,
+          groupId: 2800309,
         },
         {
           name: "茅場町",
           lat: 35.679752,
           lng: 139.780005,
-          transfer: true
+          transfer: true,
+          groupId: 2800310,
         },
         {
           name: "八丁堀",
           lat: 35.674851,
           lng: 139.776982,
-          transfer: true
+          transfer: true,
+          groupId: 1132602,
         },
         {
           name: "築地",
           lat: 35.668115,
           lng: 139.772603,
           transfer: true,
+          groupId: 2800312,
         },
         {
           name: "東銀座",
           lat: 35.669464,
           lng: 139.767253,
-          transfer: true
+          transfer: true,
+          groupId: 2800313,
         },
         {
           name: "銀座",
           lat: 35.671989,
           lng: 139.763965,
-          transfer: true
+          transfer: true,
+          groupId: 2800111,
         },
         {
           name: "日比谷",
           lat: 35.67459,
           lng: 139.76017,
-          transfer: true
+          transfer: true,
+          groupId: 1130225,
         },
         {
           name: "霞ケ関",
           lat: 35.673838,
           lng: 139.750899,
-          transfer: true
+          transfer: true,
+          groupId: 2800211,
         },
         {
           name: "虎ノ門ヒルズ",
           lat: 35.667444,
           lng: 139.747778,
           transfer: true,
+          groupId: 2800113,
         },
         {
           name: "神谷町",
@@ -9549,7 +10139,8 @@ export const kanto: OperatorData = {
           name: "六本木",
           lat: 35.662836,
           lng: 139.731443,
-          transfer: true
+          transfer: true,
+          groupId: 2800318,
         },
         {
           name: "広尾",
@@ -9560,13 +10151,15 @@ export const kanto: OperatorData = {
           name: "恵比寿",
           lat: 35.647332,
           lng: 139.708988,
-          transfer: true
+          transfer: true,
+          groupId: 1130204,
         },
         {
           name: "中目黒",
           lat: 35.643854,
           lng: 139.698621,
-          transfer: true
+          transfer: true,
+          groupId: 2600103,
         }
       ]
     },
@@ -9580,7 +10173,8 @@ export const kanto: OperatorData = {
           name: "中野",
           lat: 35.705765,
           lng: 139.665835,
-          transfer: true
+          transfer: true,
+          groupId: 1131214,
         },
         {
           name: "落合",
@@ -9591,7 +10185,8 @@ export const kanto: OperatorData = {
           name: "高田馬場",
           lat: 35.713338,
           lng: 139.704745,
-          transfer: true
+          transfer: true,
+          groupId: 1130210,
         },
         {
           name: "早稲田",
@@ -9607,13 +10202,15 @@ export const kanto: OperatorData = {
           name: "飯田橋",
           lat: 35.701725,
           lng: 139.745986,
-          transfer: true
+          transfer: true,
+          groupId: 1131316,
         },
         {
           name: "九段下",
           lat: 35.695589,
           lng: 139.751948,
-          transfer: true
+          transfer: true,
+          groupId: 2800407,
         },
         {
           name: "竹橋",
@@ -9624,25 +10221,29 @@ export const kanto: OperatorData = {
           name: "大手町",
           lat: 35.684801,
           lng: 139.766086,
-          transfer: true
+          transfer: true,
+          groupId: 2800208,
         },
         {
           name: "日本橋",
           lat: 35.682078,
           lng: 139.773516,
-          transfer: true
+          transfer: true,
+          groupId: 2800109,
         },
         {
           name: "茅場町",
           lat: 35.679752,
           lng: 139.780005,
-          transfer: true
+          transfer: true,
+          groupId: 2800310,
         },
         {
           name: "門前仲町",
           lat: 35.671851,
           lng: 139.796209,
-          transfer: true
+          transfer: true,
+          groupId: 2800412,
         },
         {
           name: "木場",
@@ -9698,7 +10299,8 @@ export const kanto: OperatorData = {
           name: "西船橋",
           lat: 35.707127,
           lng: 139.958972,
-          transfer: true
+          transfer: true,
+          groupId: 1130524,
         }
       ]
     },
@@ -9717,25 +10319,29 @@ export const kanto: OperatorData = {
           name: "綾瀬",
           lat: 35.762222,
           lng: 139.825019,
-          transfer: true
+          transfer: true,
+          groupId: 1132006,
         },
         {
           name: "北千住",
           lat: 35.748916,
           lng: 139.804276,
-          transfer: true
+          transfer: true,
+          groupId: 1132005,
         },
         {
           name: "町屋",
           lat: 35.742733,
           lng: 139.780501,
-          transfer: true
+          transfer: true,
+          groupId: 2300104,
         },
         {
           name: "西日暮里",
           lat: 35.732257,
           lng: 139.766511,
-          transfer: true
+          transfer: true,
+          groupId: 1130217,
         },
         {
           name: "千駄木",
@@ -9757,12 +10363,14 @@ export const kanto: OperatorData = {
           lat: 35.698072,
           lng: 139.766014,
           transfer: true,
+          groupId: 1131203,
         },
         {
           name: "大手町",
           lat: 35.686154,
           lng: 139.763399,
-          transfer: true
+          transfer: true,
+          groupId: 2800208,
         },
         {
           name: "二重橋前",
@@ -9773,19 +10381,22 @@ export const kanto: OperatorData = {
           name: "日比谷",
           lat: 35.674241,
           lng: 139.758732,
-          transfer: true
+          transfer: true,
+          groupId: 1130225,
         },
         {
           name: "霞ケ関",
           lat: 35.673838,
           lng: 139.750899,
-          transfer: true
+          transfer: true,
+          groupId: 2800211,
         },
         {
           name: "国会議事堂前",
           lat: 35.67393,
           lng: 139.745219,
-          transfer: true
+          transfer: true,
+          groupId: 2800212,
         },
         {
           name: "赤坂",
@@ -9801,25 +10412,29 @@ export const kanto: OperatorData = {
           name: "表参道",
           lat: 35.665247,
           lng: 139.712314,
-          transfer: true
+          transfer: true,
+          groupId: 2800118,
         },
         {
           name: "明治神宮前〈原宿〉",
           lat: 35.669071,
           lng: 139.703995,
-          transfer: true
+          transfer: true,
+          groupId: 1130206,
         },
         {
           name: "代々木公園",
           lat: 35.669187,
           lng: 139.689099,
-          transfer: true
+          transfer: true,
+          groupId: 2500104,
         },
         {
           name: "代々木上原",
           lat: 35.669159,
           lng: 139.680153,
-          transfer: true
+          transfer: true,
+          groupId: 2500105,
         }
       ]
     },
@@ -9833,61 +10448,71 @@ export const kanto: OperatorData = {
           name: "和光市",
           lat: 35.788507,
           lng: 139.612434,
-          transfer: true
+          transfer: true,
+          groupId: 2100111,
         },
         {
           name: "地下鉄成増",
           lat: 35.776557,
           lng: 139.631497,
-          transfer: true
+          transfer: true,
+          groupId: 2100110,
         },
         {
           name: "地下鉄赤塚",
           lat: 35.769939,
           lng: 139.644021,
-          transfer: true
+          transfer: true,
+          groupId: 2100109,
         },
         {
           name: "平和台",
           lat: 35.757863,
           lng: 139.653762,
-          transfer: true
+          transfer: true,
+          groupId: 2800604,
         },
         {
           name: "氷川台",
           lat: 35.74955,
           lng: 139.665567,
-          transfer: true
+          transfer: true,
+          groupId: 2800605,
         },
         {
           name: "小竹向原",
           lat: 35.743803,
           lng: 139.678572,
-          transfer: true
+          transfer: true,
+          groupId: 2200301,
         },
         {
           name: "千川",
           lat: 35.738229,
           lng: 139.689271,
-          transfer: true
+          transfer: true,
+          groupId: 2800607,
         },
         {
           name: "要町",
           lat: 35.73323,
           lng: 139.698715,
-          transfer: true
+          transfer: true,
+          groupId: 2800608,
         },
         {
           name: "池袋",
           lat: 35.729565,
           lng: 139.710088,
-          transfer: true
+          transfer: true,
+          groupId: 1130212,
         },
         {
           name: "東池袋",
           lat: 35.725732,
           lng: 139.719546,
-          transfer: true
+          transfer: true,
+          groupId: 2800610,
         },
         {
           name: "護国寺",
@@ -9903,13 +10528,15 @@ export const kanto: OperatorData = {
           name: "飯田橋",
           lat: 35.701934,
           lng: 139.743669,
-          transfer: true
+          transfer: true,
+          groupId: 1131316,
         },
         {
           name: "市ケ谷",
           lat: 35.691389,
           lng: 139.73625,
-          transfer: true
+          transfer: true,
+          groupId: 1131315,
         },
         {
           name: "麹町",
@@ -9920,7 +10547,8 @@ export const kanto: OperatorData = {
           name: "永田町",
           lat: 35.678757,
           lng: 139.740258,
-          transfer: true
+          transfer: true,
+          groupId: 2800115,
         },
         {
           name: "桜田門",
@@ -9931,31 +10559,36 @@ export const kanto: OperatorData = {
           name: "有楽町",
           lat: 35.675714,
           lng: 139.763265,
-          transfer: true
+          transfer: true,
+          groupId: 1130225,
         },
         {
           name: "銀座一丁目",
           lat: 35.67435,
           lng: 139.767045,
           transfer: true,
+          groupId: 2800111,
         },
         {
           name: "新富町",
           lat: 35.670462,
           lng: 139.773711,
           transfer: true,
+          groupId: 2800312,
         },
         {
           name: "月島",
           lat: 35.664871,
           lng: 139.784233,
-          transfer: true
+          transfer: true,
+          groupId: 2800621,
         },
         {
           name: "豊洲",
           lat: 35.654908,
           lng: 139.79621,
-          transfer: true
+          transfer: true,
+          groupId: 2800622,
         },
         {
           name: "辰巳",
@@ -9966,7 +10599,8 @@ export const kanto: OperatorData = {
           name: "新木場",
           lat: 35.645832,
           lng: 139.826254,
-          transfer: true
+          transfer: true,
+          groupId: 1132605,
         }
       ]
     },
@@ -9980,25 +10614,29 @@ export const kanto: OperatorData = {
           name: "渋谷",
           lat: 35.659066,
           lng: 139.701,
-          transfer: true
+          transfer: true,
+          groupId: 1130205,
         },
         {
           name: "表参道",
           lat: 35.665247,
           lng: 139.712314,
-          transfer: true
+          transfer: true,
+          groupId: 2800118,
         },
         {
           name: "青山一丁目",
           lat: 35.672765,
           lng: 139.724159,
-          transfer: true
+          transfer: true,
+          groupId: 2800116,
         },
         {
           name: "永田町",
           lat: 35.678757,
           lng: 139.740258,
-          transfer: true
+          transfer: true,
+          groupId: 2800115,
         },
         {
           name: "半蔵門",
@@ -10009,55 +10647,64 @@ export const kanto: OperatorData = {
           name: "九段下",
           lat: 35.695589,
           lng: 139.751948,
-          transfer: true
+          transfer: true,
+          groupId: 2800407,
         },
         {
           name: "神保町",
           lat: 35.695966,
           lng: 139.757606,
-          transfer: true
+          transfer: true,
+          groupId: 2800807,
         },
         {
           name: "大手町",
           lat: 35.68686,
           lng: 139.764107,
-          transfer: true
+          transfer: true,
+          groupId: 2800208,
         },
         {
           name: "三越前",
           lat: 35.684908,
           lng: 139.773147,
-          transfer: true
+          transfer: true,
+          groupId: 1131402,
         },
         {
           name: "水天宮前",
           lat: 35.682683,
           lng: 139.785377,
           transfer: true,
+          groupId: 2800309,
         },
         {
           name: "清澄白河",
           lat: 35.682105,
           lng: 139.798851,
-          transfer: true
+          transfer: true,
+          groupId: 2800811,
         },
         {
           name: "住吉",
           lat: 35.689073,
           lng: 139.815681,
-          transfer: true
+          transfer: true,
+          groupId: 2800814,
         },
         {
           name: "錦糸町",
           lat: 35.697578,
           lng: 139.814941,
-          transfer: true
+          transfer: true,
+          groupId: 1131322,
         },
         {
           name: "押上〈スカイツリー前〉",
           lat: 35.710702,
           lng: 139.812935,
-          transfer: true
+          transfer: true,
+          groupId: 2100203,
         }
       ]
     },
@@ -10071,7 +10718,8 @@ export const kanto: OperatorData = {
           name: "赤羽岩淵",
           lat: 35.783417,
           lng: 139.722103,
-          transfer: true
+          transfer: true,
+          groupId: 2800901,
         },
         {
           name: "志茂",
@@ -10087,7 +10735,8 @@ export const kanto: OperatorData = {
           name: "王子",
           lat: 35.753966,
           lng: 139.737618,
-          transfer: true
+          transfer: true,
+          groupId: 1133212,
         },
         {
           name: "西ケ原",
@@ -10098,7 +10747,8 @@ export const kanto: OperatorData = {
           name: "駒込",
           lat: 35.736959,
           lng: 139.746442,
-          transfer: true
+          transfer: true,
+          groupId: 1130215,
         },
         {
           name: "本駒込",
@@ -10114,37 +10764,43 @@ export const kanto: OperatorData = {
           name: "後楽園",
           lat: 35.707898,
           lng: 139.751864,
-          transfer: true
+          transfer: true,
+          groupId: 2800204,
         },
         {
           name: "飯田橋",
           lat: 35.701934,
           lng: 139.743669,
-          transfer: true
+          transfer: true,
+          groupId: 1131316,
         },
         {
           name: "市ケ谷",
           lat: 35.692972,
           lng: 139.736389,
-          transfer: true
+          transfer: true,
+          groupId: 1131315,
         },
         {
           name: "四ツ谷",
           lat: 35.686032,
           lng: 139.72955,
-          transfer: true
+          transfer: true,
+          groupId: 1131102,
         },
         {
           name: "永田町",
           lat: 35.678757,
           lng: 139.740258,
-          transfer: true
+          transfer: true,
+          groupId: 2800115,
         },
         {
           name: "溜池山王",
           lat: 35.673621,
           lng: 139.741419,
-          transfer: true
+          transfer: true,
+          groupId: 2800114,
         },
         {
           name: "六本木一丁目",
@@ -10155,25 +10811,29 @@ export const kanto: OperatorData = {
           name: "麻布十番",
           lat: 35.654682,
           lng: 139.737051,
-          transfer: true
+          transfer: true,
+          groupId: 2800916,
         },
         {
           name: "白金高輪",
           lat: 35.642903,
           lng: 139.734104,
-          transfer: true
+          transfer: true,
+          groupId: 2800917,
         },
         {
           name: "白金台",
           lat: 35.637917,
           lng: 139.726133,
-          transfer: true
+          transfer: true,
+          groupId: 2800918,
         },
         {
           name: "目黒",
           lat: 35.633272,
           lng: 139.7155,
-          transfer: true
+          transfer: true,
+          groupId: 1130203,
         }
       ]
     },
@@ -10187,61 +10847,71 @@ export const kanto: OperatorData = {
           name: "和光市",
           lat: 35.788507,
           lng: 139.612434,
-          transfer: true
+          transfer: true,
+          groupId: 2100111,
         },
         {
           name: "地下鉄成増",
           lat: 35.776557,
           lng: 139.631497,
-          transfer: true
+          transfer: true,
+          groupId: 2100110,
         },
         {
           name: "地下鉄赤塚",
           lat: 35.769939,
           lng: 139.644021,
-          transfer: true
+          transfer: true,
+          groupId: 2100109,
         },
         {
           name: "平和台",
           lat: 35.757863,
           lng: 139.653762,
-          transfer: true
+          transfer: true,
+          groupId: 2800604,
         },
         {
           name: "氷川台",
           lat: 35.74955,
           lng: 139.665567,
-          transfer: true
+          transfer: true,
+          groupId: 2800605,
         },
         {
           name: "小竹向原",
           lat: 35.743803,
           lng: 139.678572,
-          transfer: true
+          transfer: true,
+          groupId: 2200301,
         },
         {
           name: "千川",
           lat: 35.738229,
           lng: 139.689271,
-          transfer: true
+          transfer: true,
+          groupId: 2800607,
         },
         {
           name: "要町",
           lat: 35.73323,
           lng: 139.698715,
-          transfer: true
+          transfer: true,
+          groupId: 2800608,
         },
         {
           name: "池袋",
           lat: 35.731464,
           lng: 139.708291,
-          transfer: true
+          transfer: true,
+          groupId: 1130212,
         },
         {
           name: "雑司が谷",
           lat: 35.720233,
           lng: 139.714795,
-          transfer: true
+          transfer: true,
+          groupId: 2801010,
         },
         {
           name: "西早稲田",
@@ -10252,13 +10922,15 @@ export const kanto: OperatorData = {
           name: "東新宿",
           lat: 35.698915,
           lng: 139.707593,
-          transfer: true
+          transfer: true,
+          groupId: 2801012,
         },
         {
           name: "新宿三丁目",
           lat: 35.690853,
           lng: 139.704828,
-          transfer: true
+          transfer: true,
+          groupId: 2800217,
         },
         {
           name: "北参道",
@@ -10269,13 +10941,15 @@ export const kanto: OperatorData = {
           name: "明治神宮前〈原宿〉",
           lat: 35.668497,
           lng: 139.705367,
-          transfer: true
+          transfer: true,
+          groupId: 1130206,
         },
         {
           name: "渋谷",
           lat: 35.659545,
           lng: 139.702417,
-          transfer: true
+          transfer: true,
+          groupId: 1130205,
         }
       ]
     },
@@ -10291,7 +10965,8 @@ export const kanto: OperatorData = {
           name: "渋谷",
           lat: 35.659545,
           lng: 139.702417,
-          transfer: true
+          transfer: true,
+          groupId: 1130205,
         },
         {
           name: "代官山",
@@ -10302,7 +10977,8 @@ export const kanto: OperatorData = {
           name: "中目黒",
           lat: 35.643854,
           lng: 139.698621,
-          transfer: true
+          transfer: true,
+          groupId: 2600103,
         },
         {
           name: "祐天寺",
@@ -10323,49 +10999,57 @@ export const kanto: OperatorData = {
           name: "自由が丘",
           lat: 35.607224,
           lng: 139.668664,
-          transfer: true
+          transfer: true,
+          groupId: 2600107,
         },
         {
           name: "田園調布",
           lat: 35.596815,
           lng: 139.667356,
-          transfer: true
+          transfer: true,
+          groupId: 2600108,
         },
         {
           name: "多摩川",
           lat: 35.589591,
           lng: 139.668723,
-          transfer: true
+          transfer: true,
+          groupId: 2600109,
         },
         {
           name: "新丸子",
           lat: 35.58049,
           lng: 139.661964,
-          transfer: true
+          transfer: true,
+          groupId: 2600110,
         },
         {
           name: "武蔵小杉",
           lat: 35.575752,
           lng: 139.659652,
-          transfer: true
+          transfer: true,
+          groupId: 1130307,
         },
         {
           name: "元住吉",
           lat: 35.565698,
           lng: 139.654668,
-          transfer: true
+          transfer: true,
+          groupId: 2600112,
         },
         {
           name: "日吉",
           lat: 35.5539,
           lng: 139.646944,
-          transfer: true
+          transfer: true,
+          groupId: 2600113,
         },
         {
           name: "綱島",
           lat: 35.536906,
           lng: 139.63491,
           transfer: true,
+          groupId: 2600114,
         },
         {
           name: "大倉山",
@@ -10376,7 +11060,8 @@ export const kanto: OperatorData = {
           name: "菊名",
           lat: 35.509854,
           lng: 139.63137,
-          transfer: true
+          transfer: true,
+          groupId: 1130603,
         },
         {
           name: "妙蓮寺",
@@ -10402,7 +11087,8 @@ export const kanto: OperatorData = {
           name: "横浜",
           lat: 35.466372,
           lng: 139.622299,
-          transfer: true
+          transfer: true,
+          groupId: 1130105,
         }
       ]
     },
@@ -10416,7 +11102,8 @@ export const kanto: OperatorData = {
           name: "渋谷",
           lat: 35.65802,
           lng: 139.702148,
-          transfer: true
+          transfer: true,
+          groupId: 1130205,
         },
         {
           name: "池尻大橋",
@@ -10427,7 +11114,8 @@ export const kanto: OperatorData = {
           name: "三軒茶屋",
           lat: 35.643716,
           lng: 139.670156,
-          transfer: true
+          transfer: true,
+          groupId: 2600303,
         },
         {
           name: "駒沢大学",
@@ -10448,25 +11136,29 @@ export const kanto: OperatorData = {
           name: "二子玉川",
           lat: 35.611788,
           lng: 139.626685,
-          transfer: true
+          transfer: true,
+          groupId: 2600307,
         },
         {
           name: "二子新地",
           lat: 35.606994,
           lng: 139.622338,
-          transfer: true
+          transfer: true,
+          groupId: 2600308,
         },
         {
           name: "高津",
           lat: 35.603248,
           lng: 139.616934,
-          transfer: true
+          transfer: true,
+          groupId: 2600309,
         },
         {
           name: "溝の口",
           lat: 35.59984,
           lng: 139.610487,
-          transfer: true
+          transfer: true,
+          groupId: 1130310,
         },
         {
           name: "梶が谷",
@@ -10497,7 +11189,8 @@ export const kanto: OperatorData = {
           name: "あざみ野",
           lat: 35.568645,
           lng: 139.553462,
-          transfer: true
+          transfer: true,
+          groupId: 2600316,
         },
         {
           name: "江田",
@@ -10528,7 +11221,8 @@ export const kanto: OperatorData = {
           name: "長津田",
           lat: 35.53196,
           lng: 139.493548,
-          transfer: true
+          transfer: true,
+          groupId: 1130609,
         },
         {
           name: "つくし野",
@@ -10554,7 +11248,8 @@ export const kanto: OperatorData = {
           name: "中央林間",
           lat: 35.507671,
           lng: 139.444935,
-          transfer: true
+          transfer: true,
+          groupId: 2500203,
         }
       ]
     },
@@ -10568,7 +11263,8 @@ export const kanto: OperatorData = {
           name: "目黒",
           lat: 35.633272,
           lng: 139.7155,
-          transfer: true
+          transfer: true,
+          groupId: 1130203,
         },
         {
           name: "不動前",
@@ -10594,7 +11290,8 @@ export const kanto: OperatorData = {
           name: "大岡山",
           lat: 35.607456,
           lng: 139.685909,
-          transfer: true
+          transfer: true,
+          groupId: 2600206,
         },
         {
           name: "奥沢",
@@ -10605,37 +11302,43 @@ export const kanto: OperatorData = {
           name: "田園調布",
           lat: 35.596815,
           lng: 139.667356,
-          transfer: true
+          transfer: true,
+          groupId: 2600108,
         },
         {
           name: "多摩川",
           lat: 35.589591,
           lng: 139.668723,
-          transfer: true
+          transfer: true,
+          groupId: 2600109,
         },
         {
           name: "新丸子",
           lat: 35.58049,
           lng: 139.661964,
-          transfer: true
+          transfer: true,
+          groupId: 2600110,
         },
         {
           name: "武蔵小杉",
           lat: 35.575752,
           lng: 139.659652,
-          transfer: true
+          transfer: true,
+          groupId: 1130307,
         },
         {
           name: "元住吉",
           lat: 35.565698,
           lng: 139.654668,
-          transfer: true
+          transfer: true,
+          groupId: 2600112,
         },
         {
           name: "日吉",
           lat: 35.5539,
           lng: 139.646944,
-          transfer: true
+          transfer: true,
+          groupId: 2600113,
         }
       ]
     },
@@ -10649,7 +11352,8 @@ export const kanto: OperatorData = {
           name: "大井町",
           lat: 35.607535,
           lng: 139.735025,
-          transfer: true
+          transfer: true,
+          groupId: 1133228,
         },
         {
           name: "下神明",
@@ -10665,7 +11369,8 @@ export const kanto: OperatorData = {
           name: "中延",
           lat: 35.60571,
           lng: 139.712526,
-          transfer: true
+          transfer: true,
+          groupId: 2600404,
         },
         {
           name: "荏原町",
@@ -10676,7 +11381,8 @@ export const kanto: OperatorData = {
           name: "旗の台",
           lat: 35.604923,
           lng: 139.702286,
-          transfer: true
+          transfer: true,
+          groupId: 2600406,
         },
         {
           name: "北千束",
@@ -10687,7 +11393,8 @@ export const kanto: OperatorData = {
           name: "大岡山",
           lat: 35.607456,
           lng: 139.685909,
-          transfer: true
+          transfer: true,
+          groupId: 2600206,
         },
         {
           name: "緑が丘",
@@ -10698,7 +11405,8 @@ export const kanto: OperatorData = {
           name: "自由が丘",
           lat: 35.607224,
           lng: 139.668664,
-          transfer: true
+          transfer: true,
+          groupId: 2600107,
         },
         {
           name: "九品仏",
@@ -10724,25 +11432,29 @@ export const kanto: OperatorData = {
           name: "二子玉川",
           lat: 35.611788,
           lng: 139.626685,
-          transfer: true
+          transfer: true,
+          groupId: 2600307,
         },
         {
           name: "二子新地",
           lat: 35.606994,
           lng: 139.622338,
-          transfer: true
+          transfer: true,
+          groupId: 2600308,
         },
         {
           name: "高津",
           lat: 35.603248,
           lng: 139.616934,
-          transfer: true
+          transfer: true,
+          groupId: 2600309,
         },
         {
           name: "溝の口",
           lat: 35.59984,
           lng: 139.610487,
-          transfer: true
+          transfer: true,
+          groupId: 1130310,
         }
       ]
     },
@@ -10756,7 +11468,8 @@ export const kanto: OperatorData = {
           name: "五反田",
           lat: 35.625262,
           lng: 139.724175,
-          transfer: true
+          transfer: true,
+          groupId: 1130202,
         },
         {
           name: "大崎広小路",
@@ -10768,6 +11481,7 @@ export const kanto: OperatorData = {
           lat: 35.615928,
           lng: 139.714862,
           transfer: true,
+          groupId: 2600503,
         },
         {
           name: "荏原中延",
@@ -10778,7 +11492,8 @@ export const kanto: OperatorData = {
           name: "旗の台",
           lat: 35.604923,
           lng: 139.702286,
-          transfer: true
+          transfer: true,
+          groupId: 2600406,
         },
         {
           name: "長原",
@@ -10829,7 +11544,8 @@ export const kanto: OperatorData = {
           name: "蒲田",
           lat: 35.561767,
           lng: 139.714626,
-          transfer: true
+          transfer: true,
+          groupId: 1133230,
         }
       ]
     },
@@ -10843,7 +11559,8 @@ export const kanto: OperatorData = {
           name: "多摩川",
           lat: 35.589591,
           lng: 139.668723,
-          transfer: true
+          transfer: true,
+          groupId: 2600109,
         },
         {
           name: "沼部",
@@ -10874,7 +11591,8 @@ export const kanto: OperatorData = {
           name: "蒲田",
           lat: 35.561767,
           lng: 139.714626,
-          transfer: true
+          transfer: true,
+          groupId: 1133230,
         }
       ]
     },
@@ -10888,7 +11606,8 @@ export const kanto: OperatorData = {
           name: "三軒茶屋",
           lat: 35.643716,
           lng: 139.670156,
-          transfer: true
+          transfer: true,
+          groupId: 2600303,
         },
         {
           name: "西太子堂",
@@ -10924,7 +11643,8 @@ export const kanto: OperatorData = {
           name: "山下",
           lat: 35.653844,
           lng: 139.646509,
-          transfer: true
+          transfer: true,
+          groupId: 2500110,
         },
         {
           name: "松原",
@@ -10935,7 +11655,8 @@ export const kanto: OperatorData = {
           name: "下高井戸",
           lat: 35.66615,
           lng: 139.641372,
-          transfer: true
+          transfer: true,
+          groupId: 2400107,
         }
       ]
     },
@@ -10950,6 +11671,7 @@ export const kanto: OperatorData = {
           lat: 35.53196,
           lng: 139.493548,
           transfer: true,
+          groupId: 1130609,
         },
         {
           name: "恩田",
@@ -10974,18 +11696,21 @@ export const kanto: OperatorData = {
           lat: 35.509056,
           lng: 139.617472,
           transfer: true,
+          groupId: 1130604,
         },
         {
           name: "新綱島",
           lat: 35.536639,
           lng: 139.636167,
           transfer: true,
+          groupId: 2600114,
         },
         {
           name: "日吉",
           lat: 35.5539,
           lng: 139.646944,
           transfer: true,
+          groupId: 2600113,
         },
       ],
     },
@@ -11001,13 +11726,15 @@ export const kanto: OperatorData = {
           name: "新宿",
           lat: 35.690163,
           lng: 139.699187,
-          transfer: true
+          transfer: true,
+          groupId: 1130208,
         },
         {
           name: "笹塚",
           lat: 35.673758,
           lng: 139.667251,
           transfer: true,
+          groupId: 2400104,
         },
         {
           name: "代田橋",
@@ -11018,13 +11745,15 @@ export const kanto: OperatorData = {
           name: "明大前",
           lat: 35.668758,
           lng: 139.650352,
-          transfer: true
+          transfer: true,
+          groupId: 2400106,
         },
         {
           name: "下高井戸",
           lat: 35.66615,
           lng: 139.641372,
-          transfer: true
+          transfer: true,
+          groupId: 2400107,
         },
         {
           name: "桜上水",
@@ -11080,7 +11809,8 @@ export const kanto: OperatorData = {
           name: "調布",
           lat: 35.652181,
           lng: 139.543988,
-          transfer: true
+          transfer: true,
+          groupId: 2400118,
         },
         {
           name: "西調布",
@@ -11107,6 +11837,7 @@ export const kanto: OperatorData = {
           lat: 35.668766,
           lng: 139.495257,
           transfer: true,
+          groupId: 2400123,
         },
         {
           name: "府中",
@@ -11117,7 +11848,8 @@ export const kanto: OperatorData = {
           name: "分倍河原",
           lat: 35.668493,
           lng: 139.468798,
-          transfer: true
+          transfer: true,
+          groupId: 1130321,
         },
         {
           name: "中河原",
@@ -11138,7 +11870,8 @@ export const kanto: OperatorData = {
           name: "高幡不動",
           lat: 35.662361,
           lng: 139.412953,
-          transfer: true
+          transfer: true,
+          groupId: 2400129,
         },
         {
           name: "南平",
@@ -11159,7 +11892,8 @@ export const kanto: OperatorData = {
           name: "北野",
           lat: 35.644479,
           lng: 139.354489,
-          transfer: true
+          transfer: true,
+          groupId: 2400133,
         },
         {
           name: "京王八王子",
@@ -11178,7 +11912,8 @@ export const kanto: OperatorData = {
           name: "調布",
           lat: 35.652181,
           lng: 139.543988,
-          transfer: true
+          transfer: true,
+          groupId: 2400118,
         },
         {
           name: "京王多摩川",
@@ -11209,13 +11944,15 @@ export const kanto: OperatorData = {
           name: "京王永山",
           lat: 35.630102,
           lng: 139.448204,
-          transfer: true
+          transfer: true,
+          groupId: 2400207,
         },
         {
           name: "京王多摩センター",
           lat: 35.62518,
           lng: 139.42402,
-          transfer: true
+          transfer: true,
+          groupId: 2400208,
         },
         {
           name: "京王堀之内",
@@ -11236,7 +11973,8 @@ export const kanto: OperatorData = {
           name: "橋本",
           lat: 35.595518,
           lng: 139.343226,
-          transfer: true
+          transfer: true,
+          groupId: 1130616,
         }
       ]
     },
@@ -11250,7 +11988,8 @@ export const kanto: OperatorData = {
           name: "北野",
           lat: 35.644479,
           lng: 139.354489,
-          transfer: true
+          transfer: true,
+          groupId: 2400133,
         },
         {
           name: "京王片倉",
@@ -11276,7 +12015,8 @@ export const kanto: OperatorData = {
           name: "高尾",
           lat: 35.641645,
           lng: 139.281551,
-          transfer: true
+          transfer: true,
+          groupId: 1131112,
         },
         {
           name: "高尾山口",
@@ -11295,7 +12035,8 @@ export const kanto: OperatorData = {
           name: "渋谷",
           lat: 35.6587,
           lng: 139.700872,
-          transfer: true
+          transfer: true,
+          groupId: 1130205,
         },
         {
           name: "神泉",
@@ -11316,7 +12057,8 @@ export const kanto: OperatorData = {
           name: "下北沢",
           lat: 35.661539,
           lng: 139.66691,
-          transfer: true
+          transfer: true,
+          groupId: 2400605,
         },
         {
           name: "新代田",
@@ -11332,7 +12074,8 @@ export const kanto: OperatorData = {
           name: "明大前",
           lat: 35.668758,
           lng: 139.650352,
-          transfer: true
+          transfer: true,
+          groupId: 2400106,
         },
         {
           name: "永福町",
@@ -11378,7 +12121,8 @@ export const kanto: OperatorData = {
           name: "吉祥寺",
           lat: 35.702291,
           lng: 139.580306,
-          transfer: true
+          transfer: true,
+          groupId: 1131104,
         }
       ]
     },
@@ -11393,6 +12137,7 @@ export const kanto: OperatorData = {
           lat: 35.668766,
           lng: 139.495257,
           transfer: true,
+          groupId: 2400123,
         },
         {
           name: "府中競馬正門前",
@@ -11412,12 +12157,14 @@ export const kanto: OperatorData = {
           lat: 35.662361,
           lng: 139.412953,
           transfer: true,
+          groupId: 2400129,
         },
         {
           name: "多摩動物公園",
           lat: 35.649215,
           lng: 139.404627,
           transfer: true,
+          groupId: 2400502,
         },
       ],
     },
@@ -11432,6 +12179,7 @@ export const kanto: OperatorData = {
           lat: 35.68869,
           lng: 139.698812,
           transfer: true,
+          groupId: 1130208,
         },
         {
           name: "初台",
@@ -11448,6 +12196,7 @@ export const kanto: OperatorData = {
           lat: 35.673758,
           lng: 139.667251,
           transfer: true,
+          groupId: 2400104,
         },
       ],
     },
@@ -11463,7 +12212,8 @@ export const kanto: OperatorData = {
           name: "新宿",
           lat: 35.691435,
           lng: 139.699574,
-          transfer: true
+          transfer: true,
+          groupId: 1130208,
         },
         {
           name: "南新宿",
@@ -11479,13 +12229,15 @@ export const kanto: OperatorData = {
           name: "代々木八幡",
           lat: 35.669715,
           lng: 139.688913,
-          transfer: true
+          transfer: true,
+          groupId: 2500104,
         },
         {
           name: "代々木上原",
           lat: 35.669159,
           lng: 139.680153,
-          transfer: true
+          transfer: true,
+          groupId: 2500105,
         },
         {
           name: "東北沢",
@@ -11496,7 +12248,8 @@ export const kanto: OperatorData = {
           name: "下北沢",
           lat: 35.661655,
           lng: 139.667516,
-          transfer: true
+          transfer: true,
+          groupId: 2400605,
         },
         {
           name: "世田谷代田",
@@ -11512,7 +12265,8 @@ export const kanto: OperatorData = {
           name: "豪徳寺",
           lat: 35.653807,
           lng: 139.647381,
-          transfer: true
+          transfer: true,
+          groupId: 2500110,
         },
         {
           name: "経堂",
@@ -11553,7 +12307,8 @@ export const kanto: OperatorData = {
           name: "登戸",
           lat: 35.62115,
           lng: 139.569449,
-          transfer: true
+          transfer: true,
+          groupId: 1130314,
         },
         {
           name: "向ヶ丘遊園",
@@ -11579,7 +12334,8 @@ export const kanto: OperatorData = {
           name: "新百合ヶ丘",
           lat: 35.603705,
           lng: 139.507608,
-          transfer: true
+          transfer: true,
+          groupId: 2500123,
         },
         {
           name: "柿生",
@@ -11600,13 +12356,15 @@ export const kanto: OperatorData = {
           name: "町田",
           lat: 35.544222,
           lng: 139.445236,
-          transfer: true
+          transfer: true,
+          groupId: 1130611,
         },
         {
           name: "相模大野",
           lat: 35.532208,
           lng: 139.437836,
-          transfer: true
+          transfer: true,
+          groupId: 2500128,
         },
         {
           name: "小田急相模原",
@@ -11627,13 +12385,15 @@ export const kanto: OperatorData = {
           name: "海老名",
           lat: 35.452709,
           lng: 139.390905,
-          transfer: true
+          transfer: true,
+          groupId: 1130910,
         },
         {
           name: "厚木",
           lat: 35.443081,
           lng: 139.377896,
-          transfer: true
+          transfer: true,
+          groupId: 1130909,
         },
         {
           name: "本厚木",
@@ -11704,7 +12464,8 @@ export const kanto: OperatorData = {
           name: "小田原",
           lat: 35.256229,
           lng: 139.155396,
-          transfer: true
+          transfer: true,
+          groupId: 1130116,
         }
       ]
     },
@@ -11718,7 +12479,8 @@ export const kanto: OperatorData = {
           name: "相模大野",
           lat: 35.532208,
           lng: 139.437836,
-          transfer: true
+          transfer: true,
+          groupId: 2500128,
         },
         {
           name: "東林間",
@@ -11729,7 +12491,8 @@ export const kanto: OperatorData = {
           name: "中央林間",
           lat: 35.508066,
           lng: 139.444105,
-          transfer: true
+          transfer: true,
+          groupId: 2500203,
         },
         {
           name: "南林間",
@@ -11745,7 +12508,8 @@ export const kanto: OperatorData = {
           name: "大和",
           lat: 35.46965,
           lng: 139.461553,
-          transfer: true
+          transfer: true,
+          groupId: 2500206,
         },
         {
           name: "桜ヶ丘",
@@ -11766,7 +12530,8 @@ export const kanto: OperatorData = {
           name: "湘南台",
           lat: 35.396488,
           lng: 139.466451,
-          transfer: true
+          transfer: true,
+          groupId: 2500210,
         },
         {
           name: "六会日大前",
@@ -11787,7 +12552,8 @@ export const kanto: OperatorData = {
           name: "藤沢",
           lat: 35.338558,
           lng: 139.486971,
-          transfer: true
+          transfer: true,
+          groupId: 1130108,
         },
         {
           name: "本鵠沼",
@@ -11816,7 +12582,8 @@ export const kanto: OperatorData = {
           name: "新百合ヶ丘",
           lat: 35.603705,
           lng: 139.507608,
-          transfer: true
+          transfer: true,
+          groupId: 2500123,
         },
         {
           name: "五月台",
@@ -11842,13 +12609,15 @@ export const kanto: OperatorData = {
           name: "小田急永山",
           lat: 35.629972,
           lng: 139.447943,
-          transfer: true
+          transfer: true,
+          groupId: 2400207,
         },
         {
           name: "小田急多摩センター",
           lat: 35.624902,
           lng: 139.424298,
-          transfer: true
+          transfer: true,
+          groupId: 2400208,
         },
         {
           name: "唐木田",
@@ -11870,12 +12639,14 @@ export const kanto: OperatorData = {
           lat: 35.638692,
           lng: 139.74002,
           transfer: true,
+          groupId: 2700101,
         },
         {
           name: "品川",
           lat: 35.628284,
           lng: 139.73809,
           transfer: true,
+          groupId: 1130103,
         },
         {
           name: "北品川",
@@ -11927,6 +12698,7 @@ export const kanto: OperatorData = {
           lat: 35.560796,
           lng: 139.723681,
           transfer: true,
+          groupId: 2700112,
         },
         {
           name: "雑色",
@@ -11943,12 +12715,14 @@ export const kanto: OperatorData = {
           lat: 35.53285,
           lng: 139.700893,
           transfer: true,
+          groupId: 2700115,
         },
         {
           name: "八丁畷",
           lat: 35.523054,
           lng: 139.691346,
           transfer: true,
+          groupId: 1130326,
         },
         {
           name: "鶴見市場",
@@ -11960,6 +12734,7 @@ export const kanto: OperatorData = {
           lat: 35.507032,
           lng: 139.677743,
           transfer: true,
+          groupId: 1130401,
         },
         {
           name: "花月総持寺",
@@ -11976,6 +12751,7 @@ export const kanto: OperatorData = {
           lat: 35.487242,
           lng: 139.655848,
           transfer: true,
+          groupId: 1133233,
         },
         {
           name: "子安",
@@ -11992,6 +12768,7 @@ export const kanto: OperatorData = {
           lat: 35.477412,
           lng: 139.634669,
           transfer: true,
+          groupId: 1130601,
         },
         {
           name: "神奈川",
@@ -12003,6 +12780,7 @@ export const kanto: OperatorData = {
           lat: 35.466066,
           lng: 139.623055,
           transfer: true,
+          groupId: 1130105,
         },
         {
           name: "戸部",
@@ -12039,6 +12817,7 @@ export const kanto: OperatorData = {
           lat: 35.409418,
           lng: 139.596552,
           transfer: true,
+          groupId: 2700133,
         },
         {
           name: "屏風浦",
@@ -12070,6 +12849,7 @@ export const kanto: OperatorData = {
           lat: 35.331223,
           lng: 139.62018,
           transfer: true,
+          groupId: 2700139,
         },
         {
           name: "追浜",
@@ -12111,6 +12891,7 @@ export const kanto: OperatorData = {
           lat: 35.26322,
           lng: 139.686932,
           transfer: true,
+          groupId: 2700147,
         },
         {
           name: "京急大津",
@@ -12140,6 +12921,7 @@ export const kanto: OperatorData = {
           lat: 35.560796,
           lng: 139.723681,
           transfer: true,
+          groupId: 2700112,
         },
         {
           name: "糀谷",
@@ -12161,18 +12943,21 @@ export const kanto: OperatorData = {
           lat: 35.548908,
           lng: 139.75423,
           transfer: true,
+          groupId: 2700205,
         },
         {
           name: "羽田空港第3ターミナル",
           lat: 35.544676,
           lng: 139.768968,
           transfer: true,
+          groupId: 2700207,
         },
         {
           name: "羽田空港第1・第2ターミナル",
           lat: 35.549809,
           lng: 139.785962,
           transfer: true,
+          groupId: 2700206,
         },
       ],
     },
@@ -12187,6 +12972,7 @@ export const kanto: OperatorData = {
           lat: 35.53285,
           lng: 139.700893,
           transfer: true,
+          groupId: 2700115,
         },
         {
           name: "港町",
@@ -12231,6 +13017,7 @@ export const kanto: OperatorData = {
           lat: 35.26322,
           lng: 139.686932,
           transfer: true,
+          groupId: 2700147,
         },
         {
           name: "新大津",
@@ -12247,6 +13034,7 @@ export const kanto: OperatorData = {
           lat: 35.231332,
           lng: 139.702139,
           transfer: true,
+          groupId: 1130818,
         },
         {
           name: "ＹＲＰ野比",
@@ -12286,6 +13074,7 @@ export const kanto: OperatorData = {
           lat: 35.331223,
           lng: 139.62018,
           transfer: true,
+          groupId: 2700139,
         },
         {
           name: "六浦",
@@ -12317,12 +13106,14 @@ export const kanto: OperatorData = {
           lat: 35.711232,
           lng: 139.773571,
           transfer: true,
+          groupId: 2300101,
         },
         {
           name: "日暮里",
           lat: 35.727908,
           lng: 139.771287,
           transfer: true,
+          groupId: 1130218,
         },
         {
           name: "新三河島",
@@ -12334,6 +13125,7 @@ export const kanto: OperatorData = {
           lat: 35.742354,
           lng: 139.781499,
           transfer: true,
+          groupId: 2300104,
         },
         {
           name: "千住大橋",
@@ -12345,6 +13137,7 @@ export const kanto: OperatorData = {
           lat: 35.744008,
           lng: 139.81183,
           transfer: true,
+          groupId: 2100208,
         },
         {
           name: "堀切菖蒲園",
@@ -12361,12 +13154,14 @@ export const kanto: OperatorData = {
           lat: 35.745883,
           lng: 139.856292,
           transfer: true,
+          groupId: 2300109,
         },
         {
           name: "京成高砂",
           lat: 35.750932,
           lng: 139.866875,
           transfer: true,
+          groupId: 2300110,
         },
         {
           name: "京成小岩",
@@ -12398,6 +13193,7 @@ export const kanto: OperatorData = {
           lat: 35.723811,
           lng: 139.92816,
           transfer: true,
+          groupId: 1131328,
         },
         {
           name: "鬼越",
@@ -12429,6 +13225,7 @@ export const kanto: OperatorData = {
           lat: 35.700161,
           lng: 139.985451,
           transfer: true,
+          groupId: 1131331,
         },
         {
           name: "大神宮下",
@@ -12450,6 +13247,7 @@ export const kanto: OperatorData = {
           lat: 35.68364,
           lng: 140.024823,
           transfer: true,
+          groupId: 2300126,
         },
         {
           name: "京成大久保",
@@ -12476,6 +13274,7 @@ export const kanto: OperatorData = {
           lat: 35.715445,
           lng: 140.126053,
           transfer: true,
+          groupId: 2300131,
         },
         {
           name: "志津",
@@ -12487,6 +13286,7 @@ export const kanto: OperatorData = {
           lat: 35.721801,
           lng: 140.156354,
           transfer: true,
+          groupId: 2300133,
         },
         {
           name: "京成臼井",
@@ -12523,24 +13323,28 @@ export const kanto: OperatorData = {
           lat: 35.776308,
           lng: 140.315473,
           transfer: true,
+          groupId: 1132703,
         },
         {
           name: "東成田",
           lat: 35.770091,
           lng: 140.387225,
           transfer: true,
+          groupId: 2300141,
         },
         {
           name: "空港第２ビル（第２旅客ターミナル）",
           lat: 35.773693,
           lng: 140.387163,
           transfer: true,
+          groupId: 1132813,
         },
         {
           name: "成田空港（第１旅客ターミナル）",
           lat: 35.763983,
           lng: 140.384644,
           transfer: true,
+          groupId: 1132705,
         },
       ],
     },
@@ -12555,6 +13359,7 @@ export const kanto: OperatorData = {
           lat: 35.710702,
           lng: 139.812935,
           transfer: true,
+          groupId: 2100203,
         },
         {
           name: "京成曳舟",
@@ -12581,12 +13386,14 @@ export const kanto: OperatorData = {
           lat: 35.745883,
           lng: 139.856292,
           transfer: true,
+          groupId: 2300109,
         },
         {
           name: "京成高砂",
           lat: 35.750932,
           lng: 139.866875,
           transfer: true,
+          groupId: 2300110,
         },
       ],
     },
@@ -12601,18 +13408,21 @@ export const kanto: OperatorData = {
           lat: 35.68364,
           lng: 140.024823,
           transfer: true,
+          groupId: 2300126,
         },
         {
           name: "京成幕張本郷",
           lat: 35.672551,
           lng: 140.042091,
-          transfer: true
+          transfer: true,
+          groupId: 1131334,
         },
         {
           name: "京成幕張",
           lat: 35.66078,
           lng: 140.05591,
           transfer: true,
+          groupId: 1131335,
         },
         {
           name: "検見川",
@@ -12643,13 +13453,15 @@ export const kanto: OperatorData = {
           name: "京成千葉",
           lat: 35.6116,
           lng: 140.114273,
-          transfer: true
+          transfer: true,
+          groupId: 1131339,
         },
         {
           name: "千葉中央",
           lat: 35.607354,
           lng: 140.117809,
           transfer: true,
+          groupId: 2300410,
         },
       ],
     },
@@ -12664,6 +13476,7 @@ export const kanto: OperatorData = {
           lat: 35.68364,
           lng: 140.024823,
           transfer: true,
+          groupId: 2300126,
         },
         {
           name: "新津田沼",
@@ -12690,6 +13503,7 @@ export const kanto: OperatorData = {
           lat: 35.721328,
           lng: 140.042195,
           transfer: true,
+          groupId: 9932906,
         },
         {
           name: "高根木戸",
@@ -12731,6 +13545,7 @@ export const kanto: OperatorData = {
           lat: 35.77922,
           lng: 139.998661,
           transfer: true,
+          groupId: 2100430,
         },
         {
           name: "北初富",
@@ -12762,6 +13577,7 @@ export const kanto: OperatorData = {
           lat: 35.791394,
           lng: 139.937362,
           transfer: true,
+          groupId: 1130520,
         },
         {
           name: "みのり台",
@@ -12783,6 +13599,7 @@ export const kanto: OperatorData = {
           lat: 35.784472,
           lng: 139.900779,
           transfer: true,
+          groupId: 1132009,
         },
       ],
     },
@@ -12797,6 +13614,7 @@ export const kanto: OperatorData = {
           lat: 35.607354,
           lng: 140.117809,
           transfer: true,
+          groupId: 2300410,
         },
         {
           name: "千葉寺",
@@ -12836,48 +13654,56 @@ export const kanto: OperatorData = {
           lat: 35.711232,
           lng: 139.773571,
           transfer: true,
+          groupId: 2300101,
         },
         {
           name: "日暮里",
           lat: 35.727908,
           lng: 139.771287,
           transfer: true,
+          groupId: 1130218,
         },
         {
           name: "青砥",
           lat: 35.745883,
           lng: 139.856292,
           transfer: true,
+          groupId: 2300109,
         },
         {
           name: "京成高砂",
           lat: 35.750932,
           lng: 139.866875,
           transfer: true,
+          groupId: 2300110,
         },
         {
           name: "東松戸",
           lat: 35.769954,
           lng: 139.942957,
           transfer: true,
+          groupId: 1130521,
         },
         {
           name: "新鎌ヶ谷",
           lat: 35.779481,
           lng: 139.998361,
           transfer: true,
+          groupId: 2100430,
         },
         {
           name: "千葉ニュータウン中央",
           lat: 35.800175,
           lng: 140.116159,
           transfer: true,
+          groupId: 9934013,
         },
         {
           name: "印旛日本医大",
           lat: 35.787512,
           lng: 140.203112,
           transfer: true,
+          groupId: 9934015,
         },
         {
           name: "成田湯川",
@@ -12889,12 +13715,14 @@ export const kanto: OperatorData = {
           lat: 35.773693,
           lng: 140.387163,
           transfer: true,
+          groupId: 1132813,
         },
         {
           name: "成田空港（第１旅客ターミナル）",
           lat: 35.763983,
           lng: 140.384644,
           transfer: true,
+          groupId: 1132705,
         },
       ],
     },
@@ -12909,6 +13737,7 @@ export const kanto: OperatorData = {
           lat: 35.750932,
           lng: 139.866875,
           transfer: true,
+          groupId: 2300110,
         },
         {
           name: "柴又",
@@ -12920,6 +13749,7 @@ export const kanto: OperatorData = {
           lat: 35.768471,
           lng: 139.870387,
           transfer: true,
+          groupId: 1132008,
         },
       ],
     },
@@ -12935,7 +13765,8 @@ export const kanto: OperatorData = {
           name: "横浜",
           lat: 35.466372,
           lng: 139.622299,
-          transfer: true
+          transfer: true,
+          groupId: 1130105,
         },
         {
           name: "新高島",
@@ -12976,7 +13807,8 @@ export const kanto: OperatorData = {
           name: "あざみ野",
           lat: 35.568076,
           lng: 139.553694,
-          transfer: true
+          transfer: true,
+          groupId: 2600316,
         },
         {
           name: "中川",
@@ -12987,13 +13819,15 @@ export const kanto: OperatorData = {
           name: "センター北",
           lat: 35.55353,
           lng: 139.578457,
-          transfer: true
+          transfer: true,
+          groupId: 9931603,
         },
         {
           name: "センター南",
           lat: 35.545476,
           lng: 139.574291,
-          transfer: true
+          transfer: true,
+          groupId: 9931604,
         },
         {
           name: "仲町台",
@@ -13014,7 +13848,8 @@ export const kanto: OperatorData = {
           name: "新横浜",
           lat: 35.508588,
           lng: 139.617745,
-          transfer: true
+          transfer: true,
+          groupId: 1130604,
         },
         {
           name: "岸根公園",
@@ -13040,7 +13875,8 @@ export const kanto: OperatorData = {
           name: "横浜",
           lat: 35.465826,
           lng: 139.619912,
-          transfer: true
+          transfer: true,
+          groupId: 1130105,
         },
         {
           name: "高島町",
@@ -13051,13 +13887,15 @@ export const kanto: OperatorData = {
           name: "桜木町",
           lat: 35.449667,
           lng: 139.630791,
-          transfer: true
+          transfer: true,
+          groupId: 1130702,
         },
         {
           name: "関内",
           lat: 35.445821,
           lng: 139.635855,
-          transfer: true
+          transfer: true,
+          groupId: 1130703,
         },
         {
           name: "伊勢佐木長者町",
@@ -13088,7 +13926,8 @@ export const kanto: OperatorData = {
           name: "上大岡",
           lat: 35.408745,
           lng: 139.595901,
-          transfer: true
+          transfer: true,
+          groupId: 2700133,
         },
         {
           name: "港南中央",
@@ -13114,7 +13953,8 @@ export const kanto: OperatorData = {
           name: "戸塚",
           lat: 35.400818,
           lng: 139.534328,
-          transfer: true
+          transfer: true,
+          groupId: 1130106,
         },
         {
           name: "踊場",
@@ -13140,7 +13980,8 @@ export const kanto: OperatorData = {
           name: "湘南台",
           lat: 35.396471,
           lng: 139.467283,
-          transfer: true
+          transfer: true,
+          groupId: 2500210,
         }
       ]
     },
@@ -13154,7 +13995,8 @@ export const kanto: OperatorData = {
           name: "中山",
           lat: 35.515029,
           lng: 139.54032,
-          transfer: true
+          transfer: true,
+          groupId: 1130607,
         },
         {
           name: "川和町",
@@ -13170,13 +14012,15 @@ export const kanto: OperatorData = {
           name: "センター南",
           lat: 35.545863,
           lng: 139.574325,
-          transfer: true
+          transfer: true,
+          groupId: 9931604,
         },
         {
           name: "センター北",
           lat: 35.553534,
           lng: 139.578386,
-          transfer: true
+          transfer: true,
+          groupId: 9931603,
         },
         {
           name: "北山田",
@@ -13202,7 +14046,8 @@ export const kanto: OperatorData = {
           name: "日吉",
           lat: 35.553313,
           lng: 139.647008,
-          transfer: true
+          transfer: true,
+          groupId: 2600113,
         }
       ]
     },
@@ -13218,7 +14063,8 @@ export const kanto: OperatorData = {
           name: "新木場",
           lat: 35.646172,
           lng: 139.827402,
-          transfer: true
+          transfer: true,
+          groupId: 1132605,
         },
         {
           name: "東雲",
@@ -13239,7 +14085,8 @@ export const kanto: OperatorData = {
           name: "天王洲アイル",
           lat: 35.620562,
           lng: 139.750793,
-          transfer: true
+          transfer: true,
+          groupId: 9933602,
         },
         {
           name: "品川シーサイド",
@@ -13250,13 +14097,15 @@ export const kanto: OperatorData = {
           name: "大井町",
           lat: 35.607535,
           lng: 139.735025,
-          transfer: true
+          transfer: true,
+          groupId: 1133228,
         },
         {
           name: "大崎",
           lat: 35.619772,
           lng: 139.728439,
-          transfer: true
+          transfer: true,
+          groupId: 1130201,
         }
       ]
     },
@@ -13272,13 +14121,15 @@ export const kanto: OperatorData = {
           name: "秋葉原",
           lat: 35.698889,
           lng: 139.774273,
-          transfer: true
+          transfer: true,
+          groupId: 1130222,
         },
         {
           name: "新御徒町",
           lat: 35.707045,
           lng: 139.781958,
-          transfer: true
+          transfer: true,
+          groupId: 9930111,
         },
         {
           name: "浅草",
@@ -13289,13 +14140,15 @@ export const kanto: OperatorData = {
           name: "南千住",
           lat: 35.732413,
           lng: 139.798783,
-          transfer: true
+          transfer: true,
+          groupId: 1132004,
         },
         {
           name: "北千住",
           lat: 35.74949,
           lng: 139.805092,
-          transfer: true
+          transfer: true,
+          groupId: 1132005,
         },
         {
           name: "青井",
@@ -13321,7 +14174,8 @@ export const kanto: OperatorData = {
           name: "南流山",
           lat: 35.83869,
           lng: 139.903271,
-          transfer: true
+          transfer: true,
+          groupId: 1130518,
         },
         {
           name: "流山セントラルパーク",
@@ -13332,7 +14186,8 @@ export const kanto: OperatorData = {
           name: "流山おおたかの森",
           lat: 35.871799,
           lng: 139.925044,
-          transfer: true
+          transfer: true,
+          groupId: 2100422,
         },
         {
           name: "柏の葉キャンパス",
@@ -13349,6 +14204,7 @@ export const kanto: OperatorData = {
           lat: 35.950626,
           lng: 139.992209,
           transfer: true,
+          groupId: 9930915,
         },
         {
           name: "みらい平",
@@ -13389,13 +14245,15 @@ export const kanto: OperatorData = {
           name: "モノレール浜松町",
           lat: 35.655666,
           lng: 139.756747,
-          transfer: true
+          transfer: true,
+          groupId: 1130227,
         },
         {
           name: "天王洲アイル",
           lat: 35.622908,
           lng: 139.750675,
-          transfer: true
+          transfer: true,
+          groupId: 9933602,
         },
         {
           name: "大井競馬場前",
@@ -13421,13 +14279,15 @@ export const kanto: OperatorData = {
           name: "天空橋",
           lat: 35.548908,
           lng: 139.75423,
-          transfer: true
+          transfer: true,
+          groupId: 2700205,
         },
         {
           name: "羽田空港第3ターミナル",
           lat: 35.544169,
           lng: 139.768206,
-          transfer: true
+          transfer: true,
+          groupId: 2700207,
         },
         {
           name: "新整備場",
@@ -13438,13 +14298,15 @@ export const kanto: OperatorData = {
           name: "羽田空港第1ターミナル",
           lat: 35.549163,
           lng: 139.784653,
-          transfer: true
+          transfer: true,
+          groupId: 2700206,
         },
         {
           name: "羽田空港第2ターミナル",
           lat: 35.550734,
           lng: 139.787979,
           transfer: true,
+          groupId: 2700206,
         }
       ]
     },
@@ -13461,6 +14323,7 @@ export const kanto: OperatorData = {
           lat: 35.623724,
           lng: 139.422782,
           transfer: true,
+          groupId: 2400208,
         },
         {
           name: "松が谷",
@@ -13482,6 +14345,7 @@ export const kanto: OperatorData = {
           lat: 35.648666,
           lng: 139.403672,
           transfer: true,
+          groupId: 2400502,
         },
         {
           name: "程久保",
@@ -13492,7 +14356,8 @@ export const kanto: OperatorData = {
           name: "高幡不動",
           lat: 35.66148,
           lng: 139.415184,
-          transfer: true
+          transfer: true,
+          groupId: 2400129,
         },
         {
           name: "万願寺",
@@ -13543,7 +14408,8 @@ export const kanto: OperatorData = {
           name: "玉川上水",
           lat: 35.73223,
           lng: 139.417866,
-          transfer: true
+          transfer: true,
+          groupId: 2200805,
         },
         {
           name: "桜街道",
@@ -13569,13 +14435,15 @@ export const kanto: OperatorData = {
           name: "新橋",
           lat: 35.665503,
           lng: 139.759644,
-          transfer: true
+          transfer: true,
+          groupId: 1130102,
         },
         {
           name: "汐留",
           lat: 35.662871,
           lng: 139.759985,
-          transfer: true
+          transfer: true,
+          groupId: 9930120,
         },
         {
           name: "竹芝",
@@ -13646,7 +14514,8 @@ export const kanto: OperatorData = {
           name: "豊洲",
           lat: 35.653792,
           lng: 139.795414,
-          transfer: true
+          transfer: true,
+          groupId: 2800622,
         }
       ]
     },
@@ -13662,7 +14531,8 @@ export const kanto: OperatorData = {
           name: "赤羽岩淵",
           lat: 35.783417,
           lng: 139.722103,
-          transfer: true
+          transfer: true,
+          groupId: 2800901,
         },
         {
           name: "川口元郷",
@@ -13693,7 +14563,8 @@ export const kanto: OperatorData = {
           name: "東川口",
           lat: 35.876211,
           lng: 139.74398,
-          transfer: true
+          transfer: true,
+          groupId: 1130513,
         },
         {
           name: "浦和美園",
@@ -13714,7 +14585,8 @@ export const kanto: OperatorData = {
           name: "大宮",
           lat: 35.90751,
           lng: 139.62254,
-          transfer: true
+          transfer: true,
+          groupId: 1131906,
         },
         {
           name: "鉄道博物館",
@@ -13790,19 +14662,22 @@ export const kanto: OperatorData = {
           name: "千葉みなと",
           lat: 35.607391,
           lng: 140.102495,
-          transfer: true
+          transfer: true,
+          groupId: 1132617,
         },
         {
           name: "市役所前",
           lat: 35.606878,
           lng: 140.107757,
-          transfer: true
+          transfer: true,
+          groupId: 9933102,
         },
         {
           name: "千葉",
           lat: 35.612084,
           lng: 140.114136,
-          transfer: true
+          transfer: true,
+          groupId: 1131339,
         },
         {
           name: "栄町",
@@ -13831,19 +14706,22 @@ export const kanto: OperatorData = {
           name: "千葉みなと",
           lat: 35.607391,
           lng: 140.102495,
-          transfer: true
+          transfer: true,
+          groupId: 1132617,
         },
         {
           name: "市役所前",
           lat: 35.606878,
           lng: 140.107757,
-          transfer: true
+          transfer: true,
+          groupId: 9933102,
         },
         {
           name: "千葉",
           lat: 35.612084,
           lng: 140.114136,
-          transfer: true
+          transfer: true,
+          groupId: 1131339,
         },
         {
           name: "千葉公園",
@@ -13884,7 +14762,8 @@ export const kanto: OperatorData = {
           name: "都賀",
           lat: 35.635491,
           lng: 140.148736,
-          transfer: true
+          transfer: true,
+          groupId: 1131412,
         },
         {
           name: "桜木",
@@ -13920,7 +14799,8 @@ export const kanto: OperatorData = {
           name: "五井",
           lat: 35.512985,
           lng: 140.089522,
-          transfer: true
+          transfer: true,
+          groupId: 1132506,
         },
         {
           name: "上総村上",
@@ -14006,7 +14886,8 @@ export const kanto: OperatorData = {
           name: "上総中野",
           lat: 35.250051,
           lng: 140.199571,
-          transfer: true
+          transfer: true,
+          groupId: 9930813,
         }
       ]
     },
@@ -14022,7 +14903,8 @@ export const kanto: OperatorData = {
           name: "大原",
           lat: 35.251097,
           lng: 140.390864,
-          transfer: true
+          transfer: true,
+          groupId: 1132418,
         },
         {
           name: "西大原",
@@ -14088,7 +14970,8 @@ export const kanto: OperatorData = {
           name: "上総中野",
           lat: 35.250051,
           lng: 140.199571,
-          transfer: true
+          transfer: true,
+          groupId: 9930813,
         }
       ]
     },
@@ -14104,13 +14987,15 @@ export const kanto: OperatorData = {
           name: "日暮里",
           lat: 35.727908,
           lng: 139.771287,
-          transfer: true
+          transfer: true,
+          groupId: 1130218,
         },
         {
           name: "西日暮里",
           lat: 35.731954,
           lng: 139.766857,
-          transfer: true
+          transfer: true,
+          groupId: 1130217,
         },
         {
           name: "赤土小学校前",
@@ -14121,7 +15006,8 @@ export const kanto: OperatorData = {
           name: "熊野前",
           lat: 35.748972,
           lng: 139.769695,
-          transfer: true
+          transfer: true,
+          groupId: 9930509,
         },
         {
           name: "足立小台",
@@ -14182,7 +15068,8 @@ export const kanto: OperatorData = {
           name: "京成高砂",
           lat: 35.750932,
           lng: 139.866875,
-          transfer: true
+          transfer: true,
+          groupId: 2300110,
         },
         {
           name: "新柴又",
@@ -14208,7 +15095,8 @@ export const kanto: OperatorData = {
           name: "東松戸",
           lat: 35.769954,
           lng: 139.942957,
-          transfer: true
+          transfer: true,
+          groupId: 1130521,
         },
         {
           name: "松飛台",
@@ -14224,7 +15112,8 @@ export const kanto: OperatorData = {
           name: "新鎌ヶ谷",
           lat: 35.779481,
           lng: 139.998361,
-          transfer: true
+          transfer: true,
+          groupId: 2100430,
         },
         {
           name: "西白井",
@@ -14245,7 +15134,8 @@ export const kanto: OperatorData = {
           name: "千葉ニュータウン中央",
           lat: 35.800175,
           lng: 140.116159,
-          transfer: true
+          transfer: true,
+          groupId: 9934013,
         },
         {
           name: "印西牧の原",
@@ -14256,7 +15146,8 @@ export const kanto: OperatorData = {
           name: "印旛日本医大",
           lat: 35.787512,
           lng: 140.203112,
-          transfer: true
+          transfer: true,
+          groupId: 9934015,
         }
       ]
     },
@@ -14273,6 +15164,7 @@ export const kanto: OperatorData = {
           lat: 36.170345,
           lng: 139.533949,
           transfer: true,
+          groupId: 2100237,
         },
         {
           name: "西羽生",
@@ -14314,6 +15206,7 @@ export const kanto: OperatorData = {
           lat: 36.139313,
           lng: 139.389542,
           transfer: true,
+          groupId: 1132316,
         },
         {
           name: "上熊谷",
@@ -14370,6 +15263,7 @@ export const kanto: OperatorData = {
           lat: 36.117801,
           lng: 139.194197,
           transfer: true,
+          groupId: 1131808,
         },
         {
           name: "波久礼",
@@ -14470,7 +15364,8 @@ export const kanto: OperatorData = {
           name: "西船橋",
           lat: 35.707127,
           lng: 139.958972,
-          transfer: true
+          transfer: true,
+          groupId: 1130524,
         },
         {
           name: "東海神",
@@ -14486,7 +15381,8 @@ export const kanto: OperatorData = {
           name: "北習志野",
           lat: 35.721674,
           lng: 140.04236,
-          transfer: true
+          transfer: true,
+          groupId: 9932906,
         },
         {
           name: "船橋日大前",
@@ -14512,7 +15408,8 @@ export const kanto: OperatorData = {
           name: "東葉勝田台",
           lat: 35.715458,
           lng: 140.126075,
-          transfer: true
+          transfer: true,
+          groupId: 2300131,
         }
       ]
     },
@@ -14529,6 +15426,7 @@ export const kanto: OperatorData = {
           lat: 35.770091,
           lng: 140.387225,
           transfer: true,
+          groupId: 2300141,
         },
         {
           name: "芝山千代田",

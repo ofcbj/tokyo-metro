@@ -4,6 +4,9 @@ export interface Station {
   lat: number;
   lng: number;
   transfer?: boolean;
+  // 환승 그룹 id (ekidata station_g_cd). 같은 물리 역/환승 그룹을 공유하는 역끼리 동일 값.
+  // 팝업에서 한 환승역의 모든 노선을 묶는 데 사용. transfer 역에만 부여됨.
+  groupId?: number;
 }
 
 // Line type

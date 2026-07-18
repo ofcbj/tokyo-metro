@@ -34,8 +34,7 @@ export class CanvasMetroOverlay {
   private animationFrameId: number | null = null;
   private hoveredStation: StationMarker | null = null;
   private stationCache: Map<string, StationMarker[]> = new Map(); // lineId -> stations
-  private infoWindow: google.maps.InfoWindow | null = null;
-  private infoWindowTimeoutId: number | null = null;
+  private tooltipEl: HTMLDivElement | null = null; // 역 호버 툴팁 (화면 위치에 맞춰 위/아래 뒤집힘)
   private overlay: google.maps.OverlayView;
 
   // 렌더링 최적화용 상태
@@ -141,7 +140,10 @@ export class CanvasMetroOverlay {
     }
     this.mapListeners.forEach(l => l.remove());
     this.mapListeners = [];
-    this.hideInfoWindow();
+    if (this.tooltipEl && this.tooltipEl.parentNode) {
+      this.tooltipEl.parentNode.removeChild(this.tooltipEl);
+    }
+    this.tooltipEl = null;
     this.stopAnimation();
   }
 
@@ -361,11 +363,11 @@ export class CanvasMetroOverlay {
       const map = this.overlay.getMap() as google.maps.Map | null | undefined;
       if (map) map.getDiv().style.cursor = station ? 'pointer' : '';
 
-      // InfoWindow 표시/숨김
+      // 툴팁 표시/숨김
       if (station) {
-        this.showInfoWindow(station);
+        this.showTooltip(station);
       } else {
-        this.hideInfoWindow();
+        this.hideTooltip();
       }
 
       this.requestDraw(); // 리렌더
@@ -390,82 +392,105 @@ export class CanvasMetroOverlay {
     return null;
   }
 
-  private showInfoWindow(marker: StationMarker) {
-    // 기존 타임아웃 취소
-    if (this.infoWindowTimeoutId) {
-      clearTimeout(this.infoWindowTimeoutId);
-    }
+  // 역 툴팁 HTML 내용 생성
+  private buildStationHtml(marker: StationMarker): string {
+    if (marker.station.transfer) {
+      const lineIds = this.findLinesForStationByMarker(marker);
+      const visibleStationLines = lineIds
+        .filter(id => this.selectedSet.has(id))
+        .map(id => this.allLinesCache.find(l => l.id === id))
+        .filter((l): l is Line => l !== undefined);
 
-    // 약간의 지연 후 표시 (너무 빠르게 깜빡이는 것 방지)
-    this.infoWindowTimeoutId = window.setTimeout(() => {
-      const map = this.overlay.getMap();
-      const projection = this.overlay.getProjection();
-      if (!map || !projection) return;
+      const linesHtml = visibleStationLines
+        .map(l => `<span style="color: ${l.color}; font-size: 18px; line-height: 1.8; font-weight: 500;">● ${l.nameJp} / ${l.nameKo}</span>`)
+        .join('<br/>');
 
-      // 기존 InfoWindow 제거
-      if (this.infoWindow) {
-        this.infoWindow.close();
-      }
-
-      // InfoWindow 내용 생성
-      let infoContent: string;
-      if (marker.station.transfer) {
-        const lineIds = this.findLinesForStationByMarker(marker);
-        const allLinesArray = Object.values(this.options.lineData).flat();
-        const visibleStationLines = lineIds
-          .filter(id => this.options.selectedLines.includes(id))
-          .map(id => allLinesArray.find(l => l.id === id))
-          .filter((l): l is Line => l !== undefined);
-
-        const linesHtml = visibleStationLines
-          .map(l => `<span style="color: ${l.color}; font-size: 18px; line-height: 1.8; font-weight: 500;">● ${l.nameJp} / ${l.nameKo}</span>`)
-          .join('<br/>');
-
-        infoContent = `<div style="padding: 0px 4px 2px 4px;">
+      return `<div style="padding: 0px 4px 2px 4px;">
           <strong style="font-size: 19px;">${marker.station.name}</strong><br/>
           <span style="color: #666; font-size: 13px;">乗換駅</span><br/>
           ${linesHtml}
         </div>`;
-      } else {
-        infoContent = `<div style="padding: 0px 4px 2px 4px;">
+    }
+    return `<div style="padding: 0px 4px 2px 4px;">
           <strong style="font-size: 19px;">${marker.station.name}</strong><br/>
           <span style="color: ${marker.line.color}; font-size: 18px; line-height: 1.8; font-weight: 500;">● ${marker.line.nameJp} / ${marker.line.nameKo}</span>
         </div>`;
-      }
-
-      // InfoWindow 생성 및 표시
-      this.infoWindow = new google.maps.InfoWindow({
-        content: infoContent,
-        position: { lat: marker.station.lat, lng: marker.station.lng },
-        disableAutoPan: true
-      });
-      this.infoWindow.open(map);
-    }, 100); // 100ms 지연
   }
 
-  private hideInfoWindow() {
-    if (this.infoWindowTimeoutId) {
-      clearTimeout(this.infoWindowTimeoutId);
-      this.infoWindowTimeoutId = null;
-    }
+  private ensureTooltip(): HTMLDivElement | null {
+    if (this.tooltipEl) return this.tooltipEl;
+    const map = this.overlay.getMap() as google.maps.Map | null | undefined;
+    if (!map) return null;
+    const mapDiv = map.getDiv() as HTMLElement;
+    // 절대배치 툴팁이 지도 컨테이너를 기준으로 놓이도록 보장
+    if (getComputedStyle(mapDiv).position === 'static') mapDiv.style.position = 'relative';
+    const el = document.createElement('div');
+    el.style.cssText =
+      'position:absolute; z-index:1000; pointer-events:none; background:#fff;' +
+      'border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.35); padding:6px 10px;' +
+      'max-width:300px; font-family:sans-serif; display:none;';
+    mapDiv.appendChild(el);
+    this.tooltipEl = el;
+    return el;
+  }
 
-    if (this.infoWindow) {
-      this.infoWindow.close();
-      this.infoWindow = null;
-    }
+  // 역의 화면(컨테이너) 좌표에 맞춰 툴팁을 배치한다.
+  // 위쪽 공간이 부족하면 아래로 뒤집고, 좌우로도 화면 안에 들어오도록 클램프한다.
+  private showTooltip(marker: StationMarker) {
+    const projection = this.overlay.getProjection();
+    const map = this.overlay.getMap() as google.maps.Map | null | undefined;
+    if (!projection || !map) return;
+    const el = this.ensureTooltip();
+    if (!el) return;
+
+    el.innerHTML = this.buildStationHtml(marker);
+    el.style.display = 'block';
+
+    const pt = projection.fromLatLngToContainerPixel(
+      new google.maps.LatLng(marker.station.lat, marker.station.lng)
+    );
+    if (!pt) { this.hideTooltip(); return; }
+
+    const mapDiv = map.getDiv();
+    const mapW = mapDiv.offsetWidth;
+    const mapH = mapDiv.offsetHeight;
+    const w = el.offsetWidth;
+    const h = el.offsetHeight;
+    const GAP = 14;   // 역 마커와의 간격
+    const EDGE = 6;   // 화면 가장자리 여백
+
+    // 세로: 기본은 역 위. 위가 잘리면 아래로 뒤집고, 그래도 넘치면 화면 안으로 클램프.
+    let top = pt.y - GAP - h;
+    if (top < EDGE) top = pt.y + GAP;
+    if (top + h > mapH - EDGE) top = Math.max(EDGE, mapH - EDGE - h);
+
+    // 가로: 역 중앙 정렬 후 좌우 클램프.
+    let left = pt.x - w / 2;
+    left = Math.max(EDGE, Math.min(left, mapW - w - EDGE));
+
+    el.style.left = `${Math.round(left)}px`;
+    el.style.top = `${Math.round(top)}px`;
+  }
+
+  private hideTooltip() {
+    if (this.tooltipEl) this.tooltipEl.style.display = 'none';
   }
 
   private findLinesForStationByMarker(marker: StationMarker): string[] {
     const allLines = Object.values(this.options.lineData).flat();
     const lineIds: string[] = [];
+    const groupId = marker.station.groupId;
 
     for (const line of allLines) {
       for (const station of line.stations) {
-        if (
-          station.name === marker.station.name &&
-          Math.abs(station.lat - marker.station.lat) < 0.0001 &&
-          Math.abs(station.lng - marker.station.lng) < 0.0001
-        ) {
+        // 같은 환승 그룹(groupId)이면 좌표가 달라도 하나로 묶는다.
+        // groupId가 없는 역(드묾)은 이름+초근접 좌표로 폴백.
+        const match = groupId !== undefined
+          ? station.groupId === groupId
+          : (station.name === marker.station.name &&
+             Math.abs(station.lat - marker.station.lat) < 0.0001 &&
+             Math.abs(station.lng - marker.station.lng) < 0.0001);
+        if (match) {
           lineIds.push(line.id);
           break;
         }
@@ -537,6 +562,10 @@ export class CanvasMetroOverlay {
 
   // 외부에서 호출: 옵션 업데이트
   public updateOptions(newOptions: Partial<CanvasOverlayOptions>) {
+    // 병합 전의 이전 선택 목록을 기준으로 diff 한다.
+    // (animatedLines는 애니메이션이 끝나면 비워지므로 "이미 표시된 노선"의 기준으로 쓸 수 없다.
+    //  이전 선택과 비교해야 새로 추가된 노선만 애니메이션하고 나머지는 건드리지 않는다.)
+    const prevSelected = this.options.selectedLines || [];
     this.options = { ...this.options, ...newOptions };
 
     // lineData가 바뀌면 flat 캐시 갱신
@@ -544,24 +573,19 @@ export class CanvasMetroOverlay {
       this.allLinesCache = Object.values(newOptions.lineData).flat();
     }
 
-    // 선택된 노선 변경 시 Set 캐시 갱신 + 애니메이션 초기화
+    // 선택된 노선 변경 시 Set 캐시 갱신 + 새로 추가된 노선만 애니메이션
     if (newOptions.selectedLines) {
       this.selectedSet = new Set(newOptions.selectedLines);
-      const currentAnimatedIds = new Set(this.animatedLines.keys());
-      const newSelectedIds = this.selectedSet;
+      const prevSet = new Set(prevSelected);
 
-      // 새로 추가된 노선
-      newSelectedIds.forEach(lineId => {
-        if (!currentAnimatedIds.has(lineId)) {
-          this.addLine(lineId);
-        }
+      // 이전에 없던 노선만 새로 애니메이션
+      newOptions.selectedLines.forEach(lineId => {
+        if (!prevSet.has(lineId)) this.addLine(lineId);
       });
 
-      // 제거된 노선
-      currentAnimatedIds.forEach(lineId => {
-        if (!newSelectedIds.has(lineId)) {
-          this.removeLine(lineId);
-        }
+      // 이전엔 있었지만 지금 빠진 노선 제거
+      prevSet.forEach(lineId => {
+        if (!this.selectedSet.has(lineId)) this.removeLine(lineId);
       });
     }
 

@@ -14,18 +14,21 @@ export const chubu: OperatorData = {
                 lat: 35.689729,
                 lng: 139.700464,
                 transfer: true,
+                groupId: 1130208,
             },
             {
                 name: "立川",
                 lat: 35.698202,
                 lng: 139.413704,
                 transfer: true,
+                groupId: 1130325,
             },
             {
                 name: "八王子",
                 lat: 35.655555,
                 lng: 139.338998,
                 transfer: true,
+                groupId: 1130620,
             },
             {
                 name: "大月",
@@ -62,6 +65,7 @@ export const chubu: OperatorData = {
                 lat: 35.863808,
                 lng: 138.316351,
                 transfer: true,
+                groupId: 1131139,
             },
             {
                 name: "富士見",
@@ -98,6 +102,7 @@ export const chubu: OperatorData = {
                 lat: 35.984565,
                 lng: 137.997238,
                 transfer: true,
+                groupId: 1131150,
             },
             {
                 name: "信濃川島",
@@ -119,6 +124,7 @@ export const chubu: OperatorData = {
                 lat: 36.114364,
                 lng: 137.947961,
                 transfer: true,
+                groupId: 1131153,
             },
             {
                 name: "松本",
@@ -139,6 +145,7 @@ export const chubu: OperatorData = {
                 lat: 36.114364,
                 lng: 137.947961,
                 transfer: true,
+                groupId: 1131153,
             },
             {
                 name: "広丘",
@@ -165,6 +172,7 @@ export const chubu: OperatorData = {
                 lat: 36.230393,
                 lng: 137.96445,
                 transfer: true,
+                groupId: 1140901,
             },
             {
                 name: "田沢",
@@ -211,6 +219,7 @@ export const chubu: OperatorData = {
                 lat: 36.5771,
                 lng: 138.138046,
                 transfer: true,
+                groupId: 1140301,
             },
         ],
     },
@@ -225,6 +234,7 @@ export const chubu: OperatorData = {
                 lat: 36.5771,
                 lng: 138.138046,
                 transfer: true,
+                groupId: 1140301,
             },
             {
                 name: "今井",
@@ -246,6 +256,7 @@ export const chubu: OperatorData = {
                 lat: 36.643307,
                 lng: 138.189101,
                 transfer: true,
+                groupId: 1140305,
             },
         ],
     },
@@ -260,6 +271,7 @@ export const chubu: OperatorData = {
                 lat: 36.230393,
                 lng: 137.96445,
                 transfer: true,
+                groupId: 1140901,
             },
             {
                 name: "北松本",
@@ -434,24 +446,28 @@ export const chubu: OperatorData = {
                 lat: 36.643307,
                 lng: 138.189101,
                 transfer: true,
+                groupId: 1140305,
             },
             {
                 name: "北長野",
                 lat: 36.665123,
                 lng: 138.222534,
                 transfer: true,
+                groupId: 1140306,
             },
             {
                 name: "三才",
                 lat: 36.686674,
                 lng: 138.244079,
                 transfer: true,
+                groupId: 1140307,
             },
             {
                 name: "豊野",
                 lat: 36.710642,
                 lng: 138.274458,
                 transfer: true,
+                groupId: 1140308,
             },
             {
                 name: "信濃浅野",
@@ -601,6 +617,7 @@ export const chubu: OperatorData = {
                 lat: 35.863808,
                 lng: 138.316351,
                 transfer: true,
+                groupId: 1131139,
             },
             {
                 name: "甲斐小泉",
@@ -752,6 +769,7 @@ export const chubu: OperatorData = {
                 lat: 36.326337,
                 lng: 138.422021,
                 transfer: true,
+                groupId: 1140131,
             },
         ],
     },
@@ -766,6 +784,7 @@ export const chubu: OperatorData = {
                 lat: 35.441114,
                 lng: 137.81732,
                 transfer: true,
+                groupId: 1141351,
             },
             {
                 name: "川路",
@@ -982,6 +1001,7 @@ export const chubu: OperatorData = {
                 lat: 35.984565,
                 lng: 137.997238,
                 transfer: true,
+                groupId: 1131150,
             },
         ],
     },
@@ -996,6 +1016,7 @@ export const chubu: OperatorData = {
                 lat: 34.762734,
                 lng: 137.382128,
                 transfer: true,
+                groupId: 1141301,
             },
             {
                 name: "船町",
@@ -1022,6 +1043,7 @@ export const chubu: OperatorData = {
                 lat: 34.822519,
                 lng: 137.397157,
                 transfer: true,
+                groupId: 1141306,
             },
             {
                 name: "三河一宮",
@@ -1248,6 +1270,7 @@ export const chubu: OperatorData = {
                 lat: 35.441114,
                 lng: 137.81732,
                 transfer: true,
+                groupId: 1141351,
             },
         ],
     },
@@ -1304,6 +1327,7 @@ export const chubu: OperatorData = {
           lat: 34.762734,
           lng: 137.382128,
           transfer: true,
+          groupId: 1141301,
         },
         {
           name: "西小坂井",
@@ -1330,12 +1354,14 @@ export const chubu: OperatorData = {
           lat: 34.823078,
           lng: 137.226459,
           transfer: true,
+          groupId: 1150215,
         },
         {
           name: "三河塩津",
           lat: 34.825295,
           lng: 137.201261,
           transfer: true,
+          groupId: 1150216,
         },
         {
           name: "三ケ根",
@@ -1357,6 +1383,7 @@ export const chubu: OperatorData = {
           lat: 34.925417,
           lng: 137.157243,
           transfer: true,
+          groupId: 1150219,
         },
         {
           name: "西岡崎",
@@ -1388,6 +1415,7 @@ export const chubu: OperatorData = {
           lat: 34.991156,
           lng: 137.008878,
           transfer: true,
+          groupId: 1150224,
         },
         {
           name: "逢妻",
@@ -1399,6 +1427,7 @@ export const chubu: OperatorData = {
           lat: 35.008665,
           lng: 136.961727,
           transfer: true,
+          groupId: 1150226,
         },
         {
           name: "共和",
@@ -1430,6 +1459,7 @@ export const chubu: OperatorData = {
           lat: 35.143323,
           lng: 136.90075,
           transfer: true,
+          groupId: 1141102,
         },
         {
           name: "尾頭橋",
@@ -1441,12 +1471,14 @@ export const chubu: OperatorData = {
           lat: 35.170694,
           lng: 136.881637,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "枇杷島",
           lat: 35.198681,
           lng: 136.861816,
           transfer: true,
+          groupId: 1150234,
         },
         {
           name: "清洲",
@@ -1463,6 +1495,7 @@ export const chubu: OperatorData = {
           lat: 35.301765,
           lng: 136.797567,
           transfer: true,
+          groupId: 1150237,
         },
         {
           name: "木曽川",
@@ -1474,6 +1507,7 @@ export const chubu: OperatorData = {
           lat: 35.409532,
           lng: 136.756514,
           transfer: true,
+          groupId: 1141601,
         },
       ],
     },
@@ -1488,6 +1522,7 @@ export const chubu: OperatorData = {
           lat: 35.409532,
           lng: 136.756514,
           transfer: true,
+          groupId: 1141601,
         },
         {
           name: "西岐阜",
@@ -1544,6 +1579,7 @@ export const chubu: OperatorData = {
           lat: 35.314657,
           lng: 136.289992,
           transfer: true,
+          groupId: 1141501,
         },
       ],
     },
@@ -1558,6 +1594,7 @@ export const chubu: OperatorData = {
           lat: 35.008665,
           lng: 136.961727,
           transfer: true,
+          groupId: 1150226,
         },
         {
           name: "尾張森岡",
@@ -1617,6 +1654,7 @@ export const chubu: OperatorData = {
           lat: 35.334774,
           lng: 137.120294,
           transfer: true,
+          groupId: 1141113,
         },
         {
           name: "小泉",
@@ -1643,6 +1681,7 @@ export const chubu: OperatorData = {
           lat: 35.422832,
           lng: 137.055345,
           transfer: true,
+          groupId: 1150706,
         },
         {
           name: "美濃川合",
@@ -1667,30 +1706,35 @@ export const chubu: OperatorData = {
           lat: 35.170694,
           lng: 136.881637,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "金山",
           lat: 35.142928,
           lng: 136.900517,
           transfer: true,
+          groupId: 1141102,
         },
         {
           name: "鶴舞",
           lat: 35.156416,
           lng: 136.917436,
           transfer: true,
+          groupId: 1141103,
         },
         {
           name: "千種",
           lat: 35.170168,
           lng: 136.930665,
           transfer: true,
+          groupId: 1141104,
         },
         {
           name: "大曽根",
           lat: 35.191508,
           lng: 136.937161,
           transfer: true,
+          groupId: 1141105,
         },
         {
           name: "新守山",
@@ -1702,6 +1746,7 @@ export const chubu: OperatorData = {
           lat: 35.22982,
           lng: 136.956285,
           transfer: true,
+          groupId: 1141107,
         },
         {
           name: "春日井",
@@ -1718,6 +1763,7 @@ export const chubu: OperatorData = {
           lat: 35.26434,
           lng: 137.043766,
           transfer: true,
+          groupId: 1141110,
         },
         {
           name: "定光寺",
@@ -1734,6 +1780,7 @@ export const chubu: OperatorData = {
           lat: 35.334774,
           lng: 137.120294,
           transfer: true,
+          groupId: 1141113,
         },
         {
           name: "土岐市",
@@ -1870,6 +1917,7 @@ export const chubu: OperatorData = {
           lat: 36.114364,
           lng: 137.947961,
           transfer: true,
+          groupId: 1131153,
         },
       ],
     },
@@ -1885,7 +1933,8 @@ export const chubu: OperatorData = {
           name: "松本",
           lat: 36.231081,
           lng: 137.963846,
-          transfer: true
+          transfer: true,
+          groupId: 1140901,
         },
         {
           name: "西松本",
@@ -1991,7 +2040,8 @@ export const chubu: OperatorData = {
           name: "小諸",
           lat: 36.326903,
           lng: 138.421715,
-          transfer: true
+          transfer: true,
+          groupId: 1140131,
         },
         {
           name: "滋野",
@@ -2017,7 +2067,8 @@ export const chubu: OperatorData = {
           name: "上田",
           lat: 36.396579,
           lng: 138.249298,
-          transfer: true
+          transfer: true,
+          groupId: 9940311,
         },
         {
           name: "西上田",
@@ -2058,7 +2109,8 @@ export const chubu: OperatorData = {
           name: "篠ノ井",
           lat: 36.5771,
           lng: 138.138046,
-          transfer: true
+          transfer: true,
+          groupId: 1140301,
         }
       ]
     },
@@ -2072,25 +2124,29 @@ export const chubu: OperatorData = {
           name: "長野",
           lat: 36.643307,
           lng: 138.189101,
-          transfer: true
+          transfer: true,
+          groupId: 1140305,
         },
         {
           name: "北長野",
           lat: 36.665123,
           lng: 138.222534,
           transfer: true,
+          groupId: 1140306,
         },
         {
           name: "三才",
           lat: 36.686674,
           lng: 138.244079,
           transfer: true,
+          groupId: 1140307,
         },
         {
           name: "豊野",
           lat: 36.710642,
           lng: 138.274458,
-          transfer: true
+          transfer: true,
+          groupId: 1140308,
         },
         {
           name: "牟礼",
@@ -2126,7 +2182,8 @@ export const chubu: OperatorData = {
           name: "長野",
           lat: 36.644341,
           lng: 138.188396,
-          transfer: true
+          transfer: true,
+          groupId: 1140305,
         },
         {
           name: "市役所前",
@@ -2257,7 +2314,8 @@ export const chubu: OperatorData = {
           name: "上田",
           lat: 36.396691,
           lng: 138.24882,
-          transfer: true
+          transfer: true,
+          groupId: 9940311,
         },
         {
           name: "城下",
@@ -2344,6 +2402,7 @@ export const chubu: OperatorData = {
           lat: 34.762734,
           lng: 137.382128,
           transfer: true,
+          groupId: 1141301,
         },
         {
           name: "伊奈",
@@ -2360,6 +2419,7 @@ export const chubu: OperatorData = {
           lat: 34.83752,
           lng: 137.328101,
           transfer: true,
+          groupId: 3000104,
         },
         {
           name: "御油",
@@ -2411,6 +2471,7 @@ export const chubu: OperatorData = {
           lat: 34.954984,
           lng: 137.153309,
           transfer: true,
+          groupId: 3000114,
         },
         {
           name: "矢作橋",
@@ -2427,6 +2488,7 @@ export const chubu: OperatorData = {
           lat: 34.986885,
           lng: 137.085443,
           transfer: true,
+          groupId: 3000117,
         },
         {
           name: "牛田",
@@ -2438,6 +2500,7 @@ export const chubu: OperatorData = {
           lat: 35.006111,
           lng: 137.039722,
           transfer: true,
+          groupId: 3000119,
         },
         {
           name: "一ツ木",
@@ -2509,36 +2572,42 @@ export const chubu: OperatorData = {
           lat: 35.125857,
           lng: 136.912485,
           transfer: true,
+          groupId: 3000133,
         },
         {
           name: "金山",
           lat: 35.142871,
           lng: 136.9013,
           transfer: true,
+          groupId: 1141102,
         },
         {
           name: "山王",
           lat: 35.15233,
           lng: 136.888461,
           transfer: true,
+          groupId: 3000135,
         },
         {
           name: "名鉄名古屋",
           lat: 35.169252,
           lng: 136.884187,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "栄生",
           lat: 35.183687,
           lng: 136.873051,
           transfer: true,
+          groupId: 3000137,
         },
         {
           name: "東枇杷島",
           lat: 35.189808,
           lng: 136.870168,
           transfer: true,
+          groupId: 3000138,
         },
         {
           name: "西枇杷島",
@@ -2560,6 +2629,7 @@ export const chubu: OperatorData = {
           lat: 35.198684,
           lng: 136.846229,
           transfer: true,
+          groupId: 3000142,
         },
         {
           name: "丸ノ内",
@@ -2601,6 +2671,7 @@ export const chubu: OperatorData = {
           lat: 35.30154,
           lng: 136.797225,
           transfer: true,
+          groupId: 1150237,
         },
         {
           name: "今伊勢",
@@ -2632,6 +2703,7 @@ export const chubu: OperatorData = {
           lat: 35.37466,
           lng: 136.764664,
           transfer: true,
+          groupId: 3000156,
         },
         {
           name: "岐南",
@@ -2653,6 +2725,7 @@ export const chubu: OperatorData = {
           lat: 35.411136,
           lng: 136.760066,
           transfer: true,
+          groupId: 3000160,
         },
       ],
     },
@@ -2667,6 +2740,7 @@ export const chubu: OperatorData = {
           lat: 34.83752,
           lng: 137.328101,
           transfer: true,
+          groupId: 3000104,
         },
         {
           name: "八幡",
@@ -2688,6 +2762,7 @@ export const chubu: OperatorData = {
           lat: 34.821755,
           lng: 137.396058,
           transfer: true,
+          groupId: 1141306,
         },
       ],
     },
@@ -2702,6 +2777,7 @@ export const chubu: OperatorData = {
           lat: 34.986885,
           lng: 137.085443,
           transfer: true,
+          groupId: 3000117,
         },
         {
           name: "北安城",
@@ -2768,6 +2844,7 @@ export const chubu: OperatorData = {
           lat: 34.794043,
           lng: 137.071017,
           transfer: true,
+          groupId: 3000315,
         },
       ],
     },
@@ -2782,6 +2859,7 @@ export const chubu: OperatorData = {
           lat: 34.794043,
           lng: 137.071017,
           transfer: true,
+          groupId: 3000315,
         },
         {
           name: "三河鳥羽",
@@ -2823,12 +2901,14 @@ export const chubu: OperatorData = {
           lat: 34.825545,
           lng: 137.202014,
           transfer: true,
+          groupId: 1150216,
         },
         {
           name: "蒲郡",
           lat: 34.822743,
           lng: 137.226115,
           transfer: true,
+          groupId: 1150215,
         },
       ],
     },
@@ -2888,6 +2968,7 @@ export const chubu: OperatorData = {
           lat: 34.990884,
           lng: 137.008642,
           transfer: true,
+          groupId: 1150224,
         },
         {
           name: "重原",
@@ -2899,6 +2980,7 @@ export const chubu: OperatorData = {
           lat: 35.006111,
           lng: 137.039722,
           transfer: true,
+          groupId: 3000119,
         },
         {
           name: "三河知立",
@@ -2935,12 +3017,14 @@ export const chubu: OperatorData = {
           lat: 35.087305,
           lng: 137.156227,
           transfer: true,
+          groupId: 3000519,
         },
         {
           name: "梅坪",
           lat: 35.099654,
           lng: 137.162206,
           transfer: true,
+          groupId: 3000520,
         },
         {
           name: "越戸",
@@ -2970,12 +3054,14 @@ export const chubu: OperatorData = {
           lat: 35.087305,
           lng: 137.156227,
           transfer: true,
+          groupId: 3000519,
         },
         {
           name: "梅坪",
           lat: 35.099654,
           lng: 137.162206,
           transfer: true,
+          groupId: 3000520,
         },
         {
           name: "上豊田",
@@ -3012,6 +3098,7 @@ export const chubu: OperatorData = {
           lat: 35.121097,
           lng: 137.017978,
           transfer: true,
+          groupId: 3000609,
         },
       ],
     },
@@ -3026,6 +3113,7 @@ export const chubu: OperatorData = {
           lat: 34.891167,
           lng: 136.834992,
           transfer: true,
+          groupId: 3000701,
         },
         {
           name: "りんくう常滑",
@@ -3050,24 +3138,28 @@ export const chubu: OperatorData = {
           lat: 35.169252,
           lng: 136.884187,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "山王",
           lat: 35.15233,
           lng: 136.888461,
           transfer: true,
+          groupId: 3000135,
         },
         {
           name: "金山",
           lat: 35.142871,
           lng: 136.9013,
           transfer: true,
+          groupId: 1141102,
         },
         {
           name: "神宮前",
           lat: 35.125857,
           lng: 136.912485,
           transfer: true,
+          groupId: 3000133,
         },
         {
           name: "豊田本町",
@@ -3084,6 +3176,7 @@ export const chubu: OperatorData = {
           lat: 35.093258,
           lng: 136.912758,
           transfer: true,
+          groupId: 3000807,
         },
         {
           name: "大同町",
@@ -3115,6 +3208,7 @@ export const chubu: OperatorData = {
           lat: 35.020221,
           lng: 136.892504,
           transfer: true,
+          groupId: 3000813,
         },
         {
           name: "尾張横須賀",
@@ -3181,6 +3275,7 @@ export const chubu: OperatorData = {
           lat: 34.891167,
           lng: 136.834992,
           transfer: true,
+          groupId: 3000701,
         },
       ],
     },
@@ -3195,6 +3290,7 @@ export const chubu: OperatorData = {
           lat: 35.020221,
           lng: 136.892504,
           transfer: true,
+          groupId: 3000813,
         },
         {
           name: "高横須賀",
@@ -3281,6 +3377,7 @@ export const chubu: OperatorData = {
           lat: 34.828823,
           lng: 136.917043,
           transfer: true,
+          groupId: 3000918,
         },
         {
           name: "河和口",
@@ -3305,6 +3402,7 @@ export const chubu: OperatorData = {
           lat: 34.828823,
           lng: 136.917043,
           transfer: true,
+          groupId: 3000918,
         },
         {
           name: "上野間",
@@ -3344,6 +3442,7 @@ export const chubu: OperatorData = {
           lat: 35.093258,
           lng: 136.912758,
           transfer: true,
+          groupId: 3000807,
         },
         {
           name: "東名古屋港",
@@ -3363,6 +3462,7 @@ export const chubu: OperatorData = {
           lat: 35.170567,
           lng: 136.908962,
           transfer: true,
+          groupId: 3001201,
         },
         {
           name: "東大手",
@@ -3389,6 +3489,7 @@ export const chubu: OperatorData = {
           lat: 35.1916,
           lng: 136.936855,
           transfer: true,
+          groupId: 1141105,
         },
         {
           name: "矢田",
@@ -3400,6 +3501,7 @@ export const chubu: OperatorData = {
           lat: 35.196258,
           lng: 136.957843,
           transfer: true,
+          groupId: 3001208,
         },
         {
           name: "瓢箪山",
@@ -3451,6 +3553,7 @@ export const chubu: OperatorData = {
           lat: 35.225485,
           lng: 137.077639,
           transfer: true,
+          groupId: 3001218,
         },
         {
           name: "瀬戸市役所前",
@@ -3475,6 +3578,7 @@ export const chubu: OperatorData = {
           lat: 35.198684,
           lng: 136.846229,
           transfer: true,
+          groupId: 3000142,
         },
         {
           name: "甚目寺",
@@ -3511,6 +3615,7 @@ export const chubu: OperatorData = {
           lat: 35.177982,
           lng: 136.730995,
           transfer: true,
+          groupId: 3001308,
         },
       ],
     },
@@ -3525,6 +3630,7 @@ export const chubu: OperatorData = {
           lat: 35.114026,
           lng: 136.725664,
           transfer: true,
+          groupId: 1150806,
         },
         {
           name: "五ノ三",
@@ -3546,6 +3652,7 @@ export const chubu: OperatorData = {
           lat: 35.177982,
           lng: 136.730995,
           transfer: true,
+          groupId: 3001308,
         },
         {
           name: "町方",
@@ -3612,6 +3719,7 @@ export const chubu: OperatorData = {
           lat: 35.30154,
           lng: 136.797225,
           transfer: true,
+          groupId: 1150237,
         },
         {
           name: "西一宮",
@@ -3646,18 +3754,21 @@ export const chubu: OperatorData = {
           lat: 35.169252,
           lng: 136.884187,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "栄生",
           lat: 35.183687,
           lng: 136.873051,
           transfer: true,
+          groupId: 3000137,
         },
         {
           name: "東枇杷島",
           lat: 35.189808,
           lng: 136.870168,
           transfer: true,
+          groupId: 3000138,
         },
         {
           name: "下小田井",
@@ -3674,6 +3785,7 @@ export const chubu: OperatorData = {
           lat: 35.223482,
           lng: 136.876941,
           transfer: true,
+          groupId: 3001506,
         },
         {
           name: "西春",
@@ -3735,6 +3847,7 @@ export const chubu: OperatorData = {
           lat: 35.379871,
           lng: 136.945536,
           transfer: true,
+          groupId: 3001518,
         },
         {
           name: "犬山遊園",
@@ -3746,6 +3859,7 @@ export const chubu: OperatorData = {
           lat: 35.396799,
           lng: 136.944314,
           transfer: true,
+          groupId: 1141606,
         },
       ],
     },
@@ -3760,6 +3874,7 @@ export const chubu: OperatorData = {
           lat: 35.396799,
           lng: 136.944314,
           transfer: true,
+          groupId: 1141606,
         },
         {
           name: "鵜沼宿",
@@ -3846,6 +3961,7 @@ export const chubu: OperatorData = {
           lat: 35.41163,
           lng: 136.760602,
           transfer: true,
+          groupId: 3000160,
         },
       ],
     },
@@ -3860,6 +3976,7 @@ export const chubu: OperatorData = {
           lat: 35.379871,
           lng: 136.945536,
           transfer: true,
+          groupId: 3001518,
         },
         {
           name: "富岡前",
@@ -3891,6 +4008,7 @@ export const chubu: OperatorData = {
           lat: 35.423282,
           lng: 137.055622,
           transfer: true,
+          groupId: 1150706,
         },
         {
           name: "明智",
@@ -3925,6 +4043,7 @@ export const chubu: OperatorData = {
           lat: 35.203845,
           lng: 136.929642,
           transfer: true,
+          groupId: 3001801,
         },
         {
           name: "味鋺",
@@ -3991,6 +4110,7 @@ export const chubu: OperatorData = {
           lat: 35.379871,
           lng: 136.945536,
           transfer: true,
+          groupId: 3001518,
         },
       ],
     },
@@ -4005,6 +4125,7 @@ export const chubu: OperatorData = {
           lat: 35.37466,
           lng: 136.764664,
           transfer: true,
+          groupId: 3000156,
         },
         {
           name: "西笠松",
@@ -4046,6 +4167,7 @@ export const chubu: OperatorData = {
           lat: 35.31543,
           lng: 136.699686,
           transfer: true,
+          groupId: 3002009,
         },
       ],
     },
@@ -4060,6 +4182,7 @@ export const chubu: OperatorData = {
           lat: 35.31543,
           lng: 136.699686,
           transfer: true,
+          groupId: 3002009,
         },
         {
           name: "新羽島",
@@ -4081,12 +4204,14 @@ export const chubu: OperatorData = {
           lat: 35.168733,
           lng: 136.882417,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "ささしまライブ",
           lat: 35.161745,
           lng: 136.881815,
           transfer: true,
+          groupId: 3102702,
         },
         {
           name: "小本",
@@ -4148,6 +4273,7 @@ export const chubu: OperatorData = {
           lat: 35.198681,
           lng: 136.861816,
           transfer: true,
+          groupId: 1150234,
         },
         {
           name: "尾張星の宮",
@@ -4174,6 +4300,7 @@ export const chubu: OperatorData = {
           lat: 35.227821,
           lng: 136.952734,
           transfer: true,
+          groupId: 1141107,
         },
       ],
     },
@@ -4190,6 +4317,7 @@ export const chubu: OperatorData = {
           lat: 34.925417,
           lng: 137.157243,
           transfer: true,
+          groupId: 1150219,
         },
         {
           name: "六名",
@@ -4201,6 +4329,7 @@ export const chubu: OperatorData = {
           lat: 34.956231,
           lng: 137.152723,
           transfer: true,
+          groupId: 3000114,
         },
         {
           name: "北岡崎",
@@ -4277,6 +4406,7 @@ export const chubu: OperatorData = {
           lat: 35.175404,
           lng: 137.106945,
           transfer: true,
+          groupId: 9951118,
         },
         {
           name: "山口",
@@ -4293,6 +4423,7 @@ export const chubu: OperatorData = {
           lat: 35.225921,
           lng: 137.078452,
           transfer: true,
+          groupId: 3001218,
         },
         {
           name: "中水野",
@@ -4304,6 +4435,7 @@ export const chubu: OperatorData = {
           lat: 35.26434,
           lng: 137.043766,
           transfer: true,
+          groupId: 1141110,
         },
       ],
     },
@@ -4320,6 +4452,7 @@ export const chubu: OperatorData = {
           lat: 35.182113,
           lng: 137.02171,
           transfer: true,
+          groupId: 9951201,
         },
         {
           name: "はなみずき通",
@@ -4361,6 +4494,7 @@ export const chubu: OperatorData = {
           lat: 35.176623,
           lng: 137.106366,
           transfer: true,
+          groupId: 9951118,
         },
       ],
     },
@@ -4382,6 +4516,7 @@ export const chubu: OperatorData = {
           lat: 35.148986,
           lng: 136.853278,
           transfer: true,
+          groupId: 1150802,
         },
         {
           name: "岩塚",
@@ -4413,18 +4548,21 @@ export const chubu: OperatorData = {
           lat: 35.171252,
           lng: 136.883925,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "伏見",
           lat: 35.169273,
           lng: 136.897427,
           transfer: true,
+          groupId: 9951309,
         },
         {
           name: "栄",
           lat: 35.16999,
           lng: 136.908031,
           transfer: true,
+          groupId: 3001201,
         },
         {
           name: "新栄町",
@@ -4436,12 +4574,14 @@ export const chubu: OperatorData = {
           lat: 35.170625,
           lng: 136.930402,
           transfer: true,
+          groupId: 1141104,
         },
         {
           name: "今池",
           lat: 35.169919,
           lng: 136.937331,
           transfer: true,
+          groupId: 9951313,
         },
         {
           name: "池下",
@@ -4458,6 +4598,7 @@ export const chubu: OperatorData = {
           lat: 35.163923,
           lng: 136.963441,
           transfer: true,
+          groupId: 9951316,
         },
         {
           name: "東山公園",
@@ -4489,6 +4630,7 @@ export const chubu: OperatorData = {
           lat: 35.182415,
           lng: 137.021361,
           transfer: true,
+          groupId: 9951201,
         },
       ],
     },
@@ -4503,18 +4645,21 @@ export const chubu: OperatorData = {
           lat: 35.190691,
           lng: 136.945255,
           transfer: true,
+          groupId: 9951401,
         },
         {
           name: "大曽根",
           lat: 35.192385,
           lng: 136.937204,
           transfer: true,
+          groupId: 1141105,
         },
         {
           name: "平安通",
           lat: 35.195934,
           lng: 136.929784,
           transfer: true,
+          groupId: 9951403,
         },
         {
           name: "志賀本通",
@@ -4541,12 +4686,14 @@ export const chubu: OperatorData = {
           lat: 35.173784,
           lng: 136.908156,
           transfer: true,
+          groupId: 9951408,
         },
         {
           name: "栄",
           lat: 35.16999,
           lng: 136.908031,
           transfer: true,
+          groupId: 3001201,
         },
         {
           name: "矢場町",
@@ -4558,6 +4705,7 @@ export const chubu: OperatorData = {
           lat: 35.157477,
           lng: 136.906815,
           transfer: true,
+          groupId: 9951411,
         },
         {
           name: "東別院",
@@ -4569,6 +4717,7 @@ export const chubu: OperatorData = {
           lat: 35.14352,
           lng: 136.901611,
           transfer: true,
+          groupId: 1141102,
         },
         {
           name: "西高蔵",
@@ -4600,6 +4749,7 @@ export const chubu: OperatorData = {
           lat: 35.117734,
           lng: 136.936603,
           transfer: true,
+          groupId: 9951419,
         },
         {
           name: "瑞穂運動場東",
@@ -4616,6 +4766,7 @@ export const chubu: OperatorData = {
           lat: 35.136946,
           lng: 136.964036,
           transfer: true,
+          groupId: 9951422,
         },
         {
           name: "八事日赤",
@@ -4632,6 +4783,7 @@ export const chubu: OperatorData = {
           lat: 35.163923,
           lng: 136.963441,
           transfer: true,
+          groupId: 9951316,
         },
         {
           name: "自由ヶ丘",
@@ -4648,6 +4800,7 @@ export const chubu: OperatorData = {
           lat: 35.188861,
           lng: 136.953999,
           transfer: true,
+          groupId: 9951428,
         },
       ],
     },
@@ -4662,6 +4815,7 @@ export const chubu: OperatorData = {
           lat: 35.14352,
           lng: 136.901611,
           transfer: true,
+          groupId: 1141102,
         },
         {
           name: "日比野",
@@ -4706,6 +4860,7 @@ export const chubu: OperatorData = {
           lat: 35.223482,
           lng: 136.876941,
           transfer: true,
+          groupId: 3001506,
         },
         {
           name: "庄内緑地公園",
@@ -4732,12 +4887,14 @@ export const chubu: OperatorData = {
           lat: 35.173458,
           lng: 136.896944,
           transfer: true,
+          groupId: 9951606,
         },
         {
           name: "伏見",
           lat: 35.169273,
           lng: 136.897427,
           transfer: true,
+          groupId: 9951309,
         },
         {
           name: "大須観音",
@@ -4749,12 +4906,14 @@ export const chubu: OperatorData = {
           lat: 35.157477,
           lng: 136.906815,
           transfer: true,
+          groupId: 9951411,
         },
         {
           name: "鶴舞",
           lat: 35.15596,
           lng: 136.916749,
           transfer: true,
+          groupId: 1141103,
         },
         {
           name: "荒畑",
@@ -4766,6 +4925,7 @@ export const chubu: OperatorData = {
           lat: 35.149585,
           lng: 136.934146,
           transfer: true,
+          groupId: 9951612,
         },
         {
           name: "川名",
@@ -4782,6 +4942,7 @@ export const chubu: OperatorData = {
           lat: 35.136946,
           lng: 136.964036,
           transfer: true,
+          groupId: 9951422,
         },
         {
           name: "塩釜口",
@@ -4808,6 +4969,7 @@ export const chubu: OperatorData = {
           lat: 35.121097,
           lng: 137.017978,
           transfer: true,
+          groupId: 3000609,
         },
       ],
     },
@@ -4827,6 +4989,7 @@ export const chubu: OperatorData = {
           lat: 35.170761,
           lng: 136.882546,
           transfer: true,
+          groupId: 1141101,
         },
         {
           name: "国際センター",
@@ -4838,12 +5001,14 @@ export const chubu: OperatorData = {
           lat: 35.173098,
           lng: 136.898113,
           transfer: true,
+          groupId: 9951606,
         },
         {
           name: "久屋大通",
           lat: 35.173784,
           lng: 136.908156,
           transfer: true,
+          groupId: 9951408,
         },
         {
           name: "高岳",
@@ -4860,6 +5025,7 @@ export const chubu: OperatorData = {
           lat: 35.169919,
           lng: 136.937331,
           transfer: true,
+          groupId: 9951313,
         },
         {
           name: "吹上",
@@ -4871,6 +5037,7 @@ export const chubu: OperatorData = {
           lat: 35.149585,
           lng: 136.934146,
           transfer: true,
+          groupId: 9951612,
         },
         {
           name: "桜山",
@@ -4892,6 +5059,7 @@ export const chubu: OperatorData = {
           lat: 35.117734,
           lng: 136.936603,
           transfer: true,
+          groupId: 9951419,
         },
         {
           name: "桜本町",
@@ -4941,12 +5109,14 @@ export const chubu: OperatorData = {
           lat: 35.195934,
           lng: 136.929784,
           transfer: true,
+          groupId: 9951403,
         },
         {
           name: "上飯田",
           lat: 35.203845,
           lng: 136.929642,
           transfer: true,
+          groupId: 3001801,
         },
       ],
     },
@@ -4963,24 +5133,28 @@ export const chubu: OperatorData = {
           lat: 35.191372,
           lng: 136.937494,
           transfer: true,
+          groupId: 1141105,
         },
         {
           name: "ナゴヤドーム前矢田",
           lat: 35.19025,
           lng: 136.947407,
           transfer: true,
+          groupId: 9951401,
         },
         {
           name: "砂田橋",
           lat: 35.188821,
           lng: 136.954268,
           transfer: true,
+          groupId: 9951428,
         },
         {
           name: "守山",
           lat: 35.197431,
           lng: 136.956639,
           transfer: true,
+          groupId: 3001208,
         },
         {
           name: "金屋",
