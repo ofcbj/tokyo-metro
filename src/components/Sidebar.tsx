@@ -42,7 +42,7 @@ export const Sidebar = ({
   regions,
 }: SidebarProps) => {
   return (
-    <Box sx={{ width: 384, backgroundColor: 'white', boxShadow: 3, overflowY: 'auto', display: 'flex', flexDirection: 'column', height: '100%' }}>
+    <Box sx={{ width: { xs: '100%', md: 384 }, flexShrink: 0, backgroundColor: 'white', boxShadow: 3, overflowY: 'auto', display: 'flex', flexDirection: 'column', height: '100%' }}>
       <SidebarHeader
         isGameMode={isGameMode}
         animationSpeed={animationSpeed}

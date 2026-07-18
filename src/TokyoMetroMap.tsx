@@ -1,4 +1,6 @@
 import { useState, useCallback, useMemo } from 'react';
+import { Drawer, IconButton, useMediaQuery } from '@mui/material';
+import { Menu as MenuIcon } from '@mui/icons-material';
 import { kanto } from './lines/kanto';
 import { chubu } from './lines/chubu';
 import { kansai } from './lines/kansai';
@@ -43,6 +45,10 @@ const TokyoMetroMap = () => {
   const [showApiInput, setShowApiInput] = useState<boolean>(false);
   const [autoZoom, setAutoZoom] = useState<boolean>(true);
   const [shouldPanOnNextUpdate, setShouldPanOnNextUpdate] = useState<boolean>(false);
+
+  // 모바일: 사이드바를 슬라이드 Drawer로 전환
+  const isMobile = useMediaQuery('(max-width:768px)');
+  const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
   const allLineIds = useMemo(() => Object.values(lineData).flat().map(line => line.id), []);
 
@@ -161,6 +167,27 @@ const TokyoMetroMap = () => {
     );
   }
 
+  const sidebarEl = (
+    <Sidebar
+      isGameMode={isGameMode}
+      searchTerm={searchTerm}
+      setSearchTerm={setSearchTerm}
+      autoZoom={autoZoom}
+      setAutoZoom={setAutoZoom}
+      allLineIds={allLineIds}
+      selectedLines={selectedLines}
+      showAllLines={showAllLines}
+      setSelectedLines={setSelectedLines}
+      animationSpeed={animationSpeed}
+      setAnimationSpeed={setAnimationSpeed}
+      startGame={startGame}
+      endGame={endGame}
+      gameLog={gameLog}
+      toggleLine={toggleLine}
+      regions={regions}
+    />
+  );
+
   return (
     <>
       {/* 게임 인트로 모달 */}
@@ -192,25 +219,31 @@ const TokyoMetroMap = () => {
           />
         )}
 
-        {/* 왼쪽 사이드바 */}
-        <Sidebar
-          isGameMode={isGameMode}
-          searchTerm={searchTerm}
-          setSearchTerm={setSearchTerm}
-          autoZoom={autoZoom}
-          setAutoZoom={setAutoZoom}
-          allLineIds={allLineIds}
-          selectedLines={selectedLines}
-          showAllLines={showAllLines}
-          setSelectedLines={setSelectedLines}
-          animationSpeed={animationSpeed}
-          setAnimationSpeed={setAnimationSpeed}
-          startGame={startGame}
-          endGame={endGame}
-          gameLog={gameLog}
-          toggleLine={toggleLine}
-          regions={regions}
-        />
+        {/* 사이드바: 데스크톱은 인라인, 모바일은 슬라이드 Drawer */}
+        {isMobile ? (
+          <>
+            <IconButton
+              onClick={() => setDrawerOpen(true)}
+              aria-label="menu"
+              sx={{
+                position: 'absolute', top: 8, left: 8, zIndex: 1200,
+                backgroundColor: 'white', boxShadow: 3,
+                '&:hover': { backgroundColor: 'white' },
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Drawer
+              open={drawerOpen}
+              onClose={() => setDrawerOpen(false)}
+              PaperProps={{ sx: { width: '85vw', maxWidth: 384 } }}
+            >
+              {sidebarEl}
+            </Drawer>
+          </>
+        ) : (
+          sidebarEl
+        )}
 
         {/* 오른쪽 지도 */}
         <div className="flex-1 relative">

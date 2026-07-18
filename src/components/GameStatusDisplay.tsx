@@ -88,7 +88,7 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
                 backdropFilter: 'blur(12px)',
                 borderRadius: 4,
                 p: 2,
-                width: 200,
+                width: { xs: 150, sm: 200 },
                 transform: showDiscoveredAnim ? 'scale(1.1)' : 'scale(1)',
                 transition: 'all 0.3s',
                 boxShadow: showDiscoveredAnim ? '0 0 30px rgba(147, 51, 234, 0.5)' : undefined,
@@ -148,7 +148,7 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
           </Box>
 
           {/* 중앙: 빈 공간 (토스트 메시지 자리) */}
-          <Box sx={{ flexShrink: 0, width: 450 }}></Box>
+          <Box sx={{ flexShrink: 0, width: { xs: 0, sm: 450 } }}></Box>
 
           {/* 오른쪽: 남은 클릭 수 */}
           <Box sx={{ pointerEvents: 'auto', flexShrink: 0 }}>
@@ -161,7 +161,7 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
                 backdropFilter: 'blur(12px)',
                 borderRadius: 4,
                 p: 2,
-                width: 200,
+                width: { xs: 150, sm: 200 },
                 transform: showClicksAnim ? 'scale(1.1)' : 'scale(1)',
                 transition: 'all 0.3s',
                 boxShadow: showClicksAnim ? '0 0 30px rgba(59, 130, 246, 0.5)' : undefined,
@@ -246,7 +246,8 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
                 borderColor: toastMessage.color,
                 background: `linear-gradient(135deg, ${toastMessage.color}15, ${toastMessage.color}25)`,
                 backdropFilter: 'blur(8px)',
-                width: 450,
+                width: { xs: '90vw', sm: 450 },
+                maxWidth: 450,
                 display: 'flex',
                 alignItems: 'center',
                 gap: 2,
