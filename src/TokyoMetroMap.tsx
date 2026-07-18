@@ -183,7 +183,7 @@ const TokyoMetroMap = () => {
       setSelectedLines={setSelectedLines}
       animationSpeed={animationSpeed}
       setAnimationSpeed={setAnimationSpeed}
-      startGame={startGame}
+      startGame={isMobile ? handleGameStart : startGame}
       endGame={endGame}
       gameLog={gameLog}
       toggleLine={toggleLine}
