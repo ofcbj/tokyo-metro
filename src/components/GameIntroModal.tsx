@@ -103,7 +103,7 @@ export const GameIntroModal = ({ onCancel, onStart }: GameIntroModalProps) => {
             </Typography>
             <Typography variant="body2" sx={{ color: 'red.800' }}>
               <Typography component="strong" sx={{ fontSize: 28, color: 'red.600', fontWeight: 'bold' }}>
-                300回
+                365回
               </Typography>
               のクリックで全路線を発見せよ!
             </Typography>
