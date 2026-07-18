@@ -41,6 +41,7 @@ export class CanvasMetroOverlay {
   private renderScheduled = false; // rAF 쓰로틀 플래그
   private allLinesCache: Line[]; // lineData를 flat()한 결과 캐시
   private selectedSet: Set<string>; // selectedLines 조회용 Set
+  private groupToLines = new Map<number, Set<string>>(); // groupId → 그 환승그룹을 지나는 노선 id들
   private mapListeners: google.maps.MapsEventListener[] = []; // onRemove에서 정리
   private offsetX = 0; // 캔버스 배치 오프셋 (div 픽셀 → 캔버스 로컬 좌표 변환)
   private offsetY = 0;
@@ -53,6 +54,7 @@ export class CanvasMetroOverlay {
     this.options = options;
     this.allLinesCache = Object.values(options.lineData).flat();
     this.selectedSet = new Set(options.selectedLines);
+    this.buildGroupIndex();
 
     // Google Maps OverlayView 생성
     const OverlayViewClass = window.google.maps.OverlayView;
@@ -145,6 +147,28 @@ export class CanvasMetroOverlay {
     }
     this.tooltipEl = null;
     this.stopAnimation();
+  }
+
+  // groupId → 노선 id 집합 인덱스 (게임 모드 '소진된 환승역' 판정용)
+  private buildGroupIndex() {
+    const map = new Map<number, Set<string>>();
+    for (const line of this.allLinesCache) {
+      for (const s of line.stations) {
+        if (s.groupId == null) continue;
+        let set = map.get(s.groupId);
+        if (!set) { set = new Set(); map.set(s.groupId, set); }
+        set.add(line.id);
+      }
+    }
+    this.groupToLines = map;
+  }
+
+  // 이 환승 그룹의 모든 노선이 이미 선택(게임에선 발견)되었는가
+  private isGroupExhausted(groupId: number): boolean {
+    const lines = this.groupToLines.get(groupId);
+    if (!lines) return false;
+    for (const id of lines) if (!this.selectedSet.has(id)) return false;
+    return true;
   }
 
   draw() {
@@ -304,6 +328,20 @@ export class CanvasMetroOverlay {
       this.ctx.beginPath();
       this.ctx.arc(x, y, radius, 0, Math.PI * 2);
       this.ctx.fill();
+
+      // 게임 모드: 연결된 모든 노선이 발견된 환승역은 X 표시(소진됨 → 헛클릭 방지)
+      if (this.options.isGameMode && station.transfer && station.groupId != null && this.isGroupExhausted(station.groupId)) {
+        const d = radius * 0.55;
+        this.ctx.strokeStyle = '#555555';
+        this.ctx.lineWidth = 2;
+        this.ctx.lineCap = 'round';
+        this.ctx.beginPath();
+        this.ctx.moveTo(x - d, y - d);
+        this.ctx.lineTo(x + d, y + d);
+        this.ctx.moveTo(x - d, y + d);
+        this.ctx.lineTo(x + d, y - d);
+        this.ctx.stroke();
+      }
 
       markers.push({
         station,
@@ -568,9 +606,10 @@ export class CanvasMetroOverlay {
     const prevSelected = this.options.selectedLines || [];
     this.options = { ...this.options, ...newOptions };
 
-    // lineData가 바뀌면 flat 캐시 갱신
+    // lineData가 바뀌면 flat 캐시 + groupId 인덱스 갱신
     if (newOptions.lineData) {
       this.allLinesCache = Object.values(newOptions.lineData).flat();
+      this.buildGroupIndex();
     }
 
     // 선택된 노선 변경 시 Set 캐시 갱신 + 새로 추가된 노선만 애니메이션
