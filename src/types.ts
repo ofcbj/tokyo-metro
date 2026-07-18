@@ -42,6 +42,7 @@ export interface GameResult {
 // Toast message
 export interface ToastMessage {
   text: string;
+  subText?: string; // 보조 텍스트(한국어명 등). 괄호로 합치지 않고 별도 표시.
   color: string;
   isError?: boolean;
 }

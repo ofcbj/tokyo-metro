@@ -16,17 +16,14 @@ export const SidebarHeader = ({
   startGame,
   endGame,
 }: SidebarHeaderProps) => {
-  const speedMarks = [
-    { value: 0.5, label: '0.5x' },
-    { value: 1.0, label: '1.0x' },
-    { value: 1.5, label: '1.5x' },
-    { value: 2.0, label: '2.0x' },
-  ];
+  const SPEEDS = [0.25, 0.5, 1, 2, 4]; // 중앙 1x가 기본
+  const speedMarks = SPEEDS.map((s, i) => ({ value: i, label: `${s}x` }));
 
   const getSpeedLabel = (value: number): string => {
-    if (value === 0.5) return '遅い';
-    if (value === 1.0) return '普通';
-    if (value === 1.5) return '速い';
+    if (value <= 0.25) return '最遅';
+    if (value < 1) return '遅い';
+    if (value === 1) return '普通';
+    if (value <= 2) return '速い';
     return '超速';
   };
 
@@ -51,13 +48,12 @@ export const SidebarHeader = ({
             </Typography>
           </Box>
           <Slider
-            value={animationSpeed}
-            onChange={(_, value) => setAnimationSpeed(value)}
-            min={0.5}
-            max={2.0}
-            step={0.5}
+            value={Math.max(0, SPEEDS.indexOf(animationSpeed))}
+            onChange={(_, value) => setAnimationSpeed(SPEEDS[value as number])}
+            min={0}
+            max={SPEEDS.length - 1}
+            step={1}
             marks={speedMarks}
-            valueLabelDisplay="auto"
             size="small"
           />
         </Paper>

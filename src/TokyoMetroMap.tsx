@@ -24,7 +24,7 @@ import { MapOverlays } from './components/MapOverlays';
 import { GameStatusDisplay } from './components/GameStatusDisplay';
 
 // Utils
-import { findLinesForStation } from './utils/mapUtils';
+import { findLinesForStation, findLinesForGroup } from './utils/mapUtils';
 import { mergeOperators } from './utils/operators';
 
 // Types
@@ -93,8 +93,11 @@ const TokyoMetroMap = () => {
   }, [allLineIds]);
 
   // 역을 클릭했을 때 해당 역의 모든 노선 선택
-  const selectLinesForStation = useCallback((stationName: string, stationLat: number, stationLng: number, isTransfer?: boolean) => {
-    const lineIds = findLinesForStation(stationName, stationLat, stationLng, lineData);
+  const selectLinesForStation = useCallback((stationName: string, stationLat: number, stationLng: number, isTransfer?: boolean, groupId?: number) => {
+    // 환승 그룹(groupId)이 있으면 그걸로 정확히 연결선만 찾는다(동명 역 전국 오연결 방지).
+    const lineIds = groupId != null
+      ? findLinesForGroup(groupId, lineData)
+      : findLinesForStation(stationName, stationLat, stationLng, lineData);
 
     // 게임 모드인 경우
     if (isGameMode) {

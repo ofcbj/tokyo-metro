@@ -11,7 +11,7 @@ export const useCanvasMapDisplay = (
   isGameMode              : boolean,
   animationSpeed          : number,
   setShouldPanOnNextUpdate: (value: boolean) => void,
-  selectLinesForStation   : (name: string, lat: number, lng: number, isTransfer?: boolean) => void,
+  selectLinesForStation   : (name: string, lat: number, lng: number, isTransfer?: boolean, groupId?: number) => void,
   hideLinesForStation     : (name: string, lat: number, lng: number) => void
 ) => {
   const overlayRef = useRef<CanvasMetroOverlay | null>(null);

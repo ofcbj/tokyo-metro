@@ -12,6 +12,7 @@ import {
   Paper,
   Stack,
   Collapse,
+  Slider,
 } from '@mui/material';
 import {
   Search as SearchIcon,
@@ -20,6 +21,9 @@ import {
   ChevronRight as ChevronRightIcon,
 } from '@mui/icons-material';
 import { LineData, Line } from '../types';
+
+// 애니메이션 속도 눈금 (중앙 1x가 기본, 좌: 느림 / 우: 빠름)
+const SPEEDS = [0.25, 0.5, 1, 2, 4];
 
 interface NormalModeSidebarProps {
   searchTerm: string;
@@ -34,6 +38,8 @@ interface NormalModeSidebarProps {
   // 지역명 → 운영사 데이터(회사 → 노선 배열)
   regions: Record<string, LineData>;
   isMobile: boolean;
+  animationSpeed: number;
+  setAnimationSpeed: (speed: number) => void;
 }
 
 export const NormalModeSidebar = ({
@@ -48,6 +54,8 @@ export const NormalModeSidebar = ({
   toggleLine,
   regions,
   isMobile,
+  animationSpeed,
+  setAnimationSpeed,
 }: NormalModeSidebarProps) => {
   const regionCount = (r: string) => Object.values(regions[r]).reduce((s, l) => s + l.length, 0);
   // 지역별 표시(선택)된 노선 수 — 게임 모드에선 발견 노선이 곧 표시 노선이라 발견 진행도가 된다
@@ -112,6 +120,18 @@ export const NormalModeSidebar = ({
     setExpandedCompanies(new Set());
   };
 
+  // 회사 노선 일괄 표시/해제 (전부 선택돼 있으면 해제, 아니면 전부 표시)
+  const toggleCompanyLines = (companyLines: Line[]) => {
+    const ids = companyLines.map(l => l.id);
+    const allSel = ids.every(id => selectedSet.has(id));
+    if (allSel) {
+      const remove = new Set(ids);
+      setSelectedLines(selectedLines.filter(id => !remove.has(id)));
+    } else {
+      setSelectedLines([...new Set([...selectedLines, ...ids])]);
+    }
+  };
+
   return (
     <>
       {/* 상단 컨트롤 영역 */}
@@ -170,9 +190,25 @@ export const NormalModeSidebar = ({
               />
             }
             label={<Typography variant="body2">路線選択時自動ズーム</Typography>}
-            sx={{ mb: 1 }}
+            sx={{ mb: 1, display: 'block' }}
           />
         )}
+
+        {/* 애니메이션 속도 (중앙 1x가 기본, 좌: 느림 / 우: 빠름) */}
+        <Box sx={{ px: 1, mb: 1 }}>
+          <Typography variant="caption" color="text.secondary">
+            アニメーション速度: {animationSpeed}x
+          </Typography>
+          <Slider
+            value={Math.max(0, SPEEDS.indexOf(animationSpeed))}
+            onChange={(_, v) => setAnimationSpeed(SPEEDS[v as number])}
+            min={0}
+            max={SPEEDS.length - 1}
+            step={1}
+            marks={SPEEDS.map((s, i) => ({ value: i, label: `${s}x` }))}
+            size="small"
+          />
+        </Box>
 
         {/* 선택된 노선 수 */}
         {(selectedLines.length > 0 || allLineIds.length > 0) && (
@@ -197,6 +233,9 @@ export const NormalModeSidebar = ({
         <Stack spacing={1}>
           {companies.map(({ name, lines }) => {
             const expanded = isExpanded(name);
+            const selCount = lines.reduce((c, l) => c + (selectedSet.has(l.id) ? 1 : 0), 0);
+            const allSel = selCount === lines.length && lines.length > 0;
+            const someSel = selCount > 0 && !allSel;
             return (
               <Box key={name}>
                 {/* 회사 행 */}
@@ -207,7 +246,7 @@ export const NormalModeSidebar = ({
                     alignItems: 'center',
                     gap: 1,
                     px: 1,
-                    py: 1,
+                    py: 0.5,
                     borderRadius: 1,
                     cursor: 'pointer',
                     backgroundColor: expanded ? 'grey.100' : 'transparent',
@@ -221,6 +260,16 @@ export const NormalModeSidebar = ({
                   <Typography variant="caption" color="text.secondary" sx={{ flexShrink: 0 }}>
                     {lines.length}路線
                   </Typography>
+                  {/* 회사 노선 일괄 표시/해제 */}
+                  <Checkbox
+                    size="small"
+                    checked={allSel}
+                    indeterminate={someSel}
+                    onClick={(e) => e.stopPropagation()}
+                    onChange={() => toggleCompanyLines(lines)}
+                    sx={{ p: 0.5, flexShrink: 0 }}
+                    title="この会社の全路線を表示/解除"
+                  />
                 </Box>
 
                 {/* 노선 리스트 */}

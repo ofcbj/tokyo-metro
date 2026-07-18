@@ -68,6 +68,8 @@ export const Sidebar = ({
           toggleLine={toggleLine}
           regions={regions}
           isMobile={isMobile}
+          animationSpeed={animationSpeed}
+          setAnimationSpeed={setAnimationSpeed}
         />
       )}
     </Box>

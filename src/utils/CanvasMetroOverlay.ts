@@ -1,4 +1,5 @@
 import { LineData, Line, Station } from '../types';
+import { animDurationMs } from './mapUtils';
 
 // window.google 전역 선언은 useGoogleMap.tsx 에 있다 (전역 augmentation은 프로젝트 전체에 적용됨)
 
@@ -7,7 +8,7 @@ interface CanvasOverlayOptions {
   selectedLines: string[];
   animationSpeed: number;
   isGameMode: boolean;
-  onStationClick: (name: string, lat: number, lng: number, isTransfer?: boolean) => void;
+  onStationClick: (name: string, lat: number, lng: number, isTransfer?: boolean, groupId?: number) => void;
   onStationRightClick: (name: string, lat: number, lng: number) => void;
 }
 
@@ -17,6 +18,7 @@ interface AnimatedLine {
   progress: number; // 0-1
   startTime: number;
   duration: number;
+  originIndex: number; // 애니메이션이 퍼져나가는 기점 역 인덱스 (클릭한 역)
 }
 
 interface StationMarker {
@@ -45,6 +47,9 @@ export class CanvasMetroOverlay {
   private mapListeners: google.maps.MapsEventListener[] = []; // onRemove에서 정리
   private offsetX = 0; // 캔버스 배치 오프셋 (div 픽셀 → 캔버스 로컬 좌표 변환)
   private offsetY = 0;
+  private lastClick: { lat: number; lng: number; time: number } | null = null; // 애니메이션 기점(클릭 위치)
+  private followLineId: string | null = null; // 게임 중 선두 역을 따라갈 노선
+  private lastFrontIndex = -1; // 마지막으로 카메라를 옮긴 선두 역 인덱스
 
   // 줌 단계별 LOD(Level of Detail) 임계값
   private static readonly ZOOM_ALL_STATIONS = 12; // 이 줌 이상: 모든 역 표시
@@ -235,6 +240,56 @@ export class CanvasMetroOverlay {
     }
   }
 
+  // 애니메이션 진행에 따라 드러난 폴리라인 경로(거리 기준, 선두는 보간)와
+  // 완전히 드러난 역 인덱스 범위 [lo, hi]를 반환한다.
+  // 인덱스가 아닌 누적 거리로 진행해 역 간격과 무관하게 펜이 일정 속도로 움직인다.
+  private revealedPath(
+    line: Line,
+    animatedLine?: AnimatedLine
+  ): { points: { lat: number; lng: number }[]; lo: number; hi: number } {
+    const st = line.stations;
+    const n = st.length;
+    if (!animatedLine || animatedLine.progress >= 1) {
+      return { points: st.map(s => ({ lat: s.lat, lng: s.lng })), lo: 0, hi: n - 1 };
+    }
+    // 누적 거리
+    const cum = new Array(n);
+    cum[0] = 0;
+    for (let i = 1; i < n; i++) {
+      const dLat = st[i].lat - st[i - 1].lat;
+      const dLng = st[i].lng - st[i - 1].lng;
+      cum[i] = cum[i - 1] + Math.hypot(dLat, dLng);
+    }
+    const o = animatedLine.originIndex;
+    const oD = cum[o];
+    const maxReach = Math.max(oD - cum[0], cum[n - 1] - oD) || 1;
+    const revealed = maxReach * animatedLine.progress;
+    const backT = Math.max(cum[0], oD - revealed);
+    const fwdT = Math.min(cum[n - 1], oD + revealed);
+
+    let lo = o, hi = o;
+    while (lo > 0 && cum[lo - 1] >= backT) lo--;
+    while (hi < n - 1 && cum[hi + 1] <= fwdT) hi++;
+
+    const lerp = (a: Station, b: Station, t: number) => ({
+      lat: a.lat + (b.lat - a.lat) * t,
+      lng: a.lng + (b.lng - a.lng) * t,
+    });
+    const points: { lat: number; lng: number }[] = [];
+    // 뒤쪽 보간 선두
+    if (lo > 0 && backT < cum[lo]) {
+      const seg = cum[lo] - cum[lo - 1] || 1;
+      points.push(lerp(st[lo - 1], st[lo], (backT - cum[lo - 1]) / seg));
+    }
+    for (let i = lo; i <= hi; i++) points.push({ lat: st[i].lat, lng: st[i].lng });
+    // 앞쪽 보간 선두
+    if (hi < n - 1 && fwdT > cum[hi]) {
+      const seg = cum[hi + 1] - cum[hi] || 1;
+      points.push(lerp(st[hi], st[hi + 1], (fwdT - cum[hi]) / seg));
+    }
+    return { points, lo, hi };
+  }
+
   private drawLine(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, step: number) {
     const animatedLine = this.animatedLines.get(line.id);
 
@@ -244,32 +299,35 @@ export class CanvasMetroOverlay {
     );
     if (!hasVisible) return;
 
-    // 애니메이션 진행도 (갱신은 animate 루프가 담당, 여기선 읽기만)
-    const progress = animatedLine ? animatedLine.progress : 1.0;
+    // 애니메이션: 기점에서 거리 기준으로 퍼져나가는 경로(선두 보간 포함)
+    const { points: pathPoints } = this.revealedPath(line, animatedLine);
 
-    // 그릴 역의 개수 (애니메이션)
-    const stationsToDrawCount = Math.ceil(line.stations.length * progress);
-    const stationsToDraw = line.stations.slice(0, stationsToDrawCount);
+    if (pathPoints.length < 2) return;
 
-    if (stationsToDraw.length < 2) return;
+    // 애니메이션 중인 노선은 더 굵게 + 글로우로 강조
+    const animating = !!animatedLine && animatedLine.progress < 1;
 
     // 폴리라인 그리기
     this.ctx.strokeStyle = line.color;
-    this.ctx.lineWidth = 4;
+    this.ctx.lineWidth = animating ? 7 : 4;
     this.ctx.lineCap = 'round';
     this.ctx.lineJoin = 'round';
-    this.ctx.globalAlpha = 0.8;
+    this.ctx.globalAlpha = animating ? 1.0 : 0.8;
+    if (animating) {
+      this.ctx.shadowColor = line.color;
+      this.ctx.shadowBlur = 14;
+    }
 
     this.ctx.beginPath();
-    const lastIdx = stationsToDraw.length - 1;
+    const lastIdx = pathPoints.length - 1;
     let started = false;
     for (let idx = 0; idx <= lastIdx; idx++) {
-      // 저줌에서는 step 간격으로 정점을 솎되, 마지막 역은 항상 포함해 선이 끊기지 않게 한다
+      // 저줌에서는 step 간격으로 정점을 솎되, 마지막 점은 항상 포함해 선이 끊기지 않게 한다
       if (step > 1 && idx % step !== 0 && idx !== lastIdx) continue;
 
-      const station = stationsToDraw[idx];
+      const pt = pathPoints[idx];
       const point = projection.fromLatLngToDivPixel(
-        new google.maps.LatLng(station.lat, station.lng)
+        new google.maps.LatLng(pt.lat, pt.lng)
       );
       if (!point) continue;
       const x = point.x - this.offsetX;
@@ -283,38 +341,50 @@ export class CanvasMetroOverlay {
       }
     }
     this.ctx.stroke();
+    this.ctx.shadowBlur = 0; // 이후 그리기에 글로우 번지지 않게 리셋
     this.ctx.globalAlpha = 1.0;
   }
 
   private drawStations(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, stationMode: 'all' | 'transfer'): StationMarker[] {
     const animatedLine = this.animatedLines.get(line.id);
-    const progress = animatedLine?.progress ?? 1.0;
-    const stationsToDrawCount = Math.ceil(line.stations.length * progress);
-    const stationsToDraw = line.stations.slice(0, stationsToDrawCount);
+    const { lo, hi } = this.revealedPath(line, animatedLine);
+    const total = line.stations.length;
+    const animating = !!animatedLine && animatedLine.progress < 1;
+    // 애니메이션 중 확장 링 위상 (매 프레임 갱신되어 원이 커졌다 사라짐)
+    const ripplePhase = animating ? (Date.now() % 750) / 750 : 0;
 
     const markers: StationMarker[] = [];
 
-    stationsToDraw.forEach(station => {
+    for (let i = lo; i <= hi; i++) {
+      const station = line.stations[i];
       // LOD: 중간 줌에서는 환승역만 그린다
-      if (stationMode === 'transfer' && !station.transfer) {
-        return;
-      }
-
+      if (stationMode === 'transfer' && !station.transfer) continue;
       // 뷰포트 체크 (가상화)
-      if (!bounds.contains({ lat: station.lat, lng: station.lng })) {
-        return;
-      }
+      if (!bounds.contains({ lat: station.lat, lng: station.lng })) continue;
 
       const point = projection.fromLatLngToDivPixel(
         new google.maps.LatLng(station.lat, station.lng)
       );
-      if (!point) return;
+      if (!point) continue;
       const x = point.x - this.offsetX;
       const y = point.y - this.offsetY;
 
-      // 역 마커 그리기
-      const radius = station.transfer ? 8 : 5;
+      // 역 마커 그리기 (애니메이션 중엔 크게)
+      const baseRadius = station.transfer ? 8 : 5;
+      const radius = animating ? baseRadius + 3 : baseRadius;
       const fillColor = station.transfer ? '#FFFFFF' : line.color;
+
+      // 퍼져나가는 선두 역에 확장 링(ripple) 연출
+      const isFront = animating && ((i === lo && lo > 0) || (i === hi && hi < total - 1) || lo === hi);
+      if (isFront) {
+        this.ctx.globalAlpha = (1 - ripplePhase) * 0.9;
+        this.ctx.strokeStyle = line.color;
+        this.ctx.lineWidth = 2.5;
+        this.ctx.beginPath();
+        this.ctx.arc(x, y, radius + ripplePhase * 18, 0, Math.PI * 2);
+        this.ctx.stroke();
+        this.ctx.globalAlpha = 1.0;
+      }
 
       // 외곽선
       this.ctx.strokeStyle = line.color;
@@ -343,13 +413,8 @@ export class CanvasMetroOverlay {
         this.ctx.stroke();
       }
 
-      markers.push({
-        station,
-        line,
-        screenX: x,
-        screenY: y
-      });
-    });
+      markers.push({ station, line, screenX: x, screenY: y });
+    }
 
     return markers;
   }
@@ -371,6 +436,8 @@ export class CanvasMetroOverlay {
 
     // 터치 기기는 hover가 없으므로 탭(클릭) 시에도 정보 팝업을 띄운다.
     if (station) {
+      // 애니메이션 기점으로 사용 (누른 역에서 노선이 퍼져나가게)
+      this.lastClick = { lat: station.station.lat, lng: station.station.lng, time: Date.now() };
       this.hoveredStation = station;
       this.showTooltip(station);
       this.requestDraw();
@@ -378,7 +445,8 @@ export class CanvasMetroOverlay {
         station.station.name,
         station.station.lat,
         station.station.lng,
-        station.station.transfer
+        station.station.transfer,
+        station.station.groupId
       );
     } else {
       // 빈 곳 탭 → 팝업 닫기
@@ -567,6 +635,9 @@ export class CanvasMetroOverlay {
         if (animLine.progress >= 1.0) this.animatedLines.delete(id);
       });
 
+      // 게임 모드: 따라가는 노선의 선두 역으로 카메라 이동
+      this.followFrontStation();
+
       if (hasActiveAnimation) {
         this.draw();
         this.animationFrameId = requestAnimationFrame(animate);
@@ -590,21 +661,64 @@ export class CanvasMetroOverlay {
 
   // 외부에서 호출: 새로운 노선 추가
   public addLine(lineId: string) {
-    const allLines = Object.values(this.options.lineData).flat();
-    const line = allLines.find(l => l.id === lineId);
+    const line = this.allLinesCache.find(l => l.id === lineId);
     if (!line) return;
 
-    const baseDuration = 1500 / (this.options.isGameMode ? this.options.animationSpeed : 1.0);
+    // 노선 길이에 비례(클램프)한 애니메이션 길이 — 짧은 노선은 짧게, 긴 노선은 펜이 안 튀게
+    const baseDuration = animDurationMs(line, this.options.animationSpeed || 1.0);
 
     this.animatedLines.set(lineId, {
       lineId,
       line,
       progress: 0,
       startTime: Date.now(),
-      duration: baseDuration
+      duration: baseDuration,
+      originIndex: this.computeOriginIndex(line),
     });
 
+    // 게임 모드: 가장 최근 발견한 노선의 선두 역을 카메라가 따라간다
+    if (this.options.isGameMode) {
+      this.followLineId = lineId;
+      this.lastFrontIndex = -1;
+    }
+
     this.startAnimation();
+  }
+
+  // 최근 클릭한 역이 이 노선 위에 있으면 그 역 인덱스를, 아니면 0(시작역)을 기점으로.
+  private computeOriginIndex(line: Line): number {
+    const c = this.lastClick;
+    // 게임은 노선을 순차로(노선당 수 초~십수 초) 발견하므로 창을 아주 넉넉히 둔다.
+    // 정확성은 아래 거리 조건이 담당: 클릭 위치가 이 노선 위에 있을 때만 기점으로 사용.
+    if (!c || Date.now() - c.time > 300000) return 0;
+    let best = 0, bestD = Infinity;
+    line.stations.forEach((s, i) => {
+      const d = Math.abs(s.lat - c.lat) + Math.abs(s.lng - c.lng);
+      if (d < bestD) { bestD = d; best = i; }
+    });
+    return bestD < 0.02 ? best : 0; // 클릭 위치가 노선에서 멀면 시작역부터
+  }
+
+  // 게임 중: 따라가는 노선의 선두(퍼지는 끝) 역으로 카메라를 부드럽게 이동
+  private followFrontStation() {
+    if (!this.options.isGameMode || !this.followLineId) return;
+    const al = this.animatedLines.get(this.followLineId);
+    if (!al || al.progress >= 1) { this.followLineId = null; this.lastFrontIndex = -1; return; }
+    const line = al.line;
+    const total = line.stations.length;
+    const { lo, hi } = this.revealedPath(line, al);
+    // 아직 확장 중인 선두: 앞쪽(hi) 우선, 없으면 뒤쪽(lo)
+    const front = hi < total - 1 ? hi : (lo > 0 ? lo : -1);
+    if (front < 0 || front === this.lastFrontIndex) return; // 새 역이 드러났을 때만 이동
+    this.lastFrontIndex = front;
+    const s = line.stations[front];
+    const map = this.overlay.getMap() as google.maps.Map | null | undefined;
+    if (!map) return;
+    // 역 원이 보이는 최소 줌 미만이면 확대(그 이상이면 그대로 둔다)
+    if ((map.getZoom() ?? 0) < CanvasMetroOverlay.ZOOM_ALL_STATIONS) {
+      map.setZoom(CanvasMetroOverlay.ZOOM_ALL_STATIONS);
+    }
+    map.panTo({ lat: s.lat, lng: s.lng });
   }
 
   // 외부에서 호출: 노선 제거

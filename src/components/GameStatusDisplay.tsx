@@ -220,10 +220,8 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
 
       {/* 토스트 메시지 (별도 레이어) */}
       {toastMessage && (() => {
-        // "노선명 (한국어)" 형식을 파싱
-        const match = toastMessage.text.match(/^(.+?)\s*\((.+?)\)$/);
-        const japName = match ? match[1] : toastMessage.text;
-        const korName = match ? match[2] : null;
+        const japName = toastMessage.text;
+        const korName = toastMessage.subText ?? null;
 
         return (
           <Box

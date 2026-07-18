@@ -142,6 +142,11 @@ export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLi
               >
                 {toastMessage?.text}
               </Typography>
+              {toastMessage?.subText && (
+                <Typography variant="body2" sx={{ fontWeight: 600, color: 'rgb(55, 65, 81)' }}>
+                  {toastMessage.subText}
+                </Typography>
+              )}
             </Box>
             <Typography sx={{ fontSize: 48 }}>
               {toastMessage?.isError ? '😔' : '🎉'}

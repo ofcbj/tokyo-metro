@@ -1,5 +1,45 @@
 import { useState, useCallback, useRef, Dispatch, SetStateAction } from 'react';
 import { LineData, GameLogEntry, GameResult, ToastMessage, ClickEffect, Line } from '../types';
+import { animDurationMs } from '../utils/mapUtils';
+
+// 일본어 여성 음성을 우선 선택 (귀여운/애니풍에 가깝게 하려고 피치를 높인다).
+// 브라우저 기본 TTS라 진짜 성우 목소리는 아니고, OS 제공 음성 중 여성 목소리를 고른다.
+let cachedJaVoice: SpeechSynthesisVoice | null = null;
+const pickJaVoice = (): SpeechSynthesisVoice | null => {
+  if (cachedJaVoice) return cachedJaVoice;
+  const voices = window.speechSynthesis.getVoices();
+  const ja = voices.filter(v => v.lang.toLowerCase().startsWith('ja'));
+  if (!ja.length) return null; // 아직 로드 전 → 다음 호출 때 재시도
+  const female = ['kyoko', 'o-ren', 'google', 'nanami', 'haruka', 'ayumi', 'sayaka', 'mizuki', 'sakura', 'female'];
+  const male = ['otoya', 'ichiro', 'hattori', 'daichi', 'male'];
+  cachedJaVoice =
+    ja.find(v => female.some(n => v.name.toLowerCase().includes(n)) && !male.some(n => v.name.toLowerCase().includes(n))) ||
+    ja.find(v => !male.some(n => v.name.toLowerCase().includes(n))) ||
+    ja[0];
+  return cachedJaVoice;
+};
+
+// 노선명을 일본어 여성 음성(고피치)으로 읽어준다. 미지원/실패 시 조용히 무시.
+const speakJa = (text: string) => {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window) || !text) return;
+  try {
+    window.speechSynthesis.cancel(); // 순차 발음: 이전 발화 중단
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'ja-JP';
+    const v = pickJaVoice();
+    if (v) u.voice = v;
+    u.pitch = 1.5;  // 높은 피치 = 귀여운 애니풍 느낌
+    u.rate = 1.05;
+    window.speechSynthesis.speak(u);
+  } catch {
+    /* noop */
+  }
+};
+
+// 음성 목록이 늦게 로드되는 브라우저 대응
+if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = () => { cachedJaVoice = null; };
+}
 
 export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
   const [isGameMode, setIsGameMode]           = useState<boolean>(false);
@@ -40,6 +80,9 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
       message: `ゲーム開始！${randomLine.nameJp}からスタート`,
       lineColor: randomLine.color
     }]);
+
+    // 시작 노선명 음성 안내 (버튼 클릭 제스처 내라서 iOS 음성도 활성화됨)
+    speakJa(randomLine.nameJp);
 
     return randomLine.id;
   }, [lineData]);
@@ -109,11 +152,15 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
       setSelectedLines(prev => [...new Set([...prev, line.id])]);
     }
 
-    // 토스트 메시지 표시
+    // 토스트 메시지 표시 (일/한 별도 필드 — 괄호로 합치면 이름에 괄호 있는 노선에서 깨짐)
     setToastMessage({
-      text: `${line.nameJp} (${line.nameKo})`,
+      text: line.nameJp,
+      subText: line.nameKo,
       color: line.color
     });
+
+    // 노선명 일본어 음성 안내
+    speakJa(line.nameJp);
 
     // 로그에 추가
     setGameLog(prev => [{
@@ -123,27 +170,26 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
     }, ...prev]);
   }, []);
 
-  // 여러 노선을 시차를 두고 발견
+  // 여러 노선을 순차로 발견: 각 노선의 (길이 비례) 애니메이션이 끝난 뒤 1초 쉬고 다음.
   const discoverLinesWithDelay = useCallback((
     newLinesInfo: Line[],
     setSelectedLines?: Dispatch<SetStateAction<string[]>>
   ): number => {
-    const baseInterval = 2000 / animationSpeed;
-
-    newLinesInfo.forEach((line, index) => {
+    let acc = 0;
+    newLinesInfo.forEach((line) => {
+      const delay = acc;
       setTimeout(() => {
         discoverSingleLine(line, setSelectedLines);
-      }, index * baseInterval);
+      }, delay);
+      acc += animDurationMs(line, animationSpeed) + 1000; // 이 노선 애니메이션 + 1초 간격
     });
-
-    return baseInterval;
+    return acc; // 전체 소요 시간(ms)
   }, [animationSpeed, discoverSingleLine]);
 
   // 게임 종료 조건 확인
   const checkGameEndCondition = useCallback((
     newRemainingClicks: number,
-    baseInterval: number,
-    newLinesCount: number
+    totalMs: number
   ) => {
     setTimeout(() => {
       setDiscoveredLines(currentDiscovered => {
@@ -164,15 +210,15 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
         }
         return currentDiscovered;
       });
-    }, newLinesCount * baseInterval + 200);
+    }, totalMs + 200);
   }, [allLineIds]);
 
   // 애니메이션 완료 후 정리
-  const cleanupAfterAnimation = useCallback((baseInterval: number, newLinesCount: number) => {
+  const cleanupAfterAnimation = useCallback((totalMs: number) => {
     setTimeout(() => {
       setToastMessage(null);
       processingClickRef.current = false;
-    }, newLinesCount * baseInterval);
+    }, totalMs);
   }, []);
 
   // 게임 모드에서 노선 발견 처리
@@ -204,14 +250,14 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
       // 새로운 노선 정보 가져오기
       const newLinesInfo = getNewLinesInfo(newDiscoveredLineIds);
 
-      // 각 노선을 시차를 두고 추가
-      const baseInterval = discoverLinesWithDelay(newLinesInfo, setSelectedLines);
+      // 각 노선을 순차로 추가 (전체 소요 시간 반환)
+      const totalMs = discoverLinesWithDelay(newLinesInfo, setSelectedLines);
 
       // 모든 애니메이션이 끝난 후 토스트 제거 및 플래그 리셋
-      cleanupAfterAnimation(baseInterval, newLinesInfo.length);
+      cleanupAfterAnimation(totalMs);
 
       // 승리 조건 확인
-      checkGameEndCondition(newRemainingClicks, baseInterval, newLinesInfo.length);
+      checkGameEndCondition(newRemainingClicks, totalMs);
 
       return newRemainingClicks;
     });
