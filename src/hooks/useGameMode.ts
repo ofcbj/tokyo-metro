@@ -5,7 +5,7 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
   const [isGameMode, setIsGameMode]           = useState<boolean>(false);
   const [discoveredLines, setDiscoveredLines] = useState<Set<string>>(new Set());
   const [gameLog, setGameLog]                 = useState<GameLogEntry[]>([]);
-  const [remainingClicks, setRemainingClicks] = useState<number>(50);
+  const [remainingClicks, setRemainingClicks] = useState<number>(300);
   const [animationSpeed, setAnimationSpeed]   = useState<number>(1.0);
   const [showGameIntro, setShowGameIntro]     = useState<boolean>(false);
   const [showGameResult, setShowGameResult]   = useState<GameResult | null>(null);
@@ -34,7 +34,7 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
     // 게임 모드 활성화
     setIsGameMode(true);
     setDiscoveredLines(new Set([randomLine.id]));
-    setRemainingClicks(50);
+    setRemainingClicks(300);
     setGameLog([{
       timestamp: new Date(),
       message: `ゲーム開始！${randomLine.nameJp}からスタート`,
@@ -50,7 +50,7 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
     setIsGameMode(false);
     setDiscoveredLines(new Set());
     setGameLog([]);
-    setRemainingClicks(50);
+    setRemainingClicks(300);
     setShowGameResult(null);
   }, []);
 

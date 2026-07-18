@@ -428,7 +428,7 @@ export class CanvasMetroOverlay {
     el.style.cssText =
       'position:absolute; z-index:1000; pointer-events:none; background:#fff;' +
       'border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.35); padding:6px 10px;' +
-      'max-width:300px; font-family:sans-serif; display:none;';
+      'max-width:400px; font-family:sans-serif; display:none;';
     mapDiv.appendChild(el);
     this.tooltipEl = el;
     return el;

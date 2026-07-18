@@ -35,7 +35,7 @@ export const SidebarHeader = ({
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
         <TrainIcon sx={{ color: 'primary.main', fontSize: 28 }} />
         <Typography variant="h5" fontWeight="bold">
-          日本首都圏電鉄
+          日本鉄道
         </Typography>
       </Box>
 

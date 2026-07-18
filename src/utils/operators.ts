@@ -11,14 +11,3 @@ export function mergeOperators(...sources: OperatorData[]): LineData {
   }
   return out;
 }
-
-// 개별 필터 칩으로 노출할 "주요 운영사" 판정.
-// JR 계열(회사명이 JR로 시작) + 간토 대형 사철/지하철. 그 외는 "私鉄"로 묶는다.
-const MAJOR_OPERATORS = new Set([
-  '東京メトロ', '東京都交通局', '東急電鉄', '京王電鉄', '小田急電鉄',
-  '東武鉄道', '西武鉄道', '京急電鉄', '京成電鉄',
-]);
-
-export function isMajorOperator(operator: string): boolean {
-  return operator.startsWith('JR') || MAJOR_OPERATORS.has(operator);
-}

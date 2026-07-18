@@ -2,14 +2,12 @@ import { Box } from '@mui/material';
 import { SidebarHeader } from './SidebarHeader';
 import { NormalModeSidebar } from './NormalModeSidebar';
 import { GameModeSidebar } from './GameModeSidebar';
-import { GameLogEntry, LineData, FilterOperator } from '../types';
+import { GameLogEntry, LineData } from '../types';
 
 interface SidebarProps {
   isGameMode: boolean;
   searchTerm: string;
   setSearchTerm: (term: string) => void;
-  filterOperator: FilterOperator;
-  setFilterOperator: (operator: FilterOperator) => void;
   autoZoom: boolean;
   setAutoZoom: (zoom: boolean) => void;
   allLineIds: string[];
@@ -21,17 +19,14 @@ interface SidebarProps {
   startGame: () => void;
   endGame: () => void;
   gameLog: GameLogEntry[];
-  filteredLineData: LineData;
   toggleLine: (lineId: string) => void;
-  lineData: LineData;
+  regions: Record<string, LineData>;
 }
 
 export const Sidebar = ({
   isGameMode,
   searchTerm,
   setSearchTerm,
-  filterOperator,
-  setFilterOperator,
   autoZoom,
   setAutoZoom,
   allLineIds,
@@ -43,9 +38,8 @@ export const Sidebar = ({
   startGame,
   endGame,
   gameLog,
-  filteredLineData,
   toggleLine,
-  lineData,
+  regions,
 }: SidebarProps) => {
   return (
     <Box sx={{ width: 384, backgroundColor: 'white', boxShadow: 3, overflowY: 'auto', display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -58,22 +52,19 @@ export const Sidebar = ({
       />
 
       {isGameMode ? (
-        <GameModeSidebar gameLog={gameLog} />
+        <GameModeSidebar gameLog={gameLog} regions={regions} selectedLines={selectedLines} />
       ) : (
         <NormalModeSidebar
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          filterOperator={filterOperator}
-          setFilterOperator={setFilterOperator}
           autoZoom={autoZoom}
           setAutoZoom={setAutoZoom}
           allLineIds={allLineIds}
           selectedLines={selectedLines}
           showAllLines={showAllLines}
           setSelectedLines={setSelectedLines}
-          filteredLineData={filteredLineData}
           toggleLine={toggleLine}
-          lineData={lineData}
+          regions={regions}
         />
       )}
     </Box>

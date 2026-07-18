@@ -1,6 +1,6 @@
 # 일본 전철 지도
 
-일본 철도 노선을 Google Maps 위에 표시하는 React 애플리케이션입니다. 현재 간토(수도권)·나가노·나고야·간사이 지역을 포함합니다.
+일본 전국 철도 노선을 Google Maps 위에 표시하는 React 애플리케이션입니다 (약 590개 노선, 8개 지역).
 
 ## 시작하기
 
@@ -54,11 +54,7 @@ npm run build
 
 노선·역 데이터는 [data/](data/)의 CSV(ekidata 형식)에서 추출해 [src/lines/](src/lines/) 아래 **지역별 모듈**로 관리합니다.
 
-| 파일 | 내용 |
-|---|---|
-| `src/lines/kanto.ts` | 간토(수도권) 지역 노선 |
-| `src/lines/chubu.ts` | 주부 지역 노선 (나가노·나고야권) |
-| `src/lines/kansai.ts` | 간사이 지역 노선 |
+`src/lines/` 아래 지역별 파일: `hokkaido.ts`(北海道), `tohoku.ts`(東北), `kanto.ts`(関東), `chubu.ts`(中部), `kansai.ts`(関西), `chugoku.ts`(中国), `shikoku.ts`(四国), `kyushu.ts`(九州).
 
 각 모듈은 `OperatorData`(회사명 → 노선 배열) 형태이며, [src/utils/operators.ts](src/utils/operators.ts)의 `mergeOperators`로 병합됩니다. 같은 회사가 여러 지역 모듈에 나뉘어 있어도(예: JR·긴테쓰) 노선 배열이 이어붙습니다. 새 지역은 `src/lines/<지역>.ts`를 추가하고 `TokyoMetroMap.tsx`의 `mergeOperators(...)`에 넣으면 됩니다.
 

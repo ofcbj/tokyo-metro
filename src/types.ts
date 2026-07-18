@@ -52,9 +52,6 @@ export interface ClickEffect {
   y: number;
 }
 
-// Filter operator type
-export type FilterOperator = 'all' | 'minor' | string;
-
 // Google Maps related types
 export interface MapBounds {
   north: number;

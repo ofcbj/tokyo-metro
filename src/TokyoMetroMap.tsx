@@ -2,6 +2,11 @@ import { useState, useCallback, useMemo } from 'react';
 import { kanto } from './lines/kanto';
 import { chubu } from './lines/chubu';
 import { kansai } from './lines/kansai';
+import { hokkaido } from './lines/hokkaido';
+import { tohoku } from './lines/tohoku';
+import { chugoku } from './lines/chugoku';
+import { shikoku } from './lines/shikoku';
+import { kyushu } from './lines/kyushu';
 
 // Hooks
 import { useGoogleMap } from './hooks/useGoogleMap';
@@ -18,18 +23,22 @@ import { GameStatusDisplay } from './components/GameStatusDisplay';
 
 // Utils
 import { findLinesForStation } from './utils/mapUtils';
-import { mergeOperators, isMajorOperator } from './utils/operators';
+import { mergeOperators } from './utils/operators';
 
 // Types
-import { LineData, FilterOperator } from './types';
+import { LineData } from './types';
 
-// 지역별 노선 데이터 통합 (회사 키가 지역 간 겹쳐도 노선 배열을 이어붙임)
-const lineData = mergeOperators(kanto, chubu, kansai);
+// 지역별 노선 데이터 (사이드바: 지역 → 회사 → 노선 드릴다운용)
+const regions: Record<string, LineData> = {
+  北海道: hokkaido, 東北: tohoku, 関東: kanto, 中部: chubu,
+  関西: kansai, 中国: chugoku, 四国: shikoku, 九州: kyushu,
+};
+// 지도 렌더링/게임/검색용 통합 데이터 (회사 키가 지역 간 겹쳐도 노선 배열을 이어붙임)
+const lineData = mergeOperators(hokkaido, tohoku, kanto, chubu, kansai, chugoku, shikoku, kyushu);
 
 const TokyoMetroMap = () => {
   const [selectedLines, setSelectedLines] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>('');
-  const [filterOperator, setFilterOperator] = useState<FilterOperator>('all');
   const [apiKey, setApiKey] = useState<string>('AIzaSyB2blRrpkyyxJ-Jvxgvv0nSHCDeVWABMhI');
   const [showApiInput, setShowApiInput] = useState<boolean>(false);
   const [autoZoom, setAutoZoom] = useState<boolean>(true);
@@ -58,30 +67,6 @@ const TokyoMetroMap = () => {
     endGame,
     handleGameDiscovery,
   } = useGameMode(lineData, allLineIds);
-
-  // 검색 및 필터링된 노선 데이터
-  const filteredLineData = Object.entries(lineData).reduce<LineData>((acc, [operator, lines]) => {
-    let shouldInclude = false;
-    if (filterOperator === 'all') {
-      shouldInclude = true;
-    } else if (filterOperator === 'minor') {
-      shouldInclude = !isMajorOperator(operator);
-    } else {
-      shouldInclude = operator === filterOperator;
-    }
-
-    if (!shouldInclude) return acc;
-
-    const filteredLines = lines.filter(line =>
-      line.nameKo.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      line.nameJp.includes(searchTerm)
-    );
-
-    if (filteredLines.length > 0) {
-      acc[operator] = filteredLines;
-    }
-    return acc;
-  }, {});
 
   // 노선 토글
   const toggleLine = (lineId: string) => {
@@ -142,6 +127,14 @@ const TokyoMetroMap = () => {
     const startLineId = startGameAfterIntro();
     setSelectedLines([startLineId]);
     setShouldPanOnNextUpdate(true);
+
+    // 시작 노선이 화면에 들어오도록 지도 이동 (autoZoom 여부와 무관)
+    const startLine = Object.values(lineData).flat().find(l => l.id === startLineId);
+    if (startLine && startLine.stations.length > 0 && googleMapRef.current && window.google) {
+      const bounds = new window.google.maps.LatLngBounds();
+      startLine.stations.forEach(s => bounds.extend({ lat: s.lat, lng: s.lng }));
+      googleMapRef.current.fitBounds(bounds);
+    }
   }, [startGameAfterIntro]);
 
   // 지도 디스플레이 훅 (캔버스 오버레이 방식 — 네이티브 마커 대비 대량 노선에서 성능 우수)
@@ -204,8 +197,6 @@ const TokyoMetroMap = () => {
           isGameMode={isGameMode}
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          filterOperator={filterOperator}
-          setFilterOperator={setFilterOperator}
           autoZoom={autoZoom}
           setAutoZoom={setAutoZoom}
           allLineIds={allLineIds}
@@ -217,9 +208,8 @@ const TokyoMetroMap = () => {
           startGame={startGame}
           endGame={endGame}
           gameLog={gameLog}
-          filteredLineData={filteredLineData}
           toggleLine={toggleLine}
-          lineData={lineData}
+          regions={regions}
         />
 
         {/* 오른쪽 지도 */}
