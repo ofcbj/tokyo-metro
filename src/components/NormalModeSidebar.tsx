@@ -33,6 +33,7 @@ interface NormalModeSidebarProps {
   toggleLine: (lineId: string) => void;
   // 지역명 → 운영사 데이터(회사 → 노선 배열)
   regions: Record<string, LineData>;
+  isMobile: boolean;
 }
 
 export const NormalModeSidebar = ({
@@ -46,6 +47,7 @@ export const NormalModeSidebar = ({
   setSelectedLines,
   toggleLine,
   regions,
+  isMobile,
 }: NormalModeSidebarProps) => {
   const regionCount = (r: string) => Object.values(regions[r]).reduce((s, l) => s + l.length, 0);
   // 지역별 표시(선택)된 노선 수 — 게임 모드에선 발견 노선이 곧 표시 노선이라 발견 진행도가 된다
@@ -157,23 +159,25 @@ export const NormalModeSidebar = ({
           })}
         </Box>
 
-        {/* 자동 줌 토글 */}
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={autoZoom}
-              onChange={(e) => setAutoZoom(e.target.checked)}
-              size="small"
-            />
-          }
-          label={<Typography variant="body2">路線選択時自動ズーム</Typography>}
-          sx={{ mb: 1 }}
-        />
+        {/* 자동 줌 토글 (모바일에선 숨김, 항상 ON 유지) */}
+        {!isMobile && (
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={autoZoom}
+                onChange={(e) => setAutoZoom(e.target.checked)}
+                size="small"
+              />
+            }
+            label={<Typography variant="body2">路線選択時自動ズーム</Typography>}
+            sx={{ mb: 1 }}
+          />
+        )}
 
         {/* 선택된 노선 수 */}
         {(selectedLines.length > 0 || allLineIds.length > 0) && (
           <Box sx={{ mb: 0, display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap' }}>
-            {selectedLines.length > 0 && (
+            {!isMobile && selectedLines.length > 0 && (
               <Typography variant="body2" color="text.secondary">
                 {selectedLines.length}路線選択中
               </Typography>

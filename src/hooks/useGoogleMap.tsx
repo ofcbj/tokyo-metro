@@ -40,6 +40,7 @@ export const useGoogleMap = (apiKey: string, showApiInput: boolean) => {
         mapTypeControl: false,
         streetViewControl: false,
         fullscreenControl: true,
+        clickableIcons: false, // 구글맵 기본 POI(장소) 팝업 비활성화
       });
 
       window.google.maps.event.addListenerOnce(googleMapRef.current, 'idle', () => {

@@ -472,10 +472,16 @@ export class CanvasMetroOverlay {
     // 절대배치 툴팁이 지도 컨테이너를 기준으로 놓이도록 보장
     if (getComputedStyle(mapDiv).position === 'static') mapDiv.style.position = 'relative';
     const el = document.createElement('div');
+    // 터치 기기: 탭으로 뜨는 팝업이라 내부 스크롤 필요 → pointer-events:auto + 스크롤.
+    // 데스크톱: hover 팝업이라 pointer-events:none 유지(마우스가 지나가도 깜빡이지 않게).
+    const coarse = window.matchMedia('(pointer: coarse)').matches;
     el.style.cssText =
-      'position:absolute; z-index:1000; pointer-events:none; background:#fff;' +
+      'position:absolute; z-index:1000; background:#fff;' +
       'border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.35); padding:6px 10px;' +
-      'max-width:400px; font-family:sans-serif; display:none;';
+      'max-width:400px; font-family:sans-serif; display:none;' +
+      (coarse
+        ? 'pointer-events:auto; max-height:60vh; overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain;'
+        : 'pointer-events:none;');
     mapDiv.appendChild(el);
     this.tooltipEl = el;
     return el;

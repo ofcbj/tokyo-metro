@@ -21,6 +21,7 @@ interface SidebarProps {
   gameLog: GameLogEntry[];
   toggleLine: (lineId: string) => void;
   regions: Record<string, LineData>;
+  isMobile: boolean;
 }
 
 export const Sidebar = ({
@@ -40,6 +41,7 @@ export const Sidebar = ({
   gameLog,
   toggleLine,
   regions,
+  isMobile,
 }: SidebarProps) => {
   return (
     <Box sx={{ width: '100%', height: '100%', backgroundColor: 'white', boxShadow: 3, overflowY: 'auto', WebkitOverflowScrolling: 'touch', overscrollBehavior: 'contain' }}>
@@ -65,6 +67,7 @@ export const Sidebar = ({
           setSelectedLines={setSelectedLines}
           toggleLine={toggleLine}
           regions={regions}
+          isMobile={isMobile}
         />
       )}
     </Box>

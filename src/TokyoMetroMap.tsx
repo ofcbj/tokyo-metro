@@ -188,6 +188,7 @@ const TokyoMetroMap = () => {
       gameLog={gameLog}
       toggleLine={toggleLine}
       regions={regions}
+      isMobile={isMobile}
     />
   );
 
