@@ -76,6 +76,7 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
           right: 0,
           zIndex: 30,
           pointerEvents: 'none',
+          transform: 'translateX(7vw)',
         }}
       >
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'start', gap: 2, pt: 3, px: 2 }}>
@@ -229,7 +230,7 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
               position: 'fixed',
               top: 24,
               left: '50%',
-              transform: 'translateX(-50%)',
+              transform: 'translateX(calc(-50% + 8.75vw))',
               zIndex: 40,
               pointerEvents: 'none',
               zoom: 0.8,
