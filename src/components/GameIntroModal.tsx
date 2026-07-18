@@ -22,6 +22,7 @@ export const GameIntroModal = ({ onCancel, onStart }: GameIntroModalProps) => {
       slotProps={{
         paper: {
           sx: {
+            zoom: 0.8,
             borderRadius: 4,
             overflow: 'hidden',
           },

@@ -228,7 +228,7 @@ const TokyoMetroMap = () => {
 
         {/* 사이드바: 데스크톱 384px 고정 / 모바일 가로 ~20% 패널 (세로는 오버레이로 대체) */}
         {(!isMobile || isLandscape) && (
-          <Box sx={{ width: !isMobile ? 384 : 'clamp(200px, 20vw, 320px)', flexShrink: 0, height: '100%' }}>
+          <Box sx={{ width: !isMobile ? 384 : 'clamp(200px, 20vw, 320px)', flexShrink: 0, height: '125%', zoom: 0.8 }}>
             {sidebarEl}
           </Box>
         )}
@@ -255,7 +255,7 @@ const TokyoMetroMap = () => {
             gap: 2, p: 4, textAlign: 'center',
           }}
         >
-          <ScreenRotationIcon sx={{ fontSize: 72 }} />
+          <ScreenRotationIcon sx={{ fontSize: 58 }} />
           <Typography variant="h6" fontWeight="bold">画面を横向きにしてください</Typography>
           <Typography variant="body2" sx={{ opacity: 0.75 }}>
             このアプリは横向き表示に最適化されています

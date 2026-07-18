@@ -30,6 +30,7 @@ export const GameResultModal = ({ result, onClose, onRestart }: GameResultModalP
       slotProps={{
         paper: {
           sx: {
+            zoom: 0.8,
             borderRadius: 4,
             overflow: 'hidden',
           },

@@ -80,7 +80,7 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
       >
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'start', gap: 2, pt: 3, px: 2 }}>
           {/* 왼쪽: 발견한 라인 수 */}
-          <Box sx={{ pointerEvents: 'auto', flexShrink: 0 }}>
+          <Box sx={{ pointerEvents: 'auto', flexShrink: 0, zoom: 0.8 }}>
             <Paper
               elevation={8}
               sx={{
@@ -148,10 +148,10 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
           </Box>
 
           {/* 중앙: 빈 공간 (토스트 메시지 자리) */}
-          <Box sx={{ flexShrink: 0, width: { xs: 0, sm: 450 } }}></Box>
+          <Box sx={{ flexShrink: 0, width: { xs: 0, sm: 360 } }}></Box>
 
           {/* 오른쪽: 남은 클릭 수 */}
-          <Box sx={{ pointerEvents: 'auto', flexShrink: 0 }}>
+          <Box sx={{ pointerEvents: 'auto', flexShrink: 0, zoom: 0.8 }}>
             <Paper
               elevation={8}
               sx={{
@@ -232,6 +232,7 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
               transform: 'translateX(-50%)',
               zIndex: 40,
               pointerEvents: 'none',
+              zoom: 0.8,
             }}
           >
             <Paper

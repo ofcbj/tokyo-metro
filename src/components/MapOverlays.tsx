@@ -56,7 +56,7 @@ export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLi
             zIndex: 50,
           }}
         >
-          <Box sx={{ position: 'relative' }}>
+          <Box sx={{ position: 'relative', zoom: 0.8 }}>
             {/* 파동 효과 */}
             <Box
               sx={{
@@ -94,6 +94,7 @@ export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLi
           severity={toastMessage?.isError ? 'error' : 'success'}
           icon={false}
           sx={{
+            zoom: 0.8,
             minWidth: 400,
             borderRadius: 6,
             border: 4,
@@ -167,6 +168,7 @@ export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLi
         <Paper
           elevation={3}
           sx={{
+            zoom: 0.8,
             padding: 3,
             textAlign: 'center',
             borderRadius: 2,
@@ -202,6 +204,7 @@ export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLi
             <Paper
               elevation={3}
               sx={{
+                zoom: 0.8,
                 padding: 3,
                 borderRadius: 2,
               }}

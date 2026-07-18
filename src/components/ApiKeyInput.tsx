@@ -28,6 +28,7 @@ export const ApiKeyInput = ({ apiKey, setApiKey, setShowApiInput }: ApiKeyInputP
       <Paper
         elevation={3}
         sx={{
+          zoom: 0.8,
           p: 4,
           borderRadius: 2,
           maxWidth: 500,
