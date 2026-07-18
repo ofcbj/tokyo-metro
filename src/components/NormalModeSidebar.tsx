@@ -15,7 +15,8 @@ import {
   Search as SearchIcon,
   Clear as ClearIcon,
 } from '@mui/icons-material';
-import { LineData, OperatorData, FilterOperator } from '../types';
+import { LineData, FilterOperator } from '../types';
+import { isMajorOperator } from '../utils/operators';
 
 interface NormalModeSidebarProps {
   searchTerm: string;
@@ -31,9 +32,6 @@ interface NormalModeSidebarProps {
   filteredLineData: LineData;
   toggleLine: (lineId: string) => void;
   lineData: LineData;
-  opMajor1: OperatorData;
-  opMajor2: OperatorData;
-  opMinor: OperatorData;
 }
 
 export const NormalModeSidebar = ({
@@ -50,9 +48,6 @@ export const NormalModeSidebar = ({
   filteredLineData,
   toggleLine,
   lineData,
-  opMajor1,
-  opMajor2,
-  opMinor,
 }: NormalModeSidebarProps) => {
   return (
     <>
@@ -94,15 +89,8 @@ export const NormalModeSidebar = ({
           />
           {(() => {
             const operators = Object.keys(lineData);
-            const majorOperators = operators.filter(op =>
-              op === 'JR東日本' ||
-              op === 'JR東海' ||
-              Object.keys(opMajor1).includes(op) ||
-              Object.keys(opMajor2).includes(op)
-            );
-            const minorOperators = operators.filter(op =>
-              Object.keys(opMinor).includes(op)
-            );
+            const majorOperators = operators.filter(op => isMajorOperator(op));
+            const minorOperators = operators.filter(op => !isMajorOperator(op));
 
             const chips = [];
 

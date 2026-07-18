@@ -1,13 +1,12 @@
-import React, { useState, useCallback, useMemo } from 'react';
-import { opJR } from './opJR';
-import { opMajor1 } from './opMajor1';
-import { opMajor2 } from './opMajor2';
-import { opMinor } from './opMinor';
+import { useState, useCallback, useMemo } from 'react';
+import { kanto } from './lines/kanto';
+import { chubu } from './lines/chubu';
+import { kansai } from './lines/kansai';
 
 // Hooks
 import { useGoogleMap } from './hooks/useGoogleMap';
 import { useGameMode } from './hooks/useGameMode';
-import { useMapDisplay } from './hooks/useMapDisplay';
+import { useCanvasMapDisplay } from './hooks/useCanvasMapDisplay';
 
 // Components
 import { ApiKeyInput } from './components/ApiKeyInput';
@@ -19,17 +18,13 @@ import { GameStatusDisplay } from './components/GameStatusDisplay';
 
 // Utils
 import { findLinesForStation } from './utils/mapUtils';
+import { mergeOperators, isMajorOperator } from './utils/operators';
 
 // Types
 import { LineData, FilterOperator } from './types';
 
-// 노선 데이터 통합
-const lineData: LineData = {
-  ...opJR,
-  ...opMajor1,
-  ...opMajor2,
-  ...opMinor,
-};
+// 지역별 노선 데이터 통합 (회사 키가 지역 간 겹쳐도 노선 배열을 이어붙임)
+const lineData = mergeOperators(kanto, chubu, kansai);
 
 const TokyoMetroMap = () => {
   const [selectedLines, setSelectedLines] = useState<string[]>([]);
@@ -58,7 +53,6 @@ const TokyoMetroMap = () => {
     clickEffect,
     setAnimationSpeed,
     setShowGameIntro,
-    setClickEffect,
     startGame,
     startGameAfterIntro,
     endGame,
@@ -71,7 +65,7 @@ const TokyoMetroMap = () => {
     if (filterOperator === 'all') {
       shouldInclude = true;
     } else if (filterOperator === 'minor') {
-      shouldInclude = Object.keys(opMinor).includes(operator);
+      shouldInclude = !isMajorOperator(operator);
     } else {
       shouldInclude = operator === filterOperator;
     }
@@ -150,8 +144,8 @@ const TokyoMetroMap = () => {
     setShouldPanOnNextUpdate(true);
   }, [startGameAfterIntro]);
 
-  // 지도 디스플레이 훅
-  useMapDisplay(
+  // 지도 디스플레이 훅 (캔버스 오버레이 방식 — 네이티브 마커 대비 대량 노선에서 성능 우수)
+  useCanvasMapDisplay(
     googleMapRef,
     selectedLines,
     lineData,
@@ -226,9 +220,6 @@ const TokyoMetroMap = () => {
           filteredLineData={filteredLineData}
           toggleLine={toggleLine}
           lineData={lineData}
-          opMajor1={opMajor1}
-          opMajor2={opMajor2}
-          opMinor={opMinor}
         />
 
         {/* 오른쪽 지도 */}
