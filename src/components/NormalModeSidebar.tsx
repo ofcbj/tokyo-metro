@@ -113,7 +113,7 @@ export const NormalModeSidebar = ({
   return (
     <>
       {/* 상단 컨트롤 영역 */}
-      <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
+      <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider', flexShrink: 0 }}>
         {/* 검색 */}
         <TextField
           fullWidth
@@ -189,7 +189,7 @@ export const NormalModeSidebar = ({
       </Box>
 
       {/* 회사(노선수) 드롭다운 → 노선 리스트 */}
-      <Box sx={{ p: 2, flex: 1, overflowY: 'auto' }}>
+      <Box sx={{ p: 2, flex: 1, minHeight: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
         <Stack spacing={1}>
           {companies.map(({ name, lines }) => {
             const expanded = isExpanded(name);

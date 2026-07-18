@@ -31,7 +31,7 @@ export const SidebarHeader = ({
   };
 
   return (
-    <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider', position: 'sticky', top: 0, backgroundColor: 'white', zIndex: 10 }}>
+    <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider', backgroundColor: 'white', flexShrink: 0 }}>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
         <TrainIcon sx={{ color: 'primary.main', fontSize: 28 }} />
         <Typography variant="h5" fontWeight="bold">
