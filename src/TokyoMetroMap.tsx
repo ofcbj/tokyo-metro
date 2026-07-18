@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo } from 'react';
-import { Drawer, IconButton, useMediaQuery } from '@mui/material';
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
+import { ScreenRotation as ScreenRotationIcon } from '@mui/icons-material';
 import { kanto } from './lines/kanto';
 import { chubu } from './lines/chubu';
 import { kansai } from './lines/kansai';
@@ -46,9 +46,12 @@ const TokyoMetroMap = () => {
   const [autoZoom, setAutoZoom] = useState<boolean>(true);
   const [shouldPanOnNextUpdate, setShouldPanOnNextUpdate] = useState<boolean>(false);
 
-  // 모바일: 사이드바를 슬라이드 Drawer로 전환
-  const isMobile = useMediaQuery('(max-width:768px)');
-  const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
+  // 모바일 판정: 터치 기기이면서 좁은 폭(세로 폰) 또는 낮은 높이(가로 폰).
+  // pointer:coarse 조건으로 데스크톱에서 창을 좁혀도 오탐하지 않게 한다.
+  const isMobile = useMediaQuery(
+    '(pointer: coarse) and (max-width:768px), (pointer: coarse) and (max-height:500px)'
+  );
+  const isLandscape = useMediaQuery('(orientation: landscape)');
 
   const allLineIds = useMemo(() => Object.values(lineData).flat().map(line => line.id), []);
 
@@ -219,30 +222,11 @@ const TokyoMetroMap = () => {
           />
         )}
 
-        {/* 사이드바: 데스크톱은 인라인, 모바일은 슬라이드 Drawer */}
-        {isMobile ? (
-          <>
-            <IconButton
-              onClick={() => setDrawerOpen(true)}
-              aria-label="menu"
-              sx={{
-                position: 'absolute', top: 8, left: 8, zIndex: 1200,
-                backgroundColor: 'white', boxShadow: 3,
-                '&:hover': { backgroundColor: 'white' },
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              open={drawerOpen}
-              onClose={() => setDrawerOpen(false)}
-              PaperProps={{ sx: { width: '85vw', maxWidth: 384 } }}
-            >
-              {sidebarEl}
-            </Drawer>
-          </>
-        ) : (
-          sidebarEl
+        {/* 사이드바: 데스크톱 384px 고정 / 모바일 가로 ~20% 패널 (세로는 오버레이로 대체) */}
+        {(!isMobile || isLandscape) && (
+          <Box sx={{ width: !isMobile ? 384 : 'clamp(200px, 20vw, 320px)', flexShrink: 0, height: '100%' }}>
+            {sidebarEl}
+          </Box>
         )}
 
         {/* 오른쪽 지도 */}
@@ -256,6 +240,24 @@ const TokyoMetroMap = () => {
           <div ref={mapRef} className="w-full h-full" />
         </div>
       </div>
+
+      {/* 모바일 세로모드: 가로 전환 안내 오버레이 */}
+      {isMobile && !isLandscape && (
+        <Box
+          sx={{
+            position: 'fixed', inset: 0, zIndex: 2000,
+            backgroundColor: 'rgba(17, 24, 39, 0.96)', color: '#fff',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+            gap: 2, p: 4, textAlign: 'center',
+          }}
+        >
+          <ScreenRotationIcon sx={{ fontSize: 72 }} />
+          <Typography variant="h6" fontWeight="bold">画面を横向きにしてください</Typography>
+          <Typography variant="body2" sx={{ opacity: 0.75 }}>
+            このアプリは横向き表示に最適化されています
+          </Typography>
+        </Box>
+      )}
     </>
   );
 };

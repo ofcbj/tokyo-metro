@@ -367,15 +367,24 @@ export class CanvasMetroOverlay {
 
   private handleMapClick(e: google.maps.MapMouseEvent) {
     const p = this.latLngToPixel(e.latLng);
-    if (!p) return;
-    const station = this.findStationAt(p.x, p.y);
+    const station = p ? this.findStationAt(p.x, p.y) : null;
+
+    // 터치 기기는 hover가 없으므로 탭(클릭) 시에도 정보 팝업을 띄운다.
     if (station) {
+      this.hoveredStation = station;
+      this.showTooltip(station);
+      this.requestDraw();
       this.options.onStationClick(
         station.station.name,
         station.station.lat,
         station.station.lng,
         station.station.transfer
       );
+    } else {
+      // 빈 곳 탭 → 팝업 닫기
+      this.hoveredStation = null;
+      this.hideTooltip();
+      this.requestDraw();
     }
   }
 
@@ -422,7 +431,7 @@ export class CanvasMetroOverlay {
           Math.pow(y - marker.screenY, 2)
         );
 
-        if (distance <= radius + 5) { // 클릭 허용 범위 약간 확대
+        if (distance <= radius + 9) { // 클릭/탭 허용 범위 (터치 대응 위해 여유)
           return marker;
         }
       }
