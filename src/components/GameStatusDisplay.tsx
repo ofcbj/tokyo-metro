@@ -67,16 +67,15 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
 
   return (
     <>
-      {/* 고정 UI: 발견한 라인 수 & 남은 클릭 수 */}
+      {/* 고정 UI: 발견한 라인 수 & 남은 클릭 수 (지도 컨테이너 기준 절대 위치 — 사이드바 폭과 무관하게 지도 안에만 뜬다) */}
       <Box
         sx={{
-          position: 'fixed',
+          position: 'absolute',
           top: 0,
           left: 0,
           right: 0,
           zIndex: 30,
           pointerEvents: 'none',
-          transform: 'translateX(7vw)',
         }}
       >
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'start', gap: 2, pt: 3, px: 2 }}>
@@ -227,10 +226,10 @@ export const GameStatusDisplay = ({ discoveredLines, totalLines, remainingClicks
         return (
           <Box
             sx={{
-              position: 'fixed',
+              position: 'absolute',
               top: 24,
               left: '50%',
-              transform: 'translateX(calc(-50% + 8.75vw))',
+              transform: 'translateX(-50%)',
               zIndex: 40,
               pointerEvents: 'none',
               zoom: 0.8,

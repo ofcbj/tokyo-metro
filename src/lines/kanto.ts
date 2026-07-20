@@ -7,6 +7,7 @@ export const kanto: OperatorData = {
         id: "11302",
         nameKo: "야마노테선",
         nameJp: "JR山手線",
+        nameKana: "ヤマノテセン",
         color: "#9ACD32",
         stations: [
             {
@@ -221,6 +222,7 @@ export const kanto: OperatorData = {
         id: "11312",
         nameKo: "주오선(쾌속)",
         nameJp: "JR中央線(快速)",
+        nameKana: "チュウオウセン",
         color: "#F15A22",
         stations: [
             {
@@ -385,6 +387,7 @@ export const kanto: OperatorData = {
         id: "11314",
         nameKo: "소부선",
         nameJp: "JR総武本線",
+        nameKana: "ソウブホンセン",
         color: "#FFD400",
         stations: [
             {
@@ -580,6 +583,7 @@ export const kanto: OperatorData = {
         id: "11313",
         nameKo: "주오-소부선 각역정차",
         nameJp: "JR中央・総武線",
+        nameKana: "チュウオウ・ソウブセン",
         color: "#FFD400",
         stations: [
             {
@@ -843,6 +847,7 @@ export const kanto: OperatorData = {
         id: "11320",
         nameKo: "조반선",
         nameJp: "JR常磐線(上野～取手)",
+        nameKana: "ジョウバンセン",
         color: "#9B59B6",
         stations: [
             {
@@ -949,6 +954,8 @@ export const kanto: OperatorData = {
                 name: "我孫子",
                 lat: 35.87279,
                 lng: 140.010466,
+                transfer: true,
+                groupId: 1132017,
             },
             {
                 name: "天王台",
@@ -968,6 +975,7 @@ export const kanto: OperatorData = {
         id: "11332",
         nameKo: "게이힌토호쿠선",
         nameJp: "JR京浜東北線",
+        nameKana: "ケイヒントウホクセン",
         color: "#27AE60",
         stations: [
             {
@@ -1212,6 +1220,7 @@ export const kanto: OperatorData = {
         id: "11308",
         nameKo: "요코스카선",
         nameJp: "JR横須賀線",
+        nameKana: "ヨコスカセン",
         color: "#F39C12",
         stations: [
             {
@@ -1341,6 +1350,7 @@ export const kanto: OperatorData = {
         id: "11321",
         nameKo: "사이쿄선",
         nameJp: "JR埼京線",
+        nameKana: "サイキョウセン",
         color: "#D35400",
         stations: [
             {
@@ -1460,6 +1470,7 @@ export const kanto: OperatorData = {
         id: "11333",
         nameKo: "쇼난신주쿠라인",
         nameJp: "JR湘南新宿ライン",
+        nameKana: "ショウナンシンジュクライン",
         color: "#C0392B",
         stations: [
             {
@@ -1580,6 +1591,7 @@ export const kanto: OperatorData = {
         id: "11305",
         nameKo: "무사시노선",
         nameJp: "JR武蔵野線",
+        nameKana: "ムサシノセン",
         color: "#8E44AD",
         stations: [
             {
@@ -1742,6 +1754,7 @@ export const kanto: OperatorData = {
         id: "11303",
         nameKo: "난부선",
         nameJp: "JR南武線",
+        nameKana: "ナンブセン",
         color: "#2C3E50",
         stations: [
             {
@@ -1918,6 +1931,7 @@ export const kanto: OperatorData = {
         id: "11306",
         nameKo: "요코하마선",
         nameJp: "JR横浜線",
+        nameKana: "ヨコハマセン",
         color: "#1ABC9C",
         stations: [
             {
@@ -2042,6 +2056,7 @@ export const kanto: OperatorData = {
         id: "11326",
         nameKo: "게이요선",
         nameJp: "JR京葉線",
+        nameKana: "ケイヨウセン",
         color: "#3498DB",
         stations: [
             {
@@ -2157,6 +2172,7 @@ export const kanto: OperatorData = {
         id: "11317",
         nameKo: "하치코선 남부",
         nameJp: "JR八高線(八王子～高麗川)",
+        nameKana: "ハチコウセン",
         color: "#F1C40F",
         stations: [
             {
@@ -2218,6 +2234,7 @@ export const kanto: OperatorData = {
         id: "11315",
         nameKo: "오메선",
         nameJp: "JR青梅線",
+        nameKana: "オウメセン",
         color: "#E67E22",
         stations: [
             {
@@ -2355,6 +2372,7 @@ export const kanto: OperatorData = {
         id: "11316",
         nameKo: "이쓰카이치선",
         nameJp: "JR五日市線",
+        nameKana: "イツカイチセン",
         color: "#95A5A6",
         stations: [
             {
@@ -2400,6 +2418,7 @@ export const kanto: OperatorData = {
         id: "11322",
         nameKo: "가와고에선",
         nameJp: "JR川越線",
+        nameKana: "カワゴエセン",
         color: "#34495E",
         stations: [
             {
@@ -2469,6 +2488,7 @@ export const kanto: OperatorData = {
         id: "11318",
         nameKo: "JR 하치코선(고마가와~타카사키)",
         nameJp: "JR八高線(高麗川～高崎)",
+        nameKana: "ハチコウセン",
         color: "#2E86C1",
         stations: [
             {
@@ -2569,6 +2589,7 @@ export const kanto: OperatorData = {
         id: "11304",
         nameKo: "JR 쓰루미선",
         nameJp: "JR鶴見線",
+        nameKana: "ツルミセン",
         color: "#1ABC9C",
         stations: [
             {
@@ -2646,6 +2667,7 @@ export const kanto: OperatorData = {
         id: "11319",
         nameKo: "JR 우츠노미야선",
         nameJp: "JR宇都宮線",
+        nameKana: "ウツノミヤセン",
         color: "#00B894",
         stations: [
             {
@@ -2850,6 +2872,7 @@ export const kanto: OperatorData = {
         id: "11324",
         nameKo: "JR 소토보선",
         nameJp: "JR外房線",
+        nameKana: "ソトボウセン",
         color: "#2980B9",
         stations: [
             {
@@ -3005,6 +3028,7 @@ export const kanto: OperatorData = {
         id: "11325",
         nameKo: "JR 우치보선",
         nameJp: "JR内房線",
+        nameKana: "ウチボウセン",
         color: "#2874A6",
         stations: [
             {
@@ -3185,6 +3209,7 @@ export const kanto: OperatorData = {
         id: "11327",
         nameKo: "JR 나리타선 (본선)",
         nameJp: "JR成田線（本線）",
+        nameKana: "ナリタセン",
         color: "#16A085",
         stations: [
             {
@@ -3290,6 +3315,7 @@ export const kanto: OperatorData = {
         id: "113272",
         nameKo: "JR 나리타선 (아비코지선)",
         nameJp: "JR成田線（我孫子支線）",
+        nameKana: "ナリタセン",
         color: "#16A085",
         stations: [
             {
@@ -3297,6 +3323,7 @@ export const kanto: OperatorData = {
                 lat: 35.87279,
                 lng: 140.010466,
                 transfer: true,
+                groupId: 1132017,
             },
             {
                 name: "東我孫子",
@@ -3351,6 +3378,7 @@ export const kanto: OperatorData = {
         id: "11330",
         nameKo: "JR 구루리선",
         nameJp: "JR久留里線",
+        nameKana: "クルリセン",
         color: "#8E44AD",
         stations: [
             {
@@ -3431,6 +3459,7 @@ export const kanto: OperatorData = {
         id: "11331",
         nameKo: "JR 토우가네선",
         nameJp: "JR東金線",
+        nameKana: "トウガネセン",
         color: "#48C9B0",
         stations: [
             {
@@ -3468,6 +3497,7 @@ export const kanto: OperatorData = {
         id: "11323",
         nameKo: "JR 다카사키선",
         nameJp: "JR高崎線",
+        nameKana: "タカサキセン",
         color: "#FF7F00",
         stations: [
             {
@@ -3614,6 +3644,7 @@ export const kanto: OperatorData = {
         id: "11301",
         nameKo: "도카이도선 간토",
         nameJp: "JR東海道本線(東京～熱海)",
+        nameKana: "トウカイドウホンセン",
         color: "#7F8C8D",
         stations: [
             {
@@ -3751,6 +3782,7 @@ export const kanto: OperatorData = {
         id: "11307",
         nameKo: "네기시선",
         nameJp: "JR根岸線",
+        nameKana: "ネギシセン",
         color: "#BDC3C7",
         stations: [
             {
@@ -3829,6 +3861,7 @@ export const kanto: OperatorData = {
         id: "11309",
         nameKo: "사가미선",
         nameJp: "JR相模線",
+        nameKana: "サガミセン",
         color: "#00A0E9",
         stations: [
             {
@@ -3935,6 +3968,7 @@ export const kanto: OperatorData = {
         id: "11337",
         nameKo: "신에츠 본선 (다카사키~요코카와)",
         nameJp: "JR信越本線(高崎～横川)",
+        nameKana: "シンエツホンセン",
         color: "#00fbffff",
         stations: [
             {
@@ -3985,6 +4019,7 @@ export const kanto: OperatorData = {
       id: "11229",
       nameKo: "조반선",
       nameJp: "JR常磐線(取手～いわき)",
+      nameKana: "ジョウバンセン",
       color: "#E74C3C",
       stations: [
         {
@@ -4180,6 +4215,7 @@ export const kanto: OperatorData = {
       id: "11328",
       nameKo: "나리타에쿠스푸레스",
       nameJp: "JR成田エクスプレス",
+      nameKana: "ナリタエクスプレス",
       color: "#3498DB",
       stations: [
         {
@@ -4286,6 +4322,7 @@ export const kanto: OperatorData = {
       id: "11329",
       nameKo: "가시마선",
       nameJp: "JR鹿島線",
+      nameKana: "カシマセン",
       color: "#2ECC71",
       stations: [
         {
@@ -4337,6 +4374,7 @@ export const kanto: OperatorData = {
       id: "11334",
       nameKo: "가라스야마선",
       nameJp: "JR烏山線",
+      nameKana: "カラスヤマセン",
       color: "#9B59B6",
       stations: [
         {
@@ -4387,6 +4425,7 @@ export const kanto: OperatorData = {
       id: "11335",
       nameKo: "아가쓰마선",
       nameJp: "JR吾妻線",
+      nameKana: "アガツマセン",
       color: "#F39C12",
       stations: [
         {
@@ -4487,6 +4526,7 @@ export const kanto: OperatorData = {
       id: "11338",
       nameKo: "스이군선",
       nameJp: "JR水郡線",
+      nameKana: "スイグンセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -4731,6 +4771,7 @@ export const kanto: OperatorData = {
       id: "11339",
       nameKo: "미토선",
       nameJp: "JR水戸線",
+      nameKana: "ミトセン",
       color: "#E67E22",
       stations: [
         {
@@ -4825,6 +4866,7 @@ export const kanto: OperatorData = {
       id: "11340",
       nameKo: "닛코선",
       nameJp: "JR日光線",
+      nameKana: "ニッコウセン",
       color: "#34495E",
       stations: [
         {
@@ -4872,6 +4914,7 @@ export const kanto: OperatorData = {
       id: "11341",
       nameKo: "료모선",
       nameJp: "JR両毛線",
+      nameKana: "リョウモウセン",
       color: "#16A085",
       stations: [
         {
@@ -5008,6 +5051,7 @@ export const kanto: OperatorData = {
       id: "11343",
       nameKo: "우에노토쿄라인",
       nameJp: "上野東京ライン",
+      nameKana: "ウエノトウキョウライン",
       color: "#E74C3C",
       stations: [
         {
@@ -5032,6 +5076,7 @@ export const kanto: OperatorData = {
       id: "21008",
       nameKo: "도부쓰노미야선",
       nameJp: "東武宇都宮線",
+      nameKana: "トウブウツノミヤセン",
       color: "#C0392B",
       stations: [
         {
@@ -5104,6 +5149,7 @@ export const kanto: OperatorData = {
       id: "21009",
       nameKo: "도부키누가와선",
       nameJp: "東武鬼怒川線",
+      nameKana: "トウブキヌガワセン",
       color: "#2980B9",
       stations: [
         {
@@ -5161,6 +5207,7 @@ export const kanto: OperatorData = {
       id: "21010",
       nameKo: "도부사노선",
       nameJp: "東武佐野線",
+      nameKana: "トウブサノセン",
       color: "#27AE60",
       stations: [
         {
@@ -5223,6 +5270,7 @@ export const kanto: OperatorData = {
       id: "21011",
       nameKo: "도부키류선",
       nameJp: "東武桐生線",
+      nameKana: "トウブキリュウセン",
       color: "#8E44AD",
       stations: [
         {
@@ -5277,6 +5325,7 @@ export const kanto: OperatorData = {
       id: "21012",
       nameKo: "도부코이즈미선",
       nameJp: "東武小泉線",
+      nameKana: "トウブコイズミセン",
       color: "#D35400",
       stations: [
         {
@@ -5334,6 +5383,7 @@ export const kanto: OperatorData = {
       id: "21001",
       nameKo: "도부 토조선",
       nameJp: "東武東上線",
+      nameKana: "トウブトウジョウセン",
       color: "#9B59B6",
       stations: [
         {
@@ -5555,6 +5605,7 @@ export const kanto: OperatorData = {
       id: "21007",
       nameKo: "도부 오고세선",
       nameJp: "東武越生線",
+      nameKana: "トウブオゴセセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -5607,6 +5658,7 @@ export const kanto: OperatorData = {
       id: "21002",
       nameKo: "이세사키선/스카이트리라인",
       nameJp: "東武伊勢崎線",
+      nameKana: "トウブイセサキセン",
       color: "#DC7633",
       stations: [
         {
@@ -5918,6 +5970,7 @@ export const kanto: OperatorData = {
       id: "21003",
       nameKo: "도부 닛코선",
       nameJp: "東武日光線",
+      nameKana: "トウブニッコウセン",
       color: "#FF8C1A",
       stations: [
         {
@@ -6068,6 +6121,7 @@ export const kanto: OperatorData = {
       id: "21004",
       nameKo: "도부 어번 파크 라인(노다선)",
       nameJp: "東武アーバンパークライン（東武野田線）",
+      nameKana: "トウブアーバンパークライントウブノダセン",
       color: "#00A9E0",
       stations: [
         {
@@ -6263,6 +6317,7 @@ export const kanto: OperatorData = {
       id: "21005",
       nameKo: "가메이도선",
       nameJp: "東武亀戸線",
+      nameKana: "トウブカメイドセン",
       color: "#5DADE2",
       stations: [
         {
@@ -6300,6 +6355,7 @@ export const kanto: OperatorData = {
       id: "21006",
       nameKo: "도부다이시선",
       nameJp: "東武大師線",
+      nameKana: "トウブダイシセン",
       color: "#E67E22",
       stations: [
         {
@@ -6322,6 +6378,7 @@ export const kanto: OperatorData = {
       id: "22010",
       nameKo: "세이부코쿠분지선",
       nameJp: "西武国分寺線",
+      nameKana: "セイブコクブンジセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -6361,6 +6418,7 @@ export const kanto: OperatorData = {
       id: "22001",
       nameKo: "세이부 이케부쿠로선",
       nameJp: "西武池袋線",
+      nameKana: "セイブイケブクロセン",
       color: "#1C8AC8",
       stations: [
         {
@@ -6544,6 +6602,7 @@ export const kanto: OperatorData = {
       id: "22002",
       nameKo: "세이부치치부선",
       nameJp: "西武秩父線",
+      nameKana: "セイブチチブセン",
       color: "#FF6348",
       stations: [
         {
@@ -6619,6 +6678,7 @@ export const kanto: OperatorData = {
       id: "22007",
       nameKo: "세이부 신주쿠선",
       nameJp: "西武新宿線",
+      nameKana: "セイブシンジュクセン",
       color: "#F7931E",
       stations: [
         {
@@ -6782,6 +6842,7 @@ export const kanto: OperatorData = {
       id: "22008",
       nameKo: "하이지마선",
       nameJp: "西武拝島線",
+      nameKana: "セイブハイジマセン",
       color: "#FF4757",
       stations: [
         {
@@ -6840,6 +6901,7 @@ export const kanto: OperatorData = {
       id: "22012",
       nameKo: "다마가와선",
       nameJp: "西武多摩川線",
+      nameKana: "セイブタマガワセン",
       color: "#5352ED",
       stations: [
         {
@@ -6880,6 +6942,7 @@ export const kanto: OperatorData = {
       id: "22011",
       nameKo: "다마코선",
       nameJp: "西武多摩湖線",
+      nameKana: "セイブタマコセン",
       color: "#3742FA",
       stations: [
         {
@@ -6929,6 +6992,7 @@ export const kanto: OperatorData = {
       id: "22003",
       nameKo: "세이부유라쿠초선",
       nameJp: "西武有楽町線",
+      nameKana: "セイブユウラクチョウセン",
       color: "#34495E",
       stations: [
         {
@@ -6956,6 +7020,7 @@ export const kanto: OperatorData = {
       id: "22004",
       nameKo: "세이부토시마선",
       nameJp: "西武豊島線",
+      nameKana: "セイブトシマセン",
       color: "#16A085",
       stations: [
         {
@@ -6978,6 +7043,7 @@ export const kanto: OperatorData = {
       id: "22005",
       nameKo: "세이부사야마선",
       nameJp: "西武狭山線",
+      nameKana: "セイブサヤマセン",
       color: "#C0392B",
       stations: [
         {
@@ -7005,6 +7071,7 @@ export const kanto: OperatorData = {
       id: "22006",
       nameKo: "레오라이나",
       nameJp: "レオライナー",
+      nameKana: "レオライナー",
       color: "#2980B9",
       stations: [
         {
@@ -7032,6 +7099,7 @@ export const kanto: OperatorData = {
       id: "22009",
       nameKo: "세이부세이부엔선",
       nameJp: "西武西武園線",
+      nameKana: "セイブセイブエンセン",
       color: "#27AE60",
       stations: [
         {
@@ -7054,6 +7122,7 @@ export const kanto: OperatorData = {
       id: "29003",
       nameKo: "소테쓰지아루초쿠쓰우선",
       nameJp: "相鉄・JR直通線",
+      nameKana: "ソウテツ・ジェイアールチョクツウセン",
       color: "#F1C40F",
       stations: [
         {
@@ -7188,6 +7257,7 @@ export const kanto: OperatorData = {
       id: "29001",
       nameKo: "본선",
       nameJp: "相鉄本線",
+      nameKana: "ソウテツホンセン",
       color: "#FF6B6B",
       stations: [
         {
@@ -7310,6 +7380,7 @@ export const kanto: OperatorData = {
       id: "29002",
       nameKo: "이즈미노선",
       nameJp: "相鉄いずみ野線",
+      nameKana: "ソウテツイズミノセン",
       color: "#4ECDC4",
       stations: [
         {
@@ -7362,6 +7433,7 @@ export const kanto: OperatorData = {
       id: "29004",
       nameKo: "소테쓰신요코하마선",
       nameJp: "相鉄新横浜線",
+      nameKana: "ソウテツシンヨコハマセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -7393,6 +7465,7 @@ export const kanto: OperatorData = {
       id: "99312",
       nameKo: "와타라세케이코쿠선",
       nameJp: "わたらせ渓谷線",
+      nameKana: "ワタラセケイコクセン",
       color: "#E84393",
       stations: [
         {
@@ -7492,6 +7565,7 @@ export const kanto: OperatorData = {
       id: "99313",
       nameKo: "유가리가오카선",
       nameJp: "ユーカリが丘線",
+      nameKana: "ユーガリガオカセン",
       color: "#00B894",
       stations: [
         {
@@ -7534,6 +7608,7 @@ export const kanto: OperatorData = {
       id: "99314",
       nameKo: "이즈하코네테쓰도다이유잔선",
       nameJp: "伊豆箱根鉄道大雄山線",
+      nameKana: "イズハコネテツドウダイユウザンセン",
       color: "#0984E3",
       stations: [
         {
@@ -7606,6 +7681,7 @@ export const kanto: OperatorData = {
       id: "99315",
       nameKo: "히타치나카카이힌테쓰도미나토선",
       nameJp: "ひたちなか海浜鉄道湊線",
+      nameKana: "ヒタチナカカイヒンテツドウミナトセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -7673,6 +7749,7 @@ export const kanto: OperatorData = {
       id: "99317",
       nameKo: "가나자와시사이도라인",
       nameJp: "金沢シーサイドライン",
+      nameKana: "カナザワシーサイドライン",
       color: "#E74C3C",
       stations: [
         {
@@ -7757,6 +7834,7 @@ export const kanto: OperatorData = {
       id: "99318",
       nameKo: "간토테쓰도조소선",
       nameJp: "関東鉄道常総線",
+      nameKana: "カントウテツドウジョウソウセン",
       color: "#3498DB",
       stations: [
         {
@@ -7896,6 +7974,7 @@ export const kanto: OperatorData = {
       id: "99319",
       nameKo: "간토테쓰도류가사키선",
       nameJp: "関東鉄道竜ヶ崎線",
+      nameKana: "カントウテツドウリュウガサキセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -7923,6 +8002,7 @@ export const kanto: OperatorData = {
       id: "99320",
       nameKo: "에노시마덴테쓰선",
       nameJp: "江ノ島電鉄線",
+      nameKana: "エノシマデンテツセン",
       color: "#2ECC71",
       stations: [
         {
@@ -8014,6 +8094,7 @@ export const kanto: OperatorData = {
       id: "99323",
       nameKo: "가시마린카이테쓰도아라이카시마선",
       nameJp: "鹿島臨海鉄道大洗鹿島線",
+      nameKana: "カシマリンカイテツドウオオアライカシマセン",
       color: "#9B59B6",
       stations: [
         {
@@ -8110,6 +8191,7 @@ export const kanto: OperatorData = {
       id: "99326",
       nameKo: "쇼난모노레루",
       nameJp: "湘南モノレール",
+      nameKana: "ショウナンモノレール",
       color: "#F39C12",
       stations: [
         {
@@ -8164,6 +8246,7 @@ export const kanto: OperatorData = {
       id: "99327",
       nameKo: "조신덴테쓰",
       nameJp: "上信電鉄",
+      nameKana: "ジョウシンデンテツ",
       color: "#1ABC9C",
       stations: [
         {
@@ -8281,6 +8364,7 @@ export const kanto: OperatorData = {
       id: "99328",
       nameKo: "조모덴키테쓰도조모선",
       nameJp: "上毛電気鉄道上毛線",
+      nameKana: "ジョウモウデンキテツドウジョウモウセン",
       color: "#E67E22",
       stations: [
         {
@@ -8408,6 +8492,7 @@ export const kanto: OperatorData = {
       id: "99330",
       nameKo: "모카테쓰도모카선",
       nameJp: "真岡鐵道真岡線",
+      nameKana: "モオカテツドウモオカセン",
       color: "#34495E",
       stations: [
         {
@@ -8505,6 +8590,7 @@ export const kanto: OperatorData = {
       id: "99333",
       nameKo: "류테쓰나가레야마선",
       nameJp: "流鉄流山線",
+      nameKana: "リュウテツナガレヤマセン",
       color: "#16A085",
       stations: [
         {
@@ -8549,6 +8635,7 @@ export const kanto: OperatorData = {
       id: "99335",
       nameKo: "조시덴테쓰선",
       nameJp: "銚子電鉄線",
+      nameKana: "チョウシデンテツセン",
       color: "#C0392B",
       stations: [
         {
@@ -8611,6 +8698,7 @@ export const kanto: OperatorData = {
       id: "99339",
       nameKo: "하코네토잔테쓰도테쓰도선",
       nameJp: "箱根登山鉄道鉄道線",
+      nameKana: "ハコネトザンテツドウテツドウセン",
       color: "#2980B9",
       stations: [
         {
@@ -8678,6 +8766,7 @@ export const kanto: OperatorData = {
       id: "99344",
       nameKo: "하코네토잔케부루카",
       nameJp: "箱根登山ケーブルカー",
+      nameKana: "ハコネトザンケーブルカー",
       color: "#27AE60",
       stations: [
         {
@@ -8720,6 +8809,7 @@ export const kanto: OperatorData = {
       id: "99341",
       nameKo: "홋토스파라인",
       nameJp: "ほっとスパ・ライン",
+      nameKana: "ホットスパライン",
       color: "#8E44AD",
       stations: [
         {
@@ -8779,6 +8869,7 @@ export const kanto: OperatorData = {
       id: "99345",
       nameKo: "우쓰노미야하가라이토레루선",
       nameJp: "芳賀・宇都宮LRT",
+      nameKana: "ウツノミヤハガライトレールセン",
       color: "#D35400",
       stations: [
         {
@@ -8886,6 +8977,7 @@ export const kanto: OperatorData = {
       id: "99302",
       nameKo: "아사쿠사선",
       nameJp: "都営浅草線",
+      nameKana: "トエイアサクサセン",
       color: "#E85298",
       stations: [
         {
@@ -9026,6 +9118,7 @@ export const kanto: OperatorData = {
       id: "99303",
       nameKo: "미타선",
       nameJp: "都営三田線",
+      nameKana: "トエイミタセン",
       color: "#0079C2",
       stations: [
         {
@@ -9189,6 +9282,7 @@ export const kanto: OperatorData = {
       id: "99304",
       nameKo: "신주쿠선",
       nameJp: "都営新宿線",
+      nameKana: "トエイシンジュクセン",
       color: "#6CBB5A",
       stations: [
         {
@@ -9322,6 +9416,7 @@ export const kanto: OperatorData = {
       id: "99301",
       nameKo: "오에도선",
       nameJp: "都営大江戸線",
+      nameKana: "トエイオオエドセン",
       color: "#B6007A",
       stations: [
         {
@@ -9568,6 +9663,7 @@ export const kanto: OperatorData = {
       id: "99305",
       nameKo: "도쿄 사쿠라 트램",
       nameJp: "東京さくらトラム（都電荒川線）",
+      nameKana: "トウキョウサクラトラム（トデンアラカワセン）",
       color: "#E74C3C",
       stations: [
         {
@@ -9740,6 +9836,7 @@ export const kanto: OperatorData = {
       id: "28001",
       nameKo: "긴자선",
       nameJp: "東京メトロ銀座線",
+      nameKana: "ギンザセン",
       color: "#FF9500",
       stations: [
         {
@@ -9873,6 +9970,7 @@ export const kanto: OperatorData = {
       id: "28002",
       nameKo: "마루노우치선",
       nameJp: "東京メトロ丸ノ内線",
+      nameKana: "マルノウチセン",
       color: "#F62E36",
       stations: [
         {
@@ -10038,6 +10136,7 @@ export const kanto: OperatorData = {
       id: "28003",
       nameKo: "히비야선",
       nameJp: "東京メトロ日比谷線",
+      nameKana: "ヒビヤセン",
       color: "#B5B5AC",
       stations: [
         {
@@ -10190,6 +10289,7 @@ export const kanto: OperatorData = {
       id: "28004",
       nameKo: "도자이선",
       nameJp: "東京メトロ東西線",
+      nameKana: "トウザイセン",
       color: "#009BBF",
       stations: [
         {
@@ -10331,6 +10431,7 @@ export const kanto: OperatorData = {
       id: "28005",
       nameKo: "치요다선",
       nameJp: "東京メトロ千代田線",
+      nameKana: "チヨダセン",
       color: "#00BB85",
       stations: [
         {
@@ -10465,6 +10566,7 @@ export const kanto: OperatorData = {
       id: "28006",
       nameKo: "유라쿠초선",
       nameJp: "東京メトロ有楽町線",
+      nameKana: "ユウラクチョウセン",
       color: "#C1A470",
       stations: [
         {
@@ -10631,6 +10733,7 @@ export const kanto: OperatorData = {
       id: "28008",
       nameKo: "한조몬선",
       nameJp: "東京メトロ半蔵門線",
+      nameKana: "ハンゾウモンセン",
       color: "#8F76D6",
       stations: [
         {
@@ -10735,6 +10838,7 @@ export const kanto: OperatorData = {
       id: "28009",
       nameKo: "난보쿠선",
       nameJp: "東京メトロ南北線",
+      nameKana: "ナンボクセン",
       color: "#00AC9B",
       stations: [
         {
@@ -10864,6 +10968,7 @@ export const kanto: OperatorData = {
       id: "28010",
       nameKo: "후쿠토신선",
       nameJp: "東京メトロ副都心線",
+      nameKana: "フクトシンセン",
       color: "#9C5E31",
       stations: [
         {
@@ -10982,6 +11087,7 @@ export const kanto: OperatorData = {
       id: "26001",
       nameKo: "도요코선",
       nameJp: "東急東横線",
+      nameKana: "トウキュウトウヨコセン",
       color: "#FFA502",
       stations: [
         {
@@ -11119,6 +11225,7 @@ export const kanto: OperatorData = {
       id: "26003",
       nameKo: "덴엔토시선",
       nameJp: "東急田園都市線",
+      nameKana: "トウキュウデンエントシセン",
       color: "#FF6348",
       stations: [
         {
@@ -11280,6 +11387,7 @@ export const kanto: OperatorData = {
       id: "26002",
       nameKo: "메구로선",
       nameJp: "東急目黒線",
+      nameKana: "トウキュウメグロセン",
       color: "#FF7F50",
       stations: [
         {
@@ -11369,6 +11477,7 @@ export const kanto: OperatorData = {
       id: "26004",
       nameKo: "오이마치선",
       nameJp: "東急大井町線",
+      nameKana: "トウキュウオオイマチセン",
       color: "#FF8C00",
       stations: [
         {
@@ -11485,6 +11594,7 @@ export const kanto: OperatorData = {
       id: "26005",
       nameKo: "이케가미선",
       nameJp: "東急池上線",
+      nameKana: "トウキュウイケガミセン",
       color: "#FFB6C1",
       stations: [
         {
@@ -11576,6 +11686,7 @@ export const kanto: OperatorData = {
       id: "26006",
       nameKo: "다마가와선",
       nameJp: "東急多摩川線",
+      nameKana: "トウキュウタマガワセン",
       color: "#FFDAB9",
       stations: [
         {
@@ -11623,6 +11734,7 @@ export const kanto: OperatorData = {
       id: "26007",
       nameKo: "세타가야선",
       nameJp: "東急世田谷線",
+      nameKana: "トウキュウセタガヤセン",
       color: "#98D8C8",
       stations: [
         {
@@ -11687,6 +11799,7 @@ export const kanto: OperatorData = {
       id: "26008",
       nameKo: "도큐코도모노쿠니선",
       nameJp: "東急こどもの国線",
+      nameKana: "トウキュウコドモノクニセン",
       color: "#E84393",
       stations: [
         {
@@ -11712,6 +11825,7 @@ export const kanto: OperatorData = {
       id: "26009",
       nameKo: "도큐신요코하마선",
       nameJp: "東急新横浜線",
+      nameKana: "トウキュウシンヨコハマセン",
       color: "#00B894",
       stations: [
         {
@@ -11743,6 +11857,7 @@ export const kanto: OperatorData = {
       id: "24001",
       nameKo: "케이오선",
       nameJp: "京王線",
+      nameKana: "ケイオウセン",
       color: "#E85298",
       stations: [
         {
@@ -11929,6 +12044,7 @@ export const kanto: OperatorData = {
       id: "24002",
       nameKo: "사가미하라선",
       nameJp: "京王相模原線",
+      nameKana: "ケイオウサガミハラセン",
       color: "#4D9DE0",
       stations: [
         {
@@ -12005,6 +12121,7 @@ export const kanto: OperatorData = {
       id: "24003",
       nameKo: "다카오선",
       nameJp: "京王高尾線",
+      nameKana: "ケイオウタカオセン",
       color: "#E15F41",
       stations: [
         {
@@ -12052,6 +12169,7 @@ export const kanto: OperatorData = {
       id: "24006",
       nameKo: "이노카시라선",
       nameJp: "京王井の頭線",
+      nameKana: "ケイオウイノガシラセン",
       color: "#85C1E2",
       stations: [
         {
@@ -12153,6 +12271,7 @@ export const kanto: OperatorData = {
       id: "24004",
       nameKo: "게이오케이바조선",
       nameJp: "京王競馬場線",
+      nameKana: "ケイオウケイバジョウセン",
       color: "#D35400",
       stations: [
         {
@@ -12173,6 +12292,7 @@ export const kanto: OperatorData = {
       id: "24005",
       nameKo: "게이오도부쓰엔선",
       nameJp: "京王動物園線",
+      nameKana: "ケイオウドウブツエンセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -12195,6 +12315,7 @@ export const kanto: OperatorData = {
       id: "24007",
       nameKo: "게이오신선",
       nameJp: "京王新線",
+      nameKana: "ケイオウシンセン",
       color: "#F1C40F",
       stations: [
         {
@@ -12229,6 +12350,7 @@ export const kanto: OperatorData = {
       id: "25001",
       nameKo: "오다큐선",
       nameJp: "小田急線",
+      nameKana: "オダキュウセン",
       color: "#52B788",
       stations: [
         {
@@ -12496,6 +12618,7 @@ export const kanto: OperatorData = {
       id: "25002",
       nameKo: "에노시마선",
       nameJp: "小田急江ノ島線",
+      nameKana: "オダキュウエノシマセン",
       color: "#D4A373",
       stations: [
         {
@@ -12599,6 +12722,7 @@ export const kanto: OperatorData = {
       id: "25003",
       nameKo: "다마선",
       nameJp: "小田急多摩線",
+      nameKana: "オダキュウタマセン",
       color: "#EB984E",
       stations: [
         {
@@ -12655,6 +12779,7 @@ export const kanto: OperatorData = {
       id: "27001",
       nameKo: "본선",
       nameJp: "京急本線",
+      nameKana: "ケイキュウホンセン",
       color: "#F8B739",
       stations: [
         {
@@ -12937,6 +13062,7 @@ export const kanto: OperatorData = {
       id: "27002",
       nameKo: "공항선",
       nameJp: "京急空港線",
+      nameKana: "ケイキュウクウコウセン",
       color: "#EC7063",
       stations: [
         {
@@ -12988,6 +13114,7 @@ export const kanto: OperatorData = {
       id: "27003",
       nameKo: "다이시선",
       nameJp: "京急大師線",
+      nameKana: "ケイキュウダイシセン",
       color: "#A569BD",
       stations: [
         {
@@ -13033,6 +13160,7 @@ export const kanto: OperatorData = {
       id: "27005",
       nameKo: "구리하마선",
       nameJp: "京急久里浜線",
+      nameKana: "ケイキュウクリハマセン",
       color: "#45B39D",
       stations: [
         {
@@ -13090,6 +13218,7 @@ export const kanto: OperatorData = {
       id: "27004",
       nameKo: "게이큐즈시선",
       nameJp: "京急逗子線",
+      nameKana: "ケイキュウズシセン",
       color: "#0984E3",
       stations: [
         {
@@ -13122,6 +13251,7 @@ export const kanto: OperatorData = {
       id: "23001",
       nameKo: "본선",
       nameJp: "京成本線",
+      nameKana: "ケイセイホンセン",
       color: "#F5B041",
       stations: [
         {
@@ -13375,6 +13505,7 @@ export const kanto: OperatorData = {
       id: "23002",
       nameKo: "오시아게선",
       nameJp: "京成押上線",
+      nameKana: "ケイセイオシアゲセン",
       color: "#EB984E",
       stations: [
         {
@@ -13424,6 +13555,7 @@ export const kanto: OperatorData = {
       id: "23004",
       nameKo: "게이세이 지바선",
       nameJp: "京成千葉線",
+      nameKana: "ケイセイチバセン",
       color: "#F7DC6F",
       stations: [
         {
@@ -13492,6 +13624,7 @@ export const kanto: OperatorData = {
       id: "99329",
       nameKo: "게이세이 마쓰도선",
       nameJp: "京成松戸線",
+      nameKana: "ケイセイマツドセン",
       color: "#FF6F61",
       stations: [
         {
@@ -13630,6 +13763,7 @@ export const kanto: OperatorData = {
       id: "23005",
       nameKo: "히가시나리타선",
       nameJp: "京成千原線",
+      nameKana: "ケイセイチハラセン",
       color: "#CD6155",
       stations: [
         {
@@ -13670,6 +13804,7 @@ export const kanto: OperatorData = {
       id: "23006",
       nameKo: "나리타스카이액세스선",
       nameJp: "成田スカイアクセス",
+      nameKana: "ナリタスカイアクセス",
       color: "#8E44AD",
       stations: [
         {
@@ -13753,6 +13888,7 @@ export const kanto: OperatorData = {
       id: "23003",
       nameKo: "게이세이카나마치선",
       nameJp: "京成金町線",
+      nameKana: "ケイセイカナマチセン",
       color: "#8E44AD",
       stations: [
         {
@@ -13782,6 +13918,7 @@ export const kanto: OperatorData = {
       id: "99310",
       nameKo: "미나토미라이선",
       nameJp: "みなとみらい線",
+      nameKana: "ミナトミライセン",
       color: "#95E1D3",
       stations: [
         {
@@ -13824,6 +13961,7 @@ export const kanto: OperatorData = {
       id: "99316",
       nameKo: "블루라인",
       nameJp: "ブルーライン",
+      nameKana: "ブルーライン",
       color: "#3498DB",
       stations: [
         {
@@ -14012,6 +14150,7 @@ export const kanto: OperatorData = {
       id: "99343",
       nameKo: "그린라인",
       nameJp: "グリーンライン",
+      nameKana: "グリーンライン",
       color: "#2ECC71",
       stations: [
         {
@@ -14080,6 +14219,7 @@ export const kanto: OperatorData = {
       id: "99337",
       nameKo: "린카이선",
       nameJp: "りんかい線",
+      nameKana: "リンカイセン",
       color: "#00D4AA",
       stations: [
         {
@@ -14138,6 +14278,7 @@ export const kanto: OperatorData = {
       id: "99309",
       nameKo: "츠쿠바 익스프레스",
       nameJp: "つくばエクスプレス",
+      nameKana: "ツクバエクスプレス",
       color: "#A29BFE",
       stations: [
         {
@@ -14262,6 +14403,7 @@ export const kanto: OperatorData = {
       id: "99336",
       nameKo: "하네다공항선",
       nameJp: "東京モノレール",
+      nameKana: "トウキョウモノレール",
       color: "#74B9FF",
       stations: [
         {
@@ -14339,6 +14481,7 @@ export const kanto: OperatorData = {
       id: "99334",
       nameKo: "다마 모노레일",
       nameJp: "多摩モノレール",
+      nameKana: "タマモノレール",
       color: "#FD79A8",
       stations: [
         {
@@ -14452,6 +14595,7 @@ export const kanto: OperatorData = {
       id: "99311",
       nameKo: "유리카모메선",
       nameJp: "ゆりかもめ",
+      nameKana: "ユリカモメ",
       color: "#FDCB6E",
       stations: [
         {
@@ -14548,6 +14692,7 @@ export const kanto: OperatorData = {
       id: "99307",
       nameKo: "사이타마 고속철도선",
       nameJp: "埼玉高速鉄道線",
+      nameKana: "サイタマコウソクテツドウセン",
       color: "#E17055",
       stations: [
         {
@@ -14602,6 +14747,7 @@ export const kanto: OperatorData = {
       id: "99321",
       nameKo: "이나선/뉴 셔틀",
       nameJp: "ニューシャトル",
+      nameKana: "ニューシャトル",
       color: "#00B894",
       stations: [
         {
@@ -14679,6 +14825,7 @@ export const kanto: OperatorData = {
       id: "99331",
       nameKo: "치바 도시 모노레일 1호선",
       nameJp: "千葉都市モノレール１号線",
+      nameKana: "チバトシモノレールイチゴウセン",
       color: "#FAD02E",
       stations: [
         {
@@ -14723,6 +14870,7 @@ export const kanto: OperatorData = {
       id: "99332",
       nameKo: "치바 도시 모노레일 2호선",
       nameJp: "千葉都市モノレール２号線",
+      nameKana: "チバトシモノレールニゴウセン",
       color: "#F7A440",
       stations: [
         {
@@ -14816,6 +14964,7 @@ export const kanto: OperatorData = {
       id: "99325",
       nameKo: "고미나토 철도선",
       nameJp: "小湊鉄道線",
+      nameKana: "コミナトテツドウセン",
       color: "#E67E22",
       stations: [
         {
@@ -14920,6 +15069,7 @@ export const kanto: OperatorData = {
       id: "99308",
       nameKo: "이수미선",
       nameJp: "いすみ線",
+      nameKana: "イスミセン",
       color: "#27AE60",
       stations: [
         {
@@ -15004,6 +15154,7 @@ export const kanto: OperatorData = {
       id: "99342",
       nameKo: "닛포리-토네리 라이너",
       nameJp: "日暮里・舎人ライナー",
+      nameKana: "ニッポリ・トネリライナー",
       color: "#2980B9",
       stations: [
         {
@@ -15085,6 +15236,7 @@ export const kanto: OperatorData = {
       id: "99340",
       nameKo: "호쿠소선",
       nameJp: "北総鉄道北総線",
+      nameKana: "ホクソウテツドウホクソウセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -15180,6 +15332,7 @@ export const kanto: OperatorData = {
       id: "99306",
       nameKo: "치치부 철도 본선",
       nameJp: "秩父鉄道秩父本線",
+      nameKana: "チチブテツドウチチブホンセン",
       color: "#F1C40F",
       stations: [
         {
@@ -15381,6 +15534,7 @@ export const kanto: OperatorData = {
       id: "99338",
       nameKo: "도요 고속선",
       nameJp: "東葉高速線",
+      nameKana: "トウヨウコウソクセン",
       color: "#FF7675",
       stations: [
         {
@@ -15442,6 +15596,7 @@ export const kanto: OperatorData = {
       id: "99324",
       nameKo: "시바야마테쓰도선",
       nameJp: "芝山鉄道線",
+      nameKana: "シバヤマテツドウセン",
       color: "#E74C3C",
       stations: [
         {

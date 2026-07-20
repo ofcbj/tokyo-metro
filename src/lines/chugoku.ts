@@ -7,6 +7,7 @@ export const chugoku: OperatorData = {
       id: "11609",
       nameKo: "산요혼선",
       nameJp: "JR山陽本線(姫路～岡山)",
+      nameKana: "サンヨウホンセン",
       color: "#E74C3C",
       stations: [
         {
@@ -124,6 +125,7 @@ export const chugoku: OperatorData = {
       id: "11610",
       nameKo: "산요혼선",
       nameJp: "JR山陽本線(岡山～三原)",
+      nameKana: "サンヨウホンセン",
       color: "#3498DB",
       stations: [
         {
@@ -248,6 +250,7 @@ export const chugoku: OperatorData = {
       id: "11611",
       nameKo: "산요혼선",
       nameJp: "JR山陽本線(三原～岩国)",
+      nameKana: "サンヨウホンセン",
       color: "#2ECC71",
       stations: [
         {
@@ -441,6 +444,7 @@ export const chugoku: OperatorData = {
       id: "11612",
       nameKo: "산요혼선",
       nameJp: "JR山陽本線(岩国～門司)",
+      nameKana: "サンヨウホンセン",
       color: "#9B59B6",
       stations: [
         {
@@ -654,6 +658,7 @@ export const chugoku: OperatorData = {
       id: "11616",
       nameKo: "산인혼선",
       nameJp: "JR山陰本線(豊岡～米子)",
+      nameKana: "サンインホンセン",
       color: "#F39C12",
       stations: [
         {
@@ -877,6 +882,7 @@ export const chugoku: OperatorData = {
       id: "11631",
       nameKo: "아코선",
       nameJp: "JR赤穂線",
+      nameKana: "アコウセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -1005,6 +1011,7 @@ export const chugoku: OperatorData = {
       id: "11634",
       nameKo: "기신선",
       nameJp: "JR姫新線(佐用～新見)",
+      nameKana: "キシンセン",
       color: "#E67E22",
       stations: [
         {
@@ -1146,6 +1153,7 @@ export const chugoku: OperatorData = {
       id: "11701",
       nameKo: "산인혼선",
       nameJp: "JR山陰本線(米子～益田)",
+      nameKana: "サンインホンセン",
       color: "#34495E",
       stations: [
         {
@@ -1387,6 +1395,7 @@ export const chugoku: OperatorData = {
       id: "11702",
       nameKo: "산인혼선",
       nameJp: "JR山陰本線(益田～下関)",
+      nameKana: "サンインホンセン",
       color: "#16A085",
       stations: [
         {
@@ -1598,6 +1607,7 @@ export const chugoku: OperatorData = {
       id: "11703",
       nameKo: "하쿠비선",
       nameJp: "JR伯備線",
+      nameKana: "ハクビセン",
       color: "#C0392B",
       stations: [
         {
@@ -1795,6 +1805,7 @@ export const chugoku: OperatorData = {
       id: "11704",
       nameKo: "인비선",
       nameJp: "JR因美線",
+      nameKana: "インビセン",
       color: "#2980B9",
       stations: [
         {
@@ -1913,6 +1924,7 @@ export const chugoku: OperatorData = {
       id: "11705",
       nameKo: "사카이선",
       nameJp: "JR境線",
+      nameKana: "サカイセン",
       color: "#27AE60",
       stations: [
         {
@@ -2003,6 +2015,7 @@ export const chugoku: OperatorData = {
       id: "11706",
       nameKo: "기스키선",
       nameJp: "JR木次線",
+      nameKana: "キスキセン",
       color: "#8E44AD",
       stations: [
         {
@@ -2105,6 +2118,7 @@ export const chugoku: OperatorData = {
       id: "11708",
       nameKo: "야마구치선",
       nameJp: "JR山口線",
+      nameKana: "ヤマグチセン",
       color: "#D35400",
       stations: [
         {
@@ -2257,6 +2271,7 @@ export const chugoku: OperatorData = {
       id: "11709",
       nameKo: "우노선",
       nameJp: "JR宇野線",
+      nameKana: "ウノセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -2344,6 +2359,7 @@ export const chugoku: OperatorData = {
       id: "11710",
       nameKo: "세토하시선",
       nameJp: "瀬戸大橋線",
+      nameKana: "セトオオハシセン",
       color: "#F1C40F",
       stations: [
         {
@@ -2386,6 +2402,7 @@ export const chugoku: OperatorData = {
       id: "11713",
       nameKo: "기비선",
       nameJp: "JR吉備線",
+      nameKana: "キビセン",
       color: "#E84393",
       stations: [
         {
@@ -2448,6 +2465,7 @@ export const chugoku: OperatorData = {
       id: "11714",
       nameKo: "게이비선",
       nameJp: "JR芸備線",
+      nameKana: "ゲイビセン",
       color: "#00B894",
       stations: [
         {
@@ -2702,6 +2720,7 @@ export const chugoku: OperatorData = {
       id: "11715",
       nameKo: "쓰야마선",
       nameJp: "JR津山線",
+      nameKana: "ツヤマセン",
       color: "#0984E3",
       stations: [
         {
@@ -2799,6 +2818,7 @@ export const chugoku: OperatorData = {
       id: "11716",
       nameKo: "구레선",
       nameJp: "JR呉線",
+      nameKana: "クレセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -2979,6 +2999,7 @@ export const chugoku: OperatorData = {
       id: "11717",
       nameKo: "가베선",
       nameJp: "JR可部線",
+      nameKana: "カベセン",
       color: "#E74C3C",
       stations: [
         {
@@ -3075,6 +3096,7 @@ export const chugoku: OperatorData = {
       id: "11720",
       nameKo: "후쿠엔선",
       nameJp: "JR福塩線",
+      nameKana: "フクエンセン",
       color: "#3498DB",
       stations: [
         {
@@ -3245,6 +3267,7 @@ export const chugoku: OperatorData = {
       id: "11721",
       nameKo: "우베선",
       nameJp: "JR宇部線",
+      nameKana: "ウベセン",
       color: "#2ECC71",
       stations: [
         {
@@ -3351,6 +3374,7 @@ export const chugoku: OperatorData = {
       id: "11722",
       nameKo: "미네선",
       nameJp: "JR美祢線",
+      nameKana: "ミネセン",
       color: "#9B59B6",
       stations: [
         {
@@ -3428,6 +3452,7 @@ export const chugoku: OperatorData = {
       id: "11723",
       nameKo: "오노다선",
       nameJp: "JR小野田線",
+      nameKana: "オノダセン",
       color: "#F39C12",
       stations: [
         {
@@ -3502,6 +3527,7 @@ export const chugoku: OperatorData = {
       id: "11724",
       nameKo: "간토쿠선",
       nameJp: "JR岩徳線",
+      nameKana: "ガントクセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -3600,6 +3626,7 @@ export const chugoku: OperatorData = {
       id: "99701",
       nameKo: "와카사선",
       nameJp: "若桜線",
+      nameKana: "ワカサセン",
       color: "#E67E22",
       stations: [
         {
@@ -3657,6 +3684,7 @@ export const chugoku: OperatorData = {
       id: "99702",
       nameKo: "기타마쓰에선",
       nameJp: "北松江線",
+      nameKana: "キタマツエセン",
       color: "#34495E",
       stations: [
         {
@@ -3779,6 +3807,7 @@ export const chugoku: OperatorData = {
       id: "99703",
       nameKo: "다이샤선",
       nameJp: "大社線",
+      nameKana: "タイシャセン",
       color: "#16A085",
       stations: [
         {
@@ -3816,6 +3845,7 @@ export const chugoku: OperatorData = {
       id: "99704",
       nameKo: "미즈시마혼선",
       nameJp: "水島本線",
+      nameKana: "ミズシマホンセン",
       color: "#C0392B",
       stations: [
         {
@@ -3878,6 +3908,7 @@ export const chugoku: OperatorData = {
       id: "99705",
       nameKo: "이바라선",
       nameJp: "井原線",
+      nameKana: "イバラセン",
       color: "#2980B9",
       stations: [
         {
@@ -3969,6 +4000,7 @@ export const chugoku: OperatorData = {
       id: "99706",
       nameKo: "히가시야마선",
       nameJp: "東山線",
+      nameKana: "ヒガシヤマセン",
       color: "#27AE60",
       stations: [
         {
@@ -4033,6 +4065,7 @@ export const chugoku: OperatorData = {
       id: "99707",
       nameKo: "세이키바시선",
       nameJp: "清輝橋線",
+      nameKana: "セイキバシセン",
       color: "#8E44AD",
       stations: [
         {
@@ -4094,6 +4127,7 @@ export const chugoku: OperatorData = {
       id: "99709",
       nameKo: "아스토라무라인",
       nameJp: "アストラムライン",
+      nameKana: "アストラムライン",
       color: "#D35400",
       stations: [
         {
@@ -4220,6 +4254,7 @@ export const chugoku: OperatorData = {
       id: "99710",
       nameKo: "히로덴이치고선",
       nameJp: "広電１号線(宇品線)",
+      nameKana: "ヒロデンイチゴウセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -4403,6 +4438,7 @@ export const chugoku: OperatorData = {
       id: "99711",
       nameKo: "히로덴니고선",
       nameJp: "広電２号線(宮島線)",
+      nameKana: "ヒロデンニゴウセン",
       color: "#F1C40F",
       stations: [
         {
@@ -4654,6 +4690,7 @@ export const chugoku: OperatorData = {
       id: "99712",
       nameKo: "히로덴산고선",
       nameJp: "広電３号線",
+      nameKana: "ヒロデンサンゴウセン",
       color: "#E84393",
       stations: [
         {
@@ -4788,6 +4825,7 @@ export const chugoku: OperatorData = {
       id: "99713",
       nameKo: "히로덴고고선",
       nameJp: "広電５号線(皆実線)",
+      nameKana: "ヒロデンゴゴウセン",
       color: "#00B894",
       stations: [
         {
@@ -4905,6 +4943,7 @@ export const chugoku: OperatorData = {
       id: "99714",
       nameKo: "히로덴로쿠고선",
       nameJp: "広電６号線(江波線)",
+      nameKana: "ヒロデンロクゴウセン",
       color: "#0984E3",
       stations: [
         {
@@ -5039,6 +5078,7 @@ export const chugoku: OperatorData = {
       id: "99715",
       nameKo: "히로덴나나고선",
       nameJp: "広電７号線",
+      nameKana: "ヒロデンナナゴウセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -5229,6 +5269,7 @@ export const chugoku: OperatorData = {
       id: "99716",
       nameKo: "히로덴하치고선",
       nameJp: "広電８号線(横川線)",
+      nameKana: "ヒロデンハチゴウセン",
       color: "#E74C3C",
       stations: [
         {
@@ -5321,6 +5362,7 @@ export const chugoku: OperatorData = {
       id: "99717",
       nameKo: "히로덴큐고선",
       nameJp: "広電９号線(白島線)",
+      nameKana: "ヒロデンキュウゴウセン",
       color: "#3498DB",
       stations: [
         {
@@ -5358,6 +5400,7 @@ export const chugoku: OperatorData = {
       id: "99718",
       nameKo: "니시키가와세이류선",
       nameJp: "錦川清流線",
+      nameKana: "ニシキガワセイリュウセン",
       color: "#2ECC71",
       stations: [
         {

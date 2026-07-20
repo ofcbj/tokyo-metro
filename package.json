@@ -9,13 +9,15 @@
     "build": "vite build",
     "preview": "vite preview",
     "serve": "vite build && vite preview",
-    "normalize-transfers": "node scripts/normalize-transfers.mjs"
+    "normalize-transfers": "node scripts/normalize-transfers.mjs",
+    "add-line-kana": "node scripts/add-line-kana.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
+    "claude": "^0.1.1",
     "lucide-react": "^0.294.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

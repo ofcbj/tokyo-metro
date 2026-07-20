@@ -7,6 +7,7 @@ export const chubu: OperatorData = {
         id: "11311",
         nameKo: "특급 아즈사",
         nameJp: "特急あずさ (JR中央本線)",
+        nameKana: "トッキュウアズサ",
         color: "#8000ffff",
         stations: [
             {
@@ -135,6 +136,7 @@ export const chubu: OperatorData = {
                 lat: 36.230393,
                 lng: 137.96445,
                 transfer: true,
+                groupId: 1140901,
             },
         ],
     },
@@ -142,6 +144,7 @@ export const chubu: OperatorData = {
         id: "11412",
         nameKo: "시노노이선",
         nameJp: "JR篠ノ井線",
+        nameKana: "シノノイセン",
         color: "#e9af00ff",
         stations: [
             {
@@ -231,6 +234,7 @@ export const chubu: OperatorData = {
         id: "11403",
         nameKo: "신에쓰 본선 (시노노이~나가노)",
         nameJp: "JR信越本線(篠ノ井～長野)",
+        nameKana: "シンエツホンセン",
         color: "#00A0E9",
         stations: [
             {
@@ -268,6 +272,7 @@ export const chubu: OperatorData = {
         id: "11409",
         nameKo: "오이토선 (북알프스선)",
         nameJp: "JR大糸線",
+        nameKana: "キタアルプスセン",
         color: "#00e5e9ff",
         stations: [
             {
@@ -443,6 +448,7 @@ export const chubu: OperatorData = {
         id: "11407",
         nameKo: "이이야마선",
         nameJp: "JR飯山線",
+        nameKana: "イイヤマセン",
         color: "#00A0E9",
         stations: [
             {
@@ -618,6 +624,7 @@ export const chubu: OperatorData = {
         id: "11401",
         nameKo: "코우미선",
         nameJp: "JR小海線",
+        nameKana: "コウミセン",
         color: "#00A0E9",
         stations: [
             {
@@ -785,6 +792,7 @@ export const chubu: OperatorData = {
         id: "11414",
         nameKo: "이다선 (덴류쿄~타츠노)",
         nameJp: "JR飯田線(天竜峡～辰野)",
+        nameKana: "イイダセン",
         color: "#9dff00ff",
         stations: [
             {
@@ -1017,6 +1025,7 @@ export const chubu: OperatorData = {
         id: "11413",
         nameKo: "이다선 (도요하시~덴류쿄)",
         nameJp: "JR飯田線(豊橋～天竜峡)",
+        nameKana: "イイダセン",
         color: "#0099ffff",
         stations: [
             {
@@ -1286,6 +1295,7 @@ export const chubu: OperatorData = {
       id: "11226",
       nameKo: "모리토미즈토로만노테쓰도",
       nameJp: "森と水とロマンの鉄道",
+      nameKana: "モリトミズトロマンノテツドウ",
       color: "#E74C3C",
       stations: [
         {
@@ -1438,6 +1448,7 @@ export const chubu: OperatorData = {
       id: "11342",
       nameKo: "조에쓰선",
       nameJp: "JR上越線",
+      nameKana: "ジョウエツセン",
       color: "#3498DB",
       stations: [
         {
@@ -1646,6 +1657,7 @@ export const chubu: OperatorData = {
       id: "11404",
       nameKo: "신에쓰혼선",
       nameJp: "JR信越本線(直江津～新潟)",
+      nameKana: "シンエツホンセン",
       color: "#9B59B6",
       stations: [
         {
@@ -1880,6 +1892,7 @@ export const chubu: OperatorData = {
       id: "11406",
       nameKo: "하쿠신선",
       nameJp: "JR白新線",
+      nameKana: "ハクシンセン",
       color: "#F39C12",
       stations: [
         {
@@ -1942,6 +1955,7 @@ export const chubu: OperatorData = {
       id: "11408",
       nameKo: "에치고선",
       nameJp: "JR越後線",
+      nameKana: "エチゴセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -2121,6 +2135,7 @@ export const chubu: OperatorData = {
       id: "11410",
       nameKo: "야히코선",
       nameJp: "JR弥彦線",
+      nameKana: "ヤヒコセン",
       color: "#E67E22",
       stations: [
         {
@@ -2173,6 +2188,7 @@ export const chubu: OperatorData = {
       id: "11504",
       nameKo: "이토선",
       nameJp: "JR伊東線",
+      nameKana: "イトウセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -2217,6 +2233,7 @@ export const chubu: OperatorData = {
       id: "11502",
       nameKo: "도카이도 본선 (하마마쓰~기후)",
       nameJp: "JR東海道本線(浜松～岐阜)",
+      nameKana: "トウカイドウホンセン",
       color: "#EF7C00",
       stations: [
         {
@@ -2456,6 +2473,7 @@ export const chubu: OperatorData = {
       id: "11503",
       nameKo: "도카이도 본선 (기후~마이바라)",
       nameJp: "JR東海道本線(岐阜～美濃赤坂・米原)",
+      nameKana: "トウカイドウホンセン",
       color: "#EF7C00",
       stations: [
         {
@@ -2530,6 +2548,7 @@ export const chubu: OperatorData = {
       id: "11506",
       nameKo: "다케토요선",
       nameJp: "JR武豊線",
+      nameKana: "タケトヨセン",
       color: "#0072BC",
       stations: [
         {
@@ -2590,6 +2609,7 @@ export const chubu: OperatorData = {
       id: "11507",
       nameKo: "다이타선",
       nameJp: "JR太多線",
+      nameKana: "タイタセン",
       color: "#E4007F",
       stations: [
         {
@@ -2644,6 +2664,7 @@ export const chubu: OperatorData = {
       id: "11411",
       nameKo: "주오 본선 (나고야~시오지리)",
       nameJp: "JR中央本線(名古屋～塩尻)",
+      nameKana: "チュウオウホンセン",
       color: "#0075C2",
       stations: [
         {
@@ -2872,6 +2893,7 @@ export const chubu: OperatorData = {
       id: "11402",
       nameKo: "미노부선",
       nameJp: "JR身延線",
+      nameKana: "ミノブセン",
       color: "#2ECC71",
       stations: [
         {
@@ -3079,6 +3101,7 @@ export const chubu: OperatorData = {
       id: "11416",
       nameKo: "다카야마혼선",
       nameJp: "JR高山本線",
+      nameKana: "タカヤマホンセン",
       color: "#34495E",
       stations: [
         {
@@ -3324,6 +3347,7 @@ export const chubu: OperatorData = {
       id: "11501",
       nameKo: "도카이도혼선",
       nameJp: "JR東海道本線(熱海～浜松)",
+      nameKana: "トウカイドウホンセン",
       color: "#D35400",
       stations: [
         {
@@ -3525,6 +3549,7 @@ export const chubu: OperatorData = {
       id: "11505",
       nameKo: "고텐바선",
       nameJp: "JR御殿場線",
+      nameKana: "ゴテンバセン",
       color: "#F1C40F",
       stations: [
         {
@@ -3634,6 +3659,7 @@ export const chubu: OperatorData = {
       id: "99407",
       nameKo: "상고지선",
       nameJp: "上高地線",
+      nameKana: "カミコウチセン",
       color: "#FF6600",
       stations: [
         {
@@ -3716,6 +3742,7 @@ export const chubu: OperatorData = {
       id: "99403",
       nameKo: "시나노 철도선",
       nameJp: "しなの鉄道線",
+      nameKana: "シナノテツドウセン",
       color: "#FF0000",
       stations: [
         {
@@ -3825,6 +3852,7 @@ export const chubu: OperatorData = {
       id: "99427",
       nameKo: "키타시나노선",
       nameJp: "北しなの線",
+      nameKana: "キタシナノセン",
       color: "#ff00aeff",
       stations: [
         {
@@ -3885,6 +3913,7 @@ export const chubu: OperatorData = {
       id: "99405",
       nameKo: "나가노선",
       nameJp: "長野電鉄長野線",
+      nameKana: "ナガノデンテツナガノセン",
       color: "#bce600ff",
       stations: [
         {
@@ -4017,6 +4046,7 @@ export const chubu: OperatorData = {
       id: "99404",
       nameKo: "벳쇼선",
       nameJp: "別所線",
+      nameKana: "ウエダデンテツベッショセン",
       color: "#E85298",
       stations: [
         {
@@ -4104,6 +4134,7 @@ export const chubu: OperatorData = {
       id: "30001",
       nameKo: "나고야 본선",
       nameJp: "名鉄名古屋本線",
+      nameKana: "メイテツナゴヤホンセン",
       color: "#E7211A",
       stations: [
         {
@@ -4442,6 +4473,7 @@ export const chubu: OperatorData = {
       id: "30002",
       nameKo: "도요카와선",
       nameJp: "名鉄豊川線",
+      nameKana: "メイテツトヨカワセン",
       color: "#E7211A",
       stations: [
         {
@@ -4479,6 +4511,7 @@ export const chubu: OperatorData = {
       id: "30003",
       nameKo: "니시오선",
       nameJp: "名鉄西尾線",
+      nameKana: "メイテツニシオセン",
       color: "#00A0E9",
       stations: [
         {
@@ -4561,6 +4594,7 @@ export const chubu: OperatorData = {
       id: "30004",
       nameKo: "가마고리선",
       nameJp: "名鉄蒲郡線",
+      nameKana: "メイテツガマゴオリセン",
       color: "#8FC31F",
       stations: [
         {
@@ -4625,6 +4659,7 @@ export const chubu: OperatorData = {
       id: "30005",
       nameKo: "미카와선",
       nameJp: "名鉄三河線",
+      nameKana: "メイテツミカワセン",
       color: "#00A0E9",
       stations: [
         {
@@ -4756,6 +4791,7 @@ export const chubu: OperatorData = {
       id: "30006",
       nameKo: "도요타선",
       nameJp: "名鉄豊田線",
+      nameKana: "メイテツトヨタセン",
       color: "#EF858C",
       stations: [
         {
@@ -4815,6 +4851,7 @@ export const chubu: OperatorData = {
       id: "30007",
       nameKo: "도코나메·공항선",
       nameJp: "名鉄常滑・空港線",
+      nameKana: "メイテツトコナメクウコウセン",
       color: "#0068B7",
       stations: [
         {
@@ -4840,6 +4877,7 @@ export const chubu: OperatorData = {
       id: "30008",
       nameKo: "도코나메선",
       nameJp: "名鉄常滑線",
+      nameKana: "メイテツトコナメセン",
       color: "#0068B7",
       stations: [
         {
@@ -4992,6 +5030,7 @@ export const chubu: OperatorData = {
       id: "30009",
       nameKo: "고와선",
       nameJp: "名鉄河和線",
+      nameKana: "メイテツコウワセン",
       color: "#F39800",
       stations: [
         {
@@ -5104,6 +5143,7 @@ export const chubu: OperatorData = {
       id: "30010",
       nameKo: "지타신선",
       nameJp: "名鉄知多新線",
+      nameKana: "メイテツチタシンセン",
       color: "#F39800",
       stations: [
         {
@@ -5144,6 +5184,7 @@ export const chubu: OperatorData = {
       id: "30011",
       nameKo: "지코선",
       nameJp: "名鉄築港線",
+      nameKana: "メイテツチッコウセン",
       color: "#920783",
       stations: [
         {
@@ -5164,6 +5205,7 @@ export const chubu: OperatorData = {
       id: "30012",
       nameKo: "세토선",
       nameJp: "名鉄瀬戸線",
+      nameKana: "メイテツセトセン",
       color: "#E85298",
       stations: [
         {
@@ -5280,6 +5322,7 @@ export const chubu: OperatorData = {
       id: "30013",
       nameKo: "쓰시마선",
       nameJp: "名鉄津島線",
+      nameKana: "メイテツツシマセン",
       color: "#009944",
       stations: [
         {
@@ -5332,6 +5375,7 @@ export const chubu: OperatorData = {
       id: "30014",
       nameKo: "비사이선",
       nameJp: "名鉄尾西線",
+      nameKana: "メイテツビサイセン",
       color: "#009944",
       stations: [
         {
@@ -5456,6 +5500,7 @@ export const chubu: OperatorData = {
       id: "30015",
       nameKo: "이누야마선",
       nameJp: "名鉄犬山線",
+      nameKana: "メイテツイヌヤマセン",
       color: "#E60012",
       stations: [
         {
@@ -5576,6 +5621,7 @@ export const chubu: OperatorData = {
       id: "30016",
       nameKo: "가카미가하라선",
       nameJp: "名鉄各務原線",
+      nameKana: "メイテツカカミガハラセン",
       color: "#6CBB5A",
       stations: [
         {
@@ -5682,6 +5728,7 @@ export const chubu: OperatorData = {
       id: "30017",
       nameKo: "히로미선",
       nameJp: "名鉄広見線",
+      nameKana: "メイテツヒロミセン",
       color: "#009688",
       stations: [
         {
@@ -5749,6 +5796,7 @@ export const chubu: OperatorData = {
       id: "30018",
       nameKo: "고마키선",
       nameJp: "名鉄小牧線",
+      nameKana: "メイテツコマキセン",
       color: "#00ACA6",
       stations: [
         {
@@ -5831,6 +5879,7 @@ export const chubu: OperatorData = {
       id: "30020",
       nameKo: "다케하나선",
       nameJp: "名鉄竹鼻線",
+      nameKana: "メイテツタケハナセン",
       color: "#F7B52C",
       stations: [
         {
@@ -5888,6 +5937,7 @@ export const chubu: OperatorData = {
       id: "30021",
       nameKo: "하시마선",
       nameJp: "名鉄羽島線",
+      nameKana: "メイテツハシマセン",
       color: "#F7B52C",
       stations: [
         {
@@ -5910,6 +5960,7 @@ export const chubu: OperatorData = {
       id: "99509",
       nameKo: "아오나미선",
       nameJp: "あおなみ線",
+      nameKana: "アオナミセン",
       color: "#0067C0",
       stations: [
         {
@@ -5979,6 +6030,7 @@ export const chubu: OperatorData = {
       id: "99510",
       nameKo: "조호쿠선",
       nameJp: "東海交通事業城北線",
+      nameKana: "トウカイコウツウジギョウジョウホクセン",
       color: "#EE7800",
       stations: [
         {
@@ -6023,6 +6075,7 @@ export const chubu: OperatorData = {
       id: "99511",
       nameKo: "아이치 순환철도선",
       nameJp: "愛知環状鉄道線",
+      nameKana: "アイチカンジョウテツドウセン",
       color: "#00913A",
       stations: [
         {
@@ -6158,6 +6211,7 @@ export const chubu: OperatorData = {
       id: "99512",
       nameKo: "리니모",
       nameJp: "リニモ",
+      nameKana: "リニモ",
       color: "#0068B7",
       stations: [
         {
@@ -6217,6 +6271,7 @@ export const chubu: OperatorData = {
       id: "99513",
       nameKo: "히가시야마선",
       nameJp: "名古屋市営地下鉄東山線",
+      nameKana: "ナゴヤシエイチカテツヒガシヤマセン",
       color: "#FFCC00",
       stations: [
         {
@@ -6351,6 +6406,7 @@ export const chubu: OperatorData = {
       id: "99514",
       nameKo: "메이조선",
       nameJp: "名古屋市営地下鉄名城線",
+      nameKana: "ナゴヤシエイチカテツメイジョウセン",
       color: "#9B74C1",
       stations: [
         {
@@ -6521,6 +6577,7 @@ export const chubu: OperatorData = {
       id: "99515",
       nameKo: "메이코선",
       nameJp: "名古屋市営地下鉄名港線",
+      nameKana: "ナゴヤシエイチカテツメイコウセン",
       color: "#0473BE",
       stations: [
         {
@@ -6566,6 +6623,7 @@ export const chubu: OperatorData = {
       id: "99516",
       nameKo: "쓰루마이선",
       nameJp: "名古屋市営地下鉄鶴舞線",
+      nameKana: "ナゴヤシエイチカテツツルマイセン",
       color: "#04ACDD",
       stations: [
         {
@@ -6690,6 +6748,7 @@ export const chubu: OperatorData = {
       id: "99517",
       nameKo: "사쿠라도리선",
       nameJp: "名古屋市営地下鉄桜通線",
+      nameKana: "ナゴヤシエイチカテツサクラドオリセン",
       color: "#FF0000",
       stations: [
         {
@@ -6815,6 +6874,7 @@ export const chubu: OperatorData = {
       id: "99518",
       nameKo: "가미이다선",
       nameJp: "名古屋市営地下鉄上飯田線",
+      nameKana: "ナゴヤシエイチカテツカミイイダセン",
       color: "#FF66C4",
       stations: [
         {
@@ -6839,6 +6899,7 @@ export const chubu: OperatorData = {
       id: "99523",
       nameKo: "유토리토 라인",
       nameJp: "ゆとりーとライン",
+      nameKana: "ユトリートライン",
       color: "#EA5504",
       stations: [
         {
@@ -6902,6 +6963,7 @@ export const chubu: OperatorData = {
       id: "11417",
       nameKo: "조하나선",
       nameJp: "JR城端線",
+      nameKana: "ジョウハナセン",
       color: "#16A085",
       stations: [
         {
@@ -6982,6 +7044,7 @@ export const chubu: OperatorData = {
       id: "11418",
       nameKo: "히미선",
       nameJp: "JR氷見線",
+      nameKana: "ヒミセン",
       color: "#C0392B",
       stations: [
         {
@@ -7032,6 +7095,7 @@ export const chubu: OperatorData = {
       id: "11419",
       nameKo: "나나오선",
       nameJp: "JR七尾線",
+      nameKana: "ナナオセン",
       color: "#2980B9",
       stations: [
         {
@@ -7146,6 +7210,7 @@ export const chubu: OperatorData = {
       id: "11421",
       nameKo: "구즈류선",
       nameJp: "九頭竜線",
+      nameKana: "クズリュウセン",
       color: "#27AE60",
       stations: [
         {
@@ -7273,6 +7338,7 @@ export const chubu: OperatorData = {
       id: "11422",
       nameKo: "오바마선",
       nameJp: "JR小浜線",
+      nameKana: "オバマセン",
       color: "#8E44AD",
       stations: [
         {
@@ -7407,6 +7473,7 @@ export const chubu: OperatorData = {
       id: "99401",
       nameKo: "후지큐코선",
       nameJp: "富士急行線",
+      nameKana: "フジキュウコウセン",
       color: "#E84393",
       stations: [
         {
@@ -7509,6 +7576,7 @@ export const chubu: OperatorData = {
       id: "99402",
       nameKo: "호쿠에쓰큐코호쿠호쿠선",
       nameJp: "北越急行ほくほく線",
+      nameKana: "ホクエツキュウコウホクホクセン",
       color: "#00B894",
       stations: [
         {
@@ -7585,6 +7653,7 @@ export const chubu: OperatorData = {
       id: "99408",
       nameKo: "도야마치테쓰혼선",
       nameJp: "富山地鉄本線",
+      nameKana: "トヤマチテツホンセン",
       color: "#0984E3",
       stations: [
         {
@@ -7810,6 +7879,7 @@ export const chubu: OperatorData = {
       id: "99409",
       nameKo: "도야마치테쓰타테야마선",
       nameJp: "富山地鉄立山線",
+      nameKana: "トヤマチテツタテヤマセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -7892,6 +7962,7 @@ export const chubu: OperatorData = {
       id: "99410",
       nameKo: "도야마치테쓰후지코시카미다키선",
       nameJp: "富山地鉄不二越・上滝線",
+      nameKana: "トヤマチテツフジコシ・カミダキセン",
       color: "#E74C3C",
       stations: [
         {
@@ -7988,6 +8059,7 @@ export const chubu: OperatorData = {
       id: "99413",
       nameKo: "도야마치테쓰시나이선",
       nameJp: "富山地鉄市内線【１・２系統】",
+      nameKana: "トヤマチテツシナイセン",
       color: "#2ECC71",
       stations: [
         {
@@ -8128,6 +8200,7 @@ export const chubu: OperatorData = {
       id: "99422",
       nameKo: "도야마치테쓰토야마토신선",
       nameJp: "富山地鉄富山都心線【３系統(環状線)】",
+      nameKana: "トヤマチテツトヤマトシンセン",
       color: "#9B59B6",
       stations: [
         {
@@ -8221,6 +8294,7 @@ export const chubu: OperatorData = {
       id: "99415",
       nameKo: "도야마코선",
       nameJp: "富山港線",
+      nameKana: "トヤマコウセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -8308,6 +8382,7 @@ export const chubu: OperatorData = {
       id: "99412",
       nameKo: "구로베쿄코쿠테쓰도혼선",
       nameJp: "黒部峡谷鉄道本線",
+      nameKana: "クロベキョウコクテツドウホンセン",
       color: "#3498DB",
       stations: [
         {
@@ -8340,6 +8415,7 @@ export const chubu: OperatorData = {
       id: "99414",
       nameKo: "만요선",
       nameJp: "万葉線",
+      nameKana: "マンヨウセン",
       color: "#F39C12",
       stations: [
         {
@@ -8477,6 +8553,7 @@ export const chubu: OperatorData = {
       id: "99416",
       nameKo: "호쿠리쿠테쓰도이시카와선",
       nameJp: "北陸鉄道石川線",
+      nameKana: "ホクリクテツドウイシカワセン",
       color: "#E67E22",
       stations: [
         {
@@ -8572,6 +8649,7 @@ export const chubu: OperatorData = {
       id: "99417",
       nameKo: "호쿠리쿠테쓰도아사노가와선",
       nameJp: "北陸鉄道浅野川線",
+      nameKana: "ホクリクテツドウアサノガワセン",
       color: "#34495E",
       stations: [
         {
@@ -8644,6 +8722,7 @@ export const chubu: OperatorData = {
       id: "99423",
       nameKo: "니혼카이히스이라인",
       nameJp: "日本海ひすいライン",
+      nameKana: "ニホンカイヒスイライン",
       color: "#16A085",
       stations: [
         {
@@ -8721,6 +8800,7 @@ export const chubu: OperatorData = {
       id: "99424",
       nameKo: "묘코하네우마라인",
       nameJp: "妙高はねうまライン",
+      nameKana: "ミョウコウハネウマライン",
       color: "#C0392B",
       stations: [
         {
@@ -8785,6 +8865,7 @@ export const chubu: OperatorData = {
       id: "99425",
       nameKo: "아이노카제토야마테쓰도선",
       nameJp: "あいの風とやま鉄道線",
+      nameKana: "アイノカゼトヤマテツドウセン",
       color: "#2980B9",
       stations: [
         {
@@ -8922,6 +9003,7 @@ export const chubu: OperatorData = {
       id: "99426",
       nameKo: "아이아루이시카와테쓰도선",
       nameJp: "IRいしかわ鉄道線",
+      nameKana: "アイアールイシカワテツドウセン",
       color: "#27AE60",
       stations: [
         {
@@ -9037,6 +9119,7 @@ export const chubu: OperatorData = {
       id: "99418",
       nameKo: "노토테쓰도나나오선",
       nameJp: "のと鉄道七尾線",
+      nameKana: "ノトテツドウナナオセン",
       color: "#8E44AD",
       stations: [
         {
@@ -9091,6 +9174,7 @@ export const chubu: OperatorData = {
       id: "99419",
       nameKo: "에치젠테쓰도카쓰야마에이헤이지선",
       nameJp: "えちぜん鉄道勝山永平寺線",
+      nameKana: "エチゼンテツドウカツヤマエイヘイジセン",
       color: "#D35400",
       stations: [
         {
@@ -9220,6 +9304,7 @@ export const chubu: OperatorData = {
       id: "99420",
       nameKo: "에치젠테쓰도미쿠니아와라선",
       nameJp: "えちぜん鉄道三国芦原線",
+      nameKana: "エチゼンテツドウミクニアワラセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -9358,6 +9443,7 @@ export const chubu: OperatorData = {
       id: "99421",
       nameKo: "후쿠이테쓰도후쿠부선",
       nameJp: "福井鉄道福武線",
+      nameKana: "フクイテツドウフクブセン",
       color: "#F1C40F",
       stations: [
         {
@@ -9497,6 +9583,7 @@ export const chubu: OperatorData = {
       id: "99428",
       nameKo: "하피라인후쿠이선",
       nameJp: "ハピラインふくい線",
+      nameKana: "ハピラインフクイセン",
       color: "#E84393",
       stations: [
         {
@@ -9610,6 +9697,7 @@ export const chubu: OperatorData = {
       id: "99501",
       nameKo: "이즈큐코선",
       nameJp: "伊豆急行線",
+      nameKana: "イズキュウコウセン",
       color: "#00B894",
       stations: [
         {
@@ -9702,6 +9790,7 @@ export const chubu: OperatorData = {
       id: "99502",
       nameKo: "이즈하코네테쓰도슨즈선",
       nameJp: "伊豆箱根鉄道駿豆線",
+      nameKana: "イズハコネテツドウスンズセン",
       color: "#0984E3",
       stations: [
         {
@@ -9779,6 +9868,7 @@ export const chubu: OperatorData = {
       id: "99503",
       nameKo: "가쿠난테쓰도선",
       nameJp: "岳南鉄道線",
+      nameKana: "ガクナンテツドウセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -9841,6 +9931,7 @@ export const chubu: OperatorData = {
       id: "99504",
       nameKo: "시즈오카테쓰도시즈오카시미즈선",
       nameJp: "静岡鉄道静岡清水線",
+      nameKana: "シズオカテツドウシズオカシミズセン",
       color: "#E74C3C",
       stations: [
         {
@@ -9928,6 +10019,7 @@ export const chubu: OperatorData = {
       id: "99505",
       nameKo: "덴류하마나코선",
       nameJp: "天竜浜名湖線",
+      nameKana: "テンリュウハマナコセン",
       color: "#3498DB",
       stations: [
         {
@@ -10139,6 +10231,7 @@ export const chubu: OperatorData = {
       id: "99506",
       nameKo: "엔슈테쓰도테쓰도선",
       nameJp: "遠州鉄道鉄道線",
+      nameKana: "エンシュウテツドウテツドウセン",
       color: "#2ECC71",
       stations: [
         {
@@ -10243,6 +10336,7 @@ export const chubu: OperatorData = {
       id: "99507",
       nameKo: "오이가와테쓰도이가와혼선",
       nameJp: "大井川鐵道大井川本線",
+      nameKana: "オオイガワテツドウオオイガワホンセン",
       color: "#9B59B6",
       stations: [
         {
@@ -10355,6 +10449,7 @@ export const chubu: OperatorData = {
       id: "99508",
       nameKo: "미나미아루푸스아푸토라인",
       nameJp: "南アルプスあぷとライン",
+      nameKana: "ミナミアルプスアプトライン",
       color: "#F39C12",
       stations: [
         {
@@ -10437,6 +10532,7 @@ export const chubu: OperatorData = {
       id: "99520",
       nameKo: "도요하시테쓰도아쓰미선",
       nameJp: "豊橋鉄道渥美線",
+      nameKana: "トヨハシテツドウアツミセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -10527,6 +10623,7 @@ export const chubu: OperatorData = {
       id: "99521",
       nameKo: "도요하시테쓰도아즈마다혼선",
       nameJp: "豊橋鉄道東田本線",
+      nameKana: "トヨハシテツドウアヅマダホンセン",
       color: "#E67E22",
       stations: [
         {
@@ -10609,6 +10706,7 @@ export const chubu: OperatorData = {
       id: "99524",
       nameKo: "아케치테쓰도아케치선",
       nameJp: "明知鉄道明知線",
+      nameKana: "アケチテツドウアケチセン",
       color: "#34495E",
       stations: [
         {
@@ -10676,6 +10774,7 @@ export const chubu: OperatorData = {
       id: "99525",
       nameKo: "나가라가와테쓰도에쓰미난선",
       nameJp: "長良川鉄道越美南線",
+      nameKana: "ナガラガワテツドウエツミナンセン",
       color: "#16A085",
       stations: [
         {
@@ -10878,6 +10977,7 @@ export const chubu: OperatorData = {
       id: "99526",
       nameKo: "다루미테쓰도타루미선",
       nameJp: "樽見鉄道樽見線",
+      nameKana: "タルミテツドウタルミセン",
       color: "#C0392B",
       stations: [
         {
@@ -10985,6 +11085,7 @@ export const chubu: OperatorData = {
       id: "99532",
       nameKo: "요로테쓰도요로선",
       nameJp: "養老鉄道養老線",
+      nameKana: "ヨウロウテツドウヨウロウセン",
       color: "#2980B9",
       stations: [
         {

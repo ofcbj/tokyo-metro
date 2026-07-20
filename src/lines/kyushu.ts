@@ -7,6 +7,7 @@ export const kyushu: OperatorData = {
       id: "11901",
       nameKo: "하카타미나미선",
       nameJp: "JR博多南線",
+      nameKana: "ハカタミナミセン",
       color: "#E74C3C",
       stations: [
         {
@@ -29,6 +30,7 @@ export const kyushu: OperatorData = {
       id: "11902",
       nameKo: "가고시마혼선",
       nameJp: "JR鹿児島本線(下関・門司港～博多)",
+      nameKana: "カゴシマホンセン",
       color: "#3498DB",
       stations: [
         {
@@ -226,6 +228,7 @@ export const kyushu: OperatorData = {
       id: "11903",
       nameKo: "가고시마혼선",
       nameJp: "JR鹿児島本線(博多～八代)",
+      nameKana: "カゴシマホンセン",
       color: "#2ECC71",
       stations: [
         {
@@ -513,6 +516,7 @@ export const kyushu: OperatorData = {
       id: "11904",
       nameKo: "가고시마혼선",
       nameJp: "JR鹿児島本線(川内～鹿児島)",
+      nameKana: "カゴシマホンセン",
       color: "#9B59B6",
       stations: [
         {
@@ -597,6 +601,7 @@ export const kyushu: OperatorData = {
       id: "11905",
       nameKo: "나가사키혼선",
       nameJp: "JR長崎本線(鳥栖～長崎)",
+      nameKana: "ナガサキホンセン",
       color: "#F39C12",
       stations: [
         {
@@ -835,6 +840,7 @@ export const kyushu: OperatorData = {
       id: "11906",
       nameKo: "닛포혼선",
       nameJp: "JR日豊本線(門司港～佐伯)",
+      nameKana: "ニッポウホンセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -1163,6 +1169,7 @@ export const kyushu: OperatorData = {
       id: "11907",
       nameKo: "닛포혼선",
       nameJp: "JR日豊本線(佐伯～鹿児島中央)",
+      nameKana: "ニッポウホンセン",
       color: "#E67E22",
       stations: [
         {
@@ -1470,6 +1477,7 @@ export const kyushu: OperatorData = {
       id: "11908",
       nameKo: "후쿠호쿠유타카선",
       nameJp: "福北ゆたか線",
+      nameKana: "フクホクユタカセン",
       color: "#34495E",
       stations: [
         {
@@ -1546,6 +1554,7 @@ export const kyushu: OperatorData = {
       id: "11909",
       nameKo: "지쿠히선",
       nameJp: "JR筑肥線(姪浜～西唐津)",
+      nameKana: "チクヒセン",
       color: "#16A085",
       stations: [
         {
@@ -1665,6 +1674,7 @@ export const kyushu: OperatorData = {
       id: "11910",
       nameKo: "와카마쓰선",
       nameJp: "若松線",
+      nameKana: "ワカマツセン",
       color: "#C0392B",
       stations: [
         {
@@ -1705,6 +1715,7 @@ export const kyushu: OperatorData = {
       id: "11911",
       nameKo: "후쿠호쿠유타카선",
       nameJp: "福北ゆたか線(折尾～桂川)",
+      nameKana: "フクホクユタカセン",
       color: "#2980B9",
       stations: [
         {
@@ -1801,6 +1812,7 @@ export const kyushu: OperatorData = {
       id: "11912",
       nameKo: "하루다선",
       nameJp: "原田線",
+      nameKana: "ハルダセン",
       color: "#27AE60",
       stations: [
         {
@@ -1838,6 +1850,7 @@ export const kyushu: OperatorData = {
       id: "11913",
       nameKo: "유후코겐선",
       nameJp: "ゆふ高原線",
+      nameKana: "ユフコウゲンセン",
       color: "#8E44AD",
       stations: [
         {
@@ -2035,6 +2048,7 @@ export const kyushu: OperatorData = {
       id: "11914",
       nameKo: "히타히코산선",
       nameJp: "JR日田彦山線",
+      nameKana: "ヒタヒコサンセン",
       color: "#D35400",
       stations: [
         {
@@ -2145,6 +2159,7 @@ export const kyushu: OperatorData = {
       id: "11915",
       nameKo: "고토지선",
       nameJp: "JR後藤寺線",
+      nameKana: "ゴトウジセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -2187,6 +2202,7 @@ export const kyushu: OperatorData = {
       id: "11916",
       nameKo: "우미노나카미치선",
       nameJp: "海の中道線",
+      nameKana: "ウミノナカミチセン",
       color: "#F1C40F",
       stations: [
         {
@@ -2229,6 +2245,7 @@ export const kyushu: OperatorData = {
       id: "11917",
       nameKo: "가시선",
       nameJp: "JR香椎線(香椎～宇美)",
+      nameKana: "カシイセン",
       color: "#E84393",
       stations: [
         {
@@ -2296,6 +2313,7 @@ export const kyushu: OperatorData = {
       id: "11918",
       nameKo: "사세보선",
       nameJp: "JR佐世保線",
+      nameKana: "サセボセン",
       color: "#00B894",
       stations: [
         {
@@ -2382,6 +2400,7 @@ export const kyushu: OperatorData = {
       id: "11920",
       nameKo: "지쿠히선",
       nameJp: "JR筑肥線(西唐津～伊万里)",
+      nameKana: "チクヒセン",
       color: "#0984E3",
       stations: [
         {
@@ -2470,6 +2489,7 @@ export const kyushu: OperatorData = {
       id: "11921",
       nameKo: "가라쓰선",
       nameJp: "JR唐津線",
+      nameKana: "カラツセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -2574,6 +2594,7 @@ export const kyushu: OperatorData = {
       id: "11922",
       nameKo: "오무라선",
       nameJp: "JR大村線",
+      nameKana: "オオムラセン",
       color: "#E74C3C",
       stations: [
         {
@@ -2661,6 +2682,7 @@ export const kyushu: OperatorData = {
       id: "11923",
       nameKo: "아소코겐선",
       nameJp: "阿蘇高原線",
+      nameKana: "アソコウゲンセン",
       color: "#3498DB",
       stations: [
         {
@@ -2862,6 +2884,7 @@ export const kyushu: OperatorData = {
       id: "11924",
       nameKo: "아마쿠사미스미선",
       nameJp: "三角線（あまくさみすみ線）",
+      nameKana: "アマクサミスミセン",
       color: "#2ECC71",
       stations: [
         {
@@ -2938,6 +2961,7 @@ export const kyushu: OperatorData = {
       id: "11925",
       nameKo: "에비노코겐선",
       nameJp: "えびの高原線(八代～吉松)",
+      nameKana: "エビノコウゲンセン",
       color: "#9B59B6",
       stations: [
         {
@@ -3047,6 +3071,7 @@ export const kyushu: OperatorData = {
       id: "11926",
       nameKo: "히사쓰선",
       nameJp: "JR肥薩線(吉松～隼人)",
+      nameKana: "ヒサツセン",
       color: "#F39C12",
       stations: [
         {
@@ -3109,6 +3134,7 @@ export const kyushu: OperatorData = {
       id: "11927",
       nameKo: "미야자키쿠코선",
       nameJp: "JR宮崎空港線",
+      nameKana: "ミヤザキクウコウセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -3143,6 +3169,7 @@ export const kyushu: OperatorData = {
       id: "11928",
       nameKo: "니치난선",
       nameJp: "JR日南線",
+      nameKana: "ニチナンセン",
       color: "#E67E22",
       stations: [
         {
@@ -3302,6 +3329,7 @@ export const kyushu: OperatorData = {
       id: "11929",
       nameKo: "에비노코겐선",
       nameJp: "えびの高原線",
+      nameKana: "エビノコウゲンセン",
       color: "#34495E",
       stations: [
         {
@@ -3399,6 +3427,7 @@ export const kyushu: OperatorData = {
       id: "11930",
       nameKo: "이부스키마쿠라자키선",
       nameJp: "JR指宿枕崎線",
+      nameKana: "イブスキマクラザキセン",
       color: "#16A085",
       stations: [
         {
@@ -3597,6 +3626,7 @@ export const kyushu: OperatorData = {
       id: "36001",
       nameKo: "니시테쓰텐진오무타선",
       nameJp: "西鉄天神大牟田線",
+      nameKana: "ニシテツテンジンオオムタセン",
       color: "#C0392B",
       stations: [
         {
@@ -3865,6 +3895,7 @@ export const kyushu: OperatorData = {
       id: "36002",
       nameKo: "니시테쓰다자이후선",
       nameJp: "西鉄太宰府線",
+      nameKana: "ニシテツダザイフセン",
       color: "#2980B9",
       stations: [
         {
@@ -3890,6 +3921,7 @@ export const kyushu: OperatorData = {
       id: "36003",
       nameKo: "니시테쓰아마기선",
       nameJp: "西鉄甘木線",
+      nameKana: "ニシテツアマギセン",
       color: "#27AE60",
       stations: [
         {
@@ -3962,6 +3994,7 @@ export const kyushu: OperatorData = {
       id: "36004",
       nameKo: "니시테쓰카이즈카선",
       nameJp: "西鉄貝塚線",
+      nameKana: "ニシテツカイヅカセン",
       color: "#8E44AD",
       stations: [
         {
@@ -4028,6 +4061,7 @@ export const kyushu: OperatorData = {
       id: "99901",
       nameKo: "아마기테쓰도아마기선",
       nameJp: "甘木鉄道甘木線",
+      nameKana: "アマギテツドウアマギセン",
       color: "#D35400",
       stations: [
         {
@@ -4099,6 +4133,7 @@ export const kyushu: OperatorData = {
       id: "99902",
       nameKo: "이다선",
       nameJp: "伊田線",
+      nameKana: "イダセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -4188,6 +4223,7 @@ export const kyushu: OperatorData = {
       id: "99903",
       nameKo: "이토다선",
       nameJp: "糸田線",
+      nameKana: "イトダセン",
       color: "#F1C40F",
       stations: [
         {
@@ -4230,6 +4266,7 @@ export const kyushu: OperatorData = {
       id: "99904",
       nameKo: "다가와선",
       nameJp: "田川線",
+      nameKana: "タガワセン",
       color: "#E84393",
       stations: [
         {
@@ -4327,6 +4364,7 @@ export const kyushu: OperatorData = {
       id: "99928",
       nameKo: "모지코레토로칸코선",
       nameJp: "門司港レトロ観光線",
+      nameKana: "モジコウレトロカンコウセン",
       color: "#00B894",
       stations: [
         {
@@ -4359,6 +4397,7 @@ export const kyushu: OperatorData = {
       id: "99905",
       nameKo: "후쿠오카시에이치카테쓰쿠코선",
       nameJp: "福岡市営地下鉄空港線",
+      nameKana: "フクオカシエイチカテツクウコウセン",
       color: "#0984E3",
       stations: [
         {
@@ -4438,6 +4477,7 @@ export const kyushu: OperatorData = {
       id: "99906",
       nameKo: "후쿠오카시에이치카테쓰하코자키선",
       nameJp: "福岡市営地下鉄箱崎線",
+      nameKana: "フクオカシエイチカテツハコザキセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -4485,6 +4525,7 @@ export const kyushu: OperatorData = {
       id: "99907",
       nameKo: "후쿠오카시에이치카테쓰나나쿠마선",
       nameJp: "福岡市営地下鉄七隈線",
+      nameKana: "フクオカシエイチカテツナナクマセン",
       color: "#E74C3C",
       stations: [
         {
@@ -4589,6 +4630,7 @@ export const kyushu: OperatorData = {
       id: "99908",
       nameKo: "기타큐슈모노레루",
       nameJp: "北九州モノレール",
+      nameKana: "キタキュウシュウモノレール",
       color: "#3498DB",
       stations: [
         {
@@ -4666,6 +4708,7 @@ export const kyushu: OperatorData = {
       id: "99909",
       nameKo: "지쿠호덴키테쓰도선",
       nameJp: "筑豊電気鉄道線",
+      nameKana: "チクホウデンキテツドウセン",
       color: "#2ECC71",
       stations: [
         {
@@ -4783,6 +4826,7 @@ export const kyushu: OperatorData = {
       id: "99910",
       nameKo: "니시큐슈선",
       nameJp: "西九州線(有田～伊万里)",
+      nameKana: "ニシキュウシュウセン",
       color: "#9B59B6",
       stations: [
         {
@@ -4850,6 +4894,7 @@ export const kyushu: OperatorData = {
       id: "99911",
       nameKo: "니시큐슈선",
       nameJp: "西九州線(伊万里～佐世保)",
+      nameKana: "ニシキュウシュウセン",
       color: "#F39C12",
       stations: [
         {
@@ -5099,6 +5144,7 @@ export const kyushu: OperatorData = {
       id: "99912",
       nameKo: "시마바라테쓰도선",
       nameJp: "島原鉄道線",
+      nameKana: "シマバラテツドウセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -5231,6 +5277,7 @@ export const kyushu: OperatorData = {
       id: "99913",
       nameKo: "나가사키덴키치고케이토",
       nameJp: "長崎電軌１系統",
+      nameKana: "ナガサキデンキイチゴウケイトウ",
       color: "#E67E22",
       stations: [
         {
@@ -5415,6 +5462,7 @@ export const kyushu: OperatorData = {
       id: "99914",
       nameKo: "나가사키덴키산고케이토",
       nameJp: "長崎電軌３系統",
+      nameKana: "ナガサキデンキサンゴウケイトウ",
       color: "#34495E",
       stations: [
         {
@@ -5589,6 +5637,7 @@ export const kyushu: OperatorData = {
       id: "99915",
       nameKo: "나가사키덴키욘고케이토",
       nameJp: "長崎電軌４系統",
+      nameKana: "ナガサキデンキヨンゴウケイトウ",
       color: "#16A085",
       stations: [
         {
@@ -5667,6 +5716,7 @@ export const kyushu: OperatorData = {
       id: "99916",
       nameKo: "나가사키덴키고고케이토",
       nameJp: "長崎電軌５系統",
+      nameKana: "ナガサキデンキゴゴウケイトウ",
       color: "#C0392B",
       stations: [
         {
@@ -5760,6 +5810,7 @@ export const kyushu: OperatorData = {
       id: "99917",
       nameKo: "구마모토덴테쓰혼선",
       nameJp: "熊本電鉄本線",
+      nameKana: "クマモトデンテツホンセン",
       color: "#2980B9",
       stations: [
         {
@@ -5835,6 +5886,7 @@ export const kyushu: OperatorData = {
       id: "99918",
       nameKo: "구마모토덴테쓰카미쿠마모토선",
       nameJp: "熊本電鉄上熊本線",
+      nameKana: "クマモトデンテツカミクマモトセン",
       color: "#27AE60",
       stations: [
         {
@@ -5879,6 +5931,7 @@ export const kyushu: OperatorData = {
       id: "99919",
       nameKo: "다카모리선",
       nameJp: "高森線",
+      nameKana: "タカモリセン",
       color: "#8E44AD",
       stations: [
         {
@@ -5941,6 +5994,7 @@ export const kyushu: OperatorData = {
       id: "99920",
       nameKo: "유노마에선",
       nameJp: "湯前線",
+      nameKana: "ユノマエセン",
       color: "#D35400",
       stations: [
         {
@@ -6023,6 +6077,7 @@ export const kyushu: OperatorData = {
       id: "99921",
       nameKo: "히사쓰오렌지테쓰도선",
       nameJp: "肥薩おれんじ鉄道線",
+      nameKana: "ヒサツオレンジテツドウセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -6177,6 +6232,7 @@ export const kyushu: OperatorData = {
       id: "99922",
       nameKo: "구마모토시덴라인",
       nameJp: "熊本市電Ａ系統",
+      nameKana: "クマモトシデンエーライン",
       color: "#F1C40F",
       stations: [
         {
@@ -6355,6 +6411,7 @@ export const kyushu: OperatorData = {
       id: "99923",
       nameKo: "구마모토시덴비라인",
       nameJp: "熊本市電Ｂ系統",
+      nameKana: "クマモトシデンビーライン",
       color: "#E84393",
       stations: [
         {
@@ -6545,6 +6602,7 @@ export const kyushu: OperatorData = {
       id: "99925",
       nameKo: "가고시마시덴이치케이토",
       nameJp: "鹿児島市電１系統",
+      nameKana: "カゴシマシデンイチケイトウ",
       color: "#00B894",
       stations: [
         {
@@ -6700,6 +6758,7 @@ export const kyushu: OperatorData = {
       id: "99926",
       nameKo: "가고시마시덴니케이토",
       nameJp: "鹿児島市電２系統",
+      nameKana: "カゴシマシデンニケイトウ",
       color: "#0984E3",
       stations: [
         {

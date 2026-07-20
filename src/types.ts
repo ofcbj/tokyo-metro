@@ -14,6 +14,8 @@ export interface Line {
   id: string;
   nameKo: string;
   nameJp: string;
+  /** 노선명 카나 읽기 (TTS용 — 한자 오독 방지, 예: 山手線 → ヤマノテセン) */
+  nameKana?: string;
   color: string;
   stations: Station[];
 }

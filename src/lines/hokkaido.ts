@@ -7,6 +7,7 @@ export const hokkaido: OperatorData = {
       id: "11101",
       nameKo: "하코다테혼선",
       nameJp: "JR函館本線(函館～長万部)",
+      nameKana: "ハコダテホンセン",
       color: "#E74C3C",
       stations: [
         {
@@ -156,6 +157,7 @@ export const hokkaido: OperatorData = {
       id: "11102",
       nameKo: "하코다테혼선",
       nameJp: "JR函館本線(長万部～小樽)",
+      nameKana: "ハコダテホンセン",
       color: "#3498DB",
       stations: [
         {
@@ -258,6 +260,7 @@ export const hokkaido: OperatorData = {
       id: "11103",
       nameKo: "하코다테혼선",
       nameJp: "JR函館本線(小樽～旭川)",
+      nameKana: "ハコダテホンセン",
       color: "#2ECC71",
       stations: [
         {
@@ -489,6 +492,7 @@ export const hokkaido: OperatorData = {
       id: "11104",
       nameKo: "무로란혼선",
       nameJp: "JR室蘭本線(長万部・室蘭～苫小牧)",
+      nameKana: "ムロランホンセン",
       color: "#9B59B6",
       stations: [
         {
@@ -671,6 +675,7 @@ export const hokkaido: OperatorData = {
       id: "11105",
       nameKo: "무로란혼선",
       nameJp: "JR室蘭本線(苫小牧～岩見沢)",
+      nameKana: "ムロランホンセン",
       color: "#F39C12",
       stations: [
         {
@@ -757,6 +762,7 @@ export const hokkaido: OperatorData = {
       id: "11106",
       nameKo: "네무로혼선",
       nameJp: "JR根室本線(滝川～富良野)",
+      nameKana: "ネムロホンセン",
       color: "#1ABC9C",
       stations: [
         {
@@ -809,6 +815,7 @@ export const hokkaido: OperatorData = {
       id: "11107",
       nameKo: "네무로혼선",
       nameJp: "JR根室本線(新得～釧路)",
+      nameKana: "ネムロホンセン",
       color: "#E67E22",
       stations: [
         {
@@ -946,6 +953,7 @@ export const hokkaido: OperatorData = {
       id: "11108",
       nameKo: "하나사키선",
       nameJp: "花咲線",
+      nameKana: "ハナサキセン",
       color: "#34495E",
       stations: [
         {
@@ -1043,6 +1051,7 @@ export const hokkaido: OperatorData = {
       id: "11109",
       nameKo: "지토세선",
       nameJp: "JR千歳線",
+      nameKana: "チトセセン",
       color: "#16A085",
       stations: [
         {
@@ -1155,6 +1164,7 @@ export const hokkaido: OperatorData = {
       id: "11110",
       nameKo: "세키쇼선",
       nameJp: "JR石勝線",
+      nameKana: "セキショウセン",
       color: "#C0392B",
       stations: [
         {
@@ -1204,6 +1214,7 @@ export const hokkaido: OperatorData = {
       id: "11111",
       nameKo: "히다카혼선",
       nameJp: "JR日高本線",
+      nameKana: "ヒダカホンセン",
       color: "#2980B9",
       stations: [
         {
@@ -1234,6 +1245,7 @@ export const hokkaido: OperatorData = {
       id: "11112",
       nameKo: "삿쇼선",
       nameJp: "JR札沼線",
+      nameKana: "サッショウセン",
       color: "#27AE60",
       stations: [
         {
@@ -1321,6 +1333,7 @@ export const hokkaido: OperatorData = {
       id: "11113",
       nameKo: "루모이혼선",
       nameJp: "JR留萌本線",
+      nameKana: "ルモイホンセン",
       color: "#8E44AD",
       stations: [
         {
@@ -1356,6 +1369,7 @@ export const hokkaido: OperatorData = {
       id: "11114",
       nameKo: "후라노선",
       nameJp: "JR富良野線",
+      nameKana: "フラノセン",
       color: "#D35400",
       stations: [
         {
@@ -1458,6 +1472,7 @@ export const hokkaido: OperatorData = {
       id: "11115",
       nameKo: "소야혼선",
       nameJp: "JR宗谷本線",
+      nameKana: "ソウヤホンセン",
       color: "#7F8C8D",
       stations: [
         {
@@ -1647,6 +1662,7 @@ export const hokkaido: OperatorData = {
       id: "11116",
       nameKo: "세키호쿠혼선",
       nameJp: "JR石北本線",
+      nameKana: "セキホクホンセン",
       color: "#F1C40F",
       stations: [
         {
@@ -1828,6 +1844,7 @@ export const hokkaido: OperatorData = {
       id: "11117",
       nameKo: "센모혼선",
       nameJp: "JR釧網本線",
+      nameKana: "センモウホンセン",
       color: "#E84393",
       stations: [
         {
@@ -1969,6 +1986,7 @@ export const hokkaido: OperatorData = {
       id: "99101",
       nameKo: "삿포로시에이치카테쓰토자이선",
       nameJp: "札幌市営地下鉄東西線",
+      nameKana: "サッポロシエイチカテツトウザイセン",
       color: "#00B894",
       stations: [
         {
@@ -2078,6 +2096,7 @@ export const hokkaido: OperatorData = {
       id: "99102",
       nameKo: "삿포로시에이치카테쓰토난보쿠선",
       nameJp: "札幌市営地下鉄南北線",
+      nameKana: "サッポロシエイチカテツトナンボクセン",
       color: "#0984E3",
       stations: [
         {
@@ -2172,6 +2191,7 @@ export const hokkaido: OperatorData = {
       id: "99103",
       nameKo: "삿포로시에이치카테쓰토호선",
       nameJp: "札幌市営地下鉄東豊線",
+      nameKana: "サッポロシエイチカテツトウホウセン",
       color: "#6C5CE7",
       stations: [
         {
@@ -2256,6 +2276,7 @@ export const hokkaido: OperatorData = {
       id: "99104",
       nameKo: "삿포로시덴",
       nameJp: "札幌市電",
+      nameKana: "サッポロシデン",
       color: "#E74C3C",
       stations: [
         {
@@ -2390,6 +2411,7 @@ export const hokkaido: OperatorData = {
       id: "99105",
       nameKo: "하코다테시덴니케이토",
       nameJp: "函館市電２系統",
+      nameKana: "ハコダテシデンニケイトウ",
       color: "#3498DB",
       stations: [
         {
@@ -2553,6 +2575,7 @@ export const hokkaido: OperatorData = {
       id: "99106",
       nameKo: "하코다테시덴고케이토",
       nameJp: "函館市電５系統",
+      nameKana: "ハコダテシデンゴケイトウ",
       color: "#2ECC71",
       stations: [
         {
@@ -2718,6 +2741,7 @@ export const hokkaido: OperatorData = {
       id: "99108",
       nameKo: "도난이사리비테쓰도선",
       nameJp: "道南いさりび鉄道線",
+      nameKana: "ドウナンイサリビテツドウセン",
       color: "#9B59B6",
       stations: [
         {

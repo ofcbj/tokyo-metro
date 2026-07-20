@@ -225,11 +225,18 @@ export class CanvasMetroOverlay {
       this.drawLine(line, projection, bounds, step);
     });
 
-    // 역 마커 그리기 (저줌에서는 생략 → 클릭 캐시도 비움)
+    // 게임 종반 힌트: 남은 노선이 10개 이하면 미발견 노선이 남은 환승역을
+    // 줌 레벨(LOD)과 무관하게 항상 표시해 마지막 노선 찾기를 돕는다.
+    const remaining = this.options.isGameMode
+      ? this.allLinesCache.length - selectedLineObjects.length
+      : 0;
+    const hintActive = this.options.isGameMode && remaining > 0 && remaining <= 10;
+
+    // 역 마커 그리기 (저줌에서는 생략 → 클릭 캐시도 비움. 단, 힌트 역은 저줌에도 그린다)
     this.stationCache.clear();
-    if (stationMode !== 'none') {
+    if (stationMode !== 'none' || hintActive) {
       selectedLineObjects.forEach(line => {
-        const stationMarkers = this.drawStations(line, projection, bounds, stationMode);
+        const stationMarkers = this.drawStations(line, projection, bounds, stationMode, hintActive);
         this.stationCache.set(line.id, stationMarkers);
       });
     }
@@ -345,7 +352,7 @@ export class CanvasMetroOverlay {
     this.ctx.globalAlpha = 1.0;
   }
 
-  private drawStations(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, stationMode: 'all' | 'transfer'): StationMarker[] {
+  private drawStations(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, stationMode: 'all' | 'transfer' | 'none', hintActive = false): StationMarker[] {
     const animatedLine = this.animatedLines.get(line.id);
     const { lo, hi } = this.revealedPath(line, animatedLine);
     const total = line.stations.length;
@@ -357,8 +364,13 @@ export class CanvasMetroOverlay {
 
     for (let i = lo; i <= hi; i++) {
       const station = line.stations[i];
-      // LOD: 중간 줌에서는 환승역만 그린다
-      if (stationMode === 'transfer' && !station.transfer) continue;
+      // 게임 종반 힌트 역: 미발견 노선이 남은 환승역은 LOD와 무관하게 항상 그린다
+      const isHint = hintActive && station.transfer && station.groupId != null && !this.isGroupExhausted(station.groupId);
+      if (!isHint) {
+        // LOD: 저줌에서는 역 생략, 중간 줌에서는 환승역만 그린다
+        if (stationMode === 'none') continue;
+        if (stationMode === 'transfer' && !station.transfer) continue;
+      }
       // 뷰포트 체크 (가상화)
       if (!bounds.contains({ lat: station.lat, lng: station.lng })) continue;
 
@@ -386,6 +398,18 @@ export class CanvasMetroOverlay {
         this.ctx.globalAlpha = 1.0;
       }
 
+      // 게임 종반 힌트 역: 금색 글로우 링으로 강조 (축소 상태에서도 눈에 띄게)
+      if (isHint) {
+        this.ctx.shadowColor = '#FFB300';
+        this.ctx.shadowBlur = 12;
+        this.ctx.strokeStyle = '#FFB300';
+        this.ctx.lineWidth = 3;
+        this.ctx.beginPath();
+        this.ctx.arc(x, y, radius + 4, 0, Math.PI * 2);
+        this.ctx.stroke();
+        this.ctx.shadowBlur = 0;
+      }
+
       // 외곽선
       this.ctx.strokeStyle = line.color;
       this.ctx.lineWidth = station.transfer ? 3 : 2;
@@ -399,8 +423,8 @@ export class CanvasMetroOverlay {
       this.ctx.arc(x, y, radius, 0, Math.PI * 2);
       this.ctx.fill();
 
-      // 게임 모드: 연결된 모든 노선이 발견된 환승역은 X 표시(소진됨 → 헛클릭 방지)
-      if (this.options.isGameMode && station.transfer && station.groupId != null && this.isGroupExhausted(station.groupId)) {
+      // 연결된 모든 노선이 표시(게임에선 발견)된 환승역은 X 표시(소진됨 → 헛클릭 방지)
+      if (station.transfer && station.groupId != null && this.isGroupExhausted(station.groupId)) {
         const d = radius * 0.55;
         this.ctx.strokeStyle = '#555555';
         this.ctx.lineWidth = 2;

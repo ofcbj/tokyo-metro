@@ -22,7 +22,7 @@ export const GameModeSidebar = ({ gameLog, regions, selectedLines }: GameModeSid
   const foundAll = rows.reduce((s, r) => s + r.found, 0);
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Box sx={{ p: 2, flex: 1, minHeight: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch', overscrollBehavior: 'contain' }}>
       {/* 지역별 발견 진행도 */}
       <Box sx={{ mb: 2 }}>
         <Box sx={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', mb: 1 }}>

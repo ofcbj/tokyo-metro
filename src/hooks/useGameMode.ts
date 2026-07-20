@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, Dispatch, SetStateAction } from 'react';
 import { LineData, GameLogEntry, GameResult, ToastMessage, ClickEffect, Line } from '../types';
-import { animDurationMs } from '../utils/mapUtils';
+import { animDurationMs, getDistance } from '../utils/mapUtils';
 
 // 일본어 여성 음성을 우선 선택 (귀여운/애니풍에 가깝게 하려고 피치를 높인다).
 // 브라우저 기본 TTS라 진짜 성우 목소리는 아니고, OS 제공 음성 중 여성 목소리를 고른다.
@@ -45,7 +45,7 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
   const [isGameMode, setIsGameMode]           = useState<boolean>(false);
   const [discoveredLines, setDiscoveredLines] = useState<Set<string>>(new Set());
   const [gameLog, setGameLog]                 = useState<GameLogEntry[]>([]);
-  const [remainingClicks, setRemainingClicks] = useState<number>(365);
+  const [remainingClicks, setRemainingClicks] = useState<number>(399);
   const [animationSpeed, setAnimationSpeed]   = useState<number>(1.0);
   const [showGameIntro, setShowGameIntro]     = useState<boolean>(false);
   const [showGameResult, setShowGameResult]   = useState<GameResult | null>(null);
@@ -74,7 +74,7 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
     // 게임 모드 활성화
     setIsGameMode(true);
     setDiscoveredLines(new Set([randomLine.id]));
-    setRemainingClicks(365);
+    setRemainingClicks(399);
     setGameLog([{
       timestamp: new Date(),
       message: `ゲーム開始！${randomLine.nameJp}からスタート`,
@@ -82,7 +82,8 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
     }]);
 
     // 시작 노선명 음성 안내 (버튼 클릭 제스처 내라서 iOS 음성도 활성화됨)
-    speakJa(randomLine.nameJp);
+    // 카나 읽기 우선: 한자 오독 방지 (山手線 → ヤマテセン으로 잘못 읽는 문제)
+    speakJa(randomLine.nameKana || randomLine.nameJp);
 
     return randomLine.id;
   }, [lineData]);
@@ -93,7 +94,7 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
     setIsGameMode(false);
     setDiscoveredLines(new Set());
     setGameLog([]);
-    setRemainingClicks(365);
+    setRemainingClicks(399);
     setShowGameResult(null);
   }, []);
 
@@ -159,8 +160,8 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
       color: line.color
     });
 
-    // 노선명 일본어 음성 안내
-    speakJa(line.nameJp);
+    // 노선명 일본어 음성 안내 (카나 읽기 우선 — 한자 오독 방지)
+    speakJa(line.nameKana || line.nameJp);
 
     // 로그에 추가
     setGameLog(prev => [{
@@ -221,10 +222,23 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
     }, totalMs);
   }, []);
 
+  // 클릭한 환승역에서 노선 종점(양끝 중 먼 쪽)까지의 거리 — 발견 연출 순서 기준
+  const lineReachFromStation = (line: Line, lat: number, lng: number): number => {
+    const st = line.stations;
+    if (st.length === 0) return 0;
+    const first = st[0], last = st[st.length - 1];
+    return Math.max(
+      getDistance(lat, lng, first.lat, first.lng),
+      getDistance(lat, lng, last.lat, last.lng),
+    );
+  };
+
   // 게임 모드에서 노선 발견 처리
   const handleGameDiscovery = useCallback((
     newLineIds: string[],
-    setSelectedLines?: Dispatch<SetStateAction<string[]>>
+    setSelectedLines?: Dispatch<SetStateAction<string[]>>,
+    stationLat?: number,
+    stationLng?: number
   ): string[] => {
     if (processingClickRef.current) {
       return newLineIds;
@@ -247,8 +261,13 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
         return newRemainingClicks;
       }
 
-      // 새로운 노선 정보 가져오기
+      // 새로운 노선 정보 가져오기 (클릭한 환승역에서 종점이 가까운 노선부터 연출)
       const newLinesInfo = getNewLinesInfo(newDiscoveredLineIds);
+      if (stationLat != null && stationLng != null) {
+        newLinesInfo.sort(
+          (a, b) => lineReachFromStation(a, stationLat, stationLng) - lineReachFromStation(b, stationLat, stationLng)
+        );
+      }
 
       // 각 노선을 순차로 추가 (전체 소요 시간 반환)
       const totalMs = discoverLinesWithDelay(newLinesInfo, setSelectedLines);

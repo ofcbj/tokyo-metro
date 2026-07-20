@@ -103,7 +103,7 @@ const TokyoMetroMap = () => {
     if (isGameMode) {
       if (!isTransfer) return;
 
-      handleGameDiscovery(lineIds, setSelectedLines);
+      handleGameDiscovery(lineIds, setSelectedLines, stationLat, stationLng);
       setShouldPanOnNextUpdate(false);
       return;
     }
@@ -145,7 +145,12 @@ const TokyoMetroMap = () => {
     if (startLine && startLine.stations.length > 0 && googleMapRef.current && window.google) {
       const bounds = new window.google.maps.LatLngBounds();
       startLine.stations.forEach(s => bounds.extend({ lat: s.lat, lng: s.lng }));
-      googleMapRef.current.fitBounds(bounds);
+      const map = googleMapRef.current;
+      // 노선이 짧으면 fitBounds가 지나치게 확대할 수 있어, 최초 게임 시작 시엔 상한을 둔다.
+      window.google.maps.event.addListenerOnce(map, 'bounds_changed', () => {
+        if (map.getZoom() > 13) map.setZoom(13);
+      });
+      map.fitBounds(bounds);
     }
   }, [startGameAfterIntro]);
 
@@ -216,25 +221,24 @@ const TokyoMetroMap = () => {
       />
 
       <div className="flex h-full bg-gray-100">
-        {/* 게임 모드 상태 표시 */}
-        {isGameMode && (
-          <GameStatusDisplay
-            discoveredLines={discoveredLines.size}
-            totalLines={allLineIds.length}
-            remainingClicks={remainingClicks}
-            toastMessage={toastMessage}
-          />
-        )}
-
         {/* 사이드바: 데스크톱 384px 고정 / 모바일 가로 ~20% 패널 (세로는 오버레이로 대체) */}
         {(!isMobile || isLandscape) && (
-          <Box sx={{ width: !isMobile ? 384 : 'clamp(200px, 20vw, 320px)', flexShrink: 0, height: '125%', zoom: 0.8 }}>
+          <Box sx={{ width: !isMobile ? 384 : 'clamp(200px, 20vw, 320px)', flexShrink: 0, height: '100%', zoom: 0.8 }}>
             {sidebarEl}
           </Box>
         )}
 
         {/* 오른쪽 지도 */}
         <div className="flex-1 relative">
+          {/* 게임 모드 상태 표시: 지도 영역 안(position:absolute)에 둬서 사이드바 폭과 무관하게 항상 지도 위에만 뜨게 한다 */}
+          {isGameMode && (
+            <GameStatusDisplay
+              discoveredLines={discoveredLines.size}
+              totalLines={allLineIds.length}
+              remainingClicks={remainingClicks}
+              toastMessage={toastMessage}
+            />
+          )}
           <MapOverlays
             clickEffect={clickEffect}
             toastMessage={isGameMode ? null : toastMessage}

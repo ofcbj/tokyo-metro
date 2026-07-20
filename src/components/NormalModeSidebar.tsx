@@ -189,8 +189,8 @@ export const NormalModeSidebar = ({
                 size="small"
               />
             }
-            label={<Typography variant="body2">路線選択時自動ズーム</Typography>}
-            sx={{ mb: 1, display: 'block' }}
+            label={<Typography variant="body2" sx={{ whiteSpace: 'nowrap' }}>路線選択時自動ズーム</Typography>}
+            sx={{ mb: 1, display: 'flex', mr: 0 }}
           />
         )}
 
@@ -228,8 +228,8 @@ export const NormalModeSidebar = ({
         )}
       </Box>
 
-      {/* 회사(노선수) 드롭다운 → 노선 리스트 */}
-      <Box sx={{ p: 2 }}>
+      {/* 회사(노선수) 드롭다운 → 노선 리스트 (이 영역만 스크롤) */}
+      <Box sx={{ p: 2, flex: 1, minHeight: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch', overscrollBehavior: 'contain' }}>
         <Stack spacing={1}>
           {companies.map(({ name, lines }) => {
             const expanded = isExpanded(name);

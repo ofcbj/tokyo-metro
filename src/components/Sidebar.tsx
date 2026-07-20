@@ -44,7 +44,7 @@ export const Sidebar = ({
   isMobile,
 }: SidebarProps) => {
   return (
-    <Box sx={{ width: '100%', height: '100%', backgroundColor: 'white', boxShadow: 3, overflowY: 'auto', WebkitOverflowScrolling: 'touch', overscrollBehavior: 'contain' }}>
+    <Box sx={{ width: '100%', height: '100%', backgroundColor: 'white', boxShadow: 3, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
       <SidebarHeader
         isGameMode={isGameMode}
         animationSpeed={animationSpeed}

@@ -31,6 +31,13 @@ for (const s of parseCSV('station.csv')) {
   key2g.set(`${s.line_cd} ${s.station_name}`, s.station_g_cd);
 }
 
+// 앱에서 노선을 분할해 만든 커스텀 id → CSV line_cd (CSV에 없는 id는 여기 등록)
+const LINE_ALIAS = { '113272': '11327' }; // JR成田線（我孫子支線） → JR成田線
+// 노선이 CSV의 노선 구간을 넘어 연장 운행하는 경우의 역 단위 보정: "앱lineId 역명" → "CSV line_cd 역명"
+const KEY_ALIAS = { '11311 松本': '11409 松本' }; // 特急あずさ의 松本는 CSV상 篠ノ井線 소속
+const lookupG = (lineId, name) =>
+  key2g.get(KEY_ALIAS[`${lineId} ${name}`] || `${LINE_ALIAS[lineId] || lineId} ${name}`);
+
 const opFiles = fs.readdirSync(LINES_DIR).filter(f => /\.ts$/.test(f)).map(f => path.join(LINES_DIR, f));
 
 const RE_ID = /\bid:\s*"(\d+)"/;
@@ -50,7 +57,7 @@ for (const f of opFiles) {
 const gcdPresent = new Map();
 for (const rows of stationsPerFile.values()) {
   for (const { lineId, name } of rows) {
-    const g = key2g.get(`${lineId} ${name}`);
+    const g = lookupG(lineId, name);
     if (!g) continue;
     if (!gcdPresent.has(g)) gcdPresent.set(g, new Set());
     gcdPresent.get(g).add(lineId);
@@ -59,7 +66,7 @@ for (const rows of stationsPerFile.values()) {
 
 // 목표 상태: null(판정불가) | {transfer:false} | {transfer:true, groupId}
 function desired(lineId, name) {
-  const g = key2g.get(`${lineId} ${name}`);
+  const g = lookupG(lineId, name);
   if (!g) return null;
   return (gcdPresent.get(g)?.size || 0) >= 2 ? { transfer: true, groupId: g } : { transfer: false };
 }
