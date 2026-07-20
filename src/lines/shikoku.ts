@@ -8,7 +8,7 @@ export const shikoku: OperatorData = {
       nameKo: "도산선",
       nameJp: "JR土讃線",
       nameKana: "ドサンセン",
-      color: "#E74C3C",
+      color: "#E25885",
       stations: [
         {
           name: "多度津",
@@ -344,7 +344,7 @@ export const shikoku: OperatorData = {
       nameKo: "고토쿠선",
       nameJp: "JR高徳線",
       nameKana: "コウトクセン",
-      color: "#3498DB",
+      color: "#8AC53E",
       stations: [
         {
           name: "高松",
@@ -657,7 +657,7 @@ export const shikoku: OperatorData = {
       nameKo: "무기선",
       nameJp: "JR牟岐線",
       nameKana: "ムギセン",
-      color: "#9B59B6",
+      color: "#00B5AD",
       stations: [
         {
           name: "徳島",
@@ -815,7 +815,7 @@ export const shikoku: OperatorData = {
       nameKo: "나루토선",
       nameJp: "JR鳴門線",
       nameKana: "ナルトセン",
-      color: "#F39C12",
+      color: "#8C2C5F",
       stations: [
         {
           name: "鳴門",
@@ -861,7 +861,7 @@ export const shikoku: OperatorData = {
       nameKo: "요산선",
       nameJp: "JR予讃線",
       nameKana: "ヨサンセン",
-      color: "#1ABC9C",
+      color: "#FBAF18",
       stations: [
         {
           name: "高松",
@@ -1547,7 +1547,7 @@ export const shikoku: OperatorData = {
       nameKo: "고토덴코토히라선",
       nameJp: "琴電琴平線",
       nameKana: "コトデンコトヒラセン",
-      color: "#C0392B",
+      color: "#FFD400",
       stations: [
         {
           name: "高松築港",
@@ -1679,7 +1679,7 @@ export const shikoku: OperatorData = {
       nameKo: "고토덴나가오선",
       nameJp: "琴電長尾線",
       nameKana: "コトデンナガオセン",
-      color: "#2980B9",
+      color: "#009966",
       stations: [
         {
           name: "高松築港",
@@ -1784,7 +1784,7 @@ export const shikoku: OperatorData = {
       nameKo: "고토덴시도선",
       nameJp: "琴電志度線",
       nameKana: "コトデンシドセン",
-      color: "#27AE60",
+      color: "#FF3366",
       stations: [
         {
           name: "瓦町",
@@ -1881,7 +1881,7 @@ export const shikoku: OperatorData = {
       nameKo: "이요테쓰도군추선",
       nameJp: "伊予鉄道郡中線",
       nameKana: "イヨテツドウグンチュウセン",
-      color: "#8E44AD",
+      color: "#F15A22",
       stations: [
         {
           name: "松山市",
@@ -1954,7 +1954,7 @@ export const shikoku: OperatorData = {
       nameKo: "이요테쓰도타카하마선",
       nameJp: "伊予鉄道高浜線",
       nameKana: "イヨテツドウタカハマセン",
-      color: "#D35400",
+      color: "#9ACD32",
       stations: [
         {
           name: "高浜",
@@ -2019,7 +2019,7 @@ export const shikoku: OperatorData = {
       nameKo: "이요테쓰도요코가와라선",
       nameJp: "伊予鉄道横河原線",
       nameKana: "イヨテツドウヨコガワラセン",
-      color: "#7F8C8D",
+      color: "#00BBEE",
       stations: [
         {
           name: "松山市",
@@ -2603,7 +2603,7 @@ export const shikoku: OperatorData = {
       nameKo: "이요테쓰도혼마치선",
       nameJp: "伊予鉄道本町線（６系統）",
       nameKana: "イヨテツドウホンマチセン",
-      color: "#6C5CE7",
+      color: "#795548",
       stations: [
         {
           name: "本町六丁目",

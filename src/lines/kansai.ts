@@ -121,7 +121,7 @@ export const kansai: OperatorData = {
       nameKo: "기세이혼선",
       nameJp: "JR紀勢本線",
       nameKana: "キセイホンセン",
-      color: "#E67E22",
+      color: "#00A6B4",
       stations: [
         {
           name: "亀山",
@@ -500,7 +500,7 @@ export const kansai: OperatorData = {
       nameKo: "호쿠리쿠혼선",
       nameJp: "JR北陸本線(米原～敦賀)",
       nameKana: "ホクリクホンセン",
-      color: "#E74C3C",
+      color: "#0072BC",
       stations: [
         {
           name: "米原",
@@ -575,7 +575,7 @@ export const kansai: OperatorData = {
       nameKo: "간사이혼선",
       nameJp: "JR関西本線(亀山～加茂)",
       nameKana: "カンサイホンセン",
-      color: "#3498DB",
+      color: "#5726B7",
       stations: [
         {
           name: "亀山",
@@ -652,7 +652,7 @@ export const kansai: OperatorData = {
       nameKo: "구사쓰선",
       nameJp: "JR草津線",
       nameKana: "クサツセン",
-      color: "#2ECC71",
+      color: "#5A9934",
       stations: [
         {
           name: "柘植",
@@ -722,7 +722,7 @@ export const kansai: OperatorData = {
       nameKo: "비와코선",
       nameJp: "琵琶湖線",
       nameKana: "ビワコセン",
-      color: "#9B59B6",
+      color: "#0072BC",
       stations: [
         {
           name: "米原",
@@ -949,7 +949,7 @@ export const kansai: OperatorData = {
       nameKo: "고베선",
       nameJp: "JR神戸線(大阪～神戸)",
       nameKana: "コウベセン",
-      color: "#1ABC9C",
+      color: "#0072BC",
       stations: [
         {
           name: "大阪",
@@ -1057,7 +1057,7 @@ export const kansai: OperatorData = {
       nameKo: "고세이선",
       nameJp: "JR湖西線",
       nameKana: "コセイセン",
-      color: "#E67E22",
+      color: "#00ACD1",
       stations: [
         {
           name: "京都",
@@ -1184,7 +1184,7 @@ export const kansai: OperatorData = {
       nameKo: "야마토지선",
       nameJp: "大和路線",
       nameKana: "ヤマトジセン",
-      color: "#34495E",
+      color: "#00B178",
       stations: [
         {
           name: "加茂",
@@ -1325,7 +1325,7 @@ export const kansai: OperatorData = {
       nameKo: "고베선",
       nameJp: "JR神戸線(神戸～姫路)",
       nameKana: "コウベセン",
-      color: "#16A085",
+      color: "#0072BC",
       stations: [
         {
           name: "神戸",
@@ -1469,7 +1469,7 @@ export const kansai: OperatorData = {
       nameKo: "사가노선",
       nameJp: "嵯峨野線",
       nameKana: "サガノセン",
-      color: "#C0392B",
+      color: "#878DDC",
       stations: [
         {
           name: "京都",
@@ -1566,7 +1566,7 @@ export const kansai: OperatorData = {
       nameKo: "산인혼선",
       nameJp: "JR山陰本線(園部～豊岡)",
       nameKana: "サンインホンセン",
-      color: "#2980B9",
+      color: "#878DDC",
       stations: [
         {
           name: "園部",
@@ -1709,7 +1709,7 @@ export const kansai: OperatorData = {
       nameKo: "갓켄토시선",
       nameJp: "学研都市線",
       nameKana: "ガッケントシセン",
-      color: "#27AE60",
+      color: "#FF1493",
       stations: [
         {
           name: "木津",
@@ -1980,7 +1980,7 @@ export const kansai: OperatorData = {
       nameKo: "마이즈루선",
       nameJp: "JR舞鶴線",
       nameKana: "マイヅルセン",
-      color: "#D35400",
+      color: "#FF8E1F",
       stations: [
         {
           name: "福知山",
@@ -2046,7 +2046,7 @@ export const kansai: OperatorData = {
       nameKo: "오사카칸조선",
       nameJp: "大阪環状線",
       nameKana: "オオサカカンジョウセン",
-      color: "#7F8C8D",
+      color: "#E80000",
       stations: [
         {
           name: "天王寺",
@@ -2244,7 +2244,7 @@ export const kansai: OperatorData = {
       nameKo: "한와선",
       nameJp: "阪和線(天王寺～和歌山)",
       nameKana: "ハンワセン",
-      color: "#E84393",
+      color: "#FF8E1F",
       stations: [
         {
           name: "天王寺",
@@ -2440,7 +2440,7 @@ export const kansai: OperatorData = {
       nameKo: "다카라즈카선",
       nameJp: "JR宝塚線",
       nameKana: "タカラヅカセン",
-      color: "#00B894",
+      color: "#FFBA00",
       stations: [
         {
           name: "大阪",
@@ -2576,7 +2576,7 @@ export const kansai: OperatorData = {
       nameKo: "후쿠치야마선",
       nameJp: "福知山線(篠山口～福知山)",
       nameKana: "フクチヤマセン",
-      color: "#0984E3",
+      color: "#FFBA00",
       stations: [
         {
           name: "篠山口",
@@ -2641,7 +2641,7 @@ export const kansai: OperatorData = {
       nameKo: "가코가와선",
       nameJp: "JR加古川線",
       nameKana: "カコガワセン",
-      color: "#6C5CE7",
+      color: "#00BAA5",
       stations: [
         {
           name: "加古川",
@@ -2761,7 +2761,7 @@ export const kansai: OperatorData = {
       nameKo: "기신선",
       nameJp: "JR姫新線(姫路～佐用)",
       nameKana: "キシンセン",
-      color: "#E74C3C",
+      color: "#FF593E",
       stations: [
         {
           name: "姫路",
@@ -2834,7 +2834,7 @@ export const kansai: OperatorData = {
       nameKo: "반탄선",
       nameJp: "JR播但線",
       nameKana: "バンタンセン",
-      color: "#3498DB",
+      color: "#A52F5D",
       stations: [
         {
           name: "姫路",
@@ -2937,7 +2937,7 @@ export const kansai: OperatorData = {
       nameKo: "와카야마선",
       nameJp: "JR和歌山線",
       nameKana: "ワカヤマセン",
-      color: "#2ECC71",
+      color: "#F79FBA",
       stations: [
         {
           name: "王寺",
@@ -3138,7 +3138,7 @@ export const kansai: OperatorData = {
       nameKo: "만요마호로바선",
       nameJp: "万葉まほろば線",
       nameKana: "マンヨウマホロバセン",
-      color: "#9B59B6",
+      color: "#B31C31",
       stations: [
         {
           name: "奈良",
@@ -3225,7 +3225,7 @@ export const kansai: OperatorData = {
       nameKo: "기노쿠니선",
       nameJp: "きのくに線",
       nameKana: "キノクニセン",
-      color: "#F39C12",
+      color: "#00A6B4",
       stations: [
         {
           name: "新宮",
@@ -3510,7 +3510,7 @@ export const kansai: OperatorData = {
       nameKo: "오사카히가시선",
       nameJp: "おおさか東線",
       nameKana: "オオサカヒガシセン",
-      color: "#1ABC9C",
+      color: "#347293",
       stations: [
         {
           name: "久宝寺",
@@ -3616,7 +3616,7 @@ export const kansai: OperatorData = {
       nameKo: "산요혼선",
       nameJp: "JR山陽本線(兵庫～和田岬)",
       nameKana: "サンヨウホンセン",
-      color: "#3498DB",
+      color: "#0072BC",
       stations: [
         {
           name: "兵庫",
@@ -3639,7 +3639,7 @@ export const kansai: OperatorData = {
       nameKo: "유메사키선",
       nameJp: "JRゆめ咲線",
       nameKana: "ユメサキセン",
-      color: "#2ECC71",
+      color: "#0A318E",
       stations: [
         {
           name: "西九条",
@@ -3693,7 +3693,7 @@ export const kansai: OperatorData = {
       nameKo: "간사이쿠코선",
       nameJp: "JR関西空港線",
       nameKana: "カンサイクウコウセン",
-      color: "#F39C12",
+      color: "#0072BC",
       stations: [
         {
           name: "日根野",
@@ -3723,7 +3723,7 @@ export const kansai: OperatorData = {
       nameKo: "기세이혼선",
       nameJp: "紀勢本線(和歌山～和歌山市)",
       nameKana: "キセイホンセン",
-      color: "#1ABC9C",
+      color: "#00A6B4",
       stations: [
         {
           name: "和歌山",
@@ -3753,7 +3753,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰카시하라선",
       nameJp: "近鉄橿原線",
       nameKana: "キンテツカシハラセン",
-      color: "#C0392B",
+      color: "#FAB202",
       stations: [
         {
           name: "大和西大寺",
@@ -3857,7 +3857,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰미나미오사카선",
       nameJp: "近鉄南大阪線",
       nameKana: "キンテツミナミオオサカセン",
-      color: "#2980B9",
+      color: "#028E46",
       stations: [
         {
           name: "大阪阿部野橋",
@@ -4016,7 +4016,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰오사카선",
       nameJp: "近鉄大阪線",
       nameKana: "キンテツオオサカセン",
-      color: "#27AE60",
+      color: "#4694D1",
       stations: [
         {
           name: "大阪上本町",
@@ -4285,7 +4285,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰요시노선",
       nameJp: "近鉄吉野線",
       nameKana: "キンテツヨシノセン",
-      color: "#8E44AD",
+      color: "#028E46",
       stations: [
         {
           name: "橿原神宮前",
@@ -4378,7 +4378,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰야마다선",
       nameJp: "近鉄山田線",
       nameKana: "キンテツヤマダセン",
-      color: "#D35400",
+      color: "#00B3C1",
       stations: [
         {
           name: "伊勢中川",
@@ -4465,7 +4465,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰토바선",
       nameJp: "近鉄鳥羽線",
       nameKana: "キンテツトバセン",
-      color: "#7F8C8D",
+      color: "#00B3C1",
       stations: [
         {
           name: "宇治山田",
@@ -4503,7 +4503,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰시마선",
       nameJp: "近鉄志摩線",
       nameKana: "キンテツシマセン",
-      color: "#F1C40F",
+      color: "#00B3C1",
       stations: [
         {
           name: "鳥羽",
@@ -5147,7 +5147,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰 나고야선",
       nameJp: "近鉄名古屋線",
       nameKana: "キンテツナゴヤセン",
-      color: "#C30D23",
+      color: "#153F97",
       stations: [
         {
           name: "近鉄名古屋",
@@ -5495,7 +5495,7 @@ export const kansai: OperatorData = {
       nameKo: "긴테쓰난바선",
       nameJp: "近鉄難波線",
       nameKana: "キンテツナンバセン",
-      color: "#E74C3C",
+      color: "#D21644",
       stations: [
         {
           name: "大阪難波",
@@ -5670,7 +5670,7 @@ export const kansai: OperatorData = {
       nameKo: "우쓰베선",
       nameJp: "内部線",
       nameKana: "ウツベセン",
-      color: "#9B59B6",
+      color: "#42ADED",
       stations: [
         {
           name: "あすなろう四日市",
@@ -5725,7 +5725,7 @@ export const kansai: OperatorData = {
       nameKo: "하치오지선",
       nameJp: "八王子線",
       nameKana: "ハチオウジセン",
-      color: "#E67E22",
+      color: "#228E4C",
       stations: [
         {
           name: "あすなろう四日市",
@@ -8089,7 +8089,7 @@ export const kansai: OperatorData = {
       nameKo: "산기테쓰도산기선",
       nameJp: "三岐鉄道三岐線",
       nameKana: "サンギテツドウサンギセン",
-      color: "#2ECC71",
+      color: "#009900",
       stations: [
         {
           name: "近鉄富田",
@@ -8175,7 +8175,7 @@ export const kansai: OperatorData = {
       nameKo: "산기테쓰도호쿠세이선",
       nameJp: "三岐鉄道北勢線",
       nameKana: "サンギテツドウホクセイセン",
-      color: "#9B59B6",
+      color: "#3366FF",
       stations: [
         {
           name: "西桑名",
@@ -8628,7 +8628,7 @@ export const kansai: OperatorData = {
       nameKo: "시가라키코겐테쓰도시가라키선",
       nameJp: "信楽高原鐵道信楽線",
       nameKana: "シガラキコウゲンテツドウシガラキセン",
-      color: "#16A085",
+      color: "#00A879",
       stations: [
         {
           name: "貴生川",
@@ -8787,7 +8787,7 @@ export const kansai: OperatorData = {
       nameKo: "미야후쿠선",
       nameJp: "宮福線",
       nameKana: "ミヤフクセン",
-      color: "#27AE60",
+      color: "#588B35",
       stations: [
         {
           name: "福知山",
@@ -8870,7 +8870,7 @@ export const kansai: OperatorData = {
       nameKo: "미야토요선",
       nameJp: "宮豊線",
       nameKana: "ミヤトヨセン",
-      color: "#8E44AD",
+      color: "#C5541B",
       stations: [
         {
           name: "宮津",
@@ -8948,7 +8948,7 @@ export const kansai: OperatorData = {
       nameKo: "미야마이선",
       nameJp: "宮舞線",
       nameKana: "ミヤマイセン",
-      color: "#D35400",
+      color: "#437BB3",
       stations: [
         {
           name: "西舞鶴",
@@ -8998,7 +8998,7 @@ export const kansai: OperatorData = {
       nameKo: "교토시에이치카테쓰카라스마선",
       nameJp: "京都市営地下鉄烏丸線",
       nameKana: "キョウトシエイチカテツカラスマセン",
-      color: "#7F8C8D",
+      color: "#3CB371",
       stations: [
         {
           name: "国際会館",
@@ -9198,7 +9198,7 @@ export const kansai: OperatorData = {
       nameKo: "게이후쿠덴테쓰아라시야마혼선",
       nameJp: "京福電鉄嵐山本線",
       nameKana: "ケイフクデンテツアラシヤマホンセン",
-      color: "#E84393",
+      color: "#D7003A",
       stations: [
         {
           name: "四条大宮",
@@ -9278,7 +9278,7 @@ export const kansai: OperatorData = {
       nameKo: "게이후쿠덴테쓰키타노선",
       nameJp: "京福電鉄北野線",
       nameKana: "ケイフクデンテツキタノセン",
-      color: "#00B894",
+      color: "#5654A2",
       stations: [
         {
           name: "帷子ノ辻",
@@ -9386,7 +9386,7 @@ export const kansai: OperatorData = {
       nameKo: "미즈마테쓰도미즈마선",
       nameJp: "水間鉄道水間線",
       nameKana: "ミズマテツドウミズマセン",
-      color: "#6C5CE7",
+      color: "#00A5E5",
       stations: [
         {
           name: "貝塚",

@@ -40,7 +40,7 @@ export const tohoku: OperatorData = {
       nameKo: "오혼선",
       nameJp: "JR奥羽本線(新庄～青森)",
       nameKana: "オウウホンセン",
-      color: "#3498DB",
+      color: "#EE7B28",
       stations: [
         {
           name: "新庄",
@@ -876,7 +876,7 @@ export const tohoku: OperatorData = {
       nameKo: "하마나스베이라인오미나토선",
       nameJp: "はまなすベイライン大湊線",
       nameKana: "ハマナスベイラインオオミナトセン",
-      color: "#9B59B6",
+      color: "#F1AA28",
       stations: [
         {
           name: "野辺地",
@@ -942,7 +942,7 @@ export const tohoku: OperatorData = {
       nameKo: "고노선",
       nameJp: "JR五能線",
       nameKana: "ゴノウセン",
-      color: "#F39C12",
+      color: "#0C7AAD",
       stations: [
         {
           name: "東能代",
@@ -1172,7 +1172,7 @@ export const tohoku: OperatorData = {
       nameKo: "쓰가루선",
       nameJp: "JR津軽線",
       nameKana: "ツガルセン",
-      color: "#1ABC9C",
+      color: "#15A2C4",
       stations: [
         {
           name: "青森",
@@ -1277,7 +1277,7 @@ export const tohoku: OperatorData = {
       nameKo: "하치노헤선",
       nameJp: "JR八戸線",
       nameKana: "ハチノヘセン",
-      color: "#E67E22",
+      color: "#E93920",
       stations: [
         {
           name: "八戸",
@@ -1410,7 +1410,7 @@ export const tohoku: OperatorData = {
       nameKo: "도라곤레루오후나토선",
       nameJp: "ドラゴンレール大船渡線",
       nameKana: "ドラゴンレールオオフナトセン",
-      color: "#34495E",
+      color: "#F18E44",
       stations: [
         {
           name: "一ノ関",
@@ -1493,7 +1493,7 @@ export const tohoku: OperatorData = {
       nameKo: "긴가도리무라인카마이시선",
       nameJp: "銀河ドリームライン釜石線",
       nameKana: "ギンガドリームラインカマイシセン",
-      color: "#16A085",
+      color: "#0073BF",
       stations: [
         {
           name: "花巻",
@@ -1626,7 +1626,7 @@ export const tohoku: OperatorData = {
       nameKo: "기타카미선",
       nameJp: "JR北上線",
       nameKana: "キタカミセン",
-      color: "#C0392B",
+      color: "#851A72",
       stations: [
         {
           name: "北上",
@@ -1714,7 +1714,7 @@ export const tohoku: OperatorData = {
       nameKo: "다자와코선",
       nameJp: "JR田沢湖線",
       nameKana: "タザワコセン",
-      color: "#2980B9",
+      color: "#9D72B0",
       stations: [
         {
           name: "盛岡",
@@ -1967,7 +1967,7 @@ export const tohoku: OperatorData = {
       nameKo: "야마다선",
       nameJp: "JR山田線",
       nameKana: "ヤマダセン",
-      color: "#8E44AD",
+      color: "#CD7A1E",
       stations: [
         {
           name: "盛岡",
@@ -2055,7 +2055,7 @@ export const tohoku: OperatorData = {
       nameKo: "우에쓰혼선",
       nameJp: "JR羽越本線",
       nameKana: "ウエツホンセン",
-      color: "#D35400",
+      color: "#16C0E9",
       stations: [
         {
           name: "新津",
@@ -2376,7 +2376,7 @@ export const tohoku: OperatorData = {
       nameKo: "오가선",
       nameJp: "JR男鹿線",
       nameKana: "オガセン",
-      color: "#7F8C8D",
+      color: "#36823E",
       stations: [
         {
           name: "追分",
@@ -2432,7 +2432,7 @@ export const tohoku: OperatorData = {
       nameKo: "야마가타선",
       nameJp: "山形線",
       nameKana: "ヤマガタセン",
-      color: "#F1C40F",
+      color: "#EE7B28",
       stations: [
         {
           name: "福島",
@@ -2630,7 +2630,7 @@ export const tohoku: OperatorData = {
       nameKo: "센잔선",
       nameJp: "JR仙山線",
       nameKana: "センザンセン",
-      color: "#E84393",
+      color: "#72BC4A",
       stations: [
         {
           name: "仙台",
@@ -2749,7 +2749,7 @@ export const tohoku: OperatorData = {
       nameKo: "후루쓰라인아테라자와선",
       nameJp: "フルーツライン左沢線",
       nameKana: "フルーツラインアテラザワセン",
-      color: "#00B894",
+      color: "#0073BF",
       stations: [
         {
           name: "山形",
@@ -2822,7 +2822,7 @@ export const tohoku: OperatorData = {
       nameKo: "요네사카선",
       nameJp: "JR米坂線",
       nameKana: "ヨネサカセン",
-      color: "#0984E3",
+      color: "#9E7EB9",
       stations: [
         {
           name: "米沢",
@@ -3148,7 +3148,7 @@ export const tohoku: OperatorData = {
       nameKo: "센세키선",
       nameJp: "JR仙石線",
       nameKana: "センセキセン",
-      color: "#3498DB",
+      color: "#00AAEE",
       stations: [
         {
           name: "あおば通",
@@ -3323,7 +3323,7 @@ export const tohoku: OperatorData = {
       nameKo: "이시노마키선",
       nameJp: "JR石巻線",
       nameKana: "イシノマキセン",
-      color: "#2ECC71",
+      color: "#ED77A4",
       stations: [
         {
           name: "小牛田",
@@ -3408,7 +3408,7 @@ export const tohoku: OperatorData = {
       nameKo: "게센누마선 BRT",
       nameJp: "JR気仙沼線BRT",
       nameKana: "ケセンヌマセンビーアールティー",
-      color: "#E91E63",
+      color: "#1C1C1C",
       stations: [
         {
           name: "柳津",
@@ -3511,7 +3511,7 @@ export const tohoku: OperatorData = {
       nameKo: "오후나토선 BRT",
       nameJp: "JR大船渡線BRT",
       nameKana: "オオフナトセンビーアールティー",
-      color: "#00897B",
+      color: "#4E4E4E",
       stations: [
         {
           name: "気仙沼",
@@ -3584,7 +3584,7 @@ export const tohoku: OperatorData = {
       nameKo: "게센누마선",
       nameJp: "JR気仙沼線",
       nameKana: "ケセンヌマセン",
-      color: "#9B59B6",
+      color: "#3B459B",
       stations: [
         {
           name: "前谷地",
@@ -3627,7 +3627,7 @@ export const tohoku: OperatorData = {
       nameKo: "반에쓰사이선",
       nameJp: "JR磐越西線(郡山～会津若松)",
       nameKana: "バンエツサイセン",
-      color: "#F39C12",
+      color: "#CB7B35",
       stations: [
         {
           name: "郡山",
@@ -3720,7 +3720,7 @@ export const tohoku: OperatorData = {
       nameKo: "다다미선",
       nameJp: "JR只見線",
       nameKana: "タダミセン",
-      color: "#1ABC9C",
+      color: "#008DD1",
       stations: [
         {
           name: "会津若松",
@@ -4008,7 +4008,7 @@ export const tohoku: OperatorData = {
       nameKo: "조반선",
       nameJp: "JR常磐線(いわき～仙台)",
       nameKana: "ジョウバンセン",
-      color: "#34495E",
+      color: "#00B261",
       stations: [
         {
           name: "いわき",
@@ -4210,7 +4210,7 @@ export const tohoku: OperatorData = {
       nameKo: "쓰가루테쓰도선",
       nameJp: "津軽鉄道線",
       nameKana: "ツガルテツドウセン",
-      color: "#16A085",
+      color: "#F15A22",
       stations: [
         {
           name: "津軽五所川原",
@@ -4442,7 +4442,7 @@ export const tohoku: OperatorData = {
       nameKo: "이와테긴가테쓰도선",
       nameJp: "いわて銀河鉄道線",
       nameKana: "イワテギンガテツドウセン",
-      color: "#27AE60",
+      color: "#03459A",
       stations: [
         {
           name: "盛岡",
@@ -4549,7 +4549,7 @@ export const tohoku: OperatorData = {
       nameKo: "아오이모리테쓰도선",
       nameJp: "青い森鉄道線",
       nameKana: "アオイモリテツドウセン",
-      color: "#8E44AD",
+      color: "#33CBF4",
       stations: [
         {
           name: "目時",
@@ -5395,7 +5395,7 @@ export const tohoku: OperatorData = {
       nameKo: "센다이시에이치카테쓰난보쿠선",
       nameJp: "仙台市営地下鉄南北線",
       nameKana: "センダイシエイチカテツナンボクセン",
-      color: "#0984E3",
+      color: "#317C66",
       stations: [
         {
           name: "泉中央",
@@ -5495,7 +5495,7 @@ export const tohoku: OperatorData = {
       nameKo: "센다이시에이치카테쓰토자이선",
       nameJp: "仙台市営地下鉄東西線",
       nameKana: "センダイシエイチカテツトウザイセン",
-      color: "#6C5CE7",
+      color: "#00B1DD",
       stations: [
         {
           name: "八木山動物公園",
@@ -5766,7 +5766,7 @@ export const tohoku: OperatorData = {
       nameKo: "센다이쿠코선",
       nameJp: "仙台空港線",
       nameKana: "センダイクウコウセン",
-      color: "#2ECC71",
+      color: "#2A5CAA",
       stations: [
         {
           name: "名取",

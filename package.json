@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "serve": "vite build && vite preview",
     "normalize-transfers": "node scripts/normalize-transfers.mjs",
-    "add-line-kana": "node scripts/add-line-kana.mjs"
+    "add-line-kana": "node scripts/add-line-kana.mjs",
+    "apply-line-colors": "node scripts/apply-line-colors.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
