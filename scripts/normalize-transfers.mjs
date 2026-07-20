@@ -24,15 +24,27 @@ function parseCSV(file) {
   });
 }
 
-// (line_cd, station_name) -> station_g_cd  (활성 역만)
+// (line_cd, station_name) -> station_g_cd
+// 활성 역(e_status 0) 우선. 폐역(2)도 폴백으로 넣는다 — BRT 전환 구간처럼
+// CSV상 폐지됐지만 앱에는 살아있는 노선의 환승 판정에 필요 (활성 키는 덮어쓰지 않음).
 const key2g = new Map();
-for (const s of parseCSV('station.csv')) {
+const csvRows = parseCSV('station.csv');
+for (const s of csvRows) {
   if (s.e_status !== '0') continue;
   key2g.set(`${s.line_cd} ${s.station_name}`, s.station_g_cd);
 }
+for (const s of csvRows) {
+  if (s.e_status !== '2') continue;
+  const k = `${s.line_cd} ${s.station_name}`;
+  if (!key2g.has(k)) key2g.set(k, s.station_g_cd);
+}
 
 // 앱에서 노선을 분할해 만든 커스텀 id → CSV line_cd (CSV에 없는 id는 여기 등록)
-const LINE_ALIAS = { '113272': '11327' }; // JR成田線（我孫子支線） → JR成田線
+const LINE_ALIAS = {
+  '113272': '11327', // JR成田線（我孫子支線） → JR成田線
+  '112242': '11224', // JR気仙沼線BRT → JR気仙沼線 (쓰나미 폐지 구간의 BRT 전환)
+  '112082': '11208', // JR大船渡線BRT → JR大船渡線 (동상)
+};
 // 노선이 CSV의 노선 구간을 넘어 연장 운행하는 경우의 역 단위 보정: "앱lineId 역명" → "CSV line_cd 역명"
 const KEY_ALIAS = { '11311 松本': '11409 松本' }; // 特急あずさ의 松本는 CSV상 篠ノ井線 소속
 const lookupG = (lineId, name) =>

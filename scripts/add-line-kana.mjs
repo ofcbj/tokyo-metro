@@ -21,9 +21,13 @@ for (const l of rows.slice(1)) {
 }
 
 // 앱에서 노선을 분할해 만든 커스텀 id → CSV line_cd (normalize-transfers.mjs와 동일하게 유지)
-const LINE_ALIAS = { '113272': '11327' };
+const LINE_ALIAS = { '113272': '11327', '112242': '11224', '112082': '11208' };
 // 앱 표시명이 CSV 노선명과 다른 경우의 읽기 강제 (CSV 카나 대신 사용)
-const KANA_OVERRIDE = { '11311': 'トッキュウアズサ' }; // 特急あずさ (CSV는 中央本線)
+const KANA_OVERRIDE = {
+  '11311': 'トッキュウアズサ',                 // 特急あずさ (CSV는 中央本線)
+  '112242': 'ケセンヌマセンビーアールティー',   // 気仙沼線BRT
+  '112082': 'オオフナトセンビーアールティー',   // 大船渡線BRT
+};
 
 let added = 0, updated = 0, missed = [];
 for (const f of fs.readdirSync(LINES_DIR).filter(f => f.endsWith('.ts'))) {

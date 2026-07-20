@@ -16,13 +16,13 @@ export const SidebarHeader = ({
   startGame,
   endGame,
 }: SidebarHeaderProps) => {
-  const SPEEDS = [0.25, 0.5, 1, 2, 4]; // 중앙 1x가 기본
+  const SPEEDS = [0.5, 1, 1.5, 2, 4]; // 중앙 1.5x가 기본
   const speedMarks = SPEEDS.map((s, i) => ({ value: i, label: `${s}x` }));
 
   const getSpeedLabel = (value: number): string => {
-    if (value <= 0.25) return '最遅';
-    if (value < 1) return '遅い';
-    if (value === 1) return '普通';
+    if (value <= 0.5) return '最遅';
+    if (value < 1.5) return '遅い';
+    if (value === 1.5) return '普通';
     if (value <= 2) return '速い';
     return '超速';
   };

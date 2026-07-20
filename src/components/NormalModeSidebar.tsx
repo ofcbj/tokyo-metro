@@ -22,8 +22,8 @@ import {
 } from '@mui/icons-material';
 import { LineData, Line } from '../types';
 
-// 애니메이션 속도 눈금 (중앙 1x가 기본, 좌: 느림 / 우: 빠름)
-const SPEEDS = [0.25, 0.5, 1, 2, 4];
+// 애니메이션 속도 눈금 (중앙 1.5x가 기본, 좌: 느림 / 우: 빠름)
+const SPEEDS = [0.5, 1, 1.5, 2, 4];
 
 interface NormalModeSidebarProps {
   searchTerm: string;

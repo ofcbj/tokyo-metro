@@ -46,7 +46,7 @@ export const useGameMode = (lineData: LineData, allLineIds: string[]) => {
   const [discoveredLines, setDiscoveredLines] = useState<Set<string>>(new Set());
   const [gameLog, setGameLog]                 = useState<GameLogEntry[]>([]);
   const [remainingClicks, setRemainingClicks] = useState<number>(399);
-  const [animationSpeed, setAnimationSpeed]   = useState<number>(1.0);
+  const [animationSpeed, setAnimationSpeed]   = useState<number>(1.5);
   const [showGameIntro, setShowGameIntro]     = useState<boolean>(false);
   const [showGameResult, setShowGameResult]   = useState<GameResult | null>(null);
   const [toastMessage, setToastMessage]       = useState<ToastMessage | null>(null);
