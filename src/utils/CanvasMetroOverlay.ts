@@ -35,6 +35,9 @@ export class CanvasMetroOverlay {
   private animatedLines: Map<string, AnimatedLine> = new Map();
   private animationFrameId: number | null = null;
   private hoveredStation: StationMarker | null = null;
+  private hoveredLineIds: Set<string> = new Set(); // 호버된 역/선을 지나는 노선 (두껍게 + 최상단 렌더)
+  private lineHoverLabelId: string | null = null; // 선(폴리라인) 호버 시 역 옆에 노선명 라벨을 붙일 노선
+  private linePathCache: Map<string, { x: number; y: number }[]> = new Map(); // lineId → 화면좌표 폴리라인 (선 호버 히트테스트용)
   private stationCache: Map<string, StationMarker[]> = new Map(); // lineId -> stations
   private tooltipEl: HTMLDivElement | null = null; // 역 호버 툴팁 (화면 위치에 맞춰 위/아래 뒤집힘)
   private overlay: google.maps.OverlayView;
@@ -221,9 +224,16 @@ export class CanvasMetroOverlay {
       this.selectedSet.has(line.id)
     );
 
+    // 강조(호버) 노선은 나머지를 모두 그린 뒤 마지막에 그려 최상단에 오도록 분리
+    this.linePathCache.clear();
+    const normalLines: Line[] = [];
+    const highlightedLines: Line[] = [];
     selectedLineObjects.forEach(line => {
-      this.drawLine(line, projection, bounds, step);
+      (this.hoveredLineIds.has(line.id) ? highlightedLines : normalLines).push(line);
     });
+
+    normalLines.forEach(line => this.drawLine(line, projection, bounds, step, false));
+    highlightedLines.forEach(line => this.drawLine(line, projection, bounds, step, true));
 
     // 게임 종반 힌트: 남은 노선이 10개 이하면 미발견 노선이 남은 환승역을
     // 줌 레벨(LOD)과 무관하게 항상 표시해 마지막 노선 찾기를 돕는다.
@@ -235,7 +245,8 @@ export class CanvasMetroOverlay {
     // 역 마커 그리기 (저줌에서는 생략 → 클릭 캐시도 비움. 단, 힌트 역은 저줌에도 그린다)
     this.stationCache.clear();
     if (stationMode !== 'none' || hintActive) {
-      selectedLineObjects.forEach(line => {
+      // 역 마커도 강조 노선 것을 나중에 그려 최상단에 오게 한다
+      [...normalLines, ...highlightedLines].forEach(line => {
         const stationMarkers = this.drawStations(line, projection, bounds, stationMode, hintActive);
         this.stationCache.set(line.id, stationMarkers);
       });
@@ -245,6 +256,67 @@ export class CanvasMetroOverlay {
     if (this.hoveredStation) {
       this.drawStationHighlight(this.hoveredStation);
     }
+
+    // 선 호버 중: 그 노선의 역들 옆에 역 이름 라벨 표시 (맨 마지막에 그려 최상단)
+    if (this.lineHoverLabelId && this.selectedSet.has(this.lineHoverLabelId)) {
+      const line = this.allLinesCache.find(l => l.id === this.lineHoverLabelId);
+      if (line) this.drawStationNameLabels(line, projection, bounds);
+    }
+  }
+
+  // 선 호버 시 그 노선의 각 역 이름을 역 옆에 배지로 표시한다.
+  // 라벨끼리 겹쳐 뭉개지지 않게 직전 라벨과 화면 거리가 너무 가까우면 생략한다.
+  private drawStationNameLabels(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds) {
+    this.ctx.font = 'bold 12px sans-serif';
+    const PAD_X = 7;
+    const H = 20; // 배지 높이
+    const MIN_GAP = 30; // 라벨 간 최소 화면 거리 (px) — 저줌에서 겹침 방지
+    const textColor = CanvasMetroOverlay.isLightColor(line.color) ? '#000000' : '#FFFFFF';
+
+    let lastX = Infinity;
+    let lastY = Infinity;
+    for (const station of line.stations) {
+      if (!bounds.contains({ lat: station.lat, lng: station.lng })) continue;
+      const point = projection.fromLatLngToDivPixel(
+        new google.maps.LatLng(station.lat, station.lng)
+      );
+      if (!point) continue;
+      const x = point.x - this.offsetX;
+      const y = point.y - this.offsetY;
+      if (Math.hypot(x - lastX, y - lastY) < MIN_GAP) continue; // 직전 라벨과 너무 가까우면 생략
+      lastX = x;
+      lastY = y;
+
+      // 역 오른쪽에 노선 색 배지 + 대비색 텍스트
+      const text = station.name;
+      const textW = this.ctx.measureText(text).width;
+      const bx = x + 12;
+      const by = y - H / 2;
+      const bw = textW + PAD_X * 2;
+      this.ctx.save();
+      this.ctx.shadowColor = 'rgba(0,0,0,0.35)';
+      this.ctx.shadowBlur = 4;
+      this.ctx.fillStyle = line.color;
+      this.ctx.beginPath();
+      this.ctx.roundRect(bx, by, bw, H, 5);
+      this.ctx.fill();
+      this.ctx.restore();
+      this.ctx.fillStyle = textColor;
+      this.ctx.textBaseline = 'middle';
+      this.ctx.textAlign = 'left';
+      this.ctx.fillText(text, bx + PAD_X, y + 1);
+    }
+  }
+
+  // 배지 텍스트 대비용: 노선 색이 밝은지 판정 (#RRGGBB 상대 휘도)
+  private static isLightColor(hex: string): boolean {
+    const m = /^#?([0-9a-f]{6})$/i.exec(hex.trim());
+    if (!m) return false;
+    const v = parseInt(m[1], 16);
+    const r = (v >> 16) & 0xff;
+    const g = (v >> 8) & 0xff;
+    const b = v & 0xff;
+    return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.62;
   }
 
   // 애니메이션 진행에 따라 드러난 폴리라인 경로(거리 기준, 선두는 보간)와
@@ -297,7 +369,7 @@ export class CanvasMetroOverlay {
     return { points, lo, hi };
   }
 
-  private drawLine(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, step: number) {
+  private drawLine(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, step: number, highlight = false) {
     const animatedLine = this.animatedLines.get(line.id);
 
     // 뷰포트에 보이는 역이 하나라도 있는지 (첫 발견 시 중단하는 컬링)
@@ -311,23 +383,24 @@ export class CanvasMetroOverlay {
 
     if (pathPoints.length < 2) return;
 
-    // 애니메이션 중인 노선은 더 굵게 + 글로우로 강조
+    // 애니메이션 중인 노선은 더 굵게 + 글로우로 강조. 호버 강조는 그보다 더 굵게.
     const animating = !!animatedLine && animatedLine.progress < 1;
 
     // 폴리라인 그리기
     this.ctx.strokeStyle = line.color;
-    this.ctx.lineWidth = animating ? 7 : 4;
+    this.ctx.lineWidth = highlight ? 8 : animating ? 7 : 4;
     this.ctx.lineCap = 'round';
     this.ctx.lineJoin = 'round';
-    this.ctx.globalAlpha = animating ? 1.0 : 0.8;
-    if (animating) {
+    this.ctx.globalAlpha = animating || highlight ? 1.0 : 0.8;
+    if (animating || highlight) {
       this.ctx.shadowColor = line.color;
-      this.ctx.shadowBlur = 14;
+      this.ctx.shadowBlur = animating ? 14 : 10;
     }
 
     this.ctx.beginPath();
     const lastIdx = pathPoints.length - 1;
     let started = false;
+    const screenPts: { x: number; y: number }[] = [];
     for (let idx = 0; idx <= lastIdx; idx++) {
       // 저줌에서는 step 간격으로 정점을 솎되, 마지막 점은 항상 포함해 선이 끊기지 않게 한다
       if (step > 1 && idx % step !== 0 && idx !== lastIdx) continue;
@@ -339,6 +412,7 @@ export class CanvasMetroOverlay {
       if (!point) continue;
       const x = point.x - this.offsetX;
       const y = point.y - this.offsetY;
+      screenPts.push({ x, y });
 
       if (!started) {
         this.ctx.moveTo(x, y);
@@ -348,6 +422,8 @@ export class CanvasMetroOverlay {
       }
     }
     this.ctx.stroke();
+    // 선 호버 히트테스트용으로 화면좌표 폴리라인 캐시 (그려진 노선만)
+    this.linePathCache.set(line.id, screenPts);
     this.ctx.shadowBlur = 0; // 이후 그리기에 글로우 번지지 않게 리셋
     this.ctx.globalAlpha = 1.0;
   }
@@ -463,6 +539,8 @@ export class CanvasMetroOverlay {
       // 애니메이션 기점으로 사용 (누른 역에서 노선이 퍼져나가게)
       this.lastClick = { lat: station.station.lat, lng: station.station.lng, time: Date.now() };
       this.hoveredStation = station;
+      this.hoveredLineIds = this.linesThroughStation(station);
+      this.lineHoverLabelId = null;
       this.showTooltip(station);
       this.requestDraw();
       this.options.onStationClick(
@@ -475,6 +553,8 @@ export class CanvasMetroOverlay {
     } else {
       // 빈 곳 탭 → 팝업 닫기
       this.hoveredStation = null;
+      this.hoveredLineIds = new Set();
+      this.lineHoverLabelId = null;
       this.hideTooltip();
       this.requestDraw();
     }
@@ -502,6 +582,13 @@ export class CanvasMetroOverlay {
       const map = this.overlay.getMap() as google.maps.Map | null | undefined;
       if (map) map.getDiv().style.cursor = station ? 'pointer' : '';
 
+      // 역 위: 그 역을 지나는(표시 중인) 모든 노선 강조. 역을 벗어나면 선 히트테스트로 폴백.
+      this.hoveredLineIds = station
+        ? this.linesThroughStation(station)
+        : this.lineIdsAt(p);
+      // 노선명 라벨은 선 위에 직접 호버했을 때만
+      this.lineHoverLabelId = station ? null : this.firstId(this.hoveredLineIds);
+
       // 툴팁 표시/숨김
       if (station) {
         this.showTooltip(station);
@@ -510,7 +597,58 @@ export class CanvasMetroOverlay {
       }
 
       this.requestDraw(); // 리렌더
+    } else if (!station) {
+      // 역 밖에서 움직이는 중: 선 위 호버 여부만 갱신 (변화 있을 때만 리렌더)
+      const newIds = this.lineIdsAt(p);
+      if (!this.sameIdSet(newIds, this.hoveredLineIds)) {
+        this.hoveredLineIds = newIds;
+        this.lineHoverLabelId = this.firstId(newIds);
+        this.requestDraw();
+      }
     }
+  }
+
+  private firstId(ids: Set<string>): string | null {
+    for (const id of ids) return id;
+    return null;
+  }
+
+  // 이 역(환승그룹)을 지나는 노선 중 현재 표시 중인 것들
+  private linesThroughStation(marker: StationMarker): Set<string> {
+    return new Set(
+      this.findLinesForStationByMarker(marker).filter(id => this.selectedSet.has(id))
+    );
+  }
+
+  private sameIdSet(a: Set<string>, b: Set<string>): boolean {
+    if (a.size !== b.size) return false;
+    for (const id of a) if (!b.has(id)) return false;
+    return true;
+  }
+
+  // 화면좌표 (x,y)가 어떤 노선 폴리라인 위에 있는지 히트테스트 (draw()에서 캐시한 화면좌표 사용)
+  private lineIdsAt(p: { x: number; y: number } | null): Set<string> {
+    if (!p) return new Set();
+    const TOL = 6; // 선 굵기 4px + 여유
+    for (const [lineId, pts] of this.linePathCache.entries()) {
+      for (let i = 1; i < pts.length; i++) {
+        const a = pts[i - 1];
+        const b = pts[i];
+        // 세그먼트 바운딩박스로 빠른 제외
+        if (
+          p.x < Math.min(a.x, b.x) - TOL || p.x > Math.max(a.x, b.x) + TOL ||
+          p.y < Math.min(a.y, b.y) - TOL || p.y > Math.max(a.y, b.y) + TOL
+        ) continue;
+        // 점-세그먼트 거리
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const len2 = dx * dx + dy * dy;
+        const t = len2 ? Math.max(0, Math.min(1, ((p.x - a.x) * dx + (p.y - a.y) * dy) / len2)) : 0;
+        const dist = Math.hypot(p.x - (a.x + dx * t), p.y - (a.y + dy * t));
+        if (dist <= TOL) return new Set([lineId]);
+      }
+    }
+    return new Set();
   }
 
   private findStationAt(x: number, y: number): StationMarker | null {
