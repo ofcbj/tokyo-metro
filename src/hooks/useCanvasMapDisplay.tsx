@@ -1,5 +1,5 @@
 import { useEffect, useRef, MutableRefObject } from 'react';
-import { LineData } from '../types';
+import { LineData, Line } from '../types';
 import { CanvasMetroOverlay } from '../utils/CanvasMetroOverlay';
 
 export const useCanvasMapDisplay = (
@@ -12,7 +12,8 @@ export const useCanvasMapDisplay = (
   animationSpeed          : number,
   setShouldPanOnNextUpdate: (value: boolean) => void,
   selectLinesForStation   : (name: string, lat: number, lng: number, isTransfer?: boolean, groupId?: number) => void,
-  hideLinesForStation     : (name: string, lat: number, lng: number) => void
+  hideLinesForStation     : (name: string, lat: number, lng: number) => void,
+  onLineHover             : (line: Line | null) => void
 ) => {
   const overlayRef = useRef<CanvasMetroOverlay | null>(null);
   const previousSelectedLinesRef = useRef<string[]>([]);
@@ -28,7 +29,8 @@ export const useCanvasMapDisplay = (
       animationSpeed,
       isGameMode,
       onStationClick: selectLinesForStation,
-      onStationRightClick: hideLinesForStation
+      onStationRightClick: hideLinesForStation,
+      onLineHover
     });
 
     overlay.setMap(googleMapRef.current);
@@ -59,7 +61,8 @@ export const useCanvasMapDisplay = (
       animationSpeed,
       isGameMode,
       onStationClick: selectLinesForStation,
-      onStationRightClick: hideLinesForStation
+      onStationRightClick: hideLinesForStation,
+      onLineHover
     });
 
     // 자동 줌이 활성화되어 있고, 팬 이동이 허용되고, 새로 선택된 노선이 있으면 지도 이동
@@ -94,7 +97,8 @@ export const useCanvasMapDisplay = (
     googleMapRef,
     setShouldPanOnNextUpdate,
     selectLinesForStation,
-    hideLinesForStation
+    hideLinesForStation,
+    onLineHover
   ]);
 
   return {

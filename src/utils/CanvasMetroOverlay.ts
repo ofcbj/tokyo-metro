@@ -10,6 +10,8 @@ interface CanvasOverlayOptions {
   isGameMode: boolean;
   onStationClick: (name: string, lat: number, lng: number, isTransfer?: boolean, groupId?: number) => void;
   onStationRightClick: (name: string, lat: number, lng: number) => void;
+  /** 선(폴리라인) 호버로 역 이름 라벨이 뜨는 노선이 바뀔 때 (벗어나면 null) — 노선명 팝업 표시용 */
+  onLineHover?: (line: Line | null) => void;
 }
 
 interface AnimatedLine {
@@ -264,8 +266,9 @@ export class CanvasMetroOverlay {
     }
   }
 
-  // 선 호버 시 그 노선의 각 역 이름을 역 옆에 배지로 표시한다.
-  // 라벨끼리 겹쳐 뭉개지지 않게 직전 라벨과 화면 거리가 너무 가까우면 생략한다.
+  // 선 호버 시 그 노선의 각 역 이름을 역 위/아래로 번갈아(지그재그) 배지로 표시한다.
+  // 수평 구간에서 옆 역 라벨과 같은 높이로 겹치는 것을 막기 위한 배치. 같은 줄(위/위, 아래/아래)의
+  // 직전 라벨과 화면 거리가 너무 가까우면 생략한다.
   // 폰트는 줌 12에서 최소(14px), 줌 16 이상에서 최대(20px)로 선형 확대 — 한자 가독성용.
   private drawStationNameLabels(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, zoom: number) {
     const t = Math.min(1, Math.max(0, (zoom - CanvasMetroOverlay.ZOOM_ALL_STATIONS) / 4));
@@ -273,11 +276,12 @@ export class CanvasMetroOverlay {
     this.ctx.font = `bold ${fontSize}px sans-serif`;
     const PAD_X = 7;
     const H = fontSize + 8; // 배지 높이 (폰트에 비례)
-    const MIN_GAP = fontSize * 2.2; // 라벨 간 최소 화면 거리 (px) — 저줌에서 겹침 방지
+    const MIN_GAP = fontSize * 2.2; // 같은 줄 라벨 간 최소 화면 거리 (px) — 저줌에서 겹침 방지
+    const OFF_Y = H / 2 + 9; // 역 중심에서 배지 중심까지 세로 거리 (역 원을 가리지 않게)
     const textColor = CanvasMetroOverlay.isLightColor(line.color) ? '#000000' : '#FFFFFF';
 
-    let lastX = Infinity;
-    let lastY = Infinity;
+    let row = 0; // 0: 위, 1: 아래 — 그릴 때마다 토글
+    const last = [{ x: Infinity, y: Infinity }, { x: Infinity, y: Infinity }]; // 줄별 직전 라벨 위치
     for (const station of line.stations) {
       if (!bounds.contains({ lat: station.lat, lng: station.lng })) continue;
       const point = projection.fromLatLngToDivPixel(
@@ -286,16 +290,17 @@ export class CanvasMetroOverlay {
       if (!point) continue;
       const x = point.x - this.offsetX;
       const y = point.y - this.offsetY;
-      if (Math.hypot(x - lastX, y - lastY) < MIN_GAP) continue; // 직전 라벨과 너무 가까우면 생략
-      lastX = x;
-      lastY = y;
+      if (Math.hypot(x - last[row].x, y - last[row].y) < MIN_GAP) continue; // 같은 줄 직전 라벨과 너무 가까우면 생략
+      last[row] = { x, y };
 
-      // 역 오른쪽에 노선 색 배지 + 대비색 텍스트 (가나 읽기 병기)
+      // 역 위/아래에 가운데 정렬된 노선 색 배지 + 대비색 텍스트 (가나 읽기 병기)
       const text = station.nameKana ? `${station.name} / ${station.nameKana}` : station.name;
       const textW = this.ctx.measureText(text).width;
-      const bx = x + 12;
-      const by = y - H / 2;
       const bw = textW + PAD_X * 2;
+      const cy = y + (row === 0 ? -OFF_Y : OFF_Y); // 배지 세로 중심 (지그재그)
+      const bx = x - bw / 2;
+      const by = cy - H / 2;
+      row ^= 1;
       this.ctx.save();
       this.ctx.shadowColor = 'rgba(0,0,0,0.35)';
       this.ctx.shadowBlur = 4;
@@ -307,19 +312,20 @@ export class CanvasMetroOverlay {
       this.ctx.fillStyle = textColor;
       this.ctx.textBaseline = 'middle';
       this.ctx.textAlign = 'left';
-      this.ctx.fillText(text, bx + PAD_X, y + 1);
+      this.ctx.fillText(text, bx + PAD_X, cy + 1);
     }
   }
 
-  // 배지 텍스트 대비용: 노선 색이 밝은지 판정 (#RRGGBB 상대 휘도)
+  // 배지 텍스트 대비용: 노선 색이 밝은지 판정 (#RRGGBB 또는 #RRGGBBAA 상대 휘도)
+  // 확실히 어두운 색(휘도 0.45 이하)에만 흰색 텍스트 — 주황/하늘색 등 중간 밝기에서 흰색이 안 보이는 문제 방지
   private static isLightColor(hex: string): boolean {
-    const m = /^#?([0-9a-f]{6})$/i.exec(hex.trim());
+    const m = /^#?([0-9a-f]{6})(?:[0-9a-f]{2})?$/i.exec(hex.trim());
     if (!m) return false;
     const v = parseInt(m[1], 16);
     const r = (v >> 16) & 0xff;
     const g = (v >> 8) & 0xff;
     const b = v & 0xff;
-    return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.62;
+    return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.45;
   }
 
   // 애니메이션 진행에 따라 드러난 폴리라인 경로(거리 기준, 선두는 보간)와
@@ -543,7 +549,7 @@ export class CanvasMetroOverlay {
       this.lastClick = { lat: station.station.lat, lng: station.station.lng, time: Date.now() };
       this.hoveredStation = station;
       this.hoveredLineIds = this.linesThroughStation(station);
-      this.lineHoverLabelId = null;
+      this.setLineHoverLabel(null);
       this.showTooltip(station);
       this.requestDraw();
       this.options.onStationClick(
@@ -557,7 +563,7 @@ export class CanvasMetroOverlay {
       // 빈 곳 탭 → 팝업 닫기
       this.hoveredStation = null;
       this.hoveredLineIds = new Set();
-      this.lineHoverLabelId = null;
+      this.setLineHoverLabel(null);
       this.hideTooltip();
       this.requestDraw();
     }
@@ -590,7 +596,7 @@ export class CanvasMetroOverlay {
         ? this.linesThroughStation(station)
         : this.lineIdsAt(p);
       // 노선명 라벨은 선 위에 직접 호버했을 때만
-      this.lineHoverLabelId = station ? null : this.firstId(this.hoveredLineIds);
+      this.setLineHoverLabel(station ? null : this.firstId(this.hoveredLineIds));
 
       // 툴팁 표시/숨김
       if (station) {
@@ -605,7 +611,7 @@ export class CanvasMetroOverlay {
       const newIds = this.lineIdsAt(p);
       if (!this.sameIdSet(newIds, this.hoveredLineIds)) {
         this.hoveredLineIds = newIds;
-        this.lineHoverLabelId = this.firstId(newIds);
+        this.setLineHoverLabel(this.firstId(newIds));
         this.requestDraw();
       }
     }
@@ -614,6 +620,15 @@ export class CanvasMetroOverlay {
   private firstId(ids: Set<string>): string | null {
     for (const id of ids) return id;
     return null;
+  }
+
+  // 선 호버 라벨 대상 노선 변경 + 리스너 통지 (모든 lineHoverLabelId 변경은 이 메서드를 거친다)
+  private setLineHoverLabel(id: string | null) {
+    if (id === this.lineHoverLabelId) return;
+    this.lineHoverLabelId = id;
+    if (this.options.onLineHover) {
+      this.options.onLineHover(id ? this.allLinesCache.find(l => l.id === id) ?? null : null);
+    }
   }
 
   // 이 역(환승그룹)을 지나는 노선 중 현재 표시 중인 것들

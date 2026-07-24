@@ -11,7 +11,7 @@ import {
   Avatar,
 } from '@mui/material';
 import { keyframes } from '@emotion/react';
-import { ClickEffect, ToastMessage } from '../types';
+import { ClickEffect, ToastMessage, Line } from '../types';
 
 // 클릭 이펙트 애니메이션
 const rippleAnimation = keyframes`
@@ -37,13 +37,66 @@ const pulseAnimation = keyframes`
 interface MapOverlaysProps {
   clickEffect: ClickEffect | null;
   toastMessage: ToastMessage | null;
+  hoverLine: Line | null; // 선 호버 중인 노선 (게임 토스트와 같은 스타일의 노선명 팝업)
   isMapLoaded: boolean;
   selectedLines: string[];
 }
 
-export const MapOverlays = ({ clickEffect, toastMessage, isMapLoaded, selectedLines }: MapOverlaysProps) => {
+export const MapOverlays = ({ clickEffect, toastMessage, hoverLine, isMapLoaded, selectedLines }: MapOverlaysProps) => {
+  // 8자리 hex(#RRGGBBAA)에 알파를 이어붙이면 깨지므로 RGB 6자리만 사용
+  const hoverColor = hoverLine ? hoverLine.color.slice(0, 7) : '';
   return (
     <>
+      {/* 선 호버 시 노선명 팝업 — 게임 발견 토스트와 같은 디자인 (지도 상단 중앙) */}
+      {hoverLine && (
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 24,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 39,
+            pointerEvents: 'none',
+            zoom: 0.8,
+          }}
+        >
+          <Paper
+            elevation={8}
+            sx={{
+              borderRadius: 4,
+              px: 3,
+              py: 1.5,
+              border: 4,
+              borderColor: hoverColor,
+              background: `linear-gradient(135deg, ${hoverColor}15, ${hoverColor}25)`,
+              backdropFilter: 'blur(8px)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 1.5,
+            }}
+          >
+            <Box
+              sx={{
+                width: 24,
+                height: 24,
+                borderRadius: '50%',
+                backgroundColor: hoverColor,
+                boxShadow: `0 0 16px ${hoverColor}80`,
+                flexShrink: 0,
+              }}
+            />
+            <Box>
+              <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'rgb(17, 24, 39)', lineHeight: 1.25 }}>
+                {hoverLine.nameJp}
+              </Typography>
+              <Typography variant="body2" sx={{ fontWeight: 600, color: 'rgb(55, 65, 81)' }}>
+                {hoverLine.nameKo}
+              </Typography>
+            </Box>
+          </Paper>
+        </Box>
+      )}
+
       {/* 클릭 이펙트 */}
       {clickEffect && (
         <Box

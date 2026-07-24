@@ -28,7 +28,7 @@ import { findLinesForStation, findLinesForGroup } from './utils/mapUtils';
 import { mergeOperators } from './utils/operators';
 
 // Types
-import { LineData } from './types';
+import { LineData, Line } from './types';
 
 // 지역별 노선 데이터 (사이드바: 지역 → 회사 → 노선 드릴다운용)
 const regions: Record<string, LineData> = {
@@ -45,6 +45,8 @@ const TokyoMetroMap = () => {
   const [showApiInput, setShowApiInput] = useState<boolean>(false);
   const [autoZoom, setAutoZoom] = useState<boolean>(true);
   const [shouldPanOnNextUpdate, setShouldPanOnNextUpdate] = useState<boolean>(false);
+  // 선(폴리라인) 호버로 역 이름 라벨이 떠 있는 노선 (노선명 팝업 표시용)
+  const [hoveredLine, setHoveredLine] = useState<Line | null>(null);
 
   // 모바일 판정: 터치 기기이면서 좁은 폭(세로 폰) 또는 낮은 높이(가로 폰).
   // pointer:coarse 조건으로 데스크톱에서 창을 좁혀도 오탐하지 않게 한다.
@@ -165,7 +167,8 @@ const TokyoMetroMap = () => {
     animationSpeed,
     setShouldPanOnNextUpdate,
     selectLinesForStation,
-    hideLinesForStation
+    hideLinesForStation,
+    setHoveredLine
   );
 
   if (showApiInput) {
@@ -242,6 +245,7 @@ const TokyoMetroMap = () => {
           <MapOverlays
             clickEffect={clickEffect}
             toastMessage={isGameMode ? null : toastMessage}
+            hoverLine={toastMessage ? null : hoveredLine}
             isMapLoaded={isMapLoaded}
             selectedLines={selectedLines}
           />
