@@ -1,6 +1,8 @@
 // Station type
 export interface Station {
   name: string;
+  /** 역명 카나 읽기 (TTS/후리가나용 — 난독 역명 오독 방지, 예: 御徒町 → おかちまち) */
+  nameKana?: string;
   lat: number;
   lng: number;
   transfer?: boolean;

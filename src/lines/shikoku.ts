@@ -12,6 +12,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "多度津",
+          nameKana: "たどつ",
           lat: 34.271238,
           lng: 133.757235,
           transfer: true,
@@ -19,16 +20,19 @@ export const shikoku: OperatorData = {
         },
         {
           name: "金蔵寺",
+          nameKana: "こんぞうじ",
           lat: 34.248152,
           lng: 133.777486,
         },
         {
           name: "善通寺",
+          nameKana: "ぜんつうじ",
           lat: 34.230021,
           lng: 133.789235,
         },
         {
           name: "琴平",
+          nameKana: "ことひら",
           lat: 34.192106,
           lng: 133.8213,
           transfer: true,
@@ -36,31 +40,37 @@ export const shikoku: OperatorData = {
         },
         {
           name: "塩入",
+          nameKana: "しおいり",
           lat: 34.156089,
           lng: 133.849938,
         },
         {
           name: "黒川",
+          nameKana: "くろかわ",
           lat: 34.133145,
           lng: 133.82011,
         },
         {
           name: "讃岐財田",
+          nameKana: "さぬきさいだ",
           lat: 34.117463,
           lng: 133.814781,
         },
         {
           name: "坪尻",
+          nameKana: "つぼじり",
           lat: 34.053932,
           lng: 133.823816,
         },
         {
           name: "箸蔵",
+          nameKana: "はしくら",
           lat: 34.040318,
           lng: 133.848495,
         },
         {
           name: "佃",
+          nameKana: "つくだ",
           lat: 34.032439,
           lng: 133.857677,
           transfer: true,
@@ -68,6 +78,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "阿波池田",
+          nameKana: "あわいけだ",
           lat: 34.026891,
           lng: 133.804669,
           transfer: true,
@@ -75,91 +86,109 @@ export const shikoku: OperatorData = {
         },
         {
           name: "三縄",
+          nameKana: "みなわ",
           lat: 34.006854,
           lng: 133.7874,
         },
         {
           name: "祖谷口",
+          nameKana: "いやぐち",
           lat: 33.972692,
           lng: 133.780423,
         },
         {
           name: "阿波川口",
+          nameKana: "あわかわぐち",
           lat: 33.963649,
           lng: 133.754634,
         },
         {
           name: "小歩危",
+          nameKana: "こぼけ",
           lat: 33.923352,
           lng: 133.758767,
         },
         {
           name: "大歩危",
+          nameKana: "おおぼけ",
           lat: 33.8765,
           lng: 133.767348,
         },
         {
           name: "土佐岩原",
+          nameKana: "とさいわはら",
           lat: 33.822582,
           lng: 133.788154,
         },
         {
           name: "豊永",
+          nameKana: "とよなが",
           lat: 33.796788,
           lng: 133.759638,
         },
         {
           name: "大田口",
+          nameKana: "おおたぐち",
           lat: 33.785539,
           lng: 133.726552,
         },
         {
           name: "土佐穴内",
+          nameKana: "とさあなない",
           lat: 33.779192,
           lng: 133.696126,
         },
         {
           name: "大杉",
+          nameKana: "おおすぎ",
           lat: 33.761091,
           lng: 133.66445,
         },
         {
           name: "土佐北川",
+          nameKana: "とさきたがわ",
           lat: 33.714792,
           lng: 133.686312,
         },
         {
           name: "角茂谷",
+          nameKana: "かくもだに",
           lat: 33.695689,
           lng: 133.692528,
         },
         {
           name: "繁藤",
+          nameKana: "しげとう",
           lat: 33.680389,
           lng: 133.690186,
         },
         {
           name: "新改",
+          nameKana: "しんがい",
           lat: 33.649596,
           lng: 133.695763,
         },
         {
           name: "土佐山田",
+          nameKana: "とさやまだ",
           lat: 33.607085,
           lng: 133.684664,
         },
         {
           name: "山田西町",
+          nameKana: "やまだにしまち",
           lat: 33.60453,
           lng: 133.677287,
         },
         {
           name: "土佐長岡",
+          nameKana: "とさながおか",
           lat: 33.591728,
           lng: 133.662219,
         },
         {
           name: "後免",
+          nameKana: "ごめん",
           lat: 33.579245,
           lng: 133.645479,
           transfer: true,
@@ -167,6 +196,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "土佐大津",
+          nameKana: "とさおおつ",
           lat: 33.576661,
           lng: 133.612062,
           transfer: true,
@@ -174,21 +204,25 @@ export const shikoku: OperatorData = {
         },
         {
           name: "布師田",
+          nameKana: "ぬのしだ",
           lat: 33.575595,
           lng: 133.590379,
         },
         {
           name: "土佐一宮",
+          nameKana: "とさいっく",
           lat: 33.578974,
           lng: 133.577274,
         },
         {
           name: "薊野",
+          nameKana: "あぞうの",
           lat: 33.578243,
           lng: 133.560056,
         },
         {
           name: "高知",
+          nameKana: "こうち",
           lat: 33.566758,
           lng: 133.543522,
           transfer: true,
@@ -196,26 +230,31 @@ export const shikoku: OperatorData = {
         },
         {
           name: "入明",
+          nameKana: "いりあけ",
           lat: 33.567322,
           lng: 133.530298,
         },
         {
           name: "円行寺口",
+          nameKana: "えんぎょうじぐち",
           lat: 33.565816,
           lng: 133.520791,
         },
         {
           name: "旭",
+          nameKana: "あさひ",
           lat: 33.558808,
           lng: 133.50852,
         },
         {
           name: "高知商業前",
+          nameKana: "こうちしょうぎょうまえ",
           lat: 33.558419,
           lng: 133.497443,
         },
         {
           name: "朝倉",
+          nameKana: "あさくら",
           lat: 33.551545,
           lng: 133.485487,
           transfer: true,
@@ -223,6 +262,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "枝川",
+          nameKana: "えだがわ",
           lat: 33.55073,
           lng: 133.44849,
           transfer: true,
@@ -230,6 +270,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "伊野",
+          nameKana: "いの",
           lat: 33.547507,
           lng: 133.430128,
           transfer: true,
@@ -237,101 +278,121 @@ export const shikoku: OperatorData = {
         },
         {
           name: "波川",
+          nameKana: "はかわ",
           lat: 33.543699,
           lng: 133.414191,
         },
         {
           name: "小村神社前",
+          nameKana: "おむらじんじゃまえ",
           lat: 33.539968,
           lng: 133.393105,
         },
         {
           name: "日下",
+          nameKana: "くさか",
           lat: 33.533436,
           lng: 133.371456,
         },
         {
           name: "岡花",
+          nameKana: "おかばな",
           lat: 33.529922,
           lng: 133.35123,
         },
         {
           name: "土佐加茂",
+          nameKana: "とさかも",
           lat: 33.523558,
           lng: 133.321219,
         },
         {
           name: "西佐川",
+          nameKana: "にしさかわ",
           lat: 33.512604,
           lng: 133.286652,
         },
         {
           name: "佐川",
+          nameKana: "さかわ",
           lat: 33.500189,
           lng: 133.292741,
         },
         {
           name: "襟野々",
+          nameKana: "えりのの",
           lat: 33.488527,
           lng: 133.300426,
         },
         {
           name: "斗賀野",
+          nameKana: "とがの",
           lat: 33.475453,
           lng: 133.286397,
         },
         {
           name: "吾桑",
+          nameKana: "あそう",
           lat: 33.43027,
           lng: 133.295588,
         },
         {
           name: "多ノ郷",
+          nameKana: "おおのごう",
           lat: 33.410655,
           lng: 133.294641,
         },
         {
           name: "大間",
+          nameKana: "おおま",
           lat: 33.406872,
           lng: 133.287666,
         },
         {
           name: "須崎",
+          nameKana: "すさき",
           lat: 33.392649,
           lng: 133.293214,
         },
         {
           name: "土佐新荘",
+          nameKana: "とさしんじょう",
           lat: 33.386369,
           lng: 133.278065,
         },
         {
           name: "安和",
+          nameKana: "あわ",
           lat: 33.36692,
           lng: 133.258901,
         },
         {
           name: "土佐久礼",
+          nameKana: "とさくれ",
           lat: 33.328972,
           lng: 133.226483,
         },
         {
           name: "影野",
+          nameKana: "かげの",
           lat: 33.275854,
           lng: 133.173519,
         },
         {
           name: "六反地",
+          nameKana: "ろくたんじ",
           lat: 33.261992,
           lng: 133.169339,
         },
         {
           name: "仁井田",
+          nameKana: "にいだ",
           lat: 33.245097,
           lng: 133.161204,
         },
         {
           name: "窪川",
+          nameKana: "くぼかわ",
           lat: 33.212656,
           lng: 133.137285,
           transfer: true,
@@ -348,6 +409,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "高松",
+          nameKana: "たかまつ",
           lat: 34.350754,
           lng: 134.046821,
           transfer: true,
@@ -355,41 +417,49 @@ export const shikoku: OperatorData = {
         },
         {
           name: "昭和町",
+          nameKana: "しょうわちょう",
           lat: 34.343882,
           lng: 134.032141,
         },
         {
           name: "栗林公園北口",
+          nameKana: "りつりんこうえんきたぐち",
           lat: 34.334188,
           lng: 134.041561,
         },
         {
           name: "栗林",
+          nameKana: "りつりん",
           lat: 34.332181,
           lng: 134.053571,
         },
         {
           name: "木太町",
+          nameKana: "きたちょう",
           lat: 34.331928,
           lng: 134.079889,
         },
         {
           name: "屋島",
+          nameKana: "やしま",
           lat: 34.336655,
           lng: 134.109102,
         },
         {
           name: "古高松南",
+          nameKana: "ふるたかまつみなみ",
           lat: 34.34118,
           lng: 134.121381,
         },
         {
           name: "八栗口",
+          nameKana: "やくりぐち",
           lat: 34.340419,
           lng: 134.134682,
         },
         {
           name: "讃岐牟礼",
+          nameKana: "さぬきむれ",
           lat: 34.336439,
           lng: 134.147592,
           transfer: true,
@@ -397,6 +467,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "志度",
+          nameKana: "しど",
           lat: 34.321508,
           lng: 134.173144,
           transfer: true,
@@ -404,76 +475,91 @@ export const shikoku: OperatorData = {
         },
         {
           name: "オレンジタウン",
+          nameKana: "おれんじたうん",
           lat: 34.301879,
           lng: 134.180827,
         },
         {
           name: "造田",
+          nameKana: "ぞうだ",
           lat: 34.282967,
           lng: 134.185888,
         },
         {
           name: "神前",
+          nameKana: "かんざき",
           lat: 34.282895,
           lng: 134.208935,
         },
         {
           name: "讃岐津田",
+          nameKana: "さぬきつだ",
           lat: 34.288253,
           lng: 134.248335,
         },
         {
           name: "鶴羽",
+          nameKana: "つるわ",
           lat: 34.280005,
           lng: 134.274003,
         },
         {
           name: "丹生",
+          nameKana: "にぶ",
           lat: 34.254517,
           lng: 134.301468,
         },
         {
           name: "三本松",
+          nameKana: "さんぼんまつ",
           lat: 34.251529,
           lng: 134.334453,
         },
         {
           name: "讃岐白鳥",
+          nameKana: "さぬきしろとり",
           lat: 34.243642,
           lng: 134.366203,
         },
         {
           name: "引田",
+          nameKana: "ひけた",
           lat: 34.224472,
           lng: 134.402072,
         },
         {
           name: "讃岐相生",
+          nameKana: "さぬきあいおい",
           lat: 34.211977,
           lng: 134.424537,
         },
         {
           name: "阿波大宮",
+          nameKana: "あわおおみや",
           lat: 34.178751,
           lng: 134.448641,
         },
         {
           name: "板野",
+          nameKana: "いたの",
           lat: 34.141971,
           lng: 134.465512,
         },
         {
           name: "阿波川端",
+          nameKana: "あわかわばた",
           lat: 34.148827,
           lng: 134.483769,
         },
         {
           name: "板東",
+          nameKana: "ばんどう",
           lat: 34.155369,
           lng: 134.506805,
         },
         {
           name: "池谷",
+          nameKana: "いけのたに",
           lat: 34.152783,
           lng: 134.529097,
           transfer: true,
@@ -481,16 +567,19 @@ export const shikoku: OperatorData = {
         },
         {
           name: "勝瑞",
+          nameKana: "しょうずい",
           lat: 34.128063,
           lng: 134.528225,
         },
         {
           name: "吉成",
+          nameKana: "よしなり",
           lat: 34.118603,
           lng: 134.530795,
         },
         {
           name: "佐古",
+          nameKana: "さこ",
           lat: 34.080644,
           lng: 134.538539,
           transfer: true,
@@ -498,6 +587,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "徳島",
+          nameKana: "とくしま",
           lat: 34.074572,
           lng: 134.551391,
           transfer: true,
@@ -514,6 +604,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "徳島",
+          nameKana: "とくしま",
           lat: 34.074572,
           lng: 134.551391,
           transfer: true,
@@ -521,6 +612,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "佐古",
+          nameKana: "さこ",
           lat: 34.080644,
           lng: 134.538539,
           transfer: true,
@@ -528,116 +620,139 @@ export const shikoku: OperatorData = {
         },
         {
           name: "蔵本",
+          nameKana: "くらもと",
           lat: 34.07934,
           lng: 134.518044,
         },
         {
           name: "鮎喰",
+          nameKana: "あくい",
           lat: 34.07734,
           lng: 134.50602,
         },
         {
           name: "府中",
+          nameKana: "こう",
           lat: 34.074312,
           lng: 134.482886,
         },
         {
           name: "石井",
+          nameKana: "いしい",
           lat: 34.070321,
           lng: 134.444334,
         },
         {
           name: "下浦",
+          nameKana: "しもうら",
           lat: 34.067669,
           lng: 134.421011,
         },
         {
           name: "牛島",
+          nameKana: "うしのしま",
           lat: 34.076751,
           lng: 134.397131,
         },
         {
           name: "麻植塚",
+          nameKana: "おえづか",
           lat: 34.07514,
           lng: 134.376394,
         },
         {
           name: "鴨島",
+          nameKana: "かもじま",
           lat: 34.073757,
           lng: 134.356037,
         },
         {
           name: "西麻植",
+          nameKana: "にしおえ",
           lat: 34.072442,
           lng: 134.336225,
         },
         {
           name: "阿波川島",
+          nameKana: "あわかわしま",
           lat: 34.061854,
           lng: 134.320782,
         },
         {
           name: "学",
+          nameKana: "がく",
           lat: 34.057766,
           lng: 134.286411,
         },
         {
           name: "山瀬",
+          nameKana: "やませ",
           lat: 34.060206,
           lng: 134.256553,
         },
         {
           name: "阿波山川",
+          nameKana: "あわやまかわ",
           lat: 34.055162,
           lng: 134.234271,
         },
         {
           name: "川田",
+          nameKana: "かわた",
           lat: 34.061311,
           lng: 134.204521,
         },
         {
           name: "穴吹",
+          nameKana: "あなぶき",
           lat: 34.056161,
           lng: 134.163053,
         },
         {
           name: "小島",
+          nameKana: "おしま",
           lat: 34.050309,
           lng: 134.10704,
         },
         {
           name: "貞光",
+          nameKana: "さだみつ",
           lat: 34.039337,
           lng: 134.059177,
         },
         {
           name: "阿波半田",
+          nameKana: "あわはんだ",
           lat: 34.041059,
           lng: 134.03617,
         },
         {
           name: "江口",
+          nameKana: "えぐち",
           lat: 34.037131,
           lng: 133.973801,
         },
         {
           name: "三加茂",
+          nameKana: "みかも",
           lat: 34.0357,
           lng: 133.949211,
         },
         {
           name: "阿波加茂",
+          nameKana: "あわかも",
           lat: 34.036708,
           lng: 133.927033,
         },
         {
           name: "辻",
+          nameKana: "つじ",
           lat: 34.02912,
           lng: 133.873856,
         },
         {
           name: "佃",
+          nameKana: "つくだ",
           lat: 34.032439,
           lng: 133.857677,
           transfer: true,
@@ -645,6 +760,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "阿波池田",
+          nameKana: "あわいけだ",
           lat: 34.026891,
           lng: 133.804669,
           transfer: true,
@@ -661,6 +777,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "徳島",
+          nameKana: "とくしま",
           lat: 34.074572,
           lng: 134.551391,
           transfer: true,
@@ -668,141 +785,169 @@ export const shikoku: OperatorData = {
         },
         {
           name: "阿波富田",
+          nameKana: "あわとみだ",
           lat: 34.064051,
           lng: 134.555658,
         },
         {
           name: "二軒屋",
+          nameKana: "にけんや",
           lat: 34.054952,
           lng: 134.546847,
         },
         {
           name: "文化の森",
+          nameKana: "ぶんかのもり",
           lat: 34.044298,
           lng: 134.543312,
         },
         {
           name: "地蔵橋",
+          nameKana: "じぞうばし",
           lat: 34.026444,
           lng: 134.54727,
         },
         {
           name: "中田",
+          nameKana: "ちゅうでん",
           lat: 34.010319,
           lng: 134.569543,
         },
         {
           name: "南小松島",
+          nameKana: "みなみこまつしま",
           lat: 34.005634,
           lng: 134.586994,
         },
         {
           name: "阿波赤石",
+          nameKana: "あわあかいし",
           lat: 33.981729,
           lng: 134.60583,
         },
         {
           name: "立江",
+          nameKana: "たつえ",
           lat: 33.970336,
           lng: 134.608785,
         },
         {
           name: "羽ノ浦",
+          nameKana: "はのうら",
           lat: 33.957293,
           lng: 134.626183,
         },
         {
           name: "西原",
+          nameKana: "にしばら",
           lat: 33.9483,
           lng: 134.644906,
         },
         {
           name: "阿波中島",
+          nameKana: "あわなかしま",
           lat: 33.941223,
           lng: 134.664834,
         },
         {
           name: "阿南",
+          nameKana: "あなん",
           lat: 33.919129,
           lng: 134.66229,
         },
         {
           name: "見能林",
+          nameKana: "みのばやし",
           lat: 33.902984,
           lng: 134.667015,
         },
         {
           name: "阿波橘",
+          nameKana: "あわたちばな",
           lat: 33.888472,
           lng: 134.651281,
         },
         {
           name: "桑野",
+          nameKana: "くわの",
           lat: 33.87466,
           lng: 134.613287,
         },
         {
           name: "新野",
+          nameKana: "あらたの",
           lat: 33.846813,
           lng: 134.600283,
         },
         {
           name: "阿波福井",
+          nameKana: "あわふくい",
           lat: 33.824074,
           lng: 134.605272,
         },
         {
           name: "由岐",
+          nameKana: "ゆき",
           lat: 33.776032,
           lng: 134.591857,
         },
         {
           name: "田井ノ浜",
+          nameKana: "たいのはま",
           lat: 33.772863,
           lng: 134.584127,
         },
         {
           name: "木岐",
+          nameKana: "きき",
           lat: 33.766616,
           lng: 134.569473,
         },
         {
           name: "北河内",
+          nameKana: "きたがわち",
           lat: 33.743286,
           lng: 134.53528,
         },
         {
           name: "日和佐",
+          nameKana: "ひわさ",
           lat: 33.728954,
           lng: 134.530603,
         },
         {
           name: "山河内",
+          nameKana: "やまがわち",
           lat: 33.715139,
           lng: 134.485273,
         },
         {
           name: "辺川",
+          nameKana: "へがわ",
           lat: 33.694711,
           lng: 134.434874,
         },
         {
           name: "牟岐",
+          nameKana: "むぎ",
           lat: 33.672192,
           lng: 134.418192,
         },
         {
           name: "鯖瀬",
+          nameKana: "さばせ",
           lat: 33.646398,
           lng: 134.385308,
         },
         {
           name: "浅川",
+          nameKana: "あさかわ",
           lat: 33.626665,
           lng: 134.358677,
         },
         {
           name: "阿波海南",
+          nameKana: "あわかいなん",
           lat: 33.606379,
           lng: 134.350805,
           transfer: true,
@@ -819,36 +964,43 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "鳴門",
+          nameKana: "なると",
           lat: 34.179131,
           lng: 134.608355,
         },
         {
           name: "撫養",
+          nameKana: "むや",
           lat: 34.173162,
           lng: 134.600851,
         },
         {
           name: "金比羅前",
+          nameKana: "こんぴらまえ",
           lat: 34.169651,
           lng: 134.585014,
         },
         {
           name: "教会前",
+          nameKana: "きょうかいまえ",
           lat: 34.167579,
           lng: 134.577148,
         },
         {
           name: "立道",
+          nameKana: "たつみち",
           lat: 34.162024,
           lng: 134.557539,
         },
         {
           name: "阿波大谷",
+          nameKana: "あわおおたに",
           lat: 34.158024,
           lng: 134.540221,
         },
         {
           name: "池谷",
+          nameKana: "いけのたに",
           lat: 34.152783,
           lng: 134.529097,
           transfer: true,
@@ -865,6 +1017,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "高松",
+          nameKana: "たかまつ",
           lat: 34.350754,
           lng: 134.046821,
           transfer: true,
@@ -872,46 +1025,55 @@ export const shikoku: OperatorData = {
         },
         {
           name: "香西",
+          nameKana: "こうざい",
           lat: 34.34096,
           lng: 134.009609,
         },
         {
           name: "鬼無",
+          nameKana: "きなし",
           lat: 34.325455,
           lng: 133.99385,
         },
         {
           name: "端岡",
+          nameKana: "はしおか",
           lat: 34.305021,
           lng: 133.968071,
         },
         {
           name: "国分",
+          nameKana: "こくぶ",
           lat: 34.300541,
           lng: 133.941754,
         },
         {
           name: "讃岐府中",
+          nameKana: "さぬきふちゅう",
           lat: 34.291404,
           lng: 133.923917,
         },
         {
           name: "鴨川",
+          nameKana: "かもがわ",
           lat: 34.306863,
           lng: 133.905324,
         },
         {
           name: "八十場",
+          nameKana: "やそば",
           lat: 34.313014,
           lng: 133.884815,
         },
         {
           name: "坂出",
+          nameKana: "さかいで",
           lat: 34.313189,
           lng: 133.856819,
         },
         {
           name: "宇多津",
+          nameKana: "うたづ",
           lat: 34.306271,
           lng: 133.813686,
           transfer: true,
@@ -919,16 +1081,19 @@ export const shikoku: OperatorData = {
         },
         {
           name: "丸亀",
+          nameKana: "まるがめ",
           lat: 34.292414,
           lng: 133.793887,
         },
         {
           name: "讃岐塩屋",
+          nameKana: "さぬきしおや",
           lat: 34.285093,
           lng: 133.777486,
         },
         {
           name: "多度津",
+          nameKana: "たどつ",
           lat: 34.271238,
           lng: 133.757235,
           transfer: true,
@@ -936,221 +1101,265 @@ export const shikoku: OperatorData = {
         },
         {
           name: "海岸寺",
+          nameKana: "かいがんじ",
           lat: 34.253732,
           lng: 133.729671,
         },
         {
           name: "津島ノ宮",
+          nameKana: "つしまのみや",
           lat: 34.23828,
           lng: 133.704313,
         },
         {
           name: "詫間",
+          nameKana: "たくま",
           lat: 34.221326,
           lng: 133.692812,
         },
         {
           name: "みの",
+          nameKana: "みの",
           lat: 34.205633,
           lng: 133.710655,
         },
         {
           name: "高瀬",
+          nameKana: "たかせ",
           lat: 34.184083,
           lng: 133.711397,
         },
         {
           name: "比地大",
+          nameKana: "ひじだい",
           lat: 34.166805,
           lng: 133.690325,
         },
         {
           name: "本山",
+          nameKana: "もとやま",
           lat: 34.146589,
           lng: 133.68649,
         },
         {
           name: "観音寺",
+          nameKana: "かんおんじ",
           lat: 34.124508,
           lng: 133.655687,
         },
         {
           name: "豊浜",
+          nameKana: "とよはま",
           lat: 34.080544,
           lng: 133.644639,
         },
         {
           name: "箕浦",
+          nameKana: "みのうら",
           lat: 34.04799,
           lng: 133.619439,
         },
         {
           name: "川之江",
+          nameKana: "かわのえ",
           lat: 34.014903,
           lng: 133.57617,
         },
         {
           name: "伊予三島",
+          nameKana: "いよみしま",
           lat: 33.979541,
           lng: 133.542401,
         },
         {
           name: "伊予寒川",
+          nameKana: "いよさんがわ",
           lat: 33.967978,
           lng: 133.500123,
         },
         {
           name: "赤星",
+          nameKana: "あかぼし",
           lat: 33.96673,
           lng: 133.456352,
         },
         {
           name: "伊予土居",
+          nameKana: "いよどい",
           lat: 33.959024,
           lng: 133.428294,
         },
         {
           name: "関川",
+          nameKana: "せきがわ",
           lat: 33.955791,
           lng: 133.392692,
         },
         {
           name: "多喜浜",
+          nameKana: "たきはま",
           lat: 33.970533,
           lng: 133.325094,
         },
         {
           name: "新居浜",
+          nameKana: "にいはま",
           lat: 33.948124,
           lng: 133.294761,
         },
         {
           name: "中萩",
+          nameKana: "なかはぎ",
           lat: 33.926232,
           lng: 133.253294,
         },
         {
           name: "伊予西条",
+          nameKana: "いよさいじょう",
           lat: 33.912584,
           lng: 133.188275,
         },
         {
           name: "石鎚山",
+          nameKana: "いしづちやま",
           lat: 33.895882,
           lng: 133.157744,
         },
         {
           name: "伊予氷見",
+          nameKana: "いよひみ",
           lat: 33.896734,
           lng: 133.130929,
         },
         {
           name: "伊予小松",
+          nameKana: "いよこまつ",
           lat: 33.897567,
           lng: 133.116717,
         },
         {
           name: "玉之江",
+          nameKana: "たまのえ",
           lat: 33.912829,
           lng: 133.098941,
         },
         {
           name: "壬生川",
+          nameKana: "にゅうがわ",
           lat: 33.929699,
           lng: 133.085568,
         },
         {
           name: "伊予三芳",
+          nameKana: "いよみよし",
           lat: 33.954382,
           lng: 133.064298,
         },
         {
           name: "伊予桜井",
+          nameKana: "いよさくらい",
           lat: 34.011923,
           lng: 133.035522,
         },
         {
           name: "伊予富田",
+          nameKana: "いよとみた",
           lat: 34.036302,
           lng: 133.009194,
         },
         {
           name: "今治",
+          nameKana: "いまばり",
           lat: 34.063765,
           lng: 132.99408,
         },
         {
           name: "波止浜",
+          nameKana: "はしはま",
           lat: 34.098001,
           lng: 132.968922,
         },
         {
           name: "波方",
+          nameKana: "なみかた",
           lat: 34.095217,
           lng: 132.942771,
         },
         {
           name: "大西",
+          nameKana: "おおにし",
           lat: 34.066128,
           lng: 132.929345,
         },
         {
           name: "伊予亀岡",
+          nameKana: "いよかめおか",
           lat: 34.053811,
           lng: 132.874049,
         },
         {
           name: "菊間",
+          nameKana: "きくま",
           lat: 34.033404,
           lng: 132.841111,
         },
         {
           name: "浅海",
+          nameKana: "あさなみ",
           lat: 34.010017,
           lng: 132.80306,
         },
         {
           name: "大浦",
+          nameKana: "おおうら",
           lat: 34.000005,
           lng: 132.775597,
         },
         {
           name: "伊予北条",
+          nameKana: "いよほうじょう",
           lat: 33.972903,
           lng: 132.775339,
         },
         {
           name: "柳原",
+          nameKana: "やなぎはら",
           lat: 33.953519,
           lng: 132.773465,
         },
         {
           name: "粟井",
+          nameKana: "あわい",
           lat: 33.942965,
           lng: 132.770576,
         },
         {
           name: "光洋台",
+          nameKana: "こうようだい",
           lat: 33.926886,
           lng: 132.760967,
         },
         {
           name: "堀江",
+          nameKana: "ほりえ",
           lat: 33.905458,
           lng: 132.753496,
         },
         {
           name: "伊予和気",
+          nameKana: "いよわけ",
           lat: 33.889529,
           lng: 132.740672,
         },
         {
           name: "三津浜",
+          nameKana: "みつはま",
           lat: 33.86142,
           lng: 132.728798,
         },
         {
           name: "松山",
+          nameKana: "まつやま",
           lat: 33.839954,
           lng: 132.751149,
           transfer: true,
@@ -1167,6 +1376,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "松山",
+          nameKana: "まつやま",
           lat: 33.839954,
           lng: 132.751149,
           transfer: true,
@@ -1174,31 +1384,37 @@ export const shikoku: OperatorData = {
         },
         {
           name: "市坪",
+          nameKana: "いちつぼ",
           lat: 33.809113,
           lng: 132.749283,
         },
         {
           name: "北伊予",
+          nameKana: "きたいよ",
           lat: 33.787441,
           lng: 132.748774,
         },
         {
           name: "南伊予",
+          nameKana: "みなみいよ",
           lat: 33.777639,
           lng: 132.738611,
         },
         {
           name: "伊予横田",
+          nameKana: "いよよこた",
           lat: 33.772909,
           lng: 132.727121,
         },
         {
           name: "鳥ノ木",
+          nameKana: "とりのき",
           lat: 33.763751,
           lng: 132.711309,
         },
         {
           name: "伊予市",
+          nameKana: "いよし",
           lat: 33.755532,
           lng: 132.702532,
           transfer: true,
@@ -1206,166 +1422,199 @@ export const shikoku: OperatorData = {
         },
         {
           name: "向井原",
+          nameKana: "むかいばら",
           lat: 33.735871,
           lng: 132.695736,
         },
         {
           name: "伊予大平",
+          nameKana: "いよおおひら",
           lat: 33.715973,
           lng: 132.708479,
         },
         {
           name: "伊予中山",
+          nameKana: "いよなかやま",
           lat: 33.649881,
           lng: 132.711629,
         },
         {
           name: "伊予立川",
+          nameKana: "いよたちかわ",
           lat: 33.600458,
           lng: 132.677,
         },
         {
           name: "内子",
+          nameKana: "うちこ",
           lat: 33.549305,
           lng: 132.646207,
         },
         {
           name: "五十崎",
+          nameKana: "いかざき",
           lat: 33.537809,
           lng: 132.635859,
         },
         {
           name: "喜多山",
+          nameKana: "きたやま",
           lat: 33.533426,
           lng: 132.611428,
         },
         {
           name: "新谷",
+          nameKana: "にいや",
           lat: 33.534153,
           lng: 132.599037,
         },
         {
           name: "高野川",
+          nameKana: "こうのかわ",
           lat: 33.701624,
           lng: 132.65877,
         },
         {
           name: "伊予上灘",
+          nameKana: "いよかみなだ",
           lat: 33.683626,
           lng: 132.632931,
         },
         {
           name: "下灘",
+          nameKana: "しもなだ",
           lat: 33.655109,
           lng: 132.589219,
         },
         {
           name: "串",
+          nameKana: "くし",
           lat: 33.647034,
           lng: 132.562996,
         },
         {
           name: "喜多灘",
+          nameKana: "きたなだ",
           lat: 33.637145,
           lng: 132.531165,
         },
         {
           name: "伊予長浜",
+          nameKana: "いよながはま",
           lat: 33.615297,
           lng: 132.486861,
         },
         {
           name: "伊予出石",
+          nameKana: "いよいずし",
           lat: 33.596338,
           lng: 132.498833,
         },
         {
           name: "伊予白滝",
+          nameKana: "いよしらたき",
           lat: 33.578588,
           lng: 132.526778,
         },
         {
           name: "八多喜",
+          nameKana: "はたき",
           lat: 33.562643,
           lng: 132.540741,
         },
         {
           name: "春賀",
+          nameKana: "はるか",
           lat: 33.555636,
           lng: 132.555329,
         },
         {
           name: "五郎",
+          nameKana: "ごろう",
           lat: 33.541399,
           lng: 132.570473,
         },
         {
           name: "伊予大洲",
+          nameKana: "いよおおず",
           lat: 33.518601,
           lng: 132.54485,
         },
         {
           name: "西大洲",
+          nameKana: "にしおおず",
           lat: 33.508204,
           lng: 132.527041,
         },
         {
           name: "伊予平野",
+          nameKana: "いよひらの",
           lat: 33.495672,
           lng: 132.518025,
         },
         {
           name: "千丈",
+          nameKana: "せんじょう",
           lat: 33.465432,
           lng: 132.457369,
         },
         {
           name: "八幡浜",
+          nameKana: "やわたはま",
           lat: 33.458024,
           lng: 132.436213,
         },
         {
           name: "双岩",
+          nameKana: "ふたいわ",
           lat: 33.424314,
           lng: 132.45794,
         },
         {
           name: "伊予石城",
+          nameKana: "いよいわき",
           lat: 33.391582,
           lng: 132.473112,
         },
         {
           name: "上宇和",
+          nameKana: "かみうわ",
           lat: 33.379979,
           lng: 132.501337,
         },
         {
           name: "卯之町",
+          nameKana: "うのまち",
           lat: 33.363192,
           lng: 132.50994,
         },
         {
           name: "下宇和",
+          nameKana: "しもうわ",
           lat: 33.349786,
           lng: 132.531172,
         },
         {
           name: "立間",
+          nameKana: "たちま",
           lat: 33.297371,
           lng: 132.539275,
         },
         {
           name: "伊予吉田",
+          nameKana: "いよよしだ",
           lat: 33.273287,
           lng: 132.544098,
         },
         {
           name: "高光",
+          nameKana: "たかみつ",
           lat: 33.25607,
           lng: 132.573559,
         },
         {
           name: "北宇和島",
+          nameKana: "きたうわじま",
           lat: 33.239442,
           lng: 132.569643,
           transfer: true,
@@ -1373,6 +1622,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "宇和島",
+          nameKana: "うわじま",
           lat: 33.225774,
           lng: 132.56746,
           transfer: true,
@@ -1389,6 +1639,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "窪川",
+          nameKana: "くぼかわ",
           lat: 33.212656,
           lng: 133.137285,
           transfer: true,
@@ -1396,6 +1647,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "若井",
+          nameKana: "わかい",
           lat: 33.18807,
           lng: 133.105937,
           transfer: true,
@@ -1403,96 +1655,115 @@ export const shikoku: OperatorData = {
         },
         {
           name: "家地川",
+          nameKana: "いえぢがわ",
           lat: 33.1614,
           lng: 133.074784,
         },
         {
           name: "打井川",
+          nameKana: "うついがわ",
           lat: 33.175455,
           lng: 133.031082,
         },
         {
           name: "土佐大正",
+          nameKana: "とさたいしょう",
           lat: 33.194815,
           lng: 132.975612,
         },
         {
           name: "土佐昭和",
+          nameKana: "とさしょうわ",
           lat: 33.220047,
           lng: 132.897413,
         },
         {
           name: "十川",
+          nameKana: "とおかわ",
           lat: 33.234869,
           lng: 132.855827,
         },
         {
           name: "半家",
+          nameKana: "はげ",
           lat: 33.201666,
           lng: 132.791428,
         },
         {
           name: "江川崎",
+          nameKana: "えかわさき",
           lat: 33.178104,
           lng: 132.783074,
         },
         {
           name: "西ケ方",
+          nameKana: "にしがほう",
           lat: 33.187309,
           lng: 132.767342,
         },
         {
           name: "真土",
+          nameKana: "まつち",
           lat: 33.223996,
           lng: 132.745283,
         },
         {
           name: "吉野生",
+          nameKana: "よしのぶ",
           lat: 33.224612,
           lng: 132.72918,
         },
         {
           name: "松丸",
+          nameKana: "まつまる",
           lat: 33.228325,
           lng: 132.708843,
         },
         {
           name: "出目",
+          nameKana: "いずめ",
           lat: 33.251805,
           lng: 132.691978,
         },
         {
           name: "近永",
+          nameKana: "ちかなが",
           lat: 33.255693,
           lng: 132.676335,
         },
         {
           name: "深田",
+          nameKana: "ふかた",
           lat: 33.267655,
           lng: 132.660403,
         },
         {
           name: "大内",
+          nameKana: "おおうち",
           lat: 33.286941,
           lng: 132.642393,
         },
         {
           name: "二名",
+          nameKana: "ふたな",
           lat: 33.291576,
           lng: 132.629122,
         },
         {
           name: "伊予宮野下",
+          nameKana: "いよみやのした",
           lat: 33.289023,
           lng: 132.605849,
         },
         {
           name: "務田",
+          nameKana: "むでん",
           lat: 33.282862,
           lng: 132.600238,
         },
         {
           name: "北宇和島",
+          nameKana: "きたうわじま",
           lat: 33.239442,
           lng: 132.569643,
           transfer: true,
@@ -1500,6 +1771,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "宇和島",
+          nameKana: "うわじま",
           lat: 33.225774,
           lng: 132.56746,
           transfer: true,
@@ -1518,21 +1790,25 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "甲浦",
+          nameKana: "かんのうら",
           lat: 33.547238,
           lng: 134.288242,
         },
         {
           name: "宍喰",
+          nameKana: "ししくい",
           lat: 33.566949,
           lng: 134.300741,
         },
         {
           name: "海部",
+          nameKana: "かいふ",
           lat: 33.593453,
           lng: 134.351999,
         },
         {
           name: "阿波海南",
+          nameKana: "あわかいなん",
           lat: 33.606379,
           lng: 134.350805,
           transfer: true,
@@ -1551,6 +1827,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "高松築港",
+          nameKana: "たかまつちっこう",
           lat: 34.35079,
           lng: 134.049507,
           transfer: true,
@@ -1558,6 +1835,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "片原町",
+          nameKana: "かたはらまち",
           lat: 34.346138,
           lng: 134.054368,
           transfer: true,
@@ -1565,6 +1843,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "瓦町",
+          nameKana: "かわらまち",
           lat: 34.338827,
           lng: 134.052529,
           transfer: true,
@@ -1572,101 +1851,121 @@ export const shikoku: OperatorData = {
         },
         {
           name: "栗林公園",
+          nameKana: "りつりんこうえん",
           lat: 34.328586,
           lng: 134.051063,
         },
         {
           name: "三条",
+          nameKana: "さんじょう",
           lat: 34.319718,
           lng: 134.049478,
         },
         {
           name: "伏石",
+          nameKana: "ふせいし",
           lat: 34.309861,
           lng: 134.047806,
         },
         {
           name: "太田",
+          nameKana: "おおた",
           lat: 34.298989,
           lng: 134.045965,
         },
         {
           name: "仏生山",
+          nameKana: "ぶっしょうざん",
           lat: 34.283213,
           lng: 134.042605,
         },
         {
           name: "空港通り",
+          nameKana: "くうこうどおり",
           lat: 34.28112,
           lng: 134.033096,
         },
         {
           name: "一宮",
+          nameKana: "いちのみや",
           lat: 34.283027,
           lng: 134.022561,
         },
         {
           name: "円座",
+          nameKana: "えんざ",
           lat: 34.284479,
           lng: 134.009285,
         },
         {
           name: "岡本",
+          nameKana: "おかもと",
           lat: 34.270261,
           lng: 133.989265,
         },
         {
           name: "挿頭丘",
+          nameKana: "かざしがおか",
           lat: 34.262007,
           lng: 133.979358,
         },
         {
           name: "畑田",
+          nameKana: "はただ",
           lat: 34.25901,
           lng: 133.97157,
         },
         {
           name: "陶",
+          nameKana: "すえ",
           lat: 34.250394,
           lng: 133.947778,
         },
         {
           name: "綾川（イオンモール綾川）",
+          nameKana: "あやがわ",
           lat: 34.249528,
           lng: 133.931667,
         },
         {
           name: "滝宮",
+          nameKana: "たきのみや",
           lat: 34.248152,
           lng: 133.922302,
         },
         {
           name: "羽床",
+          nameKana: "はゆか",
           lat: 34.241078,
           lng: 133.901782,
         },
         {
           name: "栗熊",
+          nameKana: "くりくま",
           lat: 34.233905,
           lng: 133.884133,
         },
         {
           name: "岡田",
+          nameKana: "おかだ",
           lat: 34.220859,
           lng: 133.860902,
         },
         {
           name: "羽間",
+          nameKana: "はざま",
           lat: 34.209571,
           lng: 133.847345,
         },
         {
           name: "榎井",
+          nameKana: "えない",
           lat: 34.194317,
           lng: 133.829511,
         },
         {
           name: "琴電琴平",
+          nameKana: "ことでんことひら",
           lat: 34.190906,
           lng: 133.819236,
           transfer: true,
@@ -1683,6 +1982,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "高松築港",
+          nameKana: "たかまつちっこう",
           lat: 34.35079,
           lng: 134.049507,
           transfer: true,
@@ -1690,6 +1990,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "片原町",
+          nameKana: "かたはらまち",
           lat: 34.346138,
           lng: 134.054368,
           transfer: true,
@@ -1697,6 +1998,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "瓦町",
+          nameKana: "かわらまち",
           lat: 34.338827,
           lng: 134.052529,
           transfer: true,
@@ -1704,76 +2006,91 @@ export const shikoku: OperatorData = {
         },
         {
           name: "花園",
+          nameKana: "はなぞの",
           lat: 34.334206,
           lng: 134.059463,
         },
         {
           name: "林道",
+          nameKana: "はやしみち",
           lat: 34.32344,
           lng: 134.073106,
         },
         {
           name: "木太東口",
+          nameKana: "きたひがしぐち",
           lat: 34.319718,
           lng: 134.07957,
         },
         {
           name: "元山",
+          nameKana: "もとやま",
           lat: 34.310424,
           lng: 134.083742,
         },
         {
           name: "水田",
+          nameKana: "みずた",
           lat: 34.303056,
           lng: 134.092699,
         },
         {
           name: "西前田",
+          nameKana: "にしまえだ",
           lat: 34.296004,
           lng: 134.104675,
         },
         {
           name: "高田",
+          nameKana: "たかた",
           lat: 34.288506,
           lng: 134.112155,
         },
         {
           name: "池戸",
+          nameKana: "いけのべ",
           lat: 34.27866,
           lng: 134.119706,
         },
         {
           name: "農学部前",
+          nameKana: "のうがくぶまえ",
           lat: 34.273814,
           lng: 134.125739,
         },
         {
           name: "平木",
+          nameKana: "ひらぎ",
           lat: 34.272134,
           lng: 134.131327,
         },
         {
           name: "学園通り",
+          nameKana: "がくえんどおり",
           lat: 34.270576,
           lng: 134.136998,
         },
         {
           name: "白山",
+          nameKana: "しらやま",
           lat: 34.266707,
           lng: 134.150461,
         },
         {
           name: "井戸",
+          nameKana: "いど",
           lat: 34.266669,
           lng: 134.156127,
         },
         {
           name: "公文明",
+          nameKana: "くもんみょう",
           lat: 34.266688,
           lng: 134.161929,
         },
         {
           name: "長尾",
+          nameKana: "ながお",
           lat: 34.266675,
           lng: 134.169184,
         },
@@ -1788,6 +2105,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "瓦町",
+          nameKana: "かわらまち",
           lat: 34.338827,
           lng: 134.052529,
           transfer: true,
@@ -1795,56 +2113,67 @@ export const shikoku: OperatorData = {
         },
         {
           name: "今橋",
+          nameKana: "いまばし",
           lat: 34.341577,
           lng: 134.058782,
         },
         {
           name: "松島二丁目",
+          nameKana: "まつしまにちょうめ",
           lat: 34.339986,
           lng: 134.064626,
         },
         {
           name: "沖松島",
+          nameKana: "おきまつしま",
           lat: 34.341219,
           lng: 134.072253,
         },
         {
           name: "春日川",
+          nameKana: "かすががわ",
           lat: 34.340969,
           lng: 134.083566,
         },
         {
           name: "潟元",
+          nameKana: "かたもと",
           lat: 34.341363,
           lng: 134.098231,
         },
         {
           name: "琴電屋島",
+          nameKana: "ことでんやしま",
           lat: 34.341624,
           lng: 134.105763,
         },
         {
           name: "古高松",
+          nameKana: "ふるたかまつ",
           lat: 34.340844,
           lng: 134.11244,
         },
         {
           name: "八栗",
+          nameKana: "やくり",
           lat: 34.344582,
           lng: 134.122439,
         },
         {
           name: "六万寺",
+          nameKana: "ろくまんじ",
           lat: 34.342655,
           lng: 134.134088,
         },
         {
           name: "大町",
+          nameKana: "おおまち",
           lat: 34.337333,
           lng: 134.141354,
         },
         {
           name: "八栗新道",
+          nameKana: "やくりしんみち",
           lat: 34.336705,
           lng: 134.147295,
           transfer: true,
@@ -1852,21 +2181,25 @@ export const shikoku: OperatorData = {
         },
         {
           name: "塩屋",
+          nameKana: "しおや",
           lat: 34.335583,
           lng: 134.155142,
         },
         {
           name: "房前",
+          nameKana: "ふさざき",
           lat: 34.332367,
           lng: 134.158483,
         },
         {
           name: "原",
+          nameKana: "はら",
           lat: 34.32641,
           lng: 134.163654,
         },
         {
           name: "琴電志度",
+          nameKana: "ことでんしど",
           lat: 34.32246,
           lng: 134.172528,
           transfer: true,
@@ -1885,6 +2218,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "松山市",
+          nameKana: "まつやまし",
           lat: 33.835656,
           lng: 132.762281,
           transfer: true,
@@ -1892,56 +2226,67 @@ export const shikoku: OperatorData = {
         },
         {
           name: "土橋",
+          nameKana: "どばし",
           lat: 33.832738,
           lng: 132.756487,
         },
         {
           name: "土居田",
+          nameKana: "どいだ",
           lat: 33.8241,
           lng: 132.744094,
         },
         {
           name: "余戸",
+          nameKana: "ようご",
           lat: 33.816173,
           lng: 132.733887,
         },
         {
           name: "鎌田",
+          nameKana: "かまた",
           lat: 33.810115,
           lng: 132.729784,
         },
         {
           name: "岡田",
+          nameKana: "おかだ",
           lat: 33.799083,
           lng: 132.724271,
         },
         {
           name: "古泉",
+          nameKana: "こいずみ",
           lat: 33.792539,
           lng: 132.717136,
         },
         {
           name: "松前",
+          nameKana: "まさき",
           lat: 33.785965,
           lng: 132.705051,
         },
         {
           name: "地蔵町",
+          nameKana: "じぞうまち",
           lat: 33.779907,
           lng: 132.70429,
         },
         {
           name: "新川",
+          nameKana: "しんかわ",
           lat: 33.772178,
           lng: 132.704148,
         },
         {
           name: "郡中",
+          nameKana: "ぐんちゅう",
           lat: 33.760734,
           lng: 132.70406,
         },
         {
           name: "郡中港",
+          nameKana: "ぐんちゅうこう",
           lat: 33.756302,
           lng: 132.702315,
           transfer: true,
@@ -1958,41 +2303,49 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "高浜",
+          nameKana: "たかはま",
           lat: 33.883417,
           lng: 132.702177,
         },
         {
           name: "梅津寺",
+          nameKana: "ばいしんじ",
           lat: 33.874637,
           lng: 132.707595,
         },
         {
           name: "港山",
+          nameKana: "みなとやま",
           lat: 33.869533,
           lng: 132.713405,
         },
         {
           name: "三津",
+          nameKana: "みつ",
           lat: 33.863864,
           lng: 132.720002,
         },
         {
           name: "山西",
+          nameKana: "やまにし",
           lat: 33.855301,
           lng: 132.724326,
         },
         {
           name: "西衣山",
+          nameKana: "にしきぬやま",
           lat: 33.850152,
           lng: 132.733989,
         },
         {
           name: "衣山",
+          nameKana: "きぬやま",
           lat: 33.8522,
           lng: 132.743997,
         },
         {
           name: "古町",
+          nameKana: "こまち",
           lat: 33.846978,
           lng: 132.754998,
           transfer: true,
@@ -2000,6 +2353,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大手町",
+          nameKana: "おおてまち",
           lat: 33.839726,
           lng: 132.755384,
           transfer: true,
@@ -2007,6 +2361,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "松山市",
+          nameKana: "まつやまし",
           lat: 33.835656,
           lng: 132.762281,
           transfer: true,
@@ -2023,6 +2378,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "松山市",
+          nameKana: "まつやまし",
           lat: 33.835656,
           lng: 132.762281,
           transfer: true,
@@ -2030,71 +2386,85 @@ export const shikoku: OperatorData = {
         },
         {
           name: "石手川公園",
+          nameKana: "いしてがわこうえん",
           lat: 33.831311,
           lng: 132.76935,
         },
         {
           name: "いよ立花",
+          nameKana: "いよたちばな",
           lat: 33.827784,
           lng: 132.772944,
         },
         {
           name: "福音寺",
+          nameKana: "ふくおんじ",
           lat: 33.82261,
           lng: 132.788931,
         },
         {
           name: "北久米",
+          nameKana: "きたくめ",
           lat: 33.819277,
           lng: 132.798664,
         },
         {
           name: "久米",
+          nameKana: "くめ",
           lat: 33.816036,
           lng: 132.804555,
         },
         {
           name: "鷹ノ子",
+          nameKana: "たかのこ",
           lat: 33.812542,
           lng: 132.815301,
         },
         {
           name: "平井",
+          nameKana: "ひらい",
           lat: 33.808687,
           lng: 132.828617,
         },
         {
           name: "梅本",
+          nameKana: "うめのもと",
           lat: 33.800944,
           lng: 132.839307,
         },
         {
           name: "牛渕団地前",
+          nameKana: "うしぶちだんちまえ",
           lat: 33.797739,
           lng: 132.846051,
         },
         {
           name: "牛渕",
+          nameKana: "うしぶち",
           lat: 33.795212,
           lng: 132.856112,
         },
         {
           name: "田窪",
+          nameKana: "たのくぼ",
           lat: 33.792948,
           lng: 132.865413,
         },
         {
           name: "見奈良",
+          nameKana: "みなら",
           lat: 33.792721,
           lng: 132.873374,
         },
         {
           name: "愛大医学部南口",
+          nameKana: "あいだいいがくぶみなみぐち",
           lat: 33.797831,
           lng: 132.878659,
         },
         {
           name: "横河原",
+          nameKana: "よこがわら",
           lat: 33.803353,
           lng: 132.88434,
         },
@@ -2109,6 +2479,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "松山市駅前",
+          nameKana: "まつやましえきまえ",
           lat: 33.836148,
           lng: 132.762587,
           transfer: true,
@@ -2116,6 +2487,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "南堀端",
+          nameKana: "みなみほりばた",
           lat: 33.839213,
           lng: 132.761664,
           transfer: true,
@@ -2123,6 +2495,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "西堀端",
+          nameKana: "にしほりばた",
           lat: 33.840105,
           lng: 132.75866,
           transfer: true,
@@ -2130,6 +2503,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大手町",
+          nameKana: "おおてまち",
           lat: 33.839726,
           lng: 132.755384,
           transfer: true,
@@ -2137,6 +2511,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "松山駅前",
+          nameKana: "まつやまえきまえ",
           lat: 33.840765,
           lng: 132.752326,
           transfer: true,
@@ -2144,6 +2519,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "宮田町",
+          nameKana: "みやたちょう",
           lat: 33.843948,
           lng: 132.752626,
           transfer: true,
@@ -2151,6 +2527,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "古町",
+          nameKana: "こまち",
           lat: 33.846978,
           lng: 132.754998,
           transfer: true,
@@ -2158,6 +2535,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "萱町六丁目",
+          nameKana: "かやまちろくちょうめ",
           lat: 33.851756,
           lng: 132.756226,
           transfer: true,
@@ -2165,6 +2543,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "本町六丁目",
+          nameKana: "ほんまちろくちょうめ",
           lat: 33.853472,
           lng: 132.758473,
           transfer: true,
@@ -2172,6 +2551,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "木屋町",
+          nameKana: "きやちょう",
           lat: 33.853483,
           lng: 132.760776,
           transfer: true,
@@ -2179,6 +2559,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "高砂町",
+          nameKana: "たかさごちょう",
           lat: 33.851664,
           lng: 132.762464,
           transfer: true,
@@ -2186,6 +2567,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "清水町",
+          nameKana: "しみずまち",
           lat: 33.849328,
           lng: 132.764281,
           transfer: true,
@@ -2193,6 +2575,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "鉄砲町",
+          nameKana: "てっぽうちょう",
           lat: 33.84829,
           lng: 132.769011,
           transfer: true,
@@ -2200,6 +2583,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "赤十字病院前",
+          nameKana: "せきじゅうじびょういんまえ",
           lat: 33.848115,
           lng: 132.772383,
           transfer: true,
@@ -2207,6 +2591,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "平和通一丁目",
+          nameKana: "へいわどおりいっちょうめ",
           lat: 33.847673,
           lng: 132.774452,
           transfer: true,
@@ -2214,6 +2599,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "上一万",
+          nameKana: "かみいちまん",
           lat: 33.846737,
           lng: 132.775502,
           transfer: true,
@@ -2221,6 +2607,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "警察署前",
+          nameKana: "けいさつしょまえ",
           lat: 33.844596,
           lng: 132.775354,
           transfer: true,
@@ -2228,6 +2615,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "勝山町",
+          nameKana: "かつやまちょう",
           lat: 33.841709,
           lng: 132.774818,
           transfer: true,
@@ -2235,6 +2623,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大街道",
+          nameKana: "おおかいどう",
           lat: 33.841103,
           lng: 132.769861,
           transfer: true,
@@ -2242,6 +2631,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "県庁前",
+          nameKana: "けんちょうまえ",
           lat: 33.841067,
           lng: 132.766364,
           transfer: true,
@@ -2249,6 +2639,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 33.839926,
           lng: 132.764819,
           transfer: true,
@@ -2265,6 +2656,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "松山市駅前",
+          nameKana: "まつやましえきまえ",
           lat: 33.836148,
           lng: 132.762587,
           transfer: true,
@@ -2272,6 +2664,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "南堀端",
+          nameKana: "みなみほりばた",
           lat: 33.839213,
           lng: 132.761664,
           transfer: true,
@@ -2279,6 +2672,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 33.839926,
           lng: 132.764819,
           transfer: true,
@@ -2286,6 +2680,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "県庁前",
+          nameKana: "けんちょうまえ",
           lat: 33.841067,
           lng: 132.766364,
           transfer: true,
@@ -2293,6 +2688,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大街道",
+          nameKana: "おおかいどう",
           lat: 33.841103,
           lng: 132.769861,
           transfer: true,
@@ -2300,6 +2696,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "勝山町",
+          nameKana: "かつやまちょう",
           lat: 33.841709,
           lng: 132.774818,
           transfer: true,
@@ -2307,6 +2704,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "警察署前",
+          nameKana: "けいさつしょまえ",
           lat: 33.844596,
           lng: 132.775354,
           transfer: true,
@@ -2314,6 +2712,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "上一万",
+          nameKana: "かみいちまん",
           lat: 33.846737,
           lng: 132.775502,
           transfer: true,
@@ -2321,6 +2720,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "平和通一丁目",
+          nameKana: "へいわどおりいっちょうめ",
           lat: 33.847673,
           lng: 132.774452,
           transfer: true,
@@ -2328,6 +2728,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "赤十字病院前",
+          nameKana: "せきじゅうじびょういんまえ",
           lat: 33.848115,
           lng: 132.772383,
           transfer: true,
@@ -2335,6 +2736,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "鉄砲町",
+          nameKana: "てっぽうちょう",
           lat: 33.84829,
           lng: 132.769011,
           transfer: true,
@@ -2342,6 +2744,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "清水町",
+          nameKana: "しみずまち",
           lat: 33.849328,
           lng: 132.764281,
           transfer: true,
@@ -2349,6 +2752,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "高砂町",
+          nameKana: "たかさごちょう",
           lat: 33.851664,
           lng: 132.762464,
           transfer: true,
@@ -2356,6 +2760,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "木屋町",
+          nameKana: "きやちょう",
           lat: 33.853483,
           lng: 132.760776,
           transfer: true,
@@ -2363,6 +2768,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "本町六丁目",
+          nameKana: "ほんまちろくちょうめ",
           lat: 33.853472,
           lng: 132.758473,
           transfer: true,
@@ -2370,6 +2776,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "萱町六丁目",
+          nameKana: "かやまちろくちょうめ",
           lat: 33.851756,
           lng: 132.756226,
           transfer: true,
@@ -2377,6 +2784,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "古町",
+          nameKana: "こまち",
           lat: 33.846978,
           lng: 132.754998,
           transfer: true,
@@ -2384,6 +2792,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "宮田町",
+          nameKana: "みやたちょう",
           lat: 33.843948,
           lng: 132.752626,
           transfer: true,
@@ -2391,6 +2800,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "松山駅前",
+          nameKana: "まつやまえきまえ",
           lat: 33.840765,
           lng: 132.752326,
           transfer: true,
@@ -2398,6 +2808,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大手町",
+          nameKana: "おおてまち",
           lat: 33.839726,
           lng: 132.755384,
           transfer: true,
@@ -2405,6 +2816,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "西堀端",
+          nameKana: "にしほりばた",
           lat: 33.840105,
           lng: 132.75866,
           transfer: true,
@@ -2421,6 +2833,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "松山市駅前",
+          nameKana: "まつやましえきまえ",
           lat: 33.836148,
           lng: 132.762587,
           transfer: true,
@@ -2428,6 +2841,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "南堀端",
+          nameKana: "みなみほりばた",
           lat: 33.839213,
           lng: 132.761664,
           transfer: true,
@@ -2435,6 +2849,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 33.839926,
           lng: 132.764819,
           transfer: true,
@@ -2442,6 +2857,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "県庁前",
+          nameKana: "けんちょうまえ",
           lat: 33.841067,
           lng: 132.766364,
           transfer: true,
@@ -2449,6 +2865,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大街道",
+          nameKana: "おおかいどう",
           lat: 33.841103,
           lng: 132.769861,
           transfer: true,
@@ -2456,6 +2873,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "勝山町",
+          nameKana: "かつやまちょう",
           lat: 33.841709,
           lng: 132.774818,
           transfer: true,
@@ -2463,6 +2881,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "警察署前",
+          nameKana: "けいさつしょまえ",
           lat: 33.844596,
           lng: 132.775354,
           transfer: true,
@@ -2470,6 +2889,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "上一万",
+          nameKana: "かみいちまん",
           lat: 33.846737,
           lng: 132.775502,
           transfer: true,
@@ -2477,6 +2897,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "南町",
+          nameKana: "みなみまち",
           lat: 33.847412,
           lng: 132.779839,
           transfer: true,
@@ -2484,6 +2905,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "道後公園",
+          nameKana: "どうごこうえん",
           lat: 33.848552,
           lng: 132.784989,
           transfer: true,
@@ -2491,6 +2913,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "道後温泉",
+          nameKana: "どうごおんせん",
           lat: 33.850477,
           lng: 132.784817,
           transfer: true,
@@ -2507,6 +2930,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "松山駅前",
+          nameKana: "まつやまえきまえ",
           lat: 33.840765,
           lng: 132.752326,
           transfer: true,
@@ -2514,6 +2938,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大手町",
+          nameKana: "おおてまち",
           lat: 33.839726,
           lng: 132.755384,
           transfer: true,
@@ -2521,6 +2946,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "西堀端",
+          nameKana: "にしほりばた",
           lat: 33.840105,
           lng: 132.75866,
           transfer: true,
@@ -2528,6 +2954,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "南堀端",
+          nameKana: "みなみほりばた",
           lat: 33.839213,
           lng: 132.761664,
           transfer: true,
@@ -2535,6 +2962,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 33.839926,
           lng: 132.764819,
           transfer: true,
@@ -2542,6 +2970,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "県庁前",
+          nameKana: "けんちょうまえ",
           lat: 33.841067,
           lng: 132.766364,
           transfer: true,
@@ -2549,6 +2978,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "大街道",
+          nameKana: "おおかいどう",
           lat: 33.841103,
           lng: 132.769861,
           transfer: true,
@@ -2556,6 +2986,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "勝山町",
+          nameKana: "かつやまちょう",
           lat: 33.841709,
           lng: 132.774818,
           transfer: true,
@@ -2563,6 +2994,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "警察署前",
+          nameKana: "けいさつしょまえ",
           lat: 33.844596,
           lng: 132.775354,
           transfer: true,
@@ -2570,6 +3002,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "上一万",
+          nameKana: "かみいちまん",
           lat: 33.846737,
           lng: 132.775502,
           transfer: true,
@@ -2577,6 +3010,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "南町",
+          nameKana: "みなみまち",
           lat: 33.847412,
           lng: 132.779839,
           transfer: true,
@@ -2584,6 +3018,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "道後公園",
+          nameKana: "どうごこうえん",
           lat: 33.848552,
           lng: 132.784989,
           transfer: true,
@@ -2591,6 +3026,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "道後温泉",
+          nameKana: "どうごおんせん",
           lat: 33.850477,
           lng: 132.784817,
           transfer: true,
@@ -2607,6 +3043,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "本町六丁目",
+          nameKana: "ほんまちろくちょうめ",
           lat: 33.853472,
           lng: 132.758473,
           transfer: true,
@@ -2614,21 +3051,25 @@ export const shikoku: OperatorData = {
         },
         {
           name: "本町五丁目",
+          nameKana: "ほんまちごちょうめ",
           lat: 33.851047,
           lng: 132.758853,
         },
         {
           name: "本町四丁目",
+          nameKana: "ほんまちよんちょうめ",
           lat: 33.847982,
           lng: 132.758789,
         },
         {
           name: "本町三丁目",
+          nameKana: "ほんまちさんちょうめ",
           lat: 33.84513,
           lng: 132.758853,
         },
         {
           name: "本町一丁目",
+          nameKana: "ほんまちいっちょうめ",
           lat: 33.84037679,
           lng: 132.75877,
           transfer: true,
@@ -2636,6 +3077,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "南堀端",
+          nameKana: "みなみほりばた",
           lat: 33.839213,
           lng: 132.761664,
           transfer: true,
@@ -2643,6 +3085,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "松山市駅前",
+          nameKana: "まつやましえきまえ",
           lat: 33.836148,
           lng: 132.762587,
           transfer: true,
@@ -2661,6 +3104,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "窪川",
+          nameKana: "くぼかわ",
           lat: 33.212656,
           lng: 133.137285,
           transfer: true,
@@ -2668,6 +3112,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "若井",
+          nameKana: "わかい",
           lat: 33.18807,
           lng: 133.105937,
           transfer: true,
@@ -2675,66 +3120,79 @@ export const shikoku: OperatorData = {
         },
         {
           name: "荷稲",
+          nameKana: "かいな",
           lat: 33.132961,
           lng: 133.116316,
         },
         {
           name: "伊与喜",
+          nameKana: "いよき",
           lat: 33.105169,
           lng: 133.098519,
         },
         {
           name: "土佐佐賀",
+          nameKana: "とささが",
           lat: 33.080905,
           lng: 133.101517,
         },
         {
           name: "佐賀公園",
+          nameKana: "さがこうえん",
           lat: 33.064604,
           lng: 133.106582,
         },
         {
           name: "土佐白浜",
+          nameKana: "とさしらはま",
           lat: 33.05643,
           lng: 133.097452,
         },
         {
           name: "有井川",
+          nameKana: "ありいがわ",
           lat: 33.038914,
           lng: 133.071258,
         },
         {
           name: "土佐上川口",
+          nameKana: "とさかみかわぐち",
           lat: 33.043013,
           lng: 133.056112,
         },
         {
           name: "海の王迎",
+          nameKana: "うみのおうむかえ",
           lat: 33.040407,
           lng: 133.046482,
         },
         {
           name: "浮鞭",
+          nameKana: "うきぶち",
           lat: 33.039516,
           lng: 133.029856,
         },
         {
           name: "土佐入野",
+          nameKana: "とさいりの",
           lat: 33.023866,
           lng: 133.011636,
         },
         {
           name: "西大方",
+          nameKana: "にしおおがた",
           lat: 33.008912,
           lng: 132.986967,
         },
         {
           name: "古津賀",
+          nameKana: "こつか",
           lat: 32.985744,
           lng: 132.962036,
         },
         {
           name: "中村",
+          nameKana: "なかむら",
           lat: 32.984641,
           lng: 132.943927,
           transfer: true,
@@ -2751,6 +3209,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "中村",
+          nameKana: "なかむら",
           lat: 32.984641,
           lng: 132.943927,
           transfer: true,
@@ -2758,36 +3217,43 @@ export const shikoku: OperatorData = {
         },
         {
           name: "具同",
+          nameKana: "ぐどう",
           lat: 32.9794,
           lng: 132.915473,
         },
         {
           name: "国見",
+          nameKana: "くにみ",
           lat: 32.978932,
           lng: 132.883716,
         },
         {
           name: "有岡",
+          nameKana: "ありおか",
           lat: 32.961229,
           lng: 132.833077,
         },
         {
           name: "工業団地",
+          nameKana: "こうぎょうだんち",
           lat: 32.95632,
           lng: 132.801931,
         },
         {
           name: "平田",
+          nameKana: "ひらた",
           lat: 32.955639,
           lng: 132.794977,
         },
         {
           name: "東宿毛",
+          nameKana: "ひがしすくも",
           lat: 32.933673,
           lng: 132.728736,
         },
         {
           name: "宿毛",
+          nameKana: "すくも",
           lat: 32.932534,
           lng: 132.71364,
         },
@@ -2802,6 +3268,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "後免",
+          nameKana: "ごめん",
           lat: 33.579245,
           lng: 133.645479,
           transfer: true,
@@ -2809,6 +3276,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "後免町",
+          nameKana: "ごめんまち",
           lat: 33.57454,
           lng: 133.651415,
           transfer: true,
@@ -2816,96 +3284,115 @@ export const shikoku: OperatorData = {
         },
         {
           name: "立田",
+          nameKana: "たてだ",
           lat: 33.57073,
           lng: 133.670627,
         },
         {
           name: "のいち",
+          nameKana: "のいち",
           lat: 33.561649,
           lng: 133.698366,
         },
         {
           name: "よしかわ",
+          nameKana: "よしかわ",
           lat: 33.546089,
           lng: 133.710352,
         },
         {
           name: "あかおか",
+          nameKana: "あかおか",
           lat: 33.539893,
           lng: 133.721859,
         },
         {
           name: "香我美",
+          nameKana: "かがみ",
           lat: 33.539152,
           lng: 133.73723,
         },
         {
           name: "夜須",
+          nameKana: "やす",
           lat: 33.534347,
           lng: 133.754506,
         },
         {
           name: "西分",
+          nameKana: "にしぶん",
           lat: 33.518015,
           lng: 133.790772,
         },
         {
           name: "和食",
+          nameKana: "わじき",
           lat: 33.51784,
           lng: 133.809739,
         },
         {
           name: "赤野",
+          nameKana: "あかの",
           lat: 33.516,
           lng: 133.825026,
         },
         {
           name: "穴内",
+          nameKana: "あなない",
           lat: 33.506069,
           lng: 133.864204,
         },
         {
           name: "球場前",
+          nameKana: "きゅうじょうまえ",
           lat: 33.502635,
           lng: 133.891265,
         },
         {
           name: "あき総合病院前",
+          nameKana: "あきそうごうびょういんまえ",
           lat: 33.504389,
           lng: 133.897694,
         },
         {
           name: "安芸",
+          nameKana: "あき",
           lat: 33.504738,
           lng: 133.906538,
         },
         {
           name: "伊尾木",
+          nameKana: "いおき",
           lat: 33.490952,
           lng: 133.929158,
         },
         {
           name: "下山",
+          nameKana: "しもやま",
           lat: 33.458267,
           lng: 133.94837,
         },
         {
           name: "唐浜",
+          nameKana: "とうのはま",
           lat: 33.446036,
           lng: 133.966263,
         },
         {
           name: "安田",
+          nameKana: "やすだ",
           lat: 33.443359,
           lng: 133.984151,
         },
         {
           name: "田野",
+          nameKana: "たの",
           lat: 33.4303,
           lng: 134.008207,
         },
         {
           name: "奈半利",
+          nameKana: "なはり",
           lat: 33.425187,
           lng: 134.018269,
         },
@@ -2922,6 +3409,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "後免町",
+          nameKana: "ごめんまち",
           lat: 33.574403,
           lng: 133.650227,
           transfer: true,
@@ -2929,51 +3417,61 @@ export const shikoku: OperatorData = {
         },
         {
           name: "後免東町",
+          nameKana: "ごめんひがしまち",
           lat: 33.574526,
           lng: 133.648137,
         },
         {
           name: "後免中町",
+          nameKana: "ごめんなかまち",
           lat: 33.575548,
           lng: 133.645527,
         },
         {
           name: "後免西町",
+          nameKana: "ごめんにしまち",
           lat: 33.575869,
           lng: 133.642652,
         },
         {
           name: "東工業前",
+          nameKana: "ひがしこうぎょうまえ",
           lat: 33.576442,
           lng: 133.638446,
         },
         {
           name: "住吉通",
+          nameKana: "すみよしどおり",
           lat: 33.576656,
           lng: 133.636515,
         },
         {
           name: "篠原",
+          nameKana: "しのはら",
           lat: 33.577228,
           lng: 133.631022,
         },
         {
           name: "小篭通",
+          nameKana: "こごめどおり",
           lat: 33.57637,
           lng: 133.625786,
         },
         {
           name: "長崎",
+          nameKana: "ながさき",
           lat: 33.575119,
           lng: 133.620722,
         },
         {
           name: "明見橋",
+          nameKana: "みょうけんばし",
           lat: 33.574582,
           lng: 133.617589,
         },
         {
           name: "一条橋",
+          nameKana: "いちじょうばし",
           lat: 33.574833,
           lng: 133.613802,
           transfer: true,
@@ -2981,111 +3479,133 @@ export const shikoku: OperatorData = {
         },
         {
           name: "清和学園前",
+          nameKana: "せいわがくえんまえ",
           lat: 33.57502,
           lng: 133.61244,
         },
         {
           name: "領石通",
+          nameKana: "りょうせきどおり",
           lat: 33.574332,
           lng: 133.607805,
         },
         {
           name: "北浦",
+          nameKana: "きたうら",
           lat: 33.57376,
           lng: 133.603728,
         },
         {
           name: "舟戸",
+          nameKana: "ふなと",
           lat: 33.570613,
           lng: 133.599522,
         },
         {
           name: "鹿児",
+          nameKana: "かこ",
           lat: 33.567216,
           lng: 133.597033,
         },
         {
           name: "田辺島通",
+          nameKana: "たべしまどおり",
           lat: 33.566644,
           lng: 133.593214,
         },
         {
           name: "東新木",
+          nameKana: "ひがししんぎ",
           lat: 33.564141,
           lng: 133.589609,
         },
         {
           name: "新木",
+          nameKana: "しんぎ",
           lat: 33.562568,
           lng: 133.586948,
         },
         {
           name: "介良通",
+          nameKana: "けらどおり",
           lat: 33.560243,
           lng: 133.583386,
         },
         {
           name: "文珠通",
+          nameKana: "もんじゅどおり",
           lat: 33.559421,
           lng: 133.579524,
         },
         {
           name: "高須",
+          nameKana: "たかす",
           lat: 33.559349,
           lng: 133.576691,
         },
         {
           name: "県立美術館通",
+          nameKana: "けんりつびじゅつかんどおり",
           lat: 33.559134,
           lng: 133.575618,
         },
         {
           name: "西高須",
+          nameKana: "にしたかす",
           lat: 33.558348,
           lng: 133.573129,
         },
         {
           name: "葛島橋東詰",
+          nameKana: "かずらしまばしひがしづめ",
           lat: 33.557024,
           lng: 133.569739,
         },
         {
           name: "知寄町三丁目",
+          nameKana: "ちよりちょうさんちょうめ",
           lat: 33.557597,
           lng: 133.565168,
         },
         {
           name: "知寄町",
+          nameKana: "ちよりちょう",
           lat: 33.557883,
           lng: 133.561757,
         },
         {
           name: "知寄町二丁目",
+          nameKana: "ちよりちょうにちょうめ",
           lat: 33.558097,
           lng: 133.55989,
         },
         {
           name: "知寄町一丁目",
+          nameKana: "ちよりちょういっちょうめ",
           lat: 33.558419,
           lng: 133.556693,
         },
         {
           name: "宝永町",
+          nameKana: "ほうえいちょう",
           lat: 33.558777,
           lng: 133.55371,
         },
         {
           name: "菜園場町",
+          nameKana: "さえんばちょう",
           lat: 33.559063,
           lng: 133.548625,
         },
         {
           name: "デンテツターミナルビル前",
+          nameKana: "でんてつたーみなるびるまえ",
           lat: 33.55926,
           lng: 133.545964,
         },
         {
           name: "はりまや橋",
+          nameKana: "はりまやばし",
           lat: 33.559617,
           lng: 133.542852,
           transfer: true,
@@ -3102,6 +3622,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "はりまや橋",
+          nameKana: "はりまやばし",
           lat: 33.559617,
           lng: 133.542852,
           transfer: true,
@@ -3109,101 +3630,121 @@ export const shikoku: OperatorData = {
         },
         {
           name: "堀詰",
+          nameKana: "ほりづめ",
           lat: 33.559546,
           lng: 133.539441,
         },
         {
           name: "大橋通",
+          nameKana: "おおはしどおり",
           lat: 33.558974,
           lng: 133.536415,
         },
         {
           name: "高知城前",
+          nameKana: "こうちじょうまえ",
           lat: 33.558491,
           lng: 133.534248,
         },
         {
           name: "県庁前",
+          nameKana: "けんちょうまえ",
           lat: 33.55799,
           lng: 133.531222,
         },
         {
           name: "グランド通",
+          nameKana: "ぐらんどどおり",
           lat: 33.55774,
           lng: 133.529356,
         },
         {
           name: "枡形",
+          nameKana: "ますがた",
           lat: 33.557382,
           lng: 133.527145,
         },
         {
           name: "上町一丁目",
+          nameKana: "かみまちいっちょうめ",
           lat: 33.557489,
           lng: 133.525107,
         },
         {
           name: "上町二丁目",
+          nameKana: "かみまちにちょうめ",
           lat: 33.557382,
           lng: 133.522897,
         },
         {
           name: "上町四丁目",
+          nameKana: "かみまちよんちょうめ",
           lat: 33.557382,
           lng: 133.519657,
         },
         {
           name: "上町五丁目",
+          nameKana: "かみまちごちょうめ",
           lat: 33.557275,
           lng: 133.516674,
         },
         {
           name: "旭町一丁目",
+          nameKana: "あさひまちいっちょうめ",
           lat: 33.556774,
           lng: 133.51352,
         },
         {
           name: "旭駅前通",
+          nameKana: "あさひえきまえどおり",
           lat: 33.555987,
           lng: 133.509636,
         },
         {
           name: "旭町三丁目",
+          nameKana: "あさひまちさんちょうめ",
           lat: 33.555701,
           lng: 133.506482,
         },
         {
           name: "蛍橋",
+          nameKana: "ほたるばし",
           lat: 33.555487,
           lng: 133.502641,
         },
         {
           name: "鏡川橋",
+          nameKana: "かがみがわばし",
           lat: 33.555665,
           lng: 133.498456,
         },
         {
           name: "鴨部",
+          nameKana: "かもべ",
           lat: 33.552232,
           lng: 133.497276,
         },
         {
           name: "曙町東町",
+          nameKana: "あけぼのちょうひがしまち",
           lat: 33.551624,
           lng: 133.493307,
         },
         {
           name: "曙町",
+          nameKana: "あけぼのちょう",
           lat: 33.551159,
           lng: 133.490946,
         },
         {
           name: "朝倉",
+          nameKana: "あさくら",
           lat: 33.550712,
           lng: 133.488157,
         },
         {
           name: "朝倉駅前",
+          nameKana: "あさくらえきまえ",
           lat: 33.551141,
           lng: 133.484294,
           transfer: true,
@@ -3211,36 +3752,43 @@ export const shikoku: OperatorData = {
         },
         {
           name: "朝倉神社前",
+          nameKana: "あさくらじんじゃまえ",
           lat: 33.551892,
           lng: 133.481097,
         },
         {
           name: "宮の奥",
+          nameKana: "みやのおく",
           lat: 33.552357,
           lng: 133.475883,
         },
         {
           name: "咥内",
+          nameKana: "こうない",
           lat: 33.552393,
           lng: 133.470454,
         },
         {
           name: "宇治団地前",
+          nameKana: "うじだんちまえ",
           lat: 33.551928,
           lng: 133.461227,
         },
         {
           name: "八代通",
+          nameKana: "やしろどおり",
           lat: 33.552214,
           lng: 133.456399,
         },
         {
           name: "中山",
+          nameKana: "なかやま",
           lat: 33.551857,
           lng: 133.452644,
         },
         {
           name: "枝川",
+          nameKana: "えだがわ",
           lat: 33.551463,
           lng: 133.449404,
           transfer: true,
@@ -3248,26 +3796,31 @@ export const shikoku: OperatorData = {
         },
         {
           name: "伊野商業前",
+          nameKana: "いのしょうぎょうまえ",
           lat: 33.550569,
           lng: 133.444362,
         },
         {
           name: "北内",
+          nameKana: "きたうち",
           lat: 33.549961,
           lng: 133.441336,
         },
         {
           name: "北山",
+          nameKana: "きたやま",
           lat: 33.549425,
           lng: 133.438504,
         },
         {
           name: "鳴谷",
+          nameKana: "なるたに",
           lat: 33.548852,
           lng: 133.433032,
         },
         {
           name: "伊野駅前",
+          nameKana: "いのえきまえ",
           lat: 33.548602,
           lng: 133.429663,
           transfer: true,
@@ -3275,6 +3828,7 @@ export const shikoku: OperatorData = {
         },
         {
           name: "伊野",
+          nameKana: "いの",
           lat: 33.548602,
           lng: 133.428397,
         },
@@ -3289,6 +3843,7 @@ export const shikoku: OperatorData = {
       stations: [
         {
           name: "高知駅前",
+          nameKana: "こうちえきまえ",
           lat: 33.56653,
           lng: 133.543606,
           transfer: true,
@@ -3296,16 +3851,19 @@ export const shikoku: OperatorData = {
         },
         {
           name: "高知橋",
+          nameKana: "こうちばし",
           lat: 33.564284,
           lng: 133.543442,
         },
         {
           name: "蓮池町通",
+          nameKana: "はすいけまちどおり",
           lat: 33.561066,
           lng: 133.543035,
         },
         {
           name: "はりまや橋",
+          nameKana: "はりまやばし",
           lat: 33.559617,
           lng: 133.542852,
           transfer: true,
@@ -3313,36 +3871,43 @@ export const shikoku: OperatorData = {
         },
         {
           name: "梅の辻",
+          nameKana: "うめのつじ",
           lat: 33.554181,
           lng: 133.543485,
         },
         {
           name: "桟橋通一丁目",
+          nameKana: "さんばしどおりいっちょうめ",
           lat: 33.55157,
           lng: 133.545352,
         },
         {
           name: "桟橋通二丁目",
+          nameKana: "さんばしどおりにちょうめ",
           lat: 33.549156,
           lng: 133.546886,
         },
         {
           name: "桟橋通三丁目",
+          nameKana: "さんばしどおりさんちょうめ",
           lat: 33.547082,
           lng: 133.548303,
         },
         {
           name: "桟橋通四丁目",
+          nameKana: "さんばしどおりよんちょうめ",
           lat: 33.544668,
           lng: 133.549933,
         },
         {
           name: "桟橋車庫前",
+          nameKana: "さんばししゃこまえ",
           lat: 33.541073,
           lng: 133.552315,
         },
         {
           name: "桟橋通五丁目",
+          nameKana: "さんばしどおりごちょうめ",
           lat: 33.540286,
           lng: 133.552938,
         },

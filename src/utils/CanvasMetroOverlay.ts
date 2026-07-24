@@ -247,7 +247,7 @@ export class CanvasMetroOverlay {
     if (stationMode !== 'none' || hintActive) {
       // 역 마커도 강조 노선 것을 나중에 그려 최상단에 오게 한다
       [...normalLines, ...highlightedLines].forEach(line => {
-        const stationMarkers = this.drawStations(line, projection, bounds, stationMode, hintActive);
+        const stationMarkers = this.drawStations(line, projection, bounds, stationMode, hintActive, this.hoveredLineIds.has(line.id));
         this.stationCache.set(line.id, stationMarkers);
       });
     }
@@ -260,17 +260,20 @@ export class CanvasMetroOverlay {
     // 선 호버 중: 그 노선의 역들 옆에 역 이름 라벨 표시 (맨 마지막에 그려 최상단)
     if (this.lineHoverLabelId && this.selectedSet.has(this.lineHoverLabelId)) {
       const line = this.allLinesCache.find(l => l.id === this.lineHoverLabelId);
-      if (line) this.drawStationNameLabels(line, projection, bounds);
+      if (line) this.drawStationNameLabels(line, projection, bounds, zoom);
     }
   }
 
   // 선 호버 시 그 노선의 각 역 이름을 역 옆에 배지로 표시한다.
   // 라벨끼리 겹쳐 뭉개지지 않게 직전 라벨과 화면 거리가 너무 가까우면 생략한다.
-  private drawStationNameLabels(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds) {
-    this.ctx.font = 'bold 12px sans-serif';
+  // 폰트는 줌 12에서 최소(14px), 줌 16 이상에서 최대(20px)로 선형 확대 — 한자 가독성용.
+  private drawStationNameLabels(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, zoom: number) {
+    const t = Math.min(1, Math.max(0, (zoom - CanvasMetroOverlay.ZOOM_ALL_STATIONS) / 4));
+    const fontSize = Math.round(14 + (20 - 14) * t);
+    this.ctx.font = `bold ${fontSize}px sans-serif`;
     const PAD_X = 7;
-    const H = 20; // 배지 높이
-    const MIN_GAP = 30; // 라벨 간 최소 화면 거리 (px) — 저줌에서 겹침 방지
+    const H = fontSize + 8; // 배지 높이 (폰트에 비례)
+    const MIN_GAP = fontSize * 2.2; // 라벨 간 최소 화면 거리 (px) — 저줌에서 겹침 방지
     const textColor = CanvasMetroOverlay.isLightColor(line.color) ? '#000000' : '#FFFFFF';
 
     let lastX = Infinity;
@@ -287,8 +290,8 @@ export class CanvasMetroOverlay {
       lastX = x;
       lastY = y;
 
-      // 역 오른쪽에 노선 색 배지 + 대비색 텍스트
-      const text = station.name;
+      // 역 오른쪽에 노선 색 배지 + 대비색 텍스트 (가나 읽기 병기)
+      const text = station.nameKana ? `${station.name} / ${station.nameKana}` : station.name;
       const textW = this.ctx.measureText(text).width;
       const bx = x + 12;
       const by = y - H / 2;
@@ -428,7 +431,7 @@ export class CanvasMetroOverlay {
     this.ctx.globalAlpha = 1.0;
   }
 
-  private drawStations(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, stationMode: 'all' | 'transfer' | 'none', hintActive = false): StationMarker[] {
+  private drawStations(line: Line, projection: google.maps.MapCanvasProjection, bounds: google.maps.LatLngBounds, stationMode: 'all' | 'transfer' | 'none', hintActive = false, highlight = false): StationMarker[] {
     const animatedLine = this.animatedLines.get(line.id);
     const { lo, hi } = this.revealedPath(line, animatedLine);
     const total = line.stations.length;
@@ -457,8 +460,8 @@ export class CanvasMetroOverlay {
       const x = point.x - this.offsetX;
       const y = point.y - this.offsetY;
 
-      // 역 마커 그리기 (애니메이션 중엔 크게)
-      const baseRadius = station.transfer ? 8 : 5;
+      // 역 마커 그리기 (애니메이션 중엔 크게, 노선 호버 강조 시에도 크게 — 선 굵기 4→8에 맞춤)
+      const baseRadius = (station.transfer ? 8 : 5) * (highlight ? 1.4 : 1);
       const radius = animating ? baseRadius + 3 : baseRadius;
       const fillColor = station.transfer ? '#FFFFFF' : line.color;
 
@@ -486,9 +489,9 @@ export class CanvasMetroOverlay {
         this.ctx.shadowBlur = 0;
       }
 
-      // 외곽선
+      // 외곽선 (호버 강조 시 원이 커지는 만큼 테두리도 약간 두껍게)
       this.ctx.strokeStyle = line.color;
-      this.ctx.lineWidth = station.transfer ? 3 : 2;
+      this.ctx.lineWidth = (station.transfer ? 3 : 2) + (highlight ? 1 : 0);
       this.ctx.beginPath();
       this.ctx.arc(x, y, radius, 0, Math.PI * 2);
       this.ctx.stroke();
@@ -671,6 +674,9 @@ export class CanvasMetroOverlay {
 
   // 역 툴팁 HTML 내용 생성
   private buildStationHtml(marker: StationMarker): string {
+    const st = marker.station;
+    const nameHtml = `<strong style="font-size: 19px;">${st.name}</strong>` +
+      (st.nameKana ? `<span style="color: #666; font-size: 15px;"> / ${st.nameKana}</span>` : '');
     if (marker.station.transfer) {
       const lineIds = this.findLinesForStationByMarker(marker);
       const visibleStationLines = lineIds
@@ -683,13 +689,13 @@ export class CanvasMetroOverlay {
         .join('<br/>');
 
       return `<div style="padding: 0px 4px 2px 4px;">
-          <strong style="font-size: 19px;">${marker.station.name}</strong><br/>
+          ${nameHtml}<br/>
           <span style="color: #666; font-size: 13px;">乗換駅</span><br/>
           ${linesHtml}
         </div>`;
     }
     return `<div style="padding: 0px 4px 2px 4px;">
-          <strong style="font-size: 19px;">${marker.station.name}</strong><br/>
+          ${nameHtml}<br/>
           <span style="color: ${marker.line.color}; font-size: 18px; line-height: 1.8; font-weight: 500;">● ${marker.line.nameJp} / ${marker.line.nameKo}</span>
         </div>`;
   }

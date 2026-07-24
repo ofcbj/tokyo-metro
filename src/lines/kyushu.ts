@@ -12,6 +12,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "博多",
+          nameKana: "はかた",
           lat: 33.590002,
           lng: 130.420622,
           transfer: true,
@@ -19,6 +20,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "博多南",
+          nameKana: "はかたみなみ",
           lat: 33.517955,
           lng: 130.436997,
         },
@@ -35,6 +37,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "下関",
+          nameKana: "しものせき",
           lat: 33.950306,
           lng: 130.923038,
           transfer: true,
@@ -42,6 +45,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "門司",
+          nameKana: "もじ",
           lat: 33.904309,
           lng: 130.933438,
           transfer: true,
@@ -49,6 +53,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "小森江",
+          nameKana: "こもりえ",
           lat: 33.916352,
           lng: 130.938674,
           transfer: true,
@@ -56,6 +61,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "門司港",
+          nameKana: "もじこう",
           lat: 33.945138,
           lng: 130.961549,
           transfer: true,
@@ -63,6 +69,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "小倉",
+          nameKana: "こくら",
           lat: 33.886756,
           lng: 130.882678,
           transfer: true,
@@ -70,6 +77,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西小倉",
+          nameKana: "にしこくら",
           lat: 33.888673,
           lng: 130.873897,
           transfer: true,
@@ -77,31 +85,37 @@ export const kyushu: OperatorData = {
         },
         {
           name: "九州工大前",
+          nameKana: "きゅうしゅうこうだいまえ",
           lat: 33.900396,
           lng: 130.840068,
         },
         {
           name: "戸畑",
+          nameKana: "とばた",
           lat: 33.897018,
           lng: 130.820692,
         },
         {
           name: "枝光",
+          nameKana: "えだみつ",
           lat: 33.879367,
           lng: 130.813318,
         },
         {
           name: "スペースワールド",
+          nameKana: "すぺーすわーるど",
           lat: 33.871246,
           lng: 130.806197,
         },
         {
           name: "八幡",
+          nameKana: "やはた",
           lat: 33.868913,
           lng: 130.795209,
         },
         {
           name: "黒崎",
+          nameKana: "くろさき",
           lat: 33.866807,
           lng: 130.766206,
           transfer: true,
@@ -109,11 +123,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "陣原",
+          nameKana: "じんのはる",
           lat: 33.868242,
           lng: 130.742656,
         },
         {
           name: "折尾",
+          nameKana: "おりお",
           lat: 33.863629,
           lng: 130.713109,
           transfer: true,
@@ -121,76 +137,91 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水巻",
+          nameKana: "みずまき",
           lat: 33.852287,
           lng: 130.694624,
         },
         {
           name: "遠賀川",
+          nameKana: "おんががわ",
           lat: 33.846684,
           lng: 130.673485,
         },
         {
           name: "海老津",
+          nameKana: "えびつ",
           lat: 33.840248,
           lng: 130.62307,
         },
         {
           name: "教育大前",
+          nameKana: "きょういくだいまえ",
           lat: 33.808215,
           lng: 130.590256,
         },
         {
           name: "赤間",
+          nameKana: "あかま",
           lat: 33.808237,
           lng: 130.569477,
         },
         {
           name: "東郷",
+          nameKana: "とうごう",
           lat: 33.794488,
           lng: 130.528822,
         },
         {
           name: "東福間",
+          nameKana: "ひがしふくま",
           lat: 33.774118,
           lng: 130.511111,
         },
         {
           name: "福間",
+          nameKana: "ふくま",
           lat: 33.763316,
           lng: 130.486088,
         },
         {
           name: "千鳥",
+          nameKana: "ちどり",
           lat: 33.749129,
           lng: 130.47632,
         },
         {
           name: "古賀",
+          nameKana: "こが",
           lat: 33.732586,
           lng: 130.466898,
         },
         {
           name: "ししぶ",
+          nameKana: "ししぶ",
           lat: 33.722223,
           lng: 130.459042,
         },
         {
           name: "新宮中央",
+          nameKana: "しんぐうちゅうおう",
           lat: 33.711659,
           lng: 130.449163,
         },
         {
           name: "福工大前",
+          nameKana: "ふっこうだいまえ",
           lat: 33.698813,
           lng: 130.440536,
         },
         {
           name: "九産大前",
+          nameKana: "きゅうさんだいまえ",
           lat: 33.673743,
           lng: 130.441184,
         },
         {
           name: "香椎",
+          nameKana: "かしい",
           lat: 33.659228,
           lng: 130.444063,
           transfer: true,
@@ -198,6 +229,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "千早",
+          nameKana: "ちはや",
           lat: 33.649116,
           lng: 130.440486,
           transfer: true,
@@ -205,11 +237,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "箱崎",
+          nameKana: "はこざき",
           lat: 33.618063,
           lng: 130.426549,
         },
         {
           name: "吉塚",
+          nameKana: "よしづか",
           lat: 33.607142,
           lng: 130.423674,
           transfer: true,
@@ -217,6 +251,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "博多",
+          nameKana: "はかた",
           lat: 33.590002,
           lng: 130.420622,
           transfer: true,
@@ -233,6 +268,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "博多",
+          nameKana: "はかた",
           lat: 33.590002,
           lng: 130.420622,
           transfer: true,
@@ -240,51 +276,61 @@ export const kyushu: OperatorData = {
         },
         {
           name: "竹下",
+          nameKana: "たけした",
           lat: 33.568688,
           lng: 130.431625,
         },
         {
           name: "笹原",
+          nameKana: "ささばる",
           lat: 33.553612,
           lng: 130.448396,
         },
         {
           name: "南福岡",
+          nameKana: "みなみふくおか",
           lat: 33.542092,
           lng: 130.460447,
         },
         {
           name: "春日",
+          nameKana: "かすが",
           lat: 33.534701,
           lng: 130.469308,
         },
         {
           name: "大野城",
+          nameKana: "おおのじょう",
           lat: 33.524944,
           lng: 130.480063,
         },
         {
           name: "水城",
+          nameKana: "みずき",
           lat: 33.51779,
           lng: 130.49022,
         },
         {
           name: "都府楼南",
+          nameKana: "とふろうみなみ",
           lat: 33.503153,
           lng: 130.506625,
         },
         {
           name: "二日市",
+          nameKana: "ふつかいち",
           lat: 33.494515,
           lng: 130.518843,
         },
         {
           name: "天拝山",
+          nameKana: "てんぱいざん",
           lat: 33.481847,
           lng: 130.53024,
         },
         {
           name: "原田",
+          nameKana: "はるだ",
           lat: 33.451769,
           lng: 130.539376,
           transfer: true,
@@ -292,11 +338,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "けやき台",
+          nameKana: "けやきだい",
           lat: 33.434537,
           lng: 130.533392,
         },
         {
           name: "基山",
+          nameKana: "きやま",
           lat: 33.420945,
           lng: 130.532365,
           transfer: true,
@@ -304,16 +352,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "弥生が丘",
+          nameKana: "やよいがおか",
           lat: 33.401944,
           lng: 130.528514,
         },
         {
           name: "田代",
+          nameKana: "たしろ",
           lat: 33.384007,
           lng: 130.524496,
         },
         {
           name: "鳥栖",
+          nameKana: "とす",
           lat: 33.373864,
           lng: 130.519374,
           transfer: true,
@@ -321,11 +372,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "肥前旭",
+          nameKana: "ひぜんあさひ",
           lat: 33.350237,
           lng: 130.495981,
         },
         {
           name: "久留米",
+          nameKana: "くるめ",
           lat: 33.319778,
           lng: 130.501408,
           transfer: true,
@@ -333,51 +386,61 @@ export const kyushu: OperatorData = {
         },
         {
           name: "荒木",
+          nameKana: "あらき",
           lat: 33.277149,
           lng: 130.50268,
         },
         {
           name: "西牟田",
+          nameKana: "にしむた",
           lat: 33.246243,
           lng: 130.500981,
         },
         {
           name: "羽犬塚",
+          nameKana: "はいぬづか",
           lat: 33.209822,
           lng: 130.49761,
         },
         {
           name: "筑後船小屋",
+          nameKana: "ちくごふなごや",
           lat: 33.17802333,
           lng: 130.4916036,
         },
         {
           name: "瀬高",
+          nameKana: "せたか",
           lat: 33.157,
           lng: 130.485181,
         },
         {
           name: "南瀬高",
+          nameKana: "みなみせたか",
           lat: 33.133699,
           lng: 130.471188,
         },
         {
           name: "渡瀬",
+          nameKana: "わたぜ",
           lat: 33.099622,
           lng: 130.460094,
         },
         {
           name: "吉野",
+          nameKana: "よしの",
           lat: 33.075599,
           lng: 130.466459,
         },
         {
           name: "銀水",
+          nameKana: "ぎんすい",
           lat: 33.054932,
           lng: 130.460944,
         },
         {
           name: "大牟田",
+          nameKana: "おおむた",
           lat: 33.029754,
           lng: 130.443784,
           transfer: true,
@@ -385,61 +448,73 @@ export const kyushu: OperatorData = {
         },
         {
           name: "荒尾",
+          nameKana: "あらお",
           lat: 32.994682,
           lng: 130.434717,
         },
         {
           name: "南荒尾",
+          nameKana: "みなみあらお",
           lat: 32.966029,
           lng: 130.433012,
         },
         {
           name: "長洲",
+          nameKana: "ながす",
           lat: 32.935205,
           lng: 130.455652,
         },
         {
           name: "大野下",
+          nameKana: "おおのしも",
           lat: 32.921737,
           lng: 130.502038,
         },
         {
           name: "玉名",
+          nameKana: "たまな",
           lat: 32.926021,
           lng: 130.548494,
         },
         {
           name: "肥後伊倉",
+          nameKana: "ひごいくら",
           lat: 32.913233,
           lng: 130.586803,
         },
         {
           name: "木葉",
+          nameKana: "このは",
           lat: 32.916528,
           lng: 130.626441,
         },
         {
           name: "田原坂",
+          nameKana: "たばるざか",
           lat: 32.899416,
           lng: 130.653197,
         },
         {
           name: "植木",
+          nameKana: "うえき",
           lat: 32.880226,
           lng: 130.680834,
         },
         {
           name: "西里",
+          nameKana: "にしさと",
           lat: 32.854607,
           lng: 130.700139,
         },
         {
           name: "崇城大学前",
+          nameKana: "そうじょうだいがくまえ",
           lat: 32.83102,
           lng: 130.694895,
         },
         {
           name: "上熊本",
+          nameKana: "かみくまもと",
           lat: 32.817305,
           lng: 130.698831,
           transfer: true,
@@ -447,6 +522,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "熊本",
+          nameKana: "くまもと",
           lat: 32.789207,
           lng: 130.688499,
           transfer: true,
@@ -454,11 +530,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西熊本",
+          nameKana: "にしくまもと",
           lat: 32.762639,
           lng: 130.683056,
         },
         {
           name: "川尻",
+          nameKana: "かわしり",
           lat: 32.743772,
           lng: 130.679907,
           transfer: true,
@@ -466,6 +544,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "富合",
+          nameKana: "とみあい",
           lat: 32.713658,
           lng: 130.672808,
           transfer: true,
@@ -473,6 +552,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "宇土",
+          nameKana: "うと",
           lat: 32.694237,
           lng: 130.669148,
           transfer: true,
@@ -480,31 +560,37 @@ export const kyushu: OperatorData = {
         },
         {
           name: "松橋",
+          nameKana: "まつばせ",
           lat: 32.652324,
           lng: 130.670588,
         },
         {
           name: "小川",
+          nameKana: "おがわ",
           lat: 32.600979,
           lng: 130.694339,
         },
         {
           name: "有佐",
+          nameKana: "ありさ",
           lat: 32.562711,
           lng: 130.670049,
         },
         {
           name: "千丁",
+          nameKana: "せんちょう",
           lat: 32.532387,
           lng: 130.64556,
         },
         {
           name: "新八代",
+          nameKana: "しんやつしろ",
           lat: 32.517888,
           lng: 130.634919,
         },
         {
           name: "八代",
+          nameKana: "やつしろ",
           lat: 32.503805,
           lng: 130.621609,
           transfer: true,
@@ -521,6 +607,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "川内",
+          nameKana: "せんだい",
           lat: 31.813726,
           lng: 130.31213,
           transfer: true,
@@ -528,61 +615,73 @@ export const kyushu: OperatorData = {
         },
         {
           name: "隈之城",
+          nameKana: "くまのじょう",
           lat: 31.79255,
           lng: 130.307092,
         },
         {
           name: "木場茶屋",
+          nameKana: "こばんちゃや",
           lat: 31.766138,
           lng: 130.308046,
         },
         {
           name: "串木野",
+          nameKana: "くしきの",
           lat: 31.721605,
           lng: 130.274531,
         },
         {
           name: "神村学園前",
+          nameKana: "かみむらがくえんまえ",
           lat: 31.703731,
           lng: 130.284129,
         },
         {
           name: "市来",
+          nameKana: "いちき",
           lat: 31.68999,
           lng: 130.302727,
         },
         {
           name: "湯之元",
+          nameKana: "ゆのもと",
           lat: 31.673961,
           lng: 130.336753,
         },
         {
           name: "東市来",
+          nameKana: "ひがしいちき",
           lat: 31.655164,
           lng: 130.347609,
         },
         {
           name: "伊集院",
+          nameKana: "いじゅういん",
           lat: 31.630148,
           lng: 130.395703,
         },
         {
           name: "薩摩松元",
+          nameKana: "さつままつもと",
           lat: 31.605318,
           lng: 130.439002,
         },
         {
           name: "上伊集院",
+          nameKana: "かみいじゅういん",
           lat: 31.593837,
           lng: 130.459468,
         },
         {
           name: "広木",
+          nameKana: "ひろき",
           lat: 31.576712,
           lng: 130.504328,
         },
         {
           name: "鹿児島中央",
+          nameKana: "かごしまちゅうおう",
           lat: 31.583727,
           lng: 130.541789,
           transfer: true,
@@ -590,6 +689,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "鹿児島",
+          nameKana: "かごしま",
           lat: 31.602098,
           lng: 130.564112,
           transfer: true,
@@ -606,6 +706,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "鳥栖",
+          nameKana: "とす",
           lat: 33.373864,
           lng: 130.519374,
           transfer: true,
@@ -613,36 +714,43 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新鳥栖",
+          nameKana: "しんとす",
           lat: 33.370278,
           lng: 130.491111,
         },
         {
           name: "肥前麓",
+          nameKana: "ひぜんふもと",
           lat: 33.36578,
           lng: 130.477499,
         },
         {
           name: "中原",
+          nameKana: "なかばる",
           lat: 33.346241,
           lng: 130.440046,
         },
         {
           name: "吉野ケ里公園",
+          nameKana: "よしのがりこうえん",
           lat: 33.324917,
           lng: 130.399553,
         },
         {
           name: "神埼",
+          nameKana: "かんざき",
           lat: 33.315851,
           lng: 130.374446,
         },
         {
           name: "伊賀屋",
+          nameKana: "いがや",
           lat: 33.290195,
           lng: 130.336753,
         },
         {
           name: "佐賀",
+          nameKana: "さが",
           lat: 33.264212,
           lng: 130.297608,
           transfer: true,
@@ -650,6 +758,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "鍋島",
+          nameKana: "なべしま",
           lat: 33.259062,
           lng: 130.265702,
           transfer: true,
@@ -657,6 +766,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "バルーンさが",
+          nameKana: "ばるーんさが",
           lat: 33.257795,
           lng: 130.248942,
           transfer: true,
@@ -664,6 +774,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "久保田",
+          nameKana: "くぼた",
           lat: 33.255717,
           lng: 130.229594,
           transfer: true,
@@ -671,11 +782,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "牛津",
+          nameKana: "うしづ",
           lat: 33.247859,
           lng: 130.201016,
         },
         {
           name: "江北",
+          nameKana: "こうほく",
           lat: 33.21919,
           lng: 130.160858,
           transfer: true,
@@ -683,76 +796,91 @@ export const kyushu: OperatorData = {
         },
         {
           name: "肥前白石",
+          nameKana: "ひぜんしろいし",
           lat: 33.186679,
           lng: 130.135952,
         },
         {
           name: "肥前竜王",
+          nameKana: "ひぜんりゅうおう",
           lat: 33.146663,
           lng: 130.12042,
         },
         {
           name: "肥前鹿島",
+          nameKana: "ひぜんかしま",
           lat: 33.114445,
           lng: 130.097805,
         },
         {
           name: "肥前浜",
+          nameKana: "ひぜんはま",
           lat: 33.095103,
           lng: 130.117079,
         },
         {
           name: "肥前七浦",
+          nameKana: "ひぜんななうら",
           lat: 33.070931,
           lng: 130.145245,
         },
         {
           name: "肥前飯田",
+          nameKana: "ひぜんいいだ",
           lat: 33.055701,
           lng: 130.158754,
         },
         {
           name: "多良",
+          nameKana: "たら",
           lat: 33.02524,
           lng: 130.176049,
         },
         {
           name: "肥前大浦",
+          nameKana: "ひぜんおおうら",
           lat: 32.975043,
           lng: 130.207159,
         },
         {
           name: "小長井",
+          nameKana: "こながい",
           lat: 32.924075,
           lng: 130.186386,
         },
         {
           name: "長里",
+          nameKana: "ながさと",
           lat: 32.91526,
           lng: 130.165484,
         },
         {
           name: "湯江",
+          nameKana: "ゆえ",
           lat: 32.904811,
           lng: 130.140614,
         },
         {
           name: "小江",
+          nameKana: "おえ",
           lat: 32.891351,
           lng: 130.112282,
         },
         {
           name: "肥前長田",
+          nameKana: "ひぜんながた",
           lat: 32.861773,
           lng: 130.079971,
         },
         {
           name: "東諫早",
+          nameKana: "ひがしいさはや",
           lat: 32.852823,
           lng: 130.061675,
         },
         {
           name: "諫早",
+          nameKana: "いさはや",
           lat: 32.851018,
           lng: 130.041596,
           transfer: true,
@@ -760,31 +888,37 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西諫早",
+          nameKana: "にしいさはや",
           lat: 32.839632,
           lng: 130.021269,
         },
         {
           name: "喜々津",
+          nameKana: "ききつ",
           lat: 32.832743,
           lng: 129.98627,
         },
         {
           name: "市布",
+          nameKana: "いちぬの",
           lat: 32.818986,
           lng: 129.965831,
         },
         {
           name: "肥前古賀",
+          nameKana: "ひぜんこが",
           lat: 32.798463,
           lng: 129.951571,
         },
         {
           name: "現川",
+          nameKana: "うつつがわ",
           lat: 32.79118,
           lng: 129.926453,
         },
         {
           name: "浦上",
+          nameKana: "うらかみ",
           lat: 32.765767,
           lng: 129.863304,
           transfer: true,
@@ -792,6 +926,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西浦上",
+          nameKana: "にしうらかみ",
           lat: 32.790245,
           lng: 129.859206,
           transfer: true,
@@ -799,36 +934,43 @@ export const kyushu: OperatorData = {
         },
         {
           name: "道ノ尾",
+          nameKana: "みちのお",
           lat: 32.804329,
           lng: 129.852997,
         },
         {
           name: "高田",
+          nameKana: "こうだ",
           lat: 32.819475,
           lng: 129.869457,
         },
         {
           name: "長与",
+          nameKana: "ながよ",
           lat: 32.818981,
           lng: 129.879434,
         },
         {
           name: "本川内",
+          nameKana: "ほんかわち",
           lat: 32.831792,
           lng: 129.899916,
         },
         {
           name: "大草",
+          nameKana: "おおくさ",
           lat: 32.860232,
           lng: 129.938972,
         },
         {
           name: "東園",
+          nameKana: "ひがしその",
           lat: 32.847091,
           lng: 129.962591,
         },
         {
           name: "長崎",
+          nameKana: "ながさき",
           lat: 32.75275,
           lng: 129.869056,
           transfer: true,
@@ -845,6 +987,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "門司港",
+          nameKana: "もじこう",
           lat: 33.945138,
           lng: 130.961549,
           transfer: true,
@@ -852,6 +995,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "小森江",
+          nameKana: "こもりえ",
           lat: 33.916352,
           lng: 130.938674,
           transfer: true,
@@ -859,6 +1003,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "門司",
+          nameKana: "もじ",
           lat: 33.904309,
           lng: 130.933438,
           transfer: true,
@@ -866,6 +1011,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "小倉",
+          nameKana: "こくら",
           lat: 33.886756,
           lng: 130.882678,
           transfer: true,
@@ -873,6 +1019,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西小倉",
+          nameKana: "にしこくら",
           lat: 33.888673,
           lng: 130.873897,
           transfer: true,
@@ -880,6 +1027,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南小倉",
+          nameKana: "みなみこくら",
           lat: 33.869972,
           lng: 130.864895,
           transfer: true,
@@ -887,6 +1035,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "城野",
+          nameKana: "じょうの",
           lat: 33.858202,
           lng: 130.886242,
           transfer: true,
@@ -894,31 +1043,37 @@ export const kyushu: OperatorData = {
         },
         {
           name: "安部山公園",
+          nameKana: "あべやまこうえん",
           lat: 33.844078,
           lng: 130.904498,
         },
         {
           name: "下曽根",
+          nameKana: "しもそね",
           lat: 33.832522,
           lng: 130.934829,
         },
         {
           name: "朽網",
+          nameKana: "くさみ",
           lat: 33.807384,
           lng: 130.955025,
         },
         {
           name: "苅田",
+          nameKana: "かんだ",
           lat: 33.784462,
           lng: 130.979016,
         },
         {
           name: "小波瀬西工大前",
+          nameKana: "おばせにしこうだいまえ",
           lat: 33.752992,
           lng: 130.97197,
         },
         {
           name: "行橋",
+          nameKana: "ゆくはし",
           lat: 33.72835,
           lng: 130.970313,
           transfer: true,
@@ -926,151 +1081,181 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南行橋",
+          nameKana: "みなみゆくはし",
           lat: 33.716332,
           lng: 130.981118,
         },
         {
           name: "新田原",
+          nameKana: "しんでんばる",
           lat: 33.695152,
           lng: 131.008316,
         },
         {
           name: "築城",
+          nameKana: "ついき",
           lat: 33.673119,
           lng: 131.038069,
         },
         {
           name: "椎田",
+          nameKana: "しいだ",
           lat: 33.653377,
           lng: 131.057965,
         },
         {
           name: "豊前松江",
+          nameKana: "ぶぜんしょうえ",
           lat: 33.622487,
           lng: 131.095421,
         },
         {
           name: "宇島",
+          nameKana: "うのしま",
           lat: 33.62131,
           lng: 131.126354,
         },
         {
           name: "三毛門",
+          nameKana: "みけかど",
           lat: 33.614597,
           lng: 131.15653,
         },
         {
           name: "吉富",
+          nameKana: "よしとみ",
           lat: 33.604465,
           lng: 131.174012,
         },
         {
           name: "中津",
+          nameKana: "なかつ",
           lat: 33.599202,
           lng: 131.190769,
         },
         {
           name: "東中津",
+          nameKana: "ひがしなかつ",
           lat: 33.58788,
           lng: 131.238664,
         },
         {
           name: "今津",
+          nameKana: "いまづ",
           lat: 33.571929,
           lng: 131.267462,
         },
         {
           name: "天津",
+          nameKana: "あまつ",
           lat: 33.564678,
           lng: 131.292962,
         },
         {
           name: "豊前善光寺",
+          nameKana: "ぶぜんぜんこうじ",
           lat: 33.566479,
           lng: 131.322776,
         },
         {
           name: "柳ケ浦",
+          nameKana: "やなぎがうら",
           lat: 33.564982,
           lng: 131.362665,
         },
         {
           name: "豊前長洲",
+          nameKana: "ぶぜんながす",
           lat: 33.56465,
           lng: 131.383264,
         },
         {
           name: "宇佐",
+          nameKana: "うさ",
           lat: 33.531373,
           lng: 131.41231,
         },
         {
           name: "西屋敷",
+          nameKana: "にしやしき",
           lat: 33.504332,
           lng: 131.429433,
         },
         {
           name: "立石",
+          nameKana: "たていし",
           lat: 33.481829,
           lng: 131.476993,
         },
         {
           name: "中山香",
+          nameKana: "なかやまが",
           lat: 33.448636,
           lng: 131.505721,
         },
         {
           name: "杵築",
+          nameKana: "きつき",
           lat: 33.411081,
           lng: 131.575295,
         },
         {
           name: "大神",
+          nameKana: "おおが",
           lat: 33.383576,
           lng: 131.57524,
         },
         {
           name: "日出",
+          nameKana: "ひじ",
           lat: 33.368921,
           lng: 131.543036,
         },
         {
           name: "暘谷",
+          nameKana: "ようこく",
           lat: 33.370112,
           lng: 131.530581,
         },
         {
           name: "豊後豊岡",
+          nameKana: "ぶんごとよおか",
           lat: 33.361923,
           lng: 131.50137,
         },
         {
           name: "亀川",
+          nameKana: "かめがわ",
           lat: 33.330688,
           lng: 131.493019,
         },
         {
           name: "別府大学",
+          nameKana: "べっぷだいがく",
           lat: 33.31327,
           lng: 131.499255,
         },
         {
           name: "別府",
+          nameKana: "べっぷ",
           lat: 33.279665,
           lng: 131.500319,
         },
         {
           name: "東別府",
+          nameKana: "ひがしべっぷ",
           lat: 33.267753,
           lng: 131.510537,
         },
         {
           name: "西大分",
+          nameKana: "にしおおいた",
           lat: 33.245184,
           lng: 131.582758,
         },
         {
           name: "大分",
+          nameKana: "おおいた",
           lat: 33.232794,
           lng: 131.606595,
           transfer: true,
@@ -1078,86 +1263,103 @@ export const kyushu: OperatorData = {
         },
         {
           name: "牧",
+          nameKana: "まき",
           lat: 33.237006,
           lng: 131.637828,
         },
         {
           name: "高城",
+          nameKana: "たかじょう",
           lat: 33.242837,
           lng: 131.655746,
         },
         {
           name: "鶴崎",
+          nameKana: "つるさき",
           lat: 33.242852,
           lng: 131.686899,
         },
         {
           name: "大在",
+          nameKana: "おおざい",
           lat: 33.243938,
           lng: 131.720487,
         },
         {
           name: "坂ノ市",
+          nameKana: "さかのいち",
           lat: 33.236715,
           lng: 131.751593,
         },
         {
           name: "幸崎",
+          nameKana: "こうざき",
           lat: 33.233844,
           lng: 131.795095,
         },
         {
           name: "佐志生",
+          nameKana: "さしう",
           lat: 33.174957,
           lng: 131.817688,
         },
         {
           name: "下ノ江",
+          nameKana: "したのえ",
           lat: 33.158653,
           lng: 131.811159,
         },
         {
           name: "熊崎",
+          nameKana: "くまさき",
           lat: 33.135768,
           lng: 131.787632,
         },
         {
           name: "上臼杵",
+          nameKana: "かみうすき",
           lat: 33.112499,
           lng: 131.793015,
         },
         {
           name: "臼杵",
+          nameKana: "うすき",
           lat: 33.118496,
           lng: 131.807574,
         },
         {
           name: "津久見",
+          nameKana: "つくみ",
           lat: 33.072853,
           lng: 131.863696,
         },
         {
           name: "日代",
+          nameKana: "ひしろ",
           lat: 33.066024,
           lng: 131.918735,
         },
         {
           name: "浅海井",
+          nameKana: "あざむい",
           lat: 33.043539,
           lng: 131.919236,
         },
         {
           name: "狩生",
+          nameKana: "かりう",
           lat: 33.015334,
           lng: 131.904908,
         },
         {
           name: "海崎",
+          nameKana: "かいざき",
           lat: 32.996041,
           lng: 131.88796,
         },
         {
           name: "佐伯",
+          nameKana: "さいき",
           lat: 32.972521,
           lng: 131.901857,
           transfer: true,
@@ -1174,6 +1376,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "佐伯",
+          nameKana: "さいき",
           lat: 32.972521,
           lng: 131.901857,
           transfer: true,
@@ -1181,141 +1384,169 @@ export const kyushu: OperatorData = {
         },
         {
           name: "上岡",
+          nameKana: "かみおか",
           lat: 32.956302,
           lng: 131.8616,
         },
         {
           name: "直見",
+          nameKana: "なおみ",
           lat: 32.928396,
           lng: 131.807899,
         },
         {
           name: "直川",
+          nameKana: "なおかわ",
           lat: 32.898667,
           lng: 131.779529,
         },
         {
           name: "重岡",
+          nameKana: "しげおか",
           lat: 32.840339,
           lng: 131.715499,
         },
         {
           name: "宗太郎",
+          nameKana: "そうたろう",
           lat: 32.78628,
           lng: 131.706735,
         },
         {
           name: "市棚",
+          nameKana: "いちたな",
           lat: 32.728336,
           lng: 131.710255,
         },
         {
           name: "北川",
+          nameKana: "きたがわ",
           lat: 32.690558,
           lng: 131.697691,
         },
         {
           name: "日向長井",
+          nameKana: "ひゅうがながい",
           lat: 32.664325,
           lng: 131.700156,
         },
         {
           name: "北延岡",
+          nameKana: "きたのべおか",
           lat: 32.630276,
           lng: 131.689869,
         },
         {
           name: "延岡",
+          nameKana: "のべおか",
           lat: 32.589944,
           lng: 131.672442,
         },
         {
           name: "南延岡",
+          nameKana: "みなみのべおか",
           lat: 32.559272,
           lng: 131.676829,
         },
         {
           name: "旭ケ丘",
+          nameKana: "あさひがおか",
           lat: 32.52812,
           lng: 131.681386,
         },
         {
           name: "土々呂",
+          nameKana: "ととろ",
           lat: 32.507832,
           lng: 131.675009,
         },
         {
           name: "門川",
+          nameKana: "かどがわ",
           lat: 32.477381,
           lng: 131.653972,
         },
         {
           name: "日向市",
+          nameKana: "ひゅうがし",
           lat: 32.4258,
           lng: 131.62784,
         },
         {
           name: "財光寺",
+          nameKana: "ざいこうじ",
           lat: 32.405654,
           lng: 131.627602,
         },
         {
           name: "南日向",
+          nameKana: "みなみひゅうが",
           lat: 32.369867,
           lng: 131.627784,
         },
         {
           name: "美々津",
+          nameKana: "みみつ",
           lat: 32.325892,
           lng: 131.602279,
         },
         {
           name: "東都農",
+          nameKana: "ひがしつの",
           lat: 32.290109,
           lng: 131.582054,
         },
         {
           name: "都農",
+          nameKana: "つの",
           lat: 32.251085,
           lng: 131.568429,
         },
         {
           name: "川南",
+          nameKana: "かわみなみ",
           lat: 32.192224,
           lng: 131.553321,
         },
         {
           name: "高鍋",
+          nameKana: "たかなべ",
           lat: 32.122866,
           lng: 131.533927,
         },
         {
           name: "日向新富",
+          nameKana: "ひゅうがしんとみ",
           lat: 32.072479,
           lng: 131.501627,
         },
         {
           name: "佐土原",
+          nameKana: "さどわら",
           lat: 32.022412,
           lng: 131.477504,
         },
         {
           name: "日向住吉",
+          nameKana: "ひゅうがすみよし",
           lat: 31.991244,
           lng: 131.457986,
         },
         {
           name: "蓮ケ池",
+          nameKana: "はすがいけ",
           lat: 31.960113,
           lng: 131.442802,
         },
         {
           name: "宮崎神宮",
+          nameKana: "みやざきじんぐう",
           lat: 31.938067,
           lng: 131.430223,
         },
         {
           name: "宮崎",
+          nameKana: "みやざき",
           lat: 31.915742,
           lng: 131.431975,
           transfer: true,
@@ -1323,6 +1554,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南宮崎",
+          nameKana: "みなみみやざき",
           lat: 31.895097,
           lng: 131.422329,
           transfer: true,
@@ -1330,46 +1562,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "加納",
+          nameKana: "かのう",
           lat: 31.876084,
           lng: 131.406246,
         },
         {
           name: "清武",
+          nameKana: "きよたけ",
           lat: 31.859418,
           lng: 131.38931,
         },
         {
           name: "日向沓掛",
+          nameKana: "ひゅうがくつかけ",
           lat: 31.842241,
           lng: 131.344763,
         },
         {
           name: "田野",
+          nameKana: "たの",
           lat: 31.838438,
           lng: 131.304255,
         },
         {
           name: "青井岳",
+          nameKana: "あおいだけ",
           lat: 31.827922,
           lng: 131.218153,
         },
         {
           name: "山之口",
+          nameKana: "やまのくち",
           lat: 31.782582,
           lng: 131.152735,
         },
         {
           name: "餅原",
+          nameKana: "もちばる",
           lat: 31.757094,
           lng: 131.132508,
         },
         {
           name: "三股",
+          nameKana: "みまた",
           lat: 31.733794,
           lng: 131.119384,
         },
         {
           name: "都城",
+          nameKana: "みやこのじょう",
           lat: 31.73657,
           lng: 131.073992,
           transfer: true,
@@ -1377,46 +1618,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西都城",
+          nameKana: "にしみやこのじょう",
           lat: 31.723381,
           lng: 131.057027,
         },
         {
           name: "五十市",
+          nameKana: "いそいち",
           lat: 31.718448,
           lng: 131.033833,
         },
         {
           name: "財部",
+          nameKana: "たからべ",
           lat: 31.728796,
           lng: 130.991374,
         },
         {
           name: "北俣",
+          nameKana: "きたまた",
           lat: 31.745007,
           lng: 130.960034,
         },
         {
           name: "大隅大川原",
+          nameKana: "おおすみおおかわら",
           lat: 31.772767,
           lng: 130.924355,
         },
         {
           name: "北永野田",
+          nameKana: "きたながのだ",
           lat: 31.782118,
           lng: 130.87444,
         },
         {
           name: "霧島神宮",
+          nameKana: "きりしまじんぐう",
           lat: 31.818181,
           lng: 130.836939,
         },
         {
           name: "国分",
+          nameKana: "こくぶ",
           lat: 31.743657,
           lng: 130.763447,
         },
         {
           name: "隼人",
+          nameKana: "はやと",
           lat: 31.743893,
           lng: 130.740316,
           transfer: true,
@@ -1424,41 +1674,49 @@ export const kyushu: OperatorData = {
         },
         {
           name: "加治木",
+          nameKana: "かじき",
           lat: 31.739271,
           lng: 130.670752,
         },
         {
           name: "錦江",
+          nameKana: "きんこう",
           lat: 31.73691,
           lng: 130.6533,
         },
         {
           name: "帖佐",
+          nameKana: "ちょうさ",
           lat: 31.72697,
           lng: 130.632716,
         },
         {
           name: "姶良",
+          nameKana: "あいら",
           lat: 31.715246,
           lng: 130.623259,
         },
         {
           name: "重富",
+          nameKana: "しげとみ",
           lat: 31.702717,
           lng: 130.61408,
         },
         {
           name: "竜ケ水",
+          nameKana: "りゅうがみず",
           lat: 31.64743,
           lng: 130.604239,
         },
         {
           name: "仙巌園",
+          nameKana: "せんがんえん",
           lat: 31.617688540278,
           lng: 130.57710296566,
         },
         {
           name: "鹿児島",
+          nameKana: "かごしま",
           lat: 31.602098,
           lng: 130.564112,
           transfer: true,
@@ -1466,6 +1724,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "鹿児島中央",
+          nameKana: "かごしまちゅうおう",
           lat: 31.583727,
           lng: 130.541789,
           transfer: true,
@@ -1482,6 +1741,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "桂川",
+          nameKana: "けいせん",
           lat: 33.584705,
           lng: 130.662752,
           transfer: true,
@@ -1489,36 +1749,43 @@ export const kyushu: OperatorData = {
         },
         {
           name: "筑前大分",
+          nameKana: "ちくぜんだいぶ",
           lat: 33.590006,
           lng: 130.630196,
         },
         {
           name: "九郎原",
+          nameKana: "くろうばる",
           lat: 33.592492,
           lng: 130.612439,
         },
         {
           name: "城戸南蔵院前",
+          nameKana: "きどなんぞういんまえ",
           lat: 33.61826,
           lng: 130.572076,
         },
         {
           name: "筑前山手",
+          nameKana: "ちくぜんやまて",
           lat: 33.622251,
           lng: 130.55693,
         },
         {
           name: "篠栗",
+          nameKana: "ささぐり",
           lat: 33.624045,
           lng: 130.524515,
         },
         {
           name: "門松",
+          nameKana: "かどまつ",
           lat: 33.620531,
           lng: 130.496529,
         },
         {
           name: "長者原",
+          nameKana: "ちょうじゃばる",
           lat: 33.613567,
           lng: 130.477848,
           transfer: true,
@@ -1526,16 +1793,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "原町",
+          nameKana: "はるまち",
           lat: 33.611748,
           lng: 130.470949,
         },
         {
           name: "柚須",
+          nameKana: "ゆす",
           lat: 33.613206,
           lng: 130.445031,
         },
         {
           name: "吉塚",
+          nameKana: "よしづか",
           lat: 33.607142,
           lng: 130.423674,
           transfer: true,
@@ -1543,6 +1813,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "博多",
+          nameKana: "はかた",
           lat: 33.590002,
           lng: 130.420622,
           transfer: true,
@@ -1559,6 +1830,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "姪浜",
+          nameKana: "めいのはま",
           lat: 33.583764,
           lng: 130.32521,
           transfer: true,
@@ -1566,96 +1838,115 @@ export const kyushu: OperatorData = {
         },
         {
           name: "下山門",
+          nameKana: "しもやまと",
           lat: 33.58193,
           lng: 130.308217,
         },
         {
           name: "今宿",
+          nameKana: "いまじゅく",
           lat: 33.579449,
           lng: 130.273531,
         },
         {
           name: "九大学研都市",
+          nameKana: "きゅうだいがっけんとし",
           lat: 33.578178,
           lng: 130.259832,
         },
         {
           name: "周船寺",
+          nameKana: "すせんじ",
           lat: 33.570762,
           lng: 130.245766,
         },
         {
           name: "波多江",
+          nameKana: "はたえ",
           lat: 33.563876,
           lng: 130.226374,
         },
         {
           name: "糸島高校前",
+          nameKana: "いとしまこうこうまえ",
           lat: 33.560222,
           lng: 130.211917,
         },
         {
           name: "筑前前原",
+          nameKana: "ちくぜんまえばる",
           lat: 33.557018,
           lng: 130.199332,
         },
         {
           name: "美咲が丘",
+          nameKana: "みさきがおか",
           lat: 33.549624,
           lng: 130.185039,
         },
         {
           name: "加布里",
+          nameKana: "かふり",
           lat: 33.54381,
           lng: 130.176738,
         },
         {
           name: "一貴山",
+          nameKana: "いきさん",
           lat: 33.534294,
           lng: 130.168236,
         },
         {
           name: "筑前深江",
+          nameKana: "ちくぜんふかえ",
           lat: 33.515099,
           lng: 130.139303,
         },
         {
           name: "大入",
+          nameKana: "だいにゅう",
           lat: 33.50891,
           lng: 130.105576,
         },
         {
           name: "福吉",
+          nameKana: "ふくよし",
           lat: 33.50166,
           lng: 130.079832,
         },
         {
           name: "鹿家",
+          nameKana: "しかか",
           lat: 33.484391,
           lng: 130.047904,
         },
         {
           name: "浜崎",
+          nameKana: "はまさき",
           lat: 33.446871,
           lng: 130.037369,
         },
         {
           name: "虹ノ松原",
+          nameKana: "にじのまつばら",
           lat: 33.441035,
           lng: 130.016271,
         },
         {
           name: "東唐津",
+          nameKana: "ひがしからつ",
           lat: 33.439409,
           lng: 129.996876,
         },
         {
           name: "和多田",
+          nameKana: "わただ",
           lat: 33.437048,
           lng: 129.980616,
         },
         {
           name: "唐津",
+          nameKana: "からつ",
           lat: 33.446038,
           lng: 129.96835,
           transfer: true,
@@ -1663,6 +1954,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西唐津",
+          nameKana: "にしからつ",
           lat: 33.46142,
           lng: 129.957748,
           transfer: true,
@@ -1679,31 +1971,37 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "若松",
+          nameKana: "わかまつ",
           lat: 33.901179,
           lng: 130.806307,
         },
         {
           name: "藤ノ木",
+          nameKana: "ふじのき",
           lat: 33.893426,
           lng: 130.781838,
         },
         {
           name: "奥洞海",
+          nameKana: "おくどうかい",
           lat: 33.889165,
           lng: 130.76492,
         },
         {
           name: "二島",
+          nameKana: "ふたじま",
           lat: 33.889687,
           lng: 130.748413,
         },
         {
           name: "本城",
+          nameKana: "ほんじょう",
           lat: 33.875135,
           lng: 130.722899,
         },
         {
           name: "折尾",
+          nameKana: "おりお",
           lat: 33.863629,
           lng: 130.713109,
           transfer: true,
@@ -1720,6 +2018,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "折尾",
+          nameKana: "おりお",
           lat: 33.863629,
           lng: 130.713109,
           transfer: true,
@@ -1727,36 +2026,43 @@ export const kyushu: OperatorData = {
         },
         {
           name: "東水巻",
+          nameKana: "ひがしみずまき",
           lat: 33.840852,
           lng: 130.70826,
         },
         {
           name: "中間",
+          nameKana: "なかま",
           lat: 33.828132,
           lng: 130.709302,
         },
         {
           name: "筑前垣生",
+          nameKana: "ちくぜんはぶ",
           lat: 33.818385,
           lng: 130.702269,
         },
         {
           name: "鞍手",
+          nameKana: "くらて",
           lat: 33.797699,
           lng: 130.699412,
         },
         {
           name: "筑前植木",
+          nameKana: "ちくぜんうえき",
           lat: 33.777174,
           lng: 130.70795,
         },
         {
           name: "新入",
+          nameKana: "しんにゅう",
           lat: 33.763498,
           lng: 130.714152,
         },
         {
           name: "直方",
+          nameKana: "のおがた",
           lat: 33.748639,
           lng: 130.724339,
           transfer: true,
@@ -1764,26 +2070,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "勝野",
+          nameKana: "かつの",
           lat: 33.728338,
           lng: 130.715893,
         },
         {
           name: "小竹",
+          nameKana: "こたけ",
           lat: 33.697227,
           lng: 130.710338,
         },
         {
           name: "鯰田",
+          nameKana: "なまずた",
           lat: 33.669341,
           lng: 130.703163,
         },
         {
           name: "浦田",
+          nameKana: "うらた",
           lat: 33.655801,
           lng: 130.699277,
         },
         {
           name: "新飯塚",
+          nameKana: "しんいいづか",
           lat: 33.644261,
           lng: 130.694278,
           transfer: true,
@@ -1791,16 +2102,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "飯塚",
+          nameKana: "いいづか",
           lat: 33.628487,
           lng: 130.689545,
         },
         {
           name: "天道",
+          nameKana: "てんとう",
           lat: 33.605342,
           lng: 130.67787,
         },
         {
           name: "桂川",
+          nameKana: "けいせん",
           lat: 33.584705,
           lng: 130.662752,
           transfer: true,
@@ -1817,6 +2131,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "桂川",
+          nameKana: "けいせん",
           lat: 33.584705,
           lng: 130.662752,
           transfer: true,
@@ -1824,21 +2139,25 @@ export const kyushu: OperatorData = {
         },
         {
           name: "上穂波",
+          nameKana: "かみほなみ",
           lat: 33.566909,
           lng: 130.645151,
         },
         {
           name: "筑前内野",
+          nameKana: "ちくぜんうちの",
           lat: 33.539967,
           lng: 130.63793,
         },
         {
           name: "筑前山家",
+          nameKana: "ちくぜんやまえ",
           lat: 33.477472,
           lng: 130.574185,
         },
         {
           name: "原田",
+          nameKana: "はるだ",
           lat: 33.451769,
           lng: 130.539376,
           transfer: true,
@@ -1855,6 +2174,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "久留米",
+          nameKana: "くるめ",
           lat: 33.319778,
           lng: 130.501408,
           transfer: true,
@@ -1862,181 +2182,217 @@ export const kyushu: OperatorData = {
         },
         {
           name: "久留米高校前",
+          nameKana: "くるめこうこうまえ",
           lat: 33.298431,
           lng: 130.517109,
         },
         {
           name: "南久留米",
+          nameKana: "みなみくるめ",
           lat: 33.302857,
           lng: 130.532204,
         },
         {
           name: "久留米大学前",
+          nameKana: "くるめだいがくまえ",
           lat: 33.310843,
           lng: 130.548876,
         },
         {
           name: "御井",
+          nameKana: "みい",
           lat: 33.312813,
           lng: 130.562361,
         },
         {
           name: "善導寺",
+          nameKana: "ぜんどうじ",
           lat: 33.320141,
           lng: 130.608851,
         },
         {
           name: "筑後草野",
+          nameKana: "ちくごくさの",
           lat: 33.321988,
           lng: 130.642143,
         },
         {
           name: "田主丸",
+          nameKana: "たぬしまる",
           lat: 33.338871,
           lng: 130.692353,
         },
         {
           name: "筑後吉井",
+          nameKana: "ちくごよしい",
           lat: 33.341014,
           lng: 130.752193,
         },
         {
           name: "うきは",
+          nameKana: "うきは",
           lat: 33.33506,
           lng: 130.789107,
         },
         {
           name: "筑後大石",
+          nameKana: "ちくごおおいし",
           lat: 33.347215,
           lng: 130.816899,
         },
         {
           name: "夜明",
+          nameKana: "よあけ",
           lat: 33.319541,
           lng: 130.866195,
         },
         {
           name: "光岡",
+          nameKana: "てるおか",
           lat: 33.327668,
           lng: 130.919901,
         },
         {
           name: "日田",
+          nameKana: "ひた",
           lat: 33.317014,
           lng: 130.938786,
         },
         {
           name: "豊後三芳",
+          nameKana: "ぶんごみよし",
           lat: 33.305796,
           lng: 130.951557,
         },
         {
           name: "豊後中川",
+          nameKana: "ぶんごなかがわ",
           lat: 33.284482,
           lng: 131.005834,
         },
         {
           name: "天ケ瀬",
+          nameKana: "あまがせ",
           lat: 33.254747,
           lng: 131.023877,
         },
         {
           name: "杉河内",
+          nameKana: "すぎかわち",
           lat: 33.264391,
           lng: 131.065535,
         },
         {
           name: "北山田",
+          nameKana: "きたやまだ",
           lat: 33.282004,
           lng: 131.100917,
         },
         {
           name: "豊後森",
+          nameKana: "ぶんごもり",
           lat: 33.282954,
           lng: 131.155202,
         },
         {
           name: "恵良",
+          nameKana: "えら",
           lat: 33.255224,
           lng: 131.174566,
         },
         {
           name: "引治",
+          nameKana: "ひきじ",
           lat: 33.229188,
           lng: 131.183589,
         },
         {
           name: "豊後中村",
+          nameKana: "ぶんごなかむら",
           lat: 33.226016,
           lng: 131.207548,
         },
         {
           name: "野矢",
+          nameKana: "のや",
           lat: 33.240391,
           lng: 131.25186,
         },
         {
           name: "由布院",
+          nameKana: "ゆふいん",
           lat: 33.262551,
           lng: 131.355024,
         },
         {
           name: "南由布",
+          nameKana: "みなみゆふ",
           lat: 33.242116,
           lng: 131.333544,
         },
         {
           name: "湯平",
+          nameKana: "ゆのひら",
           lat: 33.197339,
           lng: 131.354395,
         },
         {
           name: "庄内",
+          nameKana: "しょうない",
           lat: 33.185126,
           lng: 131.402063,
         },
         {
           name: "天神山",
+          nameKana: "てんじんやま",
           lat: 33.187154,
           lng: 131.438821,
         },
         {
           name: "小野屋",
+          nameKana: "おのや",
           lat: 33.185258,
           lng: 131.452546,
         },
         {
           name: "鬼瀬",
+          nameKana: "おにがせ",
           lat: 33.195721,
           lng: 131.485586,
         },
         {
           name: "向之原",
+          nameKana: "むかいのはる",
           lat: 33.196625,
           lng: 131.514075,
         },
         {
           name: "豊後国分",
+          nameKana: "ぶんごこくぶ",
           lat: 33.195065,
           lng: 131.551219,
         },
         {
           name: "賀来",
+          nameKana: "かく",
           lat: 33.213091,
           lng: 131.562455,
         },
         {
           name: "南大分",
+          nameKana: "みなみおおいた",
           lat: 33.214276,
           lng: 131.585913,
         },
         {
           name: "古国府",
+          nameKana: "ふるごう",
           lat: 33.220707,
           lng: 131.608306,
         },
         {
           name: "大分",
+          nameKana: "おおいた",
           lat: 33.232794,
           lng: 131.606595,
           transfer: true,
@@ -2053,6 +2409,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "小倉",
+          nameKana: "こくら",
           lat: 33.886756,
           lng: 130.882678,
           transfer: true,
@@ -2060,6 +2417,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西小倉",
+          nameKana: "にしこくら",
           lat: 33.888673,
           lng: 130.873897,
           transfer: true,
@@ -2067,6 +2425,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南小倉",
+          nameKana: "みなみこくら",
           lat: 33.869972,
           lng: 130.864895,
           transfer: true,
@@ -2074,6 +2433,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "城野",
+          nameKana: "じょうの",
           lat: 33.858202,
           lng: 130.886242,
           transfer: true,
@@ -2081,46 +2441,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "石田",
+          nameKana: "いしだ",
           lat: 33.831985,
           lng: 130.888847,
         },
         {
           name: "志井公園",
+          nameKana: "しいこうえん",
           lat: 33.818636,
           lng: 130.879793,
         },
         {
           name: "志井",
+          nameKana: "しい",
           lat: 33.803569,
           lng: 130.874596,
         },
         {
           name: "石原町",
+          nameKana: "いしはらまち",
           lat: 33.784959,
           lng: 130.865972,
         },
         {
           name: "呼野",
+          nameKana: "よぶの",
           lat: 33.754949,
           lng: 130.861796,
         },
         {
           name: "採銅所",
+          nameKana: "さいどうしょ",
           lat: 33.707489,
           lng: 130.853151,
         },
         {
           name: "香春",
+          nameKana: "かわら",
           lat: 33.666003,
           lng: 130.846972,
         },
         {
           name: "一本松",
+          nameKana: "いっぽんまつ",
           lat: 33.65607,
           lng: 130.835781,
         },
         {
           name: "田川伊田",
+          nameKana: "たがわいた",
           lat: 33.642046,
           lng: 130.817688,
           transfer: true,
@@ -2128,6 +2497,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "田川後藤寺",
+          nameKana: "たがわごとうじ",
           lat: 33.630294,
           lng: 130.800232,
           transfer: true,
@@ -2135,21 +2505,25 @@ export const kyushu: OperatorData = {
         },
         {
           name: "池尻",
+          nameKana: "いけじり",
           lat: 33.613121,
           lng: 130.805704,
         },
         {
           name: "豊前川崎",
+          nameKana: "ぶぜんかわさき",
           lat: 33.596782,
           lng: 130.821989,
         },
         {
           name: "西添田",
+          nameKana: "にしそえだ",
           lat: 33.57344,
           lng: 130.847124,
         },
         {
           name: "添田",
+          nameKana: "そえだ",
           lat: 33.567352,
           lng: 130.856454,
         },
@@ -2164,6 +2538,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "新飯塚",
+          nameKana: "しんいいづか",
           lat: 33.644261,
           lng: 130.694278,
           transfer: true,
@@ -2171,26 +2546,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "上三緒",
+          nameKana: "かみみお",
           lat: 33.622254,
           lng: 130.713824,
         },
         {
           name: "下鴨生",
+          nameKana: "しもかもお",
           lat: 33.614811,
           lng: 130.728209,
         },
         {
           name: "筑前庄内",
+          nameKana: "ちくぜんしょうない",
           lat: 33.61635,
           lng: 130.738475,
         },
         {
           name: "船尾",
+          nameKana: "ふなお",
           lat: 33.630221,
           lng: 130.767387,
         },
         {
           name: "田川後藤寺",
+          nameKana: "たがわごとうじ",
           lat: 33.630294,
           lng: 130.800232,
           transfer: true,
@@ -2207,26 +2587,31 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "西戸崎",
+          nameKana: "さいとざき",
           lat: 33.650139,
           lng: 130.35777,
         },
         {
           name: "海ノ中道",
+          nameKana: "うみのなかみち",
           lat: 33.664241,
           lng: 130.361633,
         },
         {
           name: "雁ノ巣",
+          nameKana: "がんのす",
           lat: 33.683872,
           lng: 130.403312,
         },
         {
           name: "奈多",
+          nameKana: "なた",
           lat: 33.68646,
           lng: 130.411983,
         },
         {
           name: "和白",
+          nameKana: "わじろ",
           lat: 33.688888,
           lng: 130.429918,
           transfer: true,
@@ -2234,6 +2619,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "香椎",
+          nameKana: "かしい",
           lat: 33.659228,
           lng: 130.444063,
           transfer: true,
@@ -2250,6 +2636,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "香椎",
+          nameKana: "かしい",
           lat: 33.659228,
           lng: 130.444063,
           transfer: true,
@@ -2257,26 +2644,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "香椎神宮",
+          nameKana: "かしいじんぐう",
           lat: 33.649544,
           lng: 130.45271,
         },
         {
           name: "舞松原",
+          nameKana: "まいまつばら",
           lat: 33.645386,
           lng: 130.455141,
         },
         {
           name: "土井",
+          nameKana: "どい",
           lat: 33.634968,
           lng: 130.466068,
         },
         {
           name: "伊賀",
+          nameKana: "いが",
           lat: 33.620806,
           lng: 130.473575,
         },
         {
           name: "長者原",
+          nameKana: "ちょうじゃばる",
           lat: 33.613567,
           lng: 130.477848,
           transfer: true,
@@ -2284,26 +2676,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "酒殿",
+          nameKana: "さかど",
           lat: 33.602652,
           lng: 130.486348,
         },
         {
           name: "須恵",
+          nameKana: "すえ",
           lat: 33.596803,
           lng: 130.498077,
         },
         {
           name: "須恵中央",
+          nameKana: "すえちゅうおう",
           lat: 33.587296,
           lng: 130.505146,
         },
         {
           name: "新原",
+          nameKana: "しんばる",
           lat: 33.579061,
           lng: 130.508835,
         },
         {
           name: "宇美",
+          nameKana: "うみ",
           lat: 33.569251,
           lng: 130.513426,
         },
@@ -2318,6 +2715,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "江北",
+          nameKana: "こうほく",
           lat: 33.21919,
           lng: 130.160858,
           transfer: true,
@@ -2325,41 +2723,49 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大町",
+          nameKana: "おおまち",
           lat: 33.212462,
           lng: 130.106398,
         },
         {
           name: "北方",
+          nameKana: "きたがた",
           lat: 33.21625,
           lng: 130.083206,
         },
         {
           name: "高橋",
+          nameKana: "たかはし",
           lat: 33.2081,
           lng: 130.042315,
         },
         {
           name: "武雄温泉",
+          nameKana: "たけおおんせん",
           lat: 33.196151,
           lng: 130.022322,
         },
         {
           name: "永尾",
+          nameKana: "ながお",
           lat: 33.193439,
           lng: 129.980476,
         },
         {
           name: "三間坂",
+          nameKana: "みまさか",
           lat: 33.194722,
           lng: 129.947798,
         },
         {
           name: "上有田",
+          nameKana: "かみありた",
           lat: 33.190286,
           lng: 129.905404,
         },
         {
           name: "有田",
+          nameKana: "ありた",
           lat: 33.183779,
           lng: 129.881787,
           transfer: true,
@@ -2367,11 +2773,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "三河内",
+          nameKana: "みかわち",
           lat: 33.150268,
           lng: 129.82919,
         },
         {
           name: "早岐",
+          nameKana: "はいき",
           lat: 33.134155,
           lng: 129.79929,
           transfer: true,
@@ -2379,16 +2787,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大塔",
+          nameKana: "だいとう",
           lat: 33.14917,
           lng: 129.782014,
         },
         {
           name: "日宇",
+          nameKana: "ひう",
           lat: 33.157418,
           lng: 129.758276,
         },
         {
           name: "佐世保",
+          nameKana: "させぼ",
           lat: 33.163868,
           lng: 129.725667,
           transfer: true,
@@ -2405,6 +2816,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "西唐津",
+          nameKana: "にしからつ",
           lat: 33.46142,
           lng: 129.957748,
           transfer: true,
@@ -2412,6 +2824,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "唐津",
+          nameKana: "からつ",
           lat: 33.446038,
           lng: 129.96835,
           transfer: true,
@@ -2419,6 +2832,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "鬼塚",
+          nameKana: "おにづか",
           lat: 33.421166,
           lng: 129.987138,
           transfer: true,
@@ -2426,6 +2840,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "山本",
+          nameKana: "やまもと",
           lat: 33.393472,
           lng: 129.981122,
           transfer: true,
@@ -2433,51 +2848,61 @@ export const kyushu: OperatorData = {
         },
         {
           name: "肥前久保",
+          nameKana: "ひぜんくぼ",
           lat: 33.355738,
           lng: 130.000104,
         },
         {
           name: "西相知",
+          nameKana: "にしおうち",
           lat: 33.347686,
           lng: 129.99053,
         },
         {
           name: "佐里",
+          nameKana: "さり",
           lat: 33.337476,
           lng: 129.978545,
         },
         {
           name: "駒鳴",
+          nameKana: "こまなき",
           lat: 33.319455,
           lng: 129.972469,
         },
         {
           name: "大川野",
+          nameKana: "おおかわの",
           lat: 33.307298,
           lng: 129.976724,
         },
         {
           name: "肥前長野",
+          nameKana: "ひぜんながの",
           lat: 33.29571,
           lng: 129.971033,
         },
         {
           name: "桃川",
+          nameKana: "もものかわ",
           lat: 33.271809,
           lng: 129.956683,
         },
         {
           name: "金石原",
+          nameKana: "かないしはら",
           lat: 33.265354,
           lng: 129.935012,
         },
         {
           name: "上伊万里",
+          nameKana: "かみいまり",
           lat: 33.270066,
           lng: 129.892515,
         },
         {
           name: "伊万里",
+          nameKana: "いまり",
           lat: 33.271852,
           lng: 129.876718,
           transfer: true,
@@ -2494,6 +2919,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "佐賀",
+          nameKana: "さが",
           lat: 33.264212,
           lng: 130.297608,
           transfer: true,
@@ -2501,6 +2927,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "鍋島",
+          nameKana: "なべしま",
           lat: 33.259062,
           lng: 130.265702,
           transfer: true,
@@ -2508,6 +2935,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "バルーンさが",
+          nameKana: "ばるーんさが",
           lat: 33.257795,
           lng: 130.248942,
           transfer: true,
@@ -2515,6 +2943,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "久保田",
+          nameKana: "くぼた",
           lat: 33.255717,
           lng: 130.229594,
           transfer: true,
@@ -2522,46 +2951,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "小城",
+          nameKana: "おぎ",
           lat: 33.285749,
           lng: 130.198679,
         },
         {
           name: "東多久",
+          nameKana: "ひがしたく",
           lat: 33.285418,
           lng: 130.143188,
         },
         {
           name: "中多久",
+          nameKana: "なかたく",
           lat: 33.28336,
           lng: 130.112308,
         },
         {
           name: "多久",
+          nameKana: "たく",
           lat: 33.28838,
           lng: 130.096195,
         },
         {
           name: "厳木",
+          nameKana: "きゅうらぎ",
           lat: 33.323451,
           lng: 130.060148,
         },
         {
           name: "岩屋",
+          nameKana: "いわや",
           lat: 33.330775,
           lng: 130.038436,
         },
         {
           name: "相知",
+          nameKana: "おうち",
           lat: 33.347012,
           lng: 130.019337,
         },
         {
           name: "本牟田部",
+          nameKana: "ほんむたべ",
           lat: 33.372266,
           lng: 129.996529,
         },
         {
           name: "山本",
+          nameKana: "やまもと",
           lat: 33.393472,
           lng: 129.981122,
           transfer: true,
@@ -2569,6 +3007,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "鬼塚",
+          nameKana: "おにづか",
           lat: 33.421166,
           lng: 129.987138,
           transfer: true,
@@ -2576,6 +3015,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "唐津",
+          nameKana: "からつ",
           lat: 33.446038,
           lng: 129.96835,
           transfer: true,
@@ -2583,6 +3023,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西唐津",
+          nameKana: "にしからつ",
           lat: 33.46142,
           lng: 129.957748,
           transfer: true,
@@ -2599,6 +3040,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "早岐",
+          nameKana: "はいき",
           lat: 33.134155,
           lng: 129.79929,
           transfer: true,
@@ -2606,71 +3048,85 @@ export const kyushu: OperatorData = {
         },
         {
           name: "ハウステンボス",
+          nameKana: "はうすてんぼす",
           lat: 33.091923,
           lng: 129.796458,
         },
         {
           name: "南風崎",
+          nameKana: "はえのさき",
           lat: 33.086984,
           lng: 129.80111,
         },
         {
           name: "小串郷",
+          nameKana: "おぐしごう",
           lat: 33.063779,
           lng: 129.834347,
         },
         {
           name: "川棚",
+          nameKana: "かわたな",
           lat: 33.068368,
           lng: 129.864112,
         },
         {
           name: "彼杵",
+          nameKana: "そのぎ",
           lat: 33.039875,
           lng: 129.914541,
         },
         {
           name: "千綿",
+          nameKana: "ちわた",
           lat: 33.013107,
           lng: 129.945573,
         },
         {
           name: "松原",
+          nameKana: "まつばら",
           lat: 32.97738,
           lng: 129.94619,
         },
         {
           name: "大村車両基地",
+          nameKana: "おおむらしゃりょうきち",
           lat: 32.955222,
           lng: 129.944528,
         },
         {
           name: "竹松",
+          nameKana: "たけまつ",
           lat: 32.939959,
           lng: 129.953035,
         },
         {
           name: "新大村",
+          nameKana: "しんおおむら",
           lat: 32.932778,
           lng: 129.956944,
         },
         {
           name: "諏訪",
+          nameKana: "すわ",
           lat: 32.923627,
           lng: 129.960277,
         },
         {
           name: "大村",
+          nameKana: "おおむら",
           lat: 32.911439,
           lng: 129.962238,
         },
         {
           name: "岩松",
+          nameKana: "いわまつ",
           lat: 32.890513,
           lng: 129.981218,
         },
         {
           name: "諫早",
+          nameKana: "いさはや",
           lat: 32.851018,
           lng: 130.041596,
           transfer: true,
@@ -2687,6 +3143,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "熊本",
+          nameKana: "くまもと",
           lat: 32.789207,
           lng: 130.688499,
           transfer: true,
@@ -2694,16 +3151,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "平成",
+          nameKana: "へいせい",
           lat: 32.781569,
           lng: 130.703539,
         },
         {
           name: "南熊本",
+          nameKana: "みなみくまもと",
           lat: 32.785159,
           lng: 130.711577,
         },
         {
           name: "新水前寺",
+          nameKana: "しんすいぜんじ",
           lat: 32.793363,
           lng: 130.725901,
           transfer: true,
@@ -2711,51 +3171,61 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水前寺",
+          nameKana: "すいぜんじ",
           lat: 32.796962,
           lng: 130.729823,
         },
         {
           name: "東海学園前",
+          nameKana: "とうかいがくえんまえ",
           lat: 32.811267,
           lng: 130.742684,
         },
         {
           name: "竜田口",
+          nameKana: "たつたぐち",
           lat: 32.820455,
           lng: 130.746933,
         },
         {
           name: "武蔵塚",
+          nameKana: "むさしづか",
           lat: 32.850008,
           lng: 130.77024,
         },
         {
           name: "光の森",
+          nameKana: "ひかりのもり",
           lat: 32.857834,
           lng: 130.786722,
         },
         {
           name: "三里木",
+          nameKana: "さんりぎ",
           lat: 32.861634,
           lng: 130.796321,
         },
         {
           name: "原水",
+          nameKana: "はらみず",
           lat: 32.870625,
           lng: 130.829029,
         },
         {
           name: "肥後大津",
+          nameKana: "ひごおおづ",
           lat: 32.877512,
           lng: 130.866218,
         },
         {
           name: "瀬田",
+          nameKana: "せた",
           lat: 32.872567,
           lng: 130.914044,
         },
         {
           name: "立野",
+          nameKana: "たての",
           lat: 32.87757,
           lng: 130.965403,
           transfer: true,
@@ -2763,116 +3233,139 @@ export const kyushu: OperatorData = {
         },
         {
           name: "赤水",
+          nameKana: "あかみず",
           lat: 32.913261,
           lng: 130.9929,
         },
         {
           name: "市ノ川",
+          nameKana: "いちのかわ",
           lat: 32.928048,
           lng: 131.00759,
         },
         {
           name: "内牧",
+          nameKana: "うちのまき",
           lat: 32.942136,
           lng: 131.043648,
         },
         {
           name: "阿蘇",
+          nameKana: "あそ",
           lat: 32.937393,
           lng: 131.079959,
         },
         {
           name: "いこいの村",
+          nameKana: "いこいのむら",
           lat: 32.93659,
           lng: 131.094666,
         },
         {
           name: "宮地",
+          nameKana: "みやじ",
           lat: 32.937305,
           lng: 131.117476,
         },
         {
           name: "波野",
+          nameKana: "なみの",
           lat: 32.938562,
           lng: 131.195298,
         },
         {
           name: "滝水",
+          nameKana: "たきみず",
           lat: 32.933342,
           lng: 131.24263,
         },
         {
           name: "豊後荻",
+          nameKana: "ぶんごおぎ",
           lat: 32.926889,
           lng: 131.297657,
         },
         {
           name: "玉来",
+          nameKana: "たまらい",
           lat: 32.947847,
           lng: 131.376369,
         },
         {
           name: "豊後竹田",
+          nameKana: "ぶんごたけた",
           lat: 32.970906,
           lng: 131.389814,
         },
         {
           name: "朝地",
+          nameKana: "あさじ",
           lat: 33.004356,
           lng: 131.432305,
         },
         {
           name: "緒方",
+          nameKana: "おがた",
           lat: 32.971255,
           lng: 131.476678,
         },
         {
           name: "豊後清川",
+          nameKana: "ぶんごきよかわ",
           lat: 32.972974,
           lng: 131.523558,
         },
         {
           name: "三重町",
+          nameKana: "みえまち",
           lat: 32.983616,
           lng: 131.584389,
         },
         {
           name: "菅尾",
+          nameKana: "すがお",
           lat: 33.014328,
           lng: 131.616716,
         },
         {
           name: "犬飼",
+          nameKana: "いぬかい",
           lat: 33.078158,
           lng: 131.63667,
         },
         {
           name: "竹中",
+          nameKana: "たけなか",
           lat: 33.121529,
           lng: 131.649557,
         },
         {
           name: "中判田",
+          nameKana: "なかはんだ",
           lat: 33.164564,
           lng: 131.638735,
         },
         {
           name: "大分大学前",
+          nameKana: "おおいただいがくまえ",
           lat: 33.177131,
           lng: 131.618742,
         },
         {
           name: "敷戸",
+          nameKana: "しきど",
           lat: 33.18811,
           lng: 131.615128,
         },
         {
           name: "滝尾",
+          nameKana: "たきお",
           lat: 33.209495,
           lng: 131.62311,
         },
         {
           name: "大分",
+          nameKana: "おおいた",
           lat: 33.232794,
           lng: 131.606595,
           transfer: true,
@@ -2889,6 +3382,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "熊本",
+          nameKana: "くまもと",
           lat: 32.789207,
           lng: 130.688499,
           transfer: true,
@@ -2896,6 +3390,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "川尻",
+          nameKana: "かわしり",
           lat: 32.743772,
           lng: 130.679907,
           transfer: true,
@@ -2903,6 +3398,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "富合",
+          nameKana: "とみあい",
           lat: 32.713658,
           lng: 130.672808,
           transfer: true,
@@ -2910,6 +3406,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "宇土",
+          nameKana: "うと",
           lat: 32.694237,
           lng: 130.669148,
           transfer: true,
@@ -2917,41 +3414,49 @@ export const kyushu: OperatorData = {
         },
         {
           name: "緑川",
+          nameKana: "みどりかわ",
           lat: 32.694006,
           lng: 130.631339,
         },
         {
           name: "住吉",
+          nameKana: "すみよし",
           lat: 32.702066,
           lng: 130.597963,
         },
         {
           name: "肥後長浜",
+          nameKana: "ひごながはま",
           lat: 32.690694,
           lng: 130.560302,
         },
         {
           name: "網田",
+          nameKana: "おうだ",
           lat: 32.667493,
           lng: 130.547004,
         },
         {
           name: "赤瀬",
+          nameKana: "あかせ",
           lat: 32.653252,
           lng: 130.510167,
         },
         {
           name: "石打ダム",
+          nameKana: "いしうちだむ",
           lat: 32.642653,
           lng: 130.507013,
         },
         {
           name: "波多浦",
+          nameKana: "はたうら",
           lat: 32.615524,
           lng: 130.488117,
         },
         {
           name: "三角",
+          nameKana: "みすみ",
           lat: 32.607616,
           lng: 130.469872,
         },
@@ -2966,6 +3471,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "八代",
+          nameKana: "やつしろ",
           lat: 32.503805,
           lng: 130.621609,
           transfer: true,
@@ -2973,71 +3479,85 @@ export const kyushu: OperatorData = {
         },
         {
           name: "段",
+          nameKana: "だん",
           lat: 32.468101,
           lng: 130.645736,
         },
         {
           name: "坂本",
+          nameKana: "さかもと",
           lat: 32.435149,
           lng: 130.657898,
         },
         {
           name: "葉木",
+          nameKana: "はき",
           lat: 32.410293,
           lng: 130.645444,
         },
         {
           name: "鎌瀬",
+          nameKana: "かませ",
           lat: 32.391092,
           lng: 130.65458,
         },
         {
           name: "瀬戸石",
+          nameKana: "せといし",
           lat: 32.371474,
           lng: 130.646004,
         },
         {
           name: "海路",
+          nameKana: "かいじ",
           lat: 32.349407,
           lng: 130.61928,
         },
         {
           name: "吉尾",
+          nameKana: "よしお",
           lat: 32.330958,
           lng: 130.600352,
         },
         {
           name: "白石",
+          nameKana: "しろいし",
           lat: 32.305694,
           lng: 130.608328,
         },
         {
           name: "球泉洞",
+          nameKana: "きゅうせんどう",
           lat: 32.267817,
           lng: 130.608191,
         },
         {
           name: "一勝地",
+          nameKana: "いっしょうち",
           lat: 32.250231,
           lng: 130.652399,
         },
         {
           name: "那良口",
+          nameKana: "ならぐち",
           lat: 32.243732,
           lng: 130.667479,
         },
         {
           name: "渡",
+          nameKana: "わたり",
           lat: 32.236631,
           lng: 130.694801,
         },
         {
           name: "西人吉",
+          nameKana: "にしひとよし",
           lat: 32.22841,
           lng: 130.725707,
         },
         {
           name: "人吉",
+          nameKana: "ひとよしおんせん",
           lat: 32.216142,
           lng: 130.753797,
           transfer: true,
@@ -3045,21 +3565,25 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大畑",
+          nameKana: "おこば",
           lat: 32.16493,
           lng: 130.787722,
         },
         {
           name: "矢岳",
+          nameKana: "やたけ",
           lat: 32.104278,
           lng: 130.769799,
         },
         {
           name: "真幸",
+          nameKana: "まさき",
           lat: 32.074544,
           lng: 130.72914,
         },
         {
           name: "吉松",
+          nameKana: "よしまつ",
           lat: 32.012026,
           lng: 130.738104,
           transfer: true,
@@ -3076,6 +3600,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "吉松",
+          nameKana: "よしまつ",
           lat: 32.012026,
           lng: 130.738104,
           transfer: true,
@@ -3083,46 +3608,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "栗野",
+          nameKana: "くりの",
           lat: 31.950575,
           lng: 130.723663,
         },
         {
           name: "大隅横川",
+          nameKana: "おおすみよこがわ",
           lat: 31.906487,
           lng: 130.702825,
         },
         {
           name: "植村",
+          nameKana: "うえむら",
           lat: 31.890175,
           lng: 130.724065,
         },
         {
           name: "霧島温泉",
+          nameKana: "きりしまおんせん",
           lat: 31.86815,
           lng: 130.734329,
         },
         {
           name: "嘉例川",
+          nameKana: "かれいがわ",
           lat: 31.826939,
           lng: 130.723021,
         },
         {
           name: "中福良",
+          nameKana: "なかふくら",
           lat: 31.813818,
           lng: 130.733174,
         },
         {
           name: "表木山",
+          nameKana: "ひょうきやま",
           lat: 31.796176,
           lng: 130.745324,
         },
         {
           name: "日当山",
+          nameKana: "ひなたやま",
           lat: 31.763402,
           lng: 130.749836,
         },
         {
           name: "隼人",
+          nameKana: "はやと",
           lat: 31.743893,
           lng: 130.740316,
           transfer: true,
@@ -3139,6 +3673,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "宮崎",
+          nameKana: "みやざき",
           lat: 31.915742,
           lng: 131.431975,
           transfer: true,
@@ -3146,6 +3681,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南宮崎",
+          nameKana: "みなみみやざき",
           lat: 31.895097,
           lng: 131.422329,
           transfer: true,
@@ -3153,6 +3689,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "田吉",
+          nameKana: "たよし",
           lat: 31.878202,
           lng: 131.430697,
           transfer: true,
@@ -3160,6 +3697,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "宮崎空港",
+          nameKana: "みやざきくうこう",
           lat: 31.87251,
           lng: 131.440555,
         },
@@ -3174,6 +3712,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "宮崎",
+          nameKana: "みやざき",
           lat: 31.915742,
           lng: 131.431975,
           transfer: true,
@@ -3181,6 +3720,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南宮崎",
+          nameKana: "みなみみやざき",
           lat: 31.895097,
           lng: 131.422329,
           transfer: true,
@@ -3188,6 +3728,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "田吉",
+          nameKana: "たよし",
           lat: 31.878202,
           lng: 131.430697,
           transfer: true,
@@ -3195,131 +3736,157 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南方",
+          nameKana: "みなみかた",
           lat: 31.859592,
           lng: 131.434378,
         },
         {
           name: "木花",
+          nameKana: "きばな",
           lat: 31.831544,
           lng: 131.43679,
         },
         {
           name: "運動公園",
+          nameKana: "うんどうこうえん",
           lat: 31.819678,
           lng: 131.442629,
         },
         {
           name: "曽山寺",
+          nameKana: "そさんじ",
           lat: 31.813401,
           lng: 131.448309,
         },
         {
           name: "子供の国",
+          nameKana: "こどものくに",
           lat: 31.807394,
           lng: 131.457005,
         },
         {
           name: "青島",
+          nameKana: "あおしま",
           lat: 31.799801,
           lng: 131.467121,
         },
         {
           name: "折生迫",
+          nameKana: "おりゅうざこ",
           lat: 31.789357,
           lng: 131.467477,
         },
         {
           name: "内海",
+          nameKana: "うちうみ",
           lat: 31.758508,
           lng: 131.46742,
         },
         {
           name: "小内海",
+          nameKana: "こうちうみ",
           lat: 31.737838,
           lng: 131.466127,
         },
         {
           name: "伊比井",
+          nameKana: "いびい",
           lat: 31.711069,
           lng: 131.456159,
         },
         {
           name: "北郷",
+          nameKana: "きたごう",
           lat: 31.678267,
           lng: 131.373565,
         },
         {
           name: "内之田",
+          nameKana: "うちのだ",
           lat: 31.642551,
           lng: 131.372594,
         },
         {
           name: "飫肥",
+          nameKana: "おび",
           lat: 31.627216,
           lng: 131.361506,
         },
         {
           name: "日南",
+          nameKana: "にちなん",
           lat: 31.603076,
           lng: 131.381267,
         },
         {
           name: "油津",
+          nameKana: "あぶらつ",
           lat: 31.586883,
           lng: 131.396169,
         },
         {
           name: "大堂津",
+          nameKana: "おおどうつ",
           lat: 31.556897,
           lng: 131.382093,
         },
         {
           name: "南郷",
+          nameKana: "なんごう",
           lat: 31.535927,
           lng: 131.372157,
         },
         {
           name: "谷之口",
+          nameKana: "たにのくち",
           lat: 31.533372,
           lng: 131.344615,
         },
         {
           name: "榎原",
+          nameKana: "よわら",
           lat: 31.534688,
           lng: 131.306526,
         },
         {
           name: "日向大束",
+          nameKana: "ひゅうがおおつか",
           lat: 31.510584,
           lng: 131.248745,
         },
         {
           name: "日向北方",
+          nameKana: "ひゅうがきたかた",
           lat: 31.483037,
           lng: 131.24318,
         },
         {
           name: "串間",
+          nameKana: "くしま",
           lat: 31.462684,
           lng: 131.230448,
         },
         {
           name: "福島今町",
+          nameKana: "ふくしまいままち",
           lat: 31.456906,
           lng: 131.20333,
         },
         {
           name: "福島高松",
+          nameKana: "ふくしまたかまつ",
           lat: 31.458619,
           lng: 131.178301,
         },
         {
           name: "大隅夏井",
+          nameKana: "おおすみなつい",
           lat: 31.469801,
           lng: 131.136449,
         },
         {
           name: "志布志",
+          nameKana: "しぶし",
           lat: 31.47285,
           lng: 131.097864,
         },
@@ -3334,6 +3901,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "都城",
+          nameKana: "みやこのじょう",
           lat: 31.73657,
           lng: 131.073992,
           transfer: true,
@@ -3341,81 +3909,97 @@ export const kyushu: OperatorData = {
         },
         {
           name: "日向庄内",
+          nameKana: "ひゅうがしょうない",
           lat: 31.762056,
           lng: 131.06156,
         },
         {
           name: "谷頭",
+          nameKana: "たにがしら",
           lat: 31.789348,
           lng: 131.053901,
         },
         {
           name: "万ケ塚",
+          nameKana: "まんがつか",
           lat: 31.817215,
           lng: 131.063991,
         },
         {
           name: "東高崎",
+          nameKana: "ひがしたかさき",
           lat: 31.840946,
           lng: 131.064998,
         },
         {
           name: "高崎新田",
+          nameKana: "たかさきしんでん",
           lat: 31.875693,
           lng: 131.062669,
         },
         {
           name: "日向前田",
+          nameKana: "ひゅうがまえだ",
           lat: 31.908605,
           lng: 131.040386,
         },
         {
           name: "高原",
+          nameKana: "たかはる",
           lat: 31.926899,
           lng: 130.999012,
         },
         {
           name: "広原",
+          nameKana: "ひろわら",
           lat: 31.957766,
           lng: 130.984877,
         },
         {
           name: "小林",
+          nameKana: "こばやし",
           lat: 31.990749,
           lng: 130.976132,
         },
         {
           name: "西小林",
+          nameKana: "にしこばやし",
           lat: 32.009409,
           lng: 130.921829,
         },
         {
           name: "えびの飯野",
+          nameKana: "えびのいいの",
           lat: 32.030295,
           lng: 130.871178,
         },
         {
           name: "えびの上江",
+          nameKana: "えびのうわえ",
           lat: 32.035519,
           lng: 130.850133,
         },
         {
           name: "えびの",
+          nameKana: "えびの",
           lat: 32.042242,
           lng: 130.81621,
         },
         {
           name: "京町温泉",
+          nameKana: "きょうまちおんせん",
           lat: 32.045379,
           lng: 130.767911,
         },
         {
           name: "鶴丸",
+          nameKana: "つるまる",
           lat: 32.030394,
           lng: 130.748524,
         },
         {
           name: "吉松",
+          nameKana: "よしまつ",
           lat: 32.012026,
           lng: 130.738104,
           transfer: true,
@@ -3432,6 +4016,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "鹿児島中央",
+          nameKana: "かごしまちゅうおう",
           lat: 31.583727,
           lng: 130.541789,
           transfer: true,
@@ -3439,6 +4024,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "郡元",
+          nameKana: "こおりもと",
           lat: 31.565607,
           lng: 130.541976,
           transfer: true,
@@ -3446,6 +4032,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南鹿児島",
+          nameKana: "みなみかごしま",
           lat: 31.554786,
           lng: 130.543714,
           transfer: true,
@@ -3453,6 +4040,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "宇宿",
+          nameKana: "うすき",
           lat: 31.544234,
           lng: 130.536458,
           transfer: true,
@@ -3460,161 +4048,193 @@ export const kyushu: OperatorData = {
         },
         {
           name: "谷山",
+          nameKana: "たにやま",
           lat: 31.527094,
           lng: 130.51886,
         },
         {
           name: "慈眼寺",
+          nameKana: "じげんじ",
           lat: 31.517286,
           lng: 130.506212,
         },
         {
           name: "坂之上",
+          nameKana: "さかのうえ",
           lat: 31.500454,
           lng: 130.507801,
         },
         {
           name: "五位野",
+          nameKana: "ごいの",
           lat: 31.475201,
           lng: 130.504096,
         },
         {
           name: "平川",
+          nameKana: "ひらかわ",
           lat: 31.450132,
           lng: 130.51367,
         },
         {
           name: "瀬々串",
+          nameKana: "せせくし",
           lat: 31.421839,
           lng: 130.522894,
         },
         {
           name: "中名",
+          nameKana: "なかみょう",
           lat: 31.393591,
           lng: 130.535086,
         },
         {
           name: "喜入",
+          nameKana: "きいれ",
           lat: 31.371468,
           lng: 130.538867,
         },
         {
           name: "前之浜",
+          nameKana: "まえのはま",
           lat: 31.343433,
           lng: 130.556995,
         },
         {
           name: "生見",
+          nameKana: "ぬくみ",
           lat: 31.307292,
           lng: 130.577878,
         },
         {
           name: "薩摩今和泉",
+          nameKana: "さつまいまいずみ",
           lat: 31.29068,
           lng: 130.599002,
         },
         {
           name: "宮ケ浜",
+          nameKana: "みやがはま",
           lat: 31.277218,
           lng: 130.619807,
         },
         {
           name: "二月田",
+          nameKana: "にがつでん",
           lat: 31.254339,
           lng: 130.630082,
         },
         {
           name: "指宿",
+          nameKana: "いぶすき",
           lat: 31.236925,
           lng: 130.642637,
         },
         {
           name: "山川",
+          nameKana: "やまかわ",
           lat: 31.211702,
           lng: 130.630127,
         },
         {
           name: "大山",
+          nameKana: "おおやま",
           lat: 31.195011,
           lng: 130.5992,
         },
         {
           name: "西大山",
+          nameKana: "にしおおやま",
           lat: 31.190269,
           lng: 130.57621,
         },
         {
           name: "薩摩川尻",
+          nameKana: "さつまかわしり",
           lat: 31.194791,
           lng: 130.565385,
         },
         {
           name: "東開聞",
+          nameKana: "ひがしかいもん",
           lat: 31.200924,
           lng: 130.549897,
         },
         {
           name: "開聞",
+          nameKana: "かいもん",
           lat: 31.203932,
           lng: 130.534737,
         },
         {
           name: "入野",
+          nameKana: "いりの",
           lat: 31.204293,
           lng: 130.518788,
         },
         {
           name: "頴娃",
+          nameKana: "えい",
           lat: 31.229085,
           lng: 130.500378,
         },
         {
           name: "西頴娃",
+          nameKana: "にしえい",
           lat: 31.241025,
           lng: 130.491351,
         },
         {
           name: "御領",
+          nameKana: "ごりょう",
           lat: 31.252032,
           lng: 130.468747,
         },
         {
           name: "石垣",
+          nameKana: "いしかき",
           lat: 31.259228,
           lng: 130.445227,
         },
         {
           name: "水成川",
+          nameKana: "みずなりかわ",
           lat: 31.257145,
           lng: 130.430695,
         },
         {
           name: "頴娃大川",
+          nameKana: "えいおおかわ",
           lat: 31.257875,
           lng: 130.413394,
         },
         {
           name: "松ケ浦",
+          nameKana: "まつがうら",
           lat: 31.258843,
           lng: 130.394551,
         },
         {
           name: "薩摩塩屋",
+          nameKana: "さつましおや",
           lat: 31.257132,
           lng: 130.376128,
         },
         {
           name: "白沢",
+          nameKana: "しらさわ",
           lat: 31.256898,
           lng: 130.356352,
         },
         {
           name: "薩摩板敷",
+          nameKana: "さつまいたしき",
           lat: 31.262313,
           lng: 130.330993,
         },
         {
           name: "枕崎",
+          nameKana: "まくらざき",
           lat: 31.27215,
           lng: 130.299439,
         },
@@ -3631,11 +4251,13 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "西鉄福岡（天神）",
+          nameKana: "ふくおか",
           lat: 33.588937,
           lng: 130.399733,
         },
         {
           name: "薬院",
+          nameKana: "やくいん",
           lat: 33.581957,
           lng: 130.401683,
           transfer: true,
@@ -3643,56 +4265,67 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西鉄平尾",
+          nameKana: "にしてつひらお",
           lat: 33.573631,
           lng: 130.406254,
         },
         {
           name: "高宮",
+          nameKana: "たかみや",
           lat: 33.567138,
           lng: 130.414743,
         },
         {
           name: "大橋",
+          nameKana: "おおはし",
           lat: 33.559128,
           lng: 130.426559,
         },
         {
           name: "井尻",
+          nameKana: "いじり",
           lat: 33.551896,
           lng: 130.44348,
         },
         {
           name: "雑餉隈",
+          nameKana: "ざっしょのくま",
           lat: 33.547216,
           lng: 130.46262,
         },
         {
           name: "桜並木",
+          nameKana: "さくらなみき",
           lat: 33.544731,
           lng: 130.466439,
         },
         {
           name: "春日原",
+          nameKana: "かすがばる",
           lat: 33.537823,
           lng: 130.473141,
         },
         {
           name: "白木原",
+          nameKana: "しらきばる",
           lat: 33.528541,
           lng: 130.482735,
         },
         {
           name: "下大利",
+          nameKana: "しもおおり",
           lat: 33.522431,
           lng: 130.489248,
         },
         {
           name: "都府楼前",
+          nameKana: "とふろうまえ",
           lat: 33.511677,
           lng: 130.508011,
         },
         {
           name: "西鉄二日市",
+          nameKana: "にしてつふつかいち",
           lat: 33.502192,
           lng: 130.517871,
           transfer: true,
@@ -3700,46 +4333,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "紫",
+          nameKana: "むらさき",
           lat: 33.496009,
           lng: 130.522503,
         },
         {
           name: "朝倉街道",
+          nameKana: "あさくらがいどう",
           lat: 33.484174,
           lng: 130.532548,
         },
         {
           name: "桜台",
+          nameKana: "さくらだい",
           lat: 33.471636,
           lng: 130.542465,
         },
         {
           name: "筑紫",
+          nameKana: "ちくし",
           lat: 33.462682,
           lng: 130.553111,
         },
         {
           name: "津古",
+          nameKana: "つこ",
           lat: 33.446414,
           lng: 130.565538,
         },
         {
           name: "三国が丘",
+          nameKana: "みくにがおか",
           lat: 33.436862,
           lng: 130.563183,
         },
         {
           name: "三沢",
+          nameKana: "みつさわ",
           lat: 33.423227,
           lng: 130.560386,
         },
         {
           name: "大保",
+          nameKana: "おおほ",
           lat: 33.411515,
           lng: 130.558035,
         },
         {
           name: "西鉄小郡",
+          nameKana: "にしてつおごおり",
           lat: 33.39633,
           lng: 130.5536,
           transfer: true,
@@ -3747,16 +4389,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "端間",
+          nameKana: "はたま",
           lat: 33.378907,
           lng: 130.550814,
         },
         {
           name: "味坂",
+          nameKana: "あじさか",
           lat: 33.353143,
           lng: 130.540616,
         },
         {
           name: "宮の陣",
+          nameKana: "みやのじん",
           lat: 33.329456,
           lng: 130.530902,
           transfer: true,
@@ -3764,126 +4409,151 @@ export const kyushu: OperatorData = {
         },
         {
           name: "櫛原",
+          nameKana: "くしわら",
           lat: 33.319592,
           lng: 130.524319,
         },
         {
           name: "西鉄久留米",
+          nameKana: "にしてつくるめ",
           lat: 33.312276,
           lng: 130.521053,
         },
         {
           name: "花畑",
+          nameKana: "はなばたけ",
           lat: 33.306643,
           lng: 130.515972,
         },
         {
           name: "聖マリア病院前",
+          nameKana: "せいまりあびょういんまえ",
           lat: 33.301985,
           lng: 130.509923,
         },
         {
           name: "津福",
+          nameKana: "つぶく",
           lat: 33.296505,
           lng: 130.497788,
         },
         {
           name: "安武",
+          nameKana: "やすたけ",
           lat: 33.286311,
           lng: 130.489061,
         },
         {
           name: "大善寺",
+          nameKana: "だいぜんじ",
           lat: 33.270432,
           lng: 130.473897,
         },
         {
           name: "三潴",
+          nameKana: "みずま",
           lat: 33.255961,
           lng: 130.469386,
         },
         {
           name: "犬塚",
+          nameKana: "いぬづか",
           lat: 33.247387,
           lng: 130.462953,
         },
         {
           name: "大溝",
+          nameKana: "おおみぞ",
           lat: 33.227009,
           lng: 130.449776,
         },
         {
           name: "八丁牟田",
+          nameKana: "はっちょうむた",
           lat: 33.209035,
           lng: 130.437744,
         },
         {
           name: "蒲池",
+          nameKana: "かまち",
           lat: 33.189687,
           lng: 130.422657,
         },
         {
           name: "矢加部",
+          nameKana: "やかべ",
           lat: 33.17418,
           lng: 130.415685,
         },
         {
           name: "西鉄柳川",
+          nameKana: "にしてつやながわ",
           lat: 33.1651,
           lng: 130.419265,
         },
         {
           name: "徳益",
+          nameKana: "とくます",
           lat: 33.15541,
           lng: 130.426676,
         },
         {
           name: "塩塚",
+          nameKana: "しおつか",
           lat: 33.143725,
           lng: 130.431232,
         },
         {
           name: "西鉄中島",
+          nameKana: "にしてつなかしま",
           lat: 33.122444,
           lng: 130.440129,
         },
         {
           name: "江の浦",
+          nameKana: "えのうら",
           lat: 33.108896,
           lng: 130.446565,
         },
         {
           name: "開",
+          nameKana: "ひらき",
           lat: 33.097275,
           lng: 130.453087,
         },
         {
           name: "西鉄渡瀬",
+          nameKana: "にしてつわたぜ",
           lat: 33.086848,
           lng: 130.458729,
         },
         {
           name: "倉永",
+          nameKana: "くらなが",
           lat: 33.07215,
           lng: 130.463749,
         },
         {
           name: "東甘木",
+          nameKana: "ひがしあまぎ",
           lat: 33.062756,
           lng: 130.464491,
         },
         {
           name: "西鉄銀水",
+          nameKana: "にしてつぎんすい",
           lat: 33.050935,
           lng: 130.458139,
         },
         {
           name: "新栄町",
+          nameKana: "しんさかえまち",
           lat: 33.038453,
           lng: 130.450001,
         },
         {
           name: "大牟田",
+          nameKana: "おおむた",
           lat: 33.029701,
           lng: 130.443249,
           transfer: true,
@@ -3900,6 +4570,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "西鉄二日市",
+          nameKana: "にしてつふつかいち",
           lat: 33.502192,
           lng: 130.517871,
           transfer: true,
@@ -3907,11 +4578,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西鉄五条",
+          nameKana: "にしてつごじょう",
           lat: 33.51111,
           lng: 130.526106,
         },
         {
           name: "太宰府",
+          nameKana: "だざいふ",
           lat: 33.51904,
           lng: 130.531406,
         },
@@ -3926,6 +4599,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "宮の陣",
+          nameKana: "みやのじん",
           lat: 33.329456,
           lng: 130.530902,
           transfer: true,
@@ -3933,56 +4607,67 @@ export const kyushu: OperatorData = {
         },
         {
           name: "五郎丸",
+          nameKana: "ごろうまる",
           lat: 33.330433,
           lng: 130.539863,
         },
         {
           name: "学校前",
+          nameKana: "がっこうまえ",
           lat: 33.336305,
           lng: 130.547431,
         },
         {
           name: "古賀茶屋",
+          nameKana: "こがんちゃや",
           lat: 33.34346,
           lng: 130.566388,
         },
         {
           name: "北野",
+          nameKana: "きたの",
           lat: 33.345379,
           lng: 130.582822,
         },
         {
           name: "大城",
+          nameKana: "おおき",
           lat: 33.350915,
           lng: 130.607812,
         },
         {
           name: "金島",
+          nameKana: "かねしま",
           lat: 33.353232,
           lng: 130.623016,
         },
         {
           name: "大堰",
+          nameKana: "おおぜき",
           lat: 33.372278,
           lng: 130.624022,
         },
         {
           name: "本郷",
+          nameKana: "ほんごう",
           lat: 33.385013,
           lng: 130.628893,
         },
         {
           name: "上浦",
+          nameKana: "かみうら",
           lat: 33.398681,
           lng: 130.637115,
         },
         {
           name: "馬田",
+          nameKana: "まだ",
           lat: 33.407541,
           lng: 130.640656,
         },
         {
           name: "甘木",
+          nameKana: "あまぎ",
           lat: 33.418399,
           lng: 130.655074,
           transfer: true,
@@ -3999,6 +4684,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "貝塚",
+          nameKana: "かいづか",
           lat: 33.632906,
           lng: 130.425612,
           transfer: true,
@@ -4006,11 +4692,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "名島",
+          nameKana: "なじま",
           lat: 33.642733,
           lng: 130.431687,
         },
         {
           name: "西鉄千早",
+          nameKana: "にしてつちはや",
           lat: 33.649199,
           lng: 130.440105,
           transfer: true,
@@ -4018,26 +4706,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "香椎宮前",
+          nameKana: "かしいみやまえ",
           lat: 33.65529,
           lng: 130.442674,
         },
         {
           name: "西鉄香椎",
+          nameKana: "にしてつかしい",
           lat: 33.659809,
           lng: 130.441429,
         },
         {
           name: "香椎花園前",
+          nameKana: "かしいかえんまえ",
           lat: 33.669924,
           lng: 130.434396,
         },
         {
           name: "唐の原",
+          nameKana: "とうのはる",
           lat: 33.680059,
           lng: 130.43449,
         },
         {
           name: "和白",
+          nameKana: "わじろ",
           lat: 33.688741,
           lng: 130.42976,
           transfer: true,
@@ -4045,11 +4738,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "三苫",
+          nameKana: "みとま",
           lat: 33.702081,
           lng: 130.422521,
         },
         {
           name: "西鉄新宮",
+          nameKana: "にしてつしんぐう",
           lat: 33.714067,
           lng: 130.436856,
         },
@@ -4066,6 +4761,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "基山",
+          nameKana: "きやま",
           lat: 33.420815,
           lng: 130.532537,
           transfer: true,
@@ -4073,11 +4769,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "立野",
+          nameKana: "たての",
           lat: 33.412412,
           lng: 130.539573,
         },
         {
           name: "小郡",
+          nameKana: "おごおり",
           lat: 33.397555,
           lng: 130.552994,
           transfer: true,
@@ -4085,41 +4783,49 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大板井",
+          nameKana: "おおいたい",
           lat: 33.398452,
           lng: 130.560727,
         },
         {
           name: "松崎",
+          nameKana: "まつざき",
           lat: 33.399654,
           lng: 130.582047,
         },
         {
           name: "今隈",
+          nameKana: "いまぐま",
           lat: 33.404237,
           lng: 130.594426,
         },
         {
           name: "西太刀洗",
+          nameKana: "にしたちあらい",
           lat: 33.40774,
           lng: 130.599153,
         },
         {
           name: "山隈",
+          nameKana: "やまぐま",
           lat: 33.414076,
           lng: 130.609964,
         },
         {
           name: "太刀洗",
+          nameKana: "たちあらい",
           lat: 33.413868,
           lng: 130.618768,
         },
         {
           name: "高田",
+          nameKana: "たかた",
           lat: 33.414218,
           lng: 130.63402,
         },
         {
           name: "甘木",
+          nameKana: "あまぎ",
           lat: 33.419295,
           lng: 130.653325,
           transfer: true,
@@ -4138,6 +4844,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "直方",
+          nameKana: "のおがた",
           lat: 33.747461,
           lng: 130.725015,
           transfer: true,
@@ -4145,46 +4852,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "南直方御殿口",
+          nameKana: "みなみのおがたごてんぐち",
           lat: 33.738729,
           lng: 130.724903,
         },
         {
           name: "あかぢ",
+          nameKana: "あかぢ",
           lat: 33.727366,
           lng: 130.72455,
         },
         {
           name: "藤棚",
+          nameKana: "ふじたな",
           lat: 33.722017,
           lng: 130.735291,
         },
         {
           name: "中泉",
+          nameKana: "なかいずみ",
           lat: 33.720992,
           lng: 130.742871,
         },
         {
           name: "市場",
+          nameKana: "いちば",
           lat: 33.708074,
           lng: 130.759328,
         },
         {
           name: "ふれあい生力",
+          nameKana: "ふれあいしょうりき",
           lat: 33.700112,
           lng: 130.765567,
         },
         {
           name: "赤池",
+          nameKana: "あかいけ",
           lat: 33.69206,
           lng: 130.768675,
         },
         {
           name: "人見",
+          nameKana: "ひとみ",
           lat: 33.687316,
           lng: 130.771105,
         },
         {
           name: "金田",
+          nameKana: "かなだ",
           lat: 33.682805,
           lng: 130.776491,
           transfer: true,
@@ -4192,26 +4908,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "上金田",
+          nameKana: "かみかなだ",
           lat: 33.672435,
           lng: 130.789172,
         },
         {
           name: "糒",
+          nameKana: "ほしい",
           lat: 33.664744,
           lng: 130.799177,
         },
         {
           name: "田川市立病院",
+          nameKana: "たがわしりつびょういん",
           lat: 33.660436,
           lng: 130.802697,
         },
         {
           name: "下伊田",
+          nameKana: "しもいた",
           lat: 33.651965,
           lng: 130.807016,
         },
         {
           name: "田川伊田",
+          nameKana: "たがわいた",
           lat: 33.642046,
           lng: 130.817688,
           transfer: true,
@@ -4228,6 +4949,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "金田",
+          nameKana: "かなだ",
           lat: 33.682805,
           lng: 130.776491,
           transfer: true,
@@ -4235,26 +4957,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "豊前大熊",
+          nameKana: "ぶぜんおおくま",
           lat: 33.672646,
           lng: 130.780387,
         },
         {
           name: "松山",
+          nameKana: "まつやま",
           lat: 33.668496,
           lng: 130.780537,
         },
         {
           name: "糸田",
+          nameKana: "いとだ",
           lat: 33.656481,
           lng: 130.785773,
         },
         {
           name: "大藪",
+          nameKana: "おおやぶ",
           lat: 33.64712,
           lng: 130.797642,
         },
         {
           name: "田川後藤寺",
+          nameKana: "たがわごとうじ",
           lat: 33.630294,
           lng: 130.800232,
           transfer: true,
@@ -4271,6 +4998,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "田川伊田",
+          nameKana: "たがわいた",
           lat: 33.642046,
           lng: 130.817688,
           transfer: true,
@@ -4278,81 +5006,97 @@ export const kyushu: OperatorData = {
         },
         {
           name: "上伊田",
+          nameKana: "かみいた",
           lat: 33.648079,
           lng: 130.83017,
         },
         {
           name: "勾金",
+          nameKana: "まがりかね",
           lat: 33.651568,
           lng: 130.841939,
         },
         {
           name: "柿下温泉口",
+          nameKana: "かきしたおんせんぐち",
           lat: 33.651593,
           lng: 130.854116,
         },
         {
           name: "内田",
+          nameKana: "うちだ",
           lat: 33.637367,
           lng: 130.864302,
         },
         {
           name: "赤",
+          nameKana: "あか",
           lat: 33.617703,
           lng: 130.871827,
         },
         {
           name: "油須原",
+          nameKana: "ゆすばる",
           lat: 33.612765,
           lng: 130.884384,
         },
         {
           name: "源じいの森",
+          nameKana: "げんじいのもり",
           lat: 33.616179,
           lng: 130.895972,
         },
         {
           name: "崎山",
+          nameKana: "さきやま",
           lat: 33.636285,
           lng: 130.917903,
         },
         {
           name: "犀川",
+          nameKana: "さいがわ",
           lat: 33.650689,
           lng: 130.939337,
         },
         {
           name: "東犀川三四郎",
+          nameKana: "ひがしさいがわさんしろう",
           lat: 33.661385,
           lng: 130.948966,
         },
         {
           name: "新豊津",
+          nameKana: "しんとよつ",
           lat: 33.679717,
           lng: 130.963987,
         },
         {
           name: "豊津",
+          nameKana: "とよつ",
           lat: 33.687505,
           lng: 130.962984,
         },
         {
           name: "今川河童",
+          nameKana: "いまがわかっぱ",
           lat: 33.702983,
           lng: 130.965517,
         },
         {
           name: "美夜古泉",
+          nameKana: "みやこいずみ",
           lat: 33.709108,
           lng: 130.969052,
         },
         {
           name: "令和コスタ行橋",
+          nameKana: "れいわこすたゆくはし",
           lat: 33.716389,
           lng: 130.973278,
         },
         {
           name: "行橋",
+          nameKana: "ゆくはし",
           lat: 33.72835,
           lng: 130.970313,
           transfer: true,
@@ -4369,6 +5113,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "九州鉄道記念館",
+          nameKana: "きゅうしゅうてつどうきねんかん",
           lat: 33.944392,
           lng: 130.962439,
           transfer: true,
@@ -4376,16 +5121,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "出光美術館",
+          nameKana: "いでみつびじゅつかん",
           lat: 33.947792,
           lng: 130.965292,
         },
         {
           name: "ノーフォーク広場",
+          nameKana: "のーふぉーくひろば",
           lat: 33.955973,
           lng: 130.964254,
         },
         {
           name: "関門海峡めかり",
+          nameKana: "かんもんかいきょうめかり",
           lat: 33.960627,
           lng: 130.967347,
         },
@@ -4402,16 +5150,19 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "福岡空港",
+          nameKana: "ふくおかくうこう",
           lat: 33.59718,
           lng: 130.448501,
         },
         {
           name: "東比恵",
+          nameKana: "ひがしひえ",
           lat: 33.589958,
           lng: 130.43128,
         },
         {
           name: "博多",
+          nameKana: "はかた",
           lat: 33.590204,
           lng: 130.42085,
           transfer: true,
@@ -4419,11 +5170,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "祇園",
+          nameKana: "ぎおん",
           lat: 33.594124,
           lng: 130.414614,
         },
         {
           name: "中洲川端",
+          nameKana: "なかすかわばた",
           lat: 33.594749,
           lng: 130.406418,
           transfer: true,
@@ -4431,41 +5184,49 @@ export const kyushu: OperatorData = {
         },
         {
           name: "天神",
+          nameKana: "てんじん",
           lat: 33.591346,
           lng: 130.39906,
         },
         {
           name: "赤坂",
+          nameKana: "あかさか",
           lat: 33.589124,
           lng: 130.391005,
         },
         {
           name: "大濠公園",
+          nameKana: "おおほりこうえん",
           lat: 33.589957,
           lng: 130.378784,
         },
         {
           name: "唐人町",
+          nameKana: "とうじんまち",
           lat: 33.590235,
           lng: 130.370451,
         },
         {
           name: "西新",
+          nameKana: "にしじん",
           lat: 33.583846,
           lng: 130.359619,
         },
         {
           name: "藤崎",
+          nameKana: "ふじさき",
           lat: 33.581347,
           lng: 130.348231,
         },
         {
           name: "室見",
+          nameKana: "むろみ",
           lat: 33.581069,
           lng: 130.340176,
         },
         {
           name: "姪浜",
+          nameKana: "めいのはま",
           lat: 33.583764,
           lng: 130.32521,
           transfer: true,
@@ -4482,6 +5243,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "中洲川端",
+          nameKana: "なかすかわばた",
           lat: 33.594749,
           lng: 130.406418,
           transfer: true,
@@ -4489,31 +5251,37 @@ export const kyushu: OperatorData = {
         },
         {
           name: "呉服町",
+          nameKana: "ごふくまち",
           lat: 33.59829,
           lng: 130.409892,
         },
         {
           name: "千代県庁口",
+          nameKana: "ちよけんちょうぐち",
           lat: 33.602456,
           lng: 130.414336,
         },
         {
           name: "馬出九大病院前",
+          nameKana: "まいだしきゅうだいびょういんまえ",
           lat: 33.6094,
           lng: 130.419336,
         },
         {
           name: "箱崎宮前",
+          nameKana: "はこざきみやまえ",
           lat: 33.615788,
           lng: 130.419613,
         },
         {
           name: "箱崎九大前",
+          nameKana: "はこざききゅうだいまえ",
           lat: 33.622177,
           lng: 130.421002,
         },
         {
           name: "貝塚",
+          nameKana: "かいづか",
           lat: 33.632906,
           lng: 130.425612,
           transfer: true,
@@ -4530,71 +5298,85 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "橋本",
+          nameKana: "はしもと",
           lat: 33.555205,
           lng: 130.321064,
         },
         {
           name: "次郎丸",
+          nameKana: "じろうまる",
           lat: 33.552497,
           lng: 130.329538,
         },
         {
           name: "賀茂",
+          nameKana: "かも",
           lat: 33.55048,
           lng: 130.337879,
         },
         {
           name: "野芥",
+          nameKana: "のけ",
           lat: 33.548111,
           lng: 130.347007,
         },
         {
           name: "梅林",
+          nameKana: "うめばやし",
           lat: 33.545806,
           lng: 130.35494,
         },
         {
           name: "福大前",
+          nameKana: "ふくだいまえ",
           lat: 33.54747,
           lng: 130.362228,
         },
         {
           name: "七隈",
+          nameKana: "ななくま",
           lat: 33.552819,
           lng: 130.361628,
         },
         {
           name: "金山",
+          nameKana: "かなやま",
           lat: 33.559371,
           lng: 130.361561,
         },
         {
           name: "茶山",
+          nameKana: "ちゃやま",
           lat: 33.566065,
           lng: 130.36543,
         },
         {
           name: "別府",
+          nameKana: "べふ",
           lat: 33.57417,
           lng: 130.369629,
         },
         {
           name: "六本松",
+          nameKana: "ろっぽんまつ",
           lat: 33.577678,
           lng: 130.377287,
         },
         {
           name: "桜坂",
+          nameKana: "さくらざか",
           lat: 33.577292,
           lng: 130.386819,
         },
         {
           name: "薬院大通",
+          nameKana: "やくいんおおどおり",
           lat: 33.580406,
           lng: 130.396158,
         },
         {
           name: "薬院",
+          nameKana: "やくいん",
           lat: 33.581747,
           lng: 130.401878,
           transfer: true,
@@ -4602,21 +5384,25 @@ export const kyushu: OperatorData = {
         },
         {
           name: "渡辺通",
+          nameKana: "わたなべどおり",
           lat: 33.583969,
           lng: 130.404843,
         },
         {
           name: "天神南",
+          nameKana: "てんじんみなみ",
           lat: 33.588197,
           lng: 130.401727,
         },
         {
           name: "櫛田神社前",
+          nameKana: "くしだじんじゃまえ",
           lat: 33.591694,
           lng: 130.410917,
         },
         {
           name: "博多",
+          nameKana: "はかた",
           lat: 33.590204,
           lng: 130.42085,
           transfer: true,
@@ -4635,6 +5421,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "小倉",
+          nameKana: "こくら",
           lat: 33.88674,
           lng: 130.882141,
           transfer: true,
@@ -4642,61 +5429,73 @@ export const kyushu: OperatorData = {
         },
         {
           name: "平和通",
+          nameKana: "へいわどおり",
           lat: 33.883159,
           lng: 130.881246,
         },
         {
           name: "旦過",
+          nameKana: "たんが",
           lat: 33.880623,
           lng: 130.880194,
         },
         {
           name: "香春口三萩野",
+          nameKana: "かわらぐちみはぎの",
           lat: 33.873174,
           lng: 130.880563,
         },
         {
           name: "片野",
+          nameKana: "かたの",
           lat: 33.865511,
           lng: 130.880039,
         },
         {
           name: "城野",
+          nameKana: "じょうの",
           lat: 33.858398,
           lng: 130.879601,
         },
         {
           name: "北方",
+          nameKana: "きたがた",
           lat: 33.84908,
           lng: 130.878039,
         },
         {
           name: "競馬場前",
+          nameKana: "けいばじょうまえ",
           lat: 33.842878,
           lng: 130.876526,
         },
         {
           name: "守恒",
+          nameKana: "もりつね",
           lat: 33.836648,
           lng: 130.87287,
         },
         {
           name: "徳力公団前",
+          nameKana: "とくりきこうだんまえ",
           lat: 33.830421,
           lng: 130.867554,
         },
         {
           name: "徳力嵐山口",
+          nameKana: "とくりきあらしやまぐち",
           lat: 33.824744,
           lng: 130.863694,
         },
         {
           name: "志井",
+          nameKana: "しい",
           lat: 33.822556,
           lng: 130.871345,
         },
         {
           name: "企救丘",
+          nameKana: "きくがおか",
           lat: 33.819708,
           lng: 130.877532,
         },
@@ -4713,6 +5512,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "黒崎駅前",
+          nameKana: "くろさきえきまえ",
           lat: 33.86644,
           lng: 130.765459,
           transfer: true,
@@ -4720,101 +5520,121 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西黒崎",
+          nameKana: "にしくろさき",
           lat: 33.866309,
           lng: 130.761418,
         },
         {
           name: "熊西",
+          nameKana: "くまにし",
           lat: 33.866101,
           lng: 130.757902,
         },
         {
           name: "萩原",
+          nameKana: "はぎわら",
           lat: 33.861173,
           lng: 130.749186,
         },
         {
           name: "穴生",
+          nameKana: "あのお",
           lat: 33.857352,
           lng: 130.744942,
         },
         {
           name: "森下",
+          nameKana: "もりした",
           lat: 33.853885,
           lng: 130.741092,
         },
         {
           name: "今池",
+          nameKana: "いまいけ",
           lat: 33.845258,
           lng: 130.739582,
         },
         {
           name: "永犬丸",
+          nameKana: "えいのまる",
           lat: 33.838865,
           lng: 130.738071,
         },
         {
           name: "三ヶ森",
+          nameKana: "さんがもり",
           lat: 33.834776,
           lng: 130.735982,
         },
         {
           name: "西山",
+          nameKana: "にしやま",
           lat: 33.829393,
           lng: 130.732274,
         },
         {
           name: "通谷",
+          nameKana: "とおりたに",
           lat: 33.822994,
           lng: 130.726978,
         },
         {
           name: "東中間",
+          nameKana: "ひがしなかま",
           lat: 33.820019,
           lng: 130.721317,
         },
         {
           name: "筑豊中間",
+          nameKana: "ちくほうなかま",
           lat: 33.816647,
           lng: 130.716562,
         },
         {
           name: "希望が丘高校前",
+          nameKana: "きぼうがおかこうこうまえ",
           lat: 33.808681,
           lng: 130.71151,
         },
         {
           name: "筑豊香月",
+          nameKana: "ちくほうかつき",
           lat: 33.799502,
           lng: 130.719099,
         },
         {
           name: "楠橋",
+          nameKana: "くすばし",
           lat: 33.789259,
           lng: 130.724523,
         },
         {
           name: "新木屋瀬",
+          nameKana: "しんこやのせ",
           lat: 33.783468,
           lng: 130.724493,
         },
         {
           name: "木屋瀬",
+          nameKana: "こやのせ",
           lat: 33.778483,
           lng: 130.724957,
         },
         {
           name: "遠賀野",
+          nameKana: "おんがの",
           lat: 33.768628,
           lng: 130.730959,
         },
         {
           name: "感田",
+          nameKana: "がんだ",
           lat: 33.758799,
           lng: 130.733137,
         },
         {
           name: "筑豊直方",
+          nameKana: "ちくほうのおがた",
           lat: 33.753499,
           lng: 130.726299,
         },
@@ -4831,6 +5651,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "有田",
+          nameKana: "ありた",
           lat: 33.183779,
           lng: 129.881787,
           transfer: true,
@@ -4838,51 +5659,61 @@ export const kyushu: OperatorData = {
         },
         {
           name: "三代橋",
+          nameKana: "みだいばし",
           lat: 33.188949,
           lng: 129.866336,
         },
         {
           name: "黒川",
+          nameKana: "くろごう",
           lat: 33.195093,
           lng: 129.85542,
         },
         {
           name: "蔵宿",
+          nameKana: "ぞうしゅく",
           lat: 33.201898,
           lng: 129.850559,
         },
         {
           name: "西有田",
+          nameKana: "にしありた",
           lat: 33.208839,
           lng: 129.8502,
         },
         {
           name: "大木",
+          nameKana: "おおぎ",
           lat: 33.221615,
           lng: 129.850119,
         },
         {
           name: "山谷",
+          nameKana: "やまだに",
           lat: 33.2293,
           lng: 129.849353,
         },
         {
           name: "夫婦石",
+          nameKana: "めおといし",
           lat: 33.236927,
           lng: 129.850502,
         },
         {
           name: "金武",
+          nameKana: "かなたけ",
           lat: 33.251856,
           lng: 129.854519,
         },
         {
           name: "川東",
+          nameKana: "かわひがし",
           lat: 33.267329,
           lng: 129.863812,
         },
         {
           name: "伊万里",
+          nameKana: "いまり",
           lat: 33.271862,
           lng: 129.876344,
           transfer: true,
@@ -4899,6 +5730,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "伊万里",
+          nameKana: "いまり",
           lat: 33.271862,
           lng: 129.876344,
           transfer: true,
@@ -4906,231 +5738,277 @@ export const kyushu: OperatorData = {
         },
         {
           name: "東山代",
+          nameKana: "ひがしやましろ",
           lat: 33.277964,
           lng: 129.846041,
         },
         {
           name: "里",
+          nameKana: "さと",
           lat: 33.284513,
           lng: 129.835906,
         },
         {
           name: "楠久",
+          nameKana: "くすく",
           lat: 33.291426,
           lng: 129.826696,
         },
         {
           name: "鳴石",
+          nameKana: "なるいし",
           lat: 33.299447,
           lng: 129.816699,
         },
         {
           name: "久原",
+          nameKana: "くばら",
           lat: 33.313973,
           lng: 129.811763,
         },
         {
           name: "波瀬",
+          nameKana: "はぜ",
           lat: 33.323013,
           lng: 129.807296,
         },
         {
           name: "浦ノ崎",
+          nameKana: "うらのさき",
           lat: 33.335287,
           lng: 129.792524,
         },
         {
           name: "福島口",
+          nameKana: "ふくしまぐち",
           lat: 33.338083,
           lng: 129.790271,
         },
         {
           name: "今福",
+          nameKana: "いまぶく",
           lat: 33.348357,
           lng: 129.771909,
         },
         {
           name: "鷹島口",
+          nameKana: "たかしまぐち",
           lat: 33.353784,
           lng: 129.761685,
         },
         {
           name: "前浜",
+          nameKana: "まえはま",
           lat: 33.358819,
           lng: 129.736192,
         },
         {
           name: "調川",
+          nameKana: "つきのかわ",
           lat: 33.352223,
           lng: 129.727507,
         },
         {
           name: "松浦",
+          nameKana: "まつうら",
           lat: 33.344273,
           lng: 129.707906,
         },
         {
           name: "松浦発電所前",
+          nameKana: "まつうらはつでんしょまえ",
           lat: 33.347361,
           lng: 129.68607,
         },
         {
           name: "御厨",
+          nameKana: "みくりや",
           lat: 33.365947,
           lng: 129.662502,
         },
         {
           name: "西木場",
+          nameKana: "にしこば",
           lat: 33.355798,
           lng: 129.638657,
         },
         {
           name: "東田平",
+          nameKana: "ひがしたびら",
           lat: 33.357706,
           lng: 129.623147,
         },
         {
           name: "中田平",
+          nameKana: "なかたびら",
           lat: 33.355647,
           lng: 129.61104,
         },
         {
           name: "たびら平戸口",
+          nameKana: "たびらひらどぐち",
           lat: 33.362532,
           lng: 129.582595,
         },
         {
           name: "西田平",
+          nameKana: "にしたびら",
           lat: 33.34514,
           lng: 129.590475,
         },
         {
           name: "すえたちばな",
+          nameKana: "すえたちばな",
           lat: 33.316738,
           lng: 129.613788,
         },
         {
           name: "江迎鹿町",
+          nameKana: "えむかえしかまち",
           lat: 33.306809,
           lng: 129.627081,
         },
         {
           name: "高岩",
+          nameKana: "たかいわ",
           lat: 33.297507,
           lng: 129.63723,
         },
         {
           name: "いのつき",
+          nameKana: "いのつき",
           lat: 33.282623,
           lng: 129.667286,
         },
         {
           name: "潜竜ヶ滝",
+          nameKana: "せんりゅうがたき",
           lat: 33.280808,
           lng: 129.683509,
         },
         {
           name: "吉井",
+          nameKana: "よしい",
           lat: 33.266395,
           lng: 129.685271,
         },
         {
           name: "神田",
+          nameKana: "こうだ",
           lat: 33.261198,
           lng: 129.671059,
         },
         {
           name: "清峰高校前",
+          nameKana: "せいほうこうこうまえ",
           lat: 33.247775,
           lng: 129.656536,
         },
         {
           name: "佐々",
+          nameKana: "さざ",
           lat: 33.236701,
           lng: 129.646859,
         },
         {
           name: "小浦",
+          nameKana: "こうら",
           lat: 33.222005,
           lng: 129.641643,
         },
         {
           name: "真申",
+          nameKana: "まさる",
           lat: 33.206498,
           lng: 129.65146,
         },
         {
           name: "棚方",
+          nameKana: "たながた",
           lat: 33.201565,
           lng: 129.651796,
         },
         {
           name: "相浦",
+          nameKana: "あいのうら",
           lat: 33.192577,
           lng: 129.65714,
         },
         {
           name: "大学",
+          nameKana: "だいがく",
           lat: 33.189461,
           lng: 129.667187,
         },
         {
           name: "上相浦",
+          nameKana: "かみあいのうら",
           lat: 33.195205,
           lng: 129.670453,
         },
         {
           name: "本山",
+          nameKana: "もとやま",
           lat: 33.207029,
           lng: 129.682099,
         },
         {
           name: "中里",
+          nameKana: "なかざと",
           lat: 33.20821,
           lng: 129.687448,
         },
         {
           name: "皆瀬",
+          nameKana: "かいぜ",
           lat: 33.213348,
           lng: 129.701741,
         },
         {
           name: "野中",
+          nameKana: "のなか",
           lat: 33.211712,
           lng: 129.708527,
         },
         {
           name: "左石",
+          nameKana: "ひだりいし",
           lat: 33.208896,
           lng: 129.721992,
         },
         {
           name: "泉福寺",
+          nameKana: "せんぷくじ",
           lat: 33.205816,
           lng: 129.727028,
         },
         {
           name: "山の田",
+          nameKana: "やまのた",
           lat: 33.196575,
           lng: 129.722898,
         },
         {
           name: "北佐世保",
+          nameKana: "きたさせぼ",
           lat: 33.18717,
           lng: 129.720446,
         },
         {
           name: "中佐世保",
+          nameKana: "なかさせぼ",
           lat: 33.172297,
           lng: 129.722668,
         },
         {
           name: "佐世保中央",
+          nameKana: "させぼちゅうおう",
           lat: 33.170902,
           lng: 129.720596,
         },
         {
           name: "佐世保",
+          nameKana: "させぼ",
           lat: 33.163868,
           lng: 129.725667,
           transfer: true,
@@ -5149,6 +6027,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "諫早",
+          nameKana: "いさはや",
           lat: 32.851018,
           lng: 130.041596,
           transfer: true,
@@ -5156,116 +6035,139 @@ export const kyushu: OperatorData = {
         },
         {
           name: "本諫早",
+          nameKana: "ほんいさはや",
           lat: 32.841841,
           lng: 130.052848,
         },
         {
           name: "幸",
+          nameKana: "さいわい",
           lat: 32.83705,
           lng: 130.066927,
         },
         {
           name: "小野",
+          nameKana: "おの",
           lat: 32.833985,
           lng: 130.08557,
         },
         {
           name: "干拓の里",
+          nameKana: "かんたくのさと",
           lat: 32.836138,
           lng: 130.093272,
         },
         {
           name: "森山",
+          nameKana: "もりやま",
           lat: 32.834969,
           lng: 130.113402,
         },
         {
           name: "釜ノ鼻",
+          nameKana: "かまのはな",
           lat: 32.833992,
           lng: 130.135624,
         },
         {
           name: "諫早東高校",
+          nameKana: "いさはやひがしこうこう",
           lat: 32.823084,
           lng: 130.149098,
         },
         {
           name: "愛野",
+          nameKana: "あいの",
           lat: 32.818824,
           lng: 130.155855,
         },
         {
           name: "阿母崎",
+          nameKana: "あぼざき",
           lat: 32.830073,
           lng: 130.170196,
         },
         {
           name: "吾妻",
+          nameKana: "あづま",
           lat: 32.840305,
           lng: 130.189911,
         },
         {
           name: "古部",
+          nameKana: "こべ",
           lat: 32.856312,
           lng: 130.213024,
         },
         {
           name: "大正",
+          nameKana: "たいしょう",
           lat: 32.860303,
           lng: 130.225482,
         },
         {
           name: "西郷",
+          nameKana: "さいごう",
           lat: 32.872801,
           lng: 130.243814,
         },
         {
           name: "神代",
+          nameKana: "こうじろ",
           lat: 32.871516,
           lng: 130.269728,
         },
         {
           name: "多比良",
+          nameKana: "たいら",
           lat: 32.872061,
           lng: 130.308528,
         },
         {
           name: "有明湯江",
+          nameKana: "ありあけゆえ",
           lat: 32.858249,
           lng: 130.328246,
         },
         {
           name: "大三東",
+          nameKana: "おおみさき",
           lat: 32.843734,
           lng: 130.344659,
         },
         {
           name: "松尾",
+          nameKana: "まつお",
           lat: 32.834176,
           lng: 130.347714,
         },
         {
           name: "三会",
+          nameKana: "みえ",
           lat: 32.814936,
           lng: 130.35713,
         },
         {
           name: "島原",
+          nameKana: "しまばら",
           lat: 32.790489,
           lng: 130.370616,
         },
         {
           name: "霊丘公園体育館",
+          nameKana: "れいきゅうこうえんたいいくかん",
           lat: 32.782198,
           lng: 130.374233,
         },
         {
           name: "島原船津",
+          nameKana: "しまばらふなつ",
           lat: 32.775768,
           lng: 130.37557,
         },
         {
           name: "島原港",
+          nameKana: "しまばらこう",
           lat: 32.768507,
           lng: 130.370151,
         },
@@ -5282,6 +6184,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "赤迫",
+          nameKana: "あかさこ",
           lat: 32.793732,
           lng: 129.857948,
           transfer: true,
@@ -5289,6 +6192,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "住吉",
+          nameKana: "すみよし",
           lat: 32.792073,
           lng: 129.859836,
           transfer: true,
@@ -5296,6 +6200,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "昭和町通",
+          nameKana: "しょうわまちどおり",
           lat: 32.79063,
           lng: 129.860694,
           transfer: true,
@@ -5303,6 +6208,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "千歳町",
+          nameKana: "ちとせまち",
           lat: 32.78962,
           lng: 129.860952,
           transfer: true,
@@ -5310,6 +6216,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "若葉町",
+          nameKana: "わかばまち",
           lat: 32.787744,
           lng: 129.861596,
           transfer: true,
@@ -5317,6 +6224,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "長崎大学",
+          nameKana: "ながさきだいがく",
           lat: 32.785759,
           lng: 129.862282,
           transfer: true,
@@ -5324,6 +6232,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "岩屋橋",
+          nameKana: "いわやばし",
           lat: 32.781935,
           lng: 129.862282,
           transfer: true,
@@ -5331,6 +6240,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "浦上車庫",
+          nameKana: "うらかみしゃこ",
           lat: 32.77968,
           lng: 129.861381,
           transfer: true,
@@ -5338,6 +6248,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大橋",
+          nameKana: "おおはし",
           lat: 32.777713,
           lng: 129.861467,
           transfer: true,
@@ -5345,6 +6256,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "平和公園",
+          nameKana: "へいわこうえん",
           lat: 32.773437,
           lng: 129.862132,
           transfer: true,
@@ -5352,6 +6264,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "原爆資料館",
+          nameKana: "げんばくしりょうかん",
           lat: 32.770551,
           lng: 129.863784,
           transfer: true,
@@ -5359,6 +6272,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大学病院",
+          nameKana: "だいがくびょういん",
           lat: 32.769017,
           lng: 129.864171,
           transfer: true,
@@ -5366,6 +6280,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "浦上駅前",
+          nameKana: "うらかみえきまえ",
           lat: 32.765481,
           lng: 129.864171,
           transfer: true,
@@ -5373,6 +6288,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "茂里町",
+          nameKana: "もりまち",
           lat: 32.763965,
           lng: 129.864557,
           transfer: true,
@@ -5380,6 +6296,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "スタジアムシティノース（銭座町）",
+          nameKana: "すたじあむしてぃのーす",
           lat: 32.761475,
           lng: 129.865801,
           transfer: true,
@@ -5387,6 +6304,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "スタジアムシティサウス（宝町）",
+          nameKana: "すたじあむしてぃさうす",
           lat: 32.75783,
           lng: 129.868913,
           transfer: true,
@@ -5394,6 +6312,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "八千代町",
+          nameKana: "やちよまち",
           lat: 32.754979,
           lng: 129.870436,
           transfer: true,
@@ -5401,6 +6320,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "長崎駅前",
+          nameKana: "ながさきえきまえ",
           lat: 32.75238,
           lng: 129.871874,
           transfer: true,
@@ -5408,21 +6328,25 @@ export const kyushu: OperatorData = {
         },
         {
           name: "五島町",
+          nameKana: "ごとうまち",
           lat: 32.749411,
           lng: 129.872217,
         },
         {
           name: "大波止",
+          nameKana: "おおはと",
           lat: 32.745116,
           lng: 129.872046,
         },
         {
           name: "出島",
+          nameKana: "でじま",
           lat: 32.743871,
           lng: 129.871681,
         },
         {
           name: "新地中華街",
+          nameKana: "しんちちゅうかがい",
           lat: 32.742869,
           lng: 129.874942,
           transfer: true,
@@ -5430,6 +6354,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西浜町",
+          nameKana: "にしはまのまち",
           lat: 32.743735,
           lng: 129.876015,
           transfer: true,
@@ -5437,6 +6362,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "観光通",
+          nameKana: "かんこうどおり",
           lat: 32.743483,
           lng: 129.877775,
           transfer: true,
@@ -5444,6 +6370,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "思案橋",
+          nameKana: "しあんばし",
           lat: 32.742725,
           lng: 129.880264,
           transfer: true,
@@ -5451,6 +6378,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "崇福寺",
+          nameKana: "そうふくじ",
           lat: 32.741425,
           lng: 129.882109,
           transfer: true,
@@ -5467,6 +6395,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "蛍茶屋",
+          nameKana: "ほたるぢゃや",
           lat: 32.751135,
           lng: 129.894254,
           transfer: true,
@@ -5474,6 +6403,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新中川町",
+          nameKana: "しんなかがわまち",
           lat: 32.752362,
           lng: 129.890435,
           transfer: true,
@@ -5481,6 +6411,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新大工町",
+          nameKana: "しんだいくまち",
           lat: 32.75238,
           lng: 129.886701,
           transfer: true,
@@ -5488,6 +6419,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "諏訪神社",
+          nameKana: "すわじんじゃ",
           lat: 32.752596,
           lng: 129.884083,
           transfer: true,
@@ -5495,6 +6427,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "市役所",
+          nameKana: "しやくしょ",
           lat: 32.74942,
           lng: 129.88065,
           transfer: true,
@@ -5502,11 +6435,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "桜町",
+          nameKana: "さくらまち",
           lat: 32.750792,
           lng: 129.8755,
         },
         {
           name: "長崎駅前",
+          nameKana: "ながさきえきまえ",
           lat: 32.75238,
           lng: 129.871874,
           transfer: true,
@@ -5514,6 +6449,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "八千代町",
+          nameKana: "やちよまち",
           lat: 32.754979,
           lng: 129.870436,
           transfer: true,
@@ -5521,6 +6457,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "スタジアムシティサウス（宝町）",
+          nameKana: "すたじあむしてぃさうす",
           lat: 32.75783,
           lng: 129.868913,
           transfer: true,
@@ -5528,6 +6465,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "スタジアムシティノース（銭座町）",
+          nameKana: "すたじあむしてぃのーす",
           lat: 32.761475,
           lng: 129.865801,
           transfer: true,
@@ -5535,6 +6473,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "茂里町",
+          nameKana: "もりまち",
           lat: 32.763965,
           lng: 129.864557,
           transfer: true,
@@ -5542,6 +6481,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "浦上駅前",
+          nameKana: "うらかみえきまえ",
           lat: 32.765481,
           lng: 129.864171,
           transfer: true,
@@ -5549,6 +6489,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大学病院",
+          nameKana: "だいがくびょういん",
           lat: 32.769017,
           lng: 129.864171,
           transfer: true,
@@ -5556,6 +6497,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "原爆資料館",
+          nameKana: "げんばくしりょうかん",
           lat: 32.770551,
           lng: 129.863784,
           transfer: true,
@@ -5563,6 +6505,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "平和公園",
+          nameKana: "へいわこうえん",
           lat: 32.773437,
           lng: 129.862132,
           transfer: true,
@@ -5570,6 +6513,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "大橋",
+          nameKana: "おおはし",
           lat: 32.777713,
           lng: 129.861467,
           transfer: true,
@@ -5577,6 +6521,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "浦上車庫",
+          nameKana: "うらかみしゃこ",
           lat: 32.77968,
           lng: 129.861381,
           transfer: true,
@@ -5584,6 +6529,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "岩屋橋",
+          nameKana: "いわやばし",
           lat: 32.781935,
           lng: 129.862282,
           transfer: true,
@@ -5591,6 +6537,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "長崎大学",
+          nameKana: "ながさきだいがく",
           lat: 32.785759,
           lng: 129.862282,
           transfer: true,
@@ -5598,6 +6545,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "若葉町",
+          nameKana: "わかばまち",
           lat: 32.787744,
           lng: 129.861596,
           transfer: true,
@@ -5605,6 +6553,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "千歳町",
+          nameKana: "ちとせまち",
           lat: 32.78962,
           lng: 129.860952,
           transfer: true,
@@ -5612,6 +6561,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "昭和町通",
+          nameKana: "しょうわまちどおり",
           lat: 32.79063,
           lng: 129.860694,
           transfer: true,
@@ -5619,6 +6569,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "住吉",
+          nameKana: "すみよし",
           lat: 32.792073,
           lng: 129.859836,
           transfer: true,
@@ -5626,6 +6577,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "赤迫",
+          nameKana: "あかさこ",
           lat: 32.793732,
           lng: 129.857948,
           transfer: true,
@@ -5642,6 +6594,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "蛍茶屋",
+          nameKana: "ほたるぢゃや",
           lat: 32.751135,
           lng: 129.894254,
           transfer: true,
@@ -5649,6 +6602,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新中川町",
+          nameKana: "しんなかがわまち",
           lat: 32.752362,
           lng: 129.890435,
           transfer: true,
@@ -5656,6 +6610,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新大工町",
+          nameKana: "しんだいくまち",
           lat: 32.75238,
           lng: 129.886701,
           transfer: true,
@@ -5663,6 +6618,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "諏訪神社",
+          nameKana: "すわじんじゃ",
           lat: 32.752596,
           lng: 129.884083,
           transfer: true,
@@ -5670,6 +6626,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "市役所",
+          nameKana: "しやくしょ",
           lat: 32.74942,
           lng: 129.88065,
           transfer: true,
@@ -5677,6 +6634,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "めがね橋",
+          nameKana: "めがねばし",
           lat: 32.746785,
           lng: 129.878204,
           transfer: true,
@@ -5684,6 +6642,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "浜町アーケード",
+          nameKana: "はまのまちあーけーど",
           lat: 32.74476168,
           lng: 129.8768124,
           transfer: true,
@@ -5691,6 +6650,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "観光通",
+          nameKana: "かんこうどおり",
           lat: 32.743483,
           lng: 129.877775,
           transfer: true,
@@ -5698,6 +6658,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "思案橋",
+          nameKana: "しあんばし",
           lat: 32.742725,
           lng: 129.880264,
           transfer: true,
@@ -5705,6 +6666,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "崇福寺",
+          nameKana: "そうふくじ",
           lat: 32.741425,
           lng: 129.882109,
           transfer: true,
@@ -5721,6 +6683,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "蛍茶屋",
+          nameKana: "ほたるぢゃや",
           lat: 32.751135,
           lng: 129.894254,
           transfer: true,
@@ -5728,6 +6691,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新中川町",
+          nameKana: "しんなかがわまち",
           lat: 32.752362,
           lng: 129.890435,
           transfer: true,
@@ -5735,6 +6699,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新大工町",
+          nameKana: "しんだいくまち",
           lat: 32.75238,
           lng: 129.886701,
           transfer: true,
@@ -5742,6 +6707,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "諏訪神社",
+          nameKana: "すわじんじゃ",
           lat: 32.752596,
           lng: 129.884083,
           transfer: true,
@@ -5749,6 +6715,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "市役所",
+          nameKana: "しやくしょ",
           lat: 32.74942,
           lng: 129.88065,
           transfer: true,
@@ -5756,6 +6723,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "めがね橋",
+          nameKana: "めがねばし",
           lat: 32.746785,
           lng: 129.878204,
           transfer: true,
@@ -5763,6 +6731,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "浜町アーケード",
+          nameKana: "はまのまちあーけーど",
           lat: 32.74476168,
           lng: 129.8768124,
           transfer: true,
@@ -5770,6 +6739,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "西浜町",
+          nameKana: "にしはまのまち",
           lat: 32.743735,
           lng: 129.876015,
           transfer: true,
@@ -5777,6 +6747,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新地中華街",
+          nameKana: "しんちちゅうかがい",
           lat: 32.742869,
           lng: 129.874942,
           transfer: true,
@@ -5784,21 +6755,25 @@ export const kyushu: OperatorData = {
         },
         {
           name: "メディカルセンター",
+          nameKana: "めでぃかるせんたー",
           lat: 32.740523,
           lng: 129.87241,
         },
         {
           name: "大浦海岸通",
+          nameKana: "おおうらかいがんどおり",
           lat: 32.737861,
           lng: 129.870608,
         },
         {
           name: "大浦天主堂",
+          nameKana: "おおうらてんしゅどう",
           lat: 32.736408,
           lng: 129.87078,
         },
         {
           name: "石橋",
+          nameKana: "いしばし",
           lat: 32.734269,
           lng: 129.872432,
         },
@@ -5815,16 +6790,19 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "藤崎宮前",
+          nameKana: "ふじさきぐうまえ",
           lat: 32.808928,
           lng: 130.713218,
         },
         {
           name: "黒髪町",
+          nameKana: "くろかみまち",
           lat: 32.818408,
           lng: 130.717232,
         },
         {
           name: "北熊本",
+          nameKana: "きたくまもと",
           lat: 32.827492,
           lng: 130.721981,
           transfer: true,
@@ -5832,51 +6810,61 @@ export const kyushu: OperatorData = {
         },
         {
           name: "亀井",
+          nameKana: "かめい",
           lat: 32.837414,
           lng: 130.72224,
         },
         {
           name: "八景水谷",
+          nameKana: "はけのみや",
           lat: 32.841258,
           lng: 130.722812,
         },
         {
           name: "堀川",
+          nameKana: "ほりかわ",
           lat: 32.848988,
           lng: 130.725231,
         },
         {
           name: "新須屋",
+          nameKana: "しんすや",
           lat: 32.853266,
           lng: 130.730198,
         },
         {
           name: "須屋",
+          nameKana: "すや",
           lat: 32.858493,
           lng: 130.736481,
         },
         {
           name: "三ツ石",
+          nameKana: "みついし",
           lat: 32.864265,
           lng: 130.738378,
         },
         {
           name: "黒石",
+          nameKana: "くろいし",
           lat: 32.870636,
           lng: 130.742164,
         },
         {
           name: "熊本高専前",
+          nameKana: "くまもとこうせんまえ",
           lat: 32.878088,
           lng: 130.746271,
         },
         {
           name: "再春医療センター前",
+          nameKana: "さいしゅんいりょうせんたーまえ",
           lat: 32.880972,
           lng: 130.747917,
         },
         {
           name: "御代志",
+          nameKana: "みよし",
           lat: 32.884985,
           lng: 130.750124,
         },
@@ -5891,6 +6879,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "上熊本",
+          nameKana: "かみくまもと",
           lat: 32.818324,
           lng: 130.699797,
           transfer: true,
@@ -5898,26 +6887,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "韓々坂",
+          nameKana: "かんかんざか",
           lat: 32.824201,
           lng: 130.701917,
         },
         {
           name: "池田",
+          nameKana: "いけだ",
           lat: 32.827082,
           lng: 130.70748,
         },
         {
           name: "打越",
+          nameKana: "うちごし",
           lat: 32.823765,
           lng: 130.713796,
         },
         {
           name: "坪井川公園",
+          nameKana: "つぼいがわこうえん",
           lat: 32.821427,
           lng: 130.718773,
         },
         {
           name: "北熊本",
+          nameKana: "きたくまもと",
           lat: 32.827492,
           lng: 130.721981,
           transfer: true,
@@ -5936,6 +6930,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "立野",
+          nameKana: "たての",
           lat: 32.87757,
           lng: 130.965403,
           transfer: true,
@@ -5943,46 +6938,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "長陽",
+          nameKana: "ちょうよう",
           lat: 32.854287,
           lng: 131.003945,
         },
         {
           name: "加勢",
+          nameKana: "かせ",
           lat: 32.847818,
           lng: 131.010139,
         },
         {
           name: "阿蘇下田城",
+          nameKana: "あそしもだじょう",
           lat: 32.844413,
           lng: 131.024654,
         },
         {
           name: "南阿蘇水の生まれる里白水高原",
+          nameKana: "みなみあそみずのうまれるさとはくすいこうげん",
           lat: 32.83407,
           lng: 131.040264,
         },
         {
           name: "中松",
+          nameKana: "なかまつ",
           lat: 32.827381,
           lng: 131.053594,
         },
         {
           name: "阿蘇白川",
+          nameKana: "あそしらかわ",
           lat: 32.822368,
           lng: 131.084345,
         },
         {
           name: "南阿蘇白川水源",
+          nameKana: "みなみあそしらかわすいげん",
           lat: 32.822222,
           lng: 131.091667,
         },
         {
           name: "見晴台",
+          nameKana: "みはらしだい",
           lat: 32.817613,
           lng: 131.109621,
         },
         {
           name: "高森",
+          nameKana: "たかもり",
           lat: 32.81954,
           lng: 131.122561,
         },
@@ -5999,6 +7003,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "人吉温泉",
+          nameKana: "ひとよしおんせん",
           lat: 32.216142,
           lng: 130.753797,
           transfer: true,
@@ -6006,66 +7011,79 @@ export const kyushu: OperatorData = {
         },
         {
           name: "相良藩願成寺",
+          nameKana: "さがらはんがんじょうじ",
           lat: 32.218429,
           lng: 130.769626,
         },
         {
           name: "川村",
+          nameKana: "かわむら",
           lat: 32.207284,
           lng: 130.795307,
         },
         {
           name: "肥後西村",
+          nameKana: "ひごにしのむら",
           lat: 32.202271,
           lng: 130.808839,
         },
         {
           name: "一武",
+          nameKana: "いちぶ",
           lat: 32.214551,
           lng: 130.839915,
         },
         {
           name: "木上",
+          nameKana: "きのえ",
           lat: 32.224256,
           lng: 130.858888,
         },
         {
           name: "おかどめ幸福",
+          nameKana: "おかどめこうふく",
           lat: 32.231011,
           lng: 130.873629,
         },
         {
           name: "あさぎり",
+          nameKana: "あさぎり",
           lat: 32.236191,
           lng: 130.893783,
         },
         {
           name: "東免田",
+          nameKana: "ひがしめんだ",
           lat: 32.250095,
           lng: 130.912947,
         },
         {
           name: "公立病院前",
+          nameKana: "こうりつびょういんまえ",
           lat: 32.255906,
           lng: 130.921768,
         },
         {
           name: "多良木",
+          nameKana: "たらぎ",
           lat: 32.262903,
           lng: 130.933362,
         },
         {
           name: "東多良木",
+          nameKana: "ひがしたらぎ",
           lat: 32.272211,
           lng: 130.950765,
         },
         {
           name: "新鶴羽",
+          nameKana: "しんつるば",
           lat: 32.275372,
           lng: 130.966275,
         },
         {
           name: "湯前",
+          nameKana: "ゆのまえ",
           lat: 32.281389,
           lng: 130.980094,
         },
@@ -6082,6 +7100,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "八代",
+          nameKana: "やつしろ",
           lat: 32.503805,
           lng: 130.621609,
           transfer: true,
@@ -6089,136 +7108,163 @@ export const kyushu: OperatorData = {
         },
         {
           name: "肥後高田",
+          nameKana: "ひごこうだ",
           lat: 32.475546,
           lng: 130.612588,
         },
         {
           name: "日奈久温泉",
+          nameKana: "ひなぐおんせん",
           lat: 32.436163,
           lng: 130.581635,
         },
         {
           name: "肥後二見",
+          nameKana: "ひごふたみ",
           lat: 32.420111,
           lng: 130.550019,
         },
         {
           name: "上田浦",
+          nameKana: "かみたのうら",
           lat: 32.392952,
           lng: 130.5186,
         },
         {
           name: "たのうら御立岬公園",
+          nameKana: "たのうらおたちみさきこうえん",
           lat: 32.363202,
           lng: 130.506705,
         },
         {
           name: "肥後田浦",
+          nameKana: "ひごたのうら",
           lat: 32.350698,
           lng: 130.504778,
         },
         {
           name: "海浦",
+          nameKana: "うみのうら",
           lat: 32.327997,
           lng: 130.488766,
         },
         {
           name: "佐敷",
+          nameKana: "さしき",
           lat: 32.302447,
           lng: 130.497277,
         },
         {
           name: "湯浦",
+          nameKana: "ゆのうら",
           lat: 32.271231,
           lng: 130.504667,
         },
         {
           name: "津奈木",
+          nameKana: "つなぎ",
           lat: 32.232417,
           lng: 130.450165,
         },
         {
           name: "新水俣",
+          nameKana: "しんみなまた",
           lat: 32.210825,
           lng: 130.428893,
         },
         {
           name: "水俣",
+          nameKana: "みなまた",
           lat: 32.204919,
           lng: 130.395763,
         },
         {
           name: "袋",
+          nameKana: "ふくろ",
           lat: 32.165517,
           lng: 130.374391,
         },
         {
           name: "米ノ津",
+          nameKana: "こめのつ",
           lat: 32.122269,
           lng: 130.342139,
         },
         {
           name: "出水",
+          nameKana: "いずみ",
           lat: 32.089275,
           lng: 130.357803,
         },
         {
           name: "西出水",
+          nameKana: "にしいずみ",
           lat: 32.075398,
           lng: 130.339285,
         },
         {
           name: "高尾野",
+          nameKana: "たかおの",
           lat: 32.062536,
           lng: 130.301632,
         },
         {
           name: "野田郷",
+          nameKana: "のだごう",
           lat: 32.063238,
           lng: 130.267214,
         },
         {
           name: "折口",
+          nameKana: "おりぐち",
           lat: 32.060949,
           lng: 130.217485,
         },
         {
           name: "阿久根",
+          nameKana: "あくね",
           lat: 32.022969,
           lng: 130.196276,
         },
         {
           name: "牛ノ浜",
+          nameKana: "うしのはま",
           lat: 31.973962,
           lng: 130.207038,
         },
         {
           name: "薩摩大川",
+          nameKana: "さつまおおかわ",
           lat: 31.949414,
           lng: 130.219072,
         },
         {
           name: "西方",
+          nameKana: "にしかた",
           lat: 31.916153,
           lng: 130.223658,
         },
         {
           name: "薩摩高城",
+          nameKana: "さつまたき",
           lat: 31.892545,
           lng: 130.220649,
         },
         {
           name: "草道",
+          nameKana: "くさみち",
           lat: 31.854556,
           lng: 130.233533,
         },
         {
           name: "上川内",
+          nameKana: "かみせんだい",
           lat: 31.83537,
           lng: 130.292406,
         },
         {
           name: "川内",
+          nameKana: "せんだい",
           lat: 31.813726,
           lng: 130.31213,
           transfer: true,
@@ -6237,16 +7283,19 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "田崎橋",
+          nameKana: "たさきばし",
           lat: 32.785398,
           lng: 130.68866,
         },
         {
           name: "二本木口",
+          nameKana: "にほんぎぐち",
           lat: 32.786986,
           lng: 130.689368,
         },
         {
           name: "熊本駅前",
+          nameKana: "くまもとえきまえ",
           lat: 32.790377,
           lng: 130.690398,
           transfer: true,
@@ -6254,26 +7303,31 @@ export const kyushu: OperatorData = {
         },
         {
           name: "祇園橋",
+          nameKana: "ぎおんばし",
           lat: 32.792794,
           lng: 130.694647,
         },
         {
           name: "呉服町",
+          nameKana: "ごふくまち",
           lat: 32.795753,
           lng: 130.696921,
         },
         {
           name: "河原町",
+          nameKana: "かわらまち",
           lat: 32.794742,
           lng: 130.701299,
         },
         {
           name: "慶徳校前",
+          nameKana: "けいとくこうまえ",
           lat: 32.797304,
           lng: 130.702457,
         },
         {
           name: "辛島町",
+          nameKana: "からしまちょう",
           lat: 32.798891,
           lng: 130.705075,
           transfer: true,
@@ -6281,6 +7335,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "花畑町",
+          nameKana: "はなばたちょう",
           lat: 32.801128,
           lng: 130.705483,
           transfer: true,
@@ -6288,6 +7343,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "熊本城・市役所前",
+          nameKana: "くまもとじょう・しやくしょまえ",
           lat: 32.802967,
           lng: 130.707028,
           transfer: true,
@@ -6295,6 +7351,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "通町筋",
+          nameKana: "とおりちょうすじ",
           lat: 32.803364,
           lng: 130.709817,
           transfer: true,
@@ -6302,6 +7359,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水道町",
+          nameKana: "すいどうちょう",
           lat: 32.80239,
           lng: 130.712564,
           transfer: true,
@@ -6309,6 +7367,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "九品寺交差点",
+          nameKana: "くほんじこうさてん",
           lat: 32.799576,
           lng: 130.7178,
           transfer: true,
@@ -6316,6 +7375,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "交通局前",
+          nameKana: "こうつうきょくまえ",
           lat: 32.797664,
           lng: 130.719945,
           transfer: true,
@@ -6323,6 +7383,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "味噌天神前",
+          nameKana: "みそてんじんまえ",
           lat: 32.795644,
           lng: 130.723722,
           transfer: true,
@@ -6330,6 +7391,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新水前寺駅前",
+          nameKana: "しんすいぜんじえきまえ",
           lat: 32.793516,
           lng: 130.727069,
           transfer: true,
@@ -6337,6 +7399,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "国府",
+          nameKana: "こくぶ",
           lat: 32.792217,
           lng: 130.729172,
           transfer: true,
@@ -6344,6 +7407,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水前寺公園",
+          nameKana: "すいぜんじこうえん",
           lat: 32.789908,
           lng: 130.732455,
           transfer: true,
@@ -6351,6 +7415,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "市立体育館前",
+          nameKana: "しりつたいいくかんまえ",
           lat: 32.788429,
           lng: 130.734708,
           transfer: true,
@@ -6358,6 +7423,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "商業高校前",
+          nameKana: "しょうぎょうこうこうまえ",
           lat: 32.785398,
           lng: 130.739107,
           transfer: true,
@@ -6365,6 +7431,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "八丁馬場",
+          nameKana: "はっちょうばば",
           lat: 32.783739,
           lng: 130.741746,
           transfer: true,
@@ -6372,6 +7439,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "神水交差点",
+          nameKana: "くわみずこうさてん",
           lat: 32.783649,
           lng: 130.74518,
           transfer: true,
@@ -6379,6 +7447,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "健軍校前",
+          nameKana: "けんぐんこうまえ",
           lat: 32.781917,
           lng: 130.750952,
           transfer: true,
@@ -6386,6 +7455,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "動植物園入口",
+          nameKana: "どうしょくぶつえんいりぐち",
           lat: 32.78051,
           lng: 130.754707,
           transfer: true,
@@ -6393,6 +7463,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "健軍交番前",
+          nameKana: "けんぐんこうばんまえ",
           lat: 32.779463,
           lng: 130.757668,
           transfer: true,
@@ -6400,6 +7471,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "健軍町",
+          nameKana: "けんぐんまち",
           lat: 32.778381,
           lng: 130.761209,
           transfer: true,
@@ -6416,6 +7488,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "上熊本",
+          nameKana: "かみくまもと",
           lat: 32.81743247,
           lng: 130.6994037,
           transfer: true,
@@ -6423,46 +7496,55 @@ export const kyushu: OperatorData = {
         },
         {
           name: "県立体育館前",
+          nameKana: "けんりつたいいくかんまえ",
           lat: 32.815032,
           lng: 130.69896,
         },
         {
           name: "本妙寺入口",
+          nameKana: "ほんみょうじいりぐち",
           lat: 32.813626,
           lng: 130.698466,
         },
         {
           name: "杉塘",
+          nameKana: "すぎども",
           lat: 32.810308,
           lng: 130.696986,
         },
         {
           name: "段山町",
+          nameKana: "だにやままち",
           lat: 32.806701,
           lng: 130.695505,
         },
         {
           name: "蔚山町",
+          nameKana: "うるさんまち",
           lat: 32.803959,
           lng: 130.696986,
         },
         {
           name: "新町",
+          nameKana: "しんまち",
           lat: 32.799739,
           lng: 130.697222,
         },
         {
           name: "洗馬橋",
+          nameKana: "せんばばし",
           lat: 32.799234,
           lng: 130.698917,
         },
         {
           name: "西辛島町",
+          nameKana: "にしからしまちょう",
           lat: 32.798801,
           lng: 130.702264,
         },
         {
           name: "辛島町",
+          nameKana: "からしまちょう",
           lat: 32.798891,
           lng: 130.705075,
           transfer: true,
@@ -6470,6 +7552,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "花畑町",
+          nameKana: "はなばたちょう",
           lat: 32.801128,
           lng: 130.705483,
           transfer: true,
@@ -6477,6 +7560,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "熊本城・市役所前",
+          nameKana: "くまもとじょう・しやくしょまえ",
           lat: 32.802967,
           lng: 130.707028,
           transfer: true,
@@ -6484,6 +7568,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "通町筋",
+          nameKana: "とおりちょうすじ",
           lat: 32.803364,
           lng: 130.709817,
           transfer: true,
@@ -6491,6 +7576,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水道町",
+          nameKana: "すいどうちょう",
           lat: 32.80239,
           lng: 130.712564,
           transfer: true,
@@ -6498,6 +7584,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "九品寺交差点",
+          nameKana: "くほんじこうさてん",
           lat: 32.799576,
           lng: 130.7178,
           transfer: true,
@@ -6505,6 +7592,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "交通局前",
+          nameKana: "こうつうきょくまえ",
           lat: 32.797664,
           lng: 130.719945,
           transfer: true,
@@ -6512,6 +7600,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "味噌天神前",
+          nameKana: "みそてんじんまえ",
           lat: 32.795644,
           lng: 130.723722,
           transfer: true,
@@ -6519,6 +7608,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "新水前寺駅前",
+          nameKana: "しんすいぜんじえきまえ",
           lat: 32.793516,
           lng: 130.727069,
           transfer: true,
@@ -6526,6 +7616,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "国府",
+          nameKana: "こくぶ",
           lat: 32.792217,
           lng: 130.729172,
           transfer: true,
@@ -6533,6 +7624,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水前寺公園",
+          nameKana: "すいぜんじこうえん",
           lat: 32.789908,
           lng: 130.732455,
           transfer: true,
@@ -6540,6 +7632,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "市立体育館前",
+          nameKana: "しりつたいいくかんまえ",
           lat: 32.788429,
           lng: 130.734708,
           transfer: true,
@@ -6547,6 +7640,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "商業高校前",
+          nameKana: "しょうぎょうこうこうまえ",
           lat: 32.785398,
           lng: 130.739107,
           transfer: true,
@@ -6554,6 +7648,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "八丁馬場",
+          nameKana: "はっちょうばば",
           lat: 32.783739,
           lng: 130.741746,
           transfer: true,
@@ -6561,6 +7656,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "神水交差点",
+          nameKana: "くわみずこうさてん",
           lat: 32.783649,
           lng: 130.74518,
           transfer: true,
@@ -6568,6 +7664,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "健軍校前",
+          nameKana: "けんぐんこうまえ",
           lat: 32.781917,
           lng: 130.750952,
           transfer: true,
@@ -6575,6 +7672,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "動植物園入口",
+          nameKana: "どうしょくぶつえんいりぐち",
           lat: 32.78051,
           lng: 130.754707,
           transfer: true,
@@ -6582,6 +7680,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "健軍交番前",
+          nameKana: "けんぐんこうばんまえ",
           lat: 32.779463,
           lng: 130.757668,
           transfer: true,
@@ -6589,6 +7688,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "健軍町",
+          nameKana: "けんぐんまち",
           lat: 32.778381,
           lng: 130.761209,
           transfer: true,
@@ -6607,6 +7707,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "鹿児島駅前",
+          nameKana: "かごしまえきまえ",
           lat: 31.601264,
           lng: 130.562414,
           transfer: true,
@@ -6614,6 +7715,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "桜島桟橋通",
+          nameKana: "さくらじまさんばしどおり",
           lat: 31.599976,
           lng: 130.560976,
           transfer: true,
@@ -6621,6 +7723,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水族館口",
+          nameKana: "すいぞくかんぐち",
           lat: 31.59898,
           lng: 130.559539,
           transfer: true,
@@ -6628,6 +7731,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 31.597179,
           lng: 130.558015,
           transfer: true,
@@ -6635,6 +7739,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "朝日通",
+          nameKana: "あさひどおり",
           lat: 31.594374,
           lng: 130.557286,
           transfer: true,
@@ -6642,6 +7747,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "いづろ通",
+          nameKana: "いづろどおり",
           lat: 31.591824,
           lng: 130.557672,
           transfer: true,
@@ -6649,6 +7755,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "天文館通",
+          nameKana: "てんもんかんどおり",
           lat: 31.590691,
           lng: 130.555075,
           transfer: true,
@@ -6656,6 +7763,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "高見馬場",
+          nameKana: "たかみばば",
           lat: 31.588726,
           lng: 130.550977,
           transfer: true,
@@ -6663,41 +7771,49 @@ export const kyushu: OperatorData = {
         },
         {
           name: "甲東中学校前",
+          nameKana: "こうとうちゅうがっこうまえ",
           lat: 31.585738,
           lng: 130.553058,
         },
         {
           name: "新屋敷",
+          nameKana: "しんやしき",
           lat: 31.583855,
           lng: 130.553724,
         },
         {
           name: "武之橋",
+          nameKana: "たけのはし",
           lat: 31.57976,
           lng: 130.554088,
         },
         {
           name: "二中通",
+          nameKana: "にちゅうどおり",
           lat: 31.57711,
           lng: 130.553702,
         },
         {
           name: "荒田八幡",
+          nameKana: "あらたはちまん",
           lat: 31.573618,
           lng: 130.553015,
         },
         {
           name: "騎射場",
+          nameKana: "きしゃば",
           lat: 31.569102,
           lng: 130.5519,
         },
         {
           name: "鴨池",
+          nameKana: "かもいけ",
           lat: 31.564129,
           lng: 130.549968,
         },
         {
           name: "郡元",
+          nameKana: "こおりもと",
           lat: 31.56292504,
           lng: 130.5493878,
           transfer: true,
@@ -6705,16 +7821,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "郡元南",
+          nameKana: "こおりもとみなみ",
           lat: 31.56216856,
           lng: 130.5488406,
         },
         {
           name: "涙橋",
+          nameKana: "なみだばし",
           lat: 31.559266,
           lng: 130.546707,
         },
         {
           name: "南鹿児島駅前",
+          nameKana: "みなみかごしまえきまえ",
           lat: 31.555371,
           lng: 130.544196,
           transfer: true,
@@ -6722,16 +7841,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "二軒茶屋",
+          nameKana: "にけんぢゃや",
           lat: 31.55005,
           lng: 130.541192,
         },
         {
           name: "宇宿一丁目",
+          nameKana: "うすきいっちょうめ",
           lat: 31.546439,
           lng: 130.539068,
         },
         {
           name: "脇田",
+          nameKana: "わきだ",
           lat: 31.54418,
           lng: 130.53763,
           transfer: true,
@@ -6739,16 +7861,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "笹貫",
+          nameKana: "ささぬき",
           lat: 31.539636,
           lng: 130.534047,
         },
         {
           name: "上塩屋",
+          nameKana: "かみしおや",
           lat: 31.534762,
           lng: 130.528811,
         },
         {
           name: "谷山",
+          nameKana: "たにやま",
           lat: 31.530108,
           lng: 130.523404,
         },
@@ -6763,6 +7888,7 @@ export const kyushu: OperatorData = {
       stations: [
         {
           name: "鹿児島駅前",
+          nameKana: "かごしまえきまえ",
           lat: 31.601264,
           lng: 130.562414,
           transfer: true,
@@ -6770,6 +7896,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "桜島桟橋通",
+          nameKana: "さくらじまさんばしどおり",
           lat: 31.599976,
           lng: 130.560976,
           transfer: true,
@@ -6777,6 +7904,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "水族館口",
+          nameKana: "すいぞくかんぐち",
           lat: 31.59898,
           lng: 130.559539,
           transfer: true,
@@ -6784,6 +7912,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 31.597179,
           lng: 130.558015,
           transfer: true,
@@ -6791,6 +7920,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "朝日通",
+          nameKana: "あさひどおり",
           lat: 31.594374,
           lng: 130.557286,
           transfer: true,
@@ -6798,6 +7928,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "いづろ通",
+          nameKana: "いづろどおり",
           lat: 31.591824,
           lng: 130.557672,
           transfer: true,
@@ -6805,6 +7936,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "天文館通",
+          nameKana: "てんもんかんどおり",
           lat: 31.590691,
           lng: 130.555075,
           transfer: true,
@@ -6812,6 +7944,7 @@ export const kyushu: OperatorData = {
         },
         {
           name: "高見馬場",
+          nameKana: "たかみばば",
           lat: 31.588726,
           lng: 130.550977,
           transfer: true,
@@ -6819,16 +7952,19 @@ export const kyushu: OperatorData = {
         },
         {
           name: "加治屋町",
+          nameKana: "かじやちょう",
           lat: 31.58731,
           lng: 130.548037,
         },
         {
           name: "高見橋",
+          nameKana: "たかみばし",
           lat: 31.58593,
           lng: 130.545162,
         },
         {
           name: "鹿児島中央駅前",
+          nameKana: "かごしまちゅうおうえきまえ",
           lat: 31.58412,
           lng: 130.543703,
           transfer: true,
@@ -6836,36 +7972,43 @@ export const kyushu: OperatorData = {
         },
         {
           name: "都通",
+          nameKana: "みやこどおり",
           lat: 31.580601,
           lng: 130.543038,
         },
         {
           name: "中洲通",
+          nameKana: "なかすどおり",
           lat: 31.578581,
           lng: 130.542587,
         },
         {
           name: "市立病院前",
+          nameKana: "しりつびょういんまえ",
           lat: 31.575812,
           lng: 130.541836,
         },
         {
           name: "神田（交通局前）",
+          nameKana: "しんでん",
           lat: 31.572932,
           lng: 130.540613,
         },
         {
           name: "唐湊",
+          nameKana: "とそ",
           lat: 31.570556,
           lng: 130.541085,
         },
         {
           name: "工学部前",
+          nameKana: "こうがくぶまえ",
           lat: 31.568408,
           lng: 130.541857,
         },
         {
           name: "純心学園前",
+          nameKana: "じゅんしんがくえんまえ",
           lat: 31.566872,
           lng: 130.542694,
           transfer: true,
@@ -6873,11 +8016,13 @@ export const kyushu: OperatorData = {
         },
         {
           name: "中郡",
+          nameKana: "なかごおり",
           lat: 31.56498,
           lng: 130.545312,
         },
         {
           name: "郡元",
+          nameKana: "こおりもと",
           lat: 31.562466,
           lng: 130.549024,
           transfer: true,

@@ -12,6 +12,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "新宿",
+                nameKana: "しんじゅく",
                 lat: 35.689729,
                 lng: 139.700464,
                 transfer: true,
@@ -19,6 +20,7 @@ export const chubu: OperatorData = {
             },
             {
                 name: "立川",
+                nameKana: "たちかわ",
                 lat: 35.698202,
                 lng: 139.413704,
                 transfer: true,
@@ -26,6 +28,7 @@ export const chubu: OperatorData = {
             },
             {
                 name: "八王子",
+                nameKana: "はちおうじ",
                 lat: 35.655555,
                 lng: 139.338998,
                 transfer: true,
@@ -33,6 +36,7 @@ export const chubu: OperatorData = {
             },
             {
                 name: "大月",
+                nameKana: "おおつき",
                 lat: 35.613222,
                 lng: 138.942729,
                 transfer: true,
@@ -40,21 +44,25 @@ export const chubu: OperatorData = {
             },
             {
                 name: "塩山",
+                nameKana: "えんざん",
                 lat: 35.705327,
                 lng: 138.734796,
             },
             {
                 name: "山梨市",
+                nameKana: "やまなしし",
                 lat: 35.684961,
                 lng: 138.683003,
             },
             {
                 name: "石和温泉",
+                nameKana: "いさわおんせん",
                 lat: 35.657603,
                 lng: 138.634577,
             },
             {
                 name: "甲府",
+                nameKana: "こうふ",
                 lat: 35.667054,
                 lng: 138.569015,
                 transfer: true,
@@ -62,11 +70,13 @@ export const chubu: OperatorData = {
             },
             {
                 name: "韮崎",
+                nameKana: "にらさき",
                 lat: 35.709711,
                 lng: 138.451357,
             },
             {
                 name: "小淵沢",
+                nameKana: "こぶちざわ",
                 lat: 35.863808,
                 lng: 138.316351,
                 transfer: true,
@@ -74,36 +84,43 @@ export const chubu: OperatorData = {
             },
             {
                 name: "富士見",
+                nameKana: "ふじみ",
                 lat: 35.912183,
                 lng: 138.238071,
             },
             {
                 name: "茅野",
+                nameKana: "ちの",
                 lat: 35.995062,
                 lng: 138.151674
             },
             {
                 name: "上諏訪",
+                nameKana: "かみすわ",
                 lat: 36.046618,
                 lng: 138.116306
             },
             {
                 name: "下諏訪",
+                nameKana: "しもすわ",
                 lat: 36.071948,
                 lng: 138.084953,
             },
             {
                 name: "岡谷",
+                nameKana: "おかや",
                 lat: 36.056693,
                 lng: 138.045001,
             },
             {
                 name: "川岸",
+                nameKana: "かわぎし",
                 lat: 36.03296,
                 lng: 138.021937,
             },
             {
                 name: "辰野",
+                nameKana: "たつの",
                 lat: 35.984565,
                 lng: 137.997238,
                 transfer: true,
@@ -111,21 +128,25 @@ export const chubu: OperatorData = {
             },
             {
                 name: "信濃川島",
+                nameKana: "しなのかわしま",
                 lat: 36.013642,
                 lng: 137.97185,
             },
             {
                 name: "小野",
+                nameKana: "おの",
                 lat: 36.04693,
                 lng: 137.9706,
             },
             {
                 name: "みどり湖",
+                nameKana: "みどりこ",
                 lat: 36.094176,
                 lng: 137.981928,
             },
             {
                 name: "塩尻",
+                nameKana: "しおじり",
                 lat: 36.114364,
                 lng: 137.947961,
                 transfer: true,
@@ -133,6 +154,7 @@ export const chubu: OperatorData = {
             },
             {
                 name: "松本",
+                nameKana: "まつもと",
                 lat: 36.230393,
                 lng: 137.96445,
                 transfer: true,
@@ -149,6 +171,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "塩尻",
+                nameKana: "しおじり",
                 lat: 36.114364,
                 lng: 137.947961,
                 transfer: true,
@@ -156,26 +179,31 @@ export const chubu: OperatorData = {
             },
             {
                 name: "広丘",
+                nameKana: "ひろおか",
                 lat: 36.148032,
                 lng: 137.949578,
             },
             {
                 name: "村井",
+                nameKana: "むらい",
                 lat: 36.174226,
                 lng: 137.956007,
             },
             {
                 name: "平田",
+                nameKana: "ひらた",
                 lat: 36.191161,
                 lng: 137.962017,
             },
             {
                 name: "南松本",
+                nameKana: "みなみまつもと",
                 lat: 36.210447,
                 lng: 137.969505,
             },
             {
                 name: "松本",
+                nameKana: "まつもと",
                 lat: 36.230393,
                 lng: 137.96445,
                 transfer: true,
@@ -183,46 +211,55 @@ export const chubu: OperatorData = {
             },
             {
                 name: "田沢",
+                nameKana: "たざわ",
                 lat: 36.301583,
                 lng: 137.941029,
             },
             {
                 name: "明科",
+                nameKana: "あかしな",
                 lat: 36.353948,
                 lng: 137.929967,
             },
             {
                 name: "西条",
+                nameKana: "にしじょう",
                 lat: 36.400353,
                 lng: 138.012377,
             },
             {
                 name: "坂北",
+                nameKana: "さかきた",
                 lat: 36.430663,
                 lng: 138.015754,
             },
             {
                 name: "聖高原",
+                nameKana: "ひじりこうげん",
                 lat: 36.455069,
                 lng: 138.047603,
             },
             {
                 name: "冠着",
+                nameKana: "かむりき",
                 lat: 36.457215,
                 lng: 138.079223,
             },
             {
                 name: "姨捨",
+                nameKana: "おばすて",
                 lat: 36.502649,
                 lng: 138.093388,
             },
             {
                 name: "稲荷山",
+                nameKana: "いなりやま",
                 lat: 36.552633,
                 lng: 138.108061,
             },
             {
                 name: "篠ノ井",
+                nameKana: "しののい",
                 lat: 36.5771,
                 lng: 138.138046,
                 transfer: true,
@@ -239,6 +276,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "篠ノ井",
+                nameKana: "しののい",
                 lat: 36.5771,
                 lng: 138.138046,
                 transfer: true,
@@ -246,21 +284,25 @@ export const chubu: OperatorData = {
             },
             {
                 name: "今井",
+                nameKana: "いまい",
                 lat: 36.595732,
                 lng: 138.145347,
             },
             {
                 name: "川中島",
+                nameKana: "かわなかじま",
                 lat: 36.614167,
                 lng: 138.150679,
             },
             {
                 name: "安茂里",
+                nameKana: "あもり",
                 lat: 36.630262,
                 lng: 138.161791,
             },
             {
                 name: "長野",
+                nameKana: "ながの",
                 lat: 36.643307,
                 lng: 138.189101,
                 transfer: true,
@@ -277,6 +319,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "松本",
+                nameKana: "まつもと",
                 lat: 36.230393,
                 lng: 137.96445,
                 transfer: true,
@@ -284,161 +327,193 @@ export const chubu: OperatorData = {
             },
             {
                 name: "北松本",
+                nameKana: "きたまつもと",
                 lat: 36.236971,
                 lng: 137.960983,
             },
             {
                 name: "島内",
+                nameKana: "しまうち",
                 lat: 36.246991,
                 lng: 137.944817,
             },
             {
                 name: "島高松",
+                nameKana: "しまたかまつ",
                 lat: 36.246322,
                 lng: 137.931576,
             },
             {
                 name: "梓橋",
+                nameKana: "あずさばし",
                 lat: 36.250162,
                 lng: 137.918027,
             },
             {
                 name: "一日市場",
+                nameKana: "ひといちば",
                 lat: 36.2596,
                 lng: 137.904136,
             },
             {
                 name: "中萱",
+                nameKana: "なかがや",
                 lat: 36.273434,
                 lng: 137.903353,
             },
             {
                 name: "南豊科",
+                nameKana: "みなみとよしな",
                 lat: 36.291124,
                 lng: 137.903457,
             },
             {
                 name: "豊科",
+                nameKana: "とよしな",
                 lat: 36.299957,
                 lng: 137.900896,
             },
             {
                 name: "柏矢町",
+                nameKana: "はくやちょう",
                 lat: 36.322529,
                 lng: 137.888349,
             },
             {
                 name: "穂高",
+                nameKana: "ほたか",
                 lat: 36.33906,
                 lng: 137.881869,
             },
             {
                 name: "有明",
+                nameKana: "ありあけ",
                 lat: 36.359949,
                 lng: 137.878236,
             },
             {
                 name: "安曇追分",
+                nameKana: "あずみおいわけ",
                 lat: 36.371795,
                 lng: 137.872736,
             },
             {
                 name: "細野",
+                nameKana: "ほその",
                 lat: 36.397107,
                 lng: 137.865722,
             },
             {
                 name: "北細野",
+                nameKana: "きたほその",
                 lat: 36.406439,
                 lng: 137.862725,
             },
             {
                 name: "信濃松川",
+                nameKana: "しなのまつかわ",
                 lat: 36.424456,
                 lng: 137.858631,
             },
             {
                 name: "安曇沓掛",
+                nameKana: "あずみくつかけ",
                 lat: 36.447795,
                 lng: 137.854784,
             },
             {
                 name: "信濃常盤",
+                nameKana: "しなのときわ",
                 lat: 36.467403,
                 lng: 137.847148,
             },
             {
                 name: "南大町",
+                nameKana: "みなみおおまち",
                 lat: 36.491536,
                 lng: 137.856269,
             },
             {
                 name: "信濃大町",
+                nameKana: "しなのおおまち",
                 lat: 36.50031,
                 lng: 137.861674,
             },
             {
                 name: "北大町",
+                nameKana: "きたおおまち",
                 lat: 36.517558,
                 lng: 137.857913,
             },
             {
                 name: "信濃木崎",
+                nameKana: "しなのきざき",
                 lat: 36.535643,
                 lng: 137.846189,
             },
             {
                 name: "稲尾",
+                nameKana: "いなお",
                 lat: 36.554058,
                 lng: 137.842575,
             },
             {
                 name: "海ノ口",
+                nameKana: "うみのくち",
                 lat: 36.565652,
                 lng: 137.841824,
             },
             {
                 name: "簗場",
+                nameKana: "やなば",
                 lat: 36.594666,
                 lng: 137.844724,
             },
             {
                 name: "南神城",
+                nameKana: "みなみかみしろ",
                 lat: 36.637105,
                 lng: 137.841551,
             },
             {
                 name: "神城",
+                nameKana: "かみしろ",
                 lat: 36.658287,
                 lng: 137.846586,
             },
             {
                 name: "飯森",
+                nameKana: "いいもり",
                 lat: 36.670563,
                 lng: 137.85006,
             },
             {
                 name: "白馬",
+                nameKana: "はくば",
                 lat: 36.695922,
                 lng: 137.863819,
             },
             {
                 name: "信濃森上",
+                nameKana: "しなのもりうえ",
                 lat: 36.707134,
                 lng: 137.869883,
             },
             {
                 name: "白馬大池",
+                nameKana: "はくばおおいけ",
                 lat: 36.719682,
                 lng: 137.877972,
             },
             {
                 name: "千国",
+                nameKana: "ちくに",
                 lat: 36.763249,
                 lng: 137.900895,
             },
             {
                 name: "南小谷",
+                nameKana: "みなみおたり",
                 lat: 36.774604,
                 lng: 137.908372,
             },
@@ -453,6 +528,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "長野",
+                nameKana: "ながの",
                 lat: 36.643307,
                 lng: 138.189101,
                 transfer: true,
@@ -460,6 +536,7 @@ export const chubu: OperatorData = {
             },
             {
                 name: "北長野",
+                nameKana: "きたながの",
                 lat: 36.665123,
                 lng: 138.222534,
                 transfer: true,
@@ -467,6 +544,7 @@ export const chubu: OperatorData = {
             },
             {
                 name: "三才",
+                nameKana: "さんさい",
                 lat: 36.686674,
                 lng: 138.244079,
                 transfer: true,
@@ -474,6 +552,7 @@ export const chubu: OperatorData = {
             },
             {
                 name: "豊野",
+                nameKana: "とよの",
                 lat: 36.710642,
                 lng: 138.274458,
                 transfer: true,
@@ -481,111 +560,133 @@ export const chubu: OperatorData = {
             },
             {
                 name: "信濃浅野",
+                nameKana: "しなのあさの",
                 lat: 36.722011,
                 lng: 138.294784,
             },
             {
                 name: "立ケ花",
+                nameKana: "たてがはな",
                 lat: 36.731257,
                 lng: 138.307057,
             },
             {
                 name: "上今井",
+                nameKana: "かみいまい",
                 lat: 36.753947,
                 lng: 138.319478,
             },
             {
                 name: "替佐",
+                nameKana: "かえさ",
                 lat: 36.768999,
                 lng: 138.323385,
             },
             {
                 name: "蓮",
+                nameKana: "はちす",
                 lat: 36.80888,
                 lng: 138.349026,
             },
             {
                 name: "飯山",
+                nameKana: "いいやま",
                 lat: 36.847642,
                 lng: 138.359335,
             },
             {
                 name: "北飯山",
+                nameKana: "きたいいやま",
                 lat: 36.85883,
                 lng: 138.363765,
             },
             {
                 name: "信濃平",
+                nameKana: "しなのたいら",
                 lat: 36.884918,
                 lng: 138.378479,
             },
             {
                 name: "戸狩野沢温泉",
+                nameKana: "とがりのざわおんせん",
                 lat: 36.916673,
                 lng: 138.392952,
             },
             {
                 name: "上境",
+                nameKana: "かみさかい",
                 lat: 36.937916,
                 lng: 138.419151,
             },
             {
                 name: "上桑名川",
+                nameKana: "かみくわながわ",
                 lat: 36.962559,
                 lng: 138.441204,
             },
             {
                 name: "桑名川",
+                nameKana: "くわながわ",
                 lat: 36.975882,
                 lng: 138.458007,
             },
             {
                 name: "西大滝",
+                nameKana: "にしおおたき",
                 lat: 36.979169,
                 lng: 138.480872,
             },
             {
                 name: "信濃白鳥",
+                nameKana: "しなのしらとり",
                 lat: 36.983591,
                 lng: 138.50302,
             },
             {
                 name: "平滝",
+                nameKana: "ひらたき",
                 lat: 36.986041,
                 lng: 138.533723,
             },
             {
                 name: "横倉",
+                nameKana: "よこくら",
                 lat: 36.979875,
                 lng: 138.55031,
             },
             {
                 name: "森宮野原",
+                nameKana: "もりみやのはら",
                 lat: 36.988159,
                 lng: 138.577293,
             },
             {
-                name: "飯山線",
+                name: "足滝",
+                nameKana: "あしだき",
                 lat: 37.011156,
                 lng: 138.591622,
             },
             {
                 name: "越後田沢",
+                nameKana: "えちごたざわ",
                 lat: 37.043063,
                 lng: 138.619354,
             },
             {
                 name: "津南",
+                nameKana: "つなん",
                 lat: 37.034753,
                 lng: 138.653766,
             },
             {
                 name: "越後鹿渡",
+                nameKana: "えちごしかわたり",
                 lat: 37.02691,
                 lng: 138.699776,
             },
             {
                 name: "十日町",
+                nameKana: "とおかまち",
                 lat: 37.127461,
                 lng: 138.755197,
                 transfer: true,
@@ -593,26 +694,31 @@ export const chubu: OperatorData = {
             },
             {
                 name: "魚沼中条",
+                nameKana: "うおぬまなかじょう",
                 lat: 37.159467,
                 lng: 138.772491,
             },
             {
                 name: "下条",
+                nameKana: "げじょう",
                 lat: 37.198324,
                 lng: 138.779989,
             },
             {
                 name: "越後岩沢",
+                nameKana: "えちごいわさわ",
                 lat: 37.240753,
                 lng: 138.797097,
             },
             {
                 name: "内ケ巻",
+                nameKana: "うちがまき",
                 lat: 37.250008,
                 lng: 138.851833,
             },
             {
                 name: "越後川口",
+                nameKana: "えちごかわぐち",
                 lat: 37.272983,
                 lng: 138.861514,
                 transfer: true,
@@ -629,6 +735,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "小淵沢",
+                nameKana: "こぶちざわ",
                 lat: 35.863808,
                 lng: 138.316351,
                 transfer: true,
@@ -636,151 +743,181 @@ export const chubu: OperatorData = {
             },
             {
                 name: "甲斐小泉",
+                nameKana: "かいこいずみ",
                 lat: 35.879533,
                 lng: 138.359402,
             },
             {
                 name: "甲斐大泉",
+                nameKana: "かいおおいずみ",
                 lat: 35.89624,
                 lng: 138.409564,
             },
             {
                 name: "清里",
+                nameKana: "きよさと",
                 lat: 35.919093,
                 lng: 138.436589,
             },
             {
                 name: "野辺山",
+                nameKana: "のべやま",
                 lat: 35.955289,
                 lng: 138.474448,
             },
             {
                 name: "信濃川上",
+                nameKana: "しなのかわかみ",
                 lat: 35.975939,
                 lng: 138.527345,
             },
             {
                 name: "佐久広瀬",
+                nameKana: "さくひろせ",
                 lat: 36.003724,
                 lng: 138.519349,
             },
             {
                 name: "佐久海ノ口",
+                nameKana: "さくうみのくち",
                 lat: 36.021128,
                 lng: 138.490807,
             },
             {
                 name: "海尻",
+                nameKana: "うみじり",
                 lat: 36.041276,
                 lng: 138.473536,
             },
             {
                 name: "松原湖",
+                nameKana: "まつばらこ",
                 lat: 36.060995,
                 lng: 138.470509,
             },
             {
                 name: "小海",
+                nameKana: "こうみ",
                 lat: 36.08862,
                 lng: 138.482806,
             },
             {
                 name: "馬流",
+                nameKana: "まながし",
                 lat: 36.101824,
                 lng: 138.485963,
             },
             {
                 name: "高岩",
+                nameKana: "たかいわ",
                 lat: 36.115711,
                 lng: 138.477438,
             },
             {
                 name: "八千穂",
+                nameKana: "やちほ",
                 lat: 36.133281,
                 lng: 138.477345,
             },
             {
                 name: "海瀬",
+                nameKana: "かいぜ",
                 lat: 36.155743,
                 lng: 138.485894,
             },
             {
                 name: "羽黒下",
+                nameKana: "はぐろした",
                 lat: 36.166411,
                 lng: 138.489618,
             },
             {
                 name: "青沼",
+                nameKana: "あおぬま",
                 lat: 36.181259,
                 lng: 138.489162,
             },
             {
                 name: "臼田",
+                nameKana: "うすだ",
                 lat: 36.194013,
                 lng: 138.488309,
             },
             {
                 name: "龍岡城",
+                nameKana: "たつおかじょう",
                 lat: 36.204184,
                 lng: 138.490708,
             },
             {
                 name: "太田部",
+                nameKana: "おおたべ",
                 lat: 36.220307,
                 lng: 138.4878,
             },
             {
                 name: "中込",
+                nameKana: "なかごみ",
                 lat: 36.230437,
                 lng: 138.480461,
             },
             {
                 name: "滑津",
+                nameKana: "なめづ",
                 lat: 36.238716,
                 lng: 138.475003,
             },
             {
                 name: "北中込",
+                nameKana: "きたなかごみ",
                 lat: 36.254923,
                 lng: 138.476661,
             },
             {
                 name: "岩村田",
+                nameKana: "いわむらだ",
                 lat: 36.27446,
                 lng: 138.4724,
             },
             {
                 name: "佐久平",
+                nameKana: "さくだいら",
                 lat: 36.277929,
                 lng: 138.464367,
             },
             {
                 name: "中佐都",
+                nameKana: "なかさと",
                 lat: 36.280856,
                 lng: 138.453549,
             },
             {
                 name: "美里",
+                nameKana: "みさと",
                 lat: 36.292243,
                 lng: 138.450177,
             },
             {
                 name: "三岡",
+                nameKana: "みつおか",
                 lat: 36.30415,
                 lng: 138.44846,
             },
             {
                 name: "乙女",
+                nameKana: "おとめ",
                 lat: 36.311371,
                 lng: 138.440527,
             },
             {
                 name: "東小諸",
+                nameKana: "ひがしこもろ",
                 lat: 36.317057,
                 lng: 138.432144,
             },
             {
                 name: "小諸",
+                nameKana: "こもろ",
                 lat: 36.326337,
                 lng: 138.422021,
                 transfer: true,
@@ -797,6 +934,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "天竜峡",
+                nameKana: "てんりゅうきょう",
                 lat: 35.441114,
                 lng: 137.81732,
                 transfer: true,
@@ -804,216 +942,259 @@ export const chubu: OperatorData = {
             },
             {
                 name: "川路",
+                nameKana: "かわじ",
                 lat: 35.452946,
                 lng: 137.815564,
             },
             {
                 name: "時又",
+                nameKana: "ときまた",
                 lat: 35.46402,
                 lng: 137.82776,
             },
             {
                 name: "駄科",
+                nameKana: "だしな",
                 lat: 35.4754,
                 lng: 137.839625,
             },
             {
                 name: "毛賀",
+                nameKana: "けが",
                 lat: 35.487445,
                 lng: 137.839332,
             },
             {
                 name: "伊那八幡",
+                nameKana: "いなやわた",
                 lat: 35.49683,
                 lng: 137.84154,
             },
             {
                 name: "下山村",
+                nameKana: "しもやまむら",
                 lat: 35.50426,
                 lng: 137.83959,
             },
             {
                 name: "鼎",
+                nameKana: "かなえ",
                 lat: 35.506726,
                 lng: 137.828383,
             },
             {
                 name: "切石",
+                nameKana: "きりいし",
                 lat: 35.512339,
                 lng: 137.809098,
             },
             {
                 name: "飯田",
+                nameKana: "いいだ",
                 lat: 35.519544,
                 lng: 137.821244,
             },
             {
                 name: "桜町",
+                nameKana: "さくらまち",
                 lat: 35.522147,
                 lng: 137.829601,
             },
             {
                 name: "伊那上郷",
+                nameKana: "いなかみさと",
                 lat: 35.520164,
                 lng: 137.838984,
             },
             {
                 name: "元善光寺",
+                nameKana: "もとぜんこうじ",
                 lat: 35.533843,
                 lng: 137.861375,
             },
             {
                 name: "下市田",
+                nameKana: "しもいちだ",
                 lat: 35.544165,
                 lng: 137.87641,
             },
             {
                 name: "市田",
+                nameKana: "いちだ",
                 lat: 35.549325,
                 lng: 137.886578,
             },
             {
                 name: "下平",
+                nameKana: "しもだいら",
                 lat: 35.572597,
                 lng: 137.895922,
             },
             {
                 name: "山吹",
+                nameKana: "やまぶき",
                 lat: 35.577758,
                 lng: 137.903282,
             },
             {
                 name: "伊那大島",
+                nameKana: "いなおおしま",
                 lat: 35.595698,
                 lng: 137.913222,
             },
             {
                 name: "上片桐",
+                nameKana: "かみかたぎり",
                 lat: 35.617583,
                 lng: 137.904064,
             },
             {
                 name: "伊那田島",
+                nameKana: "いなたじま",
                 lat: 35.627221,
                 lng: 137.910338,
             },
             {
                 name: "高遠原",
+                nameKana: "たかとおばら",
                 lat: 35.644693,
                 lng: 137.90055,
             },
             {
                 name: "七久保",
+                nameKana: "ななくぼ",
                 lat: 35.654645,
                 lng: 137.911346,
             },
             {
                 name: "伊那本郷",
+                nameKana: "いなほんごう",
                 lat: 35.66543,
                 lng: 137.93248,
             },
             {
                 name: "飯島",
+                nameKana: "いいじま",
                 lat: 35.677571,
                 lng: 137.929004,
             },
             {
                 name: "田切",
+                nameKana: "たぎり",
                 lat: 35.695613,
                 lng: 137.933092,
             },
             {
                 name: "伊那福岡",
+                nameKana: "いなふくおか",
                 lat: 35.712233,
                 lng: 137.93398,
             },
             {
                 name: "小町屋",
+                nameKana: "こまちや",
                 lat: 35.726781,
                 lng: 137.935207,
             },
             {
                 name: "駒ケ根",
+                nameKana: "こまがね",
                 lat: 35.736219,
                 lng: 137.936862,
             },
             {
                 name: "大田切",
+                nameKana: "おおたぎり",
                 lat: 35.748162,
                 lng: 137.940159,
             },
             {
                 name: "宮田",
+                nameKana: "みやだ",
                 lat: 35.76726,
                 lng: 137.938897,
             },
             {
                 name: "赤木",
+                nameKana: "あかぎ",
                 lat: 35.777887,
                 lng: 137.943943,
             },
             {
                 name: "沢渡",
+                nameKana: "さわんど",
                 lat: 35.803681,
                 lng: 137.944035,
             },
             {
                 name: "下島",
+                nameKana: "しもじま",
                 lat: 35.812706,
                 lng: 137.940055,
             },
             {
                 name: "伊那市",
+                nameKana: "いなし",
                 lat: 35.838435,
                 lng: 137.959196,
             },
             {
                 name: "伊那北",
+                nameKana: "いなきた",
                 lat: 35.84524,
                 lng: 137.964368,
             },
             {
                 name: "田畑",
+                nameKana: "たばた",
                 lat: 35.860791,
                 lng: 137.97781,
             },
             {
                 name: "北殿",
+                nameKana: "きたとの",
                 lat: 35.879377,
                 lng: 137.984059,
             },
             {
                 name: "木ノ下",
+                nameKana: "きのした",
                 lat: 35.900892,
                 lng: 137.988022,
             },
             {
                 name: "伊那松島",
+                nameKana: "いなまつしま",
                 lat: 35.913865,
                 lng: 137.988647,
             },
             {
                 name: "沢",
+                nameKana: "さわ",
                 lat: 35.936385,
                 lng: 137.985477,
             },
             {
                 name: "羽場",
+                nameKana: "はば",
                 lat: 35.953094,
                 lng: 137.985126,
             },
             {
                 name: "伊那新町",
+                nameKana: "いなしんまち",
                 lat: 35.9688,
                 lng: 137.984056,
             },
             {
                 name: "宮木",
+                nameKana: "みやき",
                 lat: 35.976247,
                 lng: 137.990509,
             },
             {
                 name: "辰野",
+                nameKana: "たつの",
                 lat: 35.984565,
                 lng: 137.997238,
                 transfer: true,
@@ -1030,6 +1211,7 @@ export const chubu: OperatorData = {
         stations: [
             {
                 name: "豊橋",
+                nameKana: "とよはし",
                 lat: 34.762734,
                 lng: 137.382128,
                 transfer: true,
@@ -1037,26 +1219,31 @@ export const chubu: OperatorData = {
             },
             {
                 name: "船町",
+                nameKana: "ふなまち",
                 lat: 34.775809,
                 lng: 137.374001,
             },
             {
                 name: "下地",
+                nameKana: "しもじ",
                 lat: 34.780939,
                 lng: 137.370612,
             },
             {
                 name: "小坂井",
+                nameKana: "こざかい",
                 lat: 34.797544,
                 lng: 137.363056,
             },
             {
                 name: "牛久保",
+                nameKana: "うしくぼ",
                 lat: 34.808563,
                 lng: 137.381671,
             },
             {
                 name: "豊川",
+                nameKana: "とよかわ",
                 lat: 34.822519,
                 lng: 137.397157,
                 transfer: true,
@@ -1064,226 +1251,271 @@ export const chubu: OperatorData = {
             },
             {
                 name: "三河一宮",
+                nameKana: "みかわいちのみや",
                 lat: 34.847911,
                 lng: 137.414549,
             },
             {
                 name: "長山",
+                nameKana: "ながやま",
                 lat: 34.864449,
                 lng: 137.431458,
             },
             {
                 name: "江島",
+                nameKana: "えじま",
                 lat: 34.868029,
                 lng: 137.441518,
             },
             {
                 name: "東上",
+                nameKana: "とうじょう",
                 lat: 34.876278,
                 lng: 137.455236,
             },
             {
                 name: "野田城",
+                nameKana: "のだじょう",
                 lat: 34.889282,
                 lng: 137.477861,
             },
             {
                 name: "新城",
+                nameKana: "しんしろ",
                 lat: 34.901112,
                 lng: 137.49304,
             },
             {
                 name: "東新町",
+                nameKana: "ひがししんまち",
                 lat: 34.906129,
                 lng: 137.502928,
             },
             {
                 name: "茶臼山",
+                nameKana: "ちゃうすやま",
                 lat: 34.910334,
                 lng: 137.514424,
             },
             {
                 name: "三河東郷",
+                nameKana: "みかわとうごう",
                 lat: 34.912224,
                 lng: 137.527242,
             },
             {
                 name: "大海",
+                nameKana: "おおみ",
                 lat: 34.930164,
                 lng: 137.548682,
             },
             {
                 name: "鳥居",
+                nameKana: "とりい",
                 lat: 34.920834,
                 lng: 137.551537,
             },
             {
                 name: "長篠城",
+                nameKana: "ながしのじょう",
                 lat: 34.92599,
                 lng: 137.565,
             },
             {
                 name: "本長篠",
+                nameKana: "ほんながしの",
                 lat: 34.932664,
                 lng: 137.576848,
             },
             {
                 name: "三河大野",
+                nameKana: "みかわおおの",
                 lat: 34.952038,
                 lng: 137.602987,
             },
             {
                 name: "湯谷温泉",
+                nameKana: "ゆやおんせん",
                 lat: 34.970516,
                 lng: 137.613026,
             },
             {
                 name: "三河槙原",
+                nameKana: "みかわまきはら",
                 lat: 34.988589,
                 lng: 137.621022,
             },
             {
                 name: "柿平",
+                nameKana: "かきだいら",
                 lat: 34.990587,
                 lng: 137.644048,
             },
             {
                 name: "三河川合",
+                nameKana: "みかわかわい",
                 lat: 35.001722,
                 lng: 137.663991,
             },
             {
                 name: "池場",
+                nameKana: "いけば",
                 lat: 35.024418,
                 lng: 137.704066,
             },
             {
                 name: "東栄",
+                nameKana: "とうえい",
                 lat: 35.02901,
                 lng: 137.713812,
             },
             {
                 name: "出馬",
+                nameKana: "いずんま",
                 lat: 35.049322,
                 lng: 137.744276,
             },
             {
                 name: "上市場",
+                nameKana: "かみいちば",
                 lat: 35.050202,
                 lng: 137.752364,
             },
             {
                 name: "浦川",
+                nameKana: "うらかわ",
                 lat: 35.056355,
                 lng: 137.763608,
             },
             {
                 name: "早瀬",
+                nameKana: "はやせ",
                 lat: 35.060521,
                 lng: 137.775126,
             },
             {
                 name: "下川合",
+                nameKana: "しもかわい",
                 lat: 35.069321,
                 lng: 137.786422,
             },
             {
                 name: "中部天竜",
+                nameKana: "ちゅうぶてんりゅう",
                 lat: 35.085283,
                 lng: 137.802898,
             },
             {
                 name: "佐久間",
+                nameKana: "さくま",
                 lat: 35.091877,
                 lng: 137.809783,
             },
             {
                 name: "相月",
+                nameKana: "あいづき",
                 lat: 35.114988,
                 lng: 137.854345,
             },
             {
                 name: "城西",
+                nameKana: "しろにし",
                 lat: 35.131569,
                 lng: 137.86198,
             },
             {
                 name: "向市場",
+                nameKana: "むかいちば",
                 lat: 35.154067,
                 lng: 137.869446,
             },
             {
                 name: "水窪",
+                nameKana: "みさくぼ",
                 lat: 35.163371,
                 lng: 137.870501,
             },
             {
                 name: "大嵐",
+                nameKana: "おおぞれ",
                 lat: 35.190466,
                 lng: 137.818509,
             },
             {
                 name: "小和田",
+                nameKana: "こわだ",
                 lat: 35.209862,
                 lng: 137.835971,
             },
             {
                 name: "中井侍",
+                nameKana: "なかいさむらい",
                 lat: 35.235913,
                 lng: 137.834912,
             },
             {
                 name: "伊那小沢",
+                nameKana: "いなこざわ",
                 lat: 35.25406,
                 lng: 137.834709,
             },
             {
                 name: "鶯巣",
+                nameKana: "うぐす",
                 lat: 35.267286,
                 lng: 137.832595,
             },
             {
                 name: "平岡",
+                nameKana: "ひらおか",
                 lat: 35.273652,
                 lng: 137.853574,
             },
             {
                 name: "為栗",
+                nameKana: "してぐり",
                 lat: 35.311687,
                 lng: 137.848503,
             },
             {
                 name: "温田",
+                nameKana: "ぬくた",
                 lat: 35.336273,
                 lng: 137.841294,
             },
             {
                 name: "田本",
+                nameKana: "たもと",
                 lat: 35.348988,
                 lng: 137.837922,
             },
             {
                 name: "門島",
+                nameKana: "かどしま",
                 lat: 35.375306,
                 lng: 137.814151,
             },
             {
                 name: "唐笠",
+                nameKana: "からかさ",
                 lat: 35.402338,
                 lng: 137.810254,
             },
             {
                 name: "金野",
+                nameKana: "きんの",
                 lat: 35.419128,
                 lng: 137.817149,
             },
             {
                 name: "千代",
+                nameKana: "ちよ",
                 lat: 35.428949,
                 lng: 137.816754,
             },
             {
                 name: "天竜峡",
+                nameKana: "てんりゅうきょう",
                 lat: 35.441114,
                 lng: 137.81732,
                 transfer: true,
@@ -1300,6 +1532,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "会津若松",
+          nameKana: "あいづわかまつ",
           lat: 37.508824,
           lng: 139.930159,
           transfer: true,
@@ -1307,136 +1540,163 @@ export const chubu: OperatorData = {
         },
         {
           name: "堂島",
+          nameKana: "どうじま",
           lat: 37.554723,
           lng: 139.911706,
         },
         {
           name: "笈川",
+          nameKana: "おいかわ",
           lat: 37.579117,
           lng: 139.895318,
         },
         {
           name: "塩川",
+          nameKana: "しおかわ",
           lat: 37.59393,
           lng: 139.88716,
         },
         {
           name: "姥堂",
+          nameKana: "うばどう",
           lat: 37.615952,
           lng: 139.881001,
         },
         {
           name: "会津豊川",
+          nameKana: "あいづとよかわ",
           lat: 37.633499,
           lng: 139.876787,
         },
         {
           name: "喜多方",
+          nameKana: "きたかた",
           lat: 37.643886,
           lng: 139.868365,
         },
         {
           name: "山都",
+          nameKana: "やまと",
           lat: 37.639228,
           lng: 139.766534,
         },
         {
           name: "荻野",
+          nameKana: "おぎの",
           lat: 37.617613,
           lng: 139.722119,
         },
         {
           name: "尾登",
+          nameKana: "おのぼり",
           lat: 37.609024,
           lng: 139.691542,
         },
         {
           name: "野沢",
+          nameKana: "のざわ",
           lat: 37.590898,
           lng: 139.64462,
         },
         {
           name: "上野尻",
+          nameKana: "かみのじり",
           lat: 37.625041,
           lng: 139.633869,
         },
         {
           name: "徳沢",
+          nameKana: "とくさわ",
           lat: 37.666876,
           lng: 139.602879,
         },
         {
           name: "豊実",
+          nameKana: "とよみ",
           lat: 37.680541,
           lng: 139.576348,
         },
         {
           name: "日出谷",
+          nameKana: "ひでや",
           lat: 37.705699,
           lng: 139.533985,
         },
         {
           name: "鹿瀬",
+          nameKana: "かのせ",
           lat: 37.695656,
           lng: 139.479663,
         },
         {
           name: "津川",
+          nameKana: "つがわ",
           lat: 37.68817,
           lng: 139.447136,
         },
         {
           name: "三川",
+          nameKana: "みかわ",
           lat: 37.70835,
           lng: 139.381482,
         },
         {
           name: "五十島",
+          nameKana: "いがしま",
           lat: 37.715974,
           lng: 139.353419,
         },
         {
           name: "東下条",
+          nameKana: "ひがしげじょう",
           lat: 37.736876,
           lng: 139.321815,
         },
         {
           name: "咲花",
+          nameKana: "さきはな",
           lat: 37.735003,
           lng: 139.29095,
         },
         {
           name: "馬下",
+          nameKana: "まおろし",
           lat: 37.737569,
           lng: 139.260466,
         },
         {
           name: "猿和田",
+          nameKana: "さるわだ",
           lat: 37.729594,
           lng: 139.222481,
         },
         {
           name: "五泉",
+          nameKana: "ごせん",
           lat: 37.734373,
           lng: 139.179785,
         },
         {
           name: "北五泉",
+          nameKana: "きたごせん",
           lat: 37.746785,
           lng: 139.169758,
         },
         {
           name: "新関",
+          nameKana: "しんせき",
           lat: 37.768096,
           lng: 139.162508,
         },
         {
           name: "東新津",
+          nameKana: "ひがしにいつ",
           lat: 37.787638,
           lng: 139.143768,
         },
         {
           name: "新津",
+          nameKana: "にいつ",
           lat: 37.800383,
           lng: 139.121445,
           transfer: true,
@@ -1453,6 +1713,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "高崎",
+          nameKana: "たかさき",
           lat: 36.322239,
           lng: 139.012354,
           transfer: true,
@@ -1460,6 +1721,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "高崎問屋町",
+          nameKana: "たかさきとんやまち",
           lat: 36.346097,
           lng: 139.017089,
           transfer: true,
@@ -1467,6 +1729,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "井野",
+          nameKana: "いの",
           lat: 36.357457,
           lng: 139.023247,
           transfer: true,
@@ -1474,6 +1737,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "新前橋",
+          nameKana: "しんまえばし",
           lat: 36.378936,
           lng: 139.046924,
           transfer: true,
@@ -1481,16 +1745,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "群馬総社",
+          nameKana: "ぐんまそうじゃ",
           lat: 36.415574,
           lng: 139.032221,
         },
         {
           name: "八木原",
+          nameKana: "やぎはら",
           lat: 36.463738,
           lng: 139.019239,
         },
         {
           name: "渋川",
+          nameKana: "しぶかわ",
           lat: 36.491251,
           lng: 139.008786,
           transfer: true,
@@ -1498,91 +1765,109 @@ export const chubu: OperatorData = {
         },
         {
           name: "敷島",
+          nameKana: "しきしま",
           lat: 36.537636,
           lng: 139.033897,
         },
         {
           name: "津久田",
+          nameKana: "つくだ",
           lat: 36.561063,
           lng: 139.042806,
         },
         {
           name: "岩本",
+          nameKana: "いわもと",
           lat: 36.602184,
           lng: 139.047438,
         },
         {
           name: "沼田",
+          nameKana: "ぬまた",
           lat: 36.642513,
           lng: 139.035734,
         },
         {
           name: "後閑",
+          nameKana: "ごかん",
           lat: 36.679547,
           lng: 139.000078,
         },
         {
           name: "上牧",
+          nameKana: "かみもく",
           lat: 36.735616,
           lng: 138.984533,
         },
         {
           name: "水上",
+          nameKana: "みなかみ",
           lat: 36.778614,
           lng: 138.9688,
         },
         {
           name: "湯檜曽",
+          nameKana: "ゆびそ",
           lat: 36.802683,
           lng: 138.986209,
         },
         {
           name: "土合",
+          nameKana: "どあい",
           lat: 36.830696,
           lng: 138.967959,
         },
         {
           name: "土樽",
+          nameKana: "つちたる",
           lat: 36.875277,
           lng: 138.861446,
         },
         {
           name: "越後中里",
+          nameKana: "えちごなかざと",
           lat: 36.910398,
           lng: 138.84846,
         },
         {
           name: "岩原スキー場前",
+          nameKana: "いわっぱらすきーじょうまえ",
           lat: 36.924146,
           lng: 138.839438,
         },
         {
           name: "越後湯沢",
+          nameKana: "えちごゆざわ",
           lat: 36.935799,
           lng: 138.809227,
         },
         {
           name: "石打",
+          nameKana: "いしうち",
           lat: 36.988663,
           lng: 138.804221,
         },
         {
           name: "大沢",
+          nameKana: "おおさわ",
           lat: 37.02117,
           lng: 138.82131,
         },
         {
           name: "上越国際スキー場前",
+          nameKana: "じょうえつこくさいすきーじょうまえ",
           lat: 37.028755,
           lng: 138.827973,
         },
         {
           name: "塩沢",
+          nameKana: "しおざわ",
           lat: 37.041463,
           lng: 138.848399,
         },
         {
           name: "六日町",
+          nameKana: "むいかまち",
           lat: 37.067065,
           lng: 138.875872,
           transfer: true,
@@ -1590,21 +1875,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "五日町",
+          nameKana: "いつかまち",
           lat: 37.1199,
           lng: 138.908346,
         },
         {
           name: "浦佐",
+          nameKana: "うらさ",
           lat: 37.167488,
           lng: 138.922798,
         },
         {
           name: "八色",
+          nameKana: "やいろ",
           lat: 37.191747,
           lng: 138.934854,
         },
         {
           name: "小出",
+          nameKana: "こいで",
           lat: 37.233581,
           lng: 138.953526,
           transfer: true,
@@ -1612,16 +1901,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "越後堀之内",
+          nameKana: "えちごほりのうち",
           lat: 37.23913,
           lng: 138.928003,
         },
         {
           name: "北堀之内",
+          nameKana: "きたほりのうち",
           lat: 37.25588,
           lng: 138.896372,
         },
         {
           name: "越後川口",
+          nameKana: "えちごかわぐち",
           lat: 37.272983,
           lng: 138.861514,
           transfer: true,
@@ -1629,16 +1921,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "小千谷",
+          nameKana: "おぢや",
           lat: 37.309822,
           lng: 138.813233,
         },
         {
           name: "越後滝谷",
+          nameKana: "えちごたきや",
           lat: 37.368724,
           lng: 138.834932,
         },
         {
           name: "宮内",
+          nameKana: "みやうち",
           lat: 37.422223,
           lng: 138.840204,
           transfer: true,
@@ -1646,6 +1941,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "長岡",
+          nameKana: "ながおか",
           lat: 37.447787,
           lng: 138.853927,
           transfer: true,
@@ -1662,6 +1958,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "直江津",
+          nameKana: "なおえつ",
           lat: 37.170251,
           lng: 138.242265,
           transfer: true,
@@ -1669,11 +1966,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "黒井",
+          nameKana: "くろい",
           lat: 37.1837,
           lng: 138.267518,
         },
         {
           name: "犀潟",
+          nameKana: "さいがた",
           lat: 37.210345,
           lng: 138.305154,
           transfer: true,
@@ -1681,46 +1980,55 @@ export const chubu: OperatorData = {
         },
         {
           name: "土底浜",
+          nameKana: "どそこはま",
           lat: 37.222719,
           lng: 138.324779,
         },
         {
           name: "潟町",
+          nameKana: "かたまち",
           lat: 37.234135,
           lng: 138.339902,
         },
         {
           name: "上下浜",
+          nameKana: "じょうげはま",
           lat: 37.252178,
           lng: 138.361569,
         },
         {
           name: "柿崎",
+          nameKana: "かきざき",
           lat: 37.277732,
           lng: 138.385933,
         },
         {
           name: "米山",
+          nameKana: "よねやま",
           lat: 37.316804,
           lng: 138.431266,
         },
         {
           name: "笠島",
+          nameKana: "かさしま",
           lat: 37.335794,
           lng: 138.467221,
         },
         {
           name: "青海川",
+          nameKana: "おうみがわ",
           lat: 37.346143,
           lng: 138.486169,
         },
         {
           name: "鯨波",
+          nameKana: "くじらなみ",
           lat: 37.355828,
           lng: 138.517263,
         },
         {
           name: "柏崎",
+          nameKana: "かしわざき",
           lat: 37.363495,
           lng: 138.556303,
           transfer: true,
@@ -1728,51 +2036,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "茨目",
+          nameKana: "いばらめ",
           lat: 37.356986,
           lng: 138.586714,
         },
         {
           name: "安田",
+          nameKana: "やすだ",
           lat: 37.341155,
           lng: 138.612057,
         },
         {
           name: "北条",
+          nameKana: "きたじょう",
           lat: 37.338262,
           lng: 138.636954,
         },
         {
           name: "越後広田",
+          nameKana: "えちごひろた",
           lat: 37.357354,
           lng: 138.661243,
         },
         {
           name: "長鳥",
+          nameKana: "ながとり",
           lat: 37.366405,
           lng: 138.684063,
         },
         {
           name: "塚山",
+          nameKana: "つかやま",
           lat: 37.355114,
           lng: 138.729829,
         },
         {
           name: "越後岩塚",
+          nameKana: "えちごいわつか",
           lat: 37.38629,
           lng: 138.756372,
         },
         {
           name: "来迎寺",
+          nameKana: "らいこうじ",
           lat: 37.397136,
           lng: 138.783523,
         },
         {
           name: "前川",
+          nameKana: "まえかわ",
           lat: 37.401795,
           lng: 138.823865,
         },
         {
           name: "宮内",
+          nameKana: "みやうち",
           lat: 37.422223,
           lng: 138.840204,
           transfer: true,
@@ -1780,6 +2098,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "長岡",
+          nameKana: "ながおか",
           lat: 37.447787,
           lng: 138.853927,
           transfer: true,
@@ -1787,36 +2106,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "北長岡",
+          nameKana: "きたながおか",
           lat: 37.468768,
           lng: 138.86247,
         },
         {
           name: "押切",
+          nameKana: "おしきり",
           lat: 37.50467,
           lng: 138.880988,
         },
         {
           name: "見附",
+          nameKana: "みつけ",
           lat: 37.540094,
           lng: 138.904792,
         },
         {
           name: "帯織",
+          nameKana: "おびおり",
           lat: 37.572975,
           lng: 138.92848,
         },
         {
           name: "東光寺",
+          nameKana: "とうこうじ",
           lat: 37.593098,
           lng: 138.942956,
         },
         {
           name: "三条",
+          nameKana: "さんじょう",
           lat: 37.620962,
           lng: 138.960593,
         },
         {
           name: "東三条",
+          nameKana: "ひがしさんじょう",
           lat: 37.628491,
           lng: 138.973703,
           transfer: true,
@@ -1824,36 +2150,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "保内",
+          nameKana: "ほない",
           lat: 37.639322,
           lng: 139.014608,
         },
         {
           name: "加茂",
+          nameKana: "かも",
           lat: 37.658806,
           lng: 139.048959,
         },
         {
           name: "羽生田",
+          nameKana: "はにゅうだ",
           lat: 37.693613,
           lng: 139.060715,
         },
         {
           name: "田上",
+          nameKana: "たがみ",
           lat: 37.719035,
           lng: 139.074599,
         },
         {
           name: "矢代田",
+          nameKana: "やしろだ",
           lat: 37.748863,
           lng: 139.095654,
         },
         {
           name: "古津",
+          nameKana: "ふるつ",
           lat: 37.7727,
           lng: 139.114252,
         },
         {
           name: "新津",
+          nameKana: "にいつ",
           lat: 37.800383,
           lng: 139.121445,
           transfer: true,
@@ -1861,26 +2194,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "さつき野",
+          nameKana: "さつきの",
           lat: 37.812731,
           lng: 139.117466,
         },
         {
           name: "荻川",
+          nameKana: "おぎかわ",
           lat: 37.833307,
           lng: 139.111477,
         },
         {
           name: "亀田",
+          nameKana: "かめだ",
           lat: 37.877154,
           lng: 139.108065,
         },
         {
           name: "越後石山",
+          nameKana: "えちごいしやま",
           lat: 37.896407,
           lng: 139.095429,
         },
         {
           name: "新潟",
+          nameKana: "にいがた",
           lat: 37.912299,
           lng: 139.060869,
           transfer: true,
@@ -1897,6 +2235,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "新潟",
+          nameKana: "にいがた",
           lat: 37.912299,
           lng: 139.060869,
           transfer: true,
@@ -1904,46 +2243,55 @@ export const chubu: OperatorData = {
         },
         {
           name: "東新潟",
+          nameKana: "ひがしにいがた",
           lat: 37.908773,
           lng: 139.108685,
         },
         {
           name: "大形",
+          nameKana: "おおがた",
           lat: 37.915518,
           lng: 139.129272,
         },
         {
           name: "新崎",
+          nameKana: "にいざき",
           lat: 37.922478,
           lng: 139.158558,
         },
         {
           name: "早通",
+          nameKana: "はやどおり",
           lat: 37.92109,
           lng: 139.178173,
         },
         {
           name: "豊栄",
+          nameKana: "とよさか",
           lat: 37.919351,
           lng: 139.215347,
         },
         {
           name: "黒山",
+          nameKana: "くろやま",
           lat: 37.937128,
           lng: 139.241177,
         },
         {
           name: "佐々木",
+          nameKana: "ささき",
           lat: 37.949716,
           lng: 139.270099,
         },
         {
           name: "西新発田",
+          nameKana: "にししばた",
           lat: 37.942097,
           lng: 139.303474,
         },
         {
           name: "新発田",
+          nameKana: "しばた",
           lat: 37.94412,
           lng: 139.335189,
           transfer: true,
@@ -1960,6 +2308,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "柏崎",
+          nameKana: "かしわざき",
           lat: 37.363495,
           lng: 138.556303,
           transfer: true,
@@ -1967,86 +2316,103 @@ export const chubu: OperatorData = {
         },
         {
           name: "東柏崎",
+          nameKana: "ひがしかしわざき",
           lat: 37.373867,
           lng: 138.565802,
         },
         {
           name: "西中通",
+          nameKana: "にしなかどおり",
           lat: 37.392456,
           lng: 138.592651,
         },
         {
           name: "荒浜",
+          nameKana: "あらはま",
           lat: 37.404699,
           lng: 138.601752,
         },
         {
           name: "刈羽",
+          nameKana: "かりわ",
           lat: 37.430047,
           lng: 138.61955,
         },
         {
           name: "西山",
+          nameKana: "にしやま",
           lat: 37.448375,
           lng: 138.64177,
         },
         {
           name: "礼拝",
+          nameKana: "らいはい",
           lat: 37.459221,
           lng: 138.66392,
         },
         {
           name: "石地",
+          nameKana: "いしじ",
           lat: 37.484132,
           lng: 138.688101,
         },
         {
           name: "小木ノ城",
+          nameKana: "おぎのじょう",
           lat: 37.515431,
           lng: 138.70402,
         },
         {
           name: "出雲崎",
+          nameKana: "いずもざき",
           lat: 37.531857,
           lng: 138.716291,
         },
         {
           name: "妙法寺",
+          nameKana: "みょうほうじ",
           lat: 37.566405,
           lng: 138.742037,
         },
         {
           name: "小島谷",
+          nameKana: "おじまや",
           lat: 37.57455,
           lng: 138.771225,
         },
         {
           name: "桐原",
+          nameKana: "きりはら",
           lat: 37.601553,
           lng: 138.792279,
         },
         {
           name: "寺泊",
+          nameKana: "てらどまり",
           lat: 37.620349,
           lng: 138.814519,
         },
         {
           name: "分水",
+          nameKana: "ぶんすい",
           lat: 37.629032,
           lng: 138.839038,
         },
         {
           name: "粟生津",
+          nameKana: "あおうづ",
           lat: 37.653988,
           lng: 138.873484,
         },
         {
           name: "南吉田",
+          nameKana: "みなみよしだ",
           lat: 37.671999,
           lng: 138.870984,
         },
         {
           name: "吉田",
+          nameKana: "よしだ",
           lat: 37.687111,
           lng: 138.878377,
           transfer: true,
@@ -2054,76 +2420,91 @@ export const chubu: OperatorData = {
         },
         {
           name: "北吉田",
+          nameKana: "きたよしだ",
           lat: 37.702037,
           lng: 138.882209,
         },
         {
           name: "岩室",
+          nameKana: "いわむろ",
           lat: 37.721382,
           lng: 138.879881,
         },
         {
           name: "巻",
+          nameKana: "まき",
           lat: 37.756753,
           lng: 138.889506,
         },
         {
           name: "越後曽根",
+          nameKana: "えちごそね",
           lat: 37.793544,
           lng: 138.911094,
         },
         {
           name: "越後赤塚",
+          nameKana: "えちごあかつか",
           lat: 37.816008,
           lng: 138.908201,
         },
         {
           name: "内野西が丘",
+          nameKana: "うちのにしがおか",
           lat: 37.846355,
           lng: 138.926647,
         },
         {
           name: "内野",
+          nameKana: "うちの",
           lat: 37.85824,
           lng: 138.936615,
         },
         {
           name: "新潟大学前",
+          nameKana: "にいがただいがくまえ",
           lat: 37.869178,
           lng: 138.95442,
         },
         {
           name: "寺尾",
+          nameKana: "てらお",
           lat: 37.879106,
           lng: 138.973742,
         },
         {
           name: "小針",
+          nameKana: "こばり",
           lat: 37.889591,
           lng: 138.991359,
         },
         {
           name: "青山",
+          nameKana: "あおやま",
           lat: 37.898546,
           lng: 139.000813,
         },
         {
           name: "関屋",
+          nameKana: "せきや",
           lat: 37.906015,
           lng: 139.015087,
         },
         {
           name: "白山",
+          nameKana: "はくさん",
           lat: 37.911829,
           lng: 139.029955,
         },
         {
           name: "上所",
+          nameKana: "かみところ",
           lat: 37.907061135513,
           lng: 139.04520502585,
         },
         {
           name: "新潟",
+          nameKana: "にいがた",
           lat: 37.912299,
           lng: 139.060869,
           transfer: true,
@@ -2140,16 +2521,19 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "弥彦",
+          nameKana: "やひこ",
           lat: 37.699161,
           lng: 138.831761,
         },
         {
           name: "矢作",
+          nameKana: "やはぎ",
           lat: 37.690649,
           lng: 138.851669,
         },
         {
           name: "吉田",
+          nameKana: "よしだ",
           lat: 37.687111,
           lng: 138.878377,
           transfer: true,
@@ -2157,26 +2541,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "西燕",
+          nameKana: "にしつばめ",
           lat: 37.679819,
           lng: 138.909232,
         },
         {
           name: "燕",
+          nameKana: "つばめ",
           lat: 37.667613,
           lng: 138.928419,
         },
         {
           name: "燕三条",
+          nameKana: "つばめさんじょう",
           lat: 37.648824,
           lng: 138.939274,
         },
         {
           name: "北三条",
+          nameKana: "きたさんじょう",
           lat: 37.632702,
           lng: 138.956006,
         },
         {
           name: "東三条",
+          nameKana: "ひがしさんじょう",
           lat: 37.628491,
           lng: 138.973703,
           transfer: true,
@@ -2193,6 +2582,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "熱海",
+          nameKana: "あたみ",
           lat: 35.103573,
           lng: 139.077679,
           transfer: true,
@@ -2200,26 +2590,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "来宮",
+          nameKana: "きのみや",
           lat: 35.098723,
           lng: 139.065575,
         },
         {
           name: "伊豆多賀",
+          nameKana: "いずたが",
           lat: 35.059411,
           lng: 139.066847,
         },
         {
           name: "網代",
+          nameKana: "あじろ",
           lat: 35.043545,
           lng: 139.081245,
         },
         {
           name: "宇佐美",
+          nameKana: "うさみ",
           lat: 35.005602,
           lng: 139.079778,
         },
         {
           name: "伊東",
+          nameKana: "いとう",
           lat: 34.9747,
           lng: 139.092125,
           transfer: true,
@@ -2238,6 +2633,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "浜松",
+          nameKana: "はままつ",
           lat: 34.703866,
           lng: 137.734759,
           transfer: true,
@@ -2245,31 +2641,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "高塚",
+          nameKana: "たかつか",
           lat: 34.690425,
           lng: 137.681303,
         },
         {
           name: "舞阪",
+          nameKana: "まいさか",
           lat: 34.685701,
           lng: 137.626422,
         },
         {
           name: "弁天島",
+          nameKana: "べんてんじま",
           lat: 34.690125,
           lng: 137.603058,
         },
         {
           name: "新居町",
+          nameKana: "あらいまち",
           lat: 34.694276,
           lng: 137.568953,
         },
         {
           name: "鷲津",
+          nameKana: "わしづ",
           lat: 34.716819,
           lng: 137.546116,
         },
         {
           name: "新所原",
+          nameKana: "しんじょはら",
           lat: 34.723205,
           lng: 137.484399,
           transfer: true,
@@ -2277,11 +2679,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "二川",
+          nameKana: "ふたがわ",
           lat: 34.725809,
           lng: 137.438966,
         },
         {
           name: "豊橋",
+          nameKana: "とよはし",
           lat: 34.762734,
           lng: 137.382128,
           transfer: true,
@@ -2289,26 +2693,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "西小坂井",
+          nameKana: "にしこざかい",
           lat: 34.79708,
           lng: 137.352499,
         },
         {
           name: "愛知御津",
+          nameKana: "あいちみと",
           lat: 34.812624,
           lng: 137.316492,
         },
         {
           name: "三河大塚",
+          nameKana: "みかわおおつか",
           lat: 34.815744,
           lng: 137.28287,
         },
         {
           name: "三河三谷",
+          nameKana: "みかわみや",
           lat: 34.818546,
           lng: 137.247795,
         },
         {
           name: "蒲郡",
+          nameKana: "がまごおり",
           lat: 34.823078,
           lng: 137.226459,
           transfer: true,
@@ -2316,6 +2725,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "三河塩津",
+          nameKana: "みかわしおつ",
           lat: 34.825295,
           lng: 137.201261,
           transfer: true,
@@ -2323,21 +2733,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "三ケ根",
+          nameKana: "さんがね",
           lat: 34.836449,
           lng: 137.176348,
         },
         {
           name: "幸田",
+          nameKana: "こうだ",
           lat: 34.859926,
           lng: 137.16447,
         },
         {
           name: "相見",
+          nameKana: "あいみ",
           lat: 34.886833,
           lng: 137.160389,
         },
         {
           name: "岡崎",
+          nameKana: "おかざき",
           lat: 34.925417,
           lng: 137.157243,
           transfer: true,
@@ -2345,31 +2759,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "西岡崎",
+          nameKana: "にしおかざき",
           lat: 34.946572,
           lng: 137.123187,
         },
         {
           name: "安城",
+          nameKana: "あんじょう",
           lat: 34.959986,
           lng: 137.08716,
         },
         {
           name: "三河安城",
+          nameKana: "みかわあんじょう",
           lat: 34.96968,
           lng: 137.060918,
         },
         {
           name: "東刈谷",
+          nameKana: "ひがしかりや",
           lat: 34.97741,
           lng: 137.043525,
         },
         {
           name: "野田新町",
+          nameKana: "のだしんまち",
           lat: 34.984212,
           lng: 137.026355,
         },
         {
           name: "刈谷",
+          nameKana: "かりや",
           lat: 34.991156,
           lng: 137.008878,
           transfer: true,
@@ -2377,11 +2797,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "逢妻",
+          nameKana: "あいづま",
           lat: 34.998215,
           lng: 136.990544,
         },
         {
           name: "大府",
+          nameKana: "おおぶ",
           lat: 35.008665,
           lng: 136.961727,
           transfer: true,
@@ -2389,31 +2811,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "共和",
+          nameKana: "きょうわ",
           lat: 35.035245,
           lng: 136.954599,
         },
         {
           name: "南大高",
+          nameKana: "みなみおおだか",
           lat: 35.055403,
           lng: 136.948244,
         },
         {
           name: "大高",
+          nameKana: "おおだか",
           lat: 35.069244,
           lng: 136.940242,
         },
         {
           name: "笠寺",
+          nameKana: "かさでら",
           lat: 35.095113,
           lng: 136.926321,
         },
         {
           name: "熱田",
+          nameKana: "あつた",
           lat: 35.130028,
           lng: 136.910502,
         },
         {
           name: "金山",
+          nameKana: "かなやま",
           lat: 35.143323,
           lng: 136.90075,
           transfer: true,
@@ -2421,11 +2849,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "尾頭橋",
+          nameKana: "おとうばし",
           lat: 35.146981,
           lng: 136.89102,
         },
         {
           name: "名古屋",
+          nameKana: "なごや",
           lat: 35.170694,
           lng: 136.881637,
           transfer: true,
@@ -2433,6 +2863,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "枇杷島",
+          nameKana: "びわじま",
           lat: 35.198681,
           lng: 136.861816,
           transfer: true,
@@ -2440,16 +2871,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "清洲",
+          nameKana: "きよす",
           lat: 35.225406,
           lng: 136.834529,
         },
         {
           name: "稲沢",
+          nameKana: "いなざわ",
           lat: 35.252994,
           lng: 136.820942,
         },
         {
           name: "尾張一宮",
+          nameKana: "おわりいちのみや",
           lat: 35.301765,
           lng: 136.797567,
           transfer: true,
@@ -2457,11 +2891,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "木曽川",
+          nameKana: "きそがわ",
           lat: 35.349319,
           lng: 136.780726,
         },
         {
           name: "岐阜",
+          nameKana: "ぎふ",
           lat: 35.409532,
           lng: 136.756514,
           transfer: true,
@@ -2478,6 +2914,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "岐阜",
+          nameKana: "ぎふ",
           lat: 35.409532,
           lng: 136.756514,
           transfer: true,
@@ -2485,16 +2922,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "西岐阜",
+          nameKana: "にしぎふ",
           lat: 35.404664,
           lng: 136.72341,
         },
         {
           name: "穂積",
+          nameKana: "ほづみ",
           lat: 35.396345,
           lng: 136.693834,
         },
         {
           name: "大垣",
+          nameKana: "おおがき",
           lat: 35.367096,
           lng: 136.618288,
           transfer: true,
@@ -2502,41 +2942,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "荒尾",
+          nameKana: "あらお",
           lat: 35.373454,
           lng: 136.583276,
         },
         {
           name: "美濃赤坂",
+          nameKana: "みのあかさか",
           lat: 35.386677,
           lng: 136.582129,
         },
         {
           name: "垂井",
+          nameKana: "たるい",
           lat: 35.369587,
           lng: 136.531246,
         },
         {
           name: "関ケ原",
+          nameKana: "せきがはら",
           lat: 35.363726,
           lng: 136.470451,
         },
         {
           name: "柏原",
+          nameKana: "かしわばら",
           lat: 35.344593,
           lng: 136.402767,
         },
         {
           name: "近江長岡",
+          nameKana: "おうみながおか",
           lat: 35.359307,
           lng: 136.373775,
         },
         {
           name: "醒ケ井",
+          nameKana: "さめがい",
           lat: 35.327664,
           lng: 136.345135,
         },
         {
           name: "米原",
+          nameKana: "まいばら",
           lat: 35.314657,
           lng: 136.289992,
           transfer: true,
@@ -2553,6 +3001,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "大府",
+          nameKana: "おおぶ",
           lat: 35.008665,
           lng: 136.961727,
           transfer: true,
@@ -2560,46 +3009,55 @@ export const chubu: OperatorData = {
         },
         {
           name: "尾張森岡",
+          nameKana: "おわりもりおか",
           lat: 34.993826,
           lng: 136.970279,
         },
         {
           name: "緒川",
+          nameKana: "おがわ",
           lat: 34.981372,
           lng: 136.971899,
         },
         {
           name: "石浜",
+          nameKana: "いしはま",
           lat: 34.967813,
           lng: 136.972932,
         },
         {
           name: "東浦",
+          nameKana: "ひがしうら",
           lat: 34.949574,
           lng: 136.970725,
         },
         {
           name: "亀崎",
+          nameKana: "かめざき",
           lat: 34.918986,
           lng: 136.961058,
         },
         {
           name: "乙川",
+          nameKana: "おっかわ",
           lat: 34.903306,
           lng: 136.941344,
         },
         {
           name: "半田",
+          nameKana: "はんだ",
           lat: 34.894167,
           lng: 136.930462,
         },
         {
           name: "東成岩",
+          nameKana: "ひがしならわ",
           lat: 34.874279,
           lng: 136.923416,
         },
         {
           name: "武豊",
+          nameKana: "たけとよ",
           lat: 34.853507,
           lng: 136.921244,
         },
@@ -2614,6 +3072,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "多治見",
+          nameKana: "たじみ",
           lat: 35.334774,
           lng: 137.120294,
           transfer: true,
@@ -2621,26 +3080,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "小泉",
+          nameKana: "こいずみ",
           lat: 35.349055,
           lng: 137.100421,
         },
         {
           name: "根本",
+          nameKana: "ねもと",
           lat: 35.361548,
           lng: 137.090008,
         },
         {
           name: "姫",
+          nameKana: "ひめ",
           lat: 35.382004,
           lng: 137.072078,
         },
         {
           name: "下切",
+          nameKana: "しもぎり",
           lat: 35.393777,
           lng: 137.063734,
         },
         {
           name: "可児",
+          nameKana: "かに",
           lat: 35.422832,
           lng: 137.055345,
           transfer: true,
@@ -2648,11 +3112,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "美濃川合",
+          nameKana: "みのかわい",
           lat: 35.444138,
           lng: 137.045309,
         },
         {
           name: "美濃太田",
+          nameKana: "みのおおた",
           lat: 35.445617,
           lng: 137.019467,
           transfer: true,
@@ -2669,6 +3135,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "名古屋",
+          nameKana: "なごや",
           lat: 35.170694,
           lng: 136.881637,
           transfer: true,
@@ -2676,6 +3143,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "金山",
+          nameKana: "かなやま",
           lat: 35.142928,
           lng: 136.900517,
           transfer: true,
@@ -2683,6 +3151,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "鶴舞",
+          nameKana: "つるまい",
           lat: 35.156416,
           lng: 136.917436,
           transfer: true,
@@ -2690,6 +3159,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "千種",
+          nameKana: "ちくさ",
           lat: 35.170168,
           lng: 136.930665,
           transfer: true,
@@ -2697,6 +3167,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "大曽根",
+          nameKana: "おおぞね",
           lat: 35.191508,
           lng: 136.937161,
           transfer: true,
@@ -2704,11 +3175,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "新守山",
+          nameKana: "しんもりやま",
           lat: 35.207283,
           lng: 136.951207,
         },
         {
           name: "勝川",
+          nameKana: "かちがわ",
           lat: 35.22982,
           lng: 136.956285,
           transfer: true,
@@ -2716,16 +3189,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "春日井",
+          nameKana: "かすがい",
           lat: 35.243139,
           lng: 136.985307,
         },
         {
           name: "神領",
+          nameKana: "じんりょう",
           lat: 35.256234,
           lng: 137.010006,
         },
         {
           name: "高蔵寺",
+          nameKana: "こうぞうじ",
           lat: 35.26434,
           lng: 137.043766,
           transfer: true,
@@ -2733,16 +3209,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "定光寺",
+          nameKana: "じょうこうじ",
           lat: 35.278015,
           lng: 137.080981,
         },
         {
           name: "古虎渓",
+          nameKana: "ここけい",
           lat: 35.302955,
           lng: 137.101011,
         },
         {
           name: "多治見",
+          nameKana: "たじみ",
           lat: 35.334774,
           lng: 137.120294,
           transfer: true,
@@ -2750,26 +3229,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "土岐市",
+          nameKana: "ときし",
           lat: 35.359708,
           lng: 137.182082,
         },
         {
           name: "瑞浪",
+          nameKana: "みずなみ",
           lat: 35.369081,
           lng: 137.252017,
         },
         {
           name: "釜戸",
+          nameKana: "かまど",
           lat: 35.411103,
           lng: 137.30501,
         },
         {
           name: "武並",
+          nameKana: "たけなみ",
           lat: 35.437938,
           lng: 137.35417,
         },
         {
           name: "恵那",
+          nameKana: "えな",
           lat: 35.455063,
           lng: 137.407764,
           transfer: true,
@@ -2777,111 +3261,133 @@ export const chubu: OperatorData = {
         },
         {
           name: "美乃坂本",
+          nameKana: "みのさかもと",
           lat: 35.479286,
           lng: 137.450364,
         },
         {
           name: "中津川",
+          nameKana: "なかつがわ",
           lat: 35.50036,
           lng: 137.502867,
         },
         {
           name: "落合川",
+          nameKana: "おちあいがわ",
           lat: 35.525116,
           lng: 137.530034,
         },
         {
           name: "坂下",
+          nameKana: "さかした",
           lat: 35.574218,
           lng: 137.531094,
         },
         {
           name: "田立",
+          nameKana: "ただち",
           lat: 35.588281,
           lng: 137.54893,
         },
         {
           name: "南木曽",
+          nameKana: "なぎそ",
           lat: 35.598896,
           lng: 137.608672,
         },
         {
           name: "十二兼",
+          nameKana: "じゅうにかね",
           lat: 35.645418,
           lng: 137.617569,
         },
         {
           name: "野尻",
+          nameKana: "のじり",
           lat: 35.673042,
           lng: 137.636152,
         },
         {
           name: "大桑",
+          nameKana: "おおくわ",
           lat: 35.684477,
           lng: 137.664224,
         },
         {
           name: "須原",
+          nameKana: "すはら",
           lat: 35.69769,
           lng: 137.694844,
         },
         {
           name: "倉本",
+          nameKana: "くらもと",
           lat: 35.732939,
           lng: 137.714338,
         },
         {
           name: "上松",
+          nameKana: "あげまつ",
           lat: 35.784068,
           lng: 137.693283,
         },
         {
           name: "木曽福島",
+          nameKana: "きそふくしま",
           lat: 35.843669,
           lng: 137.69343,
         },
         {
           name: "原野",
+          nameKana: "はらの",
           lat: 35.871245,
           lng: 137.741536,
         },
         {
           name: "宮ノ越",
+          nameKana: "みやのこし",
           lat: 35.888337,
           lng: 137.763794,
         },
         {
           name: "藪原",
+          nameKana: "やぶはら",
           lat: 35.930152,
           lng: 137.784368,
         },
         {
           name: "奈良井",
+          nameKana: "ならい",
           lat: 35.969476,
           lng: 137.816195,
         },
         {
           name: "木曽平沢",
+          nameKana: "きそひらさわ",
           lat: 35.979108,
           lng: 137.832613,
         },
         {
           name: "贄川",
+          nameKana: "にえかわ",
           lat: 36.014008,
           lng: 137.86091,
         },
         {
           name: "日出塩",
+          nameKana: "ひでしお",
           lat: 36.049004,
           lng: 137.894804,
         },
         {
           name: "洗馬",
+          nameKana: "せば",
           lat: 36.087164,
           lng: 137.916842,
         },
         {
           name: "塩尻",
+          nameKana: "しおじり",
           lat: 36.114364,
           lng: 137.947961,
           transfer: true,
@@ -2898,6 +3404,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "富士",
+          nameKana: "ふじ",
           lat: 35.151497,
           lng: 138.651225,
           transfer: true,
@@ -2905,191 +3412,229 @@ export const chubu: OperatorData = {
         },
         {
           name: "柚木",
+          nameKana: "ゆのき",
           lat: 35.157468,
           lng: 138.639157,
         },
         {
           name: "竪堀",
+          nameKana: "たてぼり",
           lat: 35.168075,
           lng: 138.645881,
         },
         {
           name: "入山瀬",
+          nameKana: "いりやませ",
           lat: 35.188276,
           lng: 138.647622,
         },
         {
           name: "富士根",
+          nameKana: "ふじね",
           lat: 35.205251,
           lng: 138.63562,
         },
         {
           name: "源道寺",
+          nameKana: "げんどうじ",
           lat: 35.214463,
           lng: 138.627057,
         },
         {
           name: "富士宮",
+          nameKana: "ふじのみや",
           lat: 35.221409,
           lng: 138.614924,
         },
         {
           name: "西富士宮",
+          nameKana: "にしふじのみや",
           lat: 35.225456,
           lng: 138.602567,
         },
         {
           name: "沼久保",
+          nameKana: "ぬまくぼ",
           lat: 35.199278,
           lng: 138.584283,
         },
         {
           name: "芝川",
+          nameKana: "しばかわ",
           lat: 35.197272,
           lng: 138.563845,
         },
         {
           name: "稲子",
+          nameKana: "いなこ",
           lat: 35.230454,
           lng: 138.536892,
         },
         {
           name: "十島",
+          nameKana: "とおしま",
           lat: 35.230153,
           lng: 138.515802,
         },
         {
           name: "井出",
+          nameKana: "いで",
           lat: 35.247449,
           lng: 138.490989,
         },
         {
           name: "寄畑",
+          nameKana: "よりはた",
           lat: 35.264832,
           lng: 138.474932,
         },
         {
           name: "内船",
+          nameKana: "うつぶな",
           lat: 35.282183,
           lng: 138.465068,
         },
         {
           name: "甲斐大島",
+          nameKana: "かいおおしま",
           lat: 35.32817,
           lng: 138.45218,
         },
         {
           name: "身延",
+          nameKana: "みのぶ",
           lat: 35.361397,
           lng: 138.453021,
         },
         {
           name: "塩之沢",
+          nameKana: "しおのさわ",
           lat: 35.379626,
           lng: 138.453887,
         },
         {
           name: "波高島",
+          nameKana: "はだかじま",
           lat: 35.418624,
           lng: 138.459747,
         },
         {
           name: "下部温泉",
+          nameKana: "しもべおんせん",
           lat: 35.425751,
           lng: 138.472359,
         },
         {
           name: "甲斐常葉",
+          nameKana: "かいときわ",
           lat: 35.444779,
           lng: 138.476975,
         },
         {
           name: "市ノ瀬",
+          nameKana: "いちのせ",
           lat: 35.462345,
           lng: 138.482154,
         },
         {
           name: "久那土",
+          nameKana: "くなど",
           lat: 35.48144,
           lng: 138.467391,
         },
         {
           name: "甲斐岩間",
+          nameKana: "かいいわま",
           lat: 35.492539,
           lng: 138.463057,
         },
         {
           name: "落居",
+          nameKana: "おちい",
           lat: 35.503612,
           lng: 138.471256,
         },
         {
           name: "鰍沢口",
+          nameKana: "かじかざわぐち",
           lat: 35.541375,
           lng: 138.470916,
         },
         {
           name: "市川大門",
+          nameKana: "いちかわだいもん",
           lat: 35.560451,
           lng: 138.493276,
         },
         {
           name: "市川本町",
+          nameKana: "いちかわほんまち",
           lat: 35.560684,
           lng: 138.502028,
         },
         {
           name: "芦川",
+          nameKana: "あしがわ",
           lat: 35.563087,
           lng: 138.511241,
         },
         {
           name: "甲斐上野",
+          nameKana: "かいうえの",
           lat: 35.569592,
           lng: 138.520465,
         },
         {
           name: "東花輪",
+          nameKana: "ひがしはなわ",
           lat: 35.594749,
           lng: 138.526935,
         },
         {
           name: "小井川",
+          nameKana: "こいかわ",
           lat: 35.604442,
           lng: 138.528523,
         },
         {
           name: "常永",
+          nameKana: "じょうえい",
           lat: 35.616877,
           lng: 138.532909,
         },
         {
           name: "国母",
+          nameKana: "こくぼ",
           lat: 35.630567,
           lng: 138.552113,
         },
         {
           name: "甲斐住吉",
+          nameKana: "かいすみよし",
           lat: 35.63658,
           lng: 138.569892,
         },
         {
           name: "南甲府",
+          nameKana: "みなみこうふ",
           lat: 35.643496,
           lng: 138.577274,
         },
         {
           name: "善光寺",
+          nameKana: "ぜんこうじ",
           lat: 35.65985,
           lng: 138.589278,
         },
         {
           name: "金手",
+          nameKana: "かねんて",
           lat: 35.662264,
           lng: 138.578845,
         },
         {
           name: "甲府",
+          nameKana: "こうふ",
           lat: 35.667054,
           lng: 138.569015,
           transfer: true,
@@ -3106,6 +3651,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "岐阜",
+          nameKana: "ぎふ",
           lat: 35.409532,
           lng: 136.756514,
           transfer: true,
@@ -3113,11 +3659,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "長森",
+          nameKana: "ながもり",
           lat: 35.402024,
           lng: 136.802981,
         },
         {
           name: "那加",
+          nameKana: "なか",
           lat: 35.400538,
           lng: 136.835466,
           transfer: true,
@@ -3125,11 +3673,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "蘇原",
+          nameKana: "そはら",
           lat: 35.403167,
           lng: 136.871434,
         },
         {
           name: "各務ケ原",
+          nameKana: "かがみがはら",
           lat: 35.403812,
           lng: 136.901106,
           transfer: true,
@@ -3137,6 +3687,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "鵜沼",
+          nameKana: "うぬま",
           lat: 35.397897,
           lng: 136.945122,
           transfer: true,
@@ -3144,11 +3695,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "坂祝",
+          nameKana: "さかほぎ",
           lat: 35.426359,
           lng: 136.976868,
         },
         {
           name: "美濃太田",
+          nameKana: "みのおおた",
           lat: 35.445617,
           lng: 137.019467,
           transfer: true,
@@ -3156,186 +3709,223 @@ export const chubu: OperatorData = {
         },
         {
           name: "古井",
+          nameKana: "こび",
           lat: 35.457295,
           lng: 137.047497,
         },
         {
           name: "中川辺",
+          nameKana: "なかかわべ",
           lat: 35.487143,
           lng: 137.065086,
         },
         {
           name: "下麻生",
+          nameKana: "しもあそう",
           lat: 35.514973,
           lng: 137.087157,
         },
         {
           name: "上麻生",
+          nameKana: "かみあそう",
           lat: 35.541293,
           lng: 137.11863,
         },
         {
           name: "白川口",
+          nameKana: "しらかわぐち",
           lat: 35.579345,
           lng: 137.184824,
         },
         {
           name: "下油井",
+          nameKana: "しもゆい",
           lat: 35.633214,
           lng: 137.183137,
         },
         {
           name: "飛騨金山",
+          nameKana: "ひだかなやま",
           lat: 35.662118,
           lng: 137.164333,
         },
         {
           name: "焼石",
+          nameKana: "やけいし",
           lat: 35.725763,
           lng: 137.200404,
         },
         {
           name: "下呂",
+          nameKana: "げろ",
           lat: 35.805345,
           lng: 137.239778,
         },
         {
           name: "禅昌寺",
+          nameKana: "ぜんしょうじ",
           lat: 35.848937,
           lng: 137.225184,
         },
         {
           name: "飛騨萩原",
+          nameKana: "ひだはぎわら",
           lat: 35.874766,
           lng: 137.213568,
         },
         {
           name: "上呂",
+          nameKana: "じょうろ",
           lat: 35.910717,
           lng: 137.204562,
         },
         {
           name: "飛騨宮田",
+          nameKana: "ひだみやだ",
           lat: 35.928443,
           lng: 137.235595,
         },
         {
           name: "飛騨小坂",
+          nameKana: "ひだおさか",
           lat: 35.950749,
           lng: 137.257084,
         },
         {
           name: "渚",
+          nameKana: "なぎさ",
           lat: 36.001416,
           lng: 137.287894,
         },
         {
           name: "久々野",
+          nameKana: "くぐの",
           lat: 36.052273,
           lng: 137.276778,
         },
         {
           name: "飛騨一ノ宮",
+          nameKana: "ひだいちのみや",
           lat: 36.08836,
           lng: 137.247588,
         },
         {
           name: "高山",
+          nameKana: "たかやま",
           lat: 36.140574,
           lng: 137.251301,
         },
         {
           name: "上枝",
+          nameKana: "ほずえ",
           lat: 36.18095,
           lng: 137.245789,
         },
         {
           name: "飛騨国府",
+          nameKana: "ひだこくふ",
           lat: 36.211001,
           lng: 137.215895,
         },
         {
           name: "飛騨古川",
+          nameKana: "ひだふるかわ",
           lat: 36.236727,
           lng: 137.189681,
         },
         {
           name: "杉崎",
+          nameKana: "すぎさき",
           lat: 36.250003,
           lng: 137.168638,
         },
         {
           name: "飛騨細江",
+          nameKana: "ひだほそえ",
           lat: 36.260926,
           lng: 137.146029,
         },
         {
           name: "角川",
+          nameKana: "つのがわ",
           lat: 36.30016,
           lng: 137.113223,
         },
         {
           name: "坂上",
+          nameKana: "さかかみ",
           lat: 36.327902,
           lng: 137.140979,
         },
         {
           name: "打保",
+          nameKana: "うつぼ",
           lat: 36.383737,
           lng: 137.181902,
         },
         {
           name: "杉原",
+          nameKana: "すぎはら",
           lat: 36.415806,
           lng: 137.192102,
         },
         {
           name: "猪谷",
+          nameKana: "いのたに",
           lat: 36.471625,
           lng: 137.237975,
         },
         {
           name: "楡原",
+          nameKana: "にれはら",
           lat: 36.529323,
           lng: 137.22872,
         },
         {
           name: "笹津",
+          nameKana: "ささづ",
           lat: 36.562129,
           lng: 137.211437,
         },
         {
           name: "東八尾",
+          nameKana: "ひがしやつお",
           lat: 36.589645,
           lng: 137.174978,
         },
         {
           name: "越中八尾",
+          nameKana: "えっちゅうやつお",
           lat: 36.591391,
           lng: 137.138379,
         },
         {
           name: "千里",
+          nameKana: "ちさと",
           lat: 36.634678,
           lng: 137.132396,
         },
         {
           name: "速星",
+          nameKana: "はやほし",
           lat: 36.664135,
           lng: 137.160428,
         },
         {
           name: "婦中鵜坂",
+          nameKana: "ふちゅううさか",
           lat: 36.676084,
           lng: 137.167625,
         },
         {
           name: "西富山",
+          nameKana: "にしとやま",
           lat: 36.699331,
           lng: 137.177029,
         },
         {
           name: "富山",
+          nameKana: "とやま",
           lat: 36.701384,
           lng: 137.213091,
           transfer: true,
@@ -3352,6 +3942,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "熱海",
+          nameKana: "あたみ",
           lat: 35.103573,
           lng: 139.077679,
           transfer: true,
@@ -3359,11 +3950,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "函南",
+          nameKana: "かんなみ",
           lat: 35.108773,
           lng: 138.970984,
         },
         {
           name: "三島",
+          nameKana: "みしま",
           lat: 35.126253,
           lng: 138.911133,
           transfer: true,
@@ -3371,6 +3964,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "沼津",
+          nameKana: "ぬまづ",
           lat: 35.103011,
           lng: 138.860104,
           transfer: true,
@@ -3378,21 +3972,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "片浜",
+          nameKana: "かたはま",
           lat: 35.11825,
           lng: 138.818937,
         },
         {
           name: "原",
+          nameKana: "はら",
           lat: 35.124915,
           lng: 138.793387,
         },
         {
           name: "東田子の浦",
+          nameKana: "ひがしたごのうら",
           lat: 35.136255,
           lng: 138.745441,
         },
         {
           name: "吉原",
+          nameKana: "よしわら",
           lat: 35.143845,
           lng: 138.702768,
           transfer: true,
@@ -3400,6 +3998,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "富士",
+          nameKana: "ふじ",
           lat: 35.151497,
           lng: 138.651225,
           transfer: true,
@@ -3407,36 +4006,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "富士川",
+          nameKana: "ふじかわ",
           lat: 35.141119,
           lng: 138.618571,
         },
         {
           name: "新蒲原",
+          nameKana: "しんかんばら",
           lat: 35.119599,
           lng: 138.608117,
         },
         {
           name: "蒲原",
+          nameKana: "かんばら",
           lat: 35.114005,
           lng: 138.582752,
         },
         {
           name: "由比",
+          nameKana: "ゆい",
           lat: 35.097108,
           lng: 138.552756,
         },
         {
           name: "興津",
+          nameKana: "おきつ",
           lat: 35.052539,
           lng: 138.521865,
         },
         {
           name: "清水",
+          nameKana: "しみず",
           lat: 35.023248,
           lng: 138.488958,
         },
         {
           name: "草薙",
+          nameKana: "くさなぎ",
           lat: 35.002854,
           lng: 138.442025,
           transfer: true,
@@ -3444,51 +4050,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "東静岡",
+          nameKana: "ひがししずおか",
           lat: 34.985256,
           lng: 138.413118,
         },
         {
           name: "静岡",
+          nameKana: "しずおか",
           lat: 34.971629,
           lng: 138.388579,
         },
         {
           name: "安倍川",
+          nameKana: "あべかわ",
           lat: 34.940961,
           lng: 138.364029,
         },
         {
           name: "用宗",
+          nameKana: "もちむね",
           lat: 34.922512,
           lng: 138.36006,
         },
         {
           name: "焼津",
+          nameKana: "やいづ",
           lat: 34.872261,
           lng: 138.318457,
         },
         {
           name: "西焼津",
+          nameKana: "にしやいづ",
           lat: 34.859824,
           lng: 138.28552,
         },
         {
           name: "藤枝",
+          nameKana: "ふじえだ",
           lat: 34.849511,
           lng: 138.252748,
         },
         {
           name: "六合",
+          nameKana: "ろくごう",
           lat: 34.836436,
           lng: 138.203502,
         },
         {
           name: "島田",
+          nameKana: "しまだ",
           lat: 34.830159,
           lng: 138.173436,
         },
         {
           name: "金谷",
+          nameKana: "かなや",
           lat: 34.819049,
           lng: 138.125578,
           transfer: true,
@@ -3496,11 +4112,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "菊川",
+          nameKana: "きくがわ",
           lat: 34.76176,
           lng: 138.085648,
         },
         {
           name: "掛川",
+          nameKana: "かけがわ",
           lat: 34.769463,
           lng: 138.014937,
           transfer: true,
@@ -3508,36 +4126,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "愛野",
+          nameKana: "あいの",
           lat: 34.752257,
           lng: 137.961663,
         },
         {
           name: "袋井",
+          nameKana: "ふくろい",
           lat: 34.741377,
           lng: 137.92596,
         },
         {
           name: "御厨",
+          nameKana: "みくりや",
           lat: 34.7183,
           lng: 137.885,
         },
         {
           name: "磐田",
+          nameKana: "いわた",
           lat: 34.710132,
           lng: 137.852244,
         },
         {
           name: "豊田町",
+          nameKana: "とよだちょう",
           lat: 34.7121,
           lng: 137.82013,
         },
         {
           name: "天竜川",
+          nameKana: "てんりゅうがわ",
           lat: 34.716994,
           lng: 137.77923,
         },
         {
           name: "浜松",
+          nameKana: "はままつ",
           lat: 34.703866,
           lng: 137.734759,
           transfer: true,
@@ -3554,6 +4179,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "国府津",
+          nameKana: "こうづ",
           lat: 35.280832,
           lng: 139.212932,
           transfer: true,
@@ -3561,91 +4187,109 @@ export const chubu: OperatorData = {
         },
         {
           name: "下曽我",
+          nameKana: "しもそが",
           lat: 35.303554,
           lng: 139.183395,
         },
         {
           name: "上大井",
+          nameKana: "かみおおい",
           lat: 35.321883,
           lng: 139.163508,
         },
         {
           name: "相模金子",
+          nameKana: "さがみかねこ",
           lat: 35.33364,
           lng: 139.150753,
         },
         {
           name: "松田",
+          nameKana: "まつだ",
           lat: 35.346843,
           lng: 139.137417,
         },
         {
           name: "東山北",
+          nameKana: "ひがしやまきた",
           lat: 35.357637,
           lng: 139.10765,
         },
         {
           name: "山北",
+          nameKana: "やまきた",
           lat: 35.360808,
           lng: 139.080212,
         },
         {
           name: "谷峨",
+          nameKana: "やが",
           lat: 35.366561,
           lng: 139.038234,
         },
         {
           name: "駿河小山",
+          nameKana: "するがおやま",
           lat: 35.359113,
           lng: 138.997689,
         },
         {
           name: "足柄",
+          nameKana: "あしがら",
           lat: 35.332233,
           lng: 138.981687,
         },
         {
           name: "御殿場",
+          nameKana: "ごてんば",
           lat: 35.299933,
           lng: 138.93424,
         },
         {
           name: "南御殿場",
+          nameKana: "みなみごてんば",
           lat: 35.277269,
           lng: 138.925789,
         },
         {
           name: "富士岡",
+          nameKana: "ふじおか",
           lat: 35.257299,
           lng: 138.920504,
         },
         {
           name: "岩波",
+          nameKana: "いわなみ",
           lat: 35.21498,
           lng: 138.919296,
         },
         {
           name: "裾野",
+          nameKana: "すその",
           lat: 35.171372,
           lng: 138.909293,
         },
         {
           name: "長泉なめり",
+          nameKana: "ながいずみなめり",
           lat: 35.147633,
           lng: 138.899364,
         },
         {
           name: "下土狩",
+          nameKana: "しもとがり",
           lat: 35.128379,
           lng: 138.895126,
         },
         {
           name: "大岡",
+          nameKana: "おおおか",
           lat: 35.116158,
           lng: 138.881988,
         },
         {
           name: "沼津",
+          nameKana: "ぬまづ",
           lat: 35.103011,
           lng: 138.860104,
           transfer: true,
@@ -3664,6 +4308,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "松本",
+          nameKana: "まつもと",
           lat: 36.231081,
           lng: 137.963846,
           transfer: true,
@@ -3671,66 +4316,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "西松本",
+          nameKana: "にしまつもと",
           lat: 36.227111,
           lng: 137.963299
         },
         {
           name: "渚",
+          nameKana: "なぎさ",
           lat: 36.227169,
           lng: 137.956006
         },
         {
           name: "信濃荒井",
+          nameKana: "しなのあらい",
           lat: 36.229019,
           lng: 137.949484
         },
         {
           name: "大庭",
+          nameKana: "おおにわ",
           lat: 36.226961,
           lng: 137.941346
         },
         {
           name: "下新",
+          nameKana: "しもにい",
           lat: 36.22513,
           lng: 137.922564
         },
         {
           name: "北新・松本大学前",
+          nameKana: "きたにい・まつもとだいがくまえ",
           lat: 36.219816,
           lng: 137.913823
         },
         {
           name: "新村",
+          nameKana: "にいむら",
           lat: 36.216441,
           lng: 137.905304
         },
         {
           name: "三溝",
+          nameKana: "さみぞ",
           lat: 36.212863,
           lng: 137.891469
         },
         {
           name: "森口",
+          nameKana: "もりぐち",
           lat: 36.208136,
           lng: 137.881315
         },
         {
           name: "下島",
+          nameKana: "しもじま",
           lat: 36.206131,
           lng: 137.871841
         },
         {
           name: "波田",
+          nameKana: "はた",
           lat: 36.200358,
           lng: 137.856412
         },
         {
           name: "渕東",
+          nameKana: "えんどう",
           lat: 36.195325,
           lng: 137.840313
         },
         {
           name: "新島々",
+          nameKana: "しんしましま",
           lat: 36.18977,
           lng: 137.821689
         }
@@ -3747,31 +4405,37 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "軽井沢",
+          nameKana: "かるいざわ",
           lat: 36.342889,
           lng: 138.635096,
         },
         {
           name: "中軽井沢",
+          nameKana: "なかかるいざわ",
           lat: 36.347576,
           lng: 138.593147
         },
         {
           name: "信濃追分",
+          nameKana: "しなのおいわけ",
           lat: 36.335538,
           lng: 138.558582
         },
         {
           name: "御代田",
+          nameKana: "みよた",
           lat: 36.318986,
           lng: 138.50619
         },
         {
           name: "平原",
+          nameKana: "ひらはら",
           lat: 36.308606,
           lng: 138.453926
         },
         {
           name: "小諸",
+          nameKana: "こもろ",
           lat: 36.326903,
           lng: 138.421715,
           transfer: true,
@@ -3779,26 +4443,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "滋野",
+          nameKana: "しげの",
           lat: 36.342586,
           lng: 138.363543
         },
         {
           name: "田中",
+          nameKana: "たなか",
           lat: 36.354433,
           lng: 138.329414
         },
         {
           name: "大屋",
+          nameKana: "おおや",
           lat: 36.369566,
           lng: 138.297109
         },
         {
           name: "信濃国分寺",
+          nameKana: "しなのこくぶんじ",
           lat: 36.378592,
           lng: 138.273385
         },
         {
           name: "上田",
+          nameKana: "うえだ",
           lat: 36.396579,
           lng: 138.249298,
           transfer: true,
@@ -3806,41 +4475,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "西上田",
+          nameKana: "にしうえだ",
           lat: 36.417318,
           lng: 138.20855
         },
         {
           name: "テクノさかき",
+          nameKana: "てくのさかき",
           lat: 36.440584,
           lng: 138.188204
         },
         {
           name: "坂城",
+          nameKana: "さかき",
           lat: 36.46195,
           lng: 138.181315
         },
         {
           name: "戸倉",
+          nameKana: "とぐら",
           lat: 36.492913,
           lng: 138.153017
         },
         {
           name: "千曲",
+          nameKana: "ちくま",
           lat: 36.509039,
           lng: 138.141661
         },
         {
           name: "屋代",
+          nameKana: "やしろ",
           lat: 36.532062,
           lng: 138.128191
         },
         {
           name: "屋代高校前",
+          nameKana: "やしろこうこうまえ",
           lat: 36.547853,
           lng: 138.132489
         },
         {
           name: "篠ノ井",
+          nameKana: "しののい",
           lat: 36.5771,
           lng: 138.138046,
           transfer: true,
@@ -3857,6 +4534,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "長野",
+          nameKana: "ながの",
           lat: 36.643307,
           lng: 138.189101,
           transfer: true,
@@ -3864,6 +4542,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "北長野",
+          nameKana: "きたながの",
           lat: 36.665123,
           lng: 138.222534,
           transfer: true,
@@ -3871,6 +4550,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "三才",
+          nameKana: "さんさい",
           lat: 36.686674,
           lng: 138.244079,
           transfer: true,
@@ -3878,6 +4558,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "豊野",
+          nameKana: "とよの",
           lat: 36.710642,
           lng: 138.274458,
           transfer: true,
@@ -3885,21 +4566,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "牟礼",
+          nameKana: "むれ",
           lat: 36.753239,
           lng: 138.247121
         },
         {
           name: "古間",
+          nameKana: "ふるま",
           lat: 36.792295,
           lng: 138.230461
         },
         {
           name: "黒姫",
+          nameKana: "くろひめ",
           lat: 36.807214,
           lng: 138.197195
         },
         {
           name: "妙高高原",
+          nameKana: "みょうこうこうげん",
           lat: 36.872175,
           lng: 138.211953,
           transfer: true,
@@ -3918,6 +4603,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "長野",
+          nameKana: "ながの",
           lat: 36.644341,
           lng: 138.188396,
           transfer: true,
@@ -3925,116 +4611,139 @@ export const chubu: OperatorData = {
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 36.649141,
           lng: 138.191488
         },
         {
           name: "権堂",
+          nameKana: "ごんどう",
           lat: 36.653088,
           lng: 138.19188
         },
         {
           name: "善光寺下",
+          nameKana: "ぜんこうじした",
           lat: 36.658673,
           lng: 138.193513
         },
         {
           name: "本郷",
+          nameKana: "ほんごう",
           lat: 36.662567,
           lng: 138.204014
         },
         {
           name: "桐原",
+          nameKana: "きりはら",
           lat: 36.665642,
           lng: 138.21303
         },
         {
           name: "信濃吉田",
+          nameKana: "しなのよしだ",
           lat: 36.667428,
           lng: 138.220904
         },
         {
           name: "朝陽",
+          nameKana: "あさひ",
           lat: 36.666326,
           lng: 138.240635
         },
         {
           name: "附属中学前",
+          nameKana: "ふぞくちゅうがくまえ",
           lat: 36.662488,
           lng: 138.248298
         },
         {
           name: "柳原",
+          nameKana: "やなぎはら",
           lat: 36.663438,
           lng: 138.258317
         },
         {
           name: "村山",
+          nameKana: "むらやま",
           lat: 36.659295,
           lng: 138.279556
         },
         {
           name: "日野",
+          nameKana: "ひの",
           lat: 36.655621,
           lng: 138.289574
         },
         {
           name: "須坂",
+          nameKana: "すざか",
           lat: 36.656841,
           lng: 138.304239,
         },
         {
           name: "北須坂",
+          nameKana: "きたすざか",
           lat: 36.678283,
           lng: 138.308705
         },
         {
           name: "小布施",
+          nameKana: "おぶせ",
           lat: 36.698942,
           lng: 138.312771
         },
         {
           name: "都住",
+          nameKana: "つすみ",
           lat: 36.704122,
           lng: 138.322086
         },
         {
           name: "桜沢",
+          nameKana: "さくらさわ",
           lat: 36.712641,
           lng: 138.349642
         },
         {
           name: "延徳",
+          nameKana: "えんとく",
           lat: 36.726973,
           lng: 138.362693
         },
         {
           name: "信州中野",
+          nameKana: "しんしゅうなかの",
           lat: 36.74476,
           lng: 138.364901
         },
         {
           name: "中野松川",
+          nameKana: "なかのまつかわ",
           lat: 36.750615,
           lng: 138.374252
         },
         {
           name: "信濃竹原",
+          nameKana: "しなのたけはら",
           lat: 36.761045,
           lng: 138.393672
         },
         {
           name: "夜間瀬",
+          nameKana: "よませ",
           lat: 36.759998,
           lng: 138.403322
         },
         {
           name: "上条",
+          nameKana: "かみじょう",
           lat: 36.749641,
           lng: 138.407619
         },
         {
           name: "湯田中",
+          nameKana: "ゆだなか",
           lat: 36.741659,
           lng: 138.414877
         }
@@ -4051,6 +4760,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "上田",
+          nameKana: "うえだ",
           lat: 36.396691,
           lng: 138.24882,
           transfer: true,
@@ -4058,71 +4768,85 @@ export const chubu: OperatorData = {
         },
         {
           name: "城下",
+          nameKana: "しろした",
           lat: 36.392454,
           lng: 138.242712
         },
         {
           name: "三好町",
+          nameKana: "みよしちょう",
           lat: 36.391712,
           lng: 138.235585
         },
         {
           name: "赤坂上",
+          nameKana: "あかさかうえ",
           lat: 36.391301,
           lng: 138.227224
         },
         {
           name: "上田原",
+          nameKana: "うえだはら",
           lat: 36.390488,
           lng: 138.221439
         },
         {
           name: "寺下",
+          nameKana: "てらした",
           lat: 36.38388,
           lng: 138.21634
         },
         {
           name: "神畑",
+          nameKana: "かばたけ",
           lat: 36.377841,
           lng: 138.216965
         },
         {
           name: "大学前",
+          nameKana: "だいがくまえ",
           lat: 36.371287,
           lng: 138.215171
         },
         {
           name: "下之郷",
+          nameKana: "しものごう",
           lat: 36.363249,
           lng: 138.217227
         },
         {
           name: "中塩田",
+          nameKana: "なかしおだ",
           lat: 36.363212,
           lng: 138.204728
         },
         {
           name: "塩田町",
+          nameKana: "しおだまち",
           lat: 36.360888,
           lng: 138.198445
         },
         {
           name: "中野",
+          nameKana: "なかの",
           lat: 36.360654,
           lng: 138.193438
         },
         {
           name: "舞田",
+          nameKana: "まいた",
           lat: 36.359621,
           lng: 138.18288
         },
         {
           name: "八木沢",
+          nameKana: "やぎさわ",
           lat: 36.358365,
           lng: 138.175786
         },
         {
           name: "別所温泉",
+          nameKana: "べっしょおんせん",
           lat: 36.353121,
           lng: 138.161924
         }
@@ -4139,6 +4863,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "豊橋",
+          nameKana: "とよはし",
           lat: 34.762734,
           lng: 137.382128,
           transfer: true,
@@ -4146,16 +4871,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "伊奈",
+          nameKana: "いな",
           lat: 34.802857,
           lng: 137.354743,
         },
         {
           name: "小田渕",
+          nameKana: "おだぶち",
           lat: 34.814739,
           lng: 137.34559,
         },
         {
           name: "国府",
+          nameKana: "こう",
           lat: 34.83752,
           lng: 137.328101,
           transfer: true,
@@ -4163,51 +4891,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "御油",
+          nameKana: "ごゆ",
           lat: 34.846113,
           lng: 137.321443,
         },
         {
           name: "名電赤坂",
+          nameKana: "めいでんあかさか",
           lat: 34.859331,
           lng: 137.311152,
         },
         {
           name: "名電長沢",
+          nameKana: "めいでんながさわ",
           lat: 34.871623,
           lng: 137.288298,
         },
         {
           name: "本宿",
+          nameKana: "もとじゅく",
           lat: 34.893025,
           lng: 137.260014,
         },
         {
           name: "名電山中",
+          nameKana: "めいでんやまなか",
           lat: 34.899474,
           lng: 137.242829,
         },
         {
           name: "藤川",
+          nameKana: "ふじかわ",
           lat: 34.913304,
           lng: 137.218428,
         },
         {
           name: "美合",
+          nameKana: "みあい",
           lat: 34.923763,
           lng: 137.196317,
         },
         {
           name: "男川",
+          nameKana: "おとがわ",
           lat: 34.937461,
           lng: 137.183296,
         },
         {
           name: "東岡崎",
+          nameKana: "ひがしおかざき",
           lat: 34.951904,
           lng: 137.167333,
         },
         {
           name: "岡崎公園前",
+          nameKana: "おかざきこうえんまえ",
           lat: 34.954984,
           lng: 137.153309,
           transfer: true,
@@ -4215,16 +4953,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "矢作橋",
+          nameKana: "やはぎばし",
           lat: 34.961149,
           lng: 137.139957,
         },
         {
           name: "宇頭",
+          nameKana: "うとう",
           lat: 34.971367,
           lng: 137.118103,
         },
         {
           name: "新安城",
+          nameKana: "しんあんじょう",
           lat: 34.986885,
           lng: 137.085443,
           transfer: true,
@@ -4232,11 +4973,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "牛田",
+          nameKana: "うしだ",
           lat: 34.999294,
           lng: 137.060946,
         },
         {
           name: "知立",
+          nameKana: "ちりゅう",
           lat: 35.006111,
           lng: 137.039722,
           transfer: true,
@@ -4244,71 +4987,85 @@ export const chubu: OperatorData = {
         },
         {
           name: "一ツ木",
+          nameKana: "ひとつぎ",
           lat: 35.01367,
           lng: 137.02551,
         },
         {
           name: "富士松",
+          nameKana: "ふじまつ",
           lat: 35.029759,
           lng: 137.016508,
         },
         {
           name: "豊明",
+          nameKana: "とよあけ",
           lat: 35.041127,
           lng: 137.008161,
         },
         {
           name: "前後",
+          nameKana: "ぜんご",
           lat: 35.05227,
           lng: 136.995665,
         },
         {
           name: "中京競馬場前",
+          nameKana: "ちゅうきょうけいばじょうまえ",
           lat: 35.061302,
           lng: 136.98158,
         },
         {
           name: "有松",
+          nameKana: "ありまつ",
           lat: 35.067687,
           lng: 136.971084,
         },
         {
           name: "左京山",
+          nameKana: "さきょうやま",
           lat: 35.070553,
           lng: 136.960301,
         },
         {
           name: "鳴海",
+          nameKana: "なるみ",
           lat: 35.079149,
           lng: 136.950096,
         },
         {
           name: "本星崎",
+          nameKana: "もとほしざき",
           lat: 35.087392,
           lng: 136.937378,
         },
         {
           name: "本笠寺",
+          nameKana: "もとかさでら",
           lat: 35.099199,
           lng: 136.933409,
         },
         {
           name: "桜",
+          nameKana: "さくら",
           lat: 35.106062,
           lng: 136.934586,
         },
         {
           name: "呼続",
+          nameKana: "よびつぎ",
           lat: 35.114722,
           lng: 136.930387,
         },
         {
           name: "堀田",
+          nameKana: "ほりた",
           lat: 35.120251,
           lng: 136.919839,
         },
         {
           name: "神宮前",
+          nameKana: "じんぐうまえ",
           lat: 35.125857,
           lng: 136.912485,
           transfer: true,
@@ -4316,6 +5073,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "金山",
+          nameKana: "かなやま",
           lat: 35.142871,
           lng: 136.9013,
           transfer: true,
@@ -4323,6 +5081,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "山王",
+          nameKana: "さんのう",
           lat: 35.15233,
           lng: 136.888461,
           transfer: true,
@@ -4330,6 +5089,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "名鉄名古屋",
+          nameKana: "めいてつなごや",
           lat: 35.169252,
           lng: 136.884187,
           transfer: true,
@@ -4337,6 +5097,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "栄生",
+          nameKana: "さこう",
           lat: 35.183687,
           lng: 136.873051,
           transfer: true,
@@ -4344,6 +5105,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "東枇杷島",
+          nameKana: "ひがしびわじま",
           lat: 35.189808,
           lng: 136.870168,
           transfer: true,
@@ -4351,21 +5113,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "西枇杷島",
+          nameKana: "にしびわじま",
           lat: 35.195015,
           lng: 136.865685,
         },
         {
           name: "二ツ杁",
+          nameKana: "ふたついり",
           lat: 35.194646,
           lng: 136.859583,
         },
         {
           name: "新川橋",
+          nameKana: "しんかわばし",
           lat: 35.195701,
           lng: 136.851989,
         },
         {
           name: "須ヶ口",
+          nameKana: "すかぐち",
           lat: 35.198684,
           lng: 136.846229,
           transfer: true,
@@ -4373,41 +5139,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "丸ノ内",
+          nameKana: "まるのうち",
           lat: 35.204742,
           lng: 136.841927,
         },
         {
           name: "新清洲",
+          nameKana: "しんきよす",
           lat: 35.211249,
           lng: 136.835607,
         },
         {
           name: "大里",
+          nameKana: "おおさと",
           lat: 35.226216,
           lng: 136.818428,
         },
         {
           name: "奥田",
+          nameKana: "おくだ",
           lat: 35.235412,
           lng: 136.810917,
         },
         {
           name: "国府宮",
+          nameKana: "こうのみや",
           lat: 35.254218,
           lng: 136.802963,
         },
         {
           name: "島氏永",
+          nameKana: "しまうじなが",
           lat: 35.270777,
           lng: 136.800987,
         },
         {
           name: "妙興寺",
+          nameKana: "みょうこうじ",
           lat: 35.287178,
           lng: 136.798231,
         },
         {
           name: "名鉄一宮",
+          nameKana: "めいてついちのみや",
           lat: 35.30154,
           lng: 136.797225,
           transfer: true,
@@ -4415,31 +5189,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "今伊勢",
+          nameKana: "いまいせ",
           lat: 35.31836,
           lng: 136.789273,
         },
         {
           name: "石刀",
+          nameKana: "いわと",
           lat: 35.326204,
           lng: 136.785407,
         },
         {
           name: "新木曽川",
+          nameKana: "しんきそがわ",
           lat: 35.342047,
           lng: 136.779421,
         },
         {
           name: "黒田",
+          nameKana: "くろだ",
           lat: 35.350213,
           lng: 136.777502,
         },
         {
           name: "木曽川堤",
+          nameKana: "きそがわづつみ",
           lat: 35.365067,
           lng: 136.770486,
         },
         {
           name: "笠松",
+          nameKana: "かさまつ",
           lat: 35.37466,
           lng: 136.764664,
           transfer: true,
@@ -4447,21 +5227,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "岐南",
+          nameKana: "ぎなん",
           lat: 35.389716,
           lng: 136.769165,
         },
         {
           name: "茶所",
+          nameKana: "ちゃじょ",
           lat: 35.402048,
           lng: 136.768917,
         },
         {
           name: "加納",
+          nameKana: "かのう",
           lat: 35.405209,
           lng: 136.765984,
         },
         {
           name: "名鉄岐阜",
+          nameKana: "めいてつぎふ",
           lat: 35.411136,
           lng: 136.760066,
           transfer: true,
@@ -4478,6 +5262,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "国府",
+          nameKana: "こう",
           lat: 34.83752,
           lng: 137.328101,
           transfer: true,
@@ -4485,21 +5270,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "八幡",
+          nameKana: "やわた",
           lat: 34.82916,
           lng: 137.352113,
         },
         {
           name: "諏訪町",
+          nameKana: "すわちょう",
           lat: 34.823464,
           lng: 137.370479,
         },
         {
           name: "稲荷口",
+          nameKana: "いなりぐち",
           lat: 34.818435,
           lng: 137.387703,
         },
         {
           name: "豊川稲荷",
+          nameKana: "とよかわいなり",
           lat: 34.821755,
           lng: 137.396058,
           transfer: true,
@@ -4516,6 +5305,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "新安城",
+          nameKana: "しんあんじょう",
           lat: 34.986885,
           lng: 137.085443,
           transfer: true,
@@ -4523,66 +5313,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "北安城",
+          nameKana: "きたあんじょう",
           lat: 34.964677,
           lng: 137.092146,
         },
         {
           name: "南安城",
+          nameKana: "みなみあんじょう",
           lat: 34.951976,
           lng: 137.092457,
         },
         {
           name: "碧海古井",
+          nameKana: "へきかいふるい",
           lat: 34.93723,
           lng: 137.090863,
         },
         {
           name: "堀内公園",
+          nameKana: "ほりうちこうえん",
           lat: 34.927834,
           lng: 137.089636,
         },
         {
           name: "桜井",
+          nameKana: "さくらい",
           lat: 34.917477,
           lng: 137.088345,
         },
         {
           name: "南桜井",
+          nameKana: "みなみさくらい",
           lat: 34.906302,
           lng: 137.07721,
         },
         {
           name: "米津",
+          nameKana: "よねづ",
           lat: 34.892822,
           lng: 137.060993,
         },
         {
           name: "桜町前",
+          nameKana: "さくらまちまえ",
           lat: 34.880107,
           lng: 137.062444,
         },
         {
           name: "西尾口",
+          nameKana: "にしおぐち",
           lat: 34.870647,
           lng: 137.062661,
         },
         {
           name: "西尾",
+          nameKana: "にしお",
           lat: 34.863917,
           lng: 137.057789,
         },
         {
           name: "福地",
+          nameKana: "ふくち",
           lat: 34.844663,
           lng: 137.048579,
         },
         {
           name: "上横須賀",
+          nameKana: "かみよこすか",
           lat: 34.829941,
           lng: 137.071883,
         },
         {
           name: "吉良吉田",
+          nameKana: "きらよしだ",
           lat: 34.794043,
           lng: 137.071017,
           transfer: true,
@@ -4599,6 +5402,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "吉良吉田",
+          nameKana: "きらよしだ",
           lat: 34.794043,
           lng: 137.071017,
           transfer: true,
@@ -4606,41 +5410,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "三河鳥羽",
+          nameKana: "みかわとば",
           lat: 34.793214,
           lng: 137.104984,
         },
         {
           name: "西幡豆",
+          nameKana: "にしはず",
           lat: 34.792431,
           lng: 137.121271,
         },
         {
           name: "東幡豆",
+          nameKana: "ひがしはず",
           lat: 34.789693,
           lng: 137.145645,
         },
         {
           name: "こどもの国",
+          nameKana: "こどものくに",
           lat: 34.788791,
           lng: 137.162721,
         },
         {
           name: "西浦",
+          nameKana: "にしうら",
           lat: 34.79003,
           lng: 137.178617,
         },
         {
           name: "形原",
+          nameKana: "かたはら",
           lat: 34.798607,
           lng: 137.184594,
         },
         {
           name: "三河鹿島",
+          nameKana: "みかわかしま",
           lat: 34.813313,
           lng: 137.189687,
         },
         {
           name: "蒲郡競艇場前",
+          nameKana: "がまごおりきょうていじょうまえ",
           lat: 34.825545,
           lng: 137.202014,
           transfer: true,
@@ -4648,6 +5460,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "蒲郡",
+          nameKana: "がまごおり",
           lat: 34.822743,
           lng: 137.226115,
           transfer: true,
@@ -4664,51 +5477,61 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "碧南",
+          nameKana: "へきなん",
           lat: 34.874041,
           lng: 136.985613,
         },
         {
           name: "碧南中央",
+          nameKana: "へきなんちゅうおう",
           lat: 34.887395,
           lng: 136.989476,
         },
         {
           name: "新川町",
+          nameKana: "しんかわまち",
           lat: 34.896619,
           lng: 136.990312,
         },
         {
           name: "北新川",
+          nameKana: "きたしんかわ",
           lat: 34.906018,
           lng: 136.992475,
         },
         {
           name: "高浜港",
+          nameKana: "たかはまみなと",
           lat: 34.921536,
           lng: 136.989391,
         },
         {
           name: "三河高浜",
+          nameKana: "みかわたかはま",
           lat: 34.930796,
           lng: 136.989954,
         },
         {
           name: "吉浜",
+          nameKana: "よしはま",
           lat: 34.946327,
           lng: 136.98919,
         },
         {
           name: "小垣江",
+          nameKana: "おがきえ",
           lat: 34.9639,
           lng: 136.995455,
         },
         {
           name: "刈谷市",
+          nameKana: "かりやし",
           lat: 34.984803,
           lng: 136.993844,
         },
         {
           name: "刈谷",
+          nameKana: "かりや",
           lat: 34.990884,
           lng: 137.008642,
           transfer: true,
@@ -4716,11 +5539,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "重原",
+          nameKana: "しげはら",
           lat: 34.994824,
           lng: 137.023727,
         },
         {
           name: "知立",
+          nameKana: "ちりゅう",
           lat: 35.006111,
           lng: 137.039722,
           transfer: true,
@@ -4728,36 +5553,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "三河知立",
+          nameKana: "みかわちりゅう",
           lat: 35.005722,
           lng: 137.054972,
         },
         {
           name: "三河八橋",
+          nameKana: "みかわやつはし",
           lat: 35.010913,
           lng: 137.077147,
         },
         {
           name: "若林",
+          nameKana: "わかばやし",
           lat: 35.026284,
           lng: 137.095851,
         },
         {
           name: "竹村",
+          nameKana: "たけむら",
           lat: 35.040067,
           lng: 137.11476,
         },
         {
           name: "土橋",
+          nameKana: "つちはし",
           lat: 35.058179,
           lng: 137.129572,
         },
         {
           name: "上挙母",
+          nameKana: "うわごろも",
           lat: 35.071854,
           lng: 137.154453,
         },
         {
           name: "豊田市",
+          nameKana: "とよたし",
           lat: 35.087305,
           lng: 137.156227,
           transfer: true,
@@ -4765,6 +5597,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "梅坪",
+          nameKana: "うめつぼ",
           lat: 35.099654,
           lng: 137.162206,
           transfer: true,
@@ -4772,16 +5605,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "越戸",
+          nameKana: "こしど",
           lat: 35.10769,
           lng: 137.180178,
         },
         {
           name: "平戸橋",
+          nameKana: "ひらとばし",
           lat: 35.114628,
           lng: 137.184725,
         },
         {
           name: "猿投",
+          nameKana: "さなげ",
           lat: 35.122613,
           lng: 137.178739,
         },
@@ -4796,6 +5632,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "豊田市",
+          nameKana: "とよたし",
           lat: 35.087305,
           lng: 137.156227,
           transfer: true,
@@ -4803,6 +5640,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "梅坪",
+          nameKana: "うめつぼ",
           lat: 35.099654,
           lng: 137.162206,
           transfer: true,
@@ -4810,36 +5648,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "上豊田",
+          nameKana: "かみとよた",
           lat: 35.116168,
           lng: 137.15535,
         },
         {
           name: "浄水",
+          nameKana: "じょうすい",
           lat: 35.121298,
           lng: 137.137186,
         },
         {
           name: "三好ヶ丘",
+          nameKana: "みよしがおか",
           lat: 35.126918,
           lng: 137.111219,
         },
         {
           name: "黒笹",
+          nameKana: "くろざさ",
           lat: 35.127681,
           lng: 137.091365,
         },
         {
           name: "米野木",
+          nameKana: "こめのき",
           lat: 35.123728,
           lng: 137.06702,
         },
         {
           name: "日進",
+          nameKana: "にっしん",
           lat: 35.118378,
           lng: 137.04878,
         },
         {
           name: "赤池",
+          nameKana: "あかいけ",
           lat: 35.121097,
           lng: 137.017978,
           transfer: true,
@@ -4856,6 +5701,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "常滑",
+          nameKana: "とこなめ",
           lat: 34.891167,
           lng: 136.834992,
           transfer: true,
@@ -4863,11 +5709,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "りんくう常滑",
+          nameKana: "りんくうとこなめ",
           lat: 34.87967,
           lng: 136.828164,
         },
         {
           name: "中部国際空港",
+          nameKana: "ちゅうぶこくさいくうこう",
           lat: 34.859262,
           lng: 136.816382,
         },
@@ -4882,6 +5730,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "名鉄名古屋",
+          nameKana: "めいてつなごや",
           lat: 35.169252,
           lng: 136.884187,
           transfer: true,
@@ -4889,6 +5738,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "山王",
+          nameKana: "さんのう",
           lat: 35.15233,
           lng: 136.888461,
           transfer: true,
@@ -4896,6 +5746,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "金山",
+          nameKana: "かなやま",
           lat: 35.142871,
           lng: 136.9013,
           transfer: true,
@@ -4903,6 +5754,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "神宮前",
+          nameKana: "じんぐうまえ",
           lat: 35.125857,
           lng: 136.912485,
           transfer: true,
@@ -4910,16 +5762,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "豊田本町",
+          nameKana: "とよだほんまち",
           lat: 35.113586,
           lng: 136.910877,
         },
         {
           name: "道徳",
+          nameKana: "どうとく",
           lat: 35.105712,
           lng: 136.909409,
         },
         {
           name: "大江",
+          nameKana: "おおえ",
           lat: 35.093258,
           lng: 136.912758,
           transfer: true,
@@ -4927,31 +5782,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "大同町",
+          nameKana: "だいどうちょう",
           lat: 35.080268,
           lng: 136.909314,
         },
         {
           name: "柴田",
+          nameKana: "しばた",
           lat: 35.072774,
           lng: 136.909126,
         },
         {
           name: "名和",
+          nameKana: "なわ",
           lat: 35.060914,
           lng: 136.911709,
         },
         {
           name: "聚楽園",
+          nameKana: "しゅうらくえん",
           lat: 35.042857,
           lng: 136.90304,
         },
         {
           name: "新日鉄前",
+          nameKana: "しんにってつまえ",
           lat: 35.035161,
           lng: 136.899491,
         },
         {
           name: "太田川",
+          nameKana: "おおたがわ",
           lat: 35.020221,
           lng: 136.892504,
           transfer: true,
@@ -4959,66 +5820,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "尾張横須賀",
+          nameKana: "おわりよこすか",
           lat: 35.010132,
           lng: 136.885655,
         },
         {
           name: "寺本",
+          nameKana: "てらもと",
           lat: 35.000191,
           lng: 136.875498,
         },
         {
           name: "朝倉",
+          nameKana: "あさくら",
           lat: 34.993858,
           lng: 136.863419,
         },
         {
           name: "古見",
+          nameKana: "こみ",
           lat: 34.987809,
           lng: 136.856673,
         },
         {
           name: "長浦",
+          nameKana: "ながうら",
           lat: 34.978432,
           lng: 136.847808,
         },
         {
           name: "日長",
+          nameKana: "ひなが",
           lat: 34.96162,
           lng: 136.832152,
         },
         {
           name: "新舞子",
+          nameKana: "しんまいこ",
           lat: 34.949689,
           lng: 136.828669,
         },
         {
           name: "大野町",
+          nameKana: "おおのまち",
           lat: 34.935441,
           lng: 136.827641,
         },
         {
           name: "西ノ口",
+          nameKana: "にしのくち",
           lat: 34.926759,
           lng: 136.82663,
         },
         {
           name: "蒲池",
+          nameKana: "かばいけ",
           lat: 34.915408,
           lng: 136.825536,
         },
         {
           name: "榎戸",
+          nameKana: "えのきど",
           lat: 34.90489,
           lng: 136.82822,
         },
         {
           name: "多屋",
+          nameKana: "たや",
           lat: 34.896983,
           lng: 136.830695,
         },
         {
           name: "常滑",
+          nameKana: "とこなめ",
           lat: 34.891167,
           lng: 136.834992,
           transfer: true,
@@ -5035,6 +5909,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "太田川",
+          nameKana: "おおたがわ",
           lat: 35.020221,
           lng: 136.892504,
           transfer: true,
@@ -5042,86 +5917,103 @@ export const chubu: OperatorData = {
         },
         {
           name: "高横須賀",
+          nameKana: "たかよこすか",
           lat: 35.009608,
           lng: 136.893696,
         },
         {
           name: "加木屋中ノ池",
+          nameKana: "かぎやなかのいけ",
           lat: 35,
           lng: 136.902583,
         },
         {
           name: "南加木屋",
+          nameKana: "みなみかぎや",
           lat: 34.989216,
           lng: 136.906853,
         },
         {
           name: "八幡新田",
+          nameKana: "やわたしんでん",
           lat: 34.973674,
           lng: 136.912578,
         },
         {
           name: "巽ヶ丘",
+          nameKana: "たつみがおか",
           lat: 34.962265,
           lng: 136.915556,
         },
         {
           name: "白沢",
+          nameKana: "しらさわ",
           lat: 34.955219,
           lng: 136.91537,
         },
         {
           name: "坂部",
+          nameKana: "さかべ",
           lat: 34.941579,
           lng: 136.916562,
         },
         {
           name: "阿久比",
+          nameKana: "あぐい",
           lat: 34.931256,
           lng: 136.918517,
         },
         {
           name: "植大",
+          nameKana: "うえだい",
           lat: 34.917457,
           lng: 136.923448,
         },
         {
           name: "半田口",
+          nameKana: "はんだぐち",
           lat: 34.909111,
           lng: 136.925462,
         },
         {
           name: "住吉町",
+          nameKana: "すみよしちょう",
           lat: 34.902042,
           lng: 136.925684,
         },
         {
           name: "知多半田",
+          nameKana: "ちたはんだ",
           lat: 34.893931,
           lng: 136.925954,
         },
         {
           name: "成岩",
+          nameKana: "ならわ",
           lat: 34.886209,
           lng: 136.921879,
         },
         {
           name: "青山",
+          nameKana: "あおやま",
           lat: 34.878132,
           lng: 136.917,
         },
         {
           name: "上ゲ",
+          nameKana: "あげ",
           lat: 34.858389,
           lng: 136.916403,
         },
         {
           name: "知多武豊",
+          nameKana: "ちたたけとよ",
           lat: 34.850732,
           lng: 136.916439,
         },
         {
           name: "富貴",
+          nameKana: "ふき",
           lat: 34.828823,
           lng: 136.917043,
           transfer: true,
@@ -5129,11 +6021,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "河和口",
+          nameKana: "こうわぐち",
           lat: 34.797805,
           lng: 136.918618,
         },
         {
           name: "河和",
+          nameKana: "こうわ",
           lat: 34.777771,
           lng: 136.912528,
         },
@@ -5148,6 +6042,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "富貴",
+          nameKana: "ふき",
           lat: 34.828823,
           lng: 136.917043,
           transfer: true,
@@ -5155,26 +6050,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "上野間",
+          nameKana: "かみのま",
           lat: 34.807284,
           lng: 136.866854,
         },
         {
           name: "美浜緑苑",
+          nameKana: "みはまりょくえん",
           lat: 34.80028,
           lng: 136.863063,
         },
         {
           name: "知多奥田",
+          nameKana: "ちたおくだ",
           lat: 34.787617,
           lng: 136.864488,
         },
         {
           name: "野間",
+          nameKana: "のま",
           lat: 34.7723,
           lng: 136.860683,
         },
         {
           name: "内海",
+          nameKana: "うつみ",
           lat: 34.744631,
           lng: 136.875544,
         },
@@ -5189,6 +6089,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "大江",
+          nameKana: "おおえ",
           lat: 35.093258,
           lng: 136.912758,
           transfer: true,
@@ -5196,6 +6097,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "東名古屋港",
+          nameKana: "ひがしなごやこう",
           lat: 35.089091,
           lng: 136.899255,
         },
@@ -5210,6 +6112,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "栄町",
+          nameKana: "さかえまち",
           lat: 35.170567,
           lng: 136.908962,
           transfer: true,
@@ -5217,26 +6120,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "東大手",
+          nameKana: "ひがしおおて",
           lat: 35.183727,
           lng: 136.908376,
         },
         {
           name: "清水",
+          nameKana: "しみず",
           lat: 35.187152,
           lng: 136.913814,
         },
         {
           name: "尼ヶ坂",
+          nameKana: "あまがさか",
           lat: 35.187957,
           lng: 136.91928,
         },
         {
           name: "森下",
+          nameKana: "もりした",
           lat: 35.188299,
           lng: 136.929657,
         },
         {
           name: "大曽根",
+          nameKana: "おおぞね",
           lat: 35.1916,
           lng: 136.936855,
           transfer: true,
@@ -5244,11 +6152,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "矢田",
+          nameKana: "やだ",
           lat: 35.193699,
           lng: 136.947802,
         },
         {
           name: "守山自衛隊前",
+          nameKana: "もりやまじえいたいまえ",
           lat: 35.196258,
           lng: 136.957843,
           transfer: true,
@@ -5256,51 +6166,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "瓢箪山",
+          nameKana: "ひょうたんやま",
           lat: 35.197222,
           lng: 136.965048,
         },
         {
           name: "小幡",
+          nameKana: "おばた",
           lat: 35.200216,
           lng: 136.975769,
         },
         {
           name: "喜多山",
+          nameKana: "きたやま",
           lat: 35.205099,
           lng: 136.987735,
         },
         {
           name: "大森・金城学院前",
+          nameKana: "おおもり・きんじょうがくいんまえ",
           lat: 35.206934,
           lng: 136.996465,
         },
         {
           name: "印場",
+          nameKana: "いんば",
           lat: 35.211085,
           lng: 137.011132,
         },
         {
           name: "旭前",
+          nameKana: "あさひまえ",
           lat: 35.214162,
           lng: 137.019706,
         },
         {
           name: "尾張旭",
+          nameKana: "おわりあさひ",
           lat: 35.216743,
           lng: 137.036393,
         },
         {
           name: "三郷",
+          nameKana: "さんごう",
           lat: 35.216258,
           lng: 137.052352,
         },
         {
           name: "水野",
+          nameKana: "みずの",
           lat: 35.224296,
           lng: 137.069659,
         },
         {
           name: "新瀬戸",
+          nameKana: "しんせと",
           lat: 35.225485,
           lng: 137.077639,
           transfer: true,
@@ -5308,11 +6228,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "瀬戸市役所前",
+          nameKana: "せとしやくしょまえ",
           lat: 35.224986,
           lng: 137.084177,
         },
         {
           name: "尾張瀬戸",
+          nameKana: "おわりせと",
           lat: 35.225094,
           lng: 137.09727,
         },
@@ -5327,6 +6249,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "須ヶ口",
+          nameKana: "すかぐち",
           lat: 35.198684,
           lng: 136.846229,
           transfer: true,
@@ -5334,36 +6257,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "甚目寺",
+          nameKana: "じもくじ",
           lat: 35.195953,
           lng: 136.825492,
         },
         {
           name: "七宝",
+          nameKana: "しっぽう",
           lat: 35.195775,
           lng: 136.806413,
         },
         {
           name: "木田",
+          nameKana: "きだ",
           lat: 35.195328,
           lng: 136.787865,
         },
         {
           name: "青塚",
+          nameKana: "あおつか",
           lat: 35.198674,
           lng: 136.76708,
         },
         {
           name: "勝幡",
+          nameKana: "しょばた",
           lat: 35.195143,
           lng: 136.750082,
         },
         {
           name: "藤浪",
+          nameKana: "ふじなみ",
           lat: 35.188911,
           lng: 136.738766,
         },
         {
           name: "津島",
+          nameKana: "つしま",
           lat: 35.177982,
           lng: 136.730995,
           transfer: true,
@@ -5380,6 +6310,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "弥富",
+          nameKana: "やとみ",
           lat: 35.114026,
           lng: 136.725664,
           transfer: true,
@@ -5387,21 +6318,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "五ノ三",
+          nameKana: "ごのさん",
           lat: 35.129838,
           lng: 136.711464,
         },
         {
           name: "佐屋",
+          nameKana: "さや",
           lat: 35.147552,
           lng: 136.716612,
         },
         {
           name: "日比野",
+          nameKana: "ひびの",
           lat: 35.163258,
           lng: 136.728351,
         },
         {
           name: "津島",
+          nameKana: "つしま",
           lat: 35.177982,
           lng: 136.730995,
           transfer: true,
@@ -5409,66 +6344,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "町方",
+          nameKana: "まちかた",
           lat: 35.18898,
           lng: 136.727551,
         },
         {
           name: "六輪",
+          nameKana: "ろくわ",
           lat: 35.202395,
           lng: 136.729306,
         },
         {
           name: "渕高",
+          nameKana: "ふちだか",
           lat: 35.213944,
           lng: 136.727256,
         },
         {
           name: "丸渕",
+          nameKana: "まるぶち",
           lat: 35.222635,
           lng: 136.728991,
         },
         {
           name: "上丸渕",
+          nameKana: "かみまるぶち",
           lat: 35.233809,
           lng: 136.732521,
         },
         {
           name: "森上",
+          nameKana: "もりかみ",
           lat: 35.247229,
           lng: 136.736698,
         },
         {
           name: "山崎",
+          nameKana: "やまざき",
           lat: 35.256548,
           lng: 136.739372,
         },
         {
           name: "玉野",
+          nameKana: "たまの",
           lat: 35.266327,
           lng: 136.747982,
         },
         {
           name: "萩原",
+          nameKana: "はぎわら",
           lat: 35.277157,
           lng: 136.757703,
         },
         {
           name: "二子",
+          nameKana: "ふたご",
           lat: 35.283986,
           lng: 136.766268,
         },
         {
           name: "苅安賀",
+          nameKana: "かりやすか",
           lat: 35.287194,
           lng: 136.778275,
         },
         {
           name: "観音寺",
+          nameKana: "かんのんじ",
           lat: 35.289716,
           lng: 136.786191,
         },
         {
           name: "名鉄一宮",
+          nameKana: "めいてついちのみや",
           lat: 35.30154,
           lng: 136.797225,
           transfer: true,
@@ -5476,21 +6424,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "西一宮",
+          nameKana: "にしいちのみや",
           lat: 35.307603,
           lng: 136.791948,
         },
         {
           name: "開明",
+          nameKana: "かいめい",
           lat: 35.31926,
           lng: 136.7741,
         },
         {
           name: "奥町",
+          nameKana: "おくちょう",
           lat: 35.32434,
           lng: 136.761092,
         },
         {
           name: "玉ノ井",
+          nameKana: "たまのい",
           lat: 35.334887,
           lng: 136.757968,
         },
@@ -5505,6 +6457,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "名鉄名古屋",
+          nameKana: "めいてつなごや",
           lat: 35.169252,
           lng: 136.884187,
           transfer: true,
@@ -5512,6 +6465,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "栄生",
+          nameKana: "さこう",
           lat: 35.183687,
           lng: 136.873051,
           transfer: true,
@@ -5519,6 +6473,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "東枇杷島",
+          nameKana: "ひがしびわじま",
           lat: 35.189808,
           lng: 136.870168,
           transfer: true,
@@ -5526,16 +6481,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "下小田井",
+          nameKana: "しもおたい",
           lat: 35.201878,
           lng: 136.870638,
         },
         {
           name: "中小田井",
+          nameKana: "なかおたい",
           lat: 35.214647,
           lng: 136.876772,
         },
         {
           name: "上小田井",
+          nameKana: "かみおたい",
           lat: 35.223482,
           lng: 136.876941,
           transfer: true,
@@ -5543,61 +6501,73 @@ export const chubu: OperatorData = {
         },
         {
           name: "西春",
+          nameKana: "にしはる",
           lat: 35.244627,
           lng: 136.871235,
         },
         {
           name: "徳重・名古屋芸大",
+          nameKana: "とくしげ・なごやげいだい",
           lat: 35.256045,
           lng: 136.873384,
         },
         {
           name: "大山寺",
+          nameKana: "たいさんじ",
           lat: 35.263508,
           lng: 136.874748,
         },
         {
           name: "岩倉",
+          nameKana: "いわくら",
           lat: 35.277972,
           lng: 136.873511,
         },
         {
           name: "石仏",
+          nameKana: "いしぼとけ",
           lat: 35.295545,
           lng: 136.871144,
         },
         {
           name: "布袋",
+          nameKana: "ほてい",
           lat: 35.317135,
           lng: 136.872987,
         },
         {
           name: "江南",
+          nameKana: "こうなん",
           lat: 35.33475,
           lng: 136.872109,
         },
         {
           name: "柏森",
+          nameKana: "かしわもり",
           lat: 35.344807,
           lng: 136.900181,
         },
         {
           name: "扶桑",
+          nameKana: "ふそう",
           lat: 35.359557,
           lng: 136.91597,
         },
         {
           name: "木津用水",
+          nameKana: "こつようすい",
           lat: 35.366914,
           lng: 136.925977,
         },
         {
           name: "犬山口",
+          nameKana: "いぬやまぐち",
           lat: 35.374212,
           lng: 136.939945,
         },
         {
           name: "犬山",
+          nameKana: "いぬやま",
           lat: 35.379871,
           lng: 136.945536,
           transfer: true,
@@ -5605,11 +6575,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "犬山遊園",
+          nameKana: "いぬやまゆうえん",
           lat: 35.390331,
           lng: 136.946894,
         },
         {
           name: "新鵜沼",
+          nameKana: "しんうぬま",
           lat: 35.396799,
           lng: 136.944314,
           transfer: true,
@@ -5626,6 +6598,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "新鵜沼",
+          nameKana: "しんうぬま",
           lat: 35.396799,
           lng: 136.944314,
           transfer: true,
@@ -5633,21 +6606,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "鵜沼宿",
+          nameKana: "うぬまじゅく",
           lat: 35.400015,
           lng: 136.932567,
         },
         {
           name: "羽場",
+          nameKana: "はば",
           lat: 35.40119,
           lng: 136.921535,
         },
         {
           name: "苧ヶ瀬",
+          nameKana: "おがせ",
           lat: 35.403273,
           lng: 136.912266,
         },
         {
           name: "名電各務原",
+          nameKana: "めいでんかかみがはら",
           lat: 35.402518,
           lng: 136.900981,
           transfer: true,
@@ -5655,31 +6632,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "二十軒",
+          nameKana: "にじっけん",
           lat: 35.400098,
           lng: 136.889307,
         },
         {
           name: "三柿野",
+          nameKana: "みかきの",
           lat: 35.400156,
           lng: 136.876084,
         },
         {
           name: "六軒",
+          nameKana: "ろっけん",
           lat: 35.40105,
           lng: 136.861554,
         },
         {
           name: "各務原市役所前",
+          nameKana: "かかみがはらしやくしょまえ",
           lat: 35.400869,
           lng: 136.847067,
         },
         {
           name: "市民公園前",
+          nameKana: "しみんこうえんまえ",
           lat: 35.400572,
           lng: 136.841829,
         },
         {
           name: "新那加",
+          nameKana: "しんなか",
           lat: 35.400097,
           lng: 136.83386,
           transfer: true,
@@ -5687,36 +6670,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "新加納",
+          nameKana: "しんかのう",
           lat: 35.39938,
           lng: 136.824414,
         },
         {
           name: "高田橋",
+          nameKana: "たかだばし",
           lat: 35.398383,
           lng: 136.811488,
         },
         {
           name: "手力",
+          nameKana: "てぢから",
           lat: 35.398269,
           lng: 136.804472,
         },
         {
           name: "切通",
+          nameKana: "きりどおし",
           lat: 35.400257,
           lng: 136.79564,
         },
         {
           name: "細畑",
+          nameKana: "ほそばた",
           lat: 35.401637,
           lng: 136.785141,
         },
         {
           name: "田神",
+          nameKana: "たがみ",
           lat: 35.411261,
           lng: 136.772189,
         },
         {
           name: "名鉄岐阜",
+          nameKana: "めいてつぎふ",
           lat: 35.41163,
           lng: 136.760602,
           transfer: true,
@@ -5733,6 +6723,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "犬山",
+          nameKana: "いぬやま",
           lat: 35.379871,
           lng: 136.945536,
           transfer: true,
@@ -5740,31 +6731,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "富岡前",
+          nameKana: "とみおかまえ",
           lat: 35.379508,
           lng: 136.962112,
         },
         {
           name: "善師野",
+          nameKana: "ぜんじの",
           lat: 35.389744,
           lng: 136.980027,
         },
         {
           name: "西可児",
+          nameKana: "にしかに",
           lat: 35.404685,
           lng: 137.010616,
         },
         {
           name: "可児川",
+          nameKana: "かにがわ",
           lat: 35.41812,
           lng: 137.01847,
         },
         {
           name: "日本ライン今渡",
+          nameKana: "にほんらいんいまわたり",
           lat: 35.432302,
           lng: 137.036818,
         },
         {
           name: "新可児",
+          nameKana: "しんかに",
           lat: 35.423282,
           lng: 137.055622,
           transfer: true,
@@ -5772,21 +6769,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "明智",
+          nameKana: "あけち",
           lat: 35.433208,
           lng: 137.087295,
         },
         {
           name: "顔戸",
+          nameKana: "ごうど",
           lat: 35.434522,
           lng: 137.105154,
         },
         {
           name: "御嵩口",
+          nameKana: "みたけぐち",
           lat: 35.431281,
           lng: 137.121741,
         },
         {
           name: "御嵩",
+          nameKana: "みたけ",
           lat: 35.429723,
           lng: 137.127527,
         },
@@ -5801,6 +6802,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "上飯田",
+          nameKana: "かみいいだ",
           lat: 35.203845,
           lng: 136.929642,
           transfer: true,
@@ -5808,66 +6810,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "味鋺",
+          nameKana: "あじま",
           lat: 35.222478,
           lng: 136.936113,
         },
         {
           name: "味美",
+          nameKana: "あじよし",
           lat: 35.235209,
           lng: 136.937134,
         },
         {
           name: "春日井",
+          nameKana: "かすがい",
           lat: 35.25035,
           lng: 136.936228,
         },
         {
           name: "牛山",
+          nameKana: "うしやま",
           lat: 35.264014,
           lng: 136.931356,
         },
         {
           name: "間内",
+          nameKana: "まない",
           lat: 35.271585,
           lng: 136.9312,
         },
         {
           name: "小牧口",
+          nameKana: "こまきぐち",
           lat: 35.281717,
           lng: 136.927675,
         },
         {
           name: "小牧",
+          nameKana: "こまき",
           lat: 35.28915,
           lng: 136.928461,
         },
         {
           name: "小牧原",
+          nameKana: "こまきはら",
           lat: 35.300145,
           lng: 136.935836,
         },
         {
           name: "味岡",
+          nameKana: "あじおか",
           lat: 35.309301,
           lng: 136.940304,
         },
         {
           name: "田県神社前",
+          nameKana: "たがたじんじゃまえ",
           lat: 35.317422,
           lng: 136.943675,
         },
         {
           name: "楽田",
+          nameKana: "がくでん",
           lat: 35.330548,
           lng: 136.950101,
         },
         {
           name: "羽黒",
+          nameKana: "はぐろ",
           lat: 35.351519,
           lng: 136.952486,
         },
         {
           name: "犬山",
+          nameKana: "いぬやま",
           lat: 35.379871,
           lng: 136.945536,
           transfer: true,
@@ -5884,6 +6899,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "笠松",
+          nameKana: "かさまつ",
           lat: 35.37466,
           lng: 136.764664,
           transfer: true,
@@ -5891,41 +6907,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "西笠松",
+          nameKana: "にしかさまつ",
           lat: 35.36906,
           lng: 136.757901,
         },
         {
           name: "柳津",
+          nameKana: "やないづ",
           lat: 35.364925,
           lng: 136.737103,
         },
         {
           name: "南宿",
+          nameKana: "みなみじゅく",
           lat: 35.347869,
           lng: 136.728604,
         },
         {
           name: "須賀",
+          nameKana: "すか",
           lat: 35.340192,
           lng: 136.726805,
         },
         {
           name: "不破一色",
+          nameKana: "ふわいしき",
           lat: 35.332959,
           lng: 136.721897,
         },
         {
           name: "竹鼻",
+          nameKana: "たけはな",
           lat: 35.326734,
           lng: 136.706399,
         },
         {
           name: "羽島市役所前",
+          nameKana: "はしましやくしょまえ",
           lat: 35.321924,
           lng: 136.70003,
         },
         {
           name: "江吉良",
+          nameKana: "えぎら",
           lat: 35.31543,
           lng: 136.699686,
           transfer: true,
@@ -5942,6 +6966,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "江吉良",
+          nameKana: "えぎら",
           lat: 35.31543,
           lng: 136.699686,
           transfer: true,
@@ -5949,6 +6974,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "新羽島",
+          nameKana: "しんはしま",
           lat: 35.315471,
           lng: 136.686582,
         },
@@ -5965,6 +6991,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "名古屋",
+          nameKana: "なごや",
           lat: 35.168733,
           lng: 136.882417,
           transfer: true,
@@ -5972,6 +6999,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "ささしまライブ",
+          nameKana: "ささしまらいぶ",
           lat: 35.161745,
           lng: 136.881815,
           transfer: true,
@@ -5979,46 +7007,55 @@ export const chubu: OperatorData = {
         },
         {
           name: "小本",
+          nameKana: "こもと",
           lat: 35.14921,
           lng: 136.861331,
         },
         {
           name: "荒子",
+          nameKana: "あらこ",
           lat: 35.139992,
           lng: 136.861676,
         },
         {
           name: "南荒子",
+          nameKana: "みなみあらこ",
           lat: 35.131707,
           lng: 136.861771,
         },
         {
           name: "中島",
+          nameKana: "なかじま",
           lat: 35.125144,
           lng: 136.861346,
         },
         {
           name: "港北",
+          nameKana: "こうほく",
           lat: 35.114529,
           lng: 136.862739,
         },
         {
           name: "荒子川公園",
+          nameKana: "あらこがわこうえん",
           lat: 35.104569,
           lng: 136.861148,
         },
         {
           name: "稲永",
+          nameKana: "いなえい",
           lat: 35.091418,
           lng: 136.863203,
         },
         {
           name: "野跡",
+          nameKana: "のせき",
           lat: 35.075253,
           lng: 136.854136,
         },
         {
           name: "金城ふ頭",
+          nameKana: "きんじょうふとう",
           lat: 35.048775,
           lng: 136.849009,
         },
@@ -6035,6 +7072,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "枇杷島",
+          nameKana: "びわじま",
           lat: 35.198681,
           lng: 136.861816,
           transfer: true,
@@ -6042,26 +7080,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "尾張星の宮",
+          nameKana: "おわりほしのみや",
           lat: 35.212988,
           lng: 136.855011,
         },
         {
           name: "小田井",
+          nameKana: "おたい",
           lat: 35.221043,
           lng: 136.880491,
         },
         {
           name: "比良",
+          nameKana: "ひら",
           lat: 35.228549,
           lng: 136.90178,
         },
         {
           name: "味美",
+          nameKana: "あじよし",
           lat: 35.229504,
           lng: 136.932263,
         },
         {
           name: "勝川",
+          nameKana: "かちがわ",
           lat: 35.227821,
           lng: 136.952734,
           transfer: true,
@@ -6080,6 +7123,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "岡崎",
+          nameKana: "おかざき",
           lat: 34.925417,
           lng: 137.157243,
           transfer: true,
@@ -6087,11 +7131,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "六名",
+          nameKana: "むつな",
           lat: 34.941132,
           lng: 137.152004,
         },
         {
           name: "中岡崎",
+          nameKana: "なかおかざき",
           lat: 34.956231,
           lng: 137.152723,
           transfer: true,
@@ -6099,76 +7145,91 @@ export const chubu: OperatorData = {
         },
         {
           name: "北岡崎",
+          nameKana: "きたおかざき",
           lat: 34.972301,
           lng: 137.157736,
         },
         {
           name: "大門",
+          nameKana: "だいもん",
           lat: 34.982411,
           lng: 137.154883,
         },
         {
           name: "北野桝塚",
+          nameKana: "きたのますづか",
           lat: 34.996289,
           lng: 137.139457,
         },
         {
           name: "三河上郷",
+          nameKana: "みかわかみごう",
           lat: 35.012384,
           lng: 137.132756,
         },
         {
           name: "永覚",
+          nameKana: "えかく",
           lat: 35.027361,
           lng: 137.138983,
         },
         {
           name: "末野原",
+          nameKana: "すえのはら",
           lat: 35.03949,
           lng: 137.146866,
         },
         {
           name: "三河豊田",
+          nameKana: "みかわとよた",
           lat: 35.0554,
           lng: 137.150934,
         },
         {
           name: "新上挙母",
+          nameKana: "しんうわごろも",
           lat: 35.071732,
           lng: 137.151206,
         },
         {
           name: "新豊田",
+          nameKana: "しんとよた",
           lat: 35.088041,
           lng: 137.153524,
         },
         {
           name: "愛環梅坪",
+          nameKana: "あいかんうめつぼ",
           lat: 35.105056,
           lng: 137.160781,
         },
         {
           name: "四郷",
+          nameKana: "しごう",
           lat: 35.12211,
           lng: 137.162635,
         },
         {
           name: "貝津",
+          nameKana: "かいづ",
           lat: 35.133089,
           lng: 137.148091,
         },
         {
           name: "保見",
+          nameKana: "ほみ",
           lat: 35.136665,
           lng: 137.134363,
         },
         {
           name: "篠原",
+          nameKana: "ささばら",
           lat: 35.155171,
           lng: 137.120592,
         },
         {
           name: "八草",
+          nameKana: "やくさ",
           lat: 35.175404,
           lng: 137.106945,
           transfer: true,
@@ -6176,16 +7237,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "山口",
+          nameKana: "やまぐち",
           lat: 35.197656,
           lng: 137.102089,
         },
         {
           name: "瀬戸口",
+          nameKana: "せとぐち",
           lat: 35.206679,
           lng: 137.081866,
         },
         {
           name: "瀬戸市",
+          nameKana: "せとし",
           lat: 35.225921,
           lng: 137.078452,
           transfer: true,
@@ -6193,11 +7257,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "中水野",
+          nameKana: "なかみずの",
           lat: 35.250399,
           lng: 137.071947,
         },
         {
           name: "高蔵寺",
+          nameKana: "こうぞうじ",
           lat: 35.26434,
           lng: 137.043766,
           transfer: true,
@@ -6216,6 +7282,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "藤が丘",
+          nameKana: "ふじがおか",
           lat: 35.182113,
           lng: 137.02171,
           transfer: true,
@@ -6223,41 +7290,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "はなみずき通",
+          nameKana: "はなみずきどおり",
           lat: 35.17767,
           lng: 137.035369,
         },
         {
           name: "杁ヶ池公園",
+          nameKana: "いりがいけこうえん",
           lat: 35.171788,
           lng: 137.037866,
         },
         {
           name: "長久手古戦場",
+          nameKana: "ながくてこせんじょう",
           lat: 35.171574,
           lng: 137.049932,
         },
         {
           name: "芸大通",
+          nameKana: "げいだいどおり",
           lat: 35.171938,
           lng: 137.061092,
         },
         {
           name: "公園西",
+          nameKana: "こうえんにし",
           lat: 35.174403,
           lng: 137.076737,
         },
         {
           name: "愛・地球博記念公園",
+          nameKana: "あい・ちきゅうはくきねんこうえん",
           lat: 35.177948,
           lng: 137.08796,
         },
         {
           name: "陶磁資料館南",
+          nameKana: "とうじしりょうかんみなみ",
           lat: 35.179286,
           lng: 137.097099,
         },
         {
           name: "八草",
+          nameKana: "やくさ",
           lat: 35.176623,
           lng: 137.106366,
           transfer: true,
@@ -6276,11 +7351,13 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "高畑",
+          nameKana: "たかばた",
           lat: 35.139161,
           lng: 136.853466,
         },
         {
           name: "八田",
+          nameKana: "はった",
           lat: 35.148986,
           lng: 136.853278,
           transfer: true,
@@ -6288,31 +7365,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "岩塚",
+          nameKana: "いわつか",
           lat: 35.158459,
           lng: 136.854406,
         },
         {
           name: "中村公園",
+          nameKana: "なかむらこうえん",
           lat: 35.16783,
           lng: 136.855056,
         },
         {
           name: "中村日赤",
+          nameKana: "なかむらにっせき",
           lat: 35.172385,
           lng: 136.861733,
         },
         {
           name: "本陣",
+          nameKana: "ほんじん",
           lat: 35.177135,
           lng: 136.866782,
         },
         {
           name: "亀島",
+          nameKana: "かめじま",
           lat: 35.177526,
           lng: 136.876756,
         },
         {
           name: "名古屋",
+          nameKana: "なごや",
           lat: 35.171252,
           lng: 136.883925,
           transfer: true,
@@ -6320,6 +7403,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "伏見",
+          nameKana: "ふしみ",
           lat: 35.169273,
           lng: 136.897427,
           transfer: true,
@@ -6327,6 +7411,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "栄",
+          nameKana: "さかえ",
           lat: 35.16999,
           lng: 136.908031,
           transfer: true,
@@ -6334,11 +7419,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "新栄町",
+          nameKana: "しんさかえまち",
           lat: 35.170729,
           lng: 136.920377,
         },
         {
           name: "千種",
+          nameKana: "ちくさ",
           lat: 35.170625,
           lng: 136.930402,
           transfer: true,
@@ -6346,6 +7433,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "今池",
+          nameKana: "いまいけ",
           lat: 35.169919,
           lng: 136.937331,
           transfer: true,
@@ -6353,16 +7441,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "池下",
+          nameKana: "いけした",
           lat: 35.167675,
           lng: 136.946486,
         },
         {
           name: "覚王山",
+          nameKana: "かくおうざん",
           lat: 35.166565,
           lng: 136.953708,
         },
         {
           name: "本山",
+          nameKana: "もとやま",
           lat: 35.163923,
           lng: 136.963441,
           transfer: true,
@@ -6370,31 +7461,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "東山公園",
+          nameKana: "ひがしやまこうえん",
           lat: 35.160454,
           lng: 136.972873,
         },
         {
           name: "星ヶ丘",
+          nameKana: "ほしがおか",
           lat: 35.162399,
           lng: 136.985095,
         },
         {
           name: "一社",
+          nameKana: "いっしゃ",
           lat: 35.168231,
           lng: 136.995927,
         },
         {
           name: "上社",
+          nameKana: "かみやしろ",
           lat: 35.173656,
           lng: 137.007081,
         },
         {
           name: "本郷",
+          nameKana: "ほんごう",
           lat: 35.175453,
           lng: 137.013425,
         },
         {
           name: "藤が丘",
+          nameKana: "ふじがおか",
           lat: 35.182415,
           lng: 137.021361,
           transfer: true,
@@ -6411,6 +7508,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "ナゴヤドーム前矢田",
+          nameKana: "なごやどーむまえやだ",
           lat: 35.190691,
           lng: 136.945255,
           transfer: true,
@@ -6418,6 +7516,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "大曽根",
+          nameKana: "おおぞね",
           lat: 35.192385,
           lng: 136.937204,
           transfer: true,
@@ -6425,6 +7524,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "平安通",
+          nameKana: "へいあんどおり",
           lat: 35.195934,
           lng: 136.929784,
           transfer: true,
@@ -6432,26 +7532,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "志賀本通",
+          nameKana: "しがほんどおり",
           lat: 35.196281,
           lng: 136.92121,
         },
         {
           name: "黒川",
+          nameKana: "くろかわ",
           lat: 35.197183,
           lng: 136.910178,
         },
         {
           name: "名城公園",
+          nameKana: "めいじょうこうえん",
           lat: 35.190528,
           lng: 136.904748,
         },
         {
           name: "名古屋城",
+          nameKana: "なごやじょう",
           lat: 35.18156,
           lng: 136.905379,
         },
         {
           name: "久屋大通",
+          nameKana: "ひさやおおどおり",
           lat: 35.173784,
           lng: 136.908156,
           transfer: true,
@@ -6459,6 +7564,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "栄",
+          nameKana: "さかえ",
           lat: 35.16999,
           lng: 136.908031,
           transfer: true,
@@ -6466,11 +7572,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "矢場町",
+          nameKana: "やばちょう",
           lat: 35.163785,
           lng: 136.90899,
         },
         {
           name: "上前津",
+          nameKana: "かみまえづ",
           lat: 35.157477,
           lng: 136.906815,
           transfer: true,
@@ -6478,11 +7586,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "東別院",
+          nameKana: "ひがしべついん",
           lat: 35.150453,
           lng: 136.904824,
         },
         {
           name: "金山",
+          nameKana: "かなやま",
           lat: 35.14352,
           lng: 136.901611,
           transfer: true,
@@ -6490,31 +7600,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "西高蔵",
+          nameKana: "にしたかくら",
           lat: 35.134622,
           lng: 136.901769,
         },
         {
           name: "熱田神宮西",
+          nameKana: "あつたじんぐうにし",
           lat: 35.127956,
           lng: 136.906769,
         },
         {
           name: "熱田神宮伝馬町",
+          nameKana: "あつたじんぐうてんまちょう",
           lat: 35.120735,
           lng: 136.91038,
         },
         {
           name: "堀田",
+          nameKana: "ほりた",
           lat: 35.116644,
           lng: 136.921685,
         },
         {
           name: "妙音通",
+          nameKana: "みょうおんどおり",
           lat: 35.117125,
           lng: 136.929545,
         },
         {
           name: "新瑞橋",
+          nameKana: "あらたまばし",
           lat: 35.117734,
           lng: 136.936603,
           transfer: true,
@@ -6522,16 +7638,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "瑞穂運動場東",
+          nameKana: "みずほうんどうじょうひがし",
           lat: 35.123167,
           lng: 136.948685,
         },
         {
           name: "総合リハビリセンター",
+          nameKana: "そうごうりはびりせんたー",
           lat: 35.130536,
           lng: 136.954523,
         },
         {
           name: "八事",
+          nameKana: "やごと",
           lat: 35.136946,
           lng: 136.964036,
           transfer: true,
@@ -6539,16 +7658,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "八事日赤",
+          nameKana: "やごとにっせき",
           lat: 35.144556,
           lng: 136.965008,
         },
         {
           name: "名古屋大学",
+          nameKana: "なごやだいがく",
           lat: 35.154261,
           lng: 136.96658,
         },
         {
           name: "本山",
+          nameKana: "もとやま",
           lat: 35.163923,
           lng: 136.963441,
           transfer: true,
@@ -6556,16 +7678,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "自由ヶ丘",
+          nameKana: "じゆうがおか",
           lat: 35.174961,
           lng: 136.966762,
         },
         {
           name: "茶屋ヶ坂",
+          nameKana: "ちゃやがさか",
           lat: 35.184612,
           lng: 136.962254,
         },
         {
           name: "砂田橋",
+          nameKana: "すなだばし",
           lat: 35.188861,
           lng: 136.953999,
           transfer: true,
@@ -6582,6 +7707,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "金山",
+          nameKana: "かなやま",
           lat: 35.14352,
           lng: 136.901611,
           transfer: true,
@@ -6589,31 +7715,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "日比野",
+          nameKana: "ひびの",
           lat: 35.132711,
           lng: 136.893125,
         },
         {
           name: "六番町",
+          nameKana: "ろくばんちょう",
           lat: 35.124623,
           lng: 136.888715,
         },
         {
           name: "東海通",
+          nameKana: "とうかいどおり",
           lat: 35.113388,
           lng: 136.887336,
         },
         {
           name: "港区役所",
+          nameKana: "みなとくやくしょ",
           lat: 35.105736,
           lng: 136.88455,
         },
         {
           name: "築地口",
+          nameKana: "つきじぐち",
           lat: 35.099348,
           lng: 136.883162,
         },
         {
           name: "名古屋港",
+          nameKana: "なごやこう",
           lat: 35.09348,
           lng: 136.881971,
         },
@@ -6628,6 +7760,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "上小田井",
+          nameKana: "かみおたい",
           lat: 35.223482,
           lng: 136.876941,
           transfer: true,
@@ -6635,26 +7768,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "庄内緑地公園",
+          nameKana: "しょうないりょくちこうえん",
           lat: 35.215186,
           lng: 136.886963,
         },
         {
           name: "庄内通",
+          nameKana: "しょうないどおり",
           lat: 35.204476,
           lng: 136.891044,
         },
         {
           name: "浄心",
+          nameKana: "じょうしん",
           lat: 35.192205,
           lng: 136.890819,
         },
         {
           name: "浅間町",
+          nameKana: "せんげんちょう",
           lat: 35.18384,
           lng: 136.890335,
         },
         {
           name: "丸の内",
+          nameKana: "まるのうち",
           lat: 35.173458,
           lng: 136.896944,
           transfer: true,
@@ -6662,6 +7800,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "伏見",
+          nameKana: "ふしみ",
           lat: 35.169273,
           lng: 136.897427,
           transfer: true,
@@ -6669,11 +7808,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "大須観音",
+          nameKana: "おおすかんのん",
           lat: 35.160729,
           lng: 136.898158,
         },
         {
           name: "上前津",
+          nameKana: "かみまえづ",
           lat: 35.157477,
           lng: 136.906815,
           transfer: true,
@@ -6681,6 +7822,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "鶴舞",
+          nameKana: "つるまい",
           lat: 35.15596,
           lng: 136.916749,
           transfer: true,
@@ -6688,11 +7830,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "荒畑",
+          nameKana: "あらはた",
           lat: 35.149654,
           lng: 136.92593,
         },
         {
           name: "御器所",
+          nameKana: "ごきそ",
           lat: 35.149585,
           lng: 136.934146,
           transfer: true,
@@ -6700,16 +7844,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "川名",
+          nameKana: "かわな",
           lat: 35.148703,
           lng: 136.948717,
         },
         {
           name: "いりなか",
+          nameKana: "いりなか",
           lat: 35.143234,
           lng: 136.955375,
         },
         {
           name: "八事",
+          nameKana: "やごと",
           lat: 35.136946,
           lng: 136.964036,
           transfer: true,
@@ -6717,26 +7864,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "塩釜口",
+          nameKana: "しおがまぐち",
           lat: 35.132433,
           lng: 136.977529,
         },
         {
           name: "植田",
+          nameKana: "うえだ",
           lat: 35.128649,
           lng: 136.987882,
         },
         {
           name: "原",
+          nameKana: "はら",
           lat: 35.126118,
           lng: 136.996714,
         },
         {
           name: "平針",
+          nameKana: "ひらばり",
           lat: 35.122766,
           lng: 137.006904,
         },
         {
           name: "赤池",
+          nameKana: "あかいけ",
           lat: 35.121097,
           lng: 137.017978,
           transfer: true,
@@ -6753,11 +7905,13 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "太閤通",
+          nameKana: "たいこうどおり",
           lat: 35.167611,
           lng: 136.873126,
         },
         {
           name: "名古屋",
+          nameKana: "なごや",
           lat: 35.170761,
           lng: 136.882546,
           transfer: true,
@@ -6765,11 +7919,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "国際センター",
+          nameKana: "こくさいせんたー",
           lat: 35.172128,
           lng: 136.889375,
         },
         {
           name: "丸の内",
+          nameKana: "まるのうち",
           lat: 35.173098,
           lng: 136.898113,
           transfer: true,
@@ -6777,6 +7933,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "久屋大通",
+          nameKana: "ひさやおおどおり",
           lat: 35.173784,
           lng: 136.908156,
           transfer: true,
@@ -6784,16 +7941,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "高岳",
+          nameKana: "たかおか",
           lat: 35.174062,
           lng: 136.915656,
         },
         {
           name: "車道",
+          nameKana: "くるまみち",
           lat: 35.173507,
           lng: 136.929543,
         },
         {
           name: "今池",
+          nameKana: "いまいけ",
           lat: 35.169919,
           lng: 136.937331,
           transfer: true,
@@ -6801,11 +7961,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "吹上",
+          nameKana: "ふきあげ",
           lat: 35.158787,
           lng: 136.935376,
         },
         {
           name: "御器所",
+          nameKana: "ごきそ",
           lat: 35.149585,
           lng: 136.934146,
           transfer: true,
@@ -6813,21 +7975,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "桜山",
+          nameKana: "さくらやま",
           lat: 35.139695,
           lng: 136.933316,
         },
         {
           name: "瑞穂区役所",
+          nameKana: "みずほくやくしょ",
           lat: 35.131793,
           lng: 136.93443,
         },
         {
           name: "瑞穂運動場西",
+          nameKana: "みずほうんどうじょうにし",
           lat: 35.124949,
           lng: 136.935477,
         },
         {
           name: "新瑞橋",
+          nameKana: "あらたまばし",
           lat: 35.117734,
           lng: 136.936603,
           transfer: true,
@@ -6835,36 +8001,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "桜本町",
+          nameKana: "さくらほんまち",
           lat: 35.109001,
           lng: 136.936761,
         },
         {
           name: "鶴里",
+          nameKana: "つるさと",
           lat: 35.105738,
           lng: 136.943433,
         },
         {
           name: "野並",
+          nameKana: "のなみ",
           lat: 35.102358,
           lng: 136.95549,
         },
         {
           name: "鳴子北",
+          nameKana: "なるこきた",
           lat: 35.102684,
           lng: 136.966209,
         },
         {
           name: "相生山",
+          nameKana: "あいおいやま",
           lat: 35.102545,
           lng: 136.976208,
         },
         {
           name: "神沢",
+          nameKana: "かみさわ",
           lat: 35.098518,
           lng: 136.98954,
         },
         {
           name: "徳重",
+          nameKana: "とくしげ",
           lat: 35.094491,
           lng: 136.99815,
         },
@@ -6879,6 +8052,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "平安通",
+          nameKana: "へいあんどおり",
           lat: 35.195934,
           lng: 136.929784,
           transfer: true,
@@ -6886,6 +8060,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "上飯田",
+          nameKana: "かみいいだ",
           lat: 35.203845,
           lng: 136.929642,
           transfer: true,
@@ -6904,6 +8079,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "大曽根",
+          nameKana: "おおぞね",
           lat: 35.191372,
           lng: 136.937494,
           transfer: true,
@@ -6911,6 +8087,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "ナゴヤドーム前矢田",
+          nameKana: "なごやどーむまえやだ",
           lat: 35.19025,
           lng: 136.947407,
           transfer: true,
@@ -6918,6 +8095,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "砂田橋",
+          nameKana: "すなだばし",
           lat: 35.188821,
           lng: 136.954268,
           transfer: true,
@@ -6925,6 +8103,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "守山",
+          nameKana: "もりやま",
           lat: 35.197431,
           lng: 136.956639,
           transfer: true,
@@ -6932,26 +8111,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "金屋",
+          nameKana: "かなや",
           lat: 35.202551,
           lng: 136.956747,
         },
         {
           name: "川宮",
+          nameKana: "かわみや",
           lat: 35.210405,
           lng: 136.962047,
         },
         {
           name: "川村",
+          nameKana: "かわむら",
           lat: 35.214297,
           lng: 136.968591,
         },
         {
           name: "白沢渓谷",
+          nameKana: "しらさわけいこく",
           lat: 35.216121,
           lng: 136.978569,
         },
         {
           name: "小幡緑地",
+          nameKana: "おばたりょくち",
           lat: 35.218785,
           lng: 136.982839,
         },
@@ -6968,6 +8152,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "高岡",
+          nameKana: "たかおか",
           lat: 36.740948,
           lng: 137.015274,
           transfer: true,
@@ -6975,66 +8160,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "新高岡",
+          nameKana: "しんたかおか",
           lat: 36.727004,
           lng: 137.010459,
         },
         {
           name: "二塚",
+          nameKana: "ふたつか",
           lat: 36.714339,
           lng: 137.006141,
         },
         {
           name: "林",
+          nameKana: "はやし",
           lat: 36.704504,
           lng: 136.999379,
         },
         {
           name: "戸出",
+          nameKana: "といで",
           lat: 36.684323,
           lng: 136.983898,
         },
         {
           name: "油田",
+          nameKana: "あぶらでん",
           lat: 36.655124,
           lng: 136.970372,
         },
         {
           name: "砺波",
+          nameKana: "となみ",
           lat: 36.636424,
           lng: 136.953648,
         },
         {
           name: "東野尻",
+          nameKana: "ひがしのじり",
           lat: 36.618573,
           lng: 136.9435,
         },
         {
           name: "高儀",
+          nameKana: "たかぎ",
           lat: 36.606697,
           lng: 136.936007,
         },
         {
           name: "福野",
+          nameKana: "ふくの",
           lat: 36.588541,
           lng: 136.923166,
         },
         {
           name: "東石黒",
+          nameKana: "ひがしいしぐろ",
           lat: 36.57605,
           lng: 136.898166,
         },
         {
           name: "福光",
+          nameKana: "ふくみつ",
           lat: 36.558121,
           lng: 136.878135,
         },
         {
           name: "越中山田",
+          nameKana: "えっちゅうやまだ",
           lat: 36.538513,
           lng: 136.887522,
         },
         {
           name: "城端",
+          nameKana: "じょうはな",
           lat: 36.522012,
           lng: 136.901673,
         },
@@ -7049,6 +8247,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "高岡",
+          nameKana: "たかおか",
           lat: 36.740948,
           lng: 137.015274,
           transfer: true,
@@ -7056,36 +8255,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "越中中川",
+          nameKana: "えっちゅうなかがわ",
           lat: 36.749764,
           lng: 137.027851,
         },
         {
           name: "能町",
+          nameKana: "のうまち",
           lat: 36.768259,
           lng: 137.039885,
         },
         {
           name: "伏木",
+          nameKana: "ふしき",
           lat: 36.792306,
           lng: 137.05853,
         },
         {
           name: "越中国分",
+          nameKana: "えっちゅうこくぶ",
           lat: 36.805361,
           lng: 137.050729,
         },
         {
           name: "雨晴",
+          nameKana: "あまはらし",
           lat: 36.816484,
           lng: 137.037583,
         },
         {
           name: "島尾",
+          nameKana: "しまお",
           lat: 36.828423,
           lng: 137.01269,
         },
         {
           name: "氷見",
+          nameKana: "ひみ",
           lat: 36.849899,
           lng: 136.990631,
         },
@@ -7100,6 +8306,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "津幡",
+          nameKana: "つばた",
           lat: 36.657895,
           lng: 136.730759,
           transfer: true,
@@ -7107,91 +8314,109 @@ export const chubu: OperatorData = {
         },
         {
           name: "中津幡",
+          nameKana: "なかつばた",
           lat: 36.67156,
           lng: 136.740279,
         },
         {
           name: "本津幡",
+          nameKana: "ほんつばた",
           lat: 36.676673,
           lng: 136.732202,
         },
         {
           name: "能瀬",
+          nameKana: "のせ",
           lat: 36.693152,
           lng: 136.719898,
         },
         {
           name: "宇野気",
+          nameKana: "うのけ",
           lat: 36.722795,
           lng: 136.70306,
         },
         {
           name: "横山",
+          nameKana: "よこやま",
           lat: 36.747739,
           lng: 136.71685,
         },
         {
           name: "高松",
+          nameKana: "たかまつ",
           lat: 36.768541,
           lng: 136.728823,
         },
         {
           name: "免田",
+          nameKana: "めんでん",
           lat: 36.795806,
           lng: 136.747581,
         },
         {
           name: "宝達",
+          nameKana: "ほうだつ",
           lat: 36.819875,
           lng: 136.762229,
         },
         {
           name: "敷浪",
+          nameKana: "しきなみ",
           lat: 36.848094,
           lng: 136.773455,
         },
         {
           name: "南羽咋",
+          nameKana: "みなみはくい",
           lat: 36.870324,
           lng: 136.774631,
         },
         {
           name: "羽咋",
+          nameKana: "はくい",
           lat: 36.897073,
           lng: 136.783332,
         },
         {
           name: "千路",
+          nameKana: "ちじ",
           lat: 36.928139,
           lng: 136.801195,
         },
         {
           name: "金丸",
+          nameKana: "かねまる",
           lat: 36.943344,
           lng: 136.835874,
         },
         {
           name: "能登部",
+          nameKana: "のとべ",
           lat: 36.960867,
           lng: 136.869403,
         },
         {
           name: "良川",
+          nameKana: "よしかわ",
           lat: 36.976662,
           lng: 136.894628,
         },
         {
           name: "能登二宮",
+          nameKana: "のとにのみや",
           lat: 36.984824,
           lng: 136.917389,
         },
         {
           name: "徳田",
+          nameKana: "とくだ",
           lat: 37.007449,
           lng: 136.930295,
         },
         {
           name: "七尾",
+          nameKana: "ななお",
           lat: 37.041613,
           lng: 136.964501,
           transfer: true,
@@ -7199,6 +8424,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "和倉温泉",
+          nameKana: "わくらおんせん",
           lat: 37.074663,
           lng: 136.925884,
           transfer: true,
@@ -7215,6 +8441,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "福井",
+          nameKana: "ふくい",
           lat: 36.062057,
           lng: 136.223516,
           transfer: true,
@@ -7222,6 +8449,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "越前花堂",
+          nameKana: "えちぜんはなんどう",
           lat: 36.038771,
           lng: 136.218073,
           transfer: true,
@@ -7229,106 +8457,127 @@ export const chubu: OperatorData = {
         },
         {
           name: "六条",
+          nameKana: "ろくじょう",
           lat: 36.028175,
           lng: 136.239594,
         },
         {
           name: "足羽",
+          nameKana: "あすわ",
           lat: 36.020821,
           lng: 136.253607,
         },
         {
           name: "越前東郷",
+          nameKana: "えちぜんとうごう",
           lat: 36.018185,
           lng: 136.273561,
         },
         {
           name: "一乗谷",
+          nameKana: "いちじょうだに",
           lat: 36.013679,
           lng: 136.2974,
         },
         {
           name: "越前高田",
+          nameKana: "えちぜんたかだ",
           lat: 36.024759,
           lng: 136.318669,
         },
         {
           name: "市波",
+          nameKana: "いちなみ",
           lat: 36.019813,
           lng: 136.330463,
         },
         {
           name: "小和清水",
+          nameKana: "こわしょうず",
           lat: 36.01732,
           lng: 136.351085,
         },
         {
           name: "美山",
+          nameKana: "みやま",
           lat: 35.998567,
           lng: 136.365082,
         },
         {
           name: "越前薬師",
+          nameKana: "えちぜんやくし",
           lat: 36.005283,
           lng: 136.384336,
         },
         {
           name: "越前大宮",
+          nameKana: "えちぜんおおみや",
           lat: 36.000064,
           lng: 136.409694,
         },
         {
           name: "計石",
+          nameKana: "はかりいし",
           lat: 35.997589,
           lng: 136.434767,
         },
         {
           name: "牛ケ原",
+          nameKana: "うしがはら",
           lat: 35.998567,
           lng: 136.467349,
         },
         {
           name: "北大野",
+          nameKana: "きたおおの",
           lat: 35.997992,
           lng: 136.48795,
         },
         {
           name: "越前大野",
+          nameKana: "えちぜんおおの",
           lat: 35.983294,
           lng: 136.496877,
         },
         {
           name: "越前田野",
+          nameKana: "えちぜんたの",
           lat: 35.987048,
           lng: 136.526884,
         },
         {
           name: "越前富田",
+          nameKana: "えちぜんとみだ",
           lat: 35.9909,
           lng: 136.541233,
         },
         {
           name: "下唯野",
+          nameKana: "しもゆいの",
           lat: 35.974208,
           lng: 136.56027,
         },
         {
           name: "柿ケ島",
+          nameKana: "かきがしま",
           lat: 35.97243,
           lng: 136.570938,
         },
         {
           name: "勝原",
+          nameKana: "かどはら",
           lat: 35.967512,
           lng: 136.597151,
         },
         {
           name: "越前下山",
+          nameKana: "えちぜんしもやま",
           lat: 35.920356,
           lng: 136.634832,
         },
         {
           name: "九頭竜湖",
+          nameKana: "くずりゅうこ",
           lat: 35.90449,
           lng: 136.66146,
         },
@@ -7343,6 +8592,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "東舞鶴",
+          nameKana: "ひがしまいづる",
           lat: 35.468601,
           lng: 135.394788,
           transfer: true,
@@ -7350,116 +8600,139 @@ export const chubu: OperatorData = {
         },
         {
           name: "松尾寺",
+          nameKana: "まつのおでら",
           lat: 35.486018,
           lng: 135.450133,
         },
         {
           name: "青郷",
+          nameKana: "あおのごう",
           lat: 35.481584,
           lng: 135.4998,
         },
         {
           name: "三松",
+          nameKana: "みつまつ",
           lat: 35.488767,
           lng: 135.520561,
         },
         {
           name: "若狭高浜",
+          nameKana: "わかさたかはま",
           lat: 35.486423,
           lng: 135.547588,
         },
         {
           name: "若狭和田",
+          nameKana: "わかさわだ",
           lat: 35.488664,
           lng: 135.581564,
         },
         {
           name: "若狭本郷",
+          nameKana: "わかさほんごう",
           lat: 35.482616,
           lng: 135.618834,
         },
         {
           name: "加斗",
+          nameKana: "かと",
           lat: 35.480672,
           lng: 135.666145,
         },
         {
           name: "勢浜",
+          nameKana: "せいはま",
           lat: 35.481192,
           lng: 135.708039,
         },
         {
           name: "小浜",
+          nameKana: "おばま",
           lat: 35.491643,
           lng: 135.745672,
         },
         {
           name: "東小浜",
+          nameKana: "ひがしおばま",
           lat: 35.485234,
           lng: 135.781053,
         },
         {
           name: "新平野",
+          nameKana: "しんひらの",
           lat: 35.473069,
           lng: 135.807198,
         },
         {
           name: "上中",
+          nameKana: "かみなか",
           lat: 35.463638,
           lng: 135.855728,
         },
         {
           name: "若狭有田",
+          nameKana: "わかさありた",
           lat: 35.485536,
           lng: 135.868377,
         },
         {
           name: "大鳥羽",
+          nameKana: "おおとば",
           lat: 35.504839,
           lng: 135.866872,
         },
         {
           name: "十村",
+          nameKana: "とむら",
           lat: 35.51595,
           lng: 135.896591,
         },
         {
           name: "藤井",
+          nameKana: "ふじい",
           lat: 35.532198,
           lng: 135.906274,
         },
         {
           name: "三方",
+          nameKana: "みかた",
           lat: 35.555282,
           lng: 135.909259,
         },
         {
           name: "気山",
+          nameKana: "きやま",
           lat: 35.584887,
           lng: 135.909531,
         },
         {
           name: "美浜",
+          nameKana: "みはま",
           lat: 35.605138,
           lng: 135.936496,
         },
         {
           name: "東美浜",
+          nameKana: "ひがしみはま",
           lat: 35.614039,
           lng: 135.985614,
         },
         {
           name: "粟野",
+          nameKana: "あわの",
           lat: 35.617234,
           lng: 136.027225,
         },
         {
           name: "西敦賀",
+          nameKana: "にしつるが",
           lat: 35.617975,
           lng: 136.067787,
         },
         {
           name: "敦賀",
+          nameKana: "つるが",
           lat: 35.644767,
           lng: 136.076488,
           transfer: true,
@@ -7478,6 +8751,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "大月",
+          nameKana: "おおつき",
           lat: 35.612938,
           lng: 138.942248,
           transfer: true,
@@ -7485,86 +8759,103 @@ export const chubu: OperatorData = {
         },
         {
           name: "上大月",
+          nameKana: "かみおおつき",
           lat: 35.609341,
           lng: 138.938128,
         },
         {
           name: "田野倉",
+          nameKana: "たのくら",
           lat: 35.593456,
           lng: 138.931271,
         },
         {
           name: "禾生",
+          nameKana: "かせい",
           lat: 35.575175,
           lng: 138.929191,
         },
         {
           name: "赤坂",
+          nameKana: "あかさか",
           lat: 35.566093,
           lng: 138.916035,
         },
         {
           name: "都留市",
+          nameKana: "つるし",
           lat: 35.557199,
           lng: 138.907525,
         },
         {
           name: "谷村町",
+          nameKana: "やむらまち",
           lat: 35.550744,
           lng: 138.904631,
         },
         {
           name: "都留文科大学前",
+          nameKana: "つるぶんかだいがくまえ",
           lat: 35.542531,
           lng: 138.896438,
         },
         {
           name: "十日市場",
+          nameKana: "とおかいちば",
           lat: 35.538881,
           lng: 138.887489,
         },
         {
           name: "東桂",
+          nameKana: "ひがしかつら",
           lat: 35.536334,
           lng: 138.870758,
         },
         {
           name: "三つ峠",
+          nameKana: "みつとうげ",
           lat: 35.524291,
           lng: 138.84555,
         },
         {
           name: "寿",
+          nameKana: "ことぶき",
           lat: 35.508442,
           lng: 138.82558,
         },
         {
           name: "葭池温泉前",
+          nameKana: "よしいけおんせんまえ",
           lat: 35.502084,
           lng: 138.812212,
         },
         {
           name: "下吉田",
+          nameKana: "しもよしだ",
           lat: 35.497909,
           lng: 138.80366,
         },
         {
           name: "月江寺",
+          nameKana: "げっこうじ",
           lat: 35.493313,
           lng: 138.798105,
         },
         {
           name: "富士山",
+          nameKana: "ふじさん",
           lat: 35.483536,
           lng: 138.795686,
         },
         {
           name: "富士急ハイランド",
+          nameKana: "ふじきゅうはいらんど",
           lat: 35.488974,
           lng: 138.782048,
         },
         {
           name: "河口湖",
+          nameKana: "かわぐちこ",
           lat: 35.498231,
           lng: 138.768852,
         },
@@ -7581,6 +8872,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "六日町",
+          nameKana: "むいかまち",
           lat: 37.067065,
           lng: 138.875872,
           transfer: true,
@@ -7588,21 +8880,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "魚沼丘陵",
+          nameKana: "うおぬまきゅうりょう",
           lat: 37.09614,
           lng: 138.877619,
         },
         {
           name: "美佐島",
+          nameKana: "みさしま",
           lat: 37.130996,
           lng: 138.789774,
         },
         {
           name: "しんざ",
+          nameKana: "しんざ",
           lat: 37.139675,
           lng: 138.768339,
         },
         {
           name: "十日町",
+          nameKana: "とおかまち",
           lat: 37.134562,
           lng: 138.756188,
           transfer: true,
@@ -7610,36 +8906,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "まつだい",
+          nameKana: "まつだい",
           lat: 37.132209,
           lng: 138.613884,
         },
         {
           name: "ほくほく大島",
+          nameKana: "ほくほくおおしま",
           lat: 37.146997,
           lng: 138.509551,
         },
         {
           name: "虫川大杉",
+          nameKana: "むしがわおおすぎ",
           lat: 37.154897,
           lng: 138.441409,
         },
         {
           name: "うらがわら",
+          nameKana: "うらがわら",
           lat: 37.159285,
           lng: 138.419047,
         },
         {
           name: "大池いこいの森",
+          nameKana: "おおいけいこいのもり",
           lat: 37.18442,
           lng: 138.373406,
         },
         {
           name: "くびき",
+          nameKana: "くびき",
           lat: 37.198168,
           lng: 138.361689,
         },
         {
           name: "犀潟",
+          nameKana: "さいがた",
           lat: 37.210345,
           lng: 138.305154,
           transfer: true,
@@ -7658,6 +8961,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "電鉄富山",
+          nameKana: "でんてつとやま",
           lat: 36.700757,
           lng: 137.214163,
           transfer: true,
@@ -7665,6 +8969,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "稲荷町",
+          nameKana: "いなりまち",
           lat: 36.696597,
           lng: 137.231247,
           transfer: true,
@@ -7672,31 +8977,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "新庄田中",
+          nameKana: "しんじょうたなか",
           lat: 36.697972,
           lng: 137.241417,
         },
         {
           name: "東新庄",
+          nameKana: "ひがししんじょう",
           lat: 36.698644,
           lng: 137.253021,
         },
         {
           name: "越中荏原",
+          nameKana: "えっちゅうえばら",
           lat: 36.698978,
           lng: 137.266222,
         },
         {
           name: "越中三郷",
+          nameKana: "えっちゅうさんごう",
           lat: 36.703309,
           lng: 137.290792,
         },
         {
           name: "越中舟橋",
+          nameKana: "えっちゅうふなはし",
           lat: 36.705725,
           lng: 137.306632,
         },
         {
           name: "寺田",
+          nameKana: "てらだ",
           lat: 36.698852,
           lng: 137.319145,
           transfer: true,
@@ -7704,51 +9015,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "越中泉",
+          nameKana: "えっちゅういずみ",
           lat: 36.699905,
           lng: 137.327245,
         },
         {
           name: "相ノ木",
+          nameKana: "あいのき",
           lat: 36.701963,
           lng: 137.335472,
         },
         {
           name: "新相ノ木",
+          nameKana: "しんあいのき",
           lat: 36.703128,
           lng: 137.342278,
         },
         {
           name: "上市",
+          nameKana: "かみいち",
           lat: 36.704463,
           lng: 137.357603,
         },
         {
           name: "新宮川",
+          nameKana: "しんみやかわ",
           lat: 36.717292,
           lng: 137.351128,
         },
         {
           name: "中加積",
+          nameKana: "なかかづみ",
           lat: 36.735309,
           lng: 137.350947,
         },
         {
           name: "西加積",
+          nameKana: "にしかづみ",
           lat: 36.746405,
           lng: 137.340139,
         },
         {
           name: "西滑川",
+          nameKana: "にしなめりかわ",
           lat: 36.755579,
           lng: 137.334617,
         },
         {
           name: "中滑川",
+          nameKana: "なかなめりかわ",
           lat: 36.761992,
           lng: 137.339963,
         },
         {
           name: "滑川",
+          nameKana: "なめりかわ",
           lat: 36.768955,
           lng: 137.348676,
           transfer: true,
@@ -7756,31 +9077,37 @@ export const chubu: OperatorData = {
         },
         {
           name: "浜加積",
+          nameKana: "はまかづみ",
           lat: 36.77743,
           lng: 137.361411,
         },
         {
           name: "早月加積",
+          nameKana: "はやつきかづみ",
           lat: 36.784082,
           lng: 137.372079,
         },
         {
           name: "越中中村",
+          nameKana: "えっちゅうなかむら",
           lat: 36.790673,
           lng: 137.382688,
         },
         {
           name: "西魚津",
+          nameKana: "にしうおづ",
           lat: 36.803775,
           lng: 137.394653,
         },
         {
           name: "電鉄魚津",
+          nameKana: "でんてつうおづ",
           lat: 36.815113,
           lng: 137.400288,
         },
         {
           name: "新魚津",
+          nameKana: "しんうおづ",
           lat: 36.82657,
           lng: 137.405459,
           transfer: true,
@@ -7788,86 +9115,103 @@ export const chubu: OperatorData = {
         },
         {
           name: "経田",
+          nameKana: "きょうでん",
           lat: 36.848846,
           lng: 137.416203,
         },
         {
           name: "電鉄石田",
+          nameKana: "でんてついしだ",
           lat: 36.865928,
           lng: 137.423194,
         },
         {
           name: "電鉄黒部",
+          nameKana: "でんてつくろべ",
           lat: 36.874091,
           lng: 137.444125,
         },
         {
           name: "東三日市",
+          nameKana: "ひがしみっかいち",
           lat: 36.874677,
           lng: 137.450908,
         },
         {
           name: "荻生",
+          nameKana: "おぎゅう",
           lat: 36.875038,
           lng: 137.459221,
         },
         {
           name: "長屋",
+          nameKana: "ながや",
           lat: 36.873678,
           lng: 137.470803,
         },
         {
           name: "新黒部",
+          nameKana: "しんくろべ",
           lat: 36.87316273,
           lng: 137.4801774,
         },
         {
           name: "舌山",
+          nameKana: "したやま",
           lat: 36.87187,
           lng: 137.485948,
         },
         {
           name: "若栗",
+          nameKana: "わかぐり",
           lat: 36.871151,
           lng: 137.493175,
         },
         {
           name: "栃屋",
+          nameKana: "とちや",
           lat: 36.869788,
           lng: 137.505842,
         },
         {
           name: "浦山",
+          nameKana: "うらやま",
           lat: 36.8634,
           lng: 137.519407,
         },
         {
           name: "下立口",
+          nameKana: "おりたてぐち",
           lat: 36.859571,
           lng: 137.532908,
         },
         {
           name: "下立",
+          nameKana: "おりたて",
           lat: 36.857707,
           lng: 137.541396,
         },
         {
           name: "愛本",
+          nameKana: "あいもと",
           lat: 36.855975,
           lng: 137.553769,
         },
         {
           name: "内山",
+          nameKana: "うちやま",
           lat: 36.846826,
           lng: 137.556733,
         },
         {
           name: "音沢",
+          nameKana: "おとざわ",
           lat: 36.840716,
           lng: 137.559833,
         },
         {
           name: "宇奈月温泉",
+          nameKana: "うなづきおんせん",
           lat: 36.815694,
           lng: 137.583541,
           transfer: true,
@@ -7884,6 +9228,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "寺田",
+          nameKana: "てらだ",
           lat: 36.698852,
           lng: 137.319145,
           transfer: true,
@@ -7891,41 +9236,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "稚子塚",
+          nameKana: "ちごづか",
           lat: 36.686595,
           lng: 137.317515,
         },
         {
           name: "田添",
+          nameKana: "たぞえ",
           lat: 36.679759,
           lng: 137.317768,
         },
         {
           name: "五百石",
+          nameKana: "ごひゃくこく",
           lat: 36.665361,
           lng: 137.314097,
         },
         {
           name: "榎町",
+          nameKana: "えのきまち",
           lat: 36.657559,
           lng: 137.316519,
         },
         {
           name: "下段",
+          nameKana: "しただん",
           lat: 36.647899,
           lng: 137.317735,
         },
         {
           name: "釜ヶ淵",
+          nameKana: "かまがふち",
           lat: 36.633317,
           lng: 137.319288,
         },
         {
           name: "沢中山",
+          nameKana: "さわなかやま",
           lat: 36.622207,
           lng: 137.320972,
         },
         {
           name: "岩峅寺",
+          nameKana: "いわくらじ",
           lat: 36.608214,
           lng: 137.319922,
           transfer: true,
@@ -7933,26 +9286,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "横江",
+          nameKana: "よこえ",
           lat: 36.582175,
           lng: 137.335605,
         },
         {
           name: "千垣",
+          nameKana: "ちがき",
           lat: 36.573752,
           lng: 137.373843,
         },
         {
           name: "有峰口",
+          nameKana: "ありみねぐち",
           lat: 36.573066,
           lng: 137.380218,
         },
         {
           name: "本宮",
+          nameKana: "ほんぐう",
           lat: 36.574919,
           lng: 137.395716,
         },
         {
           name: "立山",
+          nameKana: "たてやま",
           lat: 36.583253,
           lng: 137.445234,
         },
@@ -7967,6 +9325,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "電鉄富山",
+          nameKana: "でんてつとやま",
           lat: 36.700757,
           lng: 137.214163,
           transfer: true,
@@ -7974,6 +9333,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "稲荷町",
+          nameKana: "いなりまち",
           lat: 36.696597,
           lng: 137.231247,
           transfer: true,
@@ -7981,21 +9341,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "栄町",
+          nameKana: "さかえまち",
           lat: 36.691389,
           lng: 137.233333,
         },
         {
           name: "不二越",
+          nameKana: "ふじこし",
           lat: 36.687848,
           lng: 137.232453,
         },
         {
           name: "大泉",
+          nameKana: "おおいずみ",
           lat: 36.677719,
           lng: 137.228979,
         },
         {
           name: "南富山",
+          nameKana: "みなみとやま",
           lat: 36.670406,
           lng: 137.2205,
           transfer: true,
@@ -8003,51 +9367,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "朝菜町",
+          nameKana: "あさなまち",
           lat: 36.660579,
           lng: 137.224883,
         },
         {
           name: "上堀",
+          nameKana: "かみほり",
           lat: 36.65338,
           lng: 137.230127,
         },
         {
           name: "小杉",
+          nameKana: "こすぎ",
           lat: 36.649433,
           lng: 137.233164,
         },
         {
           name: "布市",
+          nameKana: "ぬのいち",
           lat: 36.645178,
           lng: 137.235455,
         },
         {
           name: "開発",
+          nameKana: "かいほつ",
           lat: 36.636207,
           lng: 137.242854,
         },
         {
           name: "月岡",
+          nameKana: "つきおか",
           lat: 36.626475,
           lng: 137.263341,
         },
         {
           name: "大庄",
+          nameKana: "おおしょう",
           lat: 36.619565,
           lng: 137.275618,
         },
         {
           name: "上滝",
+          nameKana: "かみだき",
           lat: 36.609622,
           lng: 137.295564,
         },
         {
           name: "大川寺",
+          nameKana: "だいせんじ",
           lat: 36.608322,
           lng: 137.308721,
         },
         {
           name: "岩峅寺",
+          nameKana: "いわくらじ",
           lat: 36.608214,
           lng: 137.319922,
           transfer: true,
@@ -8064,6 +9438,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "南富山駅前",
+          nameKana: "みなみとやまえきまえ",
           lat: 36.670484,
           lng: 137.22044,
           transfer: true,
@@ -8071,41 +9446,49 @@ export const chubu: OperatorData = {
         },
         {
           name: "大町",
+          nameKana: "おおまち",
           lat: 36.673066,
           lng: 137.220483,
         },
         {
           name: "堀川小泉",
+          nameKana: "ほりかわこいずみ",
           lat: 36.675647,
           lng: 137.219281,
         },
         {
           name: "小泉町",
+          nameKana: "こいずみちょう",
           lat: 36.678745,
           lng: 137.217779,
         },
         {
           name: "西中野",
+          nameKana: "にしなかの",
           lat: 36.680844,
           lng: 137.216663,
         },
         {
           name: "広貫堂前",
+          nameKana: "こうかんどうまえ",
           lat: 36.683357,
           lng: 137.215934,
         },
         {
           name: "上本町",
+          nameKana: "かみほんまち",
           lat: 36.686282,
           lng: 137.215762,
         },
         {
           name: "西町",
+          nameKana: "にしちょう",
           lat: 36.689001,
           lng: 137.215676,
         },
         {
           name: "中町（西町北）",
+          nameKana: "なかまち",
           lat: 36.690306,
           lng: 137.215722,
           transfer: true,
@@ -8113,6 +9496,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "荒町",
+          nameKana: "あらまち",
           lat: 36.691513,
           lng: 137.215805,
           transfer: true,
@@ -8120,6 +9504,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "桜橋",
+          nameKana: "さくらばし",
           lat: 36.69461,
           lng: 137.215934,
           transfer: true,
@@ -8127,6 +9512,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "電気ビル前",
+          nameKana: "でんきびるまえ",
           lat: 36.697432,
           lng: 137.216105,
           transfer: true,
@@ -8134,6 +9520,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "地鉄ビル前",
+          nameKana: "ちてつびるまえ",
           lat: 36.698584,
           lng: 137.216105,
           transfer: true,
@@ -8141,6 +9528,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "電鉄富山駅・エスタ前",
+          nameKana: "でんてつとやまえき・えすたまえ",
           lat: 36.700236,
           lng: 137.213316,
           transfer: true,
@@ -8148,6 +9536,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "富山駅",
+          nameKana: "とやまえき",
           lat: 36.70161021,
           lng: 137.2128801,
           transfer: true,
@@ -8155,6 +9544,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "新富町",
+          nameKana: "しんとみちょう",
           lat: 36.69886,
           lng: 137.211256,
           transfer: true,
@@ -8162,6 +9552,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "県庁前",
+          nameKana: "けんちょうまえ",
           lat: 36.695728,
           lng: 137.20984,
           transfer: true,
@@ -8169,6 +9560,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "丸の内",
+          nameKana: "まるのうち",
           lat: 36.692563,
           lng: 137.208896,
           transfer: true,
@@ -8176,21 +9568,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "諏訪川原",
+          nameKana: "すわのかわら",
           lat: 36.692322,
           lng: 137.206535,
         },
         {
           name: "安野屋",
+          nameKana: "やすのや",
           lat: 36.692838,
           lng: 137.201772,
         },
         {
           name: "トヨタモビリティ富山 Gスクエア五福前",
+          nameKana: "とよたもびりてぃとやま じーすくえあごふくまえ",
           lat: 36.694834,
           lng: 137.19542,
         },
         {
           name: "富山大学前",
+          nameKana: "とやまだいがくまえ",
           lat: 36.698688,
           lng: 137.191129,
         },
@@ -8205,6 +9601,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "丸の内",
+          nameKana: "まるのうち",
           lat: 36.692563,
           lng: 137.208896,
           transfer: true,
@@ -8212,21 +9609,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "国際会議場前",
+          nameKana: "こくさいかいぎじょうまえ",
           lat: 36.691654,
           lng: 137.21139,
         },
         {
           name: "大手モール",
+          nameKana: "おおてもーる",
           lat: 36.689388,
           lng: 137.211334,
         },
         {
           name: "グランドプラザ前",
+          nameKana: "ぐらんどぷらざまえ",
           lat: 36.688923,
           lng: 137.213386,
         },
         {
           name: "中町（西町北）",
+          nameKana: "なかまち",
           lat: 36.690306,
           lng: 137.215722,
           transfer: true,
@@ -8234,6 +9635,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "荒町",
+          nameKana: "あらまち",
           lat: 36.691513,
           lng: 137.215805,
           transfer: true,
@@ -8241,6 +9643,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "桜橋",
+          nameKana: "さくらばし",
           lat: 36.69461,
           lng: 137.215934,
           transfer: true,
@@ -8248,6 +9651,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "電気ビル前",
+          nameKana: "でんきびるまえ",
           lat: 36.697432,
           lng: 137.216105,
           transfer: true,
@@ -8255,6 +9659,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "地鉄ビル前",
+          nameKana: "ちてつびるまえ",
           lat: 36.698584,
           lng: 137.216105,
           transfer: true,
@@ -8262,6 +9667,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "電鉄富山駅・エスタ前",
+          nameKana: "でんてつとやまえき・えすたまえ",
           lat: 36.700236,
           lng: 137.213316,
           transfer: true,
@@ -8269,6 +9675,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "富山駅",
+          nameKana: "とやまえき",
           lat: 36.70161236,
           lng: 137.212864,
           transfer: true,
@@ -8276,6 +9683,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "新富町",
+          nameKana: "しんとみちょう",
           lat: 36.69886,
           lng: 137.211256,
           transfer: true,
@@ -8283,6 +9691,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "県庁前",
+          nameKana: "けんちょうまえ",
           lat: 36.695728,
           lng: 137.20984,
           transfer: true,
@@ -8299,6 +9708,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "富山駅",
+          nameKana: "とやまえき",
           lat: 36.70161021,
           lng: 137.2128801,
           transfer: true,
@@ -8306,71 +9716,85 @@ export const chubu: OperatorData = {
         },
         {
           name: "オークスカナルパークホテル富山前",
+          nameKana: "おーくすかなるぱーくほてるとやままえ",
           lat: 36.70374618757,
           lng: 137.21467398871,
         },
         {
           name: "インテック本社前",
+          nameKana: "いんてっくほんしゃまえ",
           lat: 36.703556,
           lng: 137.216685,
         },
         {
           name: "龍谷富山高校前（永楽町）",
+          nameKana: "りゅうこくとやまこうこうまえ",
           lat: 36.70295962424,
           lng: 137.21967607288,
         },
         {
           name: "奥田中学校前",
+          nameKana: "おくだちゅうがっこうまえ",
           lat: 36.703522,
           lng: 137.223637,
         },
         {
           name: "下奥井",
+          nameKana: "しもおくい",
           lat: 36.711311,
           lng: 137.224478,
         },
         {
           name: "粟島（大阪屋ショップ前）",
+          nameKana: "あわじま",
           lat: 36.719391,
           lng: 137.224796,
         },
         {
           name: "越中中島",
+          nameKana: "えっちゅうなかじま",
           lat: 36.722121,
           lng: 137.224844,
         },
         {
           name: "城川原",
+          nameKana: "じょうがわら",
           lat: 36.731103,
           lng: 137.226082,
         },
         {
           name: "犬島新町",
+          nameKana: "いぬじましんまち",
           lat: 36.735445,
           lng: 137.22662,
         },
         {
           name: "蓮町（馬場記念公園前）",
+          nameKana: "はすまち",
           lat: 36.742663,
           lng: 137.227463,
         },
         {
           name: "萩浦小学校前",
+          nameKana: "はぎうらしょうがっこうまえ",
           lat: 36.748602,
           lng: 137.228643,
         },
         {
           name: "東岩瀬",
+          nameKana: "ひがしいわせ",
           lat: 36.751935,
           lng: 137.230479,
         },
         {
           name: "競輪場前",
+          nameKana: "けいりんじょうまえ",
           lat: 36.757454,
           lng: 137.233907,
         },
         {
           name: "岩瀬浜",
+          nameKana: "いわせはま",
           lat: 36.761212,
           lng: 137.23409,
         },
@@ -8387,6 +9811,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "宇奈月",
+          nameKana: "うなづき",
           lat: 36.815038,
           lng: 137.58586,
           transfer: true,
@@ -8394,16 +9819,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "黒薙",
+          nameKana: "くろなぎ",
           lat: 36.786638,
           lng: 137.624738,
         },
         {
           name: "鐘釣",
+          nameKana: "かねつり",
           lat: 36.734378,
           lng: 137.651315,
         },
         {
           name: "欅平",
+          nameKana: "けやきだいら",
           lat: 36.696732,
           lng: 137.658179,
         },
@@ -8420,6 +9848,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "高岡駅",
+          nameKana: "たかおかえき",
           lat: 36.742173,
           lng: 137.014722,
           transfer: true,
@@ -8427,121 +9856,145 @@ export const chubu: OperatorData = {
         },
         {
           name: "末広町",
+          nameKana: "すえひろちょう",
           lat: 36.744825,
           lng: 137.013148,
         },
         {
           name: "片原町",
+          nameKana: "かたはらまち",
           lat: 36.746389,
           lng: 137.012838,
         },
         {
           name: "坂下町",
+          nameKana: "さかしたまち",
           lat: 36.747367,
           lng: 137.014585,
         },
         {
           name: "急患医療センター前",
+          nameKana: "きゅうかんいりょうせんたーまえ",
           lat: 36.749761,
           lng: 137.017788,
         },
         {
           name: "広小路",
+          nameKana: "ひろこうじ",
           lat: 36.752566,
           lng: 137.020615,
         },
         {
           name: "志貴野中学校前",
+          nameKana: "しきのちゅうがっこうまえ",
           lat: 36.755648,
           lng: 137.023759,
         },
         {
           name: "市民病院前",
+          nameKana: "しみんびょういんまえ",
           lat: 36.758196,
           lng: 137.0261,
         },
         {
           name: "江尻",
+          nameKana: "えじり",
           lat: 36.761501,
           lng: 137.029761,
         },
         {
           name: "旭ヶ丘",
+          nameKana: "あさひがおか",
           lat: 36.763965,
           lng: 137.032469,
         },
         {
           name: "荻布",
+          nameKana: "おぎの",
           lat: 36.76682,
           lng: 137.035619,
         },
         {
           name: "新能町",
+          nameKana: "しんのうまち",
           lat: 36.770258,
           lng: 137.037713,
         },
         {
           name: "米島口",
+          nameKana: "よねじまぐち",
           lat: 36.773,
           lng: 137.038718,
         },
         {
           name: "能町口",
+          nameKana: "のうまちぐち",
           lat: 36.773239,
           lng: 137.049031,
         },
         {
           name: "新吉久",
+          nameKana: "しんよしひさ",
           lat: 36.776086,
           lng: 137.052839,
         },
         {
           name: "吉久",
+          nameKana: "よしひさ",
           lat: 36.782018,
           lng: 137.056369,
         },
         {
           name: "中伏木",
+          nameKana: "なかふしき",
           lat: 36.788224,
           lng: 137.061655,
         },
         {
           name: "六渡寺",
+          nameKana: "ろくどうじ",
           lat: 36.788935,
           lng: 137.066443,
         },
         {
           name: "庄川口",
+          nameKana: "しょうがわぐち",
           lat: 36.784433,
           lng: 137.070729,
         },
         {
           name: "第一イン新湊 クロスベイ前",
+          nameKana: "だいいちいんしんみなと くろすべいまえ",
           lat: 36.780056,
           lng: 137.0753,
         },
         {
           name: "新町口",
+          nameKana: "しんまちぐち",
           lat: 36.778983,
           lng: 137.084259,
         },
         {
           name: "中新湊",
+          nameKana: "なかしんみなと",
           lat: 36.775148,
           lng: 137.088617,
         },
         {
           name: "東新湊",
+          nameKana: "ひがししんみなと",
           lat: 36.777825,
           lng: 137.099368,
         },
         {
           name: "海王丸",
+          nameKana: "かいおうまる",
           lat: 36.776726,
           lng: 137.105331,
         },
         {
           name: "越ノ潟",
+          nameKana: "こしのかた",
           lat: 36.774704,
           lng: 137.111839,
         },
@@ -8558,16 +10011,19 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "野町",
+          nameKana: "のまち",
           lat: 36.553779,
           lng: 136.644309,
         },
         {
           name: "西泉",
+          nameKana: "にしいずみ",
           lat: 36.553445,
           lng: 136.633524,
         },
         {
           name: "新西金沢",
+          nameKana: "しんにしかなざわ",
           lat: 36.553067,
           lng: 136.622688,
           transfer: true,
@@ -8575,71 +10031,85 @@ export const chubu: OperatorData = {
         },
         {
           name: "押野",
+          nameKana: "おしの",
           lat: 36.541805,
           lng: 136.622114,
         },
         {
           name: "野々市",
+          nameKana: "ののいち",
           lat: 36.536459,
           lng: 136.620891,
         },
         {
           name: "野々市工大前",
+          nameKana: "ののいちこうだいまえ",
           lat: 36.532336,
           lng: 136.621767,
         },
         {
           name: "馬替",
+          nameKana: "まがえ",
           lat: 36.522935,
           lng: 136.620576,
         },
         {
           name: "額住宅前",
+          nameKana: "ぬかじゅうたくまえ",
           lat: 36.518507,
           lng: 136.618851,
         },
         {
           name: "乙丸",
+          nameKana: "おとまる",
           lat: 36.511853,
           lng: 136.617681,
         },
         {
           name: "四十万",
+          nameKana: "しじま",
           lat: 36.498879,
           lng: 136.615684,
         },
         {
           name: "陽羽里",
+          nameKana: "ひばり",
           lat: 36.493628,
           lng: 136.614869,
         },
         {
           name: "曽谷",
+          nameKana: "そだに",
           lat: 36.490028,
           lng: 136.614407,
         },
         {
           name: "道法寺",
+          nameKana: "どうほうじ",
           lat: 36.484315,
           lng: 136.613535,
         },
         {
           name: "井口",
+          nameKana: "いのくち",
           lat: 36.476282,
           lng: 136.612307,
         },
         {
           name: "小柳",
+          nameKana: "おやなぎ",
           lat: 36.470639,
           lng: 136.611466,
         },
         {
           name: "日御子",
+          nameKana: "ひのみこ",
           lat: 36.46479,
           lng: 136.615199,
         },
         {
           name: "鶴来",
+          nameKana: "つるぎ",
           lat: 36.452178,
           lng: 136.623818,
         },
@@ -8654,6 +10124,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "北鉄金沢",
+          nameKana: "ほくてつかなざわ",
           lat: 36.578637,
           lng: 136.649524,
           transfer: true,
@@ -8661,56 +10132,67 @@ export const chubu: OperatorData = {
         },
         {
           name: "七ツ屋",
+          nameKana: "ななつや",
           lat: 36.583108,
           lng: 136.651752,
         },
         {
           name: "上諸江",
+          nameKana: "かみもろえ",
           lat: 36.590835,
           lng: 136.648941,
         },
         {
           name: "磯部",
+          nameKana: "いそべ",
           lat: 36.596554,
           lng: 136.648313,
         },
         {
           name: "割出",
+          nameKana: "わりだし",
           lat: 36.602619,
           lng: 136.648474,
         },
         {
           name: "三口",
+          nameKana: "みつくち",
           lat: 36.606572,
           lng: 136.647579,
         },
         {
           name: "三ツ屋",
+          nameKana: "みつや",
           lat: 36.611941,
           lng: 136.645538,
         },
         {
           name: "大河端",
+          nameKana: "おこばた",
           lat: 36.616701,
           lng: 136.643368,
         },
         {
           name: "北間",
+          nameKana: "きたま",
           lat: 36.622625,
           lng: 136.641265,
         },
         {
           name: "蚊爪",
+          nameKana: "かがつめ",
           lat: 36.625886,
           lng: 136.64319,
         },
         {
           name: "粟ヶ崎",
+          nameKana: "あわがさき",
           lat: 36.630224,
           lng: 136.638149,
         },
         {
           name: "内灘",
+          nameKana: "うちなだ",
           lat: 36.63336,
           lng: 136.63416,
         },
@@ -8727,6 +10209,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "市振",
+          nameKana: "いちぶり",
           lat: 36.980448,
           lng: 137.650373,
           transfer: true,
@@ -8734,61 +10217,73 @@ export const chubu: OperatorData = {
         },
         {
           name: "親不知",
+          nameKana: "おやしらず",
           lat: 37.006818,
           lng: 137.738104,
         },
         {
           name: "青海",
+          nameKana: "おうみ",
           lat: 37.022469,
           lng: 137.795622,
         },
         {
           name: "糸魚川",
+          nameKana: "いといがわ",
           lat: 37.043631,
           lng: 137.861311,
         },
         {
           name: "えちご押上ひすい海岸",
+          nameKana: "えちごおしあげひすいかいがん",
           lat: 37.0482,
           lng: 137.8784,
         },
         {
           name: "梶屋敷",
+          nameKana: "かじやしき",
           lat: 37.056577,
           lng: 137.905738,
         },
         {
           name: "浦本",
+          nameKana: "うらもと",
           lat: 37.073935,
           lng: 137.939659,
         },
         {
           name: "能生",
+          nameKana: "のう",
           lat: 37.096049,
           lng: 137.988405,
         },
         {
           name: "筒石",
+          nameKana: "つついし",
           lat: 37.127473,
           lng: 138.060768,
         },
         {
           name: "名立",
+          nameKana: "なだち",
           lat: 37.15584,
           lng: 138.092649,
         },
         {
           name: "有間川",
+          nameKana: "ありまがわ",
           lat: 37.163323,
           lng: 138.136553,
         },
         {
           name: "谷浜",
+          nameKana: "たにはま",
           lat: 37.162399,
           lng: 138.173867,
         },
         {
           name: "直江津",
+          nameKana: "なおえつ",
           lat: 37.170251,
           lng: 138.242265,
           transfer: true,
@@ -8805,6 +10300,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "妙高高原",
+          nameKana: "みょうこうこうげん",
           lat: 36.872175,
           lng: 138.211953,
           transfer: true,
@@ -8812,46 +10308,55 @@ export const chubu: OperatorData = {
         },
         {
           name: "関山",
+          nameKana: "せきやま",
           lat: 36.933048,
           lng: 138.226415,
         },
         {
           name: "二本木",
+          nameKana: "にほんぎ",
           lat: 36.989608,
           lng: 138.232765,
         },
         {
           name: "新井",
+          nameKana: "あらい",
           lat: 37.026738,
           lng: 138.255614,
         },
         {
           name: "北新井",
+          nameKana: "きたあらい",
           lat: 37.05296,
           lng: 138.257699,
         },
         {
           name: "上越妙高",
+          nameKana: "じょうえつみょうこう",
           lat: 37.081813,
           lng: 138.249476,
         },
         {
           name: "南高田",
+          nameKana: "みなみたかだ",
           lat: 37.096766,
           lng: 138.242973,
         },
         {
           name: "高田",
+          nameKana: "たかだ",
           lat: 37.115226,
           lng: 138.242018,
         },
         {
           name: "春日山",
+          nameKana: "かすがやま",
           lat: 37.148042,
           lng: 138.234922,
         },
         {
           name: "直江津",
+          nameKana: "なおえつ",
           lat: 37.170251,
           lng: 138.242265,
           transfer: true,
@@ -8870,6 +10375,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "倶利伽羅",
+          nameKana: "くりから",
           lat: 36.672489,
           lng: 136.791605,
           transfer: true,
@@ -8877,26 +10383,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "石動",
+          nameKana: "いするぎ",
           lat: 36.672492,
           lng: 136.865859,
         },
         {
           name: "福岡",
+          nameKana: "ふくおか",
           lat: 36.708239,
           lng: 136.932079,
         },
         {
           name: "西高岡",
+          nameKana: "にしたかおか",
           lat: 36.724295,
           lng: 136.965295,
         },
         {
           name: "高岡やぶなみ",
+          nameKana: "たかおかやぶなみ",
           lat: 36.737528,
           lng: 136.988889,
         },
         {
           name: "高岡",
+          nameKana: "たかおか",
           lat: 36.740948,
           lng: 137.015274,
           transfer: true,
@@ -8904,21 +10415,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "越中大門",
+          nameKana: "えっちゅうだいもん",
           lat: 36.733818,
           lng: 137.055904,
         },
         {
           name: "小杉",
+          nameKana: "こすぎ",
           lat: 36.720947,
           lng: 137.092767,
         },
         {
           name: "呉羽",
+          nameKana: "くれは",
           lat: 36.718845,
           lng: 137.164874,
         },
         {
           name: "富山",
+          nameKana: "とやま",
           lat: 36.701384,
           lng: 137.213091,
           transfer: true,
@@ -8926,21 +10441,25 @@ export const chubu: OperatorData = {
         },
         {
           name: "新富山口",
+          nameKana: "しんとやまぐち",
           lat: 36.719864,
           lng: 137.240531,
         },
         {
           name: "東富山",
+          nameKana: "ひがしとやま",
           lat: 36.741589,
           lng: 137.248953,
         },
         {
           name: "水橋",
+          nameKana: "みずはし",
           lat: 36.743454,
           lng: 137.298404,
         },
         {
           name: "滑川",
+          nameKana: "なめりかわ",
           lat: 36.769318,
           lng: 137.348666,
           transfer: true,
@@ -8948,11 +10467,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "東滑川",
+          nameKana: "ひがしなめりかわ",
           lat: 36.787987,
           lng: 137.37805,
         },
         {
           name: "魚津",
+          nameKana: "うおづ",
           lat: 36.82642,
           lng: 137.405693,
           transfer: true,
@@ -8960,36 +10481,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "黒部",
+          nameKana: "くろべ",
           lat: 36.869322,
           lng: 137.434393,
         },
         {
           name: "生地",
+          nameKana: "いくじ",
           lat: 36.906031,
           lng: 137.426534,
         },
         {
           name: "西入善",
+          nameKana: "にしにゅうぜん",
           lat: 36.930124,
           lng: 137.459298,
         },
         {
           name: "入善",
+          nameKana: "にゅうぜん",
           lat: 36.941296,
           lng: 137.499,
         },
         {
           name: "泊",
+          nameKana: "とまり",
           lat: 36.951897,
           lng: 137.556179,
         },
         {
           name: "越中宮崎",
+          nameKana: "えっちゅうみやざき",
           lat: 36.973863,
           lng: 137.599423,
         },
         {
           name: "市振",
+          nameKana: "いちぶり",
           lat: 36.980448,
           lng: 137.650373,
           transfer: true,
@@ -9008,6 +10536,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "大聖寺",
+          nameKana: "だいしょうじ",
           lat: 36.300311,
           lng: 136.314205,
           transfer: true,
@@ -9015,66 +10544,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "加賀温泉",
+          nameKana: "かがおんせん",
           lat: 36.320562,
           lng: 136.350337,
         },
         {
           name: "動橋",
+          nameKana: "いぶりはし",
           lat: 36.328428,
           lng: 136.383027,
         },
         {
           name: "粟津",
+          nameKana: "あわづ",
           lat: 36.35575,
           lng: 136.424544,
         },
         {
           name: "小松",
+          nameKana: "こまつ",
           lat: 36.402545,
           lng: 136.452926,
         },
         {
           name: "明峰",
+          nameKana: "めいほう",
           lat: 36.425302,
           lng: 136.463114,
         },
         {
           name: "能美根上",
+          nameKana: "のみねあがり",
           lat: 36.452053,
           lng: 136.459721,
         },
         {
           name: "小舞子",
+          nameKana: "こまいこ",
           lat: 36.476371,
           lng: 136.474925,
         },
         {
           name: "美川",
+          nameKana: "みかわ",
           lat: 36.486001,
           lng: 136.489205,
         },
         {
           name: "加賀笠間",
+          nameKana: "かがかさま",
           lat: 36.502935,
           lng: 136.527434,
         },
         {
           name: "西松任",
+          nameKana: "にしまっとう",
           lat: 36.517689,
           lng: 136.548911,
         },
         {
           name: "松任",
+          nameKana: "まっとう",
           lat: 36.526706,
           lng: 136.566205,
         },
         {
           name: "野々市",
+          nameKana: "ののいち",
           lat: 36.541644,
           lng: 136.598044,
         },
         {
           name: "西金沢",
+          nameKana: "にしかなざわ",
           lat: 36.553212,
           lng: 136.621225,
           transfer: true,
@@ -9082,6 +10624,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "金沢",
+          nameKana: "かなざわ",
           lat: 36.578117,
           lng: 136.648166,
           transfer: true,
@@ -9089,16 +10632,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "東金沢",
+          nameKana: "ひがしかなざわ",
           lat: 36.593652,
           lng: 136.669806,
         },
         {
           name: "森本",
+          nameKana: "もりもと",
           lat: 36.612144,
           lng: 136.689489,
         },
         {
           name: "津幡",
+          nameKana: "つばた",
           lat: 36.657895,
           lng: 136.730759,
           transfer: true,
@@ -9106,6 +10652,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "倶利伽羅",
+          nameKana: "くりから",
           lat: 36.672489,
           lng: 136.791605,
           transfer: true,
@@ -9124,36 +10671,43 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "穴水",
+          nameKana: "あなみず",
           lat: 37.228015,
           lng: 136.904592,
         },
         {
           name: "能登鹿島",
+          nameKana: "のとかしま",
           lat: 37.179723,
           lng: 136.897879,
         },
         {
           name: "西岸",
+          nameKana: "にしぎし",
           lat: 37.147604,
           lng: 136.87443,
         },
         {
           name: "能登中島",
+          nameKana: "のとなかじま",
           lat: 37.109174,
           lng: 136.853339,
         },
         {
           name: "笠師保",
+          nameKana: "かさしほ",
           lat: 37.079288,
           lng: 136.857587,
         },
         {
           name: "田鶴浜",
+          nameKana: "たつるはま",
           lat: 37.065719,
           lng: 136.891193,
         },
         {
           name: "和倉温泉",
+          nameKana: "わくらおんせん",
           lat: 37.074663,
           lng: 136.925884,
           transfer: true,
@@ -9161,6 +10715,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "七尾",
+          nameKana: "ななお",
           lat: 37.041613,
           lng: 136.964501,
           transfer: true,
@@ -9179,6 +10734,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "福井",
+          nameKana: "ふくい",
           lat: 36.061711,
           lng: 136.223779,
           transfer: true,
@@ -9186,6 +10742,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "新福井",
+          nameKana: "しんふくい",
           lat: 36.064714,
           lng: 136.226721,
           transfer: true,
@@ -9193,6 +10750,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "福井口",
+          nameKana: "ふくいぐち",
           lat: 36.071386,
           lng: 136.233176,
           transfer: true,
@@ -9200,101 +10758,121 @@ export const chubu: OperatorData = {
         },
         {
           name: "越前開発",
+          nameKana: "えちぜんかいほつ",
           lat: 36.075358,
           lng: 136.241275,
         },
         {
           name: "越前新保",
+          nameKana: "えちぜんしんぼ",
           lat: 36.080392,
           lng: 136.251314,
         },
         {
           name: "追分口",
+          nameKana: "おいわけぐち",
           lat: 36.082478,
           lng: 136.261507,
         },
         {
           name: "東藤島",
+          nameKana: "ひがしふじしま",
           lat: 36.086686,
           lng: 136.269837,
         },
         {
           name: "越前島橋",
+          nameKana: "えちぜんしまばし",
           lat: 36.089967,
           lng: 136.277123,
         },
         {
           name: "観音町",
+          nameKana: "かんのんまち",
           lat: 36.091726,
           lng: 136.289913,
         },
         {
           name: "松岡",
+          nameKana: "まつおか",
           lat: 36.09402,
           lng: 136.301703,
         },
         {
           name: "志比堺",
+          nameKana: "しいざかい",
           lat: 36.097792,
           lng: 136.311021,
         },
         {
           name: "永平寺口",
+          nameKana: "えいへいじぐち",
           lat: 36.095849,
           lng: 136.32678,
         },
         {
           name: "下志比",
+          nameKana: "しもしい",
           lat: 36.090674,
           lng: 136.336346,
         },
         {
           name: "光明寺",
+          nameKana: "こうみょうじ",
           lat: 36.088463,
           lng: 136.344586,
         },
         {
           name: "轟",
+          nameKana: "どめき",
           lat: 36.08688,
           lng: 136.361071,
         },
         {
           name: "越前野中",
+          nameKana: "えちぜんのなか",
           lat: 36.082887,
           lng: 136.37685,
         },
         {
           name: "山王",
+          nameKana: "さんのう",
           lat: 36.079143,
           lng: 136.39243,
         },
         {
           name: "越前竹原",
+          nameKana: "えちぜんたけはら",
           lat: 36.073945,
           lng: 136.413023,
         },
         {
           name: "小舟渡",
+          nameKana: "こぶなと",
           lat: 36.075553,
           lng: 136.434054,
         },
         {
           name: "保田",
+          nameKana: "ほた",
           lat: 36.069838,
           lng: 136.451611,
         },
         {
           name: "発坂",
+          nameKana: "ほっさか",
           lat: 36.072643,
           lng: 136.465684,
         },
         {
           name: "比島",
+          nameKana: "ひしま",
           lat: 36.066011,
           lng: 136.483574,
         },
         {
           name: "勝山",
+          nameKana: "かつやま",
           lat: 36.056362,
           lng: 136.492079,
         },
@@ -9309,6 +10887,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "福井",
+          nameKana: "ふくい",
           lat: 36.061711,
           lng: 136.223779,
           transfer: true,
@@ -9316,6 +10895,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "新福井",
+          nameKana: "しんふくい",
           lat: 36.064714,
           lng: 136.226721,
           transfer: true,
@@ -9323,6 +10903,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "福井口",
+          nameKana: "ふくいぐち",
           lat: 36.071386,
           lng: 136.233176,
           transfer: true,
@@ -9330,16 +10911,19 @@ export const chubu: OperatorData = {
         },
         {
           name: "まつもと町屋",
+          nameKana: "まつもとまちや",
           lat: 36.07696597,
           lng: 136.2290465,
         },
         {
           name: "西別院",
+          nameKana: "にしべついん",
           lat: 36.07516,
           lng: 136.222704,
         },
         {
           name: "田原町",
+          nameKana: "たわらまち",
           lat: 36.074888,
           lng: 136.21738,
           transfer: true,
@@ -9347,91 +10931,109 @@ export const chubu: OperatorData = {
         },
         {
           name: "福大前西福井",
+          nameKana: "ふくだいまえにしふくい",
           lat: 36.074218,
           lng: 136.210339,
         },
         {
           name: "日華化学前",
+          nameKana: "にっかかがくまえ",
           lat: 36.080945,
           lng: 136.206479,
         },
         {
           name: "八ツ島",
+          nameKana: "やつしま",
           lat: 36.086407,
           lng: 136.205943,
         },
         {
           name: "新田塚",
+          nameKana: "にったづか",
           lat: 36.092483,
           lng: 136.205299,
         },
         {
           name: "中角",
+          nameKana: "なかつの",
           lat: 36.10111,
           lng: 136.204591,
         },
         {
           name: "鷲塚針原",
+          nameKana: "わしづかはりばら",
           lat: 36.12061,
           lng: 136.204793,
         },
         {
           name: "太郎丸エンゼルランド",
+          nameKana: "たろうまるえんぜるらんど",
           lat: 36.131298,
           lng: 136.20574,
         },
         {
           name: "西春江ハートピア",
+          nameKana: "にしはるえはーとぴあ",
           lat: 36.138964,
           lng: 136.206187,
         },
         {
           name: "西長田ゆりの里",
+          nameKana: "にしながたゆりのさと",
           lat: 36.153615,
           lng: 136.206472,
         },
         {
           name: "下兵庫こうふく",
+          nameKana: "しもひょうごこうふく",
           lat: 36.170129,
           lng: 136.202507,
         },
         {
           name: "大関",
+          nameKana: "おおぜき",
           lat: 36.186574,
           lng: 136.203687,
         },
         {
           name: "本荘",
+          nameKana: "ほんじょう",
           lat: 36.205011,
           lng: 136.202881,
         },
         {
           name: "番田",
+          nameKana: "ばんでん",
           lat: 36.212358,
           lng: 136.202333,
         },
         {
           name: "あわら湯のまち",
+          nameKana: "あわらゆのまち",
           lat: 36.223159,
           lng: 136.193695,
         },
         {
           name: "水居",
+          nameKana: "みずい",
           lat: 36.219081,
           lng: 136.172019,
         },
         {
           name: "三国神社",
+          nameKana: "みくにじんじゃ",
           lat: 36.214773,
           lng: 136.158037,
         },
         {
           name: "三国",
+          nameKana: "みくに",
           lat: 36.217012,
           lng: 136.149615,
         },
         {
           name: "三国港",
+          nameKana: "みくにみなと",
           lat: 36.220264,
           lng: 136.140049,
         },
@@ -9448,116 +11050,139 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "たけふ新",
+          nameKana: "たけふしん",
           lat: 35.906426,
           lng: 136.170274,
         },
         {
           name: "北府",
+          nameKana: "きたご",
           lat: 35.910114,
           lng: 136.166563,
         },
         {
           name: "スポーツ公園",
+          nameKana: "すぽーつこうえん",
           lat: 35.919093,
           lng: 136.168105,
         },
         {
           name: "家久",
+          nameKana: "いえひさ",
           lat: 35.925988,
           lng: 136.17054,
         },
         {
           name: "サンドーム西",
+          nameKana: "さんどーむにし",
           lat: 35.936514,
           lng: 136.180564,
         },
         {
           name: "西鯖江",
+          nameKana: "にしさばえ",
           lat: 35.946352,
           lng: 136.1819,
         },
         {
           name: "西山公園",
+          nameKana: "にしやまこうえん",
           lat: 35.952437,
           lng: 136.185833,
         },
         {
           name: "水落",
+          nameKana: "みずおち",
           lat: 35.962308,
           lng: 136.183191,
         },
         {
           name: "神明",
+          nameKana: "しんめい",
           lat: 35.972731,
           lng: 136.181885,
         },
         {
           name: "鳥羽中",
+          nameKana: "とばなか",
           lat: 35.981522,
           lng: 136.187556,
         },
         {
           name: "三十八社",
+          nameKana: "さんじゅうはっしゃ",
           lat: 35.989143,
           lng: 136.193805,
         },
         {
           name: "泰澄の里",
+          nameKana: "たいちょうのさと",
           lat: 35.999444,
           lng: 136.198333,
         },
         {
           name: "浅水",
+          nameKana: "あそうず",
           lat: 36.006724,
           lng: 136.201737,
         },
         {
           name: "ハーモニーホール",
+          nameKana: "はーもにーほーる",
           lat: 36.014187,
           lng: 136.205433,
         },
         {
           name: "清明",
+          nameKana: "せいめい",
           lat: 36.022222,
           lng: 136.209444,
         },
         {
           name: "江端",
+          nameKana: "えばた",
           lat: 36.028391,
           lng: 136.212379,
         },
         {
           name: "ベル前",
+          nameKana: "べるまえ",
           lat: 36.033685,
           lng: 136.213882,
         },
         {
           name: "花堂",
+          nameKana: "はなんどう",
           lat: 36.040851,
           lng: 136.215176,
         },
         {
           name: "赤十字前",
+          nameKana: "せきじゅうじまえ",
           lat: 36.048683,
           lng: 136.216623,
         },
         {
           name: "商工会議所前",
+          nameKana: "しょうこうかいぎしょまえ",
           lat: 36.053613,
           lng: 136.215014,
         },
         {
           name: "足羽山公園口",
+          nameKana: "あすわやまこうえんぐち",
           lat: 36.057737,
           lng: 136.215109,
         },
         {
           name: "福井城址大名町",
+          nameKana: "ふくいじょうしだいみょうまち",
           lat: 36.063523,
           lng: 136.217566,
         },
         {
           name: "福井駅",
+          nameKana: "ふくいえき",
           lat: 36.061871,
           lng: 136.220625,
           transfer: true,
@@ -9565,11 +11190,13 @@ export const chubu: OperatorData = {
         },
         {
           name: "仁愛女子高校",
+          nameKana: "じんあいじょしこうこう",
           lat: 36.069319,
           lng: 136.218058,
         },
         {
           name: "田原町",
+          nameKana: "たわらまち",
           lat: 36.074888,
           lng: 136.21738,
           transfer: true,
@@ -9588,6 +11215,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "大聖寺",
+          nameKana: "だいしょうじ",
           lat: 36.300311,
           lng: 136.314205,
           transfer: true,
@@ -9595,36 +11223,43 @@ export const chubu: OperatorData = {
         },
         {
           name: "牛ノ谷",
+          nameKana: "うしのや",
           lat: 36.259409,
           lng: 136.281618,
         },
         {
           name: "細呂木",
+          nameKana: "ほそろぎ",
           lat: 36.24125,
           lng: 136.256968,
         },
         {
           name: "芦原温泉",
+          nameKana: "あわらおんせん",
           lat: 36.214542,
           lng: 136.235069,
         },
         {
           name: "丸岡",
+          nameKana: "まるおか",
           lat: 36.162595,
           lng: 136.233502,
         },
         {
           name: "春江",
+          nameKana: "はるえ",
           lat: 36.129004,
           lng: 136.228487,
         },
         {
           name: "森田",
+          nameKana: "もりた",
           lat: 36.109381,
           lng: 136.222516,
         },
         {
           name: "福井",
+          nameKana: "ふくい",
           lat: 36.062057,
           lng: 136.223516,
           transfer: true,
@@ -9632,6 +11267,7 @@ export const chubu: OperatorData = {
         },
         {
           name: "越前花堂",
+          nameKana: "えちぜんはなんどう",
           lat: 36.038771,
           lng: 136.218073,
           transfer: true,
@@ -9639,51 +11275,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "大土呂",
+          nameKana: "おおどろ",
           lat: 36.010546,
           lng: 136.216519,
         },
         {
           name: "北鯖江",
+          nameKana: "きたさばえ",
           lat: 35.971496,
           lng: 136.198452,
         },
         {
           name: "鯖江",
+          nameKana: "さばえ",
           lat: 35.943355,
           lng: 136.188852,
         },
         {
           name: "武生",
+          nameKana: "たけふ",
           lat: 35.903254,
           lng: 136.170913,
         },
         {
           name: "王子保",
+          nameKana: "おうしお",
           lat: 35.866259,
           lng: 136.165595,
         },
         {
           name: "南条",
+          nameKana: "なんじょう",
           lat: 35.831956,
           lng: 136.193391,
         },
         {
           name: "湯尾",
+          nameKana: "ゆのお",
           lat: 35.803251,
           lng: 136.193007,
         },
         {
           name: "今庄",
+          nameKana: "いまじょう",
           lat: 35.772947,
           lng: 136.199279,
         },
         {
           name: "南今庄",
+          nameKana: "みなみいまじょう",
           lat: 35.757424,
           lng: 136.184723,
         },
         {
           name: "敦賀",
+          nameKana: "つるが",
           lat: 35.645161,
           lng: 136.076294,
           transfer: true,
@@ -9702,6 +11348,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "伊東",
+          nameKana: "いとう",
           lat: 34.9747,
           lng: 139.092125,
           transfer: true,
@@ -9709,76 +11356,91 @@ export const chubu: OperatorData = {
         },
         {
           name: "南伊東",
+          nameKana: "みなみいとう",
           lat: 34.95757,
           lng: 139.087893,
         },
         {
           name: "川奈",
+          nameKana: "かわな",
           lat: 34.950906,
           lng: 139.124936,
         },
         {
           name: "富戸",
+          nameKana: "ふと",
           lat: 34.91005,
           lng: 139.131676,
         },
         {
           name: "城ヶ崎海岸",
+          nameKana: "じょうがさきかいがん",
           lat: 34.889878,
           lng: 139.1217,
         },
         {
           name: "伊豆高原",
+          nameKana: "いずこうげん",
           lat: 34.87732,
           lng: 139.107961,
         },
         {
           name: "伊豆大川",
+          nameKana: "いずおおかわ",
           lat: 34.843208,
           lng: 139.074014,
         },
         {
           name: "伊豆北川",
+          nameKana: "いずほっかわ",
           lat: 34.827174,
           lng: 139.075487,
         },
         {
           name: "伊豆熱川",
+          nameKana: "いずあたがわ",
           lat: 34.817042,
           lng: 139.069307,
         },
         {
           name: "片瀬白田",
+          nameKana: "かたせしらた",
           lat: 34.801783,
           lng: 139.06122,
         },
         {
           name: "伊豆稲取",
+          nameKana: "いずいなとり",
           lat: 34.774546,
           lng: 139.037108,
         },
         {
           name: "今井浜海岸",
+          nameKana: "いまいはまかいがん",
           lat: 34.753714,
           lng: 139.004692,
         },
         {
           name: "河津",
+          nameKana: "かわづ",
           lat: 34.747711,
           lng: 138.996179,
         },
         {
           name: "稲梓",
+          nameKana: "いなずさ",
           lat: 34.722066,
           lng: 138.949399,
         },
         {
           name: "蓮台寺",
+          nameKana: "れんだいじ",
           lat: 34.699634,
           lng: 138.941274,
         },
         {
           name: "伊豆急下田",
+          nameKana: "いずきゅうしもだ",
           lat: 34.679647,
           lng: 138.944274,
         },
@@ -9795,6 +11457,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "三島",
+          nameKana: "みしま",
           lat: 35.125946,
           lng: 138.911369,
           transfer: true,
@@ -9802,61 +11465,73 @@ export const chubu: OperatorData = {
         },
         {
           name: "三島広小路",
+          nameKana: "みしまひろこうじ",
           lat: 35.119272,
           lng: 138.911202,
         },
         {
           name: "三島田町",
+          nameKana: "みしまたまち",
           lat: 35.116205,
           lng: 138.918421,
         },
         {
           name: "三島二日町",
+          nameKana: "みしまふつかまち",
           lat: 35.111039,
           lng: 138.926001,
         },
         {
           name: "大場",
+          nameKana: "だいば",
           lat: 35.092569,
           lng: 138.939414,
         },
         {
           name: "伊豆仁田",
+          nameKana: "いずにった",
           lat: 35.078821,
           lng: 138.941509,
         },
         {
           name: "原木",
+          nameKana: "ばらき",
           lat: 35.065653,
           lng: 138.943695,
         },
         {
           name: "韮山",
+          nameKana: "にらやま",
           lat: 35.053547,
           lng: 138.945467,
         },
         {
           name: "伊豆長岡",
+          nameKana: "いずながおか",
           lat: 35.039907,
           lng: 138.947539,
         },
         {
           name: "田京",
+          nameKana: "たきょう",
           lat: 35.014551,
           lng: 138.945767,
         },
         {
           name: "大仁",
+          nameKana: "おおひと",
           lat: 34.994467,
           lng: 138.937527,
         },
         {
           name: "牧之郷",
+          nameKana: "まきのこう",
           lat: 34.988677,
           lng: 138.954317,
         },
         {
           name: "修善寺",
+          nameKana: "しゅぜんじ",
           lat: 34.979091,
           lng: 138.950545,
         },
@@ -9873,6 +11548,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "吉原",
+          nameKana: "よしわら",
           lat: 35.144176,
           lng: 138.701839,
           transfer: true,
@@ -9880,46 +11556,55 @@ export const chubu: OperatorData = {
         },
         {
           name: "ジヤトコ前（ジヤトコ１地区前）",
+          nameKana: "じゃとこまえ",
           lat: 35.157775,
           lng: 138.690076,
         },
         {
           name: "吉原本町",
+          nameKana: "よしわらほんちょう",
           lat: 35.160821,
           lng: 138.689774,
         },
         {
           name: "本吉原",
+          nameKana: "ほんよしわら",
           lat: 35.161946,
           lng: 138.692716,
         },
         {
           name: "岳南原田",
+          nameKana: "がくなんはらだ",
           lat: 35.166076,
           lng: 138.704517,
         },
         {
           name: "比奈",
+          nameKana: "ひな",
           lat: 35.161485,
           lng: 138.713602,
         },
         {
           name: "岳南富士岡",
+          nameKana: "がくなんふじおか",
           lat: 35.160949,
           lng: 138.723356,
         },
         {
           name: "須津",
+          nameKana: "すど",
           lat: 35.160444,
           lng: 138.733944,
         },
         {
           name: "神谷",
+          nameKana: "かみや",
           lat: 35.16103,
           lng: 138.74303,
         },
         {
           name: "岳南江尾",
+          nameKana: "がくなんえのお",
           lat: 35.155261,
           lng: 138.751793,
         },
@@ -9936,51 +11621,61 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "新静岡",
+          nameKana: "しんしずおか",
           lat: 34.975823,
           lng: 138.387423,
         },
         {
           name: "日吉町",
+          nameKana: "ひよしちょう",
           lat: 34.977017,
           lng: 138.391114,
         },
         {
           name: "音羽町",
+          nameKana: "おとわちょう",
           lat: 34.978387,
           lng: 138.395775,
         },
         {
           name: "春日町",
+          nameKana: "かすがちょう",
           lat: 34.978387,
           lng: 138.400544,
         },
         {
           name: "柚木",
+          nameKana: "ゆのき",
           lat: 34.981891,
           lng: 138.406084,
         },
         {
           name: "長沼",
+          nameKana: "ながぬま",
           lat: 34.989069,
           lng: 138.412884,
         },
         {
           name: "古庄",
+          nameKana: "ふるしょう",
           lat: 34.992855,
           lng: 138.419581,
         },
         {
           name: "県総合運動場",
+          nameKana: "けんそうごううんどうじょう",
           lat: 34.993375,
           lng: 138.430113,
         },
         {
           name: "県立美術館前",
+          nameKana: "けんりつびじゅつかんまえ",
           lat: 34.997494,
           lng: 138.438088,
         },
         {
           name: "草薙",
+          nameKana: "くさなぎ",
           lat: 35.001457,
           lng: 138.44269,
           transfer: true,
@@ -9988,26 +11683,31 @@ export const chubu: OperatorData = {
         },
         {
           name: "御門台",
+          nameKana: "みかどだい",
           lat: 35.007902,
           lng: 138.452464,
         },
         {
           name: "狐ヶ崎",
+          nameKana: "きつねがさき",
           lat: 35.011488,
           lng: 138.459739,
         },
         {
           name: "桜橋",
+          nameKana: "さくらばし",
           lat: 35.013107,
           lng: 138.477573,
         },
         {
           name: "入江岡",
+          nameKana: "いりえおか",
           lat: 35.014891,
           lng: 138.481264,
         },
         {
           name: "新清水",
+          nameKana: "しんしみず",
           lat: 35.017054,
           lng: 138.487539,
         },
@@ -10024,6 +11724,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "掛川",
+          nameKana: "かけがわ",
           lat: 34.769568,
           lng: 138.014256,
           transfer: true,
@@ -10031,91 +11732,109 @@ export const chubu: OperatorData = {
         },
         {
           name: "掛川市役所前",
+          nameKana: "かけがわしやくしょまえ",
           lat: 34.770289,
           lng: 138.000143,
         },
         {
           name: "西掛川",
+          nameKana: "にしかけがわ",
           lat: 34.771952,
           lng: 137.99501,
         },
         {
           name: "桜木",
+          nameKana: "さくらぎ",
           lat: 34.778216,
           lng: 137.972764,
         },
         {
           name: "いこいの広場",
+          nameKana: "いこいのひろば",
           lat: 34.788103,
           lng: 137.963773,
         },
         {
           name: "細谷",
+          nameKana: "ほそや",
           lat: 34.792705,
           lng: 137.961606,
         },
         {
           name: "原谷",
+          nameKana: "はらのや",
           lat: 34.808434,
           lng: 137.955023,
         },
         {
           name: "原田",
+          nameKana: "はらだ",
           lat: 34.820183,
           lng: 137.952911,
         },
         {
           name: "戸綿",
+          nameKana: "とわた",
           lat: 34.831311,
           lng: 137.931038,
         },
         {
           name: "遠州森",
+          nameKana: "えんしゅうもり",
           lat: 34.8311,
           lng: 137.924297,
         },
         {
           name: "森町病院前",
+          nameKana: "もりまちびょういんまえ",
           lat: 34.826389,
           lng: 137.917944,
         },
         {
           name: "円田",
+          nameKana: "えんでん",
           lat: 34.820793,
           lng: 137.907574,
         },
         {
           name: "遠江一宮",
+          nameKana: "とおとうみいちのみや",
           lat: 34.818045,
           lng: 137.889145,
         },
         {
           name: "敷地",
+          nameKana: "しきじ",
           lat: 34.826218,
           lng: 137.864355,
         },
         {
           name: "豊岡",
+          nameKana: "とよおか",
           lat: 34.837105,
           lng: 137.839758,
         },
         {
           name: "上野部",
+          nameKana: "かみのべ",
           lat: 34.847442,
           lng: 137.830058,
         },
         {
           name: "天竜二俣",
+          nameKana: "てんりゅうふたまた",
           lat: 34.859118,
           lng: 137.820045,
         },
         {
           name: "二俣本町",
+          nameKana: "ふたまたほんまち",
           lat: 34.859504,
           lng: 137.813015,
         },
         {
           name: "西鹿島",
+          nameKana: "にしかじま",
           lat: 34.846758,
           lng: 137.807988,
           transfer: true,
@@ -10123,101 +11842,121 @@ export const chubu: OperatorData = {
         },
         {
           name: "岩水寺",
+          nameKana: "がんすいじ",
           lat: 34.837705,
           lng: 137.792537,
         },
         {
           name: "宮口",
+          nameKana: "みやぐち",
           lat: 34.830389,
           lng: 137.773731,
         },
         {
           name: "フルーツパーク",
+          nameKana: "ふるーつぱーく",
           lat: 34.834406,
           lng: 137.731976,
         },
         {
           name: "都田",
+          nameKana: "みやこだ",
           lat: 34.828223,
           lng: 137.718272,
         },
         {
           name: "常葉大学前",
+          nameKana: "とこはだいがくまえ",
           lat: 34.81989,
           lng: 137.709231,
         },
         {
           name: "金指",
+          nameKana: "かなさし",
           lat: 34.816951,
           lng: 137.681103,
         },
         {
           name: "岡地",
+          nameKana: "おかじ",
           lat: 34.812295,
           lng: 137.665686,
         },
         {
           name: "気賀",
+          nameKana: "きが",
           lat: 34.80722,
           lng: 137.651937,
         },
         {
           name: "西気賀",
+          nameKana: "にしきが",
           lat: 34.802323,
           lng: 137.621523,
         },
         {
           name: "寸座",
+          nameKana: "すんざ",
           lat: 34.790102,
           lng: 137.612523,
         },
         {
           name: "浜名湖佐久米",
+          nameKana: "はまなこさくめ",
           lat: 34.789146,
           lng: 137.599286,
         },
         {
           name: "東都筑",
+          nameKana: "ひがしつづき",
           lat: 34.790412,
           lng: 137.586571,
         },
         {
           name: "都筑",
+          nameKana: "つづき",
           lat: 34.79585,
           lng: 137.574516,
         },
         {
           name: "三ヶ日",
+          nameKana: "みっかび",
           lat: 34.802565,
           lng: 137.551705,
         },
         {
           name: "奥浜名湖",
+          nameKana: "おくはまなこ",
           lat: 34.795068,
           lng: 137.545934,
         },
         {
           name: "尾奈",
+          nameKana: "おな",
           lat: 34.783958,
           lng: 137.541755,
         },
         {
           name: "知波田",
+          nameKana: "ちばた",
           lat: 34.753069,
           lng: 137.511873,
         },
         {
           name: "大森",
+          nameKana: "おおもり",
           lat: 34.737865,
           lng: 137.509636,
         },
         {
           name: "アスモ前",
+          nameKana: "あすもまえ",
           lat: 34.727685,
           lng: 137.49405,
         },
         {
           name: "新所原",
+          nameKana: "しんじょはら",
           lat: 34.723343,
           lng: 137.485002,
           transfer: true,
@@ -10236,6 +11975,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "新浜松",
+          nameKana: "しんはままつ",
           lat: 34.703402,
           lng: 137.732456,
           transfer: true,
@@ -10243,86 +11983,103 @@ export const chubu: OperatorData = {
         },
         {
           name: "第一通り",
+          nameKana: "だいいちどおり",
           lat: 34.707477,
           lng: 137.732845,
         },
         {
           name: "遠州病院",
+          nameKana: "えんしゅうびょういん",
           lat: 34.710657,
           lng: 137.73327,
         },
         {
           name: "八幡",
+          nameKana: "はちまん",
           lat: 34.717012,
           lng: 137.73598,
         },
         {
           name: "助信",
+          nameKana: "すけのぶ",
           lat: 34.724303,
           lng: 137.738697,
         },
         {
           name: "曳馬",
+          nameKana: "ひくま",
           lat: 34.7331485,
           lng: 137.7416039,
         },
         {
           name: "上島",
+          nameKana: "かみじま",
           lat: 34.741568,
           lng: 137.745462,
         },
         {
           name: "自動車学校前",
+          nameKana: "じどうしゃがっこうまえ",
           lat: 34.747489,
           lng: 137.751625,
         },
         {
           name: "さぎの宮",
+          nameKana: "さぎのみや",
           lat: 34.757275,
           lng: 137.757327,
         },
         {
           name: "積志",
+          nameKana: "せきし",
           lat: 34.768082,
           lng: 137.763409,
         },
         {
           name: "遠州西ヶ崎",
+          nameKana: "えんしゅうにしがさき",
           lat: 34.776821,
           lng: 137.773905,
         },
         {
           name: "遠州小松",
+          nameKana: "えんしゅうこまつ",
           lat: 34.784264,
           lng: 137.777838,
         },
         {
           name: "浜北",
+          nameKana: "はまきた",
           lat: 34.791358,
           lng: 137.784356,
         },
         {
           name: "美薗中央公園",
+          nameKana: "みそのちゅうおうこうえん",
           lat: 34.798208,
           lng: 137.789764,
         },
         {
           name: "遠州小林",
+          nameKana: "えんしゅうこばやし",
           lat: 34.808374,
           lng: 137.795538,
         },
         {
           name: "遠州芝本",
+          nameKana: "えんしゅうしばもと",
           lat: 34.824024,
           lng: 137.798718,
         },
         {
           name: "遠州岩水寺",
+          nameKana: "えんしゅうがんすいじ",
           lat: 34.834373,
           lng: 137.801131,
         },
         {
           name: "西鹿島",
+          nameKana: "にしかじま",
           lat: 34.846758,
           lng: 137.807988,
           transfer: true,
@@ -10341,6 +12098,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "金谷",
+          nameKana: "かなや",
           lat: 34.819568,
           lng: 138.12605,
           transfer: true,
@@ -10348,96 +12106,115 @@ export const chubu: OperatorData = {
         },
         {
           name: "新金谷",
+          nameKana: "しんかなや",
           lat: 34.825737,
           lng: 138.137645,
         },
         {
           name: "代官町",
+          nameKana: "だいかんちょう",
           lat: 34.835493,
           lng: 138.126102,
         },
         {
           name: "日切",
+          nameKana: "ひぎり",
           lat: 34.839012,
           lng: 138.122394,
         },
         {
           name: "合格",
+          nameKana: "ごうかく",
           lat: 34.844806,
           lng: 138.120771,
         },
         {
           name: "門出",
+          nameKana: "かどで",
           lat: 34.849992,
           lng: 138.119333,
         },
         {
           name: "神尾",
+          nameKana: "かみお",
           lat: 34.882842,
           lng: 138.101595,
         },
         {
           name: "福用",
+          nameKana: "ふくよう",
           lat: 34.901881,
           lng: 138.090124,
         },
         {
           name: "大和田",
+          nameKana: "おわだ",
           lat: 34.921104,
           lng: 138.08215,
         },
         {
           name: "家山",
+          nameKana: "いえやま",
           lat: 34.940071,
           lng: 138.077764,
         },
         {
           name: "抜里",
+          nameKana: "ぬくり",
           lat: 34.953373,
           lng: 138.087672,
         },
         {
           name: "川根温泉笹間渡",
+          nameKana: "かわねおんせんささまど",
           lat: 34.962291,
           lng: 138.086114,
         },
         {
           name: "地名",
+          nameKana: "じな",
           lat: 34.986019,
           lng: 138.087252,
         },
         {
           name: "塩郷",
+          nameKana: "しおごう",
           lat: 34.997664,
           lng: 138.090612,
         },
         {
           name: "下泉",
+          nameKana: "しもいずみ",
           lat: 35.022064,
           lng: 138.090078,
         },
         {
           name: "田野口",
+          nameKana: "たのくち",
           lat: 35.0513,
           lng: 138.095416,
         },
         {
           name: "駿河徳山",
+          nameKana: "するがとくやま",
           lat: 35.074758,
           lng: 138.110516,
         },
         {
           name: "青部",
+          nameKana: "あおべ",
           lat: 35.089592,
           lng: 138.115473,
         },
         {
           name: "崎平",
+          nameKana: "さきだいら",
           lat: 35.091803,
           lng: 138.127411,
         },
         {
           name: "千頭",
+          nameKana: "せんず",
           lat: 35.107754,
           lng: 138.13656,
           transfer: true,
@@ -10454,6 +12231,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "千頭",
+          nameKana: "せんず",
           lat: 35.107754,
           lng: 138.13656,
           transfer: true,
@@ -10461,66 +12239,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "川根両国",
+          nameKana: "かわねりょうごく",
           lat: 35.116836,
           lng: 138.140592,
         },
         {
           name: "沢間",
+          nameKana: "さわま",
           lat: 35.124705,
           lng: 138.134365,
         },
         {
           name: "土本",
+          nameKana: "どもと",
           lat: 35.136057,
           lng: 138.139186,
         },
         {
           name: "川根小山",
+          nameKana: "かわねこやま",
           lat: 35.141753,
           lng: 138.14106,
         },
         {
           name: "奥泉",
+          nameKana: "おくいずみ",
           lat: 35.149739,
           lng: 138.147796,
         },
         {
           name: "アプトいちしろ",
+          nameKana: "あぷといちしろ",
           lat: 35.167514,
           lng: 138.144825,
         },
         {
           name: "長島ダム",
+          nameKana: "ながしまだむ",
           lat: 35.168787,
           lng: 138.157124,
         },
         {
           name: "ひらんだ",
+          nameKana: "ひらんだ",
           lat: 35.164806,
           lng: 138.167507,
         },
         {
           name: "奥大井湖上",
+          nameKana: "おくおおいこじょう",
           lat: 35.1682,
           lng: 138.180792,
         },
         {
           name: "接岨峡温泉",
+          nameKana: "せっそきょうおんせん",
           lat: 35.178821,
           lng: 138.185177,
         },
         {
           name: "尾盛",
+          nameKana: "おもり",
           lat: 35.192131,
           lng: 138.174369,
         },
         {
           name: "閑蔵",
+          nameKana: "かんぞう",
           lat: 35.191737,
           lng: 138.194189,
         },
         {
           name: "井川",
+          nameKana: "いかわ",
           lat: 35.212242,
           lng: 138.221111,
         },
@@ -10537,6 +12328,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "新豊橋",
+          nameKana: "しんとよはし",
           lat: 34.762272,
           lng: 137.383375,
           transfer: true,
@@ -10544,76 +12336,91 @@ export const chubu: OperatorData = {
         },
         {
           name: "柳生橋",
+          nameKana: "やぎゅうばし",
           lat: 34.75479,
           lng: 137.38847,
         },
         {
           name: "小池",
+          nameKana: "こいけ",
           lat: 34.748891,
           lng: 137.388076,
         },
         {
           name: "愛知大学前",
+          nameKana: "あいちだいがくまえ",
           lat: 34.741682,
           lng: 137.385754,
         },
         {
           name: "南栄",
+          nameKana: "みなみさかえ",
           lat: 34.73592,
           lng: 137.385446,
         },
         {
           name: "高師",
+          nameKana: "たかし",
           lat: 34.727068,
           lng: 137.381674,
         },
         {
           name: "芦原",
+          nameKana: "あしはら",
           lat: 34.718433,
           lng: 137.380122,
         },
         {
           name: "植田",
+          nameKana: "うえた",
           lat: 34.711085,
           lng: 137.373047,
         },
         {
           name: "向ヶ丘",
+          nameKana: "むこうがおか",
           lat: 34.706351,
           lng: 137.367556,
         },
         {
           name: "大清水",
+          nameKana: "おおしみず",
           lat: 34.695966,
           lng: 137.358863,
         },
         {
           name: "老津",
+          nameKana: "おいつ",
           lat: 34.692344,
           lng: 137.33536,
         },
         {
           name: "杉山",
+          nameKana: "すぎやま",
           lat: 34.680301,
           lng: 137.320759,
         },
         {
           name: "やぐま台",
+          nameKana: "やぐまだい",
           lat: 34.673809,
           lng: 137.309427,
         },
         {
           name: "豊島",
+          nameKana: "としま",
           lat: 34.667459,
           lng: 137.293737,
         },
         {
           name: "神戸",
+          nameKana: "かんべ",
           lat: 34.668253,
           lng: 137.278044,
         },
         {
           name: "三河田原",
+          nameKana: "みかわたはら",
           lat: 34.666875,
           lng: 137.269172,
         },
@@ -10628,6 +12435,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "駅前",
+          nameKana: "えきまえ",
           lat: 34.763879,
           lng: 137.383132,
           transfer: true,
@@ -10635,66 +12443,79 @@ export const chubu: OperatorData = {
         },
         {
           name: "駅前大通",
+          nameKana: "えきまえおおどおり",
           lat: 34.763209,
           lng: 137.385707,
         },
         {
           name: "新川",
+          nameKana: "しんかわ",
           lat: 34.762857,
           lng: 137.389483,
         },
         {
           name: "札木",
+          nameKana: "ふだぎ",
           lat: 34.765959,
           lng: 137.390299,
         },
         {
           name: "市役所前",
+          nameKana: "しやくしょまえ",
           lat: 34.767369,
           lng: 137.392488,
         },
         {
           name: "豊橋公園前",
+          nameKana: "とよはしこうえんまえ",
           lat: 34.766841,
           lng: 137.395406,
         },
         {
           name: "東八町",
+          nameKana: "ひがしはっちょう",
           lat: 34.765924,
           lng: 137.400341,
         },
         {
           name: "前畑",
+          nameKana: "まえはた",
           lat: 34.765818,
           lng: 137.404718,
         },
         {
           name: "東田坂上",
+          nameKana: "あずまださかうえ",
           lat: 34.765783,
           lng: 137.408495,
         },
         {
           name: "東田",
+          nameKana: "あずまだ",
           lat: 34.76536,
           lng: 137.413151,
         },
         {
           name: "競輪場前",
+          nameKana: "けいりんじょうまえ",
           lat: 34.765078,
           lng: 137.416778,
         },
         {
           name: "井原",
+          nameKana: "いはら",
           lat: 34.764232,
           lng: 137.421885,
         },
         {
           name: "赤岩口",
+          nameKana: "あかいわぐち",
           lat: 34.763403,
           lng: 137.429931,
         },
         {
           name: "運動公園前",
+          nameKana: "うんどうこうえんまえ",
           lat: 34.75845,
           lng: 137.422314,
         },
@@ -10711,6 +12532,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "恵那",
+          nameKana: "えな",
           lat: 35.455313,
           lng: 137.408463,
           transfer: true,
@@ -10718,51 +12540,61 @@ export const chubu: OperatorData = {
         },
         {
           name: "東野",
+          nameKana: "ひがしの",
           lat: 35.446315,
           lng: 137.428788,
         },
         {
           name: "飯沼",
+          nameKana: "いいぬま",
           lat: 35.418529,
           lng: 137.461257,
         },
         {
           name: "阿木",
+          nameKana: "あぎ",
           lat: 35.399759,
           lng: 137.458962,
         },
         {
           name: "飯羽間",
+          nameKana: "いいばま",
           lat: 35.387222,
           lng: 137.437468,
         },
         {
           name: "極楽",
+          nameKana: "ごくらく",
           lat: 35.379944,
           lng: 137.432619,
         },
         {
           name: "岩村",
+          nameKana: "いわむら",
           lat: 35.368864,
           lng: 137.43434,
         },
         {
           name: "花白温泉",
+          nameKana: "はなしろおんせん",
           lat: 35.355071,
           lng: 137.407207,
         },
         {
           name: "山岡",
+          nameKana: "やまおか",
           lat: 35.350132,
           lng: 137.395679,
         },
         {
           name: "野志",
+          nameKana: "のし",
           lat: 35.321962,
           lng: 137.389516,
         },
         {
           name: "明智",
+          nameKana: "あけち",
           lat: 35.306169,
           lng: 137.387359,
         },
@@ -10779,6 +12611,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "美濃太田",
+          nameKana: "みのおおた",
           lat: 35.445617,
           lng: 137.019467,
           transfer: true,
@@ -10786,186 +12619,223 @@ export const chubu: OperatorData = {
         },
         {
           name: "前平公園",
+          nameKana: "まえひらこうえん",
           lat: 35.449771,
           lng: 137.001652,
         },
         {
           name: "加茂野",
+          nameKana: "かもの",
           lat: 35.460927,
           lng: 136.985062,
         },
         {
           name: "富加",
+          nameKana: "とみか",
           lat: 35.475144,
           lng: 136.969658,
         },
         {
           name: "関富岡",
+          nameKana: "せきとみおか",
           lat: 35.478588,
           lng: 136.944923,
         },
         {
           name: "関口",
+          nameKana: "せきぐち",
           lat: 35.479976,
           lng: 136.928872,
         },
         {
           name: "せきてらす前",
+          nameKana: "せきてらすまえ",
           lat: 35.483434,
           lng: 136.914195,
         },
         {
           name: "関",
+          nameKana: "せき",
           lat: 35.490027,
           lng: 136.912758,
         },
         {
           name: "関市役所前",
+          nameKana: "せきしやくしょまえ",
           lat: 35.499004,
           lng: 136.912787,
         },
         {
           name: "関下有知",
+          nameKana: "せきしもうち",
           lat: 35.513679,
           lng: 136.914582,
         },
         {
           name: "松森",
+          nameKana: "まつもり",
           lat: 35.526808,
           lng: 136.915367,
         },
         {
           name: "美濃市",
+          nameKana: "みのし",
           lat: 35.539618,
           lng: 136.915525,
         },
         {
           name: "梅山",
+          nameKana: "うめやま",
           lat: 35.548981,
           lng: 136.918025,
         },
         {
           name: "湯の洞温泉口",
+          nameKana: "ゆのほらおんせんぐち",
           lat: 35.571281,
           lng: 136.931192,
         },
         {
           name: "洲原",
+          nameKana: "すはら",
           lat: 35.588954,
           lng: 136.944848,
         },
         {
           name: "母野",
+          nameKana: "はんの",
           lat: 35.59875,
           lng: 136.942009,
         },
         {
           name: "木尾",
+          nameKana: "こんの",
           lat: 35.606394,
           lng: 136.938467,
         },
         {
           name: "八坂",
+          nameKana: "やさか",
           lat: 35.620186,
           lng: 136.944966,
         },
         {
           name: "みなみ子宝温泉",
+          nameKana: "みなみこだからおんせん",
           lat: 35.627308,
           lng: 136.950618,
         },
         {
           name: "大矢",
+          nameKana: "おおや",
           lat: 35.637327,
           lng: 136.95024,
         },
         {
           name: "福野",
+          nameKana: "ふくの",
           lat: 35.646726,
           lng: 136.95172,
         },
         {
           name: "美並苅安",
+          nameKana: "みなみかりやす",
           lat: 35.660686,
           lng: 136.955047,
         },
         {
           name: "赤池",
+          nameKana: "あかいけ",
           lat: 35.671021,
           lng: 136.960613,
         },
         {
           name: "深戸",
+          nameKana: "ふかど",
           lat: 35.686445,
           lng: 136.962498,
         },
         {
           name: "相生",
+          nameKana: "あいおい",
           lat: 35.715114,
           lng: 136.95042,
         },
         {
           name: "郡上八幡",
+          nameKana: "ぐじょうはちまん",
           lat: 35.741877,
           lng: 136.947364,
         },
         {
           name: "自然園前",
+          nameKana: "しぜんえんまえ",
           lat: 35.7702,
           lng: 136.931354,
         },
         {
           name: "山田",
+          nameKana: "やまだ",
           lat: 35.789003,
           lng: 136.911709,
         },
         {
           name: "徳永",
+          nameKana: "とくなが",
           lat: 35.805087,
           lng: 136.903546,
         },
         {
           name: "郡上大和",
+          nameKana: "ぐじょうやまと",
           lat: 35.815224,
           lng: 136.894872,
         },
         {
           name: "万場",
+          nameKana: "まんば",
           lat: 35.833702,
           lng: 136.883093,
         },
         {
           name: "上万場",
+          nameKana: "かみまんば",
           lat: 35.844429,
           lng: 136.876707,
         },
         {
           name: "大中",
+          nameKana: "おおなか",
           lat: 35.853775,
           lng: 136.868405,
         },
         {
           name: "大島",
+          nameKana: "おおしま",
           lat: 35.868426,
           lng: 136.859039,
         },
         {
           name: "美濃白鳥",
+          nameKana: "みのしろとり",
           lat: 35.884946,
           lng: 136.860602,
         },
         {
           name: "白鳥高原",
+          nameKana: "しろとりこうげん",
           lat: 35.912617,
           lng: 136.843028,
         },
         {
           name: "白山長滝",
+          nameKana: "はくさんながたき",
           lat: 35.919722,
           lng: 136.832312,
         },
         {
           name: "北濃",
+          nameKana: "ほくのう",
           lat: 35.92994,
           lng: 136.829793,
         },
@@ -10982,6 +12852,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "大垣",
+          nameKana: "おおがき",
           lat: 35.367096,
           lng: 136.618288,
           transfer: true,
@@ -10989,91 +12860,109 @@ export const chubu: OperatorData = {
         },
         {
           name: "東大垣",
+          nameKana: "ひがしおおがき",
           lat: 35.375338,
           lng: 136.646671,
         },
         {
           name: "横屋",
+          nameKana: "よこや",
           lat: 35.386996,
           lng: 136.659479,
         },
         {
           name: "十九条",
+          nameKana: "じゅうくじょう",
           lat: 35.395737,
           lng: 136.660945,
         },
         {
           name: "美江寺",
+          nameKana: "みえじ",
           lat: 35.413387,
           lng: 136.661378,
         },
         {
           name: "北方真桑",
+          nameKana: "きたがたまくわ",
           lat: 35.439567,
           lng: 136.674271,
         },
         {
           name: "モレラ岐阜",
+          nameKana: "もれらぎふ",
           lat: 35.455112,
           lng: 136.669729,
         },
         {
           name: "糸貫",
+          nameKana: "いとぬき",
           lat: 35.462891,
           lng: 136.669704,
         },
         {
           name: "本巣",
+          nameKana: "もとす",
           lat: 35.487599,
           lng: 136.670072,
         },
         {
           name: "織部",
+          nameKana: "おりべ",
           lat: 35.499017,
           lng: 136.667241,
         },
         {
           name: "木知原",
+          nameKana: "こちぼら",
           lat: 35.517759,
           lng: 136.650153,
         },
         {
           name: "谷汲口",
+          nameKana: "たにぐみぐち",
           lat: 35.527552,
           lng: 136.642187,
         },
         {
           name: "神海",
+          nameKana: "こうみ",
           lat: 35.542487,
           lng: 136.641739,
         },
         {
           name: "高科",
+          nameKana: "たかしな",
           lat: 35.555099,
           lng: 136.641017,
         },
         {
           name: "鍋原",
+          nameKana: "なべら",
           lat: 35.5659,
           lng: 136.636606,
         },
         {
           name: "日当",
+          nameKana: "ひなた",
           lat: 35.582304,
           lng: 136.631456,
         },
         {
           name: "高尾",
+          nameKana: "たかお",
           lat: 35.601806,
           lng: 136.625819,
         },
         {
           name: "水鳥",
+          nameKana: "みどり",
           lat: 35.617813,
           lng: 136.620771,
         },
         {
           name: "樽見",
+          nameKana: "たるみ",
           lat: 35.635119,
           lng: 136.615827,
         },
@@ -11090,6 +12979,7 @@ export const chubu: OperatorData = {
       stations: [
         {
           name: "桑名",
+          nameKana: "くわな",
           lat: 35.06744,
           lng: 136.683435,
           transfer: true,
@@ -11097,86 +12987,103 @@ export const chubu: OperatorData = {
         },
         {
           name: "播磨",
+          nameKana: "はりま",
           lat: 35.078242,
           lng: 136.674595,
         },
         {
           name: "下深谷",
+          nameKana: "しもふかや",
           lat: 35.096179,
           lng: 136.661818,
         },
         {
           name: "下野代",
+          nameKana: "しものしろ",
           lat: 35.115899,
           lng: 136.647235,
         },
         {
           name: "多度",
+          nameKana: "たど",
           lat: 35.133855,
           lng: 136.640594,
         },
         {
           name: "美濃松山",
+          nameKana: "みのまつやま",
           lat: 35.160724,
           lng: 136.632644,
         },
         {
           name: "石津",
+          nameKana: "いしづ",
           lat: 35.181032,
           lng: 136.627765,
         },
         {
           name: "美濃山崎",
+          nameKana: "みのやまざき",
           lat: 35.198658,
           lng: 136.621595,
         },
         {
           name: "駒野",
+          nameKana: "こまの",
           lat: 35.22385,
           lng: 136.603389,
         },
         {
           name: "美濃津屋",
+          nameKana: "みのつや",
           lat: 35.251532,
           lng: 136.566651,
         },
         {
           name: "養老",
+          nameKana: "ようろう",
           lat: 35.28693,
           lng: 136.556739,
         },
         {
           name: "美濃高田",
+          nameKana: "みのたかだ",
           lat: 35.309074,
           lng: 136.563602,
         },
         {
           name: "烏江",
+          nameKana: "からすえ",
           lat: 35.305346,
           lng: 136.592258,
         },
         {
           name: "大外羽",
+          nameKana: "おおとば",
           lat: 35.315092,
           lng: 136.597382,
         },
         {
           name: "友江",
+          nameKana: "ともえ",
           lat: 35.326501,
           lng: 136.600672,
         },
         {
           name: "美濃青柳",
+          nameKana: "みのやなぎ",
           lat: 35.343591,
           lng: 136.603797,
         },
         {
           name: "西大垣",
+          nameKana: "にしおおがき",
           lat: 35.360298,
           lng: 136.603363,
         },
         {
           name: "大垣",
+          nameKana: "おおがき",
           lat: 35.366664,
           lng: 136.61697,
           transfer: true,
@@ -11184,46 +13091,55 @@ export const chubu: OperatorData = {
         },
         {
           name: "室",
+          nameKana: "むろ",
           lat: 35.367272,
           lng: 136.606209,
         },
         {
           name: "北大垣",
+          nameKana: "きたおおがき",
           lat: 35.375349,
           lng: 136.601979,
         },
         {
           name: "東赤坂",
+          nameKana: "ひがしあかさか",
           lat: 35.39414,
           lng: 136.600971,
         },
         {
           name: "広神戸",
+          nameKana: "ひろごうど",
           lat: 35.419651,
           lng: 136.602096,
         },
         {
           name: "北神戸",
+          nameKana: "きたごうど",
           lat: 35.430013,
           lng: 136.59441,
         },
         {
           name: "池野",
+          nameKana: "いけの",
           lat: 35.436512,
           lng: 136.578712,
         },
         {
           name: "北池野",
+          nameKana: "きたいけの",
           lat: 35.44335,
           lng: 136.573673,
         },
         {
           name: "美濃本郷",
+          nameKana: "みのほんごう",
           lat: 35.449874,
           lng: 136.571826,
         },
         {
           name: "揖斐",
+          nameKana: "いび",
           lat: 35.470314,
           lng: 136.572536,
         },
